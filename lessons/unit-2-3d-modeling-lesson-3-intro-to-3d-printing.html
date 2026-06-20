@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 3: Intro to 3D Printing</title>
+<style>
+  html,body{margin:0;background:#fff}
+  body{padding:18px;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;color:#1a1a1a;line-height:1.5;-webkit-text-size-adjust:100%}
+  img,video,iframe{max-width:100%;height:auto}
+  iframe{border:0;aspect-ratio:16/9;width:100%}
+  a{color:#3949ab}
+  *{box-sizing:border-box}
+</style>
+</head><body>
+<p>&nbsp;</p>
+<div style="background: #0B1426; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;">
+<div style="max-width: 980px; margin: 0 auto; color: #e8ecf1; line-height: 1.5;">
+<div style="background: linear-gradient(135deg, #0D2137, #1A1A3E); border-radius: 20px; padding: 28px; margin-bottom: 16px; text-align: center; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 4px 0; font-size: 11px; color: #00e5ff;">⬡ 3D Modeling • Lesson 3 ⬡</p>
+<h1 style="margin: 0; font-size: 30px; color: #ffffff;">💍 3D PRINT A CUSTOM RING</h1>
+<p style="margin: 8px 0 0 0; font-size: 15px; color: #8899aa;">Design it. Print it. Wear it.</p>
+</div>
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 16px; border: 1px solid #1E3A5F;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; font-size: 14px;">
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">⏱️ <strong style="color: #00e5ff;">1–2 periods</strong></div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">💻 <strong style="color: #00e5ff;">Laptop</strong></div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📏 <strong style="color: #00e5ff;">Paper + Ruler (cm)</strong></div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">🖨️ <strong style="color: #00e5ff;">3D Printer</strong></div>
+</div>
+</div>
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 16px; border-left: 4px solid #7B61FF;">
+<p style="margin: 0 0 6px 0; font-size: 13px; color: #7b61ff;">🧠 Vocab / Vocabulario</p>
+<p style="margin: 0; font-size: 14px; color: #c0cce0;"><strong style="color: #00e5ff;">3D Printing</strong> – Turning a digital model into a real object by stacking layers of melted plastic / Convertir un modelo digital en un objeto real apilando capas de plástico derretido</p>
+<p style="margin: 6px 0 0 0; font-size: 14px; color: #c0cce0;"><strong style="color: #00e5ff;">Slice</strong> – Telling the printer how to build your object layer by layer / Indicarle a la impresora cómo construir tu objeto capa por capa</p>
+</div>
+<div class="enhanceable_content tabs">
+<ul style="display: flex; gap: 0; padding-left: 0; margin: 0 0 -2px 0; justify-content: center;">
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00e5ff; font-size: 16px;" href="#tab-english-l3">English</a></li>
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0; margin-left: -2px;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00e5ff; font-size: 16px;" href="#tab-spanish-l3">Español</a></li>
+</ul>
+<div id="tab-english-l3" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+<div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 16px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #e8ecf1;">📣 You built a 3D coin. Now design a <strong style="color: #00e5ff;">custom ring</strong> in TinkerCAD – and <strong style="color: #ff2e63;">3D print it for real!</strong></p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Watch: What is 3D Printing?</p>
+</div>
+<div style="padding-left: 48px; text-align: center;"><iframe style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;" title="YouTube video player" src="https://www.youtube.com/embed/HlvK6DLwCz4" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Watch: 3D Printing Best Practices</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="text-align: center; margin-bottom: 14px;"><iframe style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;" title="YouTube video player" src="https://www.youtube.com/embed/QdvSzXByi_g" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #ff2e63;">🚨 3 Rules for a Successful Print:</p>
+<div style="display: grid; gap: 6px;">
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #00E676;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">1️⃣ <strong style="color: #00e676;">Flat base</strong> – your design needs a flat bottom</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #00E676;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">2️⃣ <strong style="color: #00e676;">No overhangs</strong> – plastic can't float in mid-air!</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #00E676;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">3️⃣ <strong style="color: #00e676;">Iterate!</strong> – every failed print teaches you something</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">📏 Measure Your Finger</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="display: grid; gap: 6px; margin-bottom: 14px;">
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">✂️ Cut a strip of paper. Wrap it around your finger. Mark where it meets.</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">📏 Measure the paper to the mark in <strong style="color: #ff2e63;">centimeters (cm)</strong>.</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">🔄 Multiply by <strong style="color: #ff2e63;">10</strong> to convert to <strong style="color: #ff2e63;">millimeters (mm)</strong>. <span style="color: #8899aa;">(Ex: 4.93 cm × 10 = 49.3 mm)</span></p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">➗ Divide by <strong style="color: #ff2e63;">3.14</strong> = your ring diameter. <span style="color: #8899aa;">(Ex: 49.3 ÷ 3.14 = 15.7 mm)</span></p>
+</div>
+</div>
+<div style="background: #0D2137; border-radius: 12px; padding: 10px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 8px;" src="../assets/media/Screenshot%202023-11-15%20at%209.53.14%E2%80%AFPM.png" alt="Measuring Finger Size" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826292" data-api-returntype="File" loading="lazy"></div>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Practice Ring Designs</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="background: #132238; border-radius: 10px; padding: 12px 16px; border-left: 3px solid #00E5FF; margin-bottom: 8px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">👉 Log in: <a style="color: #00e5ff; text-decoration: underline;" href="https://www.tinkercad.com/joinclass/DYQKB6NGR">tinkercad.com/joinclass/DYQKB6NGR</a></p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 16px; border-left: 3px solid #00E5FF;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">📚 Open the <strong style="color: #00e5ff;">"Ring"</strong> activity in our class, or go to Learn → <a style="color: #00e5ff; text-decoration: underline;" href="https://www.tinkercad.com/learn/overview/OBOFOUXIRXTM0P4;collectionId=OY5L5E8IRXTI47Z">"3D Print Your Own Ring"</a> → complete all 3 lessons (basic, diamond, heart)</p>
+</div>
+</div>
+</div>
+<div style="display: flex; justify-content: flex-end; margin-bottom: 16px;">
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 18px; padding: 12px 18px; max-width: 85%;">
+<p style="margin: 0; font-size: 15px; color: #ffffff;">💡 After each practice ring: <strong>Ctrl+C</strong> to copy it before starting the next lesson so you don't lose it!</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">5</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">💍 Design Your Custom Ring</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 10px 0; font-size: 15px; color: #e8ecf1;">Build your own ring from scratch. Follow these steps:</p>
+<div style="display: grid; gap: 10px; margin-bottom: 14px;">
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">A.</strong> Drag a <strong>cylinder</strong> → make it a <strong style="color: #ff2e63;">Hole</strong> → set width to your finger diameter</p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%209.55.55%E2%80%AFPM.png" alt="Cylinder Hole" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826293" data-api-returntype="File" loading="lazy"></div>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">B.</strong> Add another cylinder for the <strong>outside</strong> → make it <strong style="color: #ff2e63;">4 mm larger</strong> than the hole</p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%209.57.59%E2%80%AFPM.png" alt="Outer Cylinder" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826294" data-api-returntype="File" loading="lazy"></div>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">C.</strong> Select both → set depth to <strong style="color: #ff2e63;">4 mm</strong></p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%2010.01.20%E2%80%AFPM.png" alt="Scale Both Shapes" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826295" data-api-returntype="File" loading="lazy"></div>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">D.</strong> Click <strong>Group</strong> to combine them → now <strong style="color: #00e5ff;">customize!</strong> Add shapes, text, patterns.</p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%2010.02.29%E2%80%AFPM.png" alt="Group Shapes" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826296" data-api-returntype="File" loading="lazy"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; justify-content: flex-end; margin-bottom: 16px;">
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 18px; padding: 12px 18px; max-width: 85%;">
+<p style="margin: 0; font-size: 15px; color: #ffffff;">💡 Remember the 3 rules! Flat base, no overhangs, and iterate.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">6</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">📤 Export &amp; Submit</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="display: grid; gap: 6px;">
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #00E5FF;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;"><strong style="color: #00e5ff;">PNG</strong> → "Send To" → Export as PNG → upload to this Canvas assignment</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #7B61FF;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;"><strong style="color: #7b61ff;">STL</strong> → Leave your design in TinkerCAD – your teacher will access it from the class dashboard to slice &amp; print!</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">7</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">💬 Reflect</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 14px; color: #8899aa;">In the <strong>comments</strong> of your submission, finish this sentence in 2-3 sentences:</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #ff2e63;">"If my ring didn't print correctly, the first thing I would check is ___ because..."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;">Word Bank / Banco de Palabras</p>
+<p style="margin: 0; font-size: 14px; color: #c0cce0;"><strong>flat base</strong> • <strong>overhang</strong> • <strong>size</strong> • <strong>layers</strong> • <strong>diameter</strong> • <strong>support</strong> • <strong>iterate</strong> • <strong>slice</strong></p>
+</div>
+</div>
+</div>
+<div style="background: #1A1A2E; border: 2px solid #FF2E63; border-radius: 14px; padding: 14px; margin-bottom: 14px;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #ff2e63;">⬆️ LEVEL UP</p>
+<p style="margin: 0 0 10px 0; font-size: 16px; color: #c0cce0;">Done early? Design a necklace pendant! Follow the <a style="color: #00e5ff; text-decoration: underline;" href="https://www.tinkercad.com/learn/overview/O9F5MS1J2QEYRJ4">"Create a Fancy Necklace"</a> tutorial.</p>
+<div style="text-align: center;">
+<div style="background: #0B1426; border-radius: 10px; padding: 10px; display: inline-block; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 8px;" src="../assets/media/necklace.png" alt="necklace" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2885770" data-api-returntype="File" loading="lazy"></div>
+</div>
+</div>
+<div style="background: #0B1426; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #00e676;">✅ Done?</p>
+<p style="margin: 0; font-size: 14px; color: #c0cce0;">PNG uploaded + reflection in comments = complete!</p>
+</div>
+</div>
+<div id="tab-spanish-l3" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+<div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 16px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #e8ecf1;">📣 Construiste una moneda 3D. Ahora diseña un <strong style="color: #00e5ff;">anillo personalizado</strong> en TinkerCAD – ¡y <strong style="color: #ff2e63;">imprímelo en 3D de verdad!</strong></p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Mira: ¿Qué es la impresión 3D?</p>
+</div>
+<div style="padding-left: 48px; text-align: center;"><iframe style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;" title="YouTube video player" src="https://www.youtube.com/embed/HlvK6DLwCz4" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Mira: Mejores prácticas para impresión 3D</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="text-align: center; margin-bottom: 14px;"><iframe style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;" title="YouTube video player" src="https://www.youtube.com/embed/QdvSzXByi_g" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #ff2e63;">🚨 3 Reglas para una impresión exitosa:</p>
+<div style="display: grid; gap: 6px;">
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #00E676;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">1️⃣ <strong style="color: #00e676;">Base plana</strong> – tu diseño necesita un fondo plano</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #00E676;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">2️⃣ <strong style="color: #00e676;">Sin voladizos</strong> – ¡el plástico no flota en el aire!</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #00E676;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">3️⃣ <strong style="color: #00e676;">¡Itera!</strong> – cada impresión fallida te enseña algo</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">📏 Mide tu dedo</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="display: grid; gap: 6px; margin-bottom: 14px;">
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">✂️ Corta una tira de papel. Enróllala en tu dedo. Marca donde se junta.</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">📏 Mide el papel hasta la marca en <strong style="color: #ff2e63;">centímetros (cm)</strong>.</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">🔄 Multiplica por <strong style="color: #ff2e63;">10</strong> para convertir a <strong style="color: #ff2e63;">milímetros (mm)</strong>. <span style="color: #8899aa;">(Ej: 4.93 cm × 10 = 49.3 mm)</span></p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">➗ Divide entre <strong style="color: #ff2e63;">3.14</strong> = diámetro de tu anillo. <span style="color: #8899aa;">(Ej: 49.3 ÷ 3.14 = 15.7 mm)</span></p>
+</div>
+</div>
+<div style="background: #0D2137; border-radius: 12px; padding: 10px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 8px;" src="../assets/media/Screenshot%202023-11-15%20at%209.53.14%E2%80%AFPM.png" alt="Measuring Finger Size" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826292" data-api-returntype="File" loading="lazy"></div>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Practica diseños de anillos</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="background: #132238; border-radius: 10px; padding: 12px 16px; border-left: 3px solid #00E5FF; margin-bottom: 8px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">👉 Inicia sesión: <a style="color: #00e5ff; text-decoration: underline;" href="https://www.tinkercad.com/joinclass/DYQKB6NGR">tinkercad.com/joinclass/DYQKB6NGR</a></p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 16px; border-left: 3px solid #00E5FF;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">📚 Abre la actividad <strong style="color: #00e5ff;">"Ring"</strong> en nuestra clase, o ve a Learn → <a style="color: #00e5ff; text-decoration: underline;" href="https://www.tinkercad.com/learn/overview/OBOFOUXIRXTM0P4;collectionId=OY5L5E8IRXTI47Z">"3D Print Your Own Ring"</a> → completa las 3 lecciones (básico, diamante, corazón)</p>
+</div>
+</div>
+</div>
+<div style="display: flex; justify-content: flex-end; margin-bottom: 16px;">
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 18px; padding: 12px 18px; max-width: 85%;">
+<p style="margin: 0; font-size: 15px; color: #ffffff;">💡 Después de cada anillo de práctica: <strong>Ctrl+C</strong> para copiarlo antes de empezar la siguiente lección.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">5</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">💍 Diseña tu anillo personalizado</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 10px 0; font-size: 15px; color: #e8ecf1;">Construye tu propio anillo desde cero. Sigue estos pasos:</p>
+<div style="display: grid; gap: 10px; margin-bottom: 14px;">
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">A.</strong> Arrastra un <strong>cilindro</strong> → hazlo <strong style="color: #ff2e63;">Hole</strong> → pon el ancho al diámetro de tu dedo</p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%209.55.55%E2%80%AFPM.png" alt="Cylinder Hole" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826293" data-api-returntype="File" loading="lazy"></div>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">B.</strong> Agrega otro cilindro para el <strong>exterior</strong> → hazlo <strong style="color: #ff2e63;">4 mm más grande</strong></p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%209.57.59%E2%80%AFPM.png" alt="Outer Cylinder" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826294" data-api-returntype="File" loading="lazy"></div>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">C.</strong> Selecciona ambos → pon la profundidad en <strong style="color: #ff2e63;">4 mm</strong></p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%2010.01.20%E2%80%AFPM.png" alt="Scale Both Shapes" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826295" data-api-returntype="File" loading="lazy"></div>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 12px 14px; border-left: 3px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #c0cce0;"><strong style="color: #ff2e63;">D.</strong> Haz clic en <strong>Group</strong> para combinarlos → ahora <strong style="color: #00e5ff;">¡personaliza!</strong> Agrega formas, texto, patrones.</p>
+<div style="background: #0D2137; border-radius: 8px; padding: 8px; text-align: center; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 6px;" src="../assets/media/Screenshot%202023-11-15%20at%2010.02.29%E2%80%AFPM.png" alt="Group Shapes" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2826296" data-api-returntype="File" loading="lazy"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; justify-content: flex-end; margin-bottom: 16px;">
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 18px; padding: 12px 18px; max-width: 85%;">
+<p style="margin: 0; font-size: 15px; color: #ffffff;">💡 ¡Recuerda las 3 reglas! Base plana, sin voladizos, ¡y no tengas miedo de iterar!</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">6</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">📤 Exporta y envía</p>
+</div>
+<div style="padding-left: 48px;">
+<div style="display: grid; gap: 6px;">
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #00E5FF;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;"><strong style="color: #00e5ff;">PNG</strong> → "Send To" → Export as PNG → sube a esta tarea en Canvas</p>
+</div>
+<div style="background: #132238; border-radius: 10px; padding: 10px 14px; border-left: 3px solid #7B61FF;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;"><strong style="color: #7b61ff;">STL</strong> → Deja tu diseño en TinkerCAD – ¡tu maestro/a lo verá desde el panel de la clase para cortarlo e imprimirlo!</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">7</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">💬 Reflexión</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 14px; color: #8899aa;">En los <strong>comentarios</strong> de tu envío, completa esta oración en 2-3 oraciones:</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #ff2e63;">"Si mi anillo no se imprimiera correctamente, lo primero que revisaría es ___ porque..."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;">Banco de Palabras / Word Bank</p>
+<p style="margin: 0; font-size: 14px; color: #c0cce0;"><strong>base plana</strong> • <strong>voladizo</strong> • <strong>tamaño</strong> • <strong>capas</strong> • <strong>diámetro</strong> • <strong>soporte</strong> • <strong>iterar</strong> • <strong>cortar</strong></p>
+</div>
+</div>
+</div>
+<div style="background: #1A1A2E; border: 2px solid #FF2E63; border-radius: 14px; padding: 14px; margin-bottom: 14px;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #ff2e63;">⬆️ SUBE DE NIVEL</p>
+<p style="margin: 0 0 10px 0; font-size: 16px; color: #c0cce0;">¿Terminaste? ¡Diseña un dije para collar! Sigue el tutorial <a style="color: #00e5ff; text-decoration: underline;" href="https://www.tinkercad.com/learn/overview/O9F5MS1J2QEYRJ4">"Create a Fancy Necklace"</a>.</p>
+<div style="text-align: center;">
+<div style="background: #0B1426; border-radius: 10px; padding: 10px; display: inline-block; border: 1px solid #1E3A5F;"><img style="max-width: 100%; height: auto; border-radius: 8px;" src="../assets/media/necklace.png" alt="necklace" data-api-endpoint="https://verizoninnovativelearning.instructure.com/api/v1/courses/22742/files/2885770" data-api-returntype="File" loading="lazy"></div>
+</div>
+</div>
+<div style="background: #0B1426; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #00e676;">✅ ¿Listo?</p>
+<p style="margin: 0; font-size: 14px; color: #c0cce0;">PNG subido + reflexión en comentarios = ¡completo!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<script>window.addEventListener("load",function(){try{parent.postMessage({t:"lesson",title:document.title},"*")}catch(e){}});</script>
+</body></html>

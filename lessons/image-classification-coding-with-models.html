@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coding with Models</title>
+<style>
+  html,body{margin:0;background:#fff}
+  body{padding:18px;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;color:#1a1a1a;line-height:1.5;-webkit-text-size-adjust:100%}
+  img,video,iframe{max-width:100%;height:auto}
+  iframe{border:0;aspect-ratio:16/9;width:100%}
+  a{color:#3949ab}
+  *{box-sizing:border-box}
+</style>
+</head><body>
+<p>&nbsp;</p>
+<div style="background: #0B1426; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;">
+<div style="max-width: 980px; margin: 0 auto; color: #e8ecf1; line-height: 1.5;">
+<div style="background: linear-gradient(135deg, #0D2137, #1A1A3E); border-radius: 20px; padding: 28px; margin-bottom: 16px; text-align: center; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 4px 0; font-size: 11px; color: #00e5ff;   ">⧈ Picture This • AI Week • Days 4 &amp; 5 of 5 ⧈</p>
+<h1 style="margin: 0; font-size: 30px; color: #ffffff;  ">TRAIN IT, THEN CODE IT</h1>
+</div>
+
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 16px; padding: 18px 20px; margin-bottom: 16px;">
+<p style="margin: 0 0 6px 0; font-size: 12px; color: rgba(255,255,255,0.8);   ">🎯 Learning Objective • Objetivo</p>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">I can train an image model and code it in the RAISE Playground so a sprite reacts to me.</p>
+<p style="margin: 8px 0 0 0; font-size: 15px; color: rgba(255,255,255,0.85); font-style: italic;">Puedo entrenar un modelo de imágenes y programarlo en el RAISE Playground para que un personaje reaccione a mí.</p>
+</div>
+
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 16px; border: 1px solid #1E3A5F;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; font-size: 14px;">
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📅 <strong style="color: #00e5ff;">Days 4 &amp; 5 of 5</strong></div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">🛠️ <strong style="color: #00e5ff;">TM + RAISE Playground</strong></div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">⏱️ <strong style="color: #00e5ff;">2 days</strong></div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📦 <strong style="color: #00e5ff;">A coded AI project</strong></div>
+</div>
+</div>
+
+<div class="enhanceable_content tabs">
+<ul style="display: flex; gap: 0; padding-left: 0; margin: 0 0 -2px 0; justify-content: center;">
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00e5ff; font-size: 16px; " href="#tab-english-aiwk45">English</a></li>
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0; margin-left: -2px;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00e5ff; font-size: 16px; " href="#tab-spanish-aiwk45">Español</a></li>
+</ul>
+
+<div id="tab-english-aiwk45" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+<div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #e8ecf1;">📢 You taught an AI to see. Now give it a job: make a dinosaur move when YOU move.</p>
+</div>
+</div>
+
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;   ">Today's words</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;"><strong>import</strong> • <strong>RAISE Playground</strong> • <strong>sprite</strong> • <strong>block code</strong></p>
+</div>
+
+<div style="background: #0B1426; border-radius: 12px; padding: 10px 16px; margin-bottom: 14px; border-left: 4px solid #00E5FF;">
+<p style="margin: 0; font-size: 18px; color: #00e5ff;  ">THURSDAY • PLAN + TRAIN</p>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Open the planning doc, pick your two moves</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Open the planning doc below. Pick what your AI tells apart: <strong>lean left vs right</strong>, <strong>thumbs up vs down</strong>, or your own idea.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Train your model in Teachable Machine</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Go to <a style="color: #00e5ff;" href="https://teachablemachine.withgoogle.com" target="_blank">teachablemachine.withgoogle.com</a>. Name your classes. Take <strong>30+ photos each</strong>. Move around. Click <strong>Train Model</strong>.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Bias check</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Swap with your partner. Works for a different person? Different lighting? Further away? If not, take more photos.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Save your model link</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Click <strong>Export Model → Upload (shareable link)</strong>. Paste the link into your planning doc. You need it Friday.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 12px; padding: 10px 16px; margin-bottom: 14px; border-left: 4px solid #00E676;">
+<p style="margin: 0; font-size: 18px; color: #00e676;  ">FRIDAY • CODE IT</p>
+</div>
+
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 14px; padding: 16px; margin-bottom: 16px; text-align: center;">
+<p style="margin: 0 0 4px 0; font-size: 13px; color: rgba(255,255,255,0.8);  ">Open this first on Friday</p>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">🐔 <a style="color: #ffffff; text-decoration: underline;" href="https://playground.raise.mit.edu/main/?project=https://www.dropbox.com/scl/fi/y2dcc3fxxjmb5hf5pbh7q/Template-TM-in-RAISE-Playground.sb3?rlkey=nglyjkuwa88w4407esc2rccd2&amp;st=88cvjhji&amp;dl=0" target="_blank">RAISE Playground Dinosaur Template</a></p>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Import your model</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Open the template. Find the <strong>image classifier</strong> block. Paste your model link from your planning doc.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Match the class names</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Change the template's class names to match yours, same spelling. The code reads <strong>"when model detects ___"</strong>.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Tell the dinosaur what to do</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Pick a block per class: <strong>move</strong>, <strong>jump</strong>, <strong>change color</strong>, <strong>say something</strong>. Each class does something different.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Run it, test it, bias check</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Green flag. Do your move. Does it obey? Try to break it. Before you share: <strong>did my AI fail anyone?</strong></p>
+</div>
+</div>
+
+<div style="display: flex; justify-content: flex-end; margin-bottom: 18px;">
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 18px; padding: 12px 18px; max-width: 85%;">
+<p style="margin: 0; font-size: 15px; color: #ffffff;">💡 The Playground works like Scratch. Drag blocks, snap them together.</p>
+</div>
+</div>
+
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 18px; border-left: 4px solid #FFD600;">
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #ffd600; ">✋ Stuck?</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">1. Re-read the directions</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">2. Ask a neighbor</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;">3. Raise your hand with a specific question (not "I don't get it")</p>
+</div>
+
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #00e5ff; ">📎 Your planning doc</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">Your copy is attached below. Just open it and start, no need to make a copy.</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;">Fill it in as you plan and train. Turn in your code Friday in the <strong>Day 5</strong> assignment.</p>
+</div>
+
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00e676; ">✅ By the end of Friday:</p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Picked your two classes in the planning doc</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Trained a model, saved the link in your doc</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Imported it into the Playground template</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Dinosaur reacts to at least 2 classes</p>
+</div>
+</div>
+</div>
+
+<div id="tab-spanish-aiwk45" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+<div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #e8ecf1;">📢 Le enseñaste a una AI a ver. Ahora dale un trabajo: haz que un dinosaurio se mueva cuando TÚ te mueves.</p>
+</div>
+</div>
+
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;   ">Palabras de hoy</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;"><strong>import</strong> <em>(importar)</em> • <strong>RAISE Playground</strong> • <strong>sprite</strong> <em>(personaje)</em> • <strong>block code</strong> <em>(código de bloques)</em></p>
+</div>
+
+<div style="background: #0B1426; border-radius: 12px; padding: 10px 16px; margin-bottom: 14px; border-left: 4px solid #00E5FF;">
+<p style="margin: 0; font-size: 18px; color: #00e5ff;  ">JUEVES • PLANEA + ENTRENA</p>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Abre el documento de planeación, elige tus dos movimientos</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Abre el documento de planeación abajo. Elige qué diferencia tu AI: <strong>izquierda vs derecha</strong>, <strong>pulgar arriba vs abajo</strong>, o tu propia idea.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Entrena tu modelo en Teachable Machine</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Ve a <a style="color: #00e5ff;" href="https://teachablemachine.withgoogle.com" target="_blank">teachablemachine.withgoogle.com</a>. Nombra tus clases. Toma <strong>30+ fotos cada una</strong>. Muévete. Haz clic en <strong>Train Model</strong>.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Revisa el sesgo (bias)</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Cambia con tu compañero. ¿Funciona con otra persona? ¿Con otra luz? ¿Más lejos? Si no, toma más fotos.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Guarda el enlace de tu modelo</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Haz clic en <strong>Export Model → Upload (shareable link)</strong>. Pega el enlace en tu documento de planeación. Lo necesitas el viernes.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 12px; padding: 10px 16px; margin-bottom: 14px; border-left: 4px solid #00E676;">
+<p style="margin: 0; font-size: 18px; color: #00e676;  ">VIERNES • PROGRAMA</p>
+</div>
+
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 14px; padding: 16px; margin-bottom: 16px; text-align: center;">
+<p style="margin: 0 0 4px 0; font-size: 13px; color: rgba(255,255,255,0.8);  ">Abre esto primero el viernes</p>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">🐔 <a style="color: #ffffff; text-decoration: underline;" href="https://playground.raise.mit.edu/main/?project=https://www.dropbox.com/scl/fi/y2dcc3fxxjmb5hf5pbh7q/Template-TM-in-RAISE-Playground.sb3?rlkey=nglyjkuwa88w4407esc2rccd2&amp;st=88cvjhji&amp;dl=0" target="_blank">Plantilla del Dinosaurio en RAISE Playground</a></p>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Importa tu modelo</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Abre la plantilla. Busca el bloque <strong>image classifier</strong>. Pega tu enlace del modelo de tu documento de planeación.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Haz coincidir los nombres de las clases</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Cambia los nombres de la plantilla para que coincidan con los tuyos, misma ortografía. El código lee <strong>"when model detects ___"</strong>.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Dile al dinosaurio qué hacer</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Elige un bloque por clase: <strong>moverse</strong>, <strong>saltar</strong>, <strong>cambiar de color</strong>, <strong>decir algo</strong>. Cada clase hace algo distinto.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E676; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px;  flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff; ">Pruébalo, revisa el sesgo</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Bandera verde. Haz tu movimiento. ¿Obedece? Trata de romperlo. Antes de compartir: <strong>¿mi AI le falló a alguien?</strong></p>
+</div>
+</div>
+
+<div style="display: flex; justify-content: flex-end; margin-bottom: 18px;">
+<div style="background: linear-gradient(135deg, #00B8D4, #7B61FF); border-radius: 18px; padding: 12px 18px; max-width: 85%;">
+<p style="margin: 0; font-size: 15px; color: #ffffff;">💡 El Playground funciona como Scratch. Arrastra bloques y únelos.</p>
+</div>
+</div>
+
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 18px; border-left: 4px solid #FFD600;">
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #ffd600; ">✋ ¿Atorado?</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">1. Vuelve a leer las instrucciones</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">2. Pregúntale a un compañero</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;">3. Levanta la mano con una pregunta específica (no "no entiendo")</p>
+</div>
+
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #00e5ff; ">📎 Tu documento de planeación</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">Tu copia ya está abajo. Solo ábrela y empieza, no necesitas hacer una copia.</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;">Llénala mientras planeas y entrenas. Entrega tu código el viernes en la tarea del <strong>Día 5</strong>.</p>
+</div>
+
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00e676; ">✅ Al final del viernes:</p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Elegí mis dos clases en el documento de planeación</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Entrené un modelo, guardé el enlace en mi documento</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Lo importé a la plantilla del Playground</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ El dinosaurio reacciona a al menos 2 clases</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<script>window.addEventListener("load",function(){try{parent.postMessage({t:"lesson",title:document.title},"*")}catch(e){}});</script>
+</body></html>
