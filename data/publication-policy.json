@@ -1,0 +1,63 @@
+{
+  "course_id": 23402,
+  "default_visibility": "public",
+  "canvas_route_aliases": {
+    "teacher-guide-career-fair-project-4": {
+      "target_module_item_id": 2641565,
+      "reason": "The Career + Communication guide still uses the former Career Fair guide slug. The current guide is the same intended destination."
+    }
+  },
+  "empty_link_repairs": {
+    "2634352": [
+      {
+        "kind": "file",
+        "target_file_id": 3180499,
+        "reason": "The inherited Spanish Career Fair page lost its planning-sheet file target. The current district research organizer is the intended public resource."
+      }
+    ],
+    "2634354": [
+      {
+        "kind": "url",
+        "target": "https://www.youtube.com/watch?v=SAaLoXmpUig",
+        "reason": "The fallback link beside the named Storytelling in CoSpaces tutorial was empty."
+      },
+      {
+        "kind": "url",
+        "target": "https://edu.cospaces.io/NTU-AZP",
+        "reason": "The remix/share link was empty; the same page embeds this exact CoSpaces project as its example."
+      }
+    ]
+  },
+  "missing_route_notices": {
+    "g1ad05ff21d0144f521a77d44ff19add6": "The source course does not currently contain the linked Spanish Vision Board page."
+  },
+  "placeholder_link_repairs": {
+    "YOUR_CANVAS_LINK_MODULE1": {"target_module_item_id": 2634277},
+    "YOUR_CANVAS_LINK_MODULE2": {"target_module_item_id": 2634278},
+    "YOUR_CANVAS_LINK_MODULE3": {"target_module_item_id": 2634279},
+    "YOUR_CANVAS_LINK_MODULE4": {"target_module_item_id": 2634280},
+    "YOUR_CANVAS_LINK_MODULE5": {"target_module_item_id": 2634280}
+  },
+  "file_download_aliases": {
+    "3133443": {
+      "source_file_id": 3133484,
+      "reason": "The referenced Canvas file record returns 404, while this byte-identical course copy remains downloadable."
+    },
+    "3133572": {
+      "source_file_id": 3133484,
+      "reason": "The referenced Canvas file record returns 400, while this byte-identical course copy remains downloadable."
+    }
+  },
+  "protected_items": [
+    {
+      "module_item_id": 2633987,
+      "title": "OPTION · About Me Smartphone",
+      "expected_file_ids": [
+        3133512,
+        3140001
+      ],
+      "public_notice": "This optional activity is available only inside the district Canvas course.",
+      "reason": "Creator-approved district distribution does not include public web redistribution."
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Lesson 3: Smart Machines</title>
+  <meta name="description" content="⬡ AIR · Intro to AI · Lesson 3 ⬡ SMART MACHINES Teach a computer to tell two things apart. 📅 Intro to AI · Lesson 3 🛠️ Teachable Machine ⏱️ ~50 min 📦 Model">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lesson-page">
+
+<header class="lesson-header">
+  <div class="lesson-header__inner">
+    <a class="back-link" href="../modules/72575.html">← SW4 · AIR Unit 0: Intro to AI</a>
+    <div class="lesson-kicker"><span>Assignment</span><span>core</span><span>Published</span></div>
+    <h1>Lesson 3: Smart Machines</h1>
+    <dl class="lesson-facts"><div><dt>Points</dt><dd>0</dd></div><div><dt>Submission</dt><dd>external tool</dd></div><div><dt>Gradebook</dt><dd>Formative / omitted</dd></div><div><dt>Canvas state</dt><dd>Published</dd></div></dl>
+  </div>
+</header>
+<main class="lesson-main">
+  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<article class="canvas-content"><p>&nbsp;</p>
+<div style="background: #0B1426; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;">
+<div style="max-width: 980px; margin: 0 auto; color: #E8ECF1; line-height: 1.5;">
+<div style="background: linear-gradient(135deg, #0D2137, #1A1A3E); border-radius: 20px; padding: 28px; margin-bottom: 16px; text-align: center; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 4px 0; font-size: 11px; color: #00E5FF;"><strong>⬡ AIR · Intro to AI · Lesson 3 ⬡</strong></p>
+<h1 style="margin: 0; font-size: 30px; color: #ffffff;">SMART MACHINES</h1>
+<p style="margin: 8px 0 0 0; font-size: 16px; color: #8899AA;">Teach a computer to tell two things apart.</p>
+</div>
+
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 16px; border: 1px solid #1E3A5F;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; font-size: 14px;">
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📅 <strong style="color: #00E5FF;">Intro to AI · Lesson 3</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">🛠️ <strong style="color: #00E5FF;">Teachable Machine</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">⏱️ <strong style="color: #00E5FF;">~50 min</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📦 <strong style="color: #00E5FF;">Model link + screenshots</strong>
+</div>
+</div>
+</div>
+
+<div class="enhanceable_content tabs">
+<ul style="display: flex; gap: 0; padding-left: 0; margin: 0 0 -2px 0; justify-content: center;">
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00E5FF; font-size: 16px;" href="#tab-english-fill2"><strong>English</strong></a></li>
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0; margin-left: -2px;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00E5FF; font-size: 16px;" href="#tab-spanish-fill2"><strong>Español</strong></a></li>
+</ul>
+
+<div id="tab-english-fill2" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+
+<div class="phase-5e-engage" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #E8ECF1;">📢 Your phone unlocks when it sees your face. A camera at the store notices when a shelf is empty. Nobody wrote a rule for your face or that shelf — somebody showed the machine enough examples until it caught on. Today you are the one showing the examples.</p>
+</div>
+</div>
+
+<div class="phase-5e-explain" style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Today's words</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>artificial intelligence</strong> • <strong>machine learning</strong> • <strong>model</strong> • <strong>training</strong> • <strong>image recognition</strong></p>
+</div>
+
+<div class="phase-5e-explore" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>1</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Do not forget the EdPuzzle</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Start with the <a style="color: #00E5FF;" href="../lessons/2634129.html" target="_blank" data-api-endpoint="../lessons/2634129.html" data-api-returntype="Assignment">EdPuzzle: AIR Lesson 3 — Smart Machines</a>. Watch it and answer the embedded questions. It sets up everything you build below.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>2</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Gather two objects</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">You need <strong>two different objects</strong> you can hold up to a camera. A ball and an apple work fine. So does a plastic toy, a picture from a magazine, or a marine organism you draw yourself.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>3</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Open Teachable Machine</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Go to <a style="color: #00E5FF;" href="https://teachablemachine.withgoogle.com" target="_blank">teachablemachine.withgoogle.com</a> and click <strong>Get Started</strong>. Then click <strong>Image Project</strong> to start a new image project.</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #8899AA;">When the site asks to use your webcam, click <strong>Allow</strong> at the top left of your screen. If you see "There was an error opening your webcam," check that permission again or switch to uploading images instead.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>4</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Name your two classes and record samples</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Click the pencil icon next to <strong>Class 1</strong> and type the name of your first object (like "Ball"). Do the same for <strong>Class 2</strong> (like "Apple").</p>
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Hold your object in front of the webcam, click and <strong>hold down Hold to Record</strong>, and turn the object so the camera sees every side. Let go at around <strong>100 images</strong>. Then repeat the whole thing for your second object.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>5</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Train your model</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Click <strong>Train Model</strong> and wait for the computer to finish training. Do not switch tabs while it works.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>6</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Export your model and grab your link</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Click <strong>Export Model</strong>. In the preview <strong>Output</strong> window, hold up one object and then the other and watch the percentage sliders decide which one it is seeing.</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Choose <strong>Upload (shareable link)</strong>, then click <strong>Upload my model</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Find <strong>Your sharable link</strong>, highlight the URL in the gray box and copy it (Ctrl + C on a PC)</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Open a new tab, paste it (Ctrl + V) and press Enter to see your model live online</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• You can also use <strong>Download my model</strong> to keep a copy</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>7</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Turn in your link and your screenshots</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Share your model link, plus a <strong>screenshot of each object</strong> being recognized so your teacher can see the percentages your model gave.</p>
+</div>
+</div>
+
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FFD600;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FFD600;"><strong>🎥 Watch the Smart Machines walkthrough</strong></p>
+<p style="margin: 0 0 12px 0; font-size: 16px; color: #C0CCE0;">If you missed class or you got stuck partway through, this walks you through the whole build. Headphones on.</p>
+<div style="text-align: center;">
+<iframe title="YouTube video player" src="https://www.youtube.com/embed/Htc-WXQRsR8?si=wkOtv4UBTSlnIL68" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;"></iframe>
+</div>
+</div>
+
+<div class="phase-5e-extend" style="background: #132238; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FF2E63;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FF2E63;"><strong>🔍 TEST IT HONESTLY</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Do not stop at "it worked once." Push on it and watch the percentages.</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Hold up each object and move it around — closer, farther, turned sideways</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Try a different background or different lighting</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Watch the two sliders. Is it confident, or is it guessing 51% to 49%?</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• If it keeps guessing wrong, go back and record more samples from more angles</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• If the webcam will not open at all, check permissions or switch to uploading images</p>
+<p style="margin: 0 0 0px 0; font-size: 14px; color: #8899AA; font-style: italic;">A model is only as good as the examples you gave it.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #00E5FF;"><strong>✍️ REFLECT AND ANSWER TWO</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Answer <strong>two</strong> of these three questions in complete sentences. The sentence starters are there if you want them.</p>
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #C0CCE0;"><strong>1. How well did your model predict the images correctly?</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• My model predicted the images ______ because ______.</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• One example of how well my model predicted the images is ______.</p>
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #C0CCE0;"><strong>2. How do you think you could improve this model?</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• I think I could improve this model by ______ because ______.</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• One way to make the model better would be to ______.</p>
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #C0CCE0;"><strong>3. What are other uses for AI image recognition you can think of?</strong></p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• Another way AI image recognition could be used is ______.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<p style="margin: 0 0 10px 0; font-size: 19px; color: #ffffff;"><strong>💬 Reflect</strong></p>
+<div style="padding-left: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 15px; color: #8899AA;">In the <strong>comments</strong> of your submission, finish this in 2-3 sentences:</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #FF2E63;">"My model told ______ apart from ______ by ______. It got confused when ______, and I could make it better by ______."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Word Bank</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>model</strong> • <strong>training</strong> • <strong>samples</strong> • <strong>class</strong> • <strong>predict</strong> • <strong>confidence</strong> • <strong>image recognition</strong> • <strong>machine learning</strong></p>
+</div>
+</div>
+</div>
+
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00E676;"><strong>✅ By the end of today:</strong></p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Finished the Smart Machines EdPuzzle</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Trained a model with two named classes and about 100 samples each</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Uploaded my model and copied my shareable link</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Shared a screenshot of each object being recognized</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Answered two reflection questions in complete sentences</p>
+</div>
+</div>
+
+</div>
+
+<div id="tab-spanish-fill2" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+
+<div class="phase-5e-engage" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #E8ECF1;">📢 Tu teléfono se desbloquea cuando ve tu cara. Una cámara en la tienda se da cuenta cuando un estante está vacío. Nadie escribió una regla para tu cara ni para ese estante: alguien le mostró a la máquina suficientes ejemplos hasta que agarró el patrón. Hoy tú eres quien le muestra los ejemplos.</p>
+</div>
+</div>
+
+<div class="phase-5e-explain" style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Palabras de hoy</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>artificial intelligence</strong> <em>(inteligencia artificial)</em> • <strong>machine learning</strong> <em>(aprendizaje automático)</em> • <strong>model</strong> <em>(modelo)</em> • <strong>training</strong> <em>(entrenamiento)</em> • <strong>image recognition</strong> <em>(reconocimiento de imágenes)</em></p>
+</div>
+
+<div class="phase-5e-explore" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>1</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>No se te olvide el EdPuzzle</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Empieza con el <a style="color: #00E5FF;" href="../lessons/2634129.html" target="_blank" data-api-endpoint="../lessons/2634129.html" data-api-returntype="Assignment">EdPuzzle: AIR Lesson 3 — Smart Machines</a>. Míralo y contesta las preguntas del video. Ahí se explica todo lo que vas a construir abajo.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>2</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Junta dos objetos</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Necesitas <strong>dos objetos diferentes</strong> que puedas sostener frente a la cámara. Una pelota y una manzana funcionan bien. También un juguete de plástico, una foto de una revista o un organismo marino que tú mismo dibujes.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>3</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Abre Teachable Machine</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Ve a <a style="color: #00E5FF;" href="https://teachablemachine.withgoogle.com" target="_blank">teachablemachine.withgoogle.com</a> y haz clic en <strong>Get Started</strong>. Luego haz clic en <strong>Image Project</strong> para empezar un proyecto de imágenes nuevo.</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #8899AA;">Cuando el sitio te pida usar tu cámara, haz clic en <strong>Allow</strong> (Permitir) arriba a la izquierda de tu pantalla. Si ves "There was an error opening your webcam", revisa otra vez ese permiso o mejor sube las imágenes.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>4</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Nombra tus dos clases y graba muestras</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Haz clic en el ícono del lápiz junto a <strong>Class 1</strong> y escribe el nombre de tu primer objeto (como "Ball"). Haz lo mismo con <strong>Class 2</strong> (como "Apple").</p>
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Sostén tu objeto frente a la cámara, haz clic y <strong>mantén presionado Hold to Record</strong>, y gira el objeto para que la cámara vea todos sus lados. Suelta como a las <strong>100 imágenes</strong>. Luego repite todo con tu segundo objeto.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>5</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Entrena tu modelo</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Haz clic en <strong>Train Model</strong> y espera a que la computadora termine de entrenar. No cambies de pestaña mientras trabaja.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>6</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Exporta tu modelo y consigue tu link</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Haz clic en <strong>Export Model</strong>. En la ventana de <strong>Output</strong>, levanta primero un objeto y luego el otro, y observa cómo las barras de porcentaje deciden cuál está viendo.</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Escoge <strong>Upload (shareable link)</strong> y luego haz clic en <strong>Upload my model</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Busca <strong>Your sharable link</strong>, selecciona la URL en el recuadro gris y cópiala (Ctrl + C en PC)</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Abre una pestaña nueva, pégala (Ctrl + V) y presiona Enter para ver tu modelo en línea</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• También puedes usar <strong>Download my model</strong> para guardar una copia</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>7</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Entrega tu link y tus capturas de pantalla</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Comparte el link de tu modelo y una <strong>captura de pantalla de cada objeto</strong> siendo reconocido, para que tu maestra vea los porcentajes que dio tu modelo.</p>
+</div>
+</div>
+
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FFD600;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FFD600;"><strong>🎥 Mira el recorrido de Smart Machines</strong></p>
+<p style="margin: 0 0 12px 0; font-size: 16px; color: #C0CCE0;">Si faltaste a clase o te atoraste a la mitad, aquí te lleva por todo el proceso. Ponte los audífonos.</p>
+<div style="text-align: center;">
+<iframe title="YouTube video player" src="https://www.youtube.com/embed/Htc-WXQRsR8?si=wkOtv4UBTSlnIL68" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;"></iframe>
+</div>
+</div>
+
+<div class="phase-5e-extend" style="background: #132238; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FF2E63;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FF2E63;"><strong>🔍 PRUÉBALO DE VERDAD</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">No te quedes en "funcionó una vez". Ponlo a prueba y observa los porcentajes.</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Levanta cada objeto y muévelo: más cerca, más lejos, de lado</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Prueba con otro fondo o con otra luz</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Observa las dos barras. ¿Está seguro o está adivinando 51% contra 49%?</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Si sigue equivocándose, regresa y graba más muestras desde más ángulos</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• Si la cámara no abre para nada, revisa los permisos o mejor sube imágenes</p>
+<p style="margin: 0 0 0px 0; font-size: 14px; color: #8899AA; font-style: italic;">Un modelo solo es tan bueno como los ejemplos que le diste.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #00E5FF;"><strong>✍️ REFLEXIONA Y CONTESTA DOS</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Contesta <strong>dos</strong> de estas tres preguntas con oraciones completas. Los inicios de oración están ahí por si los quieres usar.</p>
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #C0CCE0;"><strong>1. ¿Qué tan bien predijo tu modelo las imágenes correctamente?</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• My model predicted the images ______ because ______.</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• One example of how well my model predicted the images is ______.</p>
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #C0CCE0;"><strong>2. ¿Cómo crees que podrías mejorar este modelo?</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• I think I could improve this model by ______ because ______.</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• One way to make the model better would be to ______.</p>
+<p style="margin: 0 0 4px 0; font-size: 16px; color: #C0CCE0;"><strong>3. ¿Cuáles son otros usos para el reconocimiento de imágenes por IA que se te ocurran?</strong></p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• Another way AI image recognition could be used is ______.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<p style="margin: 0 0 10px 0; font-size: 19px; color: #ffffff;"><strong>💬 Reflexiona</strong></p>
+<div style="padding-left: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 15px; color: #8899AA;">En los <strong>comentarios</strong> de tu envío, completa esto en 2-3 oraciones <strong>en inglés</strong>:</p>
+<p style="margin: 0 0 8px 0; font-size: 13px; color: #666666; font-style: italic;">(Mi modelo distinguió ______ de ______ al ______. Se confundió cuando ______, y podría mejorarlo si ______.)</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #FF2E63;">"My model told ______ apart from ______ by ______. It got confused when ______, and I could make it better by ______."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Word Bank / Banco de Palabras</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>model</strong> <em>(modelo)</em> • <strong>training</strong> <em>(entrenamiento)</em> • <strong>samples</strong> <em>(muestras)</em> • <strong>class</strong> <em>(clase)</em> • <strong>predict</strong> <em>(predecir)</em> • <strong>confidence</strong> <em>(confianza)</em> • <strong>image recognition</strong> <em>(reconocimiento de imágenes)</em> • <strong>machine learning</strong> <em>(aprendizaje automático)</em></p>
+</div>
+</div>
+</div>
+
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00E676;"><strong>✅ Al final de hoy:</strong></p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Terminé el EdPuzzle de Smart Machines</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Entrené un modelo con dos clases con nombre y como 100 muestras cada una</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Subí mi modelo y copié mi link para compartir</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Compartí una captura de pantalla de cada objeto siendo reconocido</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Contesté dos preguntas de reflexión con oraciones completas</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<p>&nbsp;</p></article></main>
+<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+<script src="../app.js" defer></script>
+</body>
+</html>

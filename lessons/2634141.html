@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Day 3: Bias in Training Data</title>
+  <meta name="description" content="Machine Learning · Day 3 of 5 Bias in Training Data Make a model fail under conditions its training data did not represent, then propose a specific fix. To">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lesson-page">
+
+<header class="lesson-header">
+  <div class="lesson-header__inner">
+    <a class="back-link" href="../modules/72577.html">← SW4 · Machine Learning Week</a>
+    <div class="lesson-kicker"><span>Assignment</span><span>core</span><span>Unpublished in Canvas</span></div>
+    <h1>Day 3: Bias in Training Data</h1>
+    <dl class="lesson-facts"><div><dt>Points</dt><dd>5</dd></div><div><dt>Submission</dt><dd>upload, media recording</dd></div><div><dt>Canvas state</dt><dd>Unpublished</dd></div></dl>
+  </div>
+</header>
+<main class="lesson-main">
+  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<article class="canvas-content"><div style="max-width:850px;margin:0 auto;color:#1F2430;font-size:16px;line-height:1.55;">
+<div style="background:#132A20;border-radius:12px;padding:20px;margin:0 0 14px 0;">
+<p style="margin:0 0 6px 0;color:#86EFAC;font-family:monospace;"><strong>Machine Learning · Day 3 of 5</strong></p>
+<h1 style="margin:0 0 6px 0;color:#ffffff;font-size:28px;">Bias in Training Data</h1>
+<p style="margin:0;color:#E2E8F0;">Make a model fail under conditions its training data did not represent, then propose a specific fix.</p>
+</div>
+<ul style="margin:0 0 16px 0;padding:10px 14px 10px 34px;background:#F1F5F9;border:1px solid #CBD5E1;border-radius:10px;">
+<li>
+<strong>Tool:</strong> Code.org Lesson 5 and Teachable Machine</li>
+<li>
+<strong>Time:</strong> one class period</li>
+<li>
+<strong>Turn in:</strong> failure log, proposed data fix, and reflection</li>
+</ul>
+<div class="enhanceable_content tabs">
+<ul style="margin:0;padding-left:20px;">
+<li><a href="#en-ml3"><strong>English</strong></a></li>
+<li><a href="#es-ml3"><strong>Español</strong></a></li>
+</ul>
+<div id="en-ml3" style="border:1px solid #CBD5E1;border-radius:10px;padding:18px;">
+<h2 style="margin:0 0 10px 0;color:#166534;font-size:22px;">English</h2>
+<p style="margin:0 0 16px 0;"><strong>Words for today:</strong> algorithmic bias · representation · fairness</p>
+<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">What to do</h3>
+<ol style="margin:0 0 16px 0;padding-left:24px;">
+<li style="margin:0 0 10px 0;">Complete the assigned parts of <a href="https://studio.code.org/s/how-ai-works-2023/lessons/5" target="_blank"><strong>Code.org How AI Works, Lesson 5</strong></a>.</li>
+<li style="margin:0 0 10px 0;">Open <a href="https://teachablemachine.withgoogle.com/" target="_blank"><strong>Teachable Machine</strong></a>. Train a two-label model with one intentional limitation, such as one background, one lighting condition, or unequal label counts.</li>
+<li style="margin:0 0 10px 0;">Test the model outside that condition. Record at least four failures with the actual label, prediction, and confidence score.</li>
+<li style="margin:0 0 10px 0;">Name who or what the training data represents poorly. Describe one real consequence if a higher-stakes system had the same gap.</li>
+<li style="margin:0 0 10px 0;">Propose a fix by naming the exact examples you would add, remove, or rebalance.</li>
+</ol>
+<div style="background:#FFF7D6;border-radius:10px;padding:12px 14px;margin:0 0 16px 0;">
+<h3 style="margin:0 0 6px 0;font-size:18px;">If you get stuck</h3>
+<ol style="margin:0;padding-left:24px;">
+<li>A biased model does not have to fail every time. Look for who or what fails more often.</li>
+<li>Do not write only 'add more data.' Name the missing examples.</li>
+<li>A high confidence score can still belong to a wrong prediction.</li>
+</ol>
+</div>
+<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Before you submit</h3>
+<ul style="margin:0 0 16px 0;padding-left:24px;">
+<li>Upload the four-test failure log and your specific data fix.</li>
+<li>Complete the reflection in the submission comment.</li>
+</ul>
+<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Reflection</h3>
+<p style="margin:0 0 8px 0;">Write 2 or 3 sentences: "My training data did not represent ____, so the model failed when ____. I would reduce that bias by adding or changing ____."</p>
+<p style="margin:0;"><strong>Word bank:</strong> algorithmic bias · representation · fairness · dataset · confidence · harm</p>
+</div>
+<div id="es-ml3" style="border:1px solid #CBD5E1;border-radius:10px;padding:18px;">
+<h2 style="margin:0 0 10px 0;color:#166534;font-size:22px;">Español</h2>
+<p style="margin:0 0 16px 0;"><strong>Palabras de hoy:</strong> algorithmic bias (sesgo algorítmico) · representation (representación) · fairness (equidad)</p>
+<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Qué hacer</h3>
+<ol style="margin:0 0 16px 0;padding-left:24px;">
+<li style="margin:0 0 10px 0;">Completa las partes asignadas de <a href="https://studio.code.org/s/how-ai-works-2023/lessons/5" target="_blank"><strong>Code.org How AI Works, Lesson 5</strong></a>.</li>
+<li style="margin:0 0 10px 0;">Abre <a href="https://teachablemachine.withgoogle.com/" target="_blank"><strong>Teachable Machine</strong></a>. Entrena un modelo de dos etiquetas con una limitación intencional, como un solo fondo, una sola iluminación o cantidades desiguales.</li>
+<li style="margin:0 0 10px 0;">Prueba el modelo fuera de esa condición. Anota al menos cuatro fallas con la etiqueta real, la predicción y el nivel de confianza.</li>
+<li style="margin:0 0 10px 0;">Nombra a quién o qué representan mal los datos. Describe una consecuencia real si un sistema de mayor riesgo tuviera la misma falta.</li>
+<li style="margin:0 0 10px 0;">Propón una solución nombrando los ejemplos exactos que agregarías, quitarías o equilibrarías.</li>
+</ol>
+<div style="background:#FFF7D6;border-radius:10px;padding:12px 14px;margin:0 0 16px 0;">
+<h3 style="margin:0 0 6px 0;font-size:18px;">Si te atoras</h3>
+<ol style="margin:0;padding-left:24px;">
+<li>Un modelo con sesgo no tiene que fallar siempre. Busca quién o qué falla con más frecuencia.</li>
+<li>No escribas solamente 'agregar más datos.' Nombra los ejemplos que faltan.</li>
+<li>Un nivel de confianza alto todavía puede acompañar una predicción incorrecta.</li>
+</ol>
+</div>
+<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Antes de entregar</h3>
+<ul style="margin:0 0 16px 0;padding-left:24px;">
+<li>Sube el registro de cuatro pruebas y tu solución específica para los datos.</li>
+<li>Completa la reflexión en el comentario.</li>
+</ul>
+<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Reflexión</h3>
+<p style="margin:0 0 8px 0;">Escribe 2 o 3 oraciones: "Mis datos no representaron ____, así que el modelo falló cuando ____. Reduciría ese sesgo al agregar o cambiar ____."</p>
+<p style="margin:0;"><strong>Banco de palabras:</strong> sesgo algorítmico · representación · equidad · conjunto de datos · confianza · daño</p>
+</div>
+</div>
+</div></article></main>
+<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+<script src="../app.js" defer></script>
+</body>
+</html>

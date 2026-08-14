@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Lesson 4: Interactive AR Games</title>
+  <meta name="description" content="◈ Augmented Reality • Lesson 4 ◈ 🎮 AR Arcade Game Project 🕹️ Create Your Own Interactive Pinball Game with Physics! English Español 🌌 Overview &amp; Example Yo">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lesson-page">
+
+<header class="lesson-header">
+  <div class="lesson-header__inner">
+    <a class="back-link" href="../modules/72586.html">← SW6 · Augmented Reality with MergeCube</a>
+    <div class="lesson-kicker"><span>Assignment</span><span>core</span><span>Published</span></div>
+    <h1>Lesson 4: Interactive AR Games</h1>
+    <dl class="lesson-facts"><div><dt>Points</dt><dd>5</dd></div><div><dt>Submission</dt><dd>url, upload</dd></div><div><dt>Canvas state</dt><dd>Published</dd></div></dl>
+  </div>
+</header>
+<main class="lesson-main">
+  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<article class="canvas-content"><p>&nbsp;</p>
+<div style="background: radial-gradient(circle at 10px 10px, rgba(255,255,255,.18) 1.3px, transparent 1.5px) 0 0/14px 14px, linear-gradient(135deg, #4A148C, #00BFA5); background-attachment: fixed, scroll; padding: 18px; border-radius: 18px;">
+<div style="max-width: 980px; margin: 0 auto; font-family: 'Segoe UI', Arial, sans-serif; color: #1A1A1A; line-height: 1.45;">
+<div style="position: relative; overflow: hidden; background-image: radial-gradient(circle at 8px 8px, rgba(255,255,255,.9) 1.2px, transparent 1.3px), radial-gradient(circle at 6px 6px, rgba(255,255,255,.7) 1px, transparent 1.1px), linear-gradient(135deg,#4A148C 0%, #6A1B9A 55%, #00BFA5 100%); background-position: 0 0, 0 0, center; color: #FFFFFF; padding: 28px 22px; border-radius: 18px;">
+<p style="margin: 0 0 8px 0; font-size: 12px; text-align: center; color: #FFFFFF;"><strong>◈ Augmented Reality • Lesson 4 ◈</strong></p>
+<h1 style="margin: 0 0 6px 0; font-size: 38px; text-align: center;">🎮 AR Arcade Game Project 🕹️</h1>
+<p style="margin: 0; font-size: 16px; text-align: center;">Create Your Own Interactive Pinball Game with Physics!</p>
+</div>
+<div class="enhanceable_content tabs" style="margin-top: 14px;">
+<ul style="display: flex; gap: 8px; flex-wrap: wrap; padding-left: 0; margin: 12px 0; justify-content: center;">
+<li style="list-style: none; border-radius: 12px; background: #4A148C;"><a style="display: block; padding: 10px 14px; text-decoration: none; color: #FFFFFF; font-size: 18px;" href="#tab-english-ar4">English</a></li>
+<li style="list-style: none; border-radius: 12px; background: #00796B;"><a style="display: block; padding: 10px 14px; text-decoration: none; color: #FFFFFF; font-size: 18px;" href="#tab-spanish-ar4">Español</a></li>
+</ul>
+<div id="tab-english-ar4" style="border: 2px solid #4A148C; border-radius: 14px; padding: 16px; background: #FFFFFF;">
+<div style="background: #FFFFFF; padding: 18px; border-radius: 12px; margin-bottom: 14px; border: 2px solid #00BFA5;">
+<h2 style="margin: 0 0 10px 0; color: #4A148C; font-size: 24px;">🌌 Overview &amp; Example</h2>
+<p style="margin: 0 0 12px 0; font-size: 16px;">You will build an AR arcade game on the Merge Cube in Delightex - pinball, a marble maze, or something you invent.</p>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px; margin-bottom: 12px; border: 2px solid #00BFA5;">
+<strong style="color: #4A148C; font-size: 18px;">🔗 Access Delightex:</strong>
+<p style="margin: 8px 0; text-align: center;"><a style="display: inline-block; background: #00796B; color: #FFFFFF; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-size: 18px;" href="https://edu.delightex.com/" target="_blank">🚀 Open Delightex</a></p>
+<p style="margin: 8px 0 0 0; font-size: 14px; text-align: center; color: #5A5A5A;"><strong style="background: #fff8e1; border: 1px dashed #f0a500; border-radius: 6px; padding: 2px 10px;">ask your teacher</strong> for your class link.</p>
+<p style="margin: 8px 0 0 0; font-size: 14px; text-align: center; color: #5A5A5A;">Remember: Sign in with Microsoft using your <strong>@stu.irvingisd.net</strong> email</p>
+</div>
+<div style="background: #FFFFFF; padding: 12px; border-radius: 10px; margin-bottom: 12px;">
+<strong style="color: #4A148C;">🎮 Explore the Example Game:</strong>
+<p style="margin: 8px 0;">Check out this Space Pinball game. Notice how physics and movement make it interactive.</p>
+<div style="text-align: center; margin-top: 10px;"><iframe style="max-width: 100%; border-radius: 10px; border: 0;" src="https://edu.cospaces.io/PTL-XWL" width="640" height="480" loading="lazy"></iframe></div>
+</div>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px;">
+<strong style="color: #4A148C; font-size: 17px;">⚙️ Understanding Delightex Physics</strong>
+<p style="margin: 8px 0; font-size: 16px;">Delightex has built-in physics. You can:</p>
+<ul style="margin: 8px 0 0 18px; padding-left: 0; font-size: 15px;">
+<li style="margin-bottom: 6px;">Turn on <strong>gravity</strong> to make objects fall</li>
+<li style="margin-bottom: 6px;">Control how much objects <strong>weigh, roll, and bounce</strong>
+</li>
+<li style="margin-bottom: 6px;">Make platforms <strong>move when clicked</strong>
+</li>
+</ul>
+<p style="margin: 8px 0 0 0; font-size: 16px; font-style: italic; color: #4A148C;">💡 Tip: Double-click any object and select "Physics" to see all the options.</p>
+</div>
+</div>
+<div style="background: #FFFFFF; padding: 18px; border-radius: 12px; margin-bottom: 14px; border: 2px solid #00BFA5;">
+<h2 style="margin: 0 0 10px 0; color: #4A148C; font-size: 24px;">📚 Tutorial &amp; Project Requirements</h2>
+<p style="margin: 0 0 12px 0; font-size: 16px;">Follow the activity worksheet and watch the tutorial to build a Merge Cube game like "Space Pinball".</p>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px; margin-bottom: 12px;">
+<strong style="color: #4A148C; font-size: 18px;">✅ Project Requirements:</strong>
+<p style="margin: 8px 0; font-size: 16px;">Your Delightex Merge Cube game must include:</p>
+<ol style="margin: 8px 0 0 18px; padding-left: 0; font-size: 16px;">
+<li style="margin-bottom: 8px;">
+<strong>Use Physics</strong> - Enable the "Physics" option in Delightex</li>
+<li style="margin-bottom: 8px;">
+<strong>At least 10 parts</strong> from the library (platforms, obstacles, decorations)</li>
+<li style="margin-bottom: 8px;">
+<strong>Clear goal/objective</strong> - Example: move the ball from start to finish</li>
+</ol>
+<p style="margin: 12px 0 0 0; font-size: 16px; font-style: italic; color: #4A148C;">Your game could be a marble maze, pinball, or any arcade game you invent.</p>
+</div>
+<div style="background: #FFFFFF; padding: 12px; border-radius: 10px; margin-bottom: 12px;">
+<strong style="color: #4A148C;">🎥 Tutorial Video:</strong>
+<p style="margin: 8px 0;">Watch this tutorial and follow along to build your AR pinball game:</p>
+<div style="text-align: center; margin-top: 10px;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/ubjMQxGDpyk?si=Oby1edLaWUfIi2cC" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+</div>
+<div style="background: #EDE7F6; padding: 14px; border-radius: 10px; border: 2px solid #4A148C;">
+<strong style="color: #4A148C; font-size: 17px;">⚠️ Important: physics script</strong>
+<p style="margin: 8px 0; font-size: 16px;">To make physics run properly in your game, you <strong>MUST</strong> add this script:</p>
+<div style="background: #1A1A1A; padding: 12px; border-radius: 8px; margin-top: 8px;"><code style="color: #00BFA5; font-size: 16px; font-family: 'Courier New', monospace;">Physics.realTime = true;</code></div>
+<p style="margin: 8px 0 0 0; font-size: 14px; font-style: italic; color: #4A148C;">Add this in the script editor before testing your game.</p>
+</div>
+</div>
+<div style="background: #FFFFFF; padding: 18px; border-radius: 12px; margin-bottom: 14px; border: 2px solid #00BFA5;">
+<h2 style="margin: 0 0 10px 0; color: #4A148C; font-size: 24px;">⚔️ Optional Challenge</h2>
+<p style="margin: 0 0 12px 0; font-size: 16px;">Finished early? Push it further:</p>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px;">
+<strong style="color: #4A148C;">🏆 Challenge Ideas:</strong>
+<ul style="margin: 8px 0 0 18px; padding-left: 0; font-size: 16px;">
+<li style="margin-bottom: 8px;">Add <strong>multiple levels</strong> using the "change scene" feature</li>
+<li style="margin-bottom: 8px;">Add <strong>more physics properties</strong> to change how the game plays</li>
+<li style="margin-bottom: 8px;">Create <strong>moving obstacles</strong> using CoBlocks</li>
+<li style="margin-bottom: 8px;">Add a <strong>scoring system</strong> or timer</li>
+</ul>
+</div>
+</div>
+<div style="background: #00796B; padding: 14px; border-radius: 12px; text-align: center;">
+<p style="margin: 0; font-size: 16px; color: #FFFFFF;"><strong>🎮 Build it, play it, then submit. 🌟</strong></p>
+</div>
+</div>
+<div id="tab-spanish-ar4" style="border: 2px solid #4A148C; border-radius: 14px; padding: 16px; background: #FFFFFF;">
+<div style="background: #FFFFFF; padding: 18px; border-radius: 12px; margin-bottom: 14px; border: 2px solid #00BFA5;">
+<h2 style="margin: 0 0 10px 0; color: #4A148C; font-size: 24px;">🌌 Resumen y Ejemplo</h2>
+<p style="margin: 0 0 12px 0; font-size: 16px;">Vas a construir un juego de arcade de RA en el Merge Cube con Delightex: pinball, un laberinto de canicas o algo que inventes.</p>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px; margin-bottom: 12px; border: 2px solid #00BFA5;">
+<strong style="color: #4A148C; font-size: 18px;">🔗 Acceder a Delightex:</strong>
+<p style="margin: 8px 0; text-align: center;"><a style="display: inline-block; background: #00796B; color: #FFFFFF; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-size: 18px;" href="https://edu.delightex.com/" target="_blank">🚀 Abrir Delightex</a></p>
+<p style="margin: 8px 0 0 0; font-size: 14px; text-align: center; color: #5A5A5A;"><strong style="background: #fff8e1; border: 1px dashed #f0a500; border-radius: 6px; padding: 2px 10px;">pregúntale a tu maestro/a</strong> por el enlace de tu clase.</p>
+<p style="margin: 8px 0 0 0; font-size: 14px; text-align: center; color: #5A5A5A;">Recuerda: Inicia sesión con Microsoft usando tu correo <strong>@stu.irvingisd.net</strong></p>
+</div>
+<div style="background: #FFFFFF; padding: 12px; border-radius: 10px; margin-bottom: 12px;">
+<strong style="color: #4A148C;">🎮 Explora el Juego de Ejemplo:</strong>
+<p style="margin: 8px 0;">Mira este juego de Space Pinball. Observa cómo la física y el movimiento lo hacen interactivo.</p>
+<div style="text-align: center; margin-top: 10px;"><iframe style="max-width: 100%; border-radius: 10px; border: 0;" src="https://edu.cospaces.io/PTL-XWL" width="640" height="480" loading="lazy"></iframe></div>
+</div>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px;">
+<strong style="color: #4A148C; font-size: 17px;">⚙️ Entendiendo la Física de Delightex</strong>
+<p style="margin: 8px 0; font-size: 16px;">Delightex tiene física integrada. Puedes:</p>
+<ul style="margin: 8px 0 0 18px; padding-left: 0; font-size: 15px;">
+<li style="margin-bottom: 6px;">Activar la <strong>gravedad</strong> para hacer caer objetos</li>
+<li style="margin-bottom: 6px;">Controlar cuánto <strong>pesan, ruedan y rebotan</strong> los objetos</li>
+<li style="margin-bottom: 6px;">Hacer que las plataformas se <strong>muevan al hacer clic</strong>
+</li>
+</ul>
+<p style="margin: 8px 0 0 0; font-size: 16px; font-style: italic; color: #4A148C;">💡 Consejo: Haz doble clic en cualquier objeto y selecciona "Física" para ver todas las opciones.</p>
+</div>
+</div>
+<div style="background: #FFFFFF; padding: 18px; border-radius: 12px; margin-bottom: 14px; border: 2px solid #00BFA5;">
+<h2 style="margin: 0 0 10px 0; color: #4A148C; font-size: 24px;">📚 Tutorial y Requisitos del Proyecto</h2>
+<p style="margin: 0 0 12px 0; font-size: 16px;">Sigue la hoja de actividades y mira el tutorial para construir un juego de Merge Cube como "Space Pinball".</p>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px; margin-bottom: 12px;">
+<strong style="color: #4A148C; font-size: 18px;">✅ Requisitos del Proyecto:</strong>
+<p style="margin: 8px 0; font-size: 16px;">Tu juego Merge Cube de Delightex debe incluir:</p>
+<ol style="margin: 8px 0 0 18px; padding-left: 0; font-size: 16px;">
+<li style="margin-bottom: 8px;">
+<strong>Usar Física</strong> - Habilita la opción "Física" en Delightex</li>
+<li style="margin-bottom: 8px;">
+<strong>Al menos 10 partes</strong> de la biblioteca (plataformas, obstáculos, decoraciones)</li>
+<li style="margin-bottom: 8px;">
+<strong>Meta/objetivo claro</strong> - Ejemplo: mover la bola desde el inicio hasta el final</li>
+</ol>
+<p style="margin: 12px 0 0 0; font-size: 16px; font-style: italic; color: #4A148C;">Tu juego podría ser un laberinto de canicas, pinball o cualquier juego de arcade que inventes.</p>
+</div>
+<div style="background: #FFFFFF; padding: 12px; border-radius: 10px; margin-bottom: 12px;">
+<strong style="color: #4A148C;">🎥 Video Tutorial:</strong>
+<p style="margin: 8px 0;">Mira este tutorial y síguelo para construir tu juego de pinball de RA:</p>
+<div style="text-align: center; margin-top: 10px;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/0uzCyNg3RcU?si=W_X8SepHiK-Dj1h5" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+</div>
+<div style="background: #EDE7F6; padding: 14px; border-radius: 10px; border: 2px solid #4A148C;">
+<strong style="color: #4A148C; font-size: 17px;">⚠️ Importante: script de física</strong>
+<p style="margin: 8px 0; font-size: 16px;">Para que la física funcione correctamente en tu juego, <strong>DEBES</strong> agregar este script:</p>
+<div style="background: #1A1A1A; padding: 12px; border-radius: 8px; margin-top: 8px;"><code style="color: #00BFA5; font-size: 16px; font-family: 'Courier New', monospace;">Physics.realTime = true;</code></div>
+<p style="margin: 8px 0 0 0; font-size: 14px; font-style: italic; color: #4A148C;">Agrega esto en el editor de scripts antes de probar tu juego.</p>
+</div>
+</div>
+<div style="background: #FFFFFF; padding: 18px; border-radius: 12px; margin-bottom: 14px; border: 2px solid #00BFA5;">
+<h2 style="margin: 0 0 10px 0; color: #4A148C; font-size: 24px;">⚔️ Desafío Opcional</h2>
+<p style="margin: 0 0 12px 0; font-size: 16px;">¿Terminaste antes? Llévalo más lejos:</p>
+<div style="background: #FFFFFF; padding: 14px; border-radius: 10px;">
+<strong style="color: #4A148C;">🏆 Ideas de Desafío:</strong>
+<ul style="margin: 8px 0 0 18px; padding-left: 0; font-size: 16px;">
+<li style="margin-bottom: 8px;">Agrega <strong>múltiples niveles</strong> usando la función "cambiar escena"</li>
+<li style="margin-bottom: 8px;">Agrega <strong>más propiedades de física</strong> para cambiar cómo se juega</li>
+<li style="margin-bottom: 8px;">Crea <strong>obstáculos en movimiento</strong> usando CoBlocks</li>
+<li style="margin-bottom: 8px;">Agrega un <strong>sistema de puntuación</strong> o temporizador</li>
+</ul>
+</div>
+</div>
+<div style="background: #4A148C; padding: 14px; border-radius: 12px; text-align: center;">
+<p style="margin: 0; font-size: 16px; color: #FFFFFF;"><strong>🎮 Constrúyelo, juégalo y envíalo. 🌟</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p></article></main>
+<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+<script src="../app.js" defer></script>
+</body>
+</html>

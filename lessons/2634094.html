@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Learn: Control Light + Motion</title>
+  <meta name="description" content="LEARN · DAYS 6-7 Control Light + Motion Some components care about direction. Others limit current or turn electrical energy into motion. Objective Control">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lesson-page">
+
+<header class="lesson-header">
+  <div class="lesson-header__inner">
+    <a class="back-link" href="../modules/72572.html">← SW3 · Circuit Systems: Paths, Control + Signals</a>
+    <div class="lesson-kicker"><span>Assignment</span><span>core</span><span>Published</span></div>
+    <h1>Learn: Control Light + Motion</h1>
+    <dl class="lesson-facts"><div><dt>Points</dt><dd>0</dd></div><div><dt>Submission</dt><dd>none</dd></div><div><dt>Gradebook</dt><dd>Formative / omitted</dd></div><div><dt>Canvas state</dt><dd>Published</dd></div></dl>
+  </div>
+</header>
+<main class="lesson-main">
+  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<article class="canvas-content"><div class="cs" style="color:#10243b;font-family:Arial,Helvetica,sans-serif;line-height:1.48;max-width:1100px;margin:0 auto">
+<div class="hero" style="background:#123d56;color:#ffffff;padding:clamp(1.4rem,4vw,3rem);border-radius:20px;border-bottom:8px solid #24c8c7;position:relative;overflow:hidden"><div class="kicker" style="display:inline-block;background:#ffd54a;color:#172033;padding:.35rem .7rem;border-radius:999px;margin-bottom:1rem"><strong>LEARN · DAYS 6-7</strong></div><h1 style="line-height:1.12;margin-top:0;font-size:clamp(2rem,4vw,3.25rem)">Control Light + Motion</h1><p class="lede" style="margin:.45rem 0 1rem;font-size:clamp(1.05rem,2vw,1.28rem);max-width:760px">Some components care about direction. Others limit current or turn electrical energy into motion.</p><div class="meta" style="display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));margin:1.2rem 0;grid-template-columns:repeat(auto-fit,minmax(min(160px,100%),1fr))"><div class="chip" style="background:#ffffff;color:#10243b;padding:.8rem 1rem;border-radius:12px;border-left:6px solid #24c8c7"><strong>Objective</strong><br>Control and explain outputs</div><div class="chip" style="background:#ffffff;color:#10243b;padding:.8rem 1rem;border-radius:12px;border-left:6px solid #24c8c7"><strong>Evidence</strong><br>Lab 3 + checkpoint</div><div class="chip" style="background:#ffffff;color:#10243b;padding:.8rem 1rem;border-radius:12px;border-left:6px solid #24c8c7"><strong>Safety</strong><br>Hands clear of the fan</div></div></div>
+<div class="section" style="padding:1.35rem;margin:1.15rem 0;border:1px solid #b9d5d5;border-radius:16px;background:#ffffff"><h2 style="line-height:1.12;margin-top:0;font-size:clamp(1.45rem,3vw,2rem);margin-bottom:.55rem">Watch: LEDs, resistors, and motors</h2><div class="video" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;background:#071a2d"><iframe src="https://www.youtube.com/embed/cOdEZnoGYbw" title="LEDs, resistors, and motors with Snap Circuits" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" loading="lazy"></iframe></div><p class="mini" style="margin:.45rem 0 1rem;font-size:.92rem"><a href="https://www.youtube.com/watch?v=cOdEZnoGYbw">Open the video in a new tab</a>.</p></div>
+<div class="section tint" style="padding:1.35rem;margin:1.15rem 0;border:1px solid #b9d5d5;border-radius:16px;background:#ffffff;background:#eef7f7"><div class="grid" style="display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))"><div class="card" style="padding:1rem;border:2px solid #b9d5d5;border-radius:14px;background:#ffffff"><strong style="display:block;color:#0f6f77;margin-bottom:.25rem">LED direction</strong>An LED lights only when connected in the correct direction.</div><div class="card" style="padding:1rem;border:2px solid #b9d5d5;border-radius:14px;background:#ffffff"><strong style="display:block;color:#0f6f77;margin-bottom:.25rem">Resistance</strong>A resistor limits current. A higher resistance can make the same LED dimmer.</div><div class="card" style="padding:1rem;border:2px solid #b9d5d5;border-radius:14px;background:#ffffff"><strong style="display:block;color:#0f6f77;margin-bottom:.25rem">Motor direction</strong>Reverse the motor connection and the motor can spin the other way.</div></div></div>
+<div class="section" style="padding:1.35rem;margin:1.15rem 0;border:1px solid #b9d5d5;border-radius:16px;background:#ffffff"><h2 style="line-height:1.12;margin-top:0;font-size:clamp(1.45rem,3vw,2rem);margin-bottom:.55rem">Trace the system</h2><div class="path" style="display:flex;flex-wrap:wrap;gap:.45rem;align-items:center"><span style="padding:.55rem .75rem;border-radius:8px;background:#dff5f4;border:2px solid #7ecac7"><strong>User presses switch</strong></span><b style="color:#0c7a7a;font-size:1.35rem">→</b><span style="padding:.55rem .75rem;border-radius:8px;background:#dff5f4;border:2px solid #7ecac7"><strong>Path closes</strong></span><b style="color:#0c7a7a;font-size:1.35rem">→</b><span style="padding:.55rem .75rem;border-radius:8px;background:#dff5f4;border:2px solid #7ecac7"><strong>Components control current</strong></span><b style="color:#0c7a7a;font-size:1.35rem">→</b><span style="padding:.55rem .75rem;border-radius:8px;background:#dff5f4;border:2px solid #7ecac7"><strong>Light or motion changes</strong></span></div><p class="stem" style="margin:.45rem 0 1rem;background:#fff5bd;border-left:7px solid #ffd54a;padding:1rem 1.1rem;border-radius:8px;font-size:1.08rem">When the user ___, the circuit ___, so the motor/LED ___.</p><p class="bank" style="margin:.45rem 0 1rem;background:#e7f0ff;border:1px solid #9bb8df;padding:.7rem 1rem;border-radius:9px"><strong>Word bank:</strong> polarity · direction · resistor · current · input · path · output · status</p></div>
+<div class="footer" style="font-size:.9rem;color:#51606f;padding:1rem 0">Circuit Systems: Paths, Control + Signals</div></div>
+</article></main>
+<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+<script src="../app.js" defer></script>
+</body>
+</html>

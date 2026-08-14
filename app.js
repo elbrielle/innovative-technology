@@ -1,46 +1,62 @@
-// Lightbox: open a lesson's real HTML in an iframe, lazy-loaded on open.
 (function () {
-  var lb = document.getElementById("lightbox");
-  var frame = document.getElementById("lb-frame");
-  var titleEl = document.getElementById("lb-title");
-  var commonsEl = document.getElementById("lb-commons");
-  var lastFocus = null;
+  var query = "";
+  var filter = "all";
+  var search = document.getElementById("course-search");
+  var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-filter]"));
 
-  function open(btn) {
-    lastFocus = btn;
-    var slug = btn.getAttribute("data-slug");
-    titleEl.textContent = btn.getAttribute("data-title") || "Lesson";
-    var commons = btn.getAttribute("data-commons") || "#";
-    commonsEl.setAttribute("href", commons);
-    commonsEl.style.display = commons && commons !== "#" ? "" : "none";
-    frame.src = "lessons/" + slug + ".html";   // lazy: only set on open
-    lb.hidden = false;
-    document.documentElement.style.overflow = "hidden";
-    document.querySelector(".lightbox__close").focus();
+  function matches(card) {
+    var text = (card.getAttribute("data-search") || card.textContent || "").toLowerCase();
+    var role = card.getAttribute("data-role");
+    var state = card.getAttribute("data-state");
+    var filtered = filter === "all" || role === filter || (filter === "optional" && (state === "optional" || state === "parked"));
+    return filtered && (!query || text.indexOf(query) !== -1);
   }
 
-  function close() {
-    lb.hidden = true;
-    frame.src = "about:blank";
-    document.documentElement.style.overflow = "";
-    if (lastFocus) lastFocus.focus();
+  function updateCourseMap() {
+    document.querySelectorAll("[data-module]").forEach(function (module) {
+      var cards = Array.prototype.slice.call(module.querySelectorAll(".item-card"));
+      cards.forEach(function (card) { card.hidden = !matches(card); });
+      var moduleText = (module.getAttribute("data-search") || "").toLowerCase();
+      var moduleMatch = filter === "all" && query && moduleText.indexOf(query) !== -1;
+      module.hidden = !moduleMatch && cards.length > 0 && !cards.some(function (card) { return !card.hidden; });
+    });
   }
 
-  document.addEventListener("click", function (e) {
-    var opener = e.target.closest(".card__open");
-    if (opener) { open(opener); return; }
-    if (e.target.closest("[data-close]")) close();
+  if (search) {
+    search.addEventListener("input", function () { query = search.value.trim().toLowerCase(); updateCourseMap(); });
+  }
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      filter = button.getAttribute("data-filter") || "all";
+      buttons.forEach(function (candidate) { candidate.classList.toggle("is-active", candidate === button); });
+      updateCourseMap();
+    });
   });
 
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && !lb.hidden) close();
-  });
-
-  // a lesson posts its title on load; keep the bar in sync when an in-lesson
-  // cross-link (e.g. the Piskel hub nav bar) navigates the iframe to a sibling.
-  window.addEventListener("message", function (e) {
-    if (e.data && e.data.t === "lesson" && !lb.hidden && e.data.title) {
-      titleEl.textContent = e.data.title;
+  document.querySelectorAll(".enhanceable_content.tabs").forEach(function (tabs, groupIndex) {
+    var links = Array.prototype.slice.call(tabs.querySelectorAll(":scope > ul:first-child a[href^='#']"));
+    if (!links.length) return;
+    var panels = links.map(function (link) { return document.getElementById(link.getAttribute("href").slice(1)); }).filter(Boolean);
+    if (!panels.length) return;
+    function show(index) {
+      panels.forEach(function (panel, panelIndex) { panel.hidden = panelIndex !== index; });
+      links.forEach(function (link, linkIndex) {
+        link.setAttribute("role", "tab");
+        link.setAttribute("aria-selected", linkIndex === index ? "true" : "false");
+        link.setAttribute("tabindex", linkIndex === index ? "0" : "-1");
+      });
     }
+    links.forEach(function (link, index) {
+      link.addEventListener("click", function (event) { event.preventDefault(); show(index); });
+      link.addEventListener("keydown", function (event) {
+        if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+        event.preventDefault();
+        var next = (index + (event.key === "ArrowRight" ? 1 : links.length - 1)) % links.length;
+        show(next); links[next].focus();
+      });
+    });
+    tabs.querySelector(":scope > ul:first-child").setAttribute("role", "tablist");
+    tabs.setAttribute("data-tab-group", String(groupIndex));
+    show(0);
   });
 })();

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Lesson 2: Permission to Come Aboard with Algorithms</title>
+  <meta name="description" content="⬡ AIR · Intro to AI · Lesson 2 ⬡ PERMISSION TO COME ABOARD HorizonBot will not move until you write the steps. 📅 Intro to AI · Lesson 2 🛠️ Pseudocode + The">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lesson-page">
+
+<header class="lesson-header">
+  <div class="lesson-header__inner">
+    <a class="back-link" href="../modules/72575.html">← SW4 · AIR Unit 0: Intro to AI</a>
+    <div class="lesson-kicker"><span>Assignment</span><span>core</span><span>Published</span></div>
+    <h1>Lesson 2: Permission to Come Aboard with Algorithms</h1>
+    <dl class="lesson-facts"><div><dt>Points</dt><dd>0</dd></div><div><dt>Submission</dt><dd>external tool</dd></div><div><dt>Gradebook</dt><dd>Formative / omitted</dd></div><div><dt>Canvas state</dt><dd>Published</dd></div></dl>
+  </div>
+</header>
+<main class="lesson-main">
+  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<article class="canvas-content"><p>&nbsp;</p>
+<div style="background: #0B1426; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;">
+<div style="max-width: 980px; margin: 0 auto; color: #E8ECF1; line-height: 1.5;">
+<div style="background: linear-gradient(135deg, #0D2137, #1A1A3E); border-radius: 20px; padding: 28px; margin-bottom: 16px; text-align: center; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 4px 0; font-size: 11px; color: #00E5FF;"><strong>⬡ AIR · Intro to AI · Lesson 2 ⬡</strong></p>
+<h1 style="margin: 0; font-size: 30px; color: #ffffff;">PERMISSION TO COME ABOARD</h1>
+<p style="margin: 8px 0 0 0; font-size: 16px; color: #8899AA;">HorizonBot will not move until you write the steps.</p>
+</div>
+
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 16px; border: 1px solid #1E3A5F;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; font-size: 14px;">
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📅 <strong style="color: #00E5FF;">Intro to AI · Lesson 2</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">🛠️ <strong style="color: #00E5FF;">Pseudocode + The Docks</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">⏱️ <strong style="color: #00E5FF;">~45 min</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📦 <strong style="color: #00E5FF;">An algorithm for 4 boxes</strong>
+</div>
+</div>
+</div>
+
+<div class="enhanceable_content tabs">
+<ul style="display: flex; gap: 0; padding-left: 0; margin: 0 0 -2px 0; justify-content: center;">
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00E5FF; font-size: 16px;" href="#tab-english-fill1"><strong>English</strong></a></li>
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0; margin-left: -2px;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00E5FF; font-size: 16px;" href="#tab-spanish-fill1"><strong>Español</strong></a></li>
+</ul>
+
+<div id="tab-english-fill1" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+
+<div class="phase-5e-engage" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #E8ECF1;">📢 HorizonBot is parked on the dock. Four heavy boxes are scattered across The Docks, and the New Horizon is waiting at the pier. The robot will not move one inch until somebody writes down exactly what to do — step by step. Today that somebody is you.</p>
+</div>
+</div>
+
+<div class="phase-5e-explain" style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Today's words</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>algorithm</strong> • <strong>pseudocode</strong> • <strong>computer program</strong> • <strong>loop</strong> • <strong>conditional</strong></p>
+</div>
+
+<div class="phase-5e-explore" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>1</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Learn what an algorithm is</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Complete the <a style="color: #00E5FF;" href="../lessons/2634126.html" target="_blank" data-api-endpoint="../lessons/2634126.html" data-api-returntype="Assignment">EdPuzzle: Permission to Come Aboard with Algorithms</a> and answer the questions inside the video. You need this before you write anything.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>2</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>See how a plan turns into code</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Pseudocode is how programmers pre-write an algorithm: plain language a human can read, but that a computer <strong>cannot</strong> run yet. Here is the same maze solved three ways — first the plan, then two versions a computer can actually execute.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-bottom: 4px;">
+<div style="background: #0D2137; border: 1px solid #1E3A5F; border-radius: 10px; padding: 12px;">
+<p style="margin: 0 0 6px 0; font-size: 13px; color: #00E5FF;"><strong>Pseudocode</strong></p>
+<p style="margin: 0; font-size: 14px; color: #C0CCE0; line-height: 1.7;"><span style="font-family: ui-monospace, Menlo, Consolas, monospace;">Start<br>Go Forward<br>Turn Left<br>Go Forward<br>Turn Right<br>Go Forward<br>End</span></p>
+</div>
+<div style="background: #0D2137; border: 1px solid #1E3A5F; border-radius: 10px; padding: 12px;">
+<p style="margin: 0 0 6px 0; font-size: 13px; color: #00E5FF;"><strong>Blockly</strong></p>
+<p style="margin: 0; font-size: 14px; color: #C0CCE0; line-height: 1.7;"><span style="font-family: ui-monospace, Menlo, Consolas, monospace;">move forward<br>turn left ↺<br>move forward<br>turn right ↻<br>move forward</span></p>
+</div>
+<div style="background: #0D2137; border: 1px solid #1E3A5F; border-radius: 10px; padding: 12px;">
+<p style="margin: 0 0 6px 0; font-size: 13px; color: #00E5FF;"><strong>JavaScript</strong></p>
+<p style="margin: 0; font-size: 14px; color: #C0CCE0; line-height: 1.7;"><span style="font-family: ui-monospace, Menlo, Consolas, monospace;">moveForward();<br>turnLeft();<br>moveForward();<br>turnRight();<br>moveForward();</span></p>
+</div>
+</div>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #8899AA; font-style: italic;">Same steps every time. Only the language changes.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>3</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Read the map of The Docks</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Before you write anything, study the map. Find these four things:</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>HorizonBot</strong> — the blue robot, on the left side of the dock</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>The four boxes</strong> — the orange crates scattered across The Docks</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>The obstacles</strong> — the dark red crates already stacked on the dock floor</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• <strong>The New Horizon</strong> — the ship at the pier on the right, over the water</p>
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #8899AA;">Ask yourself: how will you get HorizonBot to every box and then to the ship? Is there more than one way to do it?</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>4</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Write your pseudocode algorithm</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Your goal: move HorizonBot from its starting spot, through The Docks, pick up <strong>all four boxes</strong>, and deliver them to the New Horizon. Write your algorithm using only these pseudocode terms:</p>
+<div style="background: #0D2137; border-radius: 10px; padding: 12px 14px; border: 1px solid #1E3A5F; margin-bottom: 8px;">
+<p style="margin: 0; font-size: 16px; color: #ffffff; font-family: ui-monospace, Menlo, Consolas, monospace;"><strong>Start &nbsp;•&nbsp; Move Forward &nbsp;•&nbsp; Turn Right &nbsp;•&nbsp; Turn Left &nbsp;•&nbsp; End</strong></p>
+</div>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #8899AA;">Write one instruction per line, in order, from Start to End.</p>
+</div>
+</div>
+
+<div class="phase-5e-explain" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #7B61FF;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #7B61FF;"><strong>📖 KEY VOCABULARY</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Algorithm</strong> — a set of steps to complete a specific task</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Computer program</strong> — a series of instructions or a plan, usually followed in sequence, but it can also include loops and questions called conditionals</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Loop</strong> — a set of instructions that repeats. In Scratch this is usually a 'Forever' or 'Repeat Until' block</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Conditional</strong> — a set of instructions that runs only if a certain condition is met. In Scratch, 'Repeat Until' is a loop that keeps repeating the code inside it <em>until</em> the condition is met — in this lesson, until the robot touches the color of the boxes on the dock</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• <strong>Pseudocode</strong> — a prewriting step done before you write a program, in natural, easy-to-read language with no formatting, to explain what you want the code to do. Pseudocode cannot be run by a computer as a working program</p>
+</div>
+
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FFD600;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FFD600;"><strong>🎥 Watch the lesson walkthrough</strong></p>
+<p style="margin: 0 0 12px 0; font-size: 16px; color: #C0CCE0;">Missed it in class, or want to hear the directions again? Play it here. Headphones on.</p>
+<div style="text-align: center;">
+<iframe title="YouTube video player" src="https://www.youtube.com/embed/6kzb4JE8KiM?si=vLtTF8GC4ovLxlv3" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;"></iframe>
+</div>
+</div>
+
+<div class="phase-5e-extend" style="background: #132238; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FF2E63;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FF2E63;"><strong>🔍 OPTIONAL CHALLENGE: MAKE IT MORE EFFICIENT</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Your first algorithm will work. Now make it <strong>better</strong>.</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Read your algorithm out loud to a teammate while they trace it on the map. Does the robot end up where you said it would?</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Make it more efficient: combine steps, delete steps you do not need, or change the order</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• Invent your own pseudocode term to shorten it — <strong>Pick Up Box</strong>, <strong>Hold Box</strong>, <strong>Move Diagonal</strong>, anything that saves you lines</p>
+<p style="margin: 0 0 0px 0; font-size: 14px; color: #8899AA; font-style: italic;">Fewer instructions that still finish the job = a better algorithm.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<p style="margin: 0 0 10px 0; font-size: 19px; color: #ffffff;"><strong>💬 Reflect</strong></p>
+<div style="padding-left: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 15px; color: #8899AA;">In the <strong>comments</strong> of your submission, finish this in 2-3 sentences:</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #FF2E63;">"An algorithm is ______. My pseudocode got HorizonBot to all 4 boxes by ______, and one place I could combine steps is ______."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Word Bank</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>algorithm</strong> • <strong>pseudocode</strong> • <strong>sequence</strong> • <strong>loop</strong> • <strong>conditional</strong> • <strong>efficient</strong> • <strong>Move Forward</strong> • <strong>Turn Left</strong> • <strong>Turn Right</strong></p>
+</div>
+</div>
+</div>
+
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00E676;"><strong>✅ By the end of today:</strong></p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Finished the EdPuzzle on algorithms</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Wrote pseudocode that picks up all 4 boxes and ends at the New Horizon</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Traced my algorithm on the map with a teammate</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Posted my reflection in the comments</p>
+</div>
+</div>
+
+</div>
+
+<div id="tab-spanish-fill1" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+
+<div class="phase-5e-engage" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #E8ECF1;">📢 HorizonBot está parado en el muelle. Hay cuatro cajas pesadas repartidas por The Docks y el New Horizon está esperando en el embarcadero. El robot no se va a mover ni un centímetro hasta que alguien escriba exactamente qué hacer, paso por paso. Hoy ese alguien eres tú.</p>
+</div>
+</div>
+
+<div class="phase-5e-explain" style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Palabras de hoy</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>algorithm</strong> <em>(algoritmo)</em> • <strong>pseudocode</strong> <em>(pseudocódigo)</em> • <strong>computer program</strong> <em>(programa de computadora)</em> • <strong>loop</strong> <em>(bucle)</em> • <strong>conditional</strong> <em>(condicional)</em></p>
+</div>
+
+<div class="phase-5e-explore" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>1</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Aprende qué es un algoritmo</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Completa el <a style="color: #00E5FF;" href="../lessons/2634126.html" target="_blank" data-api-endpoint="../lessons/2634126.html" data-api-returntype="Assignment">EdPuzzle: Permission to Come Aboard with Algorithms</a> y contesta las preguntas dentro del video. Lo necesitas antes de escribir nada.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>2</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Mira cómo un plan se convierte en código</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">El pseudocódigo es como los programadores planean un algoritmo antes de programarlo: lenguaje normal que una persona entiende, pero que una computadora todavía <strong>no</strong> puede ejecutar. Aquí está el mismo laberinto resuelto de tres formas: primero el plan y luego dos versiones que la computadora sí puede ejecutar.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-bottom: 4px;">
+<div style="background: #0D2137; border: 1px solid #1E3A5F; border-radius: 10px; padding: 12px;">
+<p style="margin: 0 0 6px 0; font-size: 13px; color: #00E5FF;"><strong>Pseudocode (pseudocódigo)</strong></p>
+<p style="margin: 0; font-size: 14px; color: #C0CCE0; line-height: 1.7;"><span style="font-family: ui-monospace, Menlo, Consolas, monospace;">Start<br>Go Forward<br>Turn Left<br>Go Forward<br>Turn Right<br>Go Forward<br>End</span></p>
+</div>
+<div style="background: #0D2137; border: 1px solid #1E3A5F; border-radius: 10px; padding: 12px;">
+<p style="margin: 0 0 6px 0; font-size: 13px; color: #00E5FF;"><strong>Blockly</strong></p>
+<p style="margin: 0; font-size: 14px; color: #C0CCE0; line-height: 1.7;"><span style="font-family: ui-monospace, Menlo, Consolas, monospace;">move forward<br>turn left ↺<br>move forward<br>turn right ↻<br>move forward</span></p>
+</div>
+<div style="background: #0D2137; border: 1px solid #1E3A5F; border-radius: 10px; padding: 12px;">
+<p style="margin: 0 0 6px 0; font-size: 13px; color: #00E5FF;"><strong>JavaScript</strong></p>
+<p style="margin: 0; font-size: 14px; color: #C0CCE0; line-height: 1.7;"><span style="font-family: ui-monospace, Menlo, Consolas, monospace;">moveForward();<br>turnLeft();<br>moveForward();<br>turnRight();<br>moveForward();</span></p>
+</div>
+</div>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #8899AA; font-style: italic;">Los mismos pasos siempre. Lo único que cambia es el lenguaje.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>3</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Lee el mapa de The Docks</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Antes de escribir nada, estudia el mapa. Busca estas cuatro cosas:</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>HorizonBot</strong> — el robot azul, del lado izquierdo del muelle</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Las cuatro cajas</strong> — las cajas naranjas repartidas por The Docks</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Los obstáculos</strong> — las cajas rojo oscuro que ya están apiladas en el piso del muelle</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• <strong>El New Horizon</strong> — el barco en el embarcadero de la derecha, sobre el agua</p>
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #8899AA;">Pregúntate: ¿cómo vas a llevar a HorizonBot a cada caja y luego al barco? ¿Hay más de una forma de hacerlo?</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>4</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Escribe tu algoritmo en pseudocódigo</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Tu meta: mover a HorizonBot desde donde empieza, cruzar The Docks, recoger las <strong>cuatro cajas</strong> y entregarlas al New Horizon. Escribe tu algoritmo usando solo estos términos de pseudocódigo:</p>
+<div style="background: #0D2137; border-radius: 10px; padding: 12px 14px; border: 1px solid #1E3A5F; margin-bottom: 8px;">
+<p style="margin: 0; font-size: 16px; color: #ffffff; font-family: ui-monospace, Menlo, Consolas, monospace;"><strong>Start &nbsp;•&nbsp; Move Forward &nbsp;•&nbsp; Turn Right &nbsp;•&nbsp; Turn Left &nbsp;•&nbsp; End</strong></p>
+</div>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #8899AA;">Escribe una instrucción por línea, en orden, desde Start hasta End.</p>
+</div>
+</div>
+
+<div class="phase-5e-explain" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #7B61FF;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #7B61FF;"><strong>📖 VOCABULARIO CLAVE</strong></p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Algoritmo</strong> — un conjunto de pasos para completar una tarea específica</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Programa de computadora</strong> — una serie de instrucciones o un plan que generalmente se sigue en secuencia, pero que también puede incluir bucles y preguntas llamadas condicionales</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Bucle</strong> — en un programa de computadora, un conjunto de instrucciones que se repiten o hacen un bucle. En Scratch esto se logra generalmente con un bloque de "Por Siempre" o "Repetir Hasta"</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• <strong>Condicional</strong> — un conjunto de instrucciones que se ejecuta si se cumple una cierta condición. En Scratch, el "Repetir Hasta" es un bucle que continúa repitiendo el código dentro de su segmento hasta que se cumple la condición establecida; en el ejemplo de esta lección, el código se repite hasta que el robot toca el color de las cajas en el muelle</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• <strong>Pseudocódigo</strong> — actividad de preescritura que se hace antes de escribir un programa, redactada en un lenguaje natural y fácil de entender, sin formato, para explicar el comportamiento deseado del código. Las instrucciones en pseudocódigo no pueden ser ejecutadas por una computadora como un programa funcional</p>
+</div>
+
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FFD600;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FFD600;"><strong>🎥 Mira el recorrido de la lección</strong></p>
+<p style="margin: 0 0 12px 0; font-size: 16px; color: #C0CCE0;">¿Te lo perdiste en clase o quieres oír las instrucciones otra vez? Dale play aquí. Ponte los audífonos.</p>
+<div style="text-align: center;">
+<iframe title="YouTube video player" src="https://www.youtube.com/embed/6kzb4JE8KiM?si=vLtTF8GC4ovLxlv3" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;"></iframe>
+</div>
+</div>
+
+<div class="phase-5e-extend" style="background: #132238; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FF2E63;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FF2E63;"><strong>🔍 DESAFÍO OPCIONAL: HAZLO MÁS EFICIENTE</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Tu primer algoritmo va a funcionar. Ahora hazlo <strong>mejor</strong>.</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Lee tu algoritmo en voz alta a un compañero mientras él lo va siguiendo en el mapa. ¿El robot termina donde tú dijiste?</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #C0CCE0;">• Hazlo más eficiente: combina pasos, quita los que no necesitas o cambia el orden</p>
+<p style="margin: 0 0 0px 0; font-size: 15px; color: #C0CCE0;">• Inventa tu propio término de pseudocódigo para acortarlo: <strong>Pick Up Box</strong>, <strong>Hold Box</strong>, <strong>Move Diagonal</strong>, lo que te ahorre líneas</p>
+<p style="margin: 0 0 0px 0; font-size: 14px; color: #8899AA; font-style: italic;">Menos instrucciones que aun así terminan el trabajo = un mejor algoritmo.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<p style="margin: 0 0 10px 0; font-size: 19px; color: #ffffff;"><strong>💬 Reflexiona</strong></p>
+<div style="padding-left: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 15px; color: #8899AA;">En los <strong>comentarios</strong> de tu envío, completa esto en 2-3 oraciones <strong>en inglés</strong>:</p>
+<p style="margin: 0 0 8px 0; font-size: 13px; color: #666666; font-style: italic;">(Un algoritmo es ______. Mi pseudocódigo llevó a HorizonBot a las 4 cajas al ______, y un lugar donde podría combinar pasos es ______.)</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #FF2E63;">"An algorithm is ______. My pseudocode got HorizonBot to all 4 boxes by ______, and one place I could combine steps is ______."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7B61FF;"><strong>Word Bank / Banco de Palabras</strong></p>
+<p style="margin: 0; font-size: 15px; color: #C0CCE0;"><strong>algorithm</strong> <em>(algoritmo)</em> • <strong>pseudocode</strong> <em>(pseudocódigo)</em> • <strong>sequence</strong> <em>(secuencia)</em> • <strong>loop</strong> <em>(bucle)</em> • <strong>conditional</strong> <em>(condicional)</em> • <strong>efficient</strong> <em>(eficiente)</em> • <strong>Move Forward</strong> • <strong>Turn Left</strong> • <strong>Turn Right</strong></p>
+</div>
+</div>
+</div>
+
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00E676;"><strong>✅ Al final de hoy:</strong></p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Terminé el EdPuzzle sobre algoritmos</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Escribí pseudocódigo que recoge las 4 cajas y termina en el New Horizon</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Seguí mi algoritmo en el mapa con un compañero</p>
+<p style="margin: 4px 0; font-size: 15px; color: #C0CCE0;">✓ Publiqué mi reflexión en los comentarios</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<p>&nbsp;</p></article></main>
+<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+<script src="../app.js" defer></script>
+</body>
+</html>

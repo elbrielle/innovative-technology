@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Intro to Image Classification</title>
+  <meta name="description" content="⧈ Picture This • AI Week • Day 1 of 5 ⧈ Intro to Image Classification Teach a computer what your thumbs mean. 📅 Day 1 of 5 🛠️ Teachable Machine ⏱️ ~45 min ">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lesson-page">
+
+<header class="lesson-header">
+  <div class="lesson-header__inner">
+    <a class="back-link" href="../modules/72576.html">← SW4 · Image Classification</a>
+    <div class="lesson-kicker"><span>Assignment</span><span>core</span><span>Published</span></div>
+    <h1>Intro to Image Classification</h1>
+    <dl class="lesson-facts"><div><dt>Points</dt><dd>0</dd></div><div><dt>Submission</dt><dd>url</dd></div><div><dt>Canvas state</dt><dd>Published</dd></div></dl>
+  </div>
+</header>
+<main class="lesson-main">
+  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<article class="canvas-content"><p>&nbsp;</p>
+<div style="background: #0B1426; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;">
+<div style="max-width: 980px; margin: 0 auto; color: #e8ecf1; line-height: 1.5;">
+<div style="background: linear-gradient(135deg, #0D2137, #1A1A3E); border-radius: 20px; padding: 28px; margin-bottom: 16px; text-align: center; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 4px 0; font-size: 11px; color: #00e5ff;">⧈ Picture This • AI Week • Day 1 of 5 ⧈</p>
+<h1 style="margin: 0; font-size: 30px; color: #ffffff;">Intro to Image Classification</h1>
+<p style="margin: 8px 0 0 0; font-size: 16px; color: #8899aa;">Teach a computer what your thumbs mean.</p>
+</div>
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 16px; border: 1px solid #1E3A5F;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; font-size: 14px;">
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📅 <strong style="color: #00e5ff;">Day 1 of 5</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">🛠️ <strong style="color: #00e5ff;">Teachable Machine</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">⏱️ <strong style="color: #00e5ff;">~45 min</strong>
+</div>
+<div style="background: #0B1426; padding: 10px; border-radius: 10px; text-align: center; border: 1px solid #1E3A5F;">📦 <strong style="color: #00e5ff;">Working AI model</strong>
+</div>
+</div>
+</div>
+<div class="enhanceable_content tabs">
+<ul style="display: flex; gap: 0; padding-left: 0; margin: 0 0 -2px 0; justify-content: center;">
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00e5ff; font-size: 16px;" href="#tab-english-aiwk1">English</a></li>
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0; margin-left: -2px;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00e5ff; font-size: 16px;" href="#tab-spanish-aiwk1">Español</a></li>
+</ul>
+<div id="tab-english-aiwk1" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+<div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #e8ecf1;">📢 Your phone unlocks when it sees your face. A self-driving car spots a pedestrian in a street full of parked cars and signs. Today you do the small version: teach a computer to tell a thumbs up from a thumbs down.</p>
+</div>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;">Today's words</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;"><strong>computer vision</strong> • <strong>image classification</strong> • <strong>model</strong></p>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Open Teachable Machine</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Go to <a style="color: #00e5ff;" href="https://teachablemachine.withgoogle.com" target="_blank">teachablemachine.withgoogle.com</a> → <strong>Get Started</strong> → <strong>Image Project</strong> → <strong>Standard image model</strong>.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Name your two classes</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Rename "Class 1" to <strong>Thumbs Up</strong>. Rename "Class 2" to <strong>Thumbs Down</strong>.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Take 30+ photos per class</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Click <strong>Webcam</strong>, hold the button, and move your hand around. More photos = smarter AI.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Train your model. Then try to break it.</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Click <strong>Train Model</strong>. Watch the preview. Then test: hold your thumb sideways, switch hands, change your background. Where does it fail?</p>
+</div>
+</div>
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FFD600;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #ffd600;">🎥 Stuck? Watch this 2:24 walkthrough.</p>
+<p style="margin: 0 0 12px 0; font-size: 14px; color: #8899aa;">If you missed something in class, this video walks you through every step. Headphones on.</p>
+<div style="text-align: center;"><iframe style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;" title="Teachable Machine walkthrough" src="https://www.youtube.com/embed/Htc-WXQRsR8?start=442&amp;end=586" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+</div>
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 18px; border: 2px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #ff2e63;">🔎 TRY TO BREAK YOUR AI</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Hold your thumb sideways</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Move closer or farther from the camera</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Try with your other hand</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Cover part of your hand</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;">• Use a different background</p>
+<p style="margin: 10px 0 0 0; font-size: 14px; color: #8899aa; font-style: italic;">Remember where it fails. We'll talk about WHY all week.</p>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<p style="margin: 0 0 10px 0; font-size: 19px; color: #ffffff;">💬 Reflect</p>
+<div style="padding-left: 12px;">
+<p style="margin: 0 0 8px 0; font-size: 15px; color: #8899aa;">In the <strong>comments</strong> of your submission, finish this sentence in 2-3 sentences:</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #ff2e63;">"My AI got confused when I ______ because ______."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;">Word Bank</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;"><strong>thumbs up</strong> • <strong>thumbs down</strong> • <strong>lighting</strong> • <strong>background</strong> • <strong>angle</strong> • <strong>distance</strong> • <strong>training</strong> • <strong>model</strong></p>
+</div>
+</div>
+</div>
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00e676;">✅ By the end of today:</p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Trained an AI with at least 2 classes</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Found at least 1 way to break it</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Submitted the reflection in comments</p>
+</div>
+</div>
+</div>
+<div id="tab-spanish-aiwk1" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+<div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #e8ecf1;">📢 Tu teléfono se desbloquea cuando ve tu cara. Un carro autónomo distingue a un peatón en una calle llena de carros estacionados y señales. Hoy tú haces la versión chiquita: le enseñas a una computadora a diferenciar un pulgar arriba de un pulgar abajo.</p>
+</div>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF; margin-bottom: 18px;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;">Palabras de hoy</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;"><strong>computer vision</strong> <em>(visión por computadora)</em> • <strong>image classification</strong> <em>(clasificación de imágenes)</em> • <strong>model</strong> <em>(modelo)</em></p>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">1</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Abre Teachable Machine</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Ve a <a style="color: #00e5ff;" href="https://teachablemachine.withgoogle.com" target="_blank">teachablemachine.withgoogle.com</a> → <strong>Get Started</strong> → <strong>Image Project</strong> → <strong>Standard image model</strong>.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">2</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Nombra tus dos clases</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Cambia "Class 1" a <strong>Thumbs Up</strong>. Cambia "Class 2" a <strong>Thumbs Down</strong>.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">3</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Toma 30+ fotos por clase</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Haz clic en <strong>Webcam</strong>, mantén presionado el botón y mueve tu mano. Más fotos = AI más inteligente.</p>
+</div>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0b1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;">4</div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;">Entrena tu modelo. Luego trata de romperlo.</p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0; font-size: 16px; color: #c0cce0;">Haz clic en <strong>Train Model</strong>. Mira la vista previa. Luego prueba: pon tu pulgar de lado, cambia de mano, cambia el fondo. ¿Dónde falla?</p>
+</div>
+</div>
+<div style="background: #0D2137; border-radius: 14px; padding: 16px; margin-bottom: 18px; border: 2px solid #FFD600;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #ffd600;">🎥 ¿Atorado? Mira este video de 2:24.</p>
+<p style="margin: 0 0 12px 0; font-size: 14px; color: #8899aa;">Si perdiste algo en clase, este video te muestra cada paso. Ponte los audífonos.</p>
+<div style="text-align: center;"><iframe style="max-width: 100%; border-radius: 12px; border: 1px solid #1E3A5F;" title="Teachable Machine walkthrough" src="https://www.youtube.com/embed/Htc-WXQRsR8?start=442&amp;end=586" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+</div>
+<div style="background: #132238; border-radius: 14px; padding: 14px; margin-bottom: 18px; border: 2px solid #FF2E63;">
+<p style="margin: 0 0 8px 0; font-size: 17px; color: #ff2e63;">🔎 TRATA DE ROMPER TU AI</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Pon tu pulgar de lado</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Acércate o aléjate de la cámara</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Prueba con tu otra mano</p>
+<p style="margin: 0 0 6px 0; font-size: 15px; color: #c0cce0;">• Cubre parte de tu mano</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;">• Usa un fondo diferente</p>
+<p style="margin: 10px 0 0 0; font-size: 14px; color: #8899aa; font-style: italic;">Recuerda dónde falla. Hablaremos del POR QUÉ toda la semana.</p>
+</div>
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<p style="margin: 0 0 10px 0; font-size: 19px; color: #ffffff;">💬 Reflexiona</p>
+<div style="padding-left: 12px;">
+<p style="margin: 0 0 4px 0; font-size: 15px; color: #8899aa;">En los <strong>comentarios</strong> de tu envío, completa esta oración en 2-3 oraciones <strong>en inglés</strong>:</p>
+<p style="margin: 0 0 8px 0; font-size: 13px; color: #666666; font-style: italic;">(Mi AI se confundió cuando yo ______ porque ______.)</p>
+<div style="background: #1E2D3D; border-radius: 14px; padding: 14px; border: 1px solid #2A3F55; margin-bottom: 10px;">
+<p style="margin: 0; font-size: 18px; color: #ffffff;"><strong style="color: #ff2e63;">"My AI got confused when I ______ because ______."</strong></p>
+</div>
+<div style="background: #0D2137; border-radius: 10px; padding: 10px 14px; border: 1px dashed #7B61FF;">
+<p style="margin: 0 0 4px 0; font-size: 12px; color: #7b61ff;">Word Bank / Banco de Palabras</p>
+<p style="margin: 0; font-size: 15px; color: #c0cce0;"><strong>thumbs up</strong> <em>(pulgar arriba)</em> • <strong>thumbs down</strong> <em>(pulgar abajo)</em> • <strong>lighting</strong> <em>(luz)</em> • <strong>background</strong> <em>(fondo)</em> • <strong>angle</strong> <em>(ángulo)</em> • <strong>distance</strong> <em>(distancia)</em> • <strong>training</strong> <em>(entrenamiento)</em> • <strong>model</strong> <em>(modelo)</em></p>
+</div>
+</div>
+</div>
+<div style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00e676;">✅ Al final de hoy:</p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Entrené una AI con al menos 2 clases</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Encontré al menos 1 forma de romperla</p>
+<p style="margin: 4px 0; font-size: 15px; color: #c0cce0;">✓ Envié la reflexión en los comentarios</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p></article></main>
+<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+<script src="../app.js" defer></script>
+</body>
+</html>

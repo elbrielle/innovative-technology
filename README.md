@@ -1,35 +1,59 @@
-# CTE Innovative Technology — Curriculum Showcase
+# VILS CTE Smart Solutions — Public Curriculum Mirror
 
-A selection of units from my CTE Innovative Technology course (Bowie MS, Irving ISD).
-Each module is designed and built in Canvas using custom HTML and inline CSS, with
-embedded video, visual scaffolds, sentence stems, ESL supports, and clear deliverables.
-The modules are built to be self-paced and to encourage student differentiation.
+This repository publishes an administrator-accessible companion to the live **VILS CTE Smart Solutions** Canvas course.
 
-**Live:** https://elbrielle.github.io/innovative-technology/
+**Public site:** https://elbrielle.github.io/innovative-technology/
 
-## What this is
+Canvas remains the student delivery and grading environment. The site mirrors the complete ordered course for curriculum review: teacher guides, student directions, assessments, rubrics, linked resources, and approved Canvas files.
 
-A static showcase: a gallery of Units, each holding its lessons. Click a lesson to open
-the real module HTML in a lightbox, video and interactive scenes included. Internal
-cross-links (hub nav bars, the Emoji design-thinking flow) work inside the showcase.
+## Publication boundary
 
-## How it's built
+Public is the default. The only protected exception is **OPTION · About Me Smartphone** (Canvas module item `2633987`) and its creator-approved district-only PDF/video. The public course map shows a protected entry so the sequence remains complete, but the activity body and file bytes are never written to this repository.
 
-Lesson content is generated from Canvas course exports, not hand-maintained:
+The fail-closed rule is stored in [`data/publication-policy.json`](data/publication-policy.json). If the protected activity begins referencing a different file set, export stops and requires a human policy review.
 
-- `build.cjs` reads the Canvas viewer-bundle export (`course-data.js`) and emits the
-  gallery (`index.html`), per-lesson docs (`lessons/`), and bundled media (`assets/media/`).
-- `extract-cc.py` pulls the AR + VR units from a Common Cartridge (`.imscc`) into
-  `cc-arvr.json`, which `build.cjs` merges in.
+## Stable URLs for IPC and other courses
 
-Regenerate (with the source exports unzipped in place):
+Each Canvas module item has a stable public URL based on its immutable module-item ID:
+
+```text
+https://elbrielle.github.io/innovative-technology/lessons/<module_item_id>.html
+```
+
+The machine-readable mapping is [`data/public-links.json`](data/public-links.json). IPC builders should look up the Canvas module-item ID there instead of guessing a title slug. A lesson title may change without breaking the public URL.
+
+The earlier title-based lesson URLs remain as generated redirects, so existing bookmarks continue to reach the corresponding stable item-ID page.
+
+## One-command sync
+
+From the repository root:
 
 ```bash
-python3 extract-cc.py   # refresh AR/VR from the .imscc
-node build.cjs          # rebuild the whole site
+python3 scripts/sync_course.py
 ```
+
+That command:
+
+1. reads live Canvas course `23402` without changing it;
+2. exports a deterministic, public-safe snapshot;
+3. downloads or reuses every approved referenced file;
+4. generates the course map, module pages, stable lesson pages, parity report, and public-link manifest;
+5. verifies the repository against the snapshot; and
+6. re-reads live Canvas to prove nothing drifted during the build.
+
+The Canvas token is read from `CANVAS_TOKEN` or `~/.canvas_token`. Never commit the token.
+
+## Release workflow
+
+1. Run `python3 scripts/sync_course.py`.
+2. Review `git diff --stat` and `data/site-manifest.json`.
+3. Run the responsive visual audit described in [`docs/SYNC_WORKFLOW.md`](docs/SYNC_WORKFLOW.md).
+4. Require an independent adversarial review for instructional, visual, privacy, and link issues.
+5. Commit and push `main`. GitHub Pages deploys from the existing repository configuration.
+6. Verify the public URL and several stable lesson URLs after deployment.
+
+The CI workflow rebuilds the static pages and runs the repository parity gate. It does not need a Canvas token because live Canvas verification remains an intentional release action.
 
 ## Credits
 
-Curriculum may reference freely available resources from Verizon Innovative Learning HQ,
-MIT RAICA, and others as noted. Instructional design by Elisha Lucero.
+Instructional design by Elisha Lucero. Third-party images, videos, tools, and source materials retain the attribution or usage basis included in the lesson, facilitator guide, or speaker notes.

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Lesson 5: AI Enemies in MakeCode Arcade</title>
+  <meta name="description" content="⬡ AIR · Leaving Land · Lesson 5 of 5 ⬡ AI ENEMIES IN MAKECODE ARCADE Give something in your game a mind of its own. English Español 📢 An enemy that sits st">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="lesson-page">
+
+<header class="lesson-header">
+  <div class="lesson-header__inner">
+    <a class="back-link" href="../modules/72582.html">← SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)</a>
+    <div class="lesson-kicker"><span>Assignment</span><span>core</span><span>Published</span></div>
+    <h1>Lesson 5: AI Enemies in MakeCode Arcade</h1>
+    <dl class="lesson-facts"><div><dt>Points</dt><dd>5</dd></div><div><dt>Submission</dt><dd>external tool</dd></div><div><dt>Canvas state</dt><dd>Published</dd></div></dl>
+  </div>
+</header>
+<main class="lesson-main">
+  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<article class="canvas-content"><p>&nbsp;</p>
+<div style="background: #0B1426; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;">
+<div style="max-width: 980px; margin: 0 auto; color: #E8ECF1; line-height: 1.5;">
+
+<div style="background: linear-gradient(135deg, #0D2137, #1A1A3E); border-radius: 20px; padding: 28px; margin-bottom: 16px; text-align: center; border: 2px solid #00E5FF;">
+<p style="margin: 0 0 4px 0; font-size: 11px; color: #00E5FF;"><strong>⬡ AIR · Leaving Land · Lesson 5 of 5 ⬡</strong></p>
+<h1 style="margin: 0; font-size: 30px; color: #ffffff;">AI ENEMIES IN MAKECODE ARCADE</h1>
+<p style="margin: 8px 0 0 0; font-size: 16px; color: #8899AA;">Give something in your game a mind of its own.</p>
+</div>
+
+<div class="enhanceable_content tabs">
+<ul style="display: flex; gap: 0; padding-left: 0; margin: 0 0 -2px 0; justify-content: center;">
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00E5FF; font-size: 16px;" href="#tab-english-air1l5"><strong>English</strong></a></li>
+<li style="list-style: none; background: #132238; border: 2px solid #1E3A5F; border-bottom: 2px solid #132238; border-radius: 12px 12px 0 0; margin-left: -2px;"><a style="display: block; padding: 10px 28px; text-decoration: none; color: #00E5FF; font-size: 16px;" href="#tab-spanish-air1l5"><strong>Español</strong></a></li>
+</ul>
+
+<div id="tab-english-air1l5" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+
+<div class="phase-5e-engage" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #E8ECF1;">📢 An enemy that sits still is scenery. An enemy that comes after you is a threat. The difference is a short list of rules the computer checks over and over, many times a second, and that is where your game runs into AI.</p>
+</div>
+</div>
+
+<div class="phase-5e-explore" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>1</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Open your game</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Go to <a style="color: #00E5FF;" href="https://arcade.makecode.com/" target="_blank">arcade.makecode.com</a>, sign in with Microsoft, and open your ocean game from <strong>My Projects</strong>.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>2</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Open your worksheet</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Click the assignment link on this page to open your copy of the worksheet in Google, and follow its steps to add an enemy that reacts to the player.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>3</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Tune the difficulty</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Playtest until the enemy is <strong>hard but beatable</strong>. Too fast and nobody wants to play. Too slow and nobody has to try. Then finish the worksheet and turn it in here.</p>
+</div>
+</div>
+
+<p style="margin: 0 0 18px 0; font-size: 15px; color: #8899AA;">Do not see a worksheet when you open this assignment? Ask your teacher for it before you start.</p>
+
+<div class="phase-5e-explain" style="background: #0D2137; border: 2px solid #FF2E63; border-radius: 14px; padding: 16px; margin-bottom: 18px;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FF2E63;"><strong>🧠 Is that really AI?</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">You have met this idea twice already. In <strong>Intro to AI</strong> you wrote algorithms for HorizonBot, step-by-step rules a machine follows exactly. In <strong>Machine Learning Week</strong> you trained a model to sort things it had never seen.</p>
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Your enemy is the first kind. It is not thinking about you. It is checking a rule you wrote, over and over, very fast. Most of what people call game AI is exactly that, and knowing the difference is the whole point.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00E676;"><strong>✅ By the end of this lesson:</strong></p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 16px; color: #C0CCE0;">✓ Added an enemy that reacts to the player</p>
+<p style="margin: 4px 0; font-size: 16px; color: #C0CCE0;">✓ Playtested until it was hard but beatable</p>
+<p style="margin: 4px 0; font-size: 16px; color: #C0CCE0;">✓ Turned in my worksheet</p>
+</div>
+</div>
+
+</div>
+
+<div id="tab-spanish-air1l5" style="background: #132238; border: 2px solid #1E3A5F; border-radius: 0 0 16px 16px; padding: 24px;">
+
+<div class="phase-5e-engage" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px;">
+<div style="background: #1E2D3D; border-radius: 18px; padding: 14px 18px; max-width: 92%; border: 1px solid #2A3F55;">
+<p style="margin: 0; font-size: 17px; color: #E8ECF1;">📢 Un enemigo que se queda quieto es decoración. Un enemigo que te persigue es una amenaza. La diferencia es una listita de reglas que la computadora revisa una y otra vez, muchas veces por segundo, y ahí es donde tu juego se topa con la IA.</p>
+</div>
+</div>
+
+<div class="phase-5e-explore" style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>1</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Abre tu juego</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Entra a <a style="color: #00E5FF;" href="https://arcade.makecode.com/" target="_blank">arcade.makecode.com</a>, inicia sesión con Microsoft y abre tu juego del océano desde <strong>My Projects</strong>.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>2</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Abre tu hoja de trabajo</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Haz clic en el enlace de la tarea en esta página para abrir tu copia de la hoja de trabajo en Google y sigue sus pasos para agregar un enemigo que reaccione al jugador.</p>
+</div>
+</div>
+
+<div style="background: #0B1426; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1E3A5F;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+<div style="background: #00E5FF; color: #0B1426; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;"><strong>3</strong></div>
+<p style="margin: 0; font-size: 19px; color: #ffffff;"><strong>Ajusta la dificultad</strong></p>
+</div>
+<div style="padding-left: 48px;">
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Prueba el juego hasta que el enemigo esté <strong>difícil pero vencible</strong>. Si va muy rápido, nadie quiere jugar. Si va muy lento, nadie tiene que esforzarse. Luego termina la hoja de trabajo y entrégala aquí.</p>
+</div>
+</div>
+
+<p style="margin: 0 0 18px 0; font-size: 15px; color: #8899AA;">¿No ves ninguna hoja de trabajo al abrir esta tarea? Pídesela a tu maestra antes de empezar.</p>
+
+<div class="phase-5e-explain" style="background: #0D2137; border: 2px solid #FF2E63; border-radius: 14px; padding: 16px; margin-bottom: 18px;">
+<p style="margin: 0 0 10px 0; font-size: 17px; color: #FF2E63;"><strong>🧠 ¿Eso de verdad es IA?</strong></p>
+<p style="margin: 0 0 8px 0; font-size: 16px; color: #C0CCE0;">Ya te topaste con esta idea dos veces. En <strong>Intro to AI</strong> escribiste algoritmos para HorizonBot, reglas paso a paso que la máquina sigue tal cual. En <strong>Machine Learning Week</strong> entrenaste un modelo para clasificar cosas que nunca había visto.</p>
+<p style="margin: 0 0 0px 0; font-size: 16px; color: #C0CCE0;">Tu enemigo es del primer tipo. No está pensando en ti. Está revisando una regla que tú escribiste, una y otra vez, muy rápido. Casi todo lo que la gente llama IA de videojuegos es exactamente eso, y saber la diferencia es justo de lo que se trata.</p>
+</div>
+
+<div class="phase-5e-evaluate" style="background: #0D2137; border: 2px solid #00E676; border-radius: 14px; padding: 14px; text-align: center;">
+<p style="margin: 0 0 6px 0; font-size: 17px; color: #00E676;"><strong>✅ Al final de esta lección:</strong></p>
+<div style="text-align: left; display: inline-block;">
+<p style="margin: 4px 0; font-size: 16px; color: #C0CCE0;">✓ Agregué un enemigo que reacciona al jugador</p>
+<p style="margin: 4px 0; font-size: 16px; color: #C0CCE0;">✓ Probé el juego hasta que quedó difícil pero vencible</p>
+<p style="margin: 4px 0; font-size: 16px; color: #C0CCE0;">✓ Entregué mi hoja de trabajo</p>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<p>&nbsp;</p></article></main>
+<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+<script src="../app.js" defer></script>
+</body>
+</html>
