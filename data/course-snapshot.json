@@ -2673,7 +2673,7 @@
       "sha256": "076bcd175cfe383a475a79c4503926405b36a4a811fb6b826bc9aab27770c6c2"
     }
   },
-  "generated_at": "2026-08-14T00:49:31+00:00",
+  "generated_at": "2026-08-14T01:44:56+00:00",
   "modules": [
     {
       "id": 72563,
@@ -21995,8 +21995,35 @@
     3140001
   ],
   "publication_policy": {
+    "canvas_route_aliases": {
+      "teacher-guide-career-fair-project-4": {
+        "reason": "The Career + Communication guide still uses the former Career Fair guide slug. The current guide is the same intended destination.",
+        "target_module_item_id": 2641565
+      }
+    },
     "course_id": 23402,
     "default_visibility": "public",
+    "empty_link_repairs": {
+      "2634352": [
+        {
+          "kind": "file",
+          "reason": "The inherited Spanish Career Fair page lost its planning-sheet file target. The current district research organizer is the intended public resource.",
+          "target_file_id": 3180499
+        }
+      ],
+      "2634354": [
+        {
+          "kind": "url",
+          "reason": "The fallback link beside the named Storytelling in CoSpaces tutorial was empty.",
+          "target": "https://www.youtube.com/watch?v=SAaLoXmpUig"
+        },
+        {
+          "kind": "url",
+          "reason": "The remix/share link was empty; the same page embeds this exact CoSpaces project as its example.",
+          "target": "https://edu.cospaces.io/NTU-AZP"
+        }
+      ]
+    },
     "file_download_aliases": {
       "3133443": {
         "reason": "The referenced Canvas file record returns 404, while this byte-identical course copy remains downloadable.",
@@ -22005,6 +22032,26 @@
       "3133572": {
         "reason": "The referenced Canvas file record returns 400, while this byte-identical course copy remains downloadable.",
         "source_file_id": 3133484
+      }
+    },
+    "missing_route_notices": {
+      "g1ad05ff21d0144f521a77d44ff19add6": "The source course does not currently contain the linked Spanish Vision Board page."
+    },
+    "placeholder_link_repairs": {
+      "YOUR_CANVAS_LINK_MODULE1": {
+        "target_module_item_id": 2634277
+      },
+      "YOUR_CANVAS_LINK_MODULE2": {
+        "target_module_item_id": 2634278
+      },
+      "YOUR_CANVAS_LINK_MODULE3": {
+        "target_module_item_id": 2634279
+      },
+      "YOUR_CANVAS_LINK_MODULE4": {
+        "target_module_item_id": 2634280
+      },
+      "YOUR_CANVAS_LINK_MODULE5": {
+        "target_module_item_id": 2634280
       }
     },
     "protected_items": [
@@ -22021,7 +22068,7 @@
     ]
   },
   "schema_version": 1,
-  "semantic_sha256": "23b43c47a7d1f62fef4ff2f9ad5b5ea481591d9dfb8c95eefe94bf13e673918d",
+  "semantic_sha256": "6dfd9e077fd6a1b4a19667a5c3d6f1e23fd1048a2751eac88461ccf73f4716d1",
   "source": {
     "canvas_host": "https://verizoninnovativelearning.instructure.com",
     "course_id": 23402

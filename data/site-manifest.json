@@ -9,7 +9,7 @@
   "pages": {
     "index.html": {
       "kind": "index",
-      "sha256": "b708142f3ccbc23925b0caaef1f06f3e6e45a537f07fad1cb8fa5ceec3d3d930"
+      "sha256": "1e9ee0fe6fe79ce4dc776a6a166c1c1ac6affd7d4925efc0d6ab3a92e84a2e15"
     },
     "lessons/2633980.html": {
       "canvas_body_sha256": "6b3a25be93b6baeb240434e7fca430101d3160288b10c6c9cc724e9e4723c072",
@@ -2633,11 +2633,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "49338522c64166a82bb4c1c4cac76eefebe3acc792a155957b2dd7b1dc850ce6"
+      "sha256": "d63ff250062818ee9ddab57d8a483367497833493e497bd31285eeb298d357a2"
     }
   },
   "schema_version": 1,
-  "site_sha256": "ab01f9f11a6d609f38b38d1971ca7c777e69cad74f161894c24556f345006c52",
-  "snapshot_sha256": "23b43c47a7d1f62fef4ff2f9ad5b5ea481591d9dfb8c95eefe94bf13e673918d",
+  "site_sha256": "c9762d9be5667746a9fbc17957d17118d5a9ce293ab720927673df554a7462c1",
+  "snapshot_sha256": "6dfd9e077fd6a1b4a19667a5c3d6f1e23fd1048a2751eac88461ccf73f4716d1",
   "unresolved": []
 }

@@ -82,8 +82,12 @@ def main() -> None:
     expected_snapshot_hash = semantic_snapshot_hash(snapshot)
     if snapshot.get("semantic_sha256") != expected_snapshot_hash:
         failures.append("Canvas snapshot semantic hash is invalid")
+    if snapshot.get("publication_policy") != policy:
+        failures.append("Canvas snapshot was not exported with the current publication policy")
     if manifest.get("snapshot_sha256") != snapshot.get("semantic_sha256"):
         failures.append("Site manifest was not built from the current Canvas snapshot")
+    if public_links.get("canvas_snapshot_sha256") != snapshot.get("semantic_sha256"):
+        failures.append("Stable public-links.json was not built from the current Canvas snapshot")
 
     modules = snapshot["modules"]
     items = [item for module in modules for item in module["items"]]

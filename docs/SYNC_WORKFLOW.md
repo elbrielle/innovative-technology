@@ -20,6 +20,10 @@ The snapshot pins:
 - referenced Canvas file metadata and exact downloaded bytes; and
 - the explicit public/protected publication policy.
 
+The snapshot stores the exact publication policy used during export. Repository
+verification fails if that embedded policy, the current policy file, the public
+link manifest, and the generated-site manifest do not all name the same snapshot.
+
 The generated-site verifier checks all expected pages/assets, hashes every public file, validates relative links and fragments, rejects authenticated course links, and confirms that the protected phone files were not exported.
 
 `verify_live.py` is read-only. It refetches the live projections and fails when Canvas has changed since the snapshot.
