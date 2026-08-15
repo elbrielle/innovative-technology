@@ -159,6 +159,28 @@ def main() -> None:
     html_paths = [ROOT / "index.html", ROOT / "parity.html"] + sorted((ROOT / "modules").glob("*.html")) + sorted((ROOT / "lessons").glob("*.html"))
     canvas_route = re.compile(r"https?://verizoninnovativelearning\.instructure\.com/(?:api/v1/)?courses/23402/")
     forbidden_tokens = ["YOUR_BG_IMAGE_URL", "Link.Placeholder"]
+    forbidden_editorial_phrases = [
+        "Scope boundary:",
+        "Download the reviewed",
+        "outside the required sequence",
+        "inherited sustainability",
+        "points as shipped",
+        "Publish states are mixed as shipped",
+        "inherited from the source curriculum",
+        "source lesson was",
+        "(Elisha, Aug 2026)",
+        "stock interactive version",
+        "stock Articulate RISE interactive",
+        "original Lesson 1",
+        "parked as optional enrichment",
+        "leave it parked",
+        "Reconnect the imported Edpuzzle assignments",
+        "belong to the source Canvas class",
+        "ships unpublished",
+        "ship unpublished",
+        "owner scoring decision",
+        "author’s placeholder",
+    ]
     for path in html_paths:
         text = path.read_text(encoding="utf-8")
         parser = LinkParser()
@@ -170,6 +192,11 @@ def main() -> None:
         for token in forbidden_tokens:
             if token in text:
                 failures.append(f"{path.relative_to(ROOT)} contains unresolved token {token}")
+        for phrase in forbidden_editorial_phrases:
+            if phrase.lower() in text.lower():
+                failures.append(
+                    f"{path.relative_to(ROOT)} contains internal editorial language: {phrase}"
+                )
 
     protected_ids = {str(value) for value in snapshot.get("protected_file_ids", [])}
     asset_names = "\n".join(actual_assets)
