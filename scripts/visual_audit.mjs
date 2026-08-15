@@ -17,26 +17,40 @@ const out = path.join(root, "tmp", "site-visual-audit");
 fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(out, { recursive: true });
 
-const allPages = Object.keys(manifest.pages).sort();
+// Redirect aliases are verified structurally by verify_site.py. They navigate
+// immediately, so treating them as visual pages can destroy the evaluation
+// context before the responsive checks run.
+const redirectPages = Object.values(manifest.pages).filter((page) => page.kind === "legacy_redirect").length;
+const allPages = Object.entries(manifest.pages)
+  .filter(([, page]) => page.kind !== "legacy_redirect")
+  .map(([relative]) => relative)
+  .sort();
 const samples = [
   "index.html",
   "parity.html",
   "modules/72565.html",
   "modules/72572.html",
   "lessons/2633987.html",
+  "lessons/2634019.html",
   "lessons/2634012.html",
+  "lessons/2634022.html",
+  "lessons/2634023.html",
+  "lessons/2634030.html",
   "lessons/2634035.html",
   "lessons/2634037.html",
   "lessons/2634055.html",
   "lessons/2634354.html"
 ].filter((value) => allPages.includes(value));
 
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({
+  headless: true,
+  ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {})
+});
 const failures = [];
 const metrics = [];
 
 async function inspect(relative, viewport, screenshot = false) {
-  const page = await browser.newPage({ viewportSize: viewport });
+  const page = await browser.newPage({ viewport });
   await page.route("**/*", async (route) => {
     const url = new URL(route.request().url());
     if (url.hostname === "127.0.0.1") await route.continue(); else await route.abort();
@@ -61,6 +75,9 @@ async function inspect(relative, viewport, screenshot = false) {
       return { title: document.title, overflow, brokenImages, emptyLinks, width: root.clientWidth, scrollWidth: root.scrollWidth };
     });
     metrics.push({ page: relative, viewport: viewport.width, ...result });
+    if (result.width !== viewport.width) {
+      failures.push(`${relative} requested ${viewport.width}px viewport but rendered at ${result.width}px`);
+    }
     if (result.overflow > 1) failures.push(`${relative} overflows ${viewport.width}px viewport by ${result.overflow}px`);
     if (result.brokenImages.length) failures.push(`${relative} has broken local images: ${result.brokenImages.join(", ")}`);
     if (result.emptyLinks.length) failures.push(`${relative} has empty links: ${result.emptyLinks.join(" | ")}`);
@@ -112,5 +129,5 @@ for (const relative of samples) {
 await browser.close();
 fs.writeFileSync(path.join(out, "metrics.json"), JSON.stringify(metrics, null, 2) + "\n");
 fs.writeFileSync(path.join(out, "failures.json"), JSON.stringify(failures, null, 2) + "\n");
-console.log(JSON.stringify({ status: failures.length ? "FAIL" : "PASS", pagesAt390: allPages.length, screenshots: samples.length * 2, failures }, null, 2));
+console.log(JSON.stringify({ status: failures.length ? "FAIL" : "PASS", pagesAt390: allPages.length, redirectPages, screenshots: samples.length * 2, failures }, null, 2));
 if (failures.length) process.exit(1);

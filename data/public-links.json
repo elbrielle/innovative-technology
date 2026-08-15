@@ -1,5 +1,5 @@
 {
-  "canvas_snapshot_sha256": "04b1e32102fd5b085054d4f8a6cfff0a26c6f3e251bdc0c7c88487fde48b5e4e",
+  "canvas_snapshot_sha256": "f8d903ca56cd7c9561464efbdc9b0ff636c9d77134c7936c6156943ab66cd1b1",
   "items": [
     {
       "item_position": 1,
@@ -500,7 +500,7 @@
       "module_name": "SW1 · Graphic Design with the 1960s",
       "module_position": 4,
       "public_state": "public",
-      "published_in_canvas": false,
+      "published_in_canvas": true,
       "title": "Graphic Design Foundations",
       "type": "SubHeader",
       "url": "https://elbrielle.github.io/innovative-technology/modules/72566.html"
