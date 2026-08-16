@@ -1,19 +1,19 @@
 {
   "counts": {
-    "item_pages": 325,
-    "items": 388,
+    "item_pages": 327,
+    "items": 391,
     "modules": 34,
     "protected_items": 1,
-    "public_files": 157
+    "public_files": 169
   },
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "05e5240e187e265a276588ab304df07c69dfc62511c1b01e482275349efa7002"
+      "sha256": "a6d1a34de8e0b3cce97758071bdd509ee48f474456d5cdf228ec6c257b4a629a"
     },
     "index.html": {
       "kind": "index",
-      "sha256": "01c83b3462369424c4f75b7054e874c13a1871e0218a7219638afe5f87a60b83"
+      "sha256": "892c3c59582a1f1a508d9e8e84530af7d3274e073ab908e2728047f7ec5b1dd7"
     },
     "lessons/2633980.html": {
       "canvas_body_sha256": "6b3a25be93b6baeb240434e7fca430101d3160288b10c6c9cc724e9e4723c072",
@@ -947,32 +947,32 @@
       "sha256": "eb8a6a4ae55d9f8a002f2d81451bcea53e3702c9f4718dc0c5c9f396522822ea"
     },
     "lessons/2634134.html": {
-      "canvas_body_sha256": "c6b25ab80104ab8e0194bc934869b4446e9bbe5f5a2f8ca8dd2989a7de175bb9",
+      "canvas_body_sha256": "42292e141282e17210d814a362330ced1a1f4a902a35a373a42ce65b7566f770",
       "canvas_id": 2634134,
       "kind": "item",
       "public_state": "public",
-      "sha256": "490d0d39f8f1f02d3dd1a9338b27a43b17e5216e58cf0a8a32ed7524832c1baa"
+      "sha256": "b177ea884cfca766cec15e983571cb2df5e6f2270d8b180d936f5f1e290f7451"
     },
     "lessons/2634135.html": {
-      "canvas_body_sha256": "7ff7bbbb487019d6d6ed79ab6b0695db2e3289e2c0683c6fee2686e87b8be761",
+      "canvas_body_sha256": "5ee6e25da79194defdd00f7d508d86294e15b9f60ee04c00ca1a7187b72d9532",
       "canvas_id": 2634135,
       "kind": "item",
       "public_state": "public",
-      "sha256": "062aaaca72ec3f0db7f5990d5bdda47beafa6c02a4d5cf76140de6db8a179b11"
+      "sha256": "50c51b600e3a1a8cca8dd877e8ea00c49a7940404477e495d0fb217deba51a2e"
     },
     "lessons/2634136.html": {
-      "canvas_body_sha256": "90b61821e8512933525a21c9a2c8ca2658f185b5fcf446dc3cb08ea23d755501",
+      "canvas_body_sha256": "50f560347fe9d68d0eb6df1bb589a26b03948c511831946a0584742e2594a2b7",
       "canvas_id": 2634136,
       "kind": "item",
       "public_state": "public",
-      "sha256": "4a49cf49234c50aa7895e4c2fb07569dc4c5c90b9c419d44decbb7078be0ba3f"
+      "sha256": "c7326c579d2a86334ecc57916acedd9923481dd8cdc2ba4942d693c1b9fe6bdf"
     },
     "lessons/2634137.html": {
-      "canvas_body_sha256": "0e354843684e5b0dbb13507a0a3a213c57a5ce9ff11065c13862a4071edb9bb4",
+      "canvas_body_sha256": "9259d59d29994e7e740e82cf10a3d87a2e833bb0ca119bb4c674dc487a91d790",
       "canvas_id": 2634137,
       "kind": "item",
       "public_state": "public",
-      "sha256": "dcf5a47822606aff67a79813e3b7d818b8cd452d48f7452c7cbc7030055bcc8a"
+      "sha256": "5327d351b948da54aafbe4ad4680bd9bfbcad61d88422c302f15d804a9abcba1"
     },
     "lessons/2634138.html": {
       "canvas_body_sha256": "11d35da9f5840623d1c947a35a0f3dff33614b580ab48d1b7354576145c41d82",
@@ -2290,6 +2290,20 @@
       "public_state": "public",
       "sha256": "652c7a37250c51935b857805880f21b906bee179efdbd99ca4b439ba5648c375"
     },
+    "lessons/2655800.html": {
+      "canvas_body_sha256": "994acbac0d979a3b30ab49634d54768d2f2e536db116b8f54bf18a251ad645a2",
+      "canvas_id": 2655800,
+      "kind": "item",
+      "public_state": "public",
+      "sha256": "ec4dfecc887f83fa81067b9698df41b3655a2316fdb7624bbdbfc2cc4e6fe417"
+    },
+    "lessons/2655801.html": {
+      "canvas_body_sha256": "e37b87995b4790e9b2d83c307ee12b2ab69009dacf45fc6b543b05fbca34db54",
+      "canvas_id": 2655801,
+      "kind": "item",
+      "public_state": "public",
+      "sha256": "0d84ef77853190f0f8e5ef60307ae332a36ee881d289d6b6151f20f86ee80218"
+    },
     "lessons/augmented-reality-with-mergecube-activity-lesson-1-the-basic.html": {
       "canvas_id": 2634252,
       "kind": "legacy_redirect",
@@ -2313,17 +2327,17 @@
     "lessons/image-classification-coding-with-models.html": {
       "canvas_id": 2634136,
       "kind": "legacy_redirect",
-      "sha256": "bac583c07250340ac6d15772a51d3c22474ff3360e6fd590cbc4e0be43cc7d1b"
+      "sha256": "04b462ce1eab4f86f2bf9239cf54d4001c5e50d7ea281aa983be7141f0212ef3"
     },
     "lessons/image-classification-intro-to-image-classification.html": {
       "canvas_id": 2634135,
       "kind": "legacy_redirect",
-      "sha256": "048f4ae7abe4c5e6b3b69abeaf49c0fa80dfd0474e610ef7b5a1326ecb818d29"
+      "sha256": "0c56699e510c3a63516f016cf39ed679e08caff9e15f2825dedeab355f8c2351"
     },
     "lessons/image-classification-project-turn-in-coding-with-models.html": {
       "canvas_id": 2634137,
       "kind": "legacy_redirect",
-      "sha256": "f76d5e705d14a66430dc27c8b53d7130c069a3048e95d371eeb6dd5983bfc832"
+      "sha256": "068432c4e92865ae7dcb4f7572e5e5910788afeaa179a9d6415b61dcfbe98996"
     },
     "lessons/piskel-superhero-micro-animation-edpuzzle-getting-started-pi.html": {
       "canvas_id": 2634016,
@@ -2533,7 +2547,7 @@
     "modules/72576.html": {
       "canvas_id": 72576,
       "kind": "module",
-      "sha256": "cf027eb32b5142a3dc1fa161446448c68d449dd8be63d08edaab1a0766150ae6"
+      "sha256": "f25f8b9ec7cdbc7574b98744c603bf06f1b6af45c04b7852d19587bf2085a325"
     },
     "modules/72577.html": {
       "canvas_id": 72577,
@@ -2637,11 +2651,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "d3b4af0cc7e5fb52abeb21e6c6f003c6e7f2f21af2c427fef2e66eb9f6fe2cbe"
+      "sha256": "168abec8f7ab7db5be62ad376a9749417ea21ad8460c0651238842be288da3ac"
     }
   },
   "schema_version": 1,
-  "site_sha256": "23df51d13378b986aace9375723541410b61d3011e40cdc8bad714914438d35c",
-  "snapshot_sha256": "7887bc32e0f019215f220d6c831a7fcd08d22e1466a397d07df368c16939948b",
+  "site_sha256": "3def576b0b4b21667f7266d0ef8ef81f975e8aab31f2b7b9fb50294e4f6e648c",
+  "snapshot_sha256": "7046be13bbdb05790d1a1ba4158492da54bde21cc2e3bb9586c279e27e774847",
   "unresolved": []
 }
