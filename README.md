@@ -1,10 +1,10 @@
-# VILS CTE Smart Solutions — Public Curriculum Mirror
+# VILS CTE Smart Solutions — Public Curriculum Reference
 
-This repository publishes an administrator-accessible companion to the live **VILS CTE Smart Solutions** Canvas course.
+This repository publishes the public reference for the **VILS CTE Smart Solutions** Canvas course used by Irving ISD.
 
 **Public site:** https://elbrielle.github.io/innovative-technology/
 
-Canvas remains the student delivery and grading environment. The site mirrors the complete ordered course for curriculum review: teacher guides, student directions, assessments, rubrics, linked resources, and approved Canvas files.
+Canvas remains the student delivery and grading environment. The site presents the complete ordered course for curriculum review: teacher guides, student directions, assessments, rubrics, linked resources, and approved Canvas files.
 
 ## Publication boundary
 

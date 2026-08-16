@@ -9,19 +9,45 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="lesson-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="site-header__inner wrap">
+    <a class="site-identity" href="../index.html" aria-label="Smart Solutions curriculum home">
+      <span class="site-identity__district">Irving Independent School District</span>
+      <span class="site-identity__course">Smart Solutions</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html">Curriculum</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
 
-<header class="lesson-header">
+<header class="page-intro lesson-header">
   <div class="lesson-header__inner">
-    <a class="back-link" href="../modules/72576.html">← SW4 · Image Classification</a>
-    <div class="lesson-kicker"><span>Teacher guide</span><span>core</span><span>Unpublished in Canvas</span></div>
-    <h1>Facilitator&#x27;s Guide: Image Classification (Picture This)</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Curriculum</a><span aria-hidden="true">/</span><a href="../modules/72576.html">SW4 · Image Classification</a></nav>
+    <p class="page-kicker">Teacher material · Page · Unpublished in Canvas</p>
+    <h1 class="page-title">Facilitator&#x27;s Guide: Image Classification (Picture This)</h1>
     <dl class="lesson-facts"><div><dt>Canvas state</dt><dd>Unpublished</dd></div></dl>
   </div>
 </header>
-<main class="lesson-main">
-  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<main class="lesson-main" id="main-content">
+  <aside class="reference-note"><strong>Canvas</strong><span>Use Canvas for submissions and grades.</span></aside>
 <article class="canvas-content"><div style="font-size:16px;color:#1A2634;font-family:-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;"><div style="background:#0B1426;border:2px solid #00E5FF;border-radius:14px;padding:20px 22px;margin:0 0 14px 0;"><p style="margin:0 0 6px 0;font-size:16px;color:#00E5FF;"><strong>Facilitator’s Guide · SW4</strong></p><h2 style="margin:0 0 6px 0;font-size:25px;color:#ffffff;">Facilitator’s Guide: Image Classification (Picture This)</h2><p style="margin:0;font-size:16px;color:#C0CCE0;">Train an AI to see, then give it a job: three Canvas items across a five-day week.</p></div><p style="margin:0 0 18px 0;"><span style="display:inline-block;background:#132238;color:#ffffff;border-radius:10px;padding:6px 14px;font-size:16px;margin:0 8px 8px 0;">📅 5 days, 3 items</span><span style="display:inline-block;background:#132238;color:#ffffff;border-radius:10px;padding:6px 14px;font-size:16px;margin:0 8px 8px 0;">🔧 Teachable Machine · RAISE Playground</span><span style="display:inline-block;background:#132238;color:#ffffff;border-radius:10px;padding:6px 14px;font-size:16px;margin:0 8px 8px 0;">🏆 100 points as built</span></p><h3 style="margin:0 0 8px 0;font-size:18px;color:#0B1426;">The unit at a glance</h3><table style="border-collapse:collapse;width:100%;margin:0 0 20px 0;"><thead><tr><th style="border:1px solid #B7C2D0;background:#0B1426;color:#00E5FF;padding:8px 10px;font-size:16px;text-align:left;">Module item</th><th style="border:1px solid #B7C2D0;background:#0B1426;color:#00E5FF;padding:8px 10px;font-size:16px;text-align:left;">What happens</th><th style="border:1px solid #B7C2D0;background:#0B1426;color:#00E5FF;padding:8px 10px;font-size:16px;text-align:left;">When</th></tr></thead><tbody><tr><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;"><strong>Intro to Image Classification</strong></td><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;"><strong>Day 1.</strong> Students train a thumbs-up / thumbs-down model in Teachable Machine with 30+ photos per class, then deliberately try to break it: sideways thumb, other hand, new background, different distance. A 2:24 walkthrough video is on the page, and the reflection goes in the submission comments.</td><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;">Day 1</td></tr><tr><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;"><strong>Coding with Models</strong></td><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;"><strong>Days 4 and 5.</strong> Thursday: plan two moves, train the model, run a bias check by swapping with a partner, export the shareable model link into the planning doc. Friday: import that link into the <strong>RAISE Playground</strong> dinosaur template, match the class names exactly, and make the sprite react.</td><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;">Days 4 and 5</td></tr><tr><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;"><strong>[Project Turn In] Coding with Models</strong></td><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;"><strong>Day 5.</strong> The submission item. Students save from the Playground as a <strong>.sb3</strong> file and upload it here, plus a reflection in the comments.</td><td style="border:1px solid #B7C2D0;padding:8px 10px;font-size:16px;color:#1A2634;">Day 5</td></tr></tbody></table><h3 style="margin:0 0 8px 0;font-size:18px;color:#0B1426;">Materials + prep</h3><ul style="margin:0 0 20px 0;padding-left:22px;font-size:16px;color:#1A2634;"><li style="margin:0 0 7px 0;"><strong>Webcams working and camera permission allowed.</strong> Teachable Machine asks for the camera the moment students start recording samples. A device policy that blocks it will stop Day 1 dead, so test on a student Chromebook, not yours.</li><li style="margin:0 0 7px 0;"><strong>The RAISE Playground template opened once before Friday.</strong> It loads a project file from a link, and it is slow the first time. Have it up on the projector when the period starts.</li><li style="margin:0 0 7px 0;">The planning doc from the Days 4 and 5 assignment. Each student’s copy is already attached. They open it, they do not make a copy.</li><li style="margin:0 0 7px 0;">Space for students to move. The lean-left / lean-right models need students to actually move in front of the camera, and 30 photos per class means everybody is waving at once.</li><li style="margin:0 0 7px 0;">Headphones for the Day 1 walkthrough video.</li></ul><h3 style="margin:0 0 8px 0;font-size:18px;color:#0B1426;">Watch-fors</h3><ul style="margin:0 0 20px 0;padding-left:22px;font-size:16px;color:#1A2634;"><li style="margin:0 0 7px 0;"><strong>Three Canvas items cover five days.</strong> Day 1 is one item, Days 4 and 5 share one, and the turn-in is the third. <strong>Days 2 and 3 have no Canvas item.</strong> That is where the Day 1 “try to break it” work gets discussed and extended. Nothing is missing from the module. It just is not written down, so plan those two periods yourself.</li><li style="margin:0 0 7px 0;"><strong>Two items are called “Coding with Models.”</strong> The one in square brackets is the turn-in. On Friday, point at it by name or half the class will upload into the wrong assignment.</li><li style="margin:0 0 7px 0;"><strong>Class names have to match, letter for letter.</strong> The Playground code reads “when model detects ___” against the exact strings from Teachable Machine. A capital letter or a stray space is the single most common Friday failure, and it looks like broken code.</li><li style="margin:0 0 7px 0;"><strong>The bias check happens twice, on purpose.</strong> Thursday step 3 has partners test each other’s models, and Friday ends with “did my AI fail anyone?” That question is the whole point of the week, and <strong>Machine Learning Week</strong> and <strong>AI Ethics</strong> pick it up later.</li><li style="margin:0 0 7px 0;"><strong>The .sb3 file only exists if they save it.</strong> The Playground does not keep their work. Give the last five minutes of Friday to File → Save to your computer and upload, not to one more round of testing.</li></ul><div style="background:#E6F7FB;border:2px solid #0B1426;border-radius:14px;padding:16px 18px;margin:0;"><h3 style="margin:0 0 6px 0;font-size:17px;color:#0B1426;">Grading</h3><p style="margin:0;font-size:16px;color:#1A2634;"><strong>[Project Turn In] Coding with Models</strong> is the week’s Major grade, at <strong>100 points</strong>, and it takes the <strong>.sb3</strong> file upload. The two lessons that feed it are <strong>0 points</strong>: <strong>Intro to Image Classification</strong> takes a website URL plus a reflection in the comments, and <strong>Coding with Models</strong> runs through Google Assignments with the planning doc. Read both before you score the turn-in, because that is where the work happened.</p></div></div></article></main>
-<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+
+<footer class="site-footer">
+  <div class="site-footer__inner wrap">
+    <div>
+      <strong>Smart Solutions: Innovative Technology</strong>
+      <p>Curriculum developed for Irving ISD by Elisha Lucero.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="../index.html">Curriculum</a>
+      <a href="../about.html">About</a>
+      <a href="../parity.html">Publication status</a>
+    </nav>
+  </div>
+</footer>
 <script src="../app.js" defer></script>
 </body>
 </html>

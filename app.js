@@ -1,37 +1,34 @@
 (function () {
   var query = "";
-  var filter = "all";
   var search = document.getElementById("course-search");
-  var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-filter]"));
+  var status = document.getElementById("search-status");
 
-  function matches(card) {
-    var text = (card.getAttribute("data-search") || card.textContent || "").toLowerCase();
-    var role = card.getAttribute("data-role");
-    var state = card.getAttribute("data-state");
-    var filtered = filter === "all" || role === filter || (filter === "optional" && (state === "optional" || state === "parked"));
-    return filtered && (!query || text.indexOf(query) !== -1);
+  function matches(module) {
+    var text = (module.getAttribute("data-search") || module.textContent || "").toLowerCase();
+    return !query || text.indexOf(query) !== -1;
   }
 
   function updateCourseMap() {
+    var visible = 0;
     document.querySelectorAll("[data-module]").forEach(function (module) {
-      var cards = Array.prototype.slice.call(module.querySelectorAll(".item-card"));
-      cards.forEach(function (card) { card.hidden = !matches(card); });
-      var moduleText = (module.getAttribute("data-search") || "").toLowerCase();
-      var moduleMatch = filter === "all" && query && moduleText.indexOf(query) !== -1;
-      module.hidden = !moduleMatch && cards.length > 0 && !cards.some(function (card) { return !card.hidden; });
+      module.hidden = !matches(module);
+      if (!module.hidden) visible += 1;
     });
+    document.querySelectorAll("[data-course-section]").forEach(function (section) {
+      section.hidden = !Array.prototype.some.call(section.querySelectorAll("[data-module]"), function (module) {
+        return !module.hidden;
+      });
+    });
+    if (status) {
+      status.textContent = query
+        ? (visible === 1 ? "1 module matches your search." : visible + " modules match your search.")
+        : "Showing all " + visible + " modules.";
+    }
   }
 
   if (search) {
     search.addEventListener("input", function () { query = search.value.trim().toLowerCase(); updateCourseMap(); });
   }
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      filter = button.getAttribute("data-filter") || "all";
-      buttons.forEach(function (candidate) { candidate.classList.toggle("is-active", candidate === button); });
-      updateCourseMap();
-    });
-  });
 
   document.querySelectorAll(".enhanceable_content.tabs").forEach(function (tabs, groupIndex) {
     var links = Array.prototype.slice.call(tabs.querySelectorAll(":scope > ul:first-child a[href^='#']"));

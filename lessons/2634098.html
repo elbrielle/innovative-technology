@@ -9,17 +9,30 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="lesson-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="site-header__inner wrap">
+    <a class="site-identity" href="../index.html" aria-label="Smart Solutions curriculum home">
+      <span class="site-identity__district">Irving Independent School District</span>
+      <span class="site-identity__course">Smart Solutions</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html">Curriculum</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
 
-<header class="lesson-header">
+<header class="page-intro lesson-header">
   <div class="lesson-header__inner">
-    <a class="back-link" href="../modules/72572.html">← SW3 · Circuit Systems: Paths, Control + Signals</a>
-    <div class="lesson-kicker"><span>Teacher guide</span><span>core</span><span>Unpublished in Canvas</span></div>
-    <h1>Teacher Guide: Coded Signal System</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Curriculum</a><span aria-hidden="true">/</span><a href="../modules/72572.html">SW3 · Circuit Systems: Paths, Control + Signals</a></nav>
+    <p class="page-kicker">Teacher material · Page · Unpublished in Canvas</p>
+    <h1 class="page-title">Teacher Guide: Coded Signal System</h1>
     <dl class="lesson-facts"><div><dt>Canvas state</dt><dd>Unpublished</dd></div></dl>
   </div>
 </header>
-<main class="lesson-main">
-  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<main class="lesson-main" id="main-content">
+  <aside class="reference-note"><strong>Canvas</strong><span>Use Canvas for submissions and grades.</span></aside>
 <article class="canvas-content"><div class="cs" style="color:#10243b;font-family:Arial,Helvetica,sans-serif;line-height:1.48;max-width:1100px;margin:0 auto">
 <div class="hero" style="background:#123d56;color:#ffffff;padding:clamp(1.4rem,4vw,3rem);border-radius:20px;border-bottom:8px solid #24c8c7;position:relative;overflow:hidden"><div class="kicker" style="display:inline-block;background:#ffd54a;color:#172033;padding:.35rem .7rem;border-radius:999px;margin-bottom:1rem"><strong>TEACHER GUIDE · DAYS 8-10</strong></div><h1 style="line-height:1.12;margin-top:0;font-size:clamp(2rem,4vw,3.25rem)">Coded Signal System</h1><p class="lede" style="margin:.45rem 0 1rem;font-size:clamp(1.05rem,2vw,1.28rem);max-width:760px">Students turn electrical pulses into a message, test it on a real listener, and revise the weak point.</p><div class="meta" style="display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));margin:1.2rem 0;grid-template-columns:repeat(auto-fit,minmax(min(160px,100%),1fr))"><div class="chip" style="background:#ffffff;color:#10243b;padding:.8rem 1rem;border-radius:12px;border-left:6px solid #24c8c7"><strong>Slides</strong><br>39-56</div><div class="chip" style="background:#ffffff;color:#10243b;padding:.8rem 1rem;border-radius:12px;border-left:6px solid #24c8c7"><strong>Final</strong><br>Blind decode + revision</div><div class="chip" style="background:#ffffff;color:#10243b;padding:.8rem 1rem;border-radius:12px;border-left:6px solid #24c8c7"><strong>Grade</strong><br>100 points</div></div></div>
 <div class="section" style="padding:1.35rem;margin:1.15rem 0;border:1px solid #b9d5d5;border-radius:16px;background:#ffffff"><h2 style="line-height:1.12;margin-top:0;font-size:clamp(1.45rem,3vw,2rem);margin-bottom:.55rem">Prep</h2><ul class="check" style="list-style:none;padding-left:0"><li style="padding:.3rem 0">✓ Parts: battery holder, press switch, speaker or alarm IC, and the exact connectors shown in the approved kit diagram.</li><li style="padding:.3rem 0">✓ Print one Morse key per student and the Signal Lab packet.</li><li style="padding:.3rem 0">✓ Approve short classroom-safe messages before students rehearse.</li><li style="padding:.3rem 0">✓ Set a volume routine: three-second sound check, then switches stay untouched while instructions are given.</li></ul><a class="button" href="../assets/canvas/3180512-Circuit_Systems_Signal_Lab_Planner_Test_Record.docx" style="display:inline-block;background:#0f7478;color:#ffffff;text-decoration:none;padding:.75rem 1rem;border-radius:9px;margin:.25rem .35rem .25rem 0" data-api-endpoint="../assets/canvas/3180512-Circuit_Systems_Signal_Lab_Planner_Test_Record.docx" data-api-returntype="File"><strong>Signal Lab editable DOCX</strong></a><a class="button alt" href="../assets/canvas/3180513-Circuit_Systems_Signal_Lab_Planner_Test_Record.pdf" style="display:inline-block;background:#0f7478;color:#ffffff;text-decoration:none;padding:.75rem 1rem;border-radius:9px;margin:.25rem .35rem .25rem 0;background:#263e63" data-api-endpoint="../assets/canvas/3180513-Circuit_Systems_Signal_Lab_Planner_Test_Record.pdf" data-api-returntype="File"><strong>Signal Lab printable PDF</strong></a></div>
@@ -28,7 +41,20 @@
 <div class="section warn" style="padding:1.35rem;margin:1.15rem 0;border:1px solid #b9d5d5;border-radius:16px;background:#ffffff;background:#fff8df;border-color:#f0c84b"><h2 style="line-height:1.12;margin-top:0;font-size:clamp(1.45rem,3vw,2rem);margin-bottom:.55rem">Message bank</h2><p style="margin:.45rem 0 1rem"><strong>GO · OK · YES · NO · WAIT · TURN · OPEN · CLOSE</strong></p><p style="margin:.45rem 0 1rem">Support route: assign a three-letter message, partially complete the planner, rehearse one letter at a time, and allow one full replay. Grade the same rubric.</p></div>
 <div class="section teacher" style="padding:1.35rem;margin:1.15rem 0;border:1px solid #b9d5d5;border-radius:16px;background:#ffffff;border-left:7px solid #ff8b4c;background:#fff2e9"><h2 style="line-height:1.12;margin-top:0;font-size:clamp(1.45rem,3vw,2rem);margin-bottom:.55rem">If time is tight</h2><p style="margin:.45rem 0 1rem">Use the integrated alarm diagram for every pair, assign messages, and limit revision to one tested change. Do not remove the blind first decode or the final decode; those are the project evidence.</p></div><div class="footer" style="font-size:.9rem;color:#51606f;padding:1rem 0">Circuit Systems: Paths, Control + Signals</div></div>
 </article></main>
-<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>
+
+<footer class="site-footer">
+  <div class="site-footer__inner wrap">
+    <div>
+      <strong>Smart Solutions: Innovative Technology</strong>
+      <p>Curriculum developed for Irving ISD by Elisha Lucero.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="../index.html">Curriculum</a>
+      <a href="../about.html">About</a>
+      <a href="../parity.html">Publication status</a>
+    </nav>
+  </div>
+</footer>
 <script src="../app.js" defer></script>
 </body>
 </html>
