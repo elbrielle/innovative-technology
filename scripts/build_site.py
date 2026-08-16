@@ -45,7 +45,14 @@ def strip_tags(value: str) -> str:
 def item_role(item: dict) -> str:
     title = (item.get("title") or "").lower()
     metadata = (item.get("resource") or {}).get("metadata") or {}
-    if "facilitator" in title or "teacher guide" in title or title.startswith("teacher "):
+    if title.startswith("student") or "student guide" in title or "student's guide" in title:
+        return "student"
+    if (
+        "facilitator" in title
+        or "teacher guide" in title
+        or "teacher reference" in title
+        or title.startswith("teacher ")
+    ):
         return "teacher"
     if metadata.get("hide_from_students"):
         return "teacher"
@@ -267,6 +274,17 @@ def rewrite_body(body: str, maps: dict, unresolved: list[dict], item: dict) -> s
 
     body = re.sub(r"\b(href|src|data-api-endpoint)=(['\"])(.*?)\2", attribute, body, flags=re.I)
     body = re.sub(r"\sdata-course-type=['\"][^'\"]*['\"]", "", body, flags=re.I)
+
+    def decorative_banner_alt(match: re.Match) -> str:
+        tag = match.group(0)
+        if re.search(r"\balt\s*=", tag, re.I):
+            return tag
+        source = re.search(r"\bsrc=['\"]([^'\"]+)", tag, re.I)
+        if source and "docs.google.com/drawings/" in source.group(1) and "w=1162" in source.group(1) and "h=100" in source.group(1):
+            return re.sub(r"<img\b", '<img alt=""', tag, count=1, flags=re.I)
+        return tag
+
+    body = re.sub(r"<img\b[^>]*>", decorative_banner_alt, body, flags=re.I)
     return body
 
 
@@ -290,7 +308,50 @@ def item_metadata_panel(item: dict) -> str:
     return '<dl class="lesson-facts">' + "".join(f"<div><dt>{esc(key)}</dt><dd>{esc(value)}</dd></div>" for key, value in rows) + "</dl>"
 
 
-def shell(title: str, content: str, *, description: str = "", body_class: str = "") -> str:
+def site_header(prefix: str = "", current: str = "") -> str:
+    def nav_link(key: str, href: str, label: str) -> str:
+        active = ' aria-current="page"' if current == key else ""
+        return f'<a href="{prefix}{href}"{active}>{label}</a>'
+
+    return f'''<header class="site-header">
+  <div class="site-header__inner wrap">
+    <a class="site-identity" href="{prefix}index.html" aria-label="Smart Solutions curriculum home">
+      <span class="site-identity__district">Irving Independent School District</span>
+      <span class="site-identity__course">Smart Solutions</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      {nav_link("curriculum", "index.html", "Curriculum")}
+      {nav_link("about", "about.html", "About")}
+    </nav>
+  </div>
+</header>'''
+
+
+def site_footer(prefix: str = "") -> str:
+    return f'''<footer class="site-footer">
+  <div class="site-footer__inner wrap">
+    <div>
+      <strong>Smart Solutions: Innovative Technology</strong>
+      <p>Curriculum developed for Irving ISD by Elisha Lucero.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="{prefix}index.html">Curriculum</a>
+      <a href="{prefix}about.html">About</a>
+      <a href="{prefix}parity.html">Publication status</a>
+    </nav>
+  </div>
+</footer>'''
+
+
+def shell(
+    title: str,
+    content: str,
+    *,
+    description: str = "",
+    body_class: str = "",
+    prefix: str = "",
+    current: str = "",
+) -> str:
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -299,11 +360,14 @@ def shell(title: str, content: str, *, description: str = "", body_class: str = 
   <meta name="color-scheme" content="light">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description or title)}">
-  <link rel="stylesheet" href="{('../' if body_class else '')}styles.css">
+  <link rel="stylesheet" href="{prefix}styles.css">
 </head>
 <body class="{esc(body_class)}">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+{site_header(prefix, current)}
 {content}
-<script src="{('../' if body_class else '')}app.js" defer></script>
+{site_footer(prefix)}
+<script src="{prefix}app.js" defer></script>
 </body>
 </html>
 '''
@@ -332,67 +396,125 @@ def lesson_document(item: dict, module: dict, body: str) -> str:
     flavor = item_flavor(item)
     protected = item.get("public_state") == "protected"
     resource = item.get("resource") or {}
-    badge = "Teacher guide" if role == "teacher" else item_type_label(item)
+    audience = "Teacher material" if role == "teacher" else "Student material"
+    context = [audience, item_type_label(item)]
+    if flavor in {"optional", "parked"}:
+        context.append("Optional")
+    context.append("Published in Canvas" if item.get("published") else "Unpublished in Canvas")
     content = f'''
-<header class="lesson-header">
+<header class="page-intro lesson-header">
   <div class="lesson-header__inner">
-    <a class="back-link" href="../modules/{module['id']}.html">← {esc(module['name'])}</a>
-    <div class="lesson-kicker"><span>{esc(badge)}</span><span>{esc(flavor)}</span><span>{'Published' if item.get('published') else 'Unpublished in Canvas'}</span></div>
-    <h1>{esc(item['title'])}</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Curriculum</a><span aria-hidden="true">/</span><a href="../modules/{module['id']}.html">{esc(module['name'])}</a></nav>
+    <p class="page-kicker">{' · '.join(esc(value) for value in context)}</p>
+    <h1 class="page-title">{esc(item['title'])}</h1>
     {item_metadata_panel(item)}
   </div>
 </header>
-<main class="lesson-main">
-  <aside class="review-notice"><strong>Public review copy</strong><span>This page mirrors the instructional content in Canvas. Student submissions and grades still happen in Canvas.</span></aside>
+<main class="lesson-main" id="main-content">
+  <aside class="reference-note"><strong>Canvas</strong><span>Use Canvas for submissions and grades.</span></aside>
 '''
     if protected:
         content += f'''<section class="protected-panel">
-  <p class="protected-panel__eyebrow">Protected district resource</p>
-  <h2>This activity is intentionally not published here.</h2>
+  <p class="protected-panel__eyebrow">District-only activity</p>
+  <h2>This activity is not available on the public site.</h2>
   <p>{esc(resource.get('public_notice'))}</p>
   <p class="muted">{esc(resource.get('protection_reason'))}</p>
 </section>'''
     elif body:
         content += f'<article class="canvas-content">{body}</article>'
     elif item.get("external_url"):
-        content += f'<section class="empty-state"><h2>External resource</h2><p><a class="button" href="{esc(item["external_url"])}">Open {esc(item["title"])} ↗</a></p></section>'
+        content += f'''<section class="empty-state">
+  <h2>Open the course resource</h2>
+  <p><a class="button" href="{esc(item["external_url"])}">Open {esc(item["title"])} <span aria-hidden="true">↗</span></a></p>
+</section>'''
     else:
-        content += '<section class="empty-state"><h2>No standalone page</h2><p>This Canvas item is represented in the course map, but it does not contain a separate instructional body.</p></section>'
+        content += f'''<section class="empty-state">
+  <h2>No separate Canvas page</h2>
+  <p>This {esc(item_type_label(item).lower())} is listed in the module only.</p>
+  <p><a href="../modules/{module['id']}.html">Return to {esc(module['name'])}</a></p>
+</section>'''
     content += '''</main>
-<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>'''
-    return shell(item["title"], content, description=strip_tags(body)[:155], body_class="lesson-page")
+'''
+    return shell(
+        item["title"],
+        content,
+        description=strip_tags(body)[:155],
+        body_class="lesson-page",
+        prefix="../",
+    )
 
 
-def item_card(item: dict, prefix: str = "../") -> str:
+def item_row(item: dict, prefix: str = "../") -> str:
     role = item_role(item)
     flavor = item_flavor(item)
-    classes = f"item-card item-card--{role} item-card--{flavor}"
+    classes = f"item-row item-row--{role} item-row--{flavor}"
     href = f"{prefix}lessons/{item['id']}.html"
-    state = "Published" if item.get("published") else "Unpublished"
+    state = "Published in Canvas" if item.get("published") else "Unpublished in Canvas"
+    audience = "Teacher" if role == "teacher" else "Student"
     return f'''<a class="{classes}" href="{href}" data-search="{esc(item['title'].lower())}" data-role="{role}" data-state="{flavor}">
-  <span class="item-card__meta"><span>{esc(item_type_label(item))}</span><span>{esc(state)}</span></span>
-  <strong>{esc(item['title'])}</strong>
-  <span class="item-card__foot"><span>{esc(role.title())}</span><span>Stable ID {item['id']}</span></span>
+  <span class="item-row__position" aria-hidden="true">{int(item.get('position') or 0):02d}</span>
+  <span class="item-row__body"><strong>{esc(item['title'])}</strong><span class="item-row__meta">{esc(audience)} · {esc(item_type_label(item))} · {esc(state)}</span></span>
+  <span class="item-row__arrow" aria-hidden="true">→</span>
 </a>'''
 
 
 def module_document(module: dict) -> str:
-    cards = []
+    rows = []
     for item in module["items"]:
         if item["type"] == "SubHeader":
-            cards.append(f'<h2 class="module-subheader">{esc(item["title"])}</h2>')
+            rows.append(f'<h2 class="module-subheader">{esc(item["title"])}</h2>')
         else:
-            cards.append(item_card(item))
+            rows.append(item_row(item))
     content = f'''
-<header class="module-hero"><div class="wrap">
-  <a class="back-link" href="../index.html#module-{module['id']}">← Full course map</a>
-  <p class="eyebrow">Module {module['position']} · {'Published' if module.get('published') else 'Unpublished in Canvas'}</p>
-  <h1>{esc(module['name'])}</h1>
-  <p>{len(module['items'])} ordered Canvas items. Teacher guides, student materials, assessments, and resources appear in their live Canvas order.</p>
+<header class="page-intro module-hero"><div class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Curriculum</a><span aria-hidden="true">/</span><span>Module {module['position']}</span></nav>
+  <p class="page-kicker">Module {module['position']} · {'Published in Canvas' if module.get('published') else 'Unpublished in Canvas'}</p>
+  <h1 class="page-title">{esc(module['name'])}</h1>
+  <p>{len(module['items'])} items in Canvas order.</p>
 </div></header>
-<main class="wrap module-page__main"><div class="module-list">{''.join(cards)}</div></main>
-<footer class="site-footer"><div class="wrap"><a href="../index.html">Full course map</a><span> · </span><a href="../parity.html">Parity report</a></div></footer>'''
-    return shell(module["name"], content, body_class="module-page")
+<main class="wrap module-page__main" id="main-content">
+  <div class="module-list" aria-label="Ordered module items">{''.join(rows)}</div>
+</main>'''
+    return shell(module["name"], content, body_class="module-page", prefix="../")
+
+
+def course_sections(modules: list[dict]) -> list[tuple[str, str, list[dict]]]:
+    last_sw6 = max(
+        (int(module["position"]) for module in modules if (module.get("name") or "").upper().startswith("SW6")),
+        default=0,
+    )
+    grouped: list[tuple[str, str, list[dict]]] = []
+    ordinal = {"1": "1st", "2": "2nd", "3": "3rd", "4": "4th", "5": "5th", "6": "6th"}
+    current_key = "six-weeks-1"
+    current_label = "1st six weeks"
+    for module in modules:
+        name = module.get("name") or ""
+        match = re.match(r"SW([1-6])\b", name, re.I)
+        if match:
+            number = match.group(1)
+            current_key = f"six-weeks-{number}"
+            current_label = f"{ordinal[number]} six weeks"
+        elif int(module["position"]) > last_sw6:
+            current_key = "additional-enrichment"
+            current_label = "Additional enrichment"
+        if not grouped or grouped[-1][0] != current_key:
+            grouped.append((current_key, current_label, []))
+        grouped[-1][2].append(module)
+    return grouped
+
+
+def module_entry(module: dict) -> str:
+    visible_items = [item for item in module["items"] if item["type"] != "SubHeader"]
+    search_text = " ".join([module["name"], *(item["title"] for item in visible_items)]).lower()
+    teacher_count = sum(item_role(item) == "teacher" for item in visible_items)
+    student_count = len(visible_items) - teacher_count
+    return f'''<li class="module-entry" id="module-{module['id']}" data-module data-search="{esc(search_text)}">
+  <a href="modules/{module['id']}.html">
+    <span class="module-entry__number" aria-hidden="true">{int(module['position']):02d}</span>
+    <span class="module-entry__body"><strong>{esc(module['name'])}</strong><span>{len(visible_items)} items · {teacher_count} teacher · {student_count} student</span></span>
+    <span class="module-entry__arrow" aria-hidden="true">→</span>
+  </a>
+</li>'''
 
 
 def index_document(snapshot: dict) -> str:
@@ -401,51 +523,78 @@ def index_document(snapshot: dict) -> str:
     public_items = sum(1 for module in modules for item in module["items"] if item.get("public_state") == "public")
     protected_items = item_count - public_items
     sections = []
-    for module in modules:
-        visible_items = [item for item in module["items"] if item["type"] != "SubHeader"]
-        search_text = " ".join([module["name"], *(item["title"] for item in visible_items)]).lower()
-        preview = "".join(item_card(item, prefix="") for item in visible_items[:6])
-        more = len(visible_items) - 6
+    section_nav = []
+    for key, label, section_modules in course_sections(modules):
+        section_items = sum(len(module["items"]) for module in section_modules)
+        section_nav.append(f'<a href="#{key}">{esc(label)}</a>')
         sections.append(f'''
-<section class="course-module" id="module-{module['id']}" data-module data-search="{esc(search_text)}">
-  <div class="course-module__heading">
-    <div><p class="eyebrow">Module {module['position']} · {'Published' if module.get('published') else 'Unpublished in Canvas'}</p><h2>{esc(module['name'])}</h2></div>
-    <a class="button button--quiet" href="modules/{module['id']}.html">Open module →</a>
-  </div>
-  <p class="module-summary">{len(module['items'])} ordered items{f' · {more} more in the full module' if more > 0 else ''}</p>
-  <div class="item-grid">{preview}</div>
+<section class="course-section" id="{esc(key)}" data-course-section>
+  <header class="course-section__heading">
+    <div><p class="section-number">{len(section_modules)} modules</p><h2>{esc(label)}</h2></div>
+    <p>{section_items} ordered items</p>
+  </header>
+  <ol class="module-directory">{''.join(module_entry(module) for module in section_modules)}</ol>
 </section>''')
     generated = snapshot["generated_at"].replace("T", " ").replace("+00:00", " UTC")
     content = f'''
-<header class="site-hero"><div class="wrap">
-  <p class="eyebrow">VILS CTE · Smart Solutions · Public curriculum review</p>
-  <h1>Innovative Technology, from first routine to final capstone.</h1>
-  <p class="lede">The complete public companion to the live Canvas course. Administrators can review the same ordered modules, teacher guides, student directions, assessments, and approved resources without a Canvas account.</p>
-  <div class="hero-stats"><div><strong>{len(modules)}</strong><span>modules</span></div><div><strong>{item_count}</strong><span>Canvas items</span></div><div><strong>{len(snapshot['files'])}</strong><span>public files</span></div><div><strong>{protected_items}</strong><span>protected activity</span></div></div>
-  <p class="sync-line">Canvas release snapshot: {esc(generated)} · <a href="parity.html">View parity contract and status</a></p>
+<header class="page-intro site-hero"><div class="wrap">
+  <p class="page-kicker">Irving ISD · VILS 2027</p>
+  <h1 class="page-title">Smart Solutions: Innovative Technology</h1>
+  <p class="lede">Public course sequence for Irving ISD's Smart Solutions curriculum.</p>
 </div></header>
-<main class="wrap" id="course-map">
-  <section class="course-tools" aria-label="Course filters">
-    <label><span>Find a module or lesson</span><input id="course-search" type="search" placeholder="Try circuits, ThingLink, comic, or teacher guide"></label>
-    <div class="filter-row" role="group" aria-label="Filter course items"><button class="filter is-active" data-filter="all">All</button><button class="filter" data-filter="student">Student</button><button class="filter" data-filter="teacher">Teacher guides</button><button class="filter" data-filter="optional">Optional / parked</button></div>
+<main class="wrap" id="main-content">
+  <span id="course-map" class="anchor-target" aria-hidden="true"></span>
+  <nav class="section-nav" aria-label="Six-weeks sections">{''.join(section_nav)}</nav>
+  <section class="course-tools" aria-label="Search the curriculum">
+    <label for="course-search">Find a module or lesson</label>
+    <input id="course-search" type="search" placeholder="Try circuits, robotics, Canva, or teacher guide" autocomplete="off">
+    <p id="search-status" class="search-status" aria-live="polite">Showing all {len(modules)} modules.</p>
   </section>
-  <aside class="protected-summary"><strong>One intentional exception</strong><span>The optional About Me Phone activity is listed in sequence but its content, PDF, and video remain district-only.</span></aside>
 {''.join(sections)}
+  <aside class="publication-note"><strong>District-only material</strong><span>One optional activity requires district Canvas access.</span></aside>
 </main>
-<footer class="site-footer"><div class="wrap"><strong>Instructional design by Elisha Lucero.</strong><p>This site is generated from the live Canvas course. Canvas remains the student delivery and grading environment.</p></div></footer>'''
-    return shell("VILS CTE Smart Solutions · Innovative Technology", content, description="Complete public curriculum companion for the VILS CTE Smart Solutions course.")
+'''
+    return shell(
+        "Smart Solutions curriculum · Irving ISD",
+        content,
+        description="Irving ISD Smart Solutions curriculum reference with modules, teacher guides, student lessons, assessments, and approved course resources.",
+        current="curriculum",
+    )
+
+
+def about_document(snapshot: dict) -> str:
+    generated = snapshot["generated_at"].replace("T", " ").replace("+00:00", " UTC")
+    content = f'''
+<header class="page-intro"><div class="wrap">
+  <p class="page-kicker">Smart Solutions curriculum</p>
+  <h1 class="page-title">About this curriculum</h1>
+  <p class="lede">Public course sequence and approved files for Smart Solutions.</p>
+</div></header>
+<main class="wrap about-main" id="main-content">
+  <section><h2>Course content</h2><p>Visual design, fabrication, coding, circuits, artificial intelligence, robotics, extended reality, communication projects, and a capstone. Modules include teacher guides, student directions, assignments, assessments, rubrics, and approved course files.</p></section>
+  <section><h2>Authorship and sources</h2><p>Elisha Lucero developed the course for Irving ISD. Lessons also use district materials, program resources, platform documentation, and credited third-party media. Attributions remain with the lesson or file where each source is used.</p></section>
+  <section><h2>Navigation</h2><p>Modules and items follow Canvas order.</p></section>
+  <section><h2>Canvas access</h2><p>Canvas is the course record for submissions and grades. District-only and restricted materials are excluded from the public site.</p></section>
+  <section class="about-status"><h2>Current snapshot</h2><p>{esc(generated)} · <a href="parity.html">Publication status</a></p></section>
+</main>'''
+    return shell(
+        "About the Smart Solutions curriculum · Irving ISD",
+        content,
+        description="Course scope, authorship, sources, navigation, and access information for the Irving ISD Smart Solutions curriculum.",
+        current="about",
+    )
 
 
 def parity_document(snapshot: dict, manifest: dict) -> str:
     generated = snapshot["generated_at"].replace("T", " ").replace("+00:00", " UTC")
     content = f'''
-<header class="module-hero"><div class="wrap"><a class="back-link" href="index.html">← Course map</a><p class="eyebrow">Release integrity</p><h1>Canvas ↔ public site parity</h1><p>This release accounts for every ordered Canvas module item and every referenced resource under the publication policy.</p></div></header>
-<main class="wrap parity-main">
-  <section class="parity-status"><span class="parity-status__mark" aria-hidden="true">✓</span><div><h2>Snapshot and generated site match</h2><p>Built {esc(generated)} from Canvas course {snapshot['source']['course_id']}.</p></div></section>
-  <section class="parity-grid"><article><h2>What “parity” means</h2><ul><li>All {manifest['counts']['modules']} modules and {manifest['counts']['items']} ordered items are represented.</li><li>Titles, publication states, item types, bodies, grading contracts, rubric criteria, and approved file bytes are pinned.</li><li>Internal Canvas links are rewritten to stable public item-ID URLs.</li><li>A live verifier stops release when Canvas drifts from the snapshot.</li></ul></article><article><h2>Intentional protection</h2><p>The About Me Phone activity remains visible in the course map as a protected entry, but its body and two files are never written to this repository.</p><p><strong>Protected file IDs:</strong> {', '.join(str(value) for value in snapshot['protected_file_ids'])}</p></article></section>
-  <section class="hash-panel"><h2>Release fingerprints</h2><dl><div><dt>Canvas snapshot</dt><dd><code>{esc(snapshot['semantic_sha256'])}</code></dd></div><div><dt>Generated site</dt><dd><code>{esc(manifest['site_sha256'])}</code></dd></div></dl></section>
-</main><footer class="site-footer"><div class="wrap"><a href="index.html">Full course map</a></div></footer>'''
-    return shell("Canvas parity · Innovative Technology", content)
+<header class="page-intro"><div class="wrap"><p class="page-kicker">Site status</p><h1 class="page-title">Publication status</h1></div></header>
+<main class="wrap parity-main" id="main-content">
+  <section class="parity-status"><span class="parity-status__mark" aria-hidden="true">✓</span><div><h2>Matches the saved Canvas snapshot</h2><p>{esc(generated)}</p></div></section>
+  <section class="status-details"><h2>Checked</h2><ul><li>{manifest['counts']['modules']} modules and {manifest['counts']['items']} course items</li><li>Lesson content, settings, rubrics, and public files</li><li>Links and public lesson addresses</li><li>District-only exclusions</li></ul></section>
+  <p class="status-return"><a href="index.html">Return to the curriculum</a></p>
+</main>'''
+    return shell("Publication status · Smart Solutions", content)
 
 
 def main() -> None:
@@ -502,6 +651,10 @@ def main() -> None:
     index_html = index_document(snapshot)
     (ROOT / "index.html").write_text(index_html, encoding="utf-8")
     pages["index.html"] = {"sha256": sha256_text(index_html), "kind": "index"}
+
+    about_html = about_document(snapshot)
+    (ROOT / "about.html").write_text(about_html, encoding="utf-8")
+    pages["about.html"] = {"sha256": sha256_text(about_html), "kind": "about"}
 
     site_semantic = {
         "snapshot_sha256": snapshot["semantic_sha256"],

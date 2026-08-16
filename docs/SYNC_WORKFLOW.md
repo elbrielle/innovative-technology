@@ -61,11 +61,12 @@ python3 -m http.server 8765 --bind 127.0.0.1
 node scripts/visual_audit.mjs
 ```
 
-The audit visits every generated page at 390 pixels, exercises Canvas-style tabs, checks local images and links, and writes representative desktop/phone screenshots under the ignored `tmp/site-visual-audit/` folder.
+The audit visits every generated page at 390 pixels, exercises Canvas-style tabs and curriculum search, checks page landmarks, control labels, image alternatives, local images, and links, and writes representative desktop/phone screenshots under the ignored `tmp/site-visual-audit/` folder. Representative pages also run at enlarged text with reduced motion enabled.
 
 Before deployment, inspect at least:
 
 - course index and search/filter controls;
+- About and publication-status pages;
 - a full module page;
 - a handcrafted visual lesson;
 - a dense inherited VILS lesson;

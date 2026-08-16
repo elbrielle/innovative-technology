@@ -156,7 +156,7 @@ def main() -> None:
     if expected_assets != actual_assets:
         failures.append("Generated Canvas asset set contains a missing or stale file")
 
-    html_paths = [ROOT / "index.html", ROOT / "parity.html"] + sorted((ROOT / "modules").glob("*.html")) + sorted((ROOT / "lessons").glob("*.html"))
+    html_paths = [ROOT / "index.html", ROOT / "about.html", ROOT / "parity.html"] + sorted((ROOT / "modules").glob("*.html")) + sorted((ROOT / "lessons").glob("*.html"))
     canvas_route = re.compile(r"https?://verizoninnovativelearning\.instructure\.com/(?:api/v1/)?courses/23402/")
     forbidden_tokens = ["YOUR_BG_IMAGE_URL", "Link.Placeholder"]
     forbidden_editorial_phrases = [
@@ -180,6 +180,15 @@ def main() -> None:
         "ship unpublished",
         "owner scoring decision",
         "author’s placeholder",
+        "public mirror",
+        "pacing reality",
+        "teacher craft",
+        "public enough",
+        "where it matters",
+        "designed to empower",
+        "meaningful journey",
+        "not just a curriculum",
+        "more than just a curriculum",
     ]
     for path in html_paths:
         text = path.read_text(encoding="utf-8")
@@ -204,7 +213,7 @@ def main() -> None:
         if protected_id in asset_names:
             failures.append(f"Protected file {protected_id} leaked into assets/canvas")
     protected_page = (ROOT / "lessons" / "2633987.html").read_text(encoding="utf-8")
-    if "intentionally not published here" not in protected_page or "canvas-content" in protected_page:
+    if "not available on the public site" not in protected_page or "canvas-content" in protected_page:
         failures.append("Protected About Me Phone page does not use the district-only public notice")
 
     if manifest.get("unresolved"):
