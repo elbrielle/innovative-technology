@@ -1,8 +1,8 @@
 {
   "counts": {
-    "bodies": 292,
-    "body_chars": 2372192,
-    "items": 388,
+    "bodies": 296,
+    "body_chars": 2308221,
+    "items": 391,
     "modules": 34
   },
   "course_id": 23402,
@@ -218,6 +218,17 @@
     },
     {
       "content_type": "video/mp4",
+      "display_name": "Furniture.m4v",
+      "filename": "Furniture.m4v",
+      "folder_id": 175706,
+      "hidden": true,
+      "id": 3133417,
+      "locked": false,
+      "references": 2,
+      "size": 2974052
+    },
+    {
+      "content_type": "video/mp4",
       "display_name": "IntroductionVideo.m4v",
       "filename": "IntroductionVideo.m4v",
       "folder_id": 175706,
@@ -226,6 +237,17 @@
       "locked": false,
       "references": 2,
       "size": 1115437
+    },
+    {
+      "content_type": "video/mp4",
+      "display_name": "FinishedRoom.m4v",
+      "filename": "FinishedRoom.m4v",
+      "folder_id": 175706,
+      "hidden": true,
+      "id": 3133419,
+      "locked": false,
+      "references": 2,
+      "size": 4067732
     },
     {
       "content_type": "image/png",
@@ -369,6 +391,28 @@
       "locked": false,
       "references": 4,
       "size": 748349
+    },
+    {
+      "content_type": "video/*",
+      "display_name": "Student Getting Started Video_English-3.mp4",
+      "filename": "Student+Getting+Started+Video_English.mp4",
+      "folder_id": 175707,
+      "hidden": false,
+      "id": 3133455,
+      "locked": false,
+      "references": 1,
+      "size": 9214802
+    },
+    {
+      "content_type": "video/*",
+      "display_name": "Student Getting Started Video_Spanish-1.mp4",
+      "filename": "Student+Getting+Started+Video_Spanish.mp4",
+      "folder_id": 175707,
+      "hidden": false,
+      "id": 3133456,
+      "locked": false,
+      "references": 1,
+      "size": 9403766
     },
     {
       "content_type": "image/png",
@@ -580,6 +624,17 @@
       "size": 4550709
     },
     {
+      "content_type": "video/mp4",
+      "display_name": "Working with Furniture.m4v",
+      "filename": "Working+with+Furniture.m4v",
+      "folder_id": 175706,
+      "hidden": true,
+      "id": 3133482,
+      "locked": false,
+      "references": 2,
+      "size": 7462782
+    },
+    {
       "content_type": "image/png",
       "display_name": "Screenshot 2023-12-05 at 7.51.31 AM.png",
       "filename": "Screenshot+2023-12-05+at+7.51.31%E2%80%AFAM.png",
@@ -589,6 +644,17 @@
       "locked": false,
       "references": 2,
       "size": 76708
+    },
+    {
+      "content_type": "video/mp4",
+      "display_name": "Canvas Submission Tutorial-3.mp4",
+      "filename": "Canvas+Submission+Tutorial.mp4",
+      "folder_id": 175707,
+      "hidden": false,
+      "id": 3133484,
+      "locked": false,
+      "references": 2,
+      "size": 4669370
     },
     {
       "content_type": "image/jpeg",
@@ -789,17 +855,6 @@
       "size": 29430
     },
     {
-      "content_type": "image/png",
-      "display_name": "Screenshot 2025-02-28 at 8.09.58 AM.png",
-      "filename": "Screenshot+2025-02-28+at+8.09.58%E2%80%AFAM.png",
-      "folder_id": 175706,
-      "hidden": true,
-      "id": 3133560,
-      "locked": false,
-      "references": 2,
-      "size": 64736
-    },
-    {
       "content_type": "image/gif",
       "display_name": "Untitled design (1).gif",
       "filename": "Untitled+design+%281%29.gif",
@@ -831,6 +886,17 @@
       "locked": false,
       "references": 4,
       "size": 2009116
+    },
+    {
+      "content_type": "video/mp4",
+      "display_name": "Canvas Submission Tutorial-4.mp4",
+      "filename": "Canvas+Submission+Tutorial.mp4",
+      "folder_id": 175707,
+      "hidden": false,
+      "id": 3133572,
+      "locked": false,
+      "references": 11,
+      "size": 4669370
     },
     {
       "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -1073,17 +1139,6 @@
       "locked": false,
       "references": 4,
       "size": 117433
-    },
-    {
-      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-      "display_name": "Smart_Solutions_Lesson_1_Welcome_and_Comic_Cover_REVIEW_v3.pptx",
-      "filename": "Smart_Solutions_Lesson_1_Welcome_and_Comic_Cover_REVIEW_v3.pptx",
-      "folder_id": 175721,
-      "hidden": true,
-      "id": 3133609,
-      "locked": false,
-      "references": 2,
-      "size": 23582817
     },
     {
       "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
@@ -1579,6 +1634,380 @@
       "locked": false,
       "references": 2,
       "size": 123839
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "Graphic_Design_Basic_Shapes_Student_Worksheet.docx",
+      "filename": "Graphic_Design_Basic_Shapes_Student_Worksheet.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200729,
+      "locked": false,
+      "references": 4,
+      "size": 37842
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "Emoji_Define_Submission_Form_District.docx",
+      "filename": "Emoji_Define_Submission_Form_District.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200730,
+      "locked": false,
+      "references": 4,
+      "size": 37775
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Smart_Solutions_AI_Ethics_Council_Teacher_Deck_2027.pptx",
+      "filename": "Smart_Solutions_AI_Ethics_Council_Teacher_Deck_2027.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3200754,
+      "locked": false,
+      "references": 2,
+      "size": 29049031
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "AI_Ethics_Council_Casebook.pdf",
+      "filename": "AI_Ethics_Council_Casebook.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200755,
+      "locked": false,
+      "references": 22,
+      "size": 299943
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "AI_Ethics_Council_Casebook.docx",
+      "filename": "AI_Ethics_Council_Casebook.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200756,
+      "locked": false,
+      "references": 22,
+      "size": 46501
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Smart_Solutions_AIR_Unit_0_Teacher_Deck_2027.pptx",
+      "filename": "Smart_Solutions_AIR_Unit_0_Teacher_Deck_2027.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3200757,
+      "locked": false,
+      "references": 2,
+      "size": 19264650
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "AIR_Unit_0_Mission_Log.docx",
+      "filename": "AIR_Unit_0_Mission_Log.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200758,
+      "locked": false,
+      "references": 10,
+      "size": 3377223
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "AIR_Unit_0_Mission_Log.pdf",
+      "filename": "AIR_Unit_0_Mission_Log.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200759,
+      "locked": false,
+      "references": 10,
+      "size": 220836
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "AIR_Unit_0_Optional_Ocean_Sustainability_PSA.pdf",
+      "filename": "AIR_Unit_0_Optional_Ocean_Sustainability_PSA.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200760,
+      "locked": false,
+      "references": 4,
+      "size": 11252
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Picture_This_Day_1_Teacher_Deck.pptx",
+      "filename": "Picture_This_Day_1_Teacher_Deck.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3200791,
+      "locked": false,
+      "references": 2,
+      "size": 15317746
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "Picture_This_Day_2_Student_Packet.docx",
+      "filename": "Picture_This_Day_2_Student_Packet.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200792,
+      "locked": false,
+      "references": 4,
+      "size": 12790
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "Picture_This_Day_2_Student_Packet.pdf",
+      "filename": "Picture_This_Day_2_Student_Packet.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200793,
+      "locked": false,
+      "references": 4,
+      "size": 140320
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Picture_This_Day_3_Teacher_Deck.pptx",
+      "filename": "Picture_This_Day_3_Teacher_Deck.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3200794,
+      "locked": false,
+      "references": 2,
+      "size": 3519471
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "Picture_This_Day_3_Cat_Dog_Datasets.pdf",
+      "filename": "Picture_This_Day_3_Cat_Dog_Datasets.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200795,
+      "locked": false,
+      "references": 4,
+      "size": 22600129
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "Picture_This_Day_3_Bias_Test_Photos.pdf",
+      "filename": "Picture_This_Day_3_Bias_Test_Photos.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200796,
+      "locked": false,
+      "references": 4,
+      "size": 6211349
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "Picture_This_Day_3_Exit_Ticket.pdf",
+      "filename": "Picture_This_Day_3_Exit_Ticket.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200797,
+      "locked": false,
+      "references": 4,
+      "size": 227474
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Picture_This_Day_4_Teacher_Deck.pptx",
+      "filename": "Picture_This_Day_4_Teacher_Deck.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3200798,
+      "locked": false,
+      "references": 2,
+      "size": 271070
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "Picture_This_Day_4_Planning_Sheet.docx",
+      "filename": "Picture_This_Day_4_Planning_Sheet.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200799,
+      "locked": false,
+      "references": 4,
+      "size": 9280
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "Picture_This_Day_4_Planning_Sheet.pdf",
+      "filename": "Picture_This_Day_4_Planning_Sheet.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200800,
+      "locked": false,
+      "references": 4,
+      "size": 84331
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Picture_This_Day_5_Teacher_Deck.pptx",
+      "filename": "Picture_This_Day_5_Teacher_Deck.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3200801,
+      "locked": false,
+      "references": 2,
+      "size": 49380
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "Picture_This_Day_5_Exit_Ticket.pdf",
+      "filename": "Picture_This_Day_5_Exit_Ticket.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200802,
+      "locked": false,
+      "references": 2,
+      "size": 2287
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Smart_Solutions_Machine_Learning_Reliability_Lab_Teacher_Deck_2027.pptx",
+      "filename": "Smart_Solutions_Machine_Learning_Reliability_Lab_Teacher_Deck_2027.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3200804,
+      "locked": false,
+      "references": 2,
+      "size": 8106589
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "Machine_Learning_Reliability_Case_File.pdf",
+      "filename": "Machine_Learning_Reliability_Case_File.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200805,
+      "locked": false,
+      "references": 12,
+      "size": 311475
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "Machine_Learning_Reliability_Case_File.docx",
+      "filename": "Machine_Learning_Reliability_Case_File.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3200806,
+      "locked": false,
+      "references": 12,
+      "size": 47097
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Smart_Solutions_RVR_Robotics_Teacher_Deck_2027.pptx",
+      "filename": "Smart_Solutions_RVR_Robotics_Teacher_Deck_2027.pptx",
+      "folder_id": 175720,
+      "hidden": true,
+      "id": 3202799,
+      "locked": false,
+      "references": 2,
+      "size": 13709848
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "RVR_Drawing_Mission.docx",
+      "filename": "RVR_Drawing_Mission.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202800,
+      "locked": false,
+      "references": 2,
+      "size": 97807
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "RVR_Drawing_Mission.pdf",
+      "filename": "RVR_Drawing_Mission.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202801,
+      "locked": false,
+      "references": 2,
+      "size": 152668
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "RVR_Precision_Movement_Lab.docx",
+      "filename": "RVR_Precision_Movement_Lab.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202802,
+      "locked": false,
+      "references": 2,
+      "size": 37952
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "RVR_Precision_Movement_Lab.pdf",
+      "filename": "RVR_Precision_Movement_Lab.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202803,
+      "locked": false,
+      "references": 2,
+      "size": 72376
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "RVR_Color_Sensor_Mission.docx",
+      "filename": "RVR_Color_Sensor_Mission.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202804,
+      "locked": false,
+      "references": 2,
+      "size": 288564
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "RVR_Color_Sensor_Mission.pdf",
+      "filename": "RVR_Color_Sensor_Mission.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202805,
+      "locked": false,
+      "references": 2,
+      "size": 247352
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "display_name": "RVR_School_of_Fish_Challenge.docx",
+      "filename": "RVR_School_of_Fish_Challenge.docx",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202806,
+      "locked": false,
+      "references": 2,
+      "size": 38061
+    },
+    {
+      "content_type": "application/pdf",
+      "display_name": "RVR_School_of_Fish_Challenge.pdf",
+      "filename": "RVR_School_of_Fish_Challenge.pdf",
+      "folder_id": 175709,
+      "hidden": false,
+      "id": 3202807,
+      "locked": false,
+      "references": 2,
+      "size": 66588
+    },
+    {
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "display_name": "Smart_Solutions_Week_0_Syllabus_and_Comic_Cover_Teacher_Deck_2027.pptx",
+      "filename": "Smart_Solutions_Week_0_Syllabus_and_Comic_Cover_Teacher_Deck_2027.pptx",
+      "folder_id": 176452,
+      "hidden": true,
+      "id": 3202809,
+      "locked": false,
+      "references": 2,
+      "size": 24396434
     }
   ],
   "modules": [
@@ -1675,22 +2104,22 @@
     },
     {
       "id": 72576,
-      "item_count": 4,
-      "name": "SW4 · Image Classification",
+      "item_count": 7,
+      "name": "SW4 · Picture This: Image Classification + Data Bias",
       "position": 14,
       "published": true
     },
     {
       "id": 72577,
       "item_count": 7,
-      "name": "SW4 · Machine Learning Week",
+      "name": "SW4 · Machine Learning Reliability Lab",
       "position": 15,
       "published": false
     },
     {
       "id": 72578,
       "item_count": 14,
-      "name": "SW4 · AI Ethics",
+      "name": "SW4 · AI Ethics Council",
       "position": 16,
       "published": false
     },
@@ -1821,5 +2250,5 @@
       "published": false
     }
   ],
-  "referenced_file_bytes": 655883824
+  "referenced_file_bytes": 823061636
 }
