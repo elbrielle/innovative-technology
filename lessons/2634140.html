@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>Day 2: Train a Model: Teachable Machine</title>
-  <meta name="description" content="Machine Learning · Day 2 of 5 Train and Test a Model Train two labels, change the data, and record what happens to the model&#x27;s predictions. Tool: Google Te">
+  <title>Day 2: Stress-Test the Model</title>
+  <meta name="description" content="MACHINE LEARNING RELIABILITY LAB · DAY 2 OF 5 Stress-Test the Model Run the plan and find a repeated failure pattern. Tool: saved Picture This model or cla">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="lesson-page">
@@ -25,91 +25,28 @@
 
 <header class="page-intro lesson-header">
   <div class="lesson-header__inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Curriculum</a><span aria-hidden="true">/</span><a href="../modules/72577.html">SW4 · Machine Learning Week</a></nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Curriculum</a><span aria-hidden="true">/</span><a href="../modules/72577.html">SW4 · Machine Learning Reliability Lab</a></nav>
     <p class="page-kicker">Student material · Assignment · Unpublished in Canvas</p>
-    <h1 class="page-title">Day 2: Train a Model: Teachable Machine</h1>
+    <h1 class="page-title">Day 2: Stress-Test the Model</h1>
     <dl class="lesson-facts"><div><dt>Points</dt><dd>5</dd></div><div><dt>Submission</dt><dd>upload, media recording</dd></div><div><dt>Canvas state</dt><dd>Unpublished</dd></div></dl>
   </div>
 </header>
 <main class="lesson-main" id="main-content">
   <aside class="reference-note"><strong>Canvas</strong><span>Use Canvas for submissions and grades.</span></aside>
-<article class="canvas-content"><div style="max-width:850px;margin:0 auto;color:#1F2430;font-size:16px;line-height:1.55;">
-<div style="background:#132A20;border-radius:12px;padding:20px;margin:0 0 14px 0;">
-<p style="margin:0 0 6px 0;color:#86EFAC;font-family:monospace;"><strong>Machine Learning · Day 2 of 5</strong></p>
-<h1 style="margin:0 0 6px 0;color:#ffffff;font-size:28px;">Train and Test a Model</h1>
-<p style="margin:0;color:#E2E8F0;">Train two labels, change the data, and record what happens to the model's predictions.</p>
-</div>
-<ul style="margin:0 0 16px 0;padding:10px 14px 10px 34px;background:#F1F5F9;border:1px solid #CBD5E1;border-radius:10px;">
-<li>
-<strong>Tool:</strong> Google Teachable Machine</li>
-<li>
-<strong>Time:</strong> one class period</li>
-<li>
-<strong>Turn in:</strong> confidence screenshot, test notes, and reflection</li>
-</ul>
-<div class="enhanceable_content tabs">
-<ul style="margin:0;padding-left:20px;">
-<li><a href="#en-ml2"><strong>English</strong></a></li>
-<li><a href="#es-ml2"><strong>Español</strong></a></li>
-</ul>
-<div id="en-ml2" style="border:1px solid #CBD5E1;border-radius:10px;padding:18px;">
-<h2 style="margin:0 0 10px 0;color:#166534;font-size:22px;">English</h2>
-<p style="margin:0 0 16px 0;"><strong>Words for today:</strong> label · confidence score · supervised learning</p>
-<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">What to do</h3>
-<ol style="margin:0 0 16px 0;padding-left:24px;">
-<li style="margin:0 0 10px 0;">Open <a href="https://teachablemachine.withgoogle.com/" target="_blank"><strong>Teachable Machine</strong></a>. Choose an image project and a standard image model.</li>
-<li style="margin:0 0 10px 0;">Create two labels your teacher approves. Collect at least 30 varied examples for each label, then train the model.</li>
-<li style="margin:0 0 10px 0;">Test both labels with a different angle, distance, background, or person. Record the prediction and confidence score for at least four tests.</li>
-<li style="margin:0 0 10px 0;">Train a second version with about 30 examples for one label and 5 for the other. Test both labels again and record what changed.</li>
-<li style="margin:0 0 10px 0;">Capture a screenshot that shows the model's labels and confidence scores.</li>
-</ol>
-<div style="background:#FFF7D6;border-radius:10px;padding:12px 14px;margin:0 0 16px 0;">
-<h3 style="margin:0 0 6px 0;font-size:18px;">If you get stuck</h3>
-<ol style="margin:0;padding-left:24px;">
-<li>Allow camera access in Chrome, or use the teacher-provided image set.</li>
-<li>If the model predicts one label every time, compare the backgrounds in the two training sets.</li>
-<li>Change one training condition at a time so you know what caused the result.</li>
-</ol>
-</div>
-<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Before you submit</h3>
-<ul style="margin:0 0 16px 0;padding-left:24px;">
-<li>Upload the confidence-score screenshot and your short test log.</li>
-<li>Complete the reflection in the submission comment.</li>
-</ul>
-<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Reflection</h3>
-<p style="margin:0 0 8px 0;">Write 2 or 3 sentences: "My model was most confident when ____. It became confused when ____, probably because the training data ____."</p>
-<p style="margin:0;"><strong>Word bank:</strong> label · confidence score · training data · balanced · unbalanced · accuracy</p>
-</div>
-<div id="es-ml2" style="border:1px solid #CBD5E1;border-radius:10px;padding:18px;">
-<h2 style="margin:0 0 10px 0;color:#166534;font-size:22px;">Español</h2>
-<p style="margin:0 0 16px 0;"><strong>Palabras de hoy:</strong> label (etiqueta) · confidence score (nivel de confianza) · supervised learning (aprendizaje supervisado)</p>
-<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Qué hacer</h3>
-<ol style="margin:0 0 16px 0;padding-left:24px;">
-<li style="margin:0 0 10px 0;">Abre <a href="https://teachablemachine.withgoogle.com/" target="_blank"><strong>Teachable Machine</strong></a>. Escoge un proyecto de imágenes y el modelo estándar.</li>
-<li style="margin:0 0 10px 0;">Crea dos etiquetas aprobadas por tu maestro. Reúne al menos 30 ejemplos variados para cada etiqueta y entrena el modelo.</li>
-<li style="margin:0 0 10px 0;">Prueba las dos etiquetas con otro ángulo, distancia, fondo o persona. Anota la predicción y el nivel de confianza de al menos cuatro pruebas.</li>
-<li style="margin:0 0 10px 0;">Entrena una segunda versión con unos 30 ejemplos de una etiqueta y 5 de la otra. Prueba las dos de nuevo y anota qué cambió.</li>
-<li style="margin:0 0 10px 0;">Toma una captura que muestre las etiquetas y los niveles de confianza.</li>
-</ol>
-<div style="background:#FFF7D6;border-radius:10px;padding:12px 14px;margin:0 0 16px 0;">
-<h3 style="margin:0 0 6px 0;font-size:18px;">Si te atoras</h3>
-<ol style="margin:0;padding-left:24px;">
-<li>Permite el acceso a la cámara en Chrome o usa las imágenes que dé tu maestro.</li>
-<li>Si el modelo siempre predice la misma etiqueta, compara los fondos de los dos conjuntos de entrenamiento.</li>
-<li>Cambia una condición de entrenamiento a la vez para saber qué causó el resultado.</li>
-</ol>
-</div>
-<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Antes de entregar</h3>
-<ul style="margin:0 0 16px 0;padding-left:24px;">
-<li>Sube la captura de los niveles de confianza y tu registro corto de pruebas.</li>
-<li>Completa la reflexión en el comentario.</li>
-</ul>
-<h3 style="margin:18px 0 8px 0;font-size:18px;color:#1F2430;">Reflexión</h3>
-<p style="margin:0 0 8px 0;">Escribe 2 o 3 oraciones: "Mi modelo tuvo más confianza cuando ____. Se confundió cuando ____, probablemente porque los datos de entrenamiento ____."</p>
-<p style="margin:0;"><strong>Banco de palabras:</strong> etiqueta · nivel de confianza · datos de entrenamiento · equilibrado · desequilibrado · precisión</p>
-</div>
-</div>
-</div></article></main>
+<article class="canvas-content"><div style="max-width:900px;margin:0 auto;color:#182938;font-size:17px;line-height:1.58;font-family:Arial,sans-serif;"><div style="background:#0B1D2C;border-radius:14px;padding:24px;margin:0 0 16px;">
+<p style="margin:0 0 7px;color:#71D6E4;font-family:monospace;"><strong>MACHINE LEARNING RELIABILITY LAB · DAY 2 OF 5</strong></p>
+<h1 style="margin:0 0 8px;color:#FFF8EE;font-size:31px;line-height:1.15;">Stress-Test the Model</h1>
+<p style="margin:0;color:#C9D8E1;">Run the plan and find a repeated failure pattern.</p></div><ul style="margin:0 0 16px;padding:12px 18px 12px 38px;background:#EDF6F8;border-left:7px solid #24BACE;border-radius:10px;">
+<li><strong>Tool:</strong> saved Picture This model or class model + case file</li><li><strong>Time:</strong> one class period</li><li><strong>Turn in:</strong> Case File page 3: stress-test log + evidence claim</li></ul><div style="background:#F5F0E7;border:1px solid #C8D4DC;border-radius:12px;padding:16px;margin:0 0 18px;">
+<h2 style="font-size:21px;margin:0 0 8px;color:#0B6070;">Model Reliability Case File</h2>
+<p style="margin:0 0 12px;">Use the same case file all week. Choose the format that works best for you.</p>
+<p style="margin:0;display:flex;gap:10px;flex-wrap:wrap;"><a style="display:inline-block;background:#0B6070;color:white;padding:10px 14px;border-radius:8px;text-decoration:none;" href="../assets/canvas/3200805-Machine_Learning_Reliability_Case_File.pdf" data-api-endpoint="../assets/canvas/3200805-Machine_Learning_Reliability_Case_File.pdf" data-api-returntype="File"><strong>Download PDF</strong></a><a style="display:inline-block;background:#243A73;color:white;padding:10px 14px;border-radius:8px;text-decoration:none;" href="../assets/canvas/3200806-Machine_Learning_Reliability_Case_File.docx" data-api-endpoint="../assets/canvas/3200806-Machine_Learning_Reliability_Case_File.docx" data-api-returntype="File"><strong>Download editable Word copy</strong></a></p></div><h2 style="font-size:23px;color:#0B6070;">Today’s task</h2><ol style="padding-left:25px;"><li style="margin-bottom:8px;">Predict before each test.</li><li style="margin-bottom:8px;">Run all 12 planned tests.</li><li style="margin-bottom:8px;">Record the actual label, predicted label, confidence score, and changed condition.</li><li style="margin-bottom:8px;">Tally correct, incorrect, and uncertain results.</li><li style="margin-bottom:8px;">Write one claim supported by a count.</li></ol>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:18px 0;">
+<div style="background:#FFF7DE;border:1px solid #E5B84D;border-radius:10px;padding:15px;"><h2 style="font-size:20px;margin:0 0 8px;color:#8A5C00;">Case File checkpoint</h2><p style="margin:0;">Complete page 3. Keep every page together for the final decision on Day 5.</p></div>
+<div style="background:#E9F8F1;border:1px solid #46B97C;border-radius:10px;padding:15px;"><h2 style="font-size:20px;margin:0 0 8px;color:#176A43;">Success criteria</h2><ul style="list-style:none;padding:0;margin:0;"><li style="margin-bottom:6px;">✓ All 12 rows are complete</li><li style="margin-bottom:6px;">✓ Actual and predicted labels are both shown</li><li style="margin-bottom:6px;">✓ Confidence is recorded</li><li style="margin-bottom:6px;">✓ The claim names a condition and count</li></ul></div></div>
+<div style="background:#0B1D2C;color:#FFF8EE;border-left:9px solid #F0C45F;border-radius:10px;padding:16px;margin:18px 0;"><strong>Use this sentence stem:</strong><br>The model was least reliable when _____. In _____ of _____ tests, it _____.</div>
+<p style="padding:12px 14px;background:#E8F3FA;border-radius:8px;"><strong>Word bank:</strong> prediction · confidence · correct · incorrect · uncertain · incident · pattern</p>
+<h2 style="font-size:21px;color:#0B6070;">Before you submit</h2><ul><li>Upload a readable copy of today’s completed case-file page. You may upload a document, PDF, photo, or short video walkthrough.</li><li>Keep your full case file for Day 5.</li></ul></div></article></main>
 
 <footer class="site-footer">
   <div class="site-footer__inner wrap">
