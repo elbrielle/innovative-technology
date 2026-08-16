@@ -1376,24 +1376,6 @@
       "public_path": "assets/canvas/3133559-tS0ShH.gif",
       "sha256": "7d1bfb9be90798184014d18addd24db6b99459784378ad257c6a50aab75b4c59"
     },
-    "3133560": {
-      "download_source_file_id": 3133560,
-      "metadata": {
-        "content-type": "image/png",
-        "created_at": "2026-08-10T11:43:48Z",
-        "display_name": "Screenshot 2025-02-28 at 8.09.58 AM.png",
-        "filename": "Screenshot+2025-02-28+at+8.09.58%E2%80%AFAM.png",
-        "folder_full_name": "course files/Uploaded Media",
-        "folder_id": 175706,
-        "hidden": true,
-        "id": 3133560,
-        "locked": false,
-        "modified_at": "2025-02-28T14:10:12Z",
-        "size": 64736
-      },
-      "public_path": "assets/canvas/3133560-Screenshot-2025-02-28-at-8.09.58-AM.png",
-      "sha256": "491c6e6de1a43ca9d65557a575c3a1b63fcfa02b057d27a3f4ea2a923784c74a"
-    },
     "3133565": {
       "download_source_file_id": 3133565,
       "metadata": {
@@ -3103,9 +3085,171 @@
       },
       "public_path": "assets/canvas/3200806-Machine_Learning_Reliability_Case_File.docx",
       "sha256": "dbf9c5efd9578fa58274d3973a33cd703c95c4fb6fe3ae2af6883fa37b092cfb"
+    },
+    "3202799": {
+      "download_source_file_id": 3202799,
+      "metadata": {
+        "content-type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "created_at": "2026-08-16T17:11:34Z",
+        "display_name": "Smart_Solutions_RVR_Robotics_Teacher_Deck_2027.pptx",
+        "filename": "Smart_Solutions_RVR_Robotics_Teacher_Deck_2027.pptx",
+        "folder_full_name": "course files/Teacher Resources",
+        "folder_id": 175720,
+        "hidden": true,
+        "id": 3202799,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:34Z",
+        "size": 13709848
+      },
+      "public_path": "assets/canvas/3202799-Smart_Solutions_RVR_Robotics_Teacher_Deck_2027.pptx",
+      "sha256": "f1d952b4684350385cc38d60f401df4fbafe1da2b7d68b66680656c3acc78370"
+    },
+    "3202800": {
+      "download_source_file_id": 3202800,
+      "metadata": {
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "created_at": "2026-08-16T17:11:40Z",
+        "display_name": "RVR_Drawing_Mission.docx",
+        "filename": "RVR_Drawing_Mission.docx",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202800,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:40Z",
+        "size": 97807
+      },
+      "public_path": "assets/canvas/3202800-RVR_Drawing_Mission.docx",
+      "sha256": "2c07030d5de9273e9374f447f1a4bba27634938afdf83cd3131a7a1170e31875"
+    },
+    "3202801": {
+      "download_source_file_id": 3202801,
+      "metadata": {
+        "content-type": "application/pdf",
+        "created_at": "2026-08-16T17:11:43Z",
+        "display_name": "RVR_Drawing_Mission.pdf",
+        "filename": "RVR_Drawing_Mission.pdf",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202801,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:43Z",
+        "size": 152668
+      },
+      "public_path": "assets/canvas/3202801-RVR_Drawing_Mission.pdf",
+      "sha256": "9d339700a2f8aff9d37eca7ffbde07430648c271a52f2293dc75e63f28922bdb"
+    },
+    "3202802": {
+      "download_source_file_id": 3202802,
+      "metadata": {
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "created_at": "2026-08-16T17:11:45Z",
+        "display_name": "RVR_Precision_Movement_Lab.docx",
+        "filename": "RVR_Precision_Movement_Lab.docx",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202802,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:45Z",
+        "size": 37952
+      },
+      "public_path": "assets/canvas/3202802-RVR_Precision_Movement_Lab.docx",
+      "sha256": "d94312d3655ef5403a5aee1afcb3a4f71739eab1fb42d145acb375e6261b0ec6"
+    },
+    "3202803": {
+      "download_source_file_id": 3202803,
+      "metadata": {
+        "content-type": "application/pdf",
+        "created_at": "2026-08-16T17:11:48Z",
+        "display_name": "RVR_Precision_Movement_Lab.pdf",
+        "filename": "RVR_Precision_Movement_Lab.pdf",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202803,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:48Z",
+        "size": 72376
+      },
+      "public_path": "assets/canvas/3202803-RVR_Precision_Movement_Lab.pdf",
+      "sha256": "3d15221522065e82a7d354164498786291a3a906011861fdb849ea51396b9dfb"
+    },
+    "3202804": {
+      "download_source_file_id": 3202804,
+      "metadata": {
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "created_at": "2026-08-16T17:11:52Z",
+        "display_name": "RVR_Color_Sensor_Mission.docx",
+        "filename": "RVR_Color_Sensor_Mission.docx",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202804,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:52Z",
+        "size": 288564
+      },
+      "public_path": "assets/canvas/3202804-RVR_Color_Sensor_Mission.docx",
+      "sha256": "6ab4ca9cb96274576cc50378b4be14c0fc02e6fc5f76c15e5289d7a9971ca574"
+    },
+    "3202805": {
+      "download_source_file_id": 3202805,
+      "metadata": {
+        "content-type": "application/pdf",
+        "created_at": "2026-08-16T17:11:56Z",
+        "display_name": "RVR_Color_Sensor_Mission.pdf",
+        "filename": "RVR_Color_Sensor_Mission.pdf",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202805,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:56Z",
+        "size": 247352
+      },
+      "public_path": "assets/canvas/3202805-RVR_Color_Sensor_Mission.pdf",
+      "sha256": "af7c83b147d283d4fd1048607e443e6e67faa7776bbe0b6e356acadd0f26a213"
+    },
+    "3202806": {
+      "download_source_file_id": 3202806,
+      "metadata": {
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "created_at": "2026-08-16T17:11:58Z",
+        "display_name": "RVR_School_of_Fish_Challenge.docx",
+        "filename": "RVR_School_of_Fish_Challenge.docx",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202806,
+        "locked": false,
+        "modified_at": "2026-08-16T17:11:58Z",
+        "size": 38061
+      },
+      "public_path": "assets/canvas/3202806-RVR_School_of_Fish_Challenge.docx",
+      "sha256": "94ea4025bf5940618718a2738e252291f8d4c437738ba903a5c6dc63009082a6"
+    },
+    "3202807": {
+      "download_source_file_id": 3202807,
+      "metadata": {
+        "content-type": "application/pdf",
+        "created_at": "2026-08-16T17:12:00Z",
+        "display_name": "RVR_School_of_Fish_Challenge.pdf",
+        "filename": "RVR_School_of_Fish_Challenge.pdf",
+        "folder_full_name": "course files/print materials",
+        "folder_id": 175709,
+        "hidden": false,
+        "id": 3202807,
+        "locked": false,
+        "modified_at": "2026-08-16T17:12:00Z",
+        "size": 66588
+      },
+      "public_path": "assets/canvas/3202807-RVR_School_of_Fish_Challenge.pdf",
+      "sha256": "4b5038a9c642940c7104b01dedd19ac9c5e5aeaa88cab0a3d8e4883faecf2241"
     }
   },
-  "generated_at": "2026-08-16T05:28:56+00:00",
+  "generated_at": "2026-08-16T17:32:29+00:00",
   "modules": [
     {
       "id": 72563,
@@ -13537,8 +13681,8 @@
           "public_state": "public",
           "published": false,
           "resource": {
-            "body": "<div style=\"font-size:16px;color:#263238;font-family:-apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;\"><div style=\"background:#263238;border:2px solid #FF6D00;border-radius:12px;padding:20px 22px;margin:0 0 14px 0;\"><p style=\"margin:0 0 6px 0;font-size:16px;color:#FF6D00;\"><strong>Facilitator’s Guide · SW5 · AIR Unit 2</strong></p><h2 style=\"margin:0 0 6px 0;font-size:25px;color:#ffffff;\">Facilitator’s Guide: RVR Robotics Overview</h2><p style=\"margin:0;font-size:16px;color:#DDE5E9;\">Four robot builds, one checkpoint, and a class of RVRs that have to be charged before any of it works.</p></div><p style=\"margin:0 0 18px 0;\"><span style=\"display:inline-block;background:#263238;color:#ffffff;border-radius:999px;padding:6px 14px;font-size:16px;margin:0 8px 8px 0;\">🤖 Sphero RVR · Sphero Edu</span><span style=\"display:inline-block;background:#263238;color:#ffffff;border-radius:999px;padding:6px 14px;font-size:16px;margin:0 8px 8px 0;\">📑 8 student items</span><span style=\"display:inline-block;background:#263238;color:#ffffff;border-radius:999px;padding:6px 14px;font-size:16px;margin:0 8px 8px 0;\">🏆 30 points in the module</span></p><h3 style=\"margin:0 0 8px 0;font-size:18px;color:#455A64;\">The unit at a glance</h3><table style=\"border-collapse:collapse;width:100%;margin:0 0 20px 0;\"><thead><tr><th style=\"border:1px solid #B0BEC5;background:#455A64;color:#ffffff;padding:8px 10px;font-size:16px;text-align:left;\">Module item</th><th style=\"border:1px solid #B0BEC5;background:#455A64;color:#ffffff;padding:8px 10px;font-size:16px;text-align:left;\">What happens</th><th style=\"border:1px solid #B0BEC5;background:#455A64;color:#ffffff;padding:8px 10px;font-size:16px;text-align:left;\">Points</th></tr></thead><tbody><tr><td colspan=\"3\" style=\"border:1px solid #B0BEC5;background:#ECEFF1;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Drawing</strong></td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Learn: Drawing with RVR</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">An interactive lesson that launches out of Canvas into a new tab, plus two walkthrough videos on the page. Nothing is turned in — this is the study resource the checkpoint is written from.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">0</td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Do: Drawing with RVR</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">Students build the drawing program with a marker mounted on the robot, following an embedded slide deck. The worksheet opens with the assignment and comes back through it.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">5</td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Checkpoint: Drawing with RVR</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">Three multiple-choice questions on the drawing blocks. <strong>Unlimited attempts</strong> — students are told they can retake it as many times as they want.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">10</td></tr><tr><td colspan=\"3\" style=\"border:1px solid #B0BEC5;background:#ECEFF1;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Movement</strong></td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Movement Blocks</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">Students join the Sphero Edu module at <strong>edu.sphero.com/code with class code 4WDN5C</strong> and work the steps there, answering questions and dropping screenshots into the worksheet. Partners allowed.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">0</td></tr><tr><td colspan=\"3\" style=\"border:1px solid #B0BEC5;background:#ECEFF1;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Seeing, then Talking</strong></td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Learn: Seeing with the RVR</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">The second interactive lesson. <strong>This one has a completely blank page in Canvas</strong> — the launch button is the whole item, and that is by design.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">0</td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Do: Seeing with RVR</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">The colour sensor on the underside of the robot reads a card and the LEDs change to match it. Walkthrough video on the page, worksheet through the assignment.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">5</td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Talking with RVR</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">Two robots pass messages over infrared, then the class builds one program together so the RVRs hold a shape the way a school of fish does. This is the biomimicry lesson and it needs more than one robot running at once.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">5</td></tr><tr><td colspan=\"3\" style=\"border:1px solid #B0BEC5;background:#ECEFF1;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Closing</strong></td></tr><tr><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\"><strong>Xello Check-in: Volunteer Hours + Work Experiences</strong></td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">Students log one volunteer entry and one work experience with reflections, then upload a screenshot of the timeline. Runs <strong>last</strong>.</td><td style=\"border:1px solid #B0BEC5;padding:8px 10px;font-size:16px;color:#263238;\">5</td></tr></tbody></table><h3 style=\"margin:0 0 8px 0;font-size:18px;color:#455A64;\">Materials + prep</h3><ul style=\"margin:0 0 20px 0;padding-left:22px;font-size:16px;color:#263238;\"><li style=\"margin:0 0 7px 0;\"><strong>Sphero RVRs charged, and charged early.</strong> They do not come back from flat in a passing period. One robot per two or three students for most of the unit — but <strong>Talking with RVR needs at least two robots running at the same time</strong>, so plan that day around how many you actually have.</li><li style=\"margin:0 0 7px 0;\">The <strong>Sphero Edu app or edu.sphero.com/code</strong> open and tested on a student device, with <strong>class code 4WDN5C</strong> confirmed still live before you teach Movement Blocks.</li><li style=\"margin:0 0 7px 0;\">Markers and paper or butcher roll for the drawing runs, and a set of solid colour cards for the colour-sensor lesson.</li><li style=\"margin:0 0 7px 0;\">Launch each assignment yourself once. <strong>The worksheets arrive through Google Assignments</strong> — the student’s copy is generated when they open the item from Canvas, so nothing needs distributing, but you should confirm the hand-back path works.</li><li style=\"margin:0 0 7px 0;\">Xello through ClassLink for the closing check-in.</li></ul><h3 style=\"margin:0 0 8px 0;font-size:18px;color:#455A64;\">Watch-fors</h3><ul style=\"margin:0 0 20px 0;padding-left:22px;font-size:16px;color:#263238;\"><li style=\"margin:0 0 7px 0;\"><strong>The two “Learn:” items are interactive-lesson launches, not Canvas pages.</strong> They open in a new tab, and <strong>Learn: Seeing with the RVR shows an empty page in Canvas</strong>. That is normal. Say so before the first one or you will spend the period answering it.</li><li style=\"margin:0 0 7px 0;\"><strong>Teach the core route by name:</strong> <strong>Drawing → Movement → Seeing → Talking</strong>. Biomagnification is an optional extension in <strong>Enrichment · Parked Alternates</strong>; teach it first if you choose to use it.</li><li style=\"margin:0 0 7px 0;\"><strong>Where this sits in the AIR arc.</strong> This is <strong>Unit 2</strong>. Unit 0 (Intro to AI) is over in SW4, and Units 1 and 3 — Leaving Land and Sailing Home — are elsewhere in SW5. Unit 3’s temperature-bot lesson assumes students have done this module, so run it before Sailing Home.</li><li style=\"margin:0 0 7px 0;\"><strong>The checkpoint is a study loop, not a gate.</strong> It carries the most points in the module (10) and allows unlimited attempts. Point students back at <strong>Learn: Drawing with RVR</strong> between tries — that is the resource it is written from.</li><li style=\"margin:0 0 7px 0;\"><strong>Movement Blocks asks for the most and is worth nothing.</strong> It is the only lesson that sends students out to the Sphero Edu platform, it collects answers and screenshots, and it is currently set to 0 points. Give it a value if you want that work in the gradebook.</li></ul><div style=\"background:#FFE9DB;border:2px solid #FF6D00;border-radius:12px;padding:16px 18px;margin:0;\"><h3 style=\"margin:0 0 6px 0;font-size:17px;color:#8A3D00;\">Grading</h3><p style=\"margin:0;font-size:16px;color:#263238;\">The module carries <strong>30 points</strong> as built. <strong>Checkpoint: Drawing with RVR</strong> is <strong>10</strong>; <strong>Do: Drawing with RVR</strong>, <strong>Do: Seeing with RVR</strong> and <strong>Talking with RVR</strong> are <strong>5 each</strong>; the <strong>Xello check-in</strong> is <strong>5</strong>. <strong>Learn: Drawing with RVR</strong>, <strong>Learn: Seeing with the RVR</strong> and <strong>Movement Blocks</strong> are all set to <strong>0</strong>. The three worksheet lessons come back through Google Assignments, so the completed worksheet is what you grade.</p></div></div>",
-            "body_sha256": "ac6c3cff9f7a49ff988a159bc9bc8afe02b1966f6130269f91794bb8154d8e2d",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>TEACHER GUIDE · SW5 · RVR ROBOTICS</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">RVR Robotics: Draw, Move, See, Talk</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">One robot system, four capabilities, and visible evidence for every mission.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Robotic systems: output, control, input, and communication</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will program an RVR to draw, move precisely, respond to color, and coordinate with another robot.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will submit program evidence, test results, and a revision claim for each mission.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">The core teaching route</h3><p style=\"margin:0 0 8px 0;\"><strong>Teach the five-day deck whole group, then use the matching Sphero EDU lesson during work time.</strong> The Sphero lessons contain the live build steps. The mission sheets are the accountability layer: students must record the robot ID, add screenshots or photos, log results, and explain what they changed.</p>\n<p style=\"margin:0;\">A student who clicks through the Sphero lesson without producing the required evidence has not completed the mission.</p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Teacher resources</h3><p style=\"margin:0 0 8px 0;\"><a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202799/download?verifier=fdcfe6a9-b114-463a-bd2e-34c5b137ea86\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202799\" data-api-returntype=\"File\"><strong>Download the complete teacher deck</strong></a></p>\n<p style=\"margin:0 0 8px 0;\">Student mission sheets are available as editable Word files and print-ready PDFs inside each assignment.</p>\n<p style=\"margin:0;\"><a href=\"https://help.sphero.com/sphero-support/connecting-robots-in-the-sphero-edu-web-app\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Sphero connection guide</strong></a> <a href=\"https://help.sphero.com/sphero-support/rvr-and-rvr-replacement-color-cards\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>RVR color-card guidance</strong></a></p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Five-day flow</h3><div style=\"overflow-x:auto;\"><table style=\"border-collapse:collapse;min-width:760px;width:100%;\">\n<thead><tr><th style=\"border:1px solid #B7C7D3;background:#0B1F35;color:#FFFFFF;padding:9px;text-align:left;\">Day</th><th style=\"border:1px solid #B7C7D3;background:#0B1F35;color:#FFFFFF;padding:9px;text-align:left;\">Teaching + activity</th><th style=\"border:1px solid #B7C7D3;background:#0B1F35;color:#FFFFFF;padding:9px;text-align:left;\">Deck</th><th style=\"border:1px solid #B7C7D3;background:#0B1F35;color:#FFFFFF;padding:9px;text-align:left;\">Proof of work</th></tr></thead>\n<tbody><tr><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\"><strong>Day 1 · Draw</strong></td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Teach the three Sphero program types. Students plan, run, photograph, and revise one robot drawing.</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Slides 1 to 11</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Drawing Mission</td></tr><tr><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\"><strong>Day 2 · Move</strong></td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Students test heading, speed, duration, distance, wait, and continue. Seven runs support one precision claim.</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Slides 12 to 20</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Precision Movement Lab</td></tr><tr><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\"><strong>Day 3 · See</strong></td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Students build the green-to-red color route, add the color sensor, and explain input, decision, and output.</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Slides 21 to 28</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Color Sensor Mission</td></tr><tr><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\"><strong>Day 4 · Talk</strong></td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Pairs build leader and follower programs, send an infrared freeze message, and prove the exchange works.</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Slides 29 to 35</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">School-of-Fish Challenge, part 1</td></tr><tr><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\"><strong>Day 5 · Coordinate</strong></td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Teams use at least two robots to maintain a formation without hand steering, then film and explain a revision.</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">Slides 36 to 40</td><td style=\"border:1px solid #B7C7D3;padding:9px;vertical-align:top;\">School-of-Fish Challenge, part 2</td></tr></tbody></table></div></div><div style=\"border-left:6px solid #FF9F1C;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Materials + room setup</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Charge and label RVRs before class. Put each robot ID on the robot and its mission sheet.</li><li style=\"margin:5px 0;\">Plan one robot for every two or three students. Talking and coordination require at least two robots running together.</li><li style=\"margin:5px 0;\">Mark safe driving lanes with tape. Keep feet, backpacks, and loose cables outside the lane.</li><li style=\"margin:5px 0;\">Prepare butcher paper or large paper and washable markers for Drawing.</li><li style=\"margin:5px 0;\">Prepare solid color cards or paper for Seeing. Sphero confirms RVR can use ordinary color cards.</li><li style=\"margin:5px 0;\">Test Sphero EDU in Chrome or Edge and verify the robot ID and battery icon appear after pairing.</li></ul></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Sphero EDU setup</h3><p style=\"margin:0 0 8px 0;\">The direct lesson links work without a copied Canvas integration. If you want student progress inside Sphero EDU, create your own class and assign the same lessons there. Do not reuse another teacher's class code.</p>\n<p style=\"margin:0;\">Direct lessons: <a href=\"https://edu.sphero.com/cwists/preview/52597\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Drawing</strong></a> <a href=\"https://edu.sphero.com/cwists/preview/67572\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Movement</strong></a> <a href=\"https://edu.sphero.com/cwists/preview/39616x\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Color sensor</strong></a> <a href=\"https://edu.sphero.com/cwists/preview/39619x\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Infrared</strong></a></p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Fewer-robot route</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Run one robot station while other teams plan, annotate code, or complete prediction rows.</li><li style=\"margin:5px 0;\">Project the leave-up work slide so waiting teams know the next evidence requirement.</li><li style=\"margin:5px 0;\">For Talking, rotate teams through one leader/follower pair. Each team must explain one message, one response, and one revision even if it shares the hardware.</li></ul></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Grading</h3><p style=\"margin:0 0 8px 0;\">Drawing, Movement, Color Sensor, and School-of-Fish are each <strong>5-point evidence checks</strong>. The Drawing checkpoint is <strong>10 points</strong> with unlimited attempts. Xello remains a separate 5-point check-in.</p>\n<p style=\"margin:0;\">Each mission sheet is short enough to use during class and still requires the proof that matters: a connected robot ID, program or run evidence, observed results, and a revision or systems explanation.</p></div><div style=\"border-left:6px solid #FF9F1C;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Before students begin</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Open each direct Sphero lesson and the teacher deck.</li><li style=\"margin:5px 0;\">Download or print the mission sheets you want students to use.</li><li style=\"margin:5px 0;\">Use Student View to test every Canvas file link and submission route.</li><li style=\"margin:5px 0;\">Test district Xello access, then publish the Xello check-in when assigning it.</li></ul></div>\n</div>",
+            "body_sha256": "093c3ec7cdde1de9cc8c506f84c5b2a2b9a443bfcbf8f692a415b51e5815749f",
             "kind": "page",
             "metadata": {
               "editing_roles": "teachers",
@@ -13552,7 +13696,9 @@
               "todo_date": null,
               "url": "facilitators-guide-rvr-robotics-overview"
             },
-            "referenced_file_ids": []
+            "referenced_file_ids": [
+              3202799
+            ]
           },
           "title": "Facilitator's Guide: RVR Robotics Overview",
           "type": "Page"
@@ -13567,10 +13713,10 @@
           "page_url": null,
           "position": 2,
           "public_state": "public",
-          "published": false,
+          "published": true,
           "resource": {
-            "body": "<p><img src=\"https://docs.google.com/drawings/d/e/2PACX-1vTN6PKZsZHlgfDdwGpvf61oLOd4brbPfLhGlAq1SfZ7044GV-07wXHxuJkAXdzTV-ACatyCRd9FMymr/pub?w=1162&amp;h=100\" alt=\"Unit banner\" style=\"max-width: 100%; height: auto;\" loading=\"lazy\"></p>\n<div style=\"background: #37474F; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;\">\n<div style=\"max-width: 980px; margin: 0 auto; color: #ffffff; line-height: 1.55;\">\n<div class=\"phase-5e-engage\" style=\"background: #263238; border: 2px solid #FF6D00; border-radius: 18px; padding: 26px; margin-bottom: 16px; text-align: center;\">\n<p style=\"margin: 0 0 6px 0; font-size: 16px; color: #FF6D00;\">🤖 RVR Robotics · Drawing</p>\n<h2 style=\"margin: 0; font-size: 30px; color: #ffffff;\">Learn: Drawing with RVR</h2>\n<p style=\"margin: 10px 0 0 0; font-size: 17px; color: #DDE5E9;\">Before you drive anything, see what the RVR can do with a marker attached to it.</p>\n</div>\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-bottom: 16px;\">\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🤖 <strong style=\"color: #FF6D00;\">Sphero RVR</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">📺 <strong style=\"color: #FF6D00;\">Two walkthroughs</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🚀 <strong style=\"color: #FF6D00;\">Interactive lesson</strong>\n</div>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>1</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Watch both walkthroughs</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Watch these before you touch a robot so you know what a drawing run is supposed to look like.</p>\n</div>\n<div style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 14px; margin-bottom: 12px;\">\n<p style=\"margin: 0 0 10px 0;\"><iframe title=\"Drawing with RVR walkthrough, part 1\" src=\"https://www.youtube.com/embed/9VpmosbbGl0?si=KDUALpmWFnIXFAbZ\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"max-width: 100%; border: 0;\"></iframe></p>\n<p style=\"margin: 0;\"><iframe title=\"Drawing with RVR walkthrough, part 2\" src=\"https://www.youtube.com/embed/CXUWdmZv-cg?si=lNKdSGOV0d6SndDn\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"max-width: 100%; border: 0;\"></iframe></p>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>2</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Open the interactive lesson</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Load the lesson using the button on this page. Work through every screen — it explains the drawing blocks you are about to use.</p>\n</div>\n<div class=\"phase-5e-evaluate\" style=\"background: #263238; border: 1px solid #607D8B; border-radius: 12px; padding: 14px; font-size: 17px; color: #ffffff;\">\n📤 <strong style=\"color: #FF6D00;\">Turn in:</strong> Nothing here. This one is for learning — you build in <strong>Do: Drawing with RVR</strong> next.\n</div>\n</div>\n</div>",
-            "body_sha256": "27419bbd05e3c734f8b21e9bddf61267dbdd6c3b2452632968ec405cdf4e3162",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>DAY 1 · LEARN</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">Draw Mode or Blocks?</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">Learn the Sphero EDU workspace before the robot touches the paper.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Robot programming</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will compare Draw, Blocks, and Text program types and connect to the correct RVR.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will identify the best program type for a drawing task and explain why.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Start here</h3><p style=\"margin:0 0 8px 0;\">Watch the short RVR overview and the classroom Pictionary example. Then open the official Sphero lesson.</p>\n<div style=\"max-width:720px;margin:12px 0;\">\n<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000000;\">\n<iframe title=\"Sphero RVR overview\" src=\"https://www.youtube.com/embed/9VpmosbbGl0\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\"></iframe>\n</div><p style=\"margin:6px 0 0 0;\"><a href=\"https://www.youtube.com/watch?v=9VpmosbbGl0\" target=\"_blank\">Open Sphero RVR overview in a new tab</a></p></div><div style=\"max-width:720px;margin:12px 0;\">\n<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000000;\">\n<iframe title=\"RVR Pictionary classroom example\" src=\"https://www.youtube.com/embed/CXUWdmZv-cg\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\"></iframe>\n</div><p style=\"margin:6px 0 0 0;\"><a href=\"https://www.youtube.com/watch?v=CXUWdmZv-cg\" target=\"_blank\">Open RVR Pictionary classroom example in a new tab</a></p></div>\n<p style=\"margin:8px 0 0 0;\"><a href=\"https://edu.sphero.com/cwists/preview/52597\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Open Introduction to Sphero EDU</strong></a></p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">What to notice</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Draw mode records a path quickly.</li><li style=\"margin:5px 0;\">Blocks give precise control over heading, speed, duration, lights, and repeated actions.</li><li style=\"margin:5px 0;\">Text is another program type, but this unit starts with Draw and Blocks.</li><li style=\"margin:5px 0;\">A connected robot shows the correct robot ID and battery icon in the Sphero EDU window.</li></ul></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Exit check</h3><p style=\"margin:0;\"><strong>I would use ______ mode for a quick sketch because ______. I would use Blocks when ______.</strong></p></div>\n</div>",
+            "body_sha256": "5f3b8586afffc11bf16b639d6f113f5f17a4df633067c485b4f148fd44de2364",
             "kind": "assignment",
             "metadata": {
               "allowed_attempts": -1,
@@ -13580,28 +13726,28 @@
               "automatic_peer_reviews": false,
               "due_at": null,
               "external_tool": {
-                "domain": "scone-prod.us-east-1.insops.net",
-                "new_tab": true,
-                "url_sha256": "6b9644b9228a814996de1a51a9d6cf24b15a9a7eb6e395e292e9c8496157ad71"
+                "domain": "",
+                "new_tab": null,
+                "url_sha256": null
               },
-              "grading_type": "pass_fail",
+              "grading_type": "not_graded",
               "id": 1183317,
               "lock_at": null,
-              "name": "Learn: Drawing with RVR",
+              "name": "Day 1 · Learn: Draw Mode or Blocks?",
               "omit_from_final_grade": true,
               "peer_reviews": false,
               "points_possible": 0.0,
-              "published": false,
+              "published": true,
               "rubric": [],
               "rubric_settings": {},
               "submission_types": [
-                "external_tool"
+                "none"
               ],
               "unlock_at": null
             },
             "referenced_file_ids": []
           },
-          "title": "Learn: Drawing with RVR",
+          "title": "Day 1 · Learn: Draw Mode or Blocks?",
           "type": "Assignment"
         },
         {
@@ -13616,8 +13762,8 @@
           "public_state": "public",
           "published": true,
           "resource": {
-            "body": "<p><img src=\"https://docs.google.com/drawings/d/e/2PACX-1vTN6PKZsZHlgfDdwGpvf61oLOd4brbPfLhGlAq1SfZ7044GV-07wXHxuJkAXdzTV-ACatyCRd9FMymr/pub?w=1162&amp;h=100\" alt=\"Unit banner\" style=\"max-width: 100%; height: auto;\" loading=\"lazy\"></p>\n<div style=\"background: #37474F; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;\">\n<div style=\"max-width: 980px; margin: 0 auto; color: #ffffff; line-height: 1.55;\">\n<div class=\"phase-5e-engage\" style=\"background: #263238; border: 2px solid #FF6D00; border-radius: 18px; padding: 26px; margin-bottom: 16px; text-align: center;\">\n<p style=\"margin: 0 0 6px 0; font-size: 16px; color: #FF6D00;\">🤖 RVR Robotics · Drawing</p>\n<h2 style=\"margin: 0; font-size: 30px; color: #ffffff;\">Do: Drawing with RVR</h2>\n<p style=\"margin: 10px 0 0 0; font-size: 17px; color: #DDE5E9;\">Mount a marker on the RVR and program it to draw.</p>\n</div>\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-bottom: 16px;\">\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🤖 <strong style=\"color: #FF6D00;\">Sphero RVR</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🖊️ <strong style=\"color: #FF6D00;\">Drawing program</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🏆 <strong style=\"color: #FF6D00;\">5 points</strong>\n</div>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>1</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Replay the walkthroughs as you build</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Keep these open while you work — they show every block in the drawing program.</p>\n</div>\n<div style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 14px; margin-bottom: 12px;\">\n<p style=\"margin: 0 0 10px 0;\"><iframe title=\"Drawing with RVR walkthrough, part 1\" src=\"https://www.youtube.com/embed/9VpmosbbGl0?si=KDUALpmWFnIXFAbZ\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"max-width: 100%; border: 0;\"></iframe></p>\n<p style=\"margin: 0;\"><iframe title=\"Drawing with RVR walkthrough, part 2\" src=\"https://www.youtube.com/embed/CXUWdmZv-cg?si=lNKdSGOV0d6SndDn\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"max-width: 100%; border: 0;\"></iframe></p>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>2</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Work through the slide deck</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">The deck walks you through the build one step at a time.</p>\n</div>\n<div style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 14px; margin-bottom: 12px;\">\n<iframe title=\"Drawing with RVR slide deck\" src=\"https://docs.google.com/presentation/d/e/2PACX-1vQDZMnkPtoYYwy1P9nppuUrlx4mIDbU9rn_onCAX-w8InC7x8q00W6idjr-Lzxubg1oBoWpP2Zg1Ls3/embed?start=false&amp;loop=true&amp;delayms=60000\" width=\"100%\" height=\"700\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" webkitallowfullscreen=\"webkitallowfullscreen\" mozallowfullscreen=\"mozallowfullscreen\" style=\"border: 0;\"></iframe>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>3</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Build your drawing program</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Fill in the worksheet attached to this assignment as you go, so your answers match what the robot actually did.</p>\n</div>\n<div style=\"background: #FFE9DB; border: 2px solid #FF6D00; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<p style=\"margin: 0 0 8px 0; font-size: 18px; color: #8A3D00;\"><strong>💡 Stuck on a block?</strong></p>\n<p style=\"margin: 0 0 8px 0; font-size: 17px; color: #263238;\">Scrub back through the videos above. Every block you need is demonstrated in one of them — you are not missing a step that was never shown.</p>\n</div>\n<div class=\"phase-5e-evaluate\" style=\"background: #263238; border: 1px solid #607D8B; border-radius: 12px; padding: 14px; font-size: 17px; color: #ffffff;\">\n📤 <strong style=\"color: #FF6D00;\">Turn in:</strong> Submit the worksheet through this assignment once your drawing runs the way you want it to.\n</div>\n</div>\n</div>",
-            "body_sha256": "a203f6ab0cea84dfb9276c223fd3c23a6e2b1f4c4886f4b0f8db535d289f88b7",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>DAY 1 · DO</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">Drawing Mission: Plan, Program, Prove</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">Code leaves a visible trace. Your evidence should show what changed between the first and final run.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Robot drawing</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will plan, program, test, and revise a recognizable robot drawing.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will submit a completed mission sheet plus photo or screenshot evidence of the drawing and program.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Mission</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Choose a simple word or symbol with short lines, turns, and curves.</li><li style=\"margin:5px 0;\">Sketch a robot-friendly plan before building the program.</li><li style=\"margin:5px 0;\">Connect to the correct RVR and record its robot ID.</li><li style=\"margin:5px 0;\">Run the drawing, capture the result, and make one code revision.</li><li style=\"margin:5px 0;\">Run it again and explain what improved.</li></ul></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Mission sheet</h3><p style=\"margin:0 0 8px 0;\">Use the editable Word file or print the PDF.</p>\n<p style=\"margin:0;\"><a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202800/download?verifier=47030a99-5bda-4322-93c8-39de2a2c0f24\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202800\" data-api-returntype=\"File\"><strong>Download Word mission sheet</strong></a> <a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202801/download?verifier=3d723d9f-273c-4b27-be63-1d9cb1a19f1d\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202801\" data-api-returntype=\"File\"><strong>Download PDF mission sheet</strong></a></p></div><div style=\"border-left:6px solid #FF9F1C;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Turn in</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Completed mission sheet</li><li style=\"margin:5px 0;\">Photo or screenshot of the final drawing</li><li style=\"margin:5px 0;\">Screenshot of the program</li><li style=\"margin:5px 0;\">One sentence naming the hardest move and the revision that helped</li></ul></div>\n</div>",
+            "body_sha256": "6b3d2cb6025a05df7572ddb40ed5d6c57781580f5f288a46b93a9ed8eda19db9",
             "kind": "assignment",
             "metadata": {
               "allowed_attempts": -1,
@@ -13627,14 +13773,14 @@
               "automatic_peer_reviews": false,
               "due_at": null,
               "external_tool": {
-                "domain": "assignments.google.com",
-                "new_tab": true,
-                "url_sha256": "83b6ccd120902412958dc2b157039f90f7d208e80dee15a33dbc7a969cd6fec0"
+                "domain": "",
+                "new_tab": null,
+                "url_sha256": null
               },
               "grading_type": "points",
               "id": 1183265,
               "lock_at": null,
-              "name": "Do: Drawing with RVR",
+              "name": "Day 1 · Drawing Mission: Plan, Program, Prove",
               "omit_from_final_grade": false,
               "peer_reviews": false,
               "points_possible": 5.0,
@@ -13642,13 +13788,17 @@
               "rubric": [],
               "rubric_settings": {},
               "submission_types": [
-                "external_tool"
+                "online_upload",
+                "online_url"
               ],
               "unlock_at": null
             },
-            "referenced_file_ids": []
+            "referenced_file_ids": [
+              3202800,
+              3202801
+            ]
           },
-          "title": "Do: Drawing with RVR",
+          "title": "Day 1 · Drawing Mission: Plan, Program, Prove",
           "type": "Assignment"
         },
         {
@@ -13663,8 +13813,8 @@
           "public_state": "public",
           "published": true,
           "resource": {
-            "body": "<p><img src=\"https://docs.google.com/drawings/d/e/2PACX-1vTN6PKZsZHlgfDdwGpvf61oLOd4brbPfLhGlAq1SfZ7044GV-07wXHxuJkAXdzTV-ACatyCRd9FMymr/pub?w=1162&amp;h=100\" alt=\"Unit banner\" style=\"max-width: 100%; height: auto;\" loading=\"lazy\"></p>\n<div style=\"background: #37474F; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;\">\n<div style=\"max-width: 980px; margin: 0 auto; color: #ffffff; line-height: 1.55;\">\n<div class=\"phase-5e-engage\" style=\"background: #263238; border: 2px solid #FF6D00; border-radius: 18px; padding: 26px; margin-bottom: 16px; text-align: center;\">\n<p style=\"margin: 0 0 6px 0; font-size: 16px; color: #FF6D00;\">🤖 RVR Robotics · Drawing</p>\n<h2 style=\"margin: 0; font-size: 30px; color: #ffffff;\">Checkpoint: Drawing with RVR</h2>\n<p style=\"margin: 10px 0 0 0; font-size: 17px; color: #DDE5E9;\">A quick check on the drawing blocks before you move on to movement.</p>\n</div>\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-bottom: 16px;\">\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🏆 <strong style=\"color: #FF6D00;\">10 points</strong></div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">📝 <strong style=\"color: #FF6D00;\">Multiple choice</strong></div>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>1</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Take the checkpoint</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">If you miss a question, you can retake this checkpoint as many times as you want.</p>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>2</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Need a refresher first?</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Reopen <strong>Learn: Drawing with RVR</strong>. Everything on this checkpoint is covered in that lesson.</p>\n</div>\n</div>\n</div>",
-            "body_sha256": "ecd0b5f4571b948f631acb8907561671b280b66954d9d90848494a0b220e7735",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>DAY 1 · CHECKPOINT</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">Checkpoint: Drawing + RVR Systems</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">Ten points. Unlimited attempts. Use the lesson between tries.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Drawing concepts</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will check their understanding of Sphero program types and RVR system vocabulary.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will earn at least 8 of 10 points or use feedback and retry.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Before you start</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Review the Day 1 deck or Learn: Drawing with RVR.</li><li style=\"margin:5px 0;\">Use the mission sheet vocabulary: robot, program, heading, speed, delay, sensor, infrared, and evidence.</li><li style=\"margin:5px 0;\">You may retry. Read the feedback, then use the lesson to correct your thinking.</li></ul></div>\n</div>",
+            "body_sha256": "e483617dc3420d3348078c194be64e5b71e9c526544a951f4620ebc98762ef95",
             "kind": "quiz",
             "metadata": {
               "allowed_attempts": -1,
@@ -13679,7 +13829,7 @@
               "quiz_type": "assignment",
               "shuffle_answers": false,
               "time_limit": null,
-              "title": "Checkpoint: Drawing with RVR",
+              "title": "Day 1 · Checkpoint: Drawing + RVR Systems",
               "unlock_at": null
             },
             "question_contract": [
@@ -13695,12 +13845,12 @@
               },
               {
                 "answer_count": 8,
-                "answers_sha256": "323eaaa76a94df68f2ca171581d5d6e7c1a774b1aba844eebdc584a1785ccfe3",
+                "answers_sha256": "3e92c474a32693c6180cf10de6e7c70c19cde1a38590f0248890279b771febf6",
                 "id": 855038,
                 "points_possible": 8.0,
-                "position": 2,
-                "question_name": "Question",
-                "question_text_sha256": "167c8b2947e7584967089521239d6b8ceb103a7dcf9509205d094953f4f6e2da",
+                "position": null,
+                "question_name": "RVR Systems Vocabulary",
+                "question_text_sha256": "51d388e46dd4a1dd153fa590d8549f5eee1b1ed8ea1e25ac109af92b8bb6a395",
                 "question_type": "matching_question"
               },
               {
@@ -13716,7 +13866,7 @@
             ],
             "referenced_file_ids": []
           },
-          "title": "Checkpoint: Drawing with RVR",
+          "title": "Day 1 · Checkpoint: Drawing + RVR Systems",
           "type": "Quiz"
         },
         {
@@ -13731,8 +13881,8 @@
           "public_state": "public",
           "published": true,
           "resource": {
-            "body": "<p><img src=\"https://docs.google.com/drawings/d/e/2PACX-1vTN6PKZsZHlgfDdwGpvf61oLOd4brbPfLhGlAq1SfZ7044GV-07wXHxuJkAXdzTV-ACatyCRd9FMymr/pub?w=1162&amp;h=100\" alt=\"Unit banner\" style=\"max-width: 100%; height: auto;\" loading=\"lazy\"></p>\n<div style=\"background: #37474F; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;\">\n<div style=\"max-width: 980px; margin: 0 auto; color: #ffffff; line-height: 1.55;\">\n<div class=\"phase-5e-engage\" style=\"background: #263238; border: 2px solid #FF6D00; border-radius: 18px; padding: 26px; margin-bottom: 16px; text-align: center;\">\n<p style=\"margin: 0 0 6px 0; font-size: 16px; color: #FF6D00;\">🤖 RVR Robotics · Movement</p>\n<h2 style=\"margin: 0; font-size: 30px; color: #ffffff;\">Movement Blocks</h2>\n<p style=\"margin: 10px 0 0 0; font-size: 17px; color: #DDE5E9;\">Drawing was about the marker. This one is about making the RVR go exactly where you tell it to.</p>\n</div>\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-bottom: 16px;\">\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🤖 <strong style=\"color: #FF6D00;\">Sphero RVR</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">👥 <strong style=\"color: #FF6D00;\">Partners allowed</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">📦 <strong style=\"color: #FF6D00;\">Answers + screenshots</strong>\n</div>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>1</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Open the Sphero module</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Go to <a style=\"color: #ffffff;\" href=\"http://edu.sphero.com/code\" target=\"_blank\">edu.sphero.com/code</a> and join with the class code below.</p>\n</div>\n<div style=\"background: #FFE9DB; border: 2px solid #FF6D00; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<p style=\"margin: 0 0 8px 0; font-size: 18px; color: #8A3D00;\"><strong>🔑 Class code</strong></p>\n<p style=\"margin: 0 0 8px 0; font-size: 17px; color: #263238;\"><strong>4WDN5C</strong> — enter it at <a style=\"color: #8A3D00;\" href=\"http://edu.sphero.com/code\" target=\"_blank\">edu.sphero.com/code</a>.</p>\n</div>\n<div style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 14px; margin-bottom: 12px;\">\n<div style=\"background: #ffffff; border-radius: 10px; padding: 10px;\">\n<img src=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3133560/preview?verifier=bUi2egpS7eJtY5n8yRzwUhAsKW0F4rdSZocMyY7u\" alt=\"Sphero Edu class-code screen, showing where to type the class code\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3133560\" data-api-returntype=\"File\" style=\"max-width: 100%; height: auto; display: block;\" loading=\"lazy\">\n</div>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>2</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Follow each step on the Sphero module</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">After each step, answer the questions and upload the required screenshot. You may work with a partner.</p>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>3</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Finish the check-for-understanding worksheet</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">The worksheet attached to this assignment is where your answers and screenshots go.</p>\n</div>\n<div class=\"phase-5e-evaluate\" style=\"background: #263238; border: 1px solid #607D8B; border-radius: 12px; padding: 14px; font-size: 17px; color: #ffffff;\">\n📤 <strong style=\"color: #FF6D00;\">Turn in:</strong> Submit the worksheet with every question answered and every required screenshot attached.\n</div>\n</div>\n</div>",
-            "body_sha256": "bb8acea8aa2c0027e669964eb4f1d7a890d5ab24c54ed52b72188240df12c30e",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>DAY 2 · CONTROL</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">Precision Movement Lab</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">Prediction is not enough. Measure the route, compare results, and revise one variable at a time.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Precision movement</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will test heading, speed, duration, distance, wait, and continue.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will submit seven documented tests and one evidence-based precision claim.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Official build steps</h3><p style=\"margin:0 0 8px 0;\">Open the Sphero lesson and complete all seven steps. The teacher deck follows the same order.</p>\n<p style=\"margin:0;\"><a href=\"https://edu.sphero.com/cwists/preview/67572\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Open RVR+ Blocks 1: Movement</strong></a></p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Seven tests</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Drive exploration and robot ID</li><li style=\"margin:5px 0;\">Heading, speed, delay, and stop</li><li style=\"margin:5px 0;\">Heading square</li><li style=\"margin:5px 0;\">Roll to distance</li><li style=\"margin:5px 0;\">Wait versus continue</li><li style=\"margin:5px 0;\">Lights and sound with a shape</li><li style=\"margin:5px 0;\">Accuracy extension at a new speed</li></ul></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Mission sheet</h3><p style=\"margin:0;\"><a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202802/download?verifier=591eee00-0609-4b82-bc55-1b42148b0ca6\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202802\" data-api-returntype=\"File\"><strong>Download Word lab</strong></a> <a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202803/download?verifier=74259780-a0bb-4c9f-b304-a6d36c88e6fb\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202803\" data-api-returntype=\"File\"><strong>Download PDF lab</strong></a></p></div><div style=\"border-left:6px solid #FF9F1C;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Turn in</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">All seven evidence rows</li><li style=\"margin:5px 0;\">Required screenshots inserted into the file or uploaded with it</li><li style=\"margin:5px 0;\">A precision claim supported by the test results</li></ul></div>\n</div>",
+            "body_sha256": "06386e1fffeb756eedcb167a2630a93a1371cfa06fb8e560524df997a69ece4f",
             "kind": "assignment",
             "metadata": {
               "allowed_attempts": -1,
@@ -13742,30 +13892,32 @@
               "automatic_peer_reviews": false,
               "due_at": null,
               "external_tool": {
-                "domain": "assignments.google.com",
-                "new_tab": true,
-                "url_sha256": "6c2e814dd8527e5948e7232108ff64de434033cd4d9731f9dccf0136d6d66223"
+                "domain": "",
+                "new_tab": null,
+                "url_sha256": null
               },
               "grading_type": "points",
               "id": 1183377,
               "lock_at": null,
-              "name": "Movement Blocks",
+              "name": "Day 2 · Precision Movement Lab",
               "omit_from_final_grade": false,
               "peer_reviews": false,
-              "points_possible": 0.0,
+              "points_possible": 5.0,
               "published": true,
               "rubric": [],
               "rubric_settings": {},
               "submission_types": [
-                "external_tool"
+                "online_upload",
+                "online_url"
               ],
               "unlock_at": null
             },
             "referenced_file_ids": [
-              3133560
+              3202802,
+              3202803
             ]
           },
-          "title": "Movement Blocks",
+          "title": "Day 2 · Precision Movement Lab",
           "type": "Assignment"
         },
         {
@@ -13780,8 +13932,8 @@
           "public_state": "public",
           "published": true,
           "resource": {
-            "body": "",
-            "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>DAY 3 · LEARN</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">How Does Floor Color Change a Decision?</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">The RVR is not guessing. A sensor measures color and the program decides what happens next.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Color sensing</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will explain how a floor color becomes an input that changes program behavior.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will identify the input, decision, and output in a color-sensor program.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Watch + explore</h3><div style=\"max-width:720px;margin:12px 0;\">\n<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000000;\">\n<iframe title=\"RVR color sensor walkthrough\" src=\"https://www.youtube.com/embed/4EiCuNuqeLk\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\"></iframe>\n</div><p style=\"margin:6px 0 0 0;\"><a href=\"https://www.youtube.com/watch?v=4EiCuNuqeLk\" target=\"_blank\">Open RVR color sensor walkthrough in a new tab</a></p></div>\n<p style=\"margin:0;\"><a href=\"https://edu.sphero.com/cwists/preview/39616x\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Open The aMAZEing RVR Color Sensor</strong></a></p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">System model</h3><p style=\"margin:0 0 6px 0;\"><strong>Input:</strong> the downward-facing sensor reads a floor color.</p>\n<p style=\"margin:0 0 6px 0;\"><strong>Decision:</strong> the program checks which color was detected.</p>\n<p style=\"margin:0;\"><strong>Output:</strong> the robot changes light, sound, speed, direction, or stop behavior.</p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Exit check</h3><p style=\"margin:0;\"><strong>The color sensor is the input because ______. When the sensor reads ______, the program decides to ______.</strong></p></div>\n</div>",
+            "body_sha256": "a4ca8c65c88f2b541f7124c9de2e3db74c384e39c0cdbcecada5af154b886fe2",
             "kind": "assignment",
             "metadata": {
               "allowed_attempts": -1,
@@ -13791,14 +13943,14 @@
               "automatic_peer_reviews": false,
               "due_at": null,
               "external_tool": {
-                "domain": "scone-prod.us-east-1.insops.net",
-                "new_tab": true,
-                "url_sha256": "f0a53740537909471e3e0297f509653faf7eacf2b5e49d90a486eec19bc8c3e9"
+                "domain": "",
+                "new_tab": null,
+                "url_sha256": null
               },
-              "grading_type": "pass_fail",
+              "grading_type": "not_graded",
               "id": 1183343,
               "lock_at": null,
-              "name": "Learn: Seeing with the RVR",
+              "name": "Day 3 · Learn: How Floor Color Changes a Decision",
               "omit_from_final_grade": true,
               "peer_reviews": false,
               "points_possible": 0.0,
@@ -13806,13 +13958,13 @@
               "rubric": [],
               "rubric_settings": {},
               "submission_types": [
-                "external_tool"
+                "none"
               ],
               "unlock_at": null
             },
             "referenced_file_ids": []
           },
-          "title": "Learn: Seeing with the RVR",
+          "title": "Day 3 · Learn: How Floor Color Changes a Decision",
           "type": "Assignment"
         },
         {
@@ -13827,8 +13979,8 @@
           "public_state": "public",
           "published": true,
           "resource": {
-            "body": "<p><img src=\"https://docs.google.com/drawings/d/e/2PACX-1vTN6PKZsZHlgfDdwGpvf61oLOd4brbPfLhGlAq1SfZ7044GV-07wXHxuJkAXdzTV-ACatyCRd9FMymr/pub?w=1162&amp;h=100\" alt=\"Unit banner\" style=\"max-width: 100%; height: auto;\" loading=\"lazy\"></p>\n<div style=\"background: #37474F; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;\">\n<div style=\"max-width: 980px; margin: 0 auto; color: #ffffff; line-height: 1.55;\">\n<div class=\"phase-5e-engage\" style=\"background: #263238; border: 2px solid #FF6D00; border-radius: 18px; padding: 26px; margin-bottom: 16px; text-align: center;\">\n<p style=\"margin: 0 0 6px 0; font-size: 16px; color: #FF6D00;\">🤖 RVR Robotics · Seeing</p>\n<h2 style=\"margin: 0; font-size: 30px; color: #ffffff;\">Do: Seeing with RVR</h2>\n<p style=\"margin: 10px 0 0 0; font-size: 17px; color: #DDE5E9;\">There is a colour sensor on the underside of the RVR. Teach the robot to react to whatever it rolls over.</p>\n</div>\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-bottom: 16px;\">\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🤖 <strong style=\"color: #FF6D00;\">Sphero RVR</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🎨 <strong style=\"color: #FF6D00;\">Colour sensor + LEDs</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🏆 <strong style=\"color: #FF6D00;\">5 points</strong>\n</div>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>1</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Watch the walkthrough</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">This shows the colour sensor doing its job.</p>\n</div>\n<div style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 14px; margin-bottom: 12px;\">\n<iframe title=\"Seeing with RVR walkthrough\" src=\"https://www.youtube.com/embed/4EiCuNuqeLk?si=z4u0b_JyUTsqkIFy\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"max-width: 100%; border: 0;\"></iframe>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>2</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Build it</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Complete the <strong>Seeing with RVR</strong> worksheet to practise using the Sphero RVR colour sensors to detect the colour around it and change its LED to match the colour card it is detecting.</p>\n</div>\n<div style=\"background: #FFE9DB; border: 2px solid #FF6D00; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<p style=\"margin: 0 0 8px 0; font-size: 18px; color: #8A3D00;\"><strong>🎨 What \"seeing\" means here</strong></p>\n<p style=\"margin: 0 0 8px 0; font-size: 17px; color: #263238;\">The sensor only reports the colour of the surface underneath the robot. Your program is what decides to do something about it — here, matching the LED to the card it just found.</p>\n</div>\n<div class=\"phase-5e-evaluate\" style=\"background: #263238; border: 1px solid #607D8B; border-radius: 12px; padding: 14px; font-size: 17px; color: #ffffff;\">\n📤 <strong style=\"color: #FF6D00;\">Turn in:</strong> Submit the worksheet through this assignment once the LED matches every colour card you test.\n</div>\n</div>\n</div>",
-            "body_sha256": "000641f361ab9765bd55f5fb9373b7418ddef6d68c9de92d956b2e611c944bd9",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>DAY 3 · DO</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">Color Sensor Mission</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">Build the route, collect actual results, and show how the sensor changes the robot's behavior.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Color-sensor control</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will build and debug the green-to-red Sphero route.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will submit route evidence, code evidence, test results, and a systems explanation.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Core steps</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Build a green-to-red route with the cards about 18 to 24 inches apart.</li><li style=\"margin:5px 0;\">Use roll and delay blocks to stop on each color.</li><li style=\"margin:5px 0;\">Add a one-second start delay.</li><li style=\"margin:5px 0;\">Place the total color sensor block inside a main LED block after each stop.</li><li style=\"margin:5px 0;\">Test, record the expected and actual LED color, and revise the route or code.</li></ul></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Mission sheet</h3><p style=\"margin:0;\"><a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202804/download?verifier=b8efd51c-342d-49e7-b861-1c7f60585d3d\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202804\" data-api-returntype=\"File\"><strong>Download Word mission sheet</strong></a> <a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202805/download?verifier=ae1ad364-65e3-44b0-8173-55557d5d0b76\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202805\" data-api-returntype=\"File\"><strong>Download PDF mission sheet</strong></a></p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Optional extension</h3><p style=\"margin:0;\">Continue the official Sphero lesson to add color events, a red stop sequence, direction controls, or a color-boundary challenge.</p></div><div style=\"border-left:6px solid #FF9F1C;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Turn in</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Photo or short video of the route</li><li style=\"margin:5px 0;\">Screenshot of final code</li><li style=\"margin:5px 0;\">Completed test table and input-decision-output explanation</li></ul></div>\n</div>",
+            "body_sha256": "169c6782657026cb9c3963c8ea62c4402529e0ebb813b245f89186f42f42dd81",
             "kind": "assignment",
             "metadata": {
               "allowed_attempts": -1,
@@ -13838,14 +13990,14 @@
               "automatic_peer_reviews": false,
               "due_at": null,
               "external_tool": {
-                "domain": "assignments.google.com",
-                "new_tab": true,
-                "url_sha256": "cbda3e5cc2b18c49051b5d5d497459703ba05afafb1701d48a87961f5cc7f83c"
+                "domain": "",
+                "new_tab": null,
+                "url_sha256": null
               },
               "grading_type": "points",
               "id": 1183285,
               "lock_at": null,
-              "name": "Do: Seeing with RVR",
+              "name": "Day 3 · Color Sensor Mission",
               "omit_from_final_grade": false,
               "peer_reviews": false,
               "points_possible": 5.0,
@@ -13853,13 +14005,17 @@
               "rubric": [],
               "rubric_settings": {},
               "submission_types": [
-                "external_tool"
+                "online_upload",
+                "online_url"
               ],
               "unlock_at": null
             },
-            "referenced_file_ids": []
+            "referenced_file_ids": [
+              3202804,
+              3202805
+            ]
           },
-          "title": "Do: Seeing with RVR",
+          "title": "Day 3 · Color Sensor Mission",
           "type": "Assignment"
         },
         {
@@ -13874,8 +14030,8 @@
           "public_state": "public",
           "published": true,
           "resource": {
-            "body": "<p><img src=\"https://docs.google.com/drawings/d/e/2PACX-1vTN6PKZsZHlgfDdwGpvf61oLOd4brbPfLhGlAq1SfZ7044GV-07wXHxuJkAXdzTV-ACatyCRd9FMymr/pub?w=1162&amp;h=100\" alt=\"Unit banner\" style=\"max-width: 100%; height: auto;\" loading=\"lazy\"></p>\n<div style=\"background: #37474F; padding: 20px; font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;\">\n<div style=\"max-width: 980px; margin: 0 auto; color: #ffffff; line-height: 1.55;\">\n<div class=\"phase-5e-engage\" style=\"background: #263238; border: 2px solid #FF6D00; border-radius: 18px; padding: 26px; margin-bottom: 16px; text-align: center;\">\n<p style=\"margin: 0 0 6px 0; font-size: 16px; color: #FF6D00;\">🤖 RVR Robotics · Talking</p>\n<h2 style=\"margin: 0; font-size: 30px; color: #ffffff;\">Talking with RVR</h2>\n<p style=\"margin: 10px 0 0 0; font-size: 17px; color: #DDE5E9;\">Two robots, one infrared conversation, and a pattern nobody has to steer.</p>\n</div>\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-bottom: 16px;\">\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🤖 <strong style=\"color: #FF6D00;\">Sphero RVR</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">📡 <strong style=\"color: #FF6D00;\">Infrared messaging</strong>\n</div>\n<div style=\"background: #263238; border: 1px solid #607D8B; border-radius: 10px; padding: 10px; text-align: center; font-size: 16px; color: #ffffff;\">🏆 <strong style=\"color: #FF6D00;\">5 points</strong>\n</div>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>1</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Watch the walkthrough</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">See what it looks like when two RVRs pass a message.</p>\n</div>\n<div style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 14px; margin-bottom: 12px;\">\n<iframe title=\"Talking with RVR walkthrough\" src=\"https://www.youtube.com/embed/_2oxX5-T6PQ?si=DhXzOdOK4nd7aOrT\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"max-width: 100%; border: 0;\"></iframe>\n</div>\n<div class=\"phase-5e-explore\" style=\"background: #455A64; border: 1px solid #607D8B; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 10px;\">\n<div style=\"background: #FF6D00; color: #263238; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;\"><strong>2</strong></div>\n<p style=\"margin: 0; font-size: 19px; color: #ffffff;\"><strong>Build it, then build it together</strong></p>\n</div>\n<p style=\"margin: 0; font-size: 17px; color: #DDE5E9;\">Complete the <strong>Talking with RVR</strong> worksheet to learn more about IR, program your Sphero RVRs, and finally create your own program with your classmates to emulate a school of fish making patterns (biomimicry).</p>\n</div>\n<div style=\"background: #FFE9DB; border: 2px solid #FF6D00; border-radius: 14px; padding: 16px; margin-bottom: 12px;\">\n<p style=\"margin: 0 0 8px 0; font-size: 18px; color: #8A3D00;\"><strong>🐟 Biomimicry</strong></p>\n<p style=\"margin: 0 0 8px 0; font-size: 17px; color: #263238;\">Copying a pattern from nature to solve a design problem. A school of fish holds its shape without a leader — every fish just reacts to its neighbours. That is exactly what your robots are doing with IR.</p>\n</div>\n<div class=\"phase-5e-evaluate\" style=\"background: #263238; border: 1px solid #607D8B; border-radius: 12px; padding: 14px; font-size: 17px; color: #ffffff;\">\n📤 <strong style=\"color: #FF6D00;\">Turn in:</strong> Submit the worksheet through this assignment, including your class pattern program.\n</div>\n</div>\n</div>",
-            "body_sha256": "f3a0bd513810c2cb9a32b4b4e922e209bd5e6a04472eab7a903b14a476e9e4e6",
+            "body": "<div style=\"max-width:980px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#172235;font-size:16px;line-height:1.55;\">\n<div style=\"background:#0B1F35;border:3px solid #16C7C9;border-radius:14px;padding:20px 22px;margin:0 0 16px 0;\">\n<p style=\"margin:0 0 5px 0;color:#16C7C9;\"><strong>DAYS 4 AND 5 · COMMUNICATE</strong></p>\n<h2 style=\"margin:0 0 8px 0;color:#FFFFFF;font-size:28px;\">Talking Robots: School-of-Fish Challenge</h2>\n<p style=\"margin:0;color:#D9E4ED;font-size:17px;\">A coordinated robot group needs a sender, a shared channel, a response, and safe spacing.</p>\n</div>\n<div style=\"display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px 0;\"><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>TOPIC</strong></p><p style=\"margin:0;\">Infrared communication</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>OBJECTIVE</strong></p><p style=\"margin:0;\">Students will program a leader and follower, then coordinate two or more RVRs.</p></div><div style=\"flex:1 1 220px;background:#EAF7F7;border:1px solid #8FCED0;border-radius:9px;padding:12px;\"><p style=\"margin:0 0 4px 0;color:#0B1F35;font-size:13px;\"><strong>DEMONSTRATION OF LEARNING</strong></p><p style=\"margin:0;\">Students will submit leader and follower code, test evidence, a coordinated run, and a revision claim.</p></div></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Learn the message system</h3><div style=\"max-width:720px;margin:12px 0;\">\n<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000000;\">\n<iframe title=\"Talking with RVR classroom walkthrough\" src=\"https://www.youtube.com/embed/_2oxX5-T6PQ\" width=\"560\" height=\"315\" loading=\"lazy\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\"></iframe>\n</div><p style=\"margin:6px 0 0 0;\"><a href=\"https://www.youtube.com/watch?v=_2oxX5-T6PQ\" target=\"_blank\">Open Talking with RVR classroom walkthrough in a new tab</a></p></div>\n<p style=\"margin:0;\"><a href=\"https://edu.sphero.com/cwists/preview/39619x\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\"><strong>Open RVR: IR You Following Me?</strong></a></p></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Build + challenge</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Build the leader program and broadcast on the agreed channel.</li><li style=\"margin:5px 0;\">Build the follower program and follow the same channels.</li><li style=\"margin:5px 0;\">Send message 7 at the end of the leader route.</li><li style=\"margin:5px 0;\">Make the follower stop following, spin, wait, then follow again.</li><li style=\"margin:5px 0;\">Use at least two RVRs to hold a formation without hand steering.</li><li style=\"margin:5px 0;\">Film one run, revise message timing or spacing, and film the improved run.</li></ul></div><div style=\"border-left:6px solid #16C7C9;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Mission sheet</h3><p style=\"margin:0;\"><a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202806/download?verifier=126f3869-8b57-4054-9087-4214e8a46043\" target=\"_blank\" style=\"display:inline-block;background:#0B1F35;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202806\" data-api-returntype=\"File\"><strong>Download Word challenge</strong></a> <a href=\"https://verizoninnovativelearning.instructure.com/courses/23402/files/3202807/download?verifier=cb3bc0fb-0159-4c63-a544-31a8b4eeb258\" target=\"_blank\" style=\"display:inline-block;background:#235789;color:#FFFFFF;padding:10px 16px;border-radius:8px;text-decoration:none;margin:4px 8px 4px 0;\" data-api-endpoint=\"https://verizoninnovativelearning.instructure.com/api/v1/courses/23402/files/3202807\" data-api-returntype=\"File\"><strong>Download PDF challenge</strong></a></p></div><div style=\"border-left:6px solid #FF9F1C;background:#F7FAFC;border-radius:0 10px 10px 0;padding:14px 16px;margin:0 0 14px 0;\">\n<h3 style=\"margin:0 0 8px 0;color:#0B1F35;font-size:20px;\">Turn in</h3><ul style=\"margin:0;padding-left:24px;\"><li style=\"margin:5px 0;\">Leader and follower program evidence</li><li style=\"margin:5px 0;\">A video or shareable link showing the coordinated run</li><li style=\"margin:5px 0;\">Completed test log and reflection</li><li style=\"margin:5px 0;\">One sentence explaining which message, timing, or spacing change improved the system</li></ul></div>\n</div>",
+            "body_sha256": "5ed3499d023a90aceaf5c66c9bf58a9d0413813935c555ac9d9892631d7f5c56",
             "kind": "assignment",
             "metadata": {
               "allowed_attempts": -1,
@@ -13885,14 +14041,14 @@
               "automatic_peer_reviews": false,
               "due_at": null,
               "external_tool": {
-                "domain": "assignments.google.com",
-                "new_tab": true,
-                "url_sha256": "ca92fc807dccd662f4b6152e31e87d7d7cef7499d8802d8ae45b4ef1272419d2"
+                "domain": "",
+                "new_tab": null,
+                "url_sha256": null
               },
               "grading_type": "points",
               "id": 1183416,
               "lock_at": null,
-              "name": "Talking with RVR",
+              "name": "Days 4 + 5 · Talking Robots: School-of-Fish Challenge",
               "omit_from_final_grade": false,
               "peer_reviews": false,
               "points_possible": 5.0,
@@ -13900,13 +14056,17 @@
               "rubric": [],
               "rubric_settings": {},
               "submission_types": [
-                "external_tool"
+                "online_upload",
+                "online_url"
               ],
               "unlock_at": null
             },
-            "referenced_file_ids": []
+            "referenced_file_ids": [
+              3202806,
+              3202807
+            ]
           },
-          "title": "Talking with RVR",
+          "title": "Days 4 + 5 · Talking Robots: School-of-Fish Challenge",
           "type": "Assignment"
         },
         {
@@ -22689,7 +22849,7 @@
     ]
   },
   "schema_version": 1,
-  "semantic_sha256": "c096daccb09ccb70b82e04903617fa5d77b37496f238ef0c936dd0a1752b30d5",
+  "semantic_sha256": "de0964994b0608c270b9771e326b4ec88edb9c8e2bbdbbb278a9d02eddfc870b",
   "source": {
     "canvas_host": "https://verizoninnovativelearning.instructure.com",
     "course_id": 23402

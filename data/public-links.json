@@ -1,5 +1,5 @@
 {
-  "canvas_snapshot_sha256": "c096daccb09ccb70b82e04903617fa5d77b37496f238ef0c936dd0a1752b30d5",
+  "canvas_snapshot_sha256": "de0964994b0608c270b9771e326b4ec88edb9c8e2bbdbbb278a9d02eddfc870b",
   "items": [
     {
       "item_position": 1,
@@ -2420,8 +2420,8 @@
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
       "module_position": 18,
       "public_state": "public",
-      "published_in_canvas": false,
-      "title": "Learn: Drawing with RVR",
+      "published_in_canvas": true,
+      "title": "Day 1 · Learn: Draw Mode or Blocks?",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634167.html"
     },
@@ -2433,7 +2433,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": true,
-      "title": "Do: Drawing with RVR",
+      "title": "Day 1 · Drawing Mission: Plan, Program, Prove",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634168.html"
     },
@@ -2445,7 +2445,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": true,
-      "title": "Checkpoint: Drawing with RVR",
+      "title": "Day 1 · Checkpoint: Drawing + RVR Systems",
       "type": "Quiz",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634169.html"
     },
@@ -2457,7 +2457,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": true,
-      "title": "Movement Blocks",
+      "title": "Day 2 · Precision Movement Lab",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634170.html"
     },
@@ -2469,7 +2469,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": true,
-      "title": "Learn: Seeing with the RVR",
+      "title": "Day 3 · Learn: How Floor Color Changes a Decision",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634171.html"
     },
@@ -2481,7 +2481,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": true,
-      "title": "Do: Seeing with RVR",
+      "title": "Day 3 · Color Sensor Mission",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634172.html"
     },
@@ -2493,7 +2493,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": true,
-      "title": "Talking with RVR",
+      "title": "Days 4 + 5 · Talking Robots: School-of-Fish Challenge",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634173.html"
     },

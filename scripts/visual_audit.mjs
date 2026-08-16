@@ -40,6 +40,10 @@ const samples = [
   "lessons/2634035.html",
   "lessons/2634037.html",
   "lessons/2634055.html",
+  "modules/72580.html",
+  "lessons/2634166.html",
+  "lessons/2634168.html",
+  "lessons/2634173.html",
   "lessons/2634354.html"
 ].filter((value) => allPages.includes(value));
 
