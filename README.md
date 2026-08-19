@@ -8,7 +8,7 @@ Canvas remains the student delivery and grading environment. The site presents t
 
 ## Standards reference
 
-The immutable source record for Grade 8 Technology Applications TEKS is [`docs/standards/texas-technology-applications-grade-8-teks-2022.md`](docs/standards/texas-technology-applications-grade-8-teks-2022.md). It preserves the exact wording of current **19 TAC §126.19(c)** and defines the alignment fields to use consistently in future Canvas facilitator guides and their public-site equivalents.
+The immutable source record for Grade 8 Technology Applications TEKS is [`docs/standards/texas-technology-applications-grade-8-teks-2022.md`](docs/standards/texas-technology-applications-grade-8-teks-2022.md). It preserves the exact wording of current **19 TAC §126.19(c)**. The matching [VILS learning-contract and alignment pattern](docs/standards/vils-learning-contract-pattern.md) defines how the exact standards, lesson objective, and student evidence appear consistently in Canvas facilitator guides and their public-site equivalents.
 
 ## Publication boundary
 
