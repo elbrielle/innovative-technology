@@ -1,5 +1,5 @@
 {
-  "canvas_snapshot_sha256": "f2850c7c76987ebec1f1f73248ebce431d0ad864bc5dbfd0ae263e5eeca5bfb8",
+  "canvas_snapshot_sha256": "3e5365cbfce19f72b64312a82e660e77aad17b8f0f7675f0bcb9d79ddbfdc180",
   "items": [
     {
       "item_position": 1,
@@ -40,6 +40,18 @@
     {
       "item_position": 4,
       "module_id": 72563,
+      "module_item_id": 2657913,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_position": 1,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Week 0 — Canvas Launch",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657913.html"
+    },
+    {
+      "item_position": 5,
+      "module_id": 72563,
       "module_item_id": 2633983,
       "module_name": "SW1 · Before You Begin (Week 0)",
       "module_position": 1,
@@ -50,7 +62,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633983.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
       "module_id": 72563,
       "module_item_id": 2633984,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -62,7 +74,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633984.html"
     },
     {
-      "item_position": 6,
+      "item_position": 7,
+      "module_id": 72563,
+      "module_item_id": 2657914,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_position": 1,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Week 0 — Syllabus, Lab Contract + Routines",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657914.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72563,
       "module_item_id": 2633985,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -74,7 +98,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633985.html"
     },
     {
-      "item_position": 7,
+      "item_position": 9,
       "module_id": 72563,
       "module_item_id": 2633986,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -86,7 +110,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72563.html"
     },
     {
-      "item_position": 8,
+      "item_position": 10,
+      "module_id": 72563,
+      "module_item_id": 2657915,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_position": 1,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Week 0 Option — About Me Smartphone",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657915.html"
+    },
+    {
+      "item_position": 11,
       "module_id": 72563,
       "module_item_id": 2633987,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -98,7 +134,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633987.html"
     },
     {
-      "item_position": 9,
+      "item_position": 12,
+      "module_id": 72563,
+      "module_item_id": 2657916,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_position": 1,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Week 0 Option — Moon Landing Teamwork Challenge",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657916.html"
+    },
+    {
+      "item_position": 13,
       "module_id": 72563,
       "module_item_id": 2633988,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -110,7 +158,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633988.html"
     },
     {
-      "item_position": 10,
+      "item_position": 14,
+      "module_id": 72563,
+      "module_item_id": 2657917,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_position": 1,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Week 0 Option — Partner Draw",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657917.html"
+    },
+    {
+      "item_position": 15,
       "module_id": 72563,
       "module_item_id": 2633989,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -122,7 +182,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633989.html"
     },
     {
-      "item_position": 11,
+      "item_position": 16,
+      "module_id": 72563,
+      "module_item_id": 2657918,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_position": 1,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Week 0 Option — Chromebook Norms + GimKit",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657918.html"
+    },
+    {
+      "item_position": 17,
       "module_id": 72563,
       "module_item_id": 2633990,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -134,7 +206,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633990.html"
     },
     {
-      "item_position": 12,
+      "item_position": 18,
+      "module_id": 72563,
+      "module_item_id": 2657919,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_position": 1,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Week 0 — Xello Account + Dashboard Check-in",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657919.html"
+    },
+    {
+      "item_position": 19,
       "module_id": 72563,
       "module_item_id": 2633991,
       "module_name": "SW1 · Before You Begin (Week 0)",
@@ -400,6 +484,18 @@
     {
       "item_position": 3,
       "module_id": 72565,
+      "module_item_id": 2657920,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_position": 3,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Piskel Lesson 1 — Promise + Micro Plot",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657920.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72565,
       "module_item_id": 2634013,
       "module_name": "Enrichment · Piskel Micro Animation",
       "module_position": 3,
@@ -410,7 +506,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634013.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
       "module_id": 72565,
       "module_item_id": 2634014,
       "module_name": "Enrichment · Piskel Micro Animation",
@@ -422,7 +518,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634014.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
+      "module_id": 72565,
+      "module_item_id": 2657921,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_position": 3,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Piskel Lesson 2 — Storyboard the Motion",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657921.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72565,
       "module_item_id": 2634015,
       "module_name": "Enrichment · Piskel Micro Animation",
@@ -434,7 +542,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634015.html"
     },
     {
-      "item_position": 6,
+      "item_position": 8,
+      "module_id": 72565,
+      "module_item_id": 2657922,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_position": 3,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Piskel Lesson 3 — Tools, Frames + Practice Loop",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657922.html"
+    },
+    {
+      "item_position": 9,
       "module_id": 72565,
       "module_item_id": 2634016,
       "module_name": "Enrichment · Piskel Micro Animation",
@@ -446,7 +566,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634016.html"
     },
     {
-      "item_position": 7,
+      "item_position": 10,
+      "module_id": 72565,
+      "module_item_id": 2657923,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_position": 3,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Piskel Lesson 4 — Peer Test + Useful Feedback",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657923.html"
+    },
+    {
+      "item_position": 11,
       "module_id": 72565,
       "module_item_id": 2634017,
       "module_name": "Enrichment · Piskel Micro Animation",
@@ -458,7 +590,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634017.html"
     },
     {
-      "item_position": 8,
+      "item_position": 12,
+      "module_id": 72565,
+      "module_item_id": 2657924,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_position": 3,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Piskel Lesson 5 — Animate, Hold + Revise",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657924.html"
+    },
+    {
+      "item_position": 13,
       "module_id": 72565,
       "module_item_id": 2634357,
       "module_name": "Enrichment · Piskel Micro Animation",
@@ -470,7 +614,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634357.html"
     },
     {
-      "item_position": 9,
+      "item_position": 14,
+      "module_id": 72565,
+      "module_item_id": 2657925,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_position": 3,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Piskel Lesson 6 — Export, Verify + Reflect",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657925.html"
+    },
+    {
+      "item_position": 15,
       "module_id": 72565,
       "module_item_id": 2634018,
       "module_name": "Enrichment · Piskel Micro Animation",
@@ -508,6 +664,18 @@
     {
       "item_position": 3,
       "module_id": 72566,
+      "module_item_id": 2657926,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Graphic Design Lesson 1 — Pop Art Signals",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657926.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72566,
       "module_item_id": 2634021,
       "module_name": "SW1 · Graphic Design with the 1960s",
       "module_position": 4,
@@ -518,7 +686,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634021.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
+      "module_id": 72566,
+      "module_item_id": 2657927,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Graphic Design Lesson 2 — Lines, Circles + Canva",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657927.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72566,
       "module_item_id": 2634022,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -530,7 +710,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634022.html"
     },
     {
-      "item_position": 5,
+      "item_position": 7,
+      "module_id": 72566,
+      "module_item_id": 2657928,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Graphic Design Lesson 3 — Read Visual Design",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657928.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72566,
       "module_item_id": 2634023,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -542,7 +734,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634023.html"
     },
     {
-      "item_position": 6,
+      "item_position": 9,
+      "module_id": 72566,
+      "module_item_id": 2657929,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Graphic Design Lesson 4 — Paths, Shapes + Color",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657929.html"
+    },
+    {
+      "item_position": 10,
       "module_id": 72566,
       "module_item_id": 2634024,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -554,7 +758,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634024.html"
     },
     {
-      "item_position": 7,
+      "item_position": 11,
+      "module_id": 72566,
+      "module_item_id": 2657930,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Graphic Design Lesson 5 — Pictographs",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657930.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72566,
       "module_item_id": 2634025,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -566,7 +782,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634025.html"
     },
     {
-      "item_position": 8,
+      "item_position": 13,
+      "module_id": 72566,
+      "module_item_id": 2657931,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Graphic Design Lesson 6 — Advanced Form + Color",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657931.html"
+    },
+    {
+      "item_position": 14,
       "module_id": 72566,
       "module_item_id": 2634026,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -578,7 +806,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634026.html"
     },
     {
-      "item_position": 9,
+      "item_position": 15,
       "module_id": 72566,
       "module_item_id": 2634027,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -590,7 +818,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72566.html"
     },
     {
-      "item_position": 10,
+      "item_position": 16,
       "module_id": 72566,
       "module_item_id": 2634028,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -602,7 +830,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634028.html"
     },
     {
-      "item_position": 11,
+      "item_position": 17,
       "module_id": 72566,
       "module_item_id": 2634029,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -614,7 +842,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634029.html"
     },
     {
-      "item_position": 12,
+      "item_position": 18,
+      "module_id": 72566,
+      "module_item_id": 2657932,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Emoji Lesson 1 — Define the Gap",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657932.html"
+    },
+    {
+      "item_position": 19,
       "module_id": 72566,
       "module_item_id": 2634030,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -626,7 +866,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634030.html"
     },
     {
-      "item_position": 13,
+      "item_position": 20,
+      "module_id": 72566,
+      "module_item_id": 2657933,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Emoji Lesson 2 — Ideate Widely",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657933.html"
+    },
+    {
+      "item_position": 21,
       "module_id": 72566,
       "module_item_id": 2634031,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -638,7 +890,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634031.html"
     },
     {
-      "item_position": 14,
+      "item_position": 22,
+      "module_id": 72566,
+      "module_item_id": 2657934,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Emoji Lesson 3 — Prototype + Small-Size Test",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657934.html"
+    },
+    {
+      "item_position": 23,
       "module_id": 72566,
       "module_item_id": 2634032,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -650,7 +914,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634032.html"
     },
     {
-      "item_position": 15,
+      "item_position": 24,
+      "module_id": 72566,
+      "module_item_id": 2657935,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_position": 4,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Emoji Lesson 4 — Gallery Walk + Pitch",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657935.html"
+    },
+    {
+      "item_position": 25,
       "module_id": 72566,
       "module_item_id": 2634033,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -662,7 +938,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634033.html"
     },
     {
-      "item_position": 16,
+      "item_position": 26,
       "module_id": 72566,
       "module_item_id": 2634034,
       "module_name": "SW1 · Graphic Design with the 1960s",
@@ -688,6 +964,18 @@
     {
       "item_position": 2,
       "module_id": 72567,
+      "module_item_id": 2657936,
+      "module_name": "SW1 · CNC (Lasercutting)",
+      "module_position": 5,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Laser Lesson 1 — Pixels, Paths + Machine Operations",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657936.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72567,
       "module_item_id": 2634036,
       "module_name": "SW1 · CNC (Lasercutting)",
       "module_position": 5,
@@ -698,7 +986,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634036.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72567,
+      "module_item_id": 2657937,
+      "module_name": "SW1 · CNC (Lasercutting)",
+      "module_position": 5,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Laser Lessons 2–5 — Define, File Check, Test + Queue",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657937.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72567,
       "module_item_id": 2634037,
       "module_name": "SW1 · CNC (Lasercutting)",
@@ -710,7 +1010,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634037.html"
     },
     {
-      "item_position": 4,
+      "item_position": 6,
+      "module_id": 72567,
+      "module_item_id": 2657938,
+      "module_name": "SW1 · CNC (Lasercutting)",
+      "module_position": 5,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Laser Career Connection — Skills, Tools + Roles",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657938.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72567,
       "module_item_id": 2634038,
       "module_name": "SW1 · CNC (Lasercutting)",
@@ -736,6 +1048,18 @@
     {
       "item_position": 2,
       "module_id": 72568,
+      "module_item_id": 2657939,
+      "module_name": "OPTIONAL/FLEX · Holiday Ornament Laser Extension",
+      "module_position": 6,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Ornament Lesson 1 — Predict the Operations",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657939.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72568,
       "module_item_id": 2634040,
       "module_name": "OPTIONAL/FLEX · Holiday Ornament Laser Extension",
       "module_position": 6,
@@ -746,7 +1070,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634040.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72568,
+      "module_item_id": 2657940,
+      "module_name": "OPTIONAL/FLEX · Holiday Ornament Laser Extension",
+      "module_position": 6,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Ornament Lessons 2–3 — Design, File Check + Fabricate",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657940.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72568,
       "module_item_id": 2634041,
       "module_name": "OPTIONAL/FLEX · Holiday Ornament Laser Extension",
@@ -796,6 +1132,18 @@
     {
       "item_position": 4,
       "module_id": 72569,
+      "module_item_id": 2657941,
+      "module_name": "SW2 · 3D Modeling",
+      "module_position": 7,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: 3D Modeling Lesson 1 — Currency to 3D Thinking",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657941.html"
+    },
+    {
+      "item_position": 5,
+      "module_id": 72569,
       "module_item_id": 2634044,
       "module_name": "SW2 · 3D Modeling",
       "module_position": 7,
@@ -806,7 +1154,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634044.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
+      "module_id": 72569,
+      "module_item_id": 2657944,
+      "module_name": "SW2 · 3D Modeling",
+      "module_position": 7,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: 3D Modeling — Xello Skills Check-in",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657944.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72569,
       "module_item_id": 2634052,
       "module_name": "SW2 · 3D Modeling",
@@ -818,7 +1178,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634052.html"
     },
     {
-      "item_position": 6,
+      "item_position": 8,
       "module_id": 72569,
       "module_item_id": 2634043,
       "module_name": "SW2 · 3D Modeling",
@@ -830,7 +1190,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634043.html"
     },
     {
-      "item_position": 7,
+      "item_position": 9,
+      "module_id": 72569,
+      "module_item_id": 2657942,
+      "module_name": "SW2 · 3D Modeling",
+      "module_position": 7,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: 3D Modeling Lesson 2 — Coin, Solids + Holes",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657942.html"
+    },
+    {
+      "item_position": 10,
       "module_id": 72569,
       "module_item_id": 2634045,
       "module_name": "SW2 · 3D Modeling",
@@ -842,7 +1214,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634045.html"
     },
     {
-      "item_position": 8,
+      "item_position": 11,
+      "module_id": 72569,
+      "module_item_id": 2657943,
+      "module_name": "SW2 · 3D Modeling",
+      "module_position": 7,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: 3D Modeling Lesson 3 — Ring + Print Constraints",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657943.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72569,
       "module_item_id": 2634046,
       "module_name": "SW2 · 3D Modeling",
@@ -854,7 +1238,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634046.html"
     },
     {
-      "item_position": 9,
+      "item_position": 13,
       "module_id": 72569,
       "module_item_id": 2636700,
       "module_name": "SW2 · 3D Modeling",
@@ -866,7 +1250,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72569.html"
     },
     {
-      "item_position": 10,
+      "item_position": 14,
       "module_id": 72569,
       "module_item_id": 2636702,
       "module_name": "SW2 · 3D Modeling",
@@ -878,7 +1262,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636702.html"
     },
     {
-      "item_position": 11,
+      "item_position": 15,
       "module_id": 72569,
       "module_item_id": 2634047,
       "module_name": "SW2 · 3D Modeling",
@@ -890,7 +1274,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634047.html"
     },
     {
-      "item_position": 12,
+      "item_position": 16,
       "module_id": 72569,
       "module_item_id": 2634048,
       "module_name": "SW2 · 3D Modeling",
@@ -902,7 +1286,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72569.html"
     },
     {
-      "item_position": 13,
+      "item_position": 17,
       "module_id": 72569,
       "module_item_id": 2636703,
       "module_name": "SW2 · 3D Modeling",
@@ -914,7 +1298,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636703.html"
     },
     {
-      "item_position": 14,
+      "item_position": 18,
       "module_id": 72569,
       "module_item_id": 2634049,
       "module_name": "SW2 · 3D Modeling",
@@ -926,7 +1310,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634049.html"
     },
     {
-      "item_position": 15,
+      "item_position": 19,
       "module_id": 72569,
       "module_item_id": 2634050,
       "module_name": "SW2 · 3D Modeling",
@@ -938,7 +1322,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634050.html"
     },
     {
-      "item_position": 16,
+      "item_position": 20,
       "module_id": 72569,
       "module_item_id": 2634051,
       "module_name": "SW2 · 3D Modeling",
@@ -1168,6 +1552,18 @@
     {
       "item_position": 2,
       "module_id": 72571,
+      "module_item_id": 2657946,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Flex Option — Email Etiquette",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657946.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72571,
       "module_item_id": 2634067,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
       "module_position": 9,
@@ -1178,7 +1574,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634067.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72571,
+      "module_item_id": 2657947,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Flex Option — Vision Board",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657947.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72571,
       "module_item_id": 2634070,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1190,7 +1598,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634070.html"
     },
     {
-      "item_position": 4,
+      "item_position": 6,
       "module_id": 72571,
       "module_item_id": 2634072,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1202,7 +1610,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72571.html"
     },
     {
-      "item_position": 5,
+      "item_position": 7,
       "module_id": 72571,
       "module_item_id": 2641565,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1214,7 +1622,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2641565.html"
     },
     {
-      "item_position": 6,
+      "item_position": 8,
+      "module_id": 72571,
+      "module_item_id": 2657948,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Career Fair Setup — Build a Career Starting Pool",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657948.html"
+    },
+    {
+      "item_position": 9,
       "module_id": 72571,
       "module_item_id": 2634079,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1226,7 +1646,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634079.html"
     },
     {
-      "item_position": 7,
+      "item_position": 10,
       "module_id": 72571,
       "module_item_id": 2634073,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1238,7 +1658,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634073.html"
     },
     {
-      "item_position": 8,
+      "item_position": 11,
+      "module_id": 72571,
+      "module_item_id": 2657950,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Career Fair Step 1 — Choose + Commit",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657950.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72571,
       "module_item_id": 2634074,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1250,7 +1682,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634074.html"
     },
     {
-      "item_position": 9,
+      "item_position": 13,
+      "module_id": 72571,
+      "module_item_id": 2657952,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Career Fair Step 2 — Research + Source Log",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657952.html"
+    },
+    {
+      "item_position": 14,
       "module_id": 72571,
       "module_item_id": 2634075,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1262,7 +1706,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634075.html"
     },
     {
-      "item_position": 10,
+      "item_position": 15,
+      "module_id": 72571,
+      "module_item_id": 2657953,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Career Fair Step 3 — Explain for a Visitor",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657953.html"
+    },
+    {
+      "item_position": 16,
       "module_id": 72571,
       "module_item_id": 2634076,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1274,7 +1730,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634076.html"
     },
     {
-      "item_position": 11,
+      "item_position": 17,
+      "module_id": 72571,
+      "module_item_id": 2657954,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Career Fair Step 4 — Invite + Make It Findable",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657954.html"
+    },
+    {
+      "item_position": 18,
       "module_id": 72571,
       "module_item_id": 2634077,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1286,7 +1754,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634077.html"
     },
     {
-      "item_position": 12,
+      "item_position": 19,
+      "module_id": 72571,
+      "module_item_id": 2657955,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_position": 9,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Career Fair Step 5 — Booth, Pitch + Questions",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657955.html"
+    },
+    {
+      "item_position": 20,
       "module_id": 72571,
       "module_item_id": 2634078,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1298,7 +1778,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634078.html"
     },
     {
-      "item_position": 13,
+      "item_position": 21,
       "module_id": 72571,
       "module_item_id": 2634068,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1310,7 +1790,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634068.html"
     },
     {
-      "item_position": 14,
+      "item_position": 22,
       "module_id": 72571,
       "module_item_id": 2634069,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1322,7 +1802,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634069.html"
     },
     {
-      "item_position": 15,
+      "item_position": 23,
       "module_id": 72571,
       "module_item_id": 2634071,
       "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
@@ -1636,6 +2116,18 @@
     {
       "item_position": 3,
       "module_id": 72573,
+      "module_item_id": 2657956,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 1 — Algorithm + First Program",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657956.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72573,
       "module_item_id": 2634105,
       "module_name": "SW3 · Intro to CS: Code & Web",
       "module_position": 11,
@@ -1646,7 +2138,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634105.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
+      "module_id": 72573,
+      "module_item_id": 2657957,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 2 — Choice Coding + Patterns",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657957.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72573,
       "module_item_id": 2634106,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1658,7 +2162,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634106.html"
     },
     {
-      "item_position": 5,
+      "item_position": 7,
+      "module_id": 72573,
+      "module_item_id": 2657958,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 3 — Predict, Debug + Log",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657958.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72573,
       "module_item_id": 2634107,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1670,7 +2186,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634107.html"
     },
     {
-      "item_position": 6,
+      "item_position": 9,
+      "module_id": 72573,
+      "module_item_id": 2657959,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 4 — Input, Storage, Processing + Output",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657959.html"
+    },
+    {
+      "item_position": 10,
       "module_id": 72573,
       "module_item_id": 2634108,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1682,7 +2210,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634108.html"
     },
     {
-      "item_position": 7,
+      "item_position": 11,
+      "module_id": 72573,
+      "module_item_id": 2657960,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 5 — Web Pages + First HTML",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657960.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72573,
       "module_item_id": 2634109,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1694,7 +2234,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634109.html"
     },
     {
-      "item_position": 8,
+      "item_position": 13,
       "module_id": 72573,
       "module_item_id": 2634110,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1706,7 +2246,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72573.html"
     },
     {
-      "item_position": 9,
+      "item_position": 14,
+      "module_id": 72573,
+      "module_item_id": 2657961,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 6 — Headings, Lists + Nesting",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657961.html"
+    },
+    {
+      "item_position": 15,
       "module_id": 72573,
       "module_item_id": 2634111,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1718,7 +2270,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634111.html"
     },
     {
-      "item_position": 10,
+      "item_position": 16,
+      "module_id": 72573,
+      "module_item_id": 2657962,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 7 — Build + Publish an HTML Page",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657962.html"
+    },
+    {
+      "item_position": 17,
       "module_id": 72573,
       "module_item_id": 2634112,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1730,7 +2294,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634112.html"
     },
     {
-      "item_position": 11,
+      "item_position": 18,
+      "module_id": 72573,
+      "module_item_id": 2657963,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 8 — CSS Rules + Readability",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657963.html"
+    },
+    {
+      "item_position": 19,
       "module_id": 72573,
       "module_item_id": 2634113,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1742,7 +2318,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634113.html"
     },
     {
-      "item_position": 12,
+      "item_position": 20,
+      "module_id": 72573,
+      "module_item_id": 2657964,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 9 — Style, Test + Republish",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657964.html"
+    },
+    {
+      "item_position": 21,
       "module_id": 72573,
       "module_item_id": 2634114,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1754,7 +2342,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634114.html"
     },
     {
-      "item_position": 13,
+      "item_position": 22,
+      "module_id": 72573,
+      "module_item_id": 2657965,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web Day 10 — Walkthrough, Feedback + Pathway",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657965.html"
+    },
+    {
+      "item_position": 23,
       "module_id": 72573,
       "module_item_id": 2634115,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1766,7 +2366,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634115.html"
     },
     {
-      "item_position": 14,
+      "item_position": 24,
+      "module_id": 72573,
+      "module_item_id": 2657966,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_position": 11,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Code + Web — Xello Skills Connection",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657966.html"
+    },
+    {
+      "item_position": 25,
       "module_id": 72573,
       "module_item_id": 2634116,
       "module_name": "SW3 · Intro to CS: Code & Web",
@@ -1792,6 +2404,18 @@
     {
       "item_position": 2,
       "module_id": 72574,
+      "module_item_id": 2657967,
+      "module_name": "SW3 · Video Game Design",
+      "module_position": 12,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Video Game Design Lesson 1 — Skillmap, Sign-in + Save",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657967.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72574,
       "module_item_id": 2634118,
       "module_name": "SW3 · Video Game Design",
       "module_position": 12,
@@ -1802,7 +2426,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634118.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72574,
+      "module_item_id": 2657968,
+      "module_name": "SW3 · Video Game Design",
+      "module_position": 12,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Video Game Design Lesson 2 — Remix, Test + Explain",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657968.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72574,
       "module_item_id": 2634119,
       "module_name": "SW3 · Video Game Design",
@@ -1840,6 +2476,18 @@
     {
       "item_position": 3,
       "module_id": 72575,
+      "module_item_id": 2657898,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_position": 13,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AIR Unit 0 Day 1 — Parts of a Smart System",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657898.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72575,
       "module_item_id": 2634122,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
       "module_position": 13,
@@ -1850,7 +2498,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634122.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
       "module_id": 72575,
       "module_item_id": 2634123,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1862,7 +2510,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634123.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
+      "module_id": 72575,
+      "module_item_id": 2657899,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_position": 13,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AIR Unit 0 Day 2 — Design for a Constrained Need",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657899.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72575,
       "module_item_id": 2634124,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1874,7 +2534,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634124.html"
     },
     {
-      "item_position": 6,
+      "item_position": 8,
       "module_id": 72575,
       "module_item_id": 2634125,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1886,7 +2546,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72575.html"
     },
     {
-      "item_position": 7,
+      "item_position": 9,
       "module_id": 72575,
       "module_item_id": 2634126,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1898,7 +2558,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634126.html"
     },
     {
-      "item_position": 8,
+      "item_position": 10,
+      "module_id": 72575,
+      "module_item_id": 2657900,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_position": 13,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AIR Unit 0 Day 3 — Write, Trace, Revise",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657900.html"
+    },
+    {
+      "item_position": 11,
       "module_id": 72575,
       "module_item_id": 2634127,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1910,7 +2582,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634127.html"
     },
     {
-      "item_position": 9,
+      "item_position": 12,
       "module_id": 72575,
       "module_item_id": 2634128,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1922,7 +2594,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72575.html"
     },
     {
-      "item_position": 10,
+      "item_position": 13,
       "module_id": 72575,
       "module_item_id": 2634129,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1934,7 +2606,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634129.html"
     },
     {
-      "item_position": 11,
+      "item_position": 14,
+      "module_id": 72575,
+      "module_item_id": 2657901,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_position": 13,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AIR Unit 0 Day 4 — Train, Test, Improve",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657901.html"
+    },
+    {
+      "item_position": 15,
       "module_id": 72575,
       "module_item_id": 2634130,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1946,7 +2630,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634130.html"
     },
     {
-      "item_position": 12,
+      "item_position": 16,
       "module_id": 72575,
       "module_item_id": 2634131,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1958,7 +2642,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634131.html"
     },
     {
-      "item_position": 13,
+      "item_position": 17,
+      "module_id": 72575,
+      "module_item_id": 2657902,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_position": 13,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AIR Unit 0 Day 5 — Explain the Connected System",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657902.html"
+    },
+    {
+      "item_position": 18,
       "module_id": 72575,
       "module_item_id": 2634132,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -1970,7 +2666,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634132.html"
     },
     {
-      "item_position": 14,
+      "item_position": 19,
       "module_id": 72575,
       "module_item_id": 2634133,
       "module_name": "SW4 · AIR Unit 0: Intro to AI",
@@ -2008,6 +2704,18 @@
     {
       "item_position": 3,
       "module_id": 72576,
+      "module_item_id": 2657903,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_position": 14,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Picture This Day 1 — Train It, Then Break It",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657903.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72576,
       "module_item_id": 2634135,
       "module_name": "SW4 · Picture This: Image Classification + Data Bias",
       "module_position": 14,
@@ -2018,7 +2726,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634135.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
+      "module_id": 72576,
+      "module_item_id": 2657904,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_position": 14,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Picture This Day 2 — Data Makes the Model",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657904.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72576,
       "module_item_id": 2655800,
       "module_name": "SW4 · Picture This: Image Classification + Data Bias",
@@ -2030,7 +2750,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2655800.html"
     },
     {
-      "item_position": 5,
+      "item_position": 7,
+      "module_id": 72576,
+      "module_item_id": 2657905,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_position": 14,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Picture This Day 3 — Be the AI",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657905.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72576,
       "module_item_id": 2655801,
       "module_name": "SW4 · Picture This: Image Classification + Data Bias",
@@ -2042,7 +2774,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2655801.html"
     },
     {
-      "item_position": 6,
+      "item_position": 9,
+      "module_id": 72576,
+      "module_item_id": 2657906,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_position": 14,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Picture This Day 4 — Train It + Connect It",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657906.html"
+    },
+    {
+      "item_position": 10,
       "module_id": 72576,
       "module_item_id": 2634136,
       "module_name": "SW4 · Picture This: Image Classification + Data Bias",
@@ -2054,7 +2798,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634136.html"
     },
     {
-      "item_position": 7,
+      "item_position": 11,
+      "module_id": 72576,
+      "module_item_id": 2657907,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_position": 14,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Picture This Day 5 — Remix, Retest, Revise, Share",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657907.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72576,
       "module_item_id": 2634137,
       "module_name": "SW4 · Picture This: Image Classification + Data Bias",
@@ -2080,6 +2836,18 @@
     {
       "item_position": 2,
       "module_id": 72577,
+      "module_item_id": 2657908,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_position": 15,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Reliability Lab Day 1 — Plan a Fair Test",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657908.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72577,
       "module_item_id": 2634139,
       "module_name": "SW4 · Machine Learning Reliability Lab",
       "module_position": 15,
@@ -2090,7 +2858,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634139.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72577,
+      "module_item_id": 2657909,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_position": 15,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Reliability Lab Day 2 — Stress-Test the Model",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657909.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72577,
       "module_item_id": 2634140,
       "module_name": "SW4 · Machine Learning Reliability Lab",
@@ -2102,7 +2882,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634140.html"
     },
     {
-      "item_position": 4,
+      "item_position": 6,
+      "module_id": 72577,
+      "module_item_id": 2657910,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_position": 15,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Reliability Lab Day 3 — Audit Representation",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657910.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72577,
       "module_item_id": 2634141,
       "module_name": "SW4 · Machine Learning Reliability Lab",
@@ -2114,7 +2906,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634141.html"
     },
     {
-      "item_position": 5,
+      "item_position": 8,
+      "module_id": 72577,
+      "module_item_id": 2657911,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_position": 15,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Reliability Lab Day 4 — Compare Error Costs",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657911.html"
+    },
+    {
+      "item_position": 9,
       "module_id": 72577,
       "module_item_id": 2634142,
       "module_name": "SW4 · Machine Learning Reliability Lab",
@@ -2126,7 +2930,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634142.html"
     },
     {
-      "item_position": 6,
+      "item_position": 10,
+      "module_id": 72577,
+      "module_item_id": 2657912,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_position": 15,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Reliability Lab Day 5 — Model Card + Release Decision",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657912.html"
+    },
+    {
+      "item_position": 11,
       "module_id": 72577,
       "module_item_id": 2634143,
       "module_name": "SW4 · Machine Learning Reliability Lab",
@@ -2138,7 +2954,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634143.html"
     },
     {
-      "item_position": 7,
+      "item_position": 12,
       "module_id": 72577,
       "module_item_id": 2634144,
       "module_name": "SW4 · Machine Learning Reliability Lab",
@@ -2176,6 +2992,18 @@
     {
       "item_position": 3,
       "module_id": 72578,
+      "module_item_id": 2657976,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 1 — Case Intake + Source Trail",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657976.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72578,
       "module_item_id": 2634147,
       "module_name": "SW4 · AI Ethics Council",
       "module_position": 16,
@@ -2186,7 +3014,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634147.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
+      "module_id": 72578,
+      "module_item_id": 2657977,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 2 — Follow the Incentive",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657977.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72578,
       "module_item_id": 2634148,
       "module_name": "SW4 · AI Ethics Council",
@@ -2198,7 +3038,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634148.html"
     },
     {
-      "item_position": 5,
+      "item_position": 7,
+      "module_id": 72578,
+      "module_item_id": 2657978,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 3 — Test the Consequence",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657978.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72578,
       "module_item_id": 2634149,
       "module_name": "SW4 · AI Ethics Council",
@@ -2210,7 +3062,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634149.html"
     },
     {
-      "item_position": 6,
+      "item_position": 9,
+      "module_id": 72578,
+      "module_item_id": 2657979,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 4 — Leave the Page and Check",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657979.html"
+    },
+    {
+      "item_position": 10,
       "module_id": 72578,
       "module_item_id": 2634150,
       "module_name": "SW4 · AI Ethics Council",
@@ -2222,7 +3086,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634150.html"
     },
     {
-      "item_position": 7,
+      "item_position": 11,
+      "module_id": 72578,
+      "module_item_id": 2657981,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 5 — Prepare Every Seat",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657981.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72578,
       "module_item_id": 2634151,
       "module_name": "SW4 · AI Ethics Council",
@@ -2234,7 +3110,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634151.html"
     },
     {
-      "item_position": 8,
+      "item_position": 13,
       "module_id": 72578,
       "module_item_id": 2634152,
       "module_name": "SW4 · AI Ethics Council",
@@ -2246,7 +3122,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72578.html"
     },
     {
-      "item_position": 9,
+      "item_position": 14,
+      "module_id": 72578,
+      "module_item_id": 2657982,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 6 — Tasks, Not Headlines",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657982.html"
+    },
+    {
+      "item_position": 15,
       "module_id": 72578,
       "module_item_id": 2634153,
       "module_name": "SW4 · AI Ethics Council",
@@ -2258,7 +3146,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634153.html"
     },
     {
-      "item_position": 10,
+      "item_position": 16,
+      "module_id": 72578,
+      "module_item_id": 2657983,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 7 — Build the Assigned Role’s Case",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657983.html"
+    },
+    {
+      "item_position": 17,
       "module_id": 72578,
       "module_item_id": 2634154,
       "module_name": "SW4 · AI Ethics Council",
@@ -2270,7 +3170,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634154.html"
     },
     {
-      "item_position": 11,
+      "item_position": 18,
+      "module_id": 72578,
+      "module_item_id": 2657984,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 8 — Listen for the Evidence",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657984.html"
+    },
+    {
+      "item_position": 19,
       "module_id": 72578,
       "module_item_id": 2634155,
       "module_name": "SW4 · AI Ethics Council",
@@ -2282,7 +3194,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634155.html"
     },
     {
-      "item_position": 12,
+      "item_position": 20,
+      "module_id": 72578,
+      "module_item_id": 2657985,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 9 — Turn Values into Testable Rules",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657985.html"
+    },
+    {
+      "item_position": 21,
       "module_id": 72578,
       "module_item_id": 2634156,
       "module_name": "SW4 · AI Ethics Council",
@@ -2294,7 +3218,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634156.html"
     },
     {
-      "item_position": 13,
+      "item_position": 22,
+      "module_id": 72578,
+      "module_item_id": 2657986,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_position": 16,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AI Ethics Council Day 10 — Test the Code",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657986.html"
+    },
+    {
+      "item_position": 23,
       "module_id": 72578,
       "module_item_id": 2634157,
       "module_name": "SW4 · AI Ethics Council",
@@ -2306,7 +3242,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634157.html"
     },
     {
-      "item_position": 14,
+      "item_position": 24,
       "module_id": 72578,
       "module_item_id": 2634158,
       "module_name": "SW4 · AI Ethics Council",
@@ -2416,6 +3352,18 @@
     {
       "item_position": 2,
       "module_id": 72580,
+      "module_item_id": 2657987,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_position": 18,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: RVR Day 1 — Draw, Plan, Program, Prove",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657987.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72580,
       "module_item_id": 2634167,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
       "module_position": 18,
@@ -2426,7 +3374,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634167.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
       "module_id": 72580,
       "module_item_id": 2634168,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
@@ -2438,7 +3386,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634168.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
       "module_id": 72580,
       "module_item_id": 2634169,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
@@ -2450,7 +3398,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634169.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
+      "module_id": 72580,
+      "module_item_id": 2657988,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_position": 18,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: RVR Day 2 — Precision Movement Lab",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657988.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72580,
       "module_item_id": 2634170,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
@@ -2462,7 +3422,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634170.html"
     },
     {
-      "item_position": 6,
+      "item_position": 8,
+      "module_id": 72580,
+      "module_item_id": 2657989,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_position": 18,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: RVR Day 3 — Sense, Decide, Respond",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657989.html"
+    },
+    {
+      "item_position": 9,
       "module_id": 72580,
       "module_item_id": 2634171,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
@@ -2474,7 +3446,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634171.html"
     },
     {
-      "item_position": 7,
+      "item_position": 10,
       "module_id": 72580,
       "module_item_id": 2634172,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
@@ -2486,7 +3458,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634172.html"
     },
     {
-      "item_position": 8,
+      "item_position": 11,
+      "module_id": 72580,
+      "module_item_id": 2657990,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_position": 18,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: RVR Days 4–5 — Talking Robots School-of-Fish",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657990.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72580,
       "module_item_id": 2634173,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
@@ -2498,7 +3482,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634173.html"
     },
     {
-      "item_position": 9,
+      "item_position": 13,
       "module_id": 72580,
       "module_item_id": 2634174,
       "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
@@ -2548,18 +3532,6 @@
     {
       "item_position": 4,
       "module_id": 72581,
-      "module_item_id": 2634178,
-      "module_name": "SW5 · Coding Adventures (micro:bit)",
-      "module_position": 19,
-      "public_state": "public",
-      "published_in_canvas": false,
-      "title": "Facilitator's Guide: Lesson 1 Intro to micro:bit and Block Coding",
-      "type": "Page",
-      "url": "https://elbrielle.github.io/innovative-technology/lessons/2634178.html"
-    },
-    {
-      "item_position": 5,
-      "module_id": 72581,
       "module_item_id": 2634179,
       "module_name": "SW5 · Coding Adventures (micro:bit)",
       "module_position": 19,
@@ -2568,6 +3540,18 @@
       "title": "EdPuzzle | Smart Solutions: micro:bit Intro",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634179.html"
+    },
+    {
+      "item_position": 5,
+      "module_id": 72581,
+      "module_item_id": 2634178,
+      "module_name": "SW5 · Coding Adventures (micro:bit)",
+      "module_position": 19,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Facilitator's Guide: Lesson 1 Intro to micro:bit and Block Coding",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2634178.html"
     },
     {
       "item_position": 6,
@@ -2740,18 +3724,6 @@
     {
       "item_position": 20,
       "module_id": 72581,
-      "module_item_id": 2634194,
-      "module_name": "SW5 · Coding Adventures (micro:bit)",
-      "module_position": 19,
-      "public_state": "public",
-      "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 4 Coding Games on the micro:bit",
-      "type": "Page",
-      "url": "https://elbrielle.github.io/innovative-technology/lessons/2634194.html"
-    },
-    {
-      "item_position": 21,
-      "module_id": 72581,
       "module_item_id": 2634195,
       "module_name": "SW5 · Coding Adventures (micro:bit)",
       "module_position": 19,
@@ -2760,6 +3732,18 @@
       "title": "EdPuzzle | Coding Games on micro:bit",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634195.html"
+    },
+    {
+      "item_position": 21,
+      "module_id": 72581,
+      "module_item_id": 2634194,
+      "module_name": "SW5 · Coding Adventures (micro:bit)",
+      "module_position": 19,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Facilitator's Guide and Materials: Lesson 4 Coding Games on the micro:bit",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2634194.html"
     },
     {
       "item_position": 22,
@@ -2824,6 +3808,18 @@
     {
       "item_position": 3,
       "module_id": 72582,
+      "module_item_id": 2657991,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_position": 20,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Leaving Land Lesson 1 — Seasick with Empathy",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657991.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72582,
       "module_item_id": 2634201,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
       "module_position": 20,
@@ -2834,7 +3830,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634201.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
       "module_id": 72582,
       "module_item_id": 2634202,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2846,7 +3842,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634202.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
       "module_id": 72582,
       "module_item_id": 2634203,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2858,7 +3854,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634203.html"
     },
     {
-      "item_position": 6,
+      "item_position": 7,
       "module_id": 72582,
       "module_item_id": 2634204,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2870,7 +3866,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72582.html"
     },
     {
-      "item_position": 7,
+      "item_position": 8,
+      "module_id": 72582,
+      "module_item_id": 2657992,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_position": 20,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Leaving Land Lesson 2 — micro:bit Light Meter",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657992.html"
+    },
+    {
+      "item_position": 9,
       "module_id": 72582,
       "module_item_id": 2634205,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2882,7 +3890,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634205.html"
     },
     {
-      "item_position": 8,
+      "item_position": 10,
       "module_id": 72582,
       "module_item_id": 2634206,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2894,7 +3902,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634206.html"
     },
     {
-      "item_position": 9,
+      "item_position": 11,
       "module_id": 72582,
       "module_item_id": 2634207,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2906,7 +3914,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72582.html"
     },
     {
-      "item_position": 10,
+      "item_position": 12,
+      "module_id": 72582,
+      "module_item_id": 2657993,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_position": 20,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Leaving Land Lesson 3 — Crab Cruisin'",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657993.html"
+    },
+    {
+      "item_position": 13,
       "module_id": 72582,
       "module_item_id": 2634208,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2918,7 +3938,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634208.html"
     },
     {
-      "item_position": 11,
+      "item_position": 14,
       "module_id": 72582,
       "module_item_id": 2634209,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2930,7 +3950,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634209.html"
     },
     {
-      "item_position": 12,
+      "item_position": 15,
       "module_id": 72582,
       "module_item_id": 2634210,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2942,7 +3962,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72582.html"
     },
     {
-      "item_position": 13,
+      "item_position": 16,
+      "module_id": 72582,
+      "module_item_id": 2657994,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_position": 20,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Leaving Land Lesson 4 — Ocean Games",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657994.html"
+    },
+    {
+      "item_position": 17,
       "module_id": 72582,
       "module_item_id": 2634211,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2954,7 +3986,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634211.html"
     },
     {
-      "item_position": 14,
+      "item_position": 18,
       "module_id": 72582,
       "module_item_id": 2634212,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2966,7 +3998,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634212.html"
     },
     {
-      "item_position": 15,
+      "item_position": 19,
       "module_id": 72582,
       "module_item_id": 2634213,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -2978,7 +4010,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72582.html"
     },
     {
-      "item_position": 16,
+      "item_position": 20,
+      "module_id": 72582,
+      "module_item_id": 2657995,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_position": 20,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Leaving Land Lesson 5 — AI Enemies",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657995.html"
+    },
+    {
+      "item_position": 21,
       "module_id": 72582,
       "module_item_id": 2634214,
       "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
@@ -3004,6 +4048,18 @@
     {
       "item_position": 2,
       "module_id": 72583,
+      "module_item_id": 2657996,
+      "module_name": "SW5 · AIR Unit 3: Sailing Home",
+      "module_position": 21,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Sailing Home Lesson 1 — Conflicting Viewpoints",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657996.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72583,
       "module_item_id": 2634216,
       "module_name": "SW5 · AIR Unit 3: Sailing Home",
       "module_position": 21,
@@ -3014,7 +4070,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634216.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72583,
+      "module_item_id": 2657997,
+      "module_name": "SW5 · AIR Unit 3: Sailing Home",
+      "module_position": 21,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Sailing Home Lesson 2 — Temperature Bot",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657997.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72583,
       "module_item_id": 2634217,
       "module_name": "SW5 · AIR Unit 3: Sailing Home",
@@ -3026,7 +4094,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634217.html"
     },
     {
-      "item_position": 4,
+      "item_position": 6,
       "module_id": 72583,
       "module_item_id": 2634218,
       "module_name": "SW5 · AIR Unit 3: Sailing Home",
@@ -3340,6 +4408,18 @@
     {
       "item_position": 3,
       "module_id": 72585,
+      "module_item_id": 2657998,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_position": 23,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: SPIKE PRIME Day 1 — Help! Find the Problem",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657998.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72585,
       "module_item_id": 2634244,
       "module_name": "SW6 · SPIKE PRIME",
       "module_position": 23,
@@ -3350,7 +4430,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634244.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
+      "module_id": 72585,
+      "module_item_id": 2657999,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_position": 23,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: SPIKE PRIME Days 2–3 — Hopper Race",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657999.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72585,
       "module_item_id": 2634245,
       "module_name": "SW6 · SPIKE PRIME",
@@ -3362,7 +4454,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634245.html"
     },
     {
-      "item_position": 5,
+      "item_position": 7,
+      "module_id": 72585,
+      "module_item_id": 2658000,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_position": 23,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: SPIKE PRIME Days 4–5 — Super Cleanup",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658000.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72585,
       "module_item_id": 2634246,
       "module_name": "SW6 · SPIKE PRIME",
@@ -3374,7 +4478,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634246.html"
     },
     {
-      "item_position": 6,
+      "item_position": 9,
+      "module_id": 72585,
+      "module_item_id": 2658001,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_position": 23,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: SPIKE PRIME Extension — Design for You",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658001.html"
+    },
+    {
+      "item_position": 10,
       "module_id": 72585,
       "module_item_id": 2634247,
       "module_name": "SW6 · SPIKE PRIME",
@@ -3386,7 +4502,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634247.html"
     },
     {
-      "item_position": 7,
+      "item_position": 11,
       "module_id": 72585,
       "module_item_id": 2634248,
       "module_name": "SW6 · SPIKE PRIME",
@@ -3424,6 +4540,18 @@
     {
       "item_position": 3,
       "module_id": 72586,
+      "module_item_id": 2657945,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_position": 24,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AR Lesson 1 — AR Basics and the MergeCube",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657945.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72586,
       "module_item_id": 2634251,
       "module_name": "SW6 · Augmented Reality with MergeCube",
       "module_position": 24,
@@ -3434,7 +4562,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634251.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
       "module_id": 72586,
       "module_item_id": 2634252,
       "module_name": "SW6 · Augmented Reality with MergeCube",
@@ -3446,7 +4574,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634252.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
       "module_id": 72586,
       "module_item_id": 2634253,
       "module_name": "SW6 · Augmented Reality with MergeCube",
@@ -3458,7 +4586,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72586.html"
     },
     {
-      "item_position": 6,
+      "item_position": 7,
+      "module_id": 72586,
+      "module_item_id": 2657949,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_position": 24,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AR Lesson 2 — AR Worlds",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657949.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72586,
       "module_item_id": 2634254,
       "module_name": "SW6 · Augmented Reality with MergeCube",
@@ -3470,7 +4610,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634254.html"
     },
     {
-      "item_position": 7,
+      "item_position": 9,
       "module_id": 72586,
       "module_item_id": 2634255,
       "module_name": "SW6 · Augmented Reality with MergeCube",
@@ -3482,7 +4622,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72586.html"
     },
     {
-      "item_position": 8,
+      "item_position": 10,
+      "module_id": 72586,
+      "module_item_id": 2657951,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_position": 24,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AR Lesson 3 — Interactive AR Shopping",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657951.html"
+    },
+    {
+      "item_position": 11,
       "module_id": 72586,
       "module_item_id": 2634256,
       "module_name": "SW6 · Augmented Reality with MergeCube",
@@ -3494,7 +4646,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634256.html"
     },
     {
-      "item_position": 9,
+      "item_position": 12,
       "module_id": 72586,
       "module_item_id": 2634257,
       "module_name": "SW6 · Augmented Reality with MergeCube",
@@ -3506,7 +4658,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72586.html"
     },
     {
-      "item_position": 10,
+      "item_position": 13,
+      "module_id": 72586,
+      "module_item_id": 2657969,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_position": 24,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: AR Lesson 4 — Interactive AR Game Design",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657969.html"
+    },
+    {
+      "item_position": 14,
       "module_id": 72586,
       "module_item_id": 2634258,
       "module_name": "SW6 · Augmented Reality with MergeCube",
@@ -3532,6 +4696,18 @@
     {
       "item_position": 2,
       "module_id": 72587,
+      "module_item_id": 2657970,
+      "module_name": "SW6 · Virtual Reality in Delightex",
+      "module_position": 25,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: VR Lesson 1 — Delightex Basics",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657970.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72587,
       "module_item_id": 2634260,
       "module_name": "SW6 · Virtual Reality in Delightex",
       "module_position": 25,
@@ -3542,7 +4718,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634260.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
       "module_id": 72587,
       "module_item_id": 2634261,
       "module_name": "SW6 · Virtual Reality in Delightex",
@@ -3554,7 +4730,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634261.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
       "module_id": 72587,
       "module_item_id": 2634262,
       "module_name": "SW6 · Virtual Reality in Delightex",
@@ -3566,7 +4742,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634262.html"
     },
     {
-      "item_position": 5,
+      "item_position": 6,
+      "module_id": 72587,
+      "module_item_id": 2657971,
+      "module_name": "SW6 · Virtual Reality in Delightex",
+      "module_position": 25,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: VR Lesson 3 — VR Novel Retelling",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657971.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72587,
       "module_item_id": 2634263,
       "module_name": "SW6 · Virtual Reality in Delightex",
@@ -3592,6 +4780,18 @@
     {
       "item_position": 2,
       "module_id": 72588,
+      "module_item_id": 2657972,
+      "module_name": "SW6 · Pitching and Presenting",
+      "module_position": 26,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Pitching Lesson 0 — Logo Design Launch",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657972.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72588,
       "module_item_id": 2634265,
       "module_name": "SW6 · Pitching and Presenting",
       "module_position": 26,
@@ -3602,7 +4802,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634265.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72588,
+      "module_item_id": 2657973,
+      "module_name": "SW6 · Pitching and Presenting",
+      "module_position": 26,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Pitching Lesson 1 — Personal Logo and Brand",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657973.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72588,
       "module_item_id": 2634266,
       "module_name": "SW6 · Pitching and Presenting",
@@ -3614,7 +4826,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634266.html"
     },
     {
-      "item_position": 4,
+      "item_position": 6,
+      "module_id": 72588,
+      "module_item_id": 2657974,
+      "module_name": "SW6 · Pitching and Presenting",
+      "module_position": 26,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Pitching Lesson 2 — Personal Brand Video",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657974.html"
+    },
+    {
+      "item_position": 7,
       "module_id": 72588,
       "module_item_id": 2634267,
       "module_name": "SW6 · Pitching and Presenting",
@@ -3640,6 +4864,18 @@
     {
       "item_position": 2,
       "module_id": 72589,
+      "module_item_id": 2657975,
+      "module_name": "SW6 · Capstone",
+      "module_position": 27,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Tech for Good Capstone — Research, Build, Test, and Showcase",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657975.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72589,
       "module_item_id": 2634269,
       "module_name": "SW6 · Capstone",
       "module_position": 27,
@@ -3650,7 +4886,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634269.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
       "module_id": 72589,
       "module_item_id": 2634270,
       "module_name": "SW6 · Capstone",
@@ -3662,7 +4898,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634270.html"
     },
     {
-      "item_position": 4,
+      "item_position": 5,
+      "module_id": 72589,
+      "module_item_id": 2657980,
+      "module_name": "SW6 · Capstone",
+      "module_position": 27,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Run Card: Capstone Close — Scholarship Profile Check-in",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2657980.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72589,
       "module_item_id": 2634271,
       "module_name": "SW6 · Capstone",
@@ -3688,6 +4936,18 @@
     {
       "item_position": 2,
       "module_id": 72590,
+      "module_item_id": 2658002,
+      "module_name": "SW6 · Closing: ePortfolio and Post Survey",
+      "module_position": 28,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Closing Lesson 1 — Publish the ePortfolio",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658002.html"
+    },
+    {
+      "item_position": 3,
+      "module_id": 72590,
       "module_item_id": 2634273,
       "module_name": "SW6 · Closing: ePortfolio and Post Survey",
       "module_position": 28,
@@ -3698,7 +4958,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634273.html"
     },
     {
-      "item_position": 3,
+      "item_position": 4,
+      "module_id": 72590,
+      "module_item_id": 2658003,
+      "module_name": "SW6 · Closing: ePortfolio and Post Survey",
+      "module_position": 28,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Run Card: Closing Lesson 2 — Post-Survey",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658003.html"
+    },
+    {
+      "item_position": 5,
       "module_id": 72590,
       "module_item_id": 2634274,
       "module_name": "SW6 · Closing: ePortfolio and Post Survey",
@@ -3712,6 +4984,18 @@
     {
       "item_position": 1,
       "module_id": 72591,
+      "module_item_id": 2658004,
+      "module_name": "Enrichment · Stop Motion",
+      "module_position": 29,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Stop Motion Overview — Six-Day Film Project",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658004.html"
+    },
+    {
+      "item_position": 2,
+      "module_id": 72591,
       "module_item_id": 2634275,
       "module_name": "Enrichment · Stop Motion",
       "module_position": 29,
@@ -3722,7 +5006,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634275.html"
     },
     {
-      "item_position": 2,
+      "item_position": 3,
+      "module_id": 72591,
+      "module_item_id": 2658005,
+      "module_name": "Enrichment · Stop Motion",
+      "module_position": 29,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Stop Motion Lesson 0 — Process Video and Setup",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658005.html"
+    },
+    {
+      "item_position": 4,
       "module_id": 72591,
       "module_item_id": 2634276,
       "module_name": "Enrichment · Stop Motion",
@@ -3734,7 +5030,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634276.html"
     },
     {
-      "item_position": 3,
+      "item_position": 5,
+      "module_id": 72591,
+      "module_item_id": 2658006,
+      "module_name": "Enrichment · Stop Motion",
+      "module_position": 29,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Stop Motion Day 1 — Story Plan",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658006.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72591,
       "module_item_id": 2634277,
       "module_name": "Enrichment · Stop Motion",
@@ -3746,7 +5054,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634277.html"
     },
     {
-      "item_position": 4,
+      "item_position": 7,
+      "module_id": 72591,
+      "module_item_id": 2658007,
+      "module_name": "Enrichment · Stop Motion",
+      "module_position": 29,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Stop Motion Day 2 — Plot Diagram",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658007.html"
+    },
+    {
+      "item_position": 8,
       "module_id": 72591,
       "module_item_id": 2634278,
       "module_name": "Enrichment · Stop Motion",
@@ -3758,7 +5078,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634278.html"
     },
     {
-      "item_position": 5,
+      "item_position": 9,
+      "module_id": 72591,
+      "module_item_id": 2658008,
+      "module_name": "Enrichment · Stop Motion",
+      "module_position": 29,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Stop Motion Day 3 — Storyboard",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658008.html"
+    },
+    {
+      "item_position": 10,
       "module_id": 72591,
       "module_item_id": 2634279,
       "module_name": "Enrichment · Stop Motion",
@@ -3770,7 +5102,19 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634279.html"
     },
     {
-      "item_position": 6,
+      "item_position": 11,
+      "module_id": 72591,
+      "module_item_id": 2658009,
+      "module_name": "Enrichment · Stop Motion",
+      "module_position": 29,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Teacher Guide: Stop Motion Days 4–6 — Film, Edit, and Submit",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2658009.html"
+    },
+    {
+      "item_position": 12,
       "module_id": 72591,
       "module_item_id": 2634280,
       "module_name": "Enrichment · Stop Motion",
