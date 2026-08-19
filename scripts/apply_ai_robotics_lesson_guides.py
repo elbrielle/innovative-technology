@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+"""Write the approved lesson-guide layer for Canvas modules 16 and 18–23 only.
+
+It preserves module overviews, creates teacher-only pages immediately before a
+student lesson, and expands existing per-lesson micro:bit/electronics guides in
+place. It intentionally does not export Canvas or touch generated site files.
+"""
+from __future__ import annotations
+
+import argparse
+import html
+import re
+from dataclasses import dataclass
+
+from apply_teks_alignment import expectation_text
+from canvas_api import Canvas, env_course_id
+
+MARKER = 'data-vils-ai-robotics-guide="2026-08-19"'
+
+@dataclass(frozen=True)
+class Spec:
+    module: int; target: int; target_title: str; title: str; topic: str; objective: str; evidence: str; codes: tuple[str, ...]; resources: str; existing: str | None = None; duration: str = "One class period"
+
+def S(m, i, t, n, topic, obj, ev, codes, res, existing=None, duration="One class period"):
+    return Spec(m,i,t,n,topic,obj,ev,tuple(codes.split(",")),res,existing,duration)
+
+R = [
+S(72578,2634147,"Day 1: Case Intake + Source Trail","Teacher Guide: AI Ethics Council Day 1 — Case Intake + Source Trail","Traceable AI ethics cases","Students will define a system, decision, and documented effect and build a two-source evidence trail.","Casebook intake and two-source trail.","§126.19(c)(5)(B),§126.19(c)(9)(D)","AI Ethics Council Casebook PDF/DOCX; existing source links."),
+S(72578,2634148,"Day 2: Recommendation Systems + Incentives","Teacher Guide: AI Ethics Council Day 2 — Follow the Incentive","Incentives and visibility","Students will map who benefits, who is less visible, and a rule-redesign tradeoff.","Casebook stakeholder map, rule redesign, and tradeoff.","§126.19(c)(9)(D)","Casebook and Day 1 evidence."),
+S(72578,2634149,"Day 3: Privacy, Surveillance + Safeguards","Teacher Guide: AI Ethics Council Day 3 — Test the Consequence","Privacy tradeoffs","Students will compare useful and harmful uses and propose a targeted safeguard.","Casebook two-sided analysis and one safeguard.","§126.19(c)(10)(A)","Casebook and existing scenario sources."),
+S(72578,2634150,"Day 4: Misinformation + Lateral Reading","Teacher Guide: AI Ethics Council Day 4 — Leave the Page and Check","Source verification","Students will use lateral reading to make a four-move verification trail and confidence decision.","Casebook verification trail and confidence decision.","§126.19(c)(5)(B),§126.19(c)(9)(D)","Casebook; browser/device access; existing case sources."),
+S(72578,2634151,"Day 5: Stakeholder Hearing","Teacher Guide: AI Ethics Council Day 5 — Prepare Every Seat","Stakeholder impact","Students will map six roles, power, evidence, questions, and a recommendation.","Casebook six-role hearing map and recommendation.","§126.19(c)(8)(B)","Casebook and prior source trail."),
+S(72578,2634153,"Day 6: Work in the Age of AI","Teacher Guide: AI Ethics Council Day 6 — Tasks, Not Headlines","AI and work","Students will map job tasks, quality checks, and worker protections before judging automation.","Casebook task map, quality checks, and worker protections.","§126.19(c)(9)(D)","Casebook and selected job/task examples."),
+S(72578,2634154,"Day 7: Public Hearing Preparation","Teacher Guide: AI Ethics Council Day 7 — Build the Assigned Role’s Case","Evidence-based argument","Students will prepare claim, evidence, reasoning, rebuttal, and one condition for an assigned role.","Completed role brief and opening statement.","§126.19(c)(8)(B),§126.19(c)(9)(D)","Casebook; existing research and role materials."),
+S(72578,2634155,"Day 8: AI Ethics Public Hearing","Teacher Guide: AI Ethics Council Day 8 — Listen for the Evidence","Deliberation","Students will represent a role, answer an objection, record evidence, and issue a personal verdict.","Role brief, hearing notes, and reflection.","§126.19(c)(8)(B),§126.19(c)(8)(C)","Completed role briefs; Casebook; hearing note-catcher."),
+S(72578,2634156,"Day 9: Write the AI Code","Teacher Guide: AI Ethics Council Day 9 — Turn Values into Testable Rules","Enforceable policy","Students will write five principles that name actor, action, and how compliance is checked.","Five-principle group code and evidence notes.","§126.19(c)(8)(B),§126.19(c)(12)(A)","Casebook and prior hearing evidence."),
+S(72578,2634157,"Day 10: Test, Revise + Final Verdict","Teacher Guide: AI Ethics Council Day 10 — Test the Code","Feedback and revision","Students will stress-test rules, revise them, and defend a final verdict.","Feedback record, individual synthesis, and final group code.","§126.19(c)(8)(B),§126.19(c)(12)(A)","Casebook and completed group code."),
+S(72580,2634167,"Day 1 · Learn: Draw Mode or Blocks?","Teacher Guide: RVR Day 1 — Draw, Plan, Program, Prove","Robot programming modes","Students will compare Draw, Blocks, and Text and revise a recognizable RVR drawing.","Program-type explanation, mission sheet, and drawing photo/screenshot.","§126.19(c)(1)(E),§126.19(c)(2)(C)","RVR overview; Sphero EDU; Drawing Mission DOCX/PDF."),
+S(72580,2634170,"Day 2 · Precision Movement Lab","Teacher Guide: RVR Day 2 — Precision Movement Lab","Measured robot movement","Students will test movement variables and make an evidence-based precision claim.","Seven documented tests and one precision claim.","§126.19(c)(1)(E),§126.19(c)(6)","RVR overview; Sphero EDU; Precision Movement Lab DOCX/PDF."),
+S(72580,2634171,"Day 3 · Learn: How Floor Color Changes a Decision","Teacher Guide: RVR Day 3 — Sense, Decide, Respond","Sensor-controlled behavior","Students will identify input, decision, and output and build/debug a color-sensor route.","Route evidence, code evidence, test results, and systems explanation.","§126.19(c)(1)(E),§126.19(c)(2)(C)","RVR overview; Sphero EDU; Color Sensor Mission DOCX/PDF."),
+S(72580,2634173,"Days 4 + 5 · Talking Robots: School-of-Fish Challenge","Teacher Guide: RVR Days 4–5 — Talking Robots School-of-Fish","Infrared coordination","Students will program leader/follower robots, test shared signals, and revise for safe spacing.","Leader/follower code, test evidence, and revision claim.","§126.19(c)(1)(E),§126.19(c)(2)(C)","RVR overview; Sphero EDU; School-of-Fish Challenge DOCX/PDF.",duration="Two class periods"),
+S(72581,2634180,"Learn: Lesson 1 Intro to micro:bit and Block Coding","Facilitator's Guide: Lesson 1 Intro to micro:bit and Block Coding","Block-code foundations","Students will write, transfer, and run a first micro:bit program.","First program, worksheet, and checkpoint.","§126.19(c)(1)(E),§126.19(c)(12)(C)","Keep the existing full guide, presentation, worksheet, printable checkpoint, RISE Learn route, and EdPuzzle setup note.","Facilitator's Guide: Lesson 1 Intro to micro:bit and Block Coding"),
+S(72581,2634185,"Learn: Lesson 2 Inputs and Outputs","Facilitator's Guide and Materials: Lesson 2 Inputs and Outputs","Input/output systems","Students will build a micro:bit program in which an input causes an observable output.","Input/output worksheet, working program, and checkpoint.","§126.19(c)(1)(E),§126.19(c)(12)(C)","Keep existing guide, presentation, worksheet, printable checkpoint, and RISE route.","Facilitator's Guide and Materials: Lesson 2 Inputs and Outputs"),
+S(72581,2634190,"Learn: Lesson 3 Radio and If Statements","Facilitator's Guide and Materials: Lesson 3 Radio and If Statements","Wireless messages and conditionals","Students will send a micro:bit radio message and use an if statement to control a response.","Radio-message worksheet/program and checkpoint.","§126.19(c)(1)(E),§126.19(c)(2)(C)","Keep existing guide, presentation, worksheet, printable checkpoint, and RISE route.","Facilitator's Guide and Materials: Lesson 3 Radio and If Statements"),
+S(72581,2634196,"Learn: Lesson 4 Coding Games on the micro:bit","Facilitator's Guide and Materials: Lesson 4 Coding Games on the micro:bit","Game logic and iteration","Students will build Rock Paper Scissors, then design and test an original micro:bit game.","Game worksheet, working program, original-game evidence, and checkpoint.","§126.19(c)(1)(E),§126.19(c)(2)(C)","Keep existing guide, presentation, worksheet, printable checkpoint, RISE route, and EdPuzzle setup note.","Facilitator's Guide and Materials: Lesson 4 Coding Games on the micro:bit"),
+S(72582,2634201,"Learn: Lesson 1 Seasick with Empathy","Teacher Guide: Leaving Land Lesson 1 — Seasick with Empathy","Empathy and problem definition","Students will interview, map an experience, and write a problem statement.","Empathy map and problem statement.","§126.19(c)(3)(B)","AIR Unit 1 overview; current Learn/EdPuzzle/activity page and artifacts."),
+S(72582,2634205,"Learn: micro:bit Light Meter","Teacher Guide: Leaving Land Lesson 2 — micro:bit Light Meter","Sensing with LED display","Students will program a light meter and test how readings change by condition.","Completed light-meter program and test evidence.","§126.19(c)(1)(E),§126.19(c)(2)(C)","AIR Unit 1 overview; current Learn/Do pages; micro:bits and MakeCode."),
+S(72582,2634208,"Learn: Crab Cruisin' with micro:bit","Teacher Guide: Leaving Land Lesson 3 — Crab Cruisin'","Game design and usability","Students will make a micro:bit game and revise it after someone else plays.","Playable game and user-test/revision evidence.","§126.19(c)(3)(B),§126.19(c)(2)(C)","AIR Unit 1 overview; current Learn/Do pages; MakeCode."),
+S(72582,2634211,"Learn: Lesson 4 Ocean Games in MakeCode Arcade","Teacher Guide: Leaving Land Lesson 4 — Ocean Games","Arcade-game systems","Students will build an ocean-themed game with sprites, background, and playable rules.","Completed MakeCode Arcade game.","§126.19(c)(1)(E),§126.19(c)(2)(C)","AIR Unit 1 overview; current Learn/Do pages; MakeCode Arcade."),
+S(72582,2634214,"Lesson 5: AI Enemies in MakeCode Arcade","Teacher Guide: Leaving Land Lesson 5 — AI Enemies","Rule-based AI behavior","Students will implement and explain an enemy’s repeated decision rules.","Game with AI enemy and explanation of its rules.","§126.19(c)(1)(E),§126.19(c)(2)(C)","AIR Unit 1 overview; current Lesson 5 page; MakeCode Arcade."),
+S(72583,2634216,"Lesson 1: Conflicting Viewpoints","Teacher Guide: Sailing Home Lesson 1 — Conflicting Viewpoints","Evidence comparison","Students will use an AEIOU organizer to compare two opposing ocean-plastic claims.","Completed AEIOU organizer.","§126.19(c)(9)(D)","Sailing Home overview; two article PDFs; existing video and worksheet."),
+S(72583,2634217,"Lesson 2: RVR + micro:bit Temperature Bot","Teacher Guide: Sailing Home Lesson 2 — Temperature Bot","Integrated sensor robotics","Students will mount a micro:bit on RVR and code/test a temperature system with a threshold decision.","Completed worksheet and functioning temperature bot.","§126.19(c)(1)(E),§126.19(c)(2)(C)","Sailing Home overview; existing walkthrough; RVR and micro:bit materials."),
+S(72584,2634223,"Learn: Lesson 1 Wiring LEDs with micro:bit Expansion Board","Facilitator's Guide and Materials: Lesson 1 Wiring LEDs with micro:bit Expansion Board","Circuit outputs","Students will wire LED modules and program a functioning traffic light.","Traffic-light worksheet, working build, and checkpoint.","§126.19(c)(12)(F),§126.19(c)(1)(E)","Keep existing guide/presentation/RISE/checkpoint. Use the Kitronik student worksheet; the first current worksheet link opens the teacher guide and needs correction.","Facilitator's Guide and Materials: Lesson 1 Wiring LEDs with micro:bit Expansion Board"),
+S(72584,2634228,"Learn: Lesson 2 Wiring and Programming Inputs","Facilitator's Guide and Materials: Lesson 2 Wiring and Programming Inputs","Physical input and debouncing","Students will wire a button and build a possession arrow that changes once per press.","Possession-arrow worksheet, working build, and checkpoint.","§126.19(c)(12)(F),§126.19(c)(1)(E)","Keep existing guide, presentation, worksheets, printable checkpoint, and RISE route.","Facilitator's Guide and Materials: Lesson 2 Wiring and Programming Inputs"),
+S(72584,2634234,"Learn: Lesson 3 Servo Motors","Facilitator's Guide: Lesson 3 Servo Motors","Actuated output and light sensing","Students will wire/program a servo sunshade that responds to light.","Sunshade worksheet, working build, and checkpoint.","§126.19(c)(12)(F),§126.19(c)(1)(E)","Keep existing guide, presentation, worksheets, printable checkpoint, and RISE route.","Facilitator's Guide: Lesson 3 Servo Motors"),
+S(72584,2634239,"Learn: Lesson 4 Advanced Inputs and Outputs","Facilitator's Guide and Materials: Lesson 4 Advanced Inputs and Outputs","Prototype systems","Students will combine buzzer, neopixel, and touch modules in an educational-toy prototype.","Prototype worksheet/build and 100-point Canvas quiz checkpoint.","§126.19(c)(12)(F),§126.19(c)(1)(E)","Keep existing guide, presentation, worksheets, RISE route, and Canvas-only quiz checkpoint.","Facilitator's Guide and Materials: Lesson 4 Advanced Inputs and Outputs"),
+S(72585,2634244,"Day 1: Help! (Find the Problem)","Teacher Guide: SPIKE PRIME Day 1 — Help! Find the Problem","Problem definition","Students will identify a real problem and write 2–3 measurable success criteria.","Problem statement and success criteria.","§126.19(c)(3)(B)","SPIKE PRIME overview; Kiki build; current student page."),
+S(72585,2634245,"Days 2–3: Hopper Race","Teacher Guide: SPIKE PRIME Days 2–3 — Hopper Race","Prototype iteration","Students will build a hopper, run comparable timed trials, change one variable, and record results.","Prototype Log.","§126.19(c)(3)(B),§126.19(c)(6)","SPIKE PRIME overview; hoppers; 50 cm track; current student page.",duration="Two class periods"),
+S(72585,2634246,"Days 4–5: Super Cleanup (Test Like an Engineer)","Teacher Guide: SPIKE PRIME Days 4–5 — Super Cleanup","Comparative design testing","Students will test two grabbers under the same conditions, analyze data, and recommend a design.","Data table and recommendation.","§126.19(c)(3)(B),§126.19(c)(6)","SPIKE PRIME overview; grabbers; current student page.",duration="Two class periods"),
+S(72585,2634247,"Extension: Design for You (Desktop Helper)","Teacher Guide: SPIKE PRIME Extension — Design for You","User-centered prototyping","Students will identify a desk problem, build a helper, and explain a design choice.","Prototype photo and two-sentence explanation.","§126.19(c)(3)(B)","SPIKE PRIME overview; bricks; current extension page."),
+]
+
+def body(s: Spec) -> str:
+    teks = "".join(f"<li><strong>{html.escape(c)}</strong> — {html.escape(expectation_text(c))}</li>" for c in s.codes)
+    flow = [f"Launch with a concrete question or failure that makes {s.topic.lower()} matter.",f"Model one current example or tool move before students begin.",f"Guide the first decision together, then release students to the existing Canvas task.",f"Check for the named evidence, not completion alone; keep a visual sequence, sentence stems, and purposeful partner roles available.",f"Collect or verify the evidence and name the next lesson's connection."]
+    steps = "".join(f"<li><strong>{n}:</strong> {html.escape(v)}</li>" for n,v in zip(("Launch","Model","Do","Check + support","Close + handoff"),flow))
+    return f'''<div {MARKER} data-vils-target-module-item="{s.target}" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;max-width:1000px;margin:0 auto;color:#172033;font-size:16px;line-height:1.5"><div style="background:#0B1426;border:3px solid #00B8D4;border-radius:16px;padding:20px;color:#fff"><p style="margin:0;color:#80DEEA"><strong>TEACHER ONLY · LESSON GUIDE</strong></p><h2 style="margin:6px 0;color:#fff">{html.escape(s.title.replace('Teacher Guide: ','').replace("Facilitator's Guide: ",''))}</h2><p style="margin:0">Run the lesson here; the student item below remains the independent and absence route.</p></div><div style="margin:16px 0;padding:16px;border:2px solid #274C77;border-radius:12px;background:#F4F8FC"><h3 style="margin-top:0">Daily Learning Contract</h3><p><strong>Topic:</strong> {html.escape(s.topic)}<br><strong>Objective:</strong> {html.escape(s.objective)}<br><strong>Demonstration of learning:</strong> {html.escape(s.evidence)}</p><p><strong>TEKS:</strong></p><ul>{teks}</ul></div><div style="padding:16px;border-left:7px solid #00B8D4"><h3 style="margin-top:0">Before class</h3><p><strong>Time:</strong> {html.escape(s.duration)}<br><strong>Student route:</strong> {html.escape(s.target_title)}<br><strong>Use what already exists:</strong> {html.escape(s.resources)}</p></div><div style="margin:16px 0;padding:16px;border:2px solid #FFD166;border-radius:12px;background:#FFFDF6"><h3 style="margin-top:0">Lesson flow</h3><ol>{steps}</ol></div><div style="padding:16px;border:2px solid #54B68A;border-radius:12px;background:#F0FAF5"><h3 style="margin-top:0">Check before students leave</h3><p>Ask students to point to the specific evidence above and explain one choice, test, or revision. Completion alone is not evidence of understanding.</p><h3>When students get stuck</h3><p>Ask for the exact step where the tool, code, or task stopped. Check setup, inputs, and saved work before replacing the task or lowering the thinking.</p></div></div>'''
+
+def items(c: Canvas, cid: int, mid: int): return c.paged(f"/courses/{cid}/modules/{mid}/items?per_page=100")
+def main():
+    p=argparse.ArgumentParser(); p.add_argument("--apply",action="store_true"); p.add_argument("--modules",default="16,18,19,20,21,22,23"); a=p.parse_args(); c=Canvas(); cid=env_course_id(23402); made=[]
+    wanted={int(v) for v in a.modules.split(",") if v.strip()}
+    for s in (row for row in R if {72578:16,72580:18,72581:19,72582:20,72583:21,72584:22,72585:23}[row.module] in wanted):
+        rows=items(c,cid,s.module); target=next((x for x in rows if x['id']==s.target and x['title']==s.target_title),None)
+        if not target: raise RuntimeError(f"target not found: {s.target} {s.target_title}")
+        existing=next((x for x in rows if x['title']==s.existing),None) if s.existing else next((x for x in rows if x['title']==s.title),None)
+        if existing:
+            page=c.get(f"/courses/{cid}/pages/{existing['page_url']}"); new=body(s)+(re.sub(r'<div data-vils-ai-robotics-guide="2026-08-19".*?</div>', '', page.get('body') or '', flags=re.S) if MARKER in (page.get('body') or '') else (page.get('body') or ''))
+            print(('APPLY UPDATE' if a.apply else 'DRY UPDATE'),s.title)
+            if a.apply:
+                c.request("PUT",f"/courses/{cid}/pages/{existing['page_url']}",{"wiki_page[body]":new})
+                # Existing imported guides can be separated from their Learn
+                # item by an EdPuzzle setup row. Put the guide directly before
+                # the lesson it facilitates, as the Canvas contract requires.
+                c.request("PUT",f"/courses/{cid}/modules/{s.module}/items/{existing['id']}",{"module_item[position]":max(1, target['position'] - 1)})
+            made.append((s,existing['page_url'])); continue
+        print(('APPLY CREATE' if a.apply else 'DRY CREATE'),s.title)
+        if a.apply:
+            page,_=c.request("POST",f"/courses/{cid}/pages",{"wiki_page[title]":s.title,"wiki_page[body]":body(s),"wiki_page[published]":False,"wiki_page[hide_from_students]":True,"wiki_page[editing_roles]":"teachers"})
+            c.request("POST",f"/courses/{cid}/modules/{s.module}/items",{"module_item[type]":"Page","module_item[page_url]":page['url'],"module_item[position]":target['position'],"module_item[published]":False}); made.append((s,page['url']))
+    # Reread confirms marker and immediate placement only after a live write.
+    if not a.apply:
+        print(f"dry-run planned {len(made)} guides")
+        return
+    for s,url in made:
+        rows=sorted(items(c,cid,s.module),key=lambda x:x['position']); k=next(i for i,x in enumerate(rows) if x.get('page_url')==url)
+        assert rows[k+1]['id']==s.target, f"not before target {s.target}"
+        assert MARKER in (c.get(f"/courses/{cid}/pages/{url}").get('body') or '')
+    print(f"verified {len(made)} guides")
+if __name__=='__main__': main()
