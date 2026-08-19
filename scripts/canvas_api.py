@@ -48,7 +48,7 @@ class Canvas:
                     raise
                 retry_after = exc.headers.get("Retry-After")
                 time.sleep(float(retry_after) if retry_after else 2**attempt)
-            except urllib.error.URLError:
+            except (urllib.error.URLError, TimeoutError):
                 if attempt == 3:
                     raise
                 time.sleep(2**attempt)
@@ -81,7 +81,7 @@ class Canvas:
             try:
                 with urllib.request.urlopen(request, timeout=300) as response:
                     return response.read()
-            except (urllib.error.HTTPError, urllib.error.URLError) as exc:
+            except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
                 if isinstance(exc, urllib.error.HTTPError):
                     if exc.code != 429 and exc.code < 500:
                         raise
