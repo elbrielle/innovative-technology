@@ -1,5 +1,5 @@
 {
-  "canvas_snapshot_sha256": "3e5365cbfce19f72b64312a82e660e77aad17b8f0f7675f0bcb9d79ddbfdc180",
+  "canvas_snapshot_sha256": "7f1e3c2291d8fbe923c1cf207ad4ed17175c56ce49fa3915ce79cddda7335498",
   "items": [
     {
       "item_position": 1,
@@ -9,7 +9,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Getting Started",
+      "title": "Unit at a Glance: Before You Begin",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633980.html"
     },
@@ -45,7 +45,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Week 0 — Canvas Launch",
+      "title": "Facilitator Guide: Week 0 — Canvas Launch",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657913.html"
     },
@@ -81,7 +81,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Week 0 — Syllabus, Lab Contract + Routines",
+      "title": "Facilitator Guide: Week 0 — Syllabus, Lab Contract + Routines",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657914.html"
     },
@@ -117,7 +117,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Week 0 Option — About Me Smartphone",
+      "title": "Facilitator Guide: Week 0 Option — About Me Smartphone",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657915.html"
     },
@@ -141,7 +141,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Week 0 Option — Moon Landing Teamwork Challenge",
+      "title": "Facilitator Guide: Week 0 Option — Moon Landing Teamwork Challenge",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657916.html"
     },
@@ -165,7 +165,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Week 0 Option — Partner Draw",
+      "title": "Facilitator Guide: Week 0 Option — Partner Draw",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657917.html"
     },
@@ -189,7 +189,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Week 0 Option — Chromebook Norms + GimKit",
+      "title": "Facilitator Guide: Week 0 Option — Chromebook Norms + GimKit",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657918.html"
     },
@@ -213,7 +213,7 @@
       "module_position": 1,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Week 0 — Xello Account + Dashboard Check-in",
+      "title": "Facilitator Guide: Week 0 — Xello Account + Dashboard Check-in",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657919.html"
     },
@@ -237,7 +237,7 @@
       "module_position": 2,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Superhero Comics",
+      "title": "Unit at a Glance: Design Thinking + Superhero Comics",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633992.html"
     },
@@ -261,7 +261,7 @@
       "module_position": 2,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Ready Set Design!",
+      "title": "Facilitator Guide: Ready Set Design!",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633994.html"
     },
@@ -321,7 +321,7 @@
       "module_position": 2,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Comics Lesson 1: Welcome and Comic Cover",
+      "title": "Facilitator Guide: Comics Lesson 1: Welcome and Comic Cover",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633999.html"
     },
@@ -345,7 +345,7 @@
       "module_position": 2,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Comics Lesson 2: Biography and Motivation",
+      "title": "Facilitator Guide: Comics Lesson 2: Biography and Motivation",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634001.html"
     },
@@ -369,7 +369,7 @@
       "module_position": 2,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Comics Lesson 3: Hero Gadget Design",
+      "title": "Facilitator Guide: Comics Lesson 3: Hero Gadget Design",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634003.html"
     },
@@ -393,7 +393,7 @@
       "module_position": 2,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Comics Lesson 4: Hero Logo Design",
+      "title": "Facilitator Guide: Comics Lesson 4: Hero Logo Design",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634005.html"
     },
@@ -417,7 +417,7 @@
       "module_position": 2,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Comics Lesson 5: Smart Solution in Action",
+      "title": "Facilitator Guide: Comics Lesson 5: Smart Solution in Action",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634007.html"
     },
@@ -465,7 +465,7 @@
       "module_position": 3,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Animation Unit | Facilitator Guide",
+      "title": "Unit at a Glance: Piskel Micro Animation",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634011.html"
     },
@@ -489,7 +489,7 @@
       "module_position": 3,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Piskel Lesson 1 — Promise + Micro Plot",
+      "title": "Facilitator Guide: Piskel Lesson 1 — Promise + Micro Plot",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657920.html"
     },
@@ -525,7 +525,7 @@
       "module_position": 3,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Piskel Lesson 2 — Storyboard the Motion",
+      "title": "Facilitator Guide: Piskel Lesson 2 — Storyboard the Motion",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657921.html"
     },
@@ -549,7 +549,7 @@
       "module_position": 3,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Piskel Lesson 3 — Tools, Frames + Practice Loop",
+      "title": "Facilitator Guide: Piskel Lesson 3 — Tools, Frames + Practice Loop",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657922.html"
     },
@@ -573,7 +573,7 @@
       "module_position": 3,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Piskel Lesson 4 — Peer Test + Useful Feedback",
+      "title": "Facilitator Guide: Piskel Lesson 4 — Peer Test + Useful Feedback",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657923.html"
     },
@@ -597,7 +597,7 @@
       "module_position": 3,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Piskel Lesson 5 — Animate, Hold + Revise",
+      "title": "Facilitator Guide: Piskel Lesson 5 — Animate, Hold + Revise",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657924.html"
     },
@@ -621,7 +621,7 @@
       "module_position": 3,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Piskel Lesson 6 — Export, Verify + Reflect",
+      "title": "Facilitator Guide: Piskel Lesson 6 — Export, Verify + Reflect",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657925.html"
     },
@@ -645,7 +645,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Graphic Design with the 1960s",
+      "title": "Unit at a Glance: Graphic Design with the 1960s",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634019.html"
     },
@@ -669,7 +669,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Graphic Design Lesson 1 — Pop Art Signals",
+      "title": "Facilitator Guide: Graphic Design Lesson 1 — Pop Art Signals",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657926.html"
     },
@@ -693,7 +693,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Graphic Design Lesson 2 — Lines, Circles + Canva",
+      "title": "Facilitator Guide: Graphic Design Lesson 2 — Lines, Circles + Canva",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657927.html"
     },
@@ -717,7 +717,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Graphic Design Lesson 3 — Read Visual Design",
+      "title": "Facilitator Guide: Graphic Design Lesson 3 — Read Visual Design",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657928.html"
     },
@@ -741,7 +741,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Graphic Design Lesson 4 — Paths, Shapes + Color",
+      "title": "Facilitator Guide: Graphic Design Lesson 4 — Paths, Shapes + Color",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657929.html"
     },
@@ -765,7 +765,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Graphic Design Lesson 5 — Pictographs",
+      "title": "Facilitator Guide: Graphic Design Lesson 5 — Pictographs",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657930.html"
     },
@@ -789,7 +789,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Graphic Design Lesson 6 — Advanced Form + Color",
+      "title": "Facilitator Guide: Graphic Design Lesson 6 — Advanced Form + Color",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657931.html"
     },
@@ -825,7 +825,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Emoji Project Overview",
+      "title": "Facilitator Guide: Emoji Project Overview",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634028.html"
     },
@@ -849,7 +849,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Emoji Lesson 1 — Define the Gap",
+      "title": "Facilitator Guide: Emoji Lesson 1 — Define the Gap",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657932.html"
     },
@@ -873,7 +873,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Emoji Lesson 2 — Ideate Widely",
+      "title": "Facilitator Guide: Emoji Lesson 2 — Ideate Widely",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657933.html"
     },
@@ -897,7 +897,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Emoji Lesson 3 — Prototype + Small-Size Test",
+      "title": "Facilitator Guide: Emoji Lesson 3 — Prototype + Small-Size Test",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657934.html"
     },
@@ -921,7 +921,7 @@
       "module_position": 4,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Emoji Lesson 4 — Gallery Walk + Pitch",
+      "title": "Facilitator Guide: Emoji Lesson 4 — Gallery Walk + Pitch",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657935.html"
     },
@@ -957,7 +957,7 @@
       "module_position": 5,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: CNC Lasercutting",
+      "title": "Unit at a Glance: CNC",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634035.html"
     },
@@ -969,7 +969,7 @@
       "module_position": 5,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Laser Lesson 1 — Pixels, Paths + Machine Operations",
+      "title": "Facilitator Guide: Laser Lesson 1 — Pixels, Paths + Machine Operations",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657936.html"
     },
@@ -993,7 +993,7 @@
       "module_position": 5,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Laser Lessons 2–5 — Define, File Check, Test + Queue",
+      "title": "Facilitator Guide: Laser Lessons 2–5 — Define, File Check, Test + Queue",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657937.html"
     },
@@ -1017,7 +1017,7 @@
       "module_position": 5,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Laser Career Connection — Skills, Tools + Roles",
+      "title": "Facilitator Guide: Laser Career Connection — Skills, Tools + Roles",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657938.html"
     },
@@ -1041,7 +1041,7 @@
       "module_position": 6,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Holiday Ornaments",
+      "title": "Unit at a Glance: Holiday Ornament Laser Extension",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634039.html"
     },
@@ -1053,7 +1053,7 @@
       "module_position": 6,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Ornament Lesson 1 — Predict the Operations",
+      "title": "Facilitator Guide: Ornament Lesson 1 — Predict the Operations",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657939.html"
     },
@@ -1077,7 +1077,7 @@
       "module_position": 6,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Ornament Lessons 2–3 — Design, File Check + Fabricate",
+      "title": "Facilitator Guide: Ornament Lessons 2–3 — Design, File Check + Fabricate",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657940.html"
     },
@@ -1101,7 +1101,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: 3D Modeling Overview",
+      "title": "Unit at a Glance: 3D Modeling",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634042.html"
     },
@@ -1125,7 +1125,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: CAD Skill Ladder",
+      "title": "Facilitator Guide: CAD Skill Ladder",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636701.html"
     },
@@ -1137,7 +1137,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: 3D Modeling Lesson 1 — Currency to 3D Thinking",
+      "title": "Facilitator Guide: 3D Modeling Lesson 1 — Currency to 3D Thinking",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657941.html"
     },
@@ -1161,7 +1161,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: 3D Modeling — Xello Skills Check-in",
+      "title": "Facilitator Guide: 3D Modeling — Xello Skills Check-in",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657944.html"
     },
@@ -1197,7 +1197,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: 3D Modeling Lesson 2 — Coin, Solids + Holes",
+      "title": "Facilitator Guide: 3D Modeling Lesson 2 — Coin, Solids + Holes",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657942.html"
     },
@@ -1221,7 +1221,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: 3D Modeling Lesson 3 — Ring + Print Constraints",
+      "title": "Facilitator Guide: 3D Modeling Lesson 3 — Ring + Print Constraints",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657943.html"
     },
@@ -1257,7 +1257,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Favorite Toy Shape Decomposition",
+      "title": "Facilitator Guide: Favorite Toy Shape Decomposition",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636702.html"
     },
@@ -1293,7 +1293,7 @@
       "module_position": 7,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Dream Room Capstone",
+      "title": "Facilitator Guide: Dream Room Capstone",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636703.html"
     },
@@ -1341,7 +1341,7 @@
       "module_position": 8,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: ThingLink Overview",
+      "title": "Unit at a Glance: ThingLink: 360 + Branching Narratives",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634053.html"
     },
@@ -1365,7 +1365,7 @@
       "module_position": 8,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Welcome Mission",
+      "title": "Facilitator Guide: Welcome Mission",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636712.html"
     },
@@ -1413,7 +1413,7 @@
       "module_position": 8,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: 360 Guide",
+      "title": "Facilitator Guide: 360 Guide",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636713.html"
     },
@@ -1449,7 +1449,7 @@
       "module_position": 8,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Branching Narratives",
+      "title": "Facilitator Guide: Branching Narratives",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2636714.html"
     },
@@ -1545,7 +1545,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide · Career + Communication Flex Menu",
+      "title": "Unit at a Glance: Career + Communication Projects",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634066.html"
     },
@@ -1557,7 +1557,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Flex Option — Email Etiquette",
+      "title": "Facilitator Guide: Flex Option — Email Etiquette",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657946.html"
     },
@@ -1581,7 +1581,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Flex Option — Vision Board",
+      "title": "Facilitator Guide: Flex Option — Vision Board",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657947.html"
     },
@@ -1617,7 +1617,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide · Career Fair Project",
+      "title": "Facilitator Guide: Career Fair Project",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2641565.html"
     },
@@ -1629,7 +1629,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Career Fair Setup — Build a Career Starting Pool",
+      "title": "Facilitator Guide: Career Fair Setup — Build a Career Starting Pool",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657948.html"
     },
@@ -1665,7 +1665,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Career Fair Step 1 — Choose + Commit",
+      "title": "Facilitator Guide: Career Fair Step 1 — Choose + Commit",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657950.html"
     },
@@ -1689,7 +1689,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Career Fair Step 2 — Research + Source Log",
+      "title": "Facilitator Guide: Career Fair Step 2 — Research + Source Log",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657952.html"
     },
@@ -1713,7 +1713,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Career Fair Step 3 — Explain for a Visitor",
+      "title": "Facilitator Guide: Career Fair Step 3 — Explain for a Visitor",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657953.html"
     },
@@ -1737,7 +1737,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Career Fair Step 4 — Invite + Make It Findable",
+      "title": "Facilitator Guide: Career Fair Step 4 — Invite + Make It Findable",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657954.html"
     },
@@ -1761,7 +1761,7 @@
       "module_position": 9,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Career Fair Step 5 — Booth, Pitch + Questions",
+      "title": "Facilitator Guide: Career Fair Step 5 — Booth, Pitch + Questions",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657955.html"
     },
@@ -1821,7 +1821,7 @@
       "module_position": 10,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Circuit Systems",
+      "title": "Unit at a Glance: Circuit Systems: Paths, Control + Signals",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634080.html"
     },
@@ -1857,7 +1857,7 @@
       "module_position": 10,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Complete Paths + Safe Testing",
+      "title": "Facilitator Guide: Complete Paths + Safe Testing",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634083.html"
     },
@@ -1929,7 +1929,7 @@
       "module_position": 10,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Series, Parallel + Reliability",
+      "title": "Facilitator Guide: Series, Parallel + Reliability",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634089.html"
     },
@@ -1989,7 +1989,7 @@
       "module_position": 10,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: LEDs, Resistors + Motors",
+      "title": "Facilitator Guide: LEDs, Resistors + Motors",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634093.html"
     },
@@ -2049,7 +2049,7 @@
       "module_position": 10,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Coded Signal System",
+      "title": "Facilitator Guide: Coded Signal System",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634098.html"
     },
@@ -2097,7 +2097,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Code & Web",
+      "title": "Unit at a Glance: Intro to CS: Code & Web",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634103.html"
     },
@@ -2121,7 +2121,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 1 — Algorithm + First Program",
+      "title": "Facilitator Guide: Code + Web Day 1 — Algorithm + First Program",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657956.html"
     },
@@ -2145,7 +2145,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 2 — Choice Coding + Patterns",
+      "title": "Facilitator Guide: Code + Web Day 2 — Choice Coding + Patterns",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657957.html"
     },
@@ -2169,7 +2169,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 3 — Predict, Debug + Log",
+      "title": "Facilitator Guide: Code + Web Day 3 — Predict, Debug + Log",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657958.html"
     },
@@ -2193,7 +2193,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 4 — Input, Storage, Processing + Output",
+      "title": "Facilitator Guide: Code + Web Day 4 — Input, Storage, Processing + Output",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657959.html"
     },
@@ -2217,7 +2217,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 5 — Web Pages + First HTML",
+      "title": "Facilitator Guide: Code + Web Day 5 — Web Pages + First HTML",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657960.html"
     },
@@ -2253,7 +2253,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 6 — Headings, Lists + Nesting",
+      "title": "Facilitator Guide: Code + Web Day 6 — Headings, Lists + Nesting",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657961.html"
     },
@@ -2277,7 +2277,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 7 — Build + Publish an HTML Page",
+      "title": "Facilitator Guide: Code + Web Day 7 — Build + Publish an HTML Page",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657962.html"
     },
@@ -2301,7 +2301,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 8 — CSS Rules + Readability",
+      "title": "Facilitator Guide: Code + Web Day 8 — CSS Rules + Readability",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657963.html"
     },
@@ -2325,7 +2325,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 9 — Style, Test + Republish",
+      "title": "Facilitator Guide: Code + Web Day 9 — Style, Test + Republish",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657964.html"
     },
@@ -2349,7 +2349,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web Day 10 — Walkthrough, Feedback + Pathway",
+      "title": "Facilitator Guide: Code + Web Day 10 — Walkthrough, Feedback + Pathway",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657965.html"
     },
@@ -2373,7 +2373,7 @@
       "module_position": 11,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Code + Web — Xello Skills Connection",
+      "title": "Facilitator Guide: Code + Web — Xello Skills Connection",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657966.html"
     },
@@ -2397,7 +2397,7 @@
       "module_position": 12,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator’s Guide: Video Game Design",
+      "title": "Unit at a Glance: Video Game Design",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634117.html"
     },
@@ -2409,7 +2409,7 @@
       "module_position": 12,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Video Game Design Lesson 1 — Skillmap, Sign-in + Save",
+      "title": "Facilitator Guide: Video Game Design Lesson 1 — Skillmap, Sign-in + Save",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657967.html"
     },
@@ -2433,7 +2433,7 @@
       "module_position": 12,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Video Game Design Lesson 2 — Remix, Test + Explain",
+      "title": "Facilitator Guide: Video Game Design Lesson 2 — Remix, Test + Explain",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657968.html"
     },
@@ -2457,7 +2457,7 @@
       "module_position": 13,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: AIR Unit 0 — Intro to AI",
+      "title": "Unit at a Glance: AIR Unit 0: Intro to AI",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634120.html"
     },
@@ -2481,7 +2481,7 @@
       "module_position": 13,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AIR Unit 0 Day 1 — Parts of a Smart System",
+      "title": "Facilitator Guide: AIR Unit 0 Day 1 — Parts of a Smart System",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657898.html"
     },
@@ -2517,7 +2517,7 @@
       "module_position": 13,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AIR Unit 0 Day 2 — Design for a Constrained Need",
+      "title": "Facilitator Guide: AIR Unit 0 Day 2 — Design for a Constrained Need",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657899.html"
     },
@@ -2565,7 +2565,7 @@
       "module_position": 13,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AIR Unit 0 Day 3 — Write, Trace, Revise",
+      "title": "Facilitator Guide: AIR Unit 0 Day 3 — Write, Trace, Revise",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657900.html"
     },
@@ -2613,7 +2613,7 @@
       "module_position": 13,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AIR Unit 0 Day 4 — Train, Test, Improve",
+      "title": "Facilitator Guide: AIR Unit 0 Day 4 — Train, Test, Improve",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657901.html"
     },
@@ -2649,7 +2649,7 @@
       "module_position": 13,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AIR Unit 0 Day 5 — Explain the Connected System",
+      "title": "Facilitator Guide: AIR Unit 0 Day 5 — Explain the Connected System",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657902.html"
     },
@@ -2685,7 +2685,7 @@
       "module_position": 14,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Picture This · Five-Day AI Lab",
+      "title": "Unit at a Glance: Picture This: Image Classification + Data Bias",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634134.html"
     },
@@ -2709,7 +2709,7 @@
       "module_position": 14,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Picture This Day 1 — Train It, Then Break It",
+      "title": "Facilitator Guide: Picture This Day 1 — Train It, Then Break It",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657903.html"
     },
@@ -2733,7 +2733,7 @@
       "module_position": 14,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Picture This Day 2 — Data Makes the Model",
+      "title": "Facilitator Guide: Picture This Day 2 — Data Makes the Model",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657904.html"
     },
@@ -2757,7 +2757,7 @@
       "module_position": 14,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Picture This Day 3 — Be the AI",
+      "title": "Facilitator Guide: Picture This Day 3 — Be the AI",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657905.html"
     },
@@ -2781,7 +2781,7 @@
       "module_position": 14,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Picture This Day 4 — Train It + Connect It",
+      "title": "Facilitator Guide: Picture This Day 4 — Train It + Connect It",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657906.html"
     },
@@ -2805,7 +2805,7 @@
       "module_position": 14,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Picture This Day 5 — Remix, Retest, Revise, Share",
+      "title": "Facilitator Guide: Picture This Day 5 — Remix, Retest, Revise, Share",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657907.html"
     },
@@ -2829,7 +2829,7 @@
       "module_position": 15,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator’s Guide: Machine Learning Reliability Lab",
+      "title": "Unit at a Glance: Machine Learning Reliability Lab",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634138.html"
     },
@@ -2841,7 +2841,7 @@
       "module_position": 15,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Reliability Lab Day 1 — Plan a Fair Test",
+      "title": "Facilitator Guide: Reliability Lab Day 1 — Plan a Fair Test",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657908.html"
     },
@@ -2865,7 +2865,7 @@
       "module_position": 15,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Reliability Lab Day 2 — Stress-Test the Model",
+      "title": "Facilitator Guide: Reliability Lab Day 2 — Stress-Test the Model",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657909.html"
     },
@@ -2889,7 +2889,7 @@
       "module_position": 15,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Reliability Lab Day 3 — Audit Representation",
+      "title": "Facilitator Guide: Reliability Lab Day 3 — Audit Representation",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657910.html"
     },
@@ -2913,7 +2913,7 @@
       "module_position": 15,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Reliability Lab Day 4 — Compare Error Costs",
+      "title": "Facilitator Guide: Reliability Lab Day 4 — Compare Error Costs",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657911.html"
     },
@@ -2937,7 +2937,7 @@
       "module_position": 15,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Reliability Lab Day 5 — Model Card + Release Decision",
+      "title": "Facilitator Guide: Reliability Lab Day 5 — Model Card + Release Decision",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657912.html"
     },
@@ -2973,7 +2973,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator’s Guide: AI Ethics Council",
+      "title": "Unit at a Glance: AI Ethics Council",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634145.html"
     },
@@ -2997,7 +2997,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 1 — Case Intake + Source Trail",
+      "title": "Facilitator Guide: AI Ethics Council Day 1 — Case Intake + Source Trail",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657976.html"
     },
@@ -3021,7 +3021,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 2 — Follow the Incentive",
+      "title": "Facilitator Guide: AI Ethics Council Day 2 — Follow the Incentive",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657977.html"
     },
@@ -3045,7 +3045,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 3 — Test the Consequence",
+      "title": "Facilitator Guide: AI Ethics Council Day 3 — Test the Consequence",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657978.html"
     },
@@ -3069,7 +3069,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 4 — Leave the Page and Check",
+      "title": "Facilitator Guide: AI Ethics Council Day 4 — Leave the Page and Check",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657979.html"
     },
@@ -3093,7 +3093,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 5 — Prepare Every Seat",
+      "title": "Facilitator Guide: AI Ethics Council Day 5 — Prepare Every Seat",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657981.html"
     },
@@ -3129,7 +3129,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 6 — Tasks, Not Headlines",
+      "title": "Facilitator Guide: AI Ethics Council Day 6 — Tasks, Not Headlines",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657982.html"
     },
@@ -3153,7 +3153,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 7 — Build the Assigned Role’s Case",
+      "title": "Facilitator Guide: AI Ethics Council Day 7 — Build the Assigned Role’s Case",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657983.html"
     },
@@ -3177,7 +3177,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 8 — Listen for the Evidence",
+      "title": "Facilitator Guide: AI Ethics Council Day 8 — Listen for the Evidence",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657984.html"
     },
@@ -3201,7 +3201,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 9 — Turn Values into Testable Rules",
+      "title": "Facilitator Guide: AI Ethics Council Day 9 — Turn Values into Testable Rules",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657985.html"
     },
@@ -3225,7 +3225,7 @@
       "module_position": 16,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AI Ethics Council Day 10 — Test the Code",
+      "title": "Facilitator Guide: AI Ethics Council Day 10 — Test the Code",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657986.html"
     },
@@ -3261,7 +3261,7 @@
       "module_position": 17,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Competition Pathways (CTSO)",
+      "title": "Unit at a Glance: Competition Pathways",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634159.html"
     },
@@ -3345,7 +3345,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: RVR Robotics Overview",
+      "title": "Unit at a Glance: RVR Robotics",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634166.html"
     },
@@ -3357,7 +3357,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: RVR Day 1 — Draw, Plan, Program, Prove",
+      "title": "Facilitator Guide: RVR Day 1 — Draw, Plan, Program, Prove",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657987.html"
     },
@@ -3405,7 +3405,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: RVR Day 2 — Precision Movement Lab",
+      "title": "Facilitator Guide: RVR Day 2 — Precision Movement Lab",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657988.html"
     },
@@ -3429,7 +3429,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: RVR Day 3 — Sense, Decide, Respond",
+      "title": "Facilitator Guide: RVR Day 3 — Sense, Decide, Respond",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657989.html"
     },
@@ -3465,7 +3465,7 @@
       "module_position": 18,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: RVR Days 4–5 — Talking Robots School-of-Fish",
+      "title": "Facilitator Guide: RVR Days 4–5 — Talking Robots School-of-Fish",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657990.html"
     },
@@ -3501,7 +3501,7 @@
       "module_position": 19,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Coding Adventures (micro:bit)",
+      "title": "Unit at a Glance: Coding Adventures",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634175.html"
     },
@@ -3549,7 +3549,7 @@
       "module_position": 19,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Lesson 1 Intro to micro:bit and Block Coding",
+      "title": "Facilitator Guide: Lesson 1 Intro to micro:bit and Block Coding",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634178.html"
     },
@@ -3609,7 +3609,7 @@
       "module_position": 19,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 2 Inputs and Outputs",
+      "title": "Facilitator Guide: Lesson 2 Inputs and Outputs",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634184.html"
     },
@@ -3669,7 +3669,7 @@
       "module_position": 19,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 3 Radio and If Statements",
+      "title": "Facilitator Guide: Lesson 3 Radio and If Statements",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634189.html"
     },
@@ -3741,7 +3741,7 @@
       "module_position": 19,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 4 Coding Games on the micro:bit",
+      "title": "Facilitator Guide: Lesson 4 Coding Games on the micro:bit",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634194.html"
     },
@@ -3789,7 +3789,7 @@
       "module_position": 20,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: AIR Unit 1 — Leaving Land",
+      "title": "Unit at a Glance: AIR Unit 1: Leaving Land",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634199.html"
     },
@@ -3813,7 +3813,7 @@
       "module_position": 20,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Leaving Land Lesson 1 — Seasick with Empathy",
+      "title": "Facilitator Guide: Leaving Land Lesson 1 — Seasick with Empathy",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657991.html"
     },
@@ -3873,7 +3873,7 @@
       "module_position": 20,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Leaving Land Lesson 2 — micro:bit Light Meter",
+      "title": "Facilitator Guide: Leaving Land Lesson 2 — micro:bit Light Meter",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657992.html"
     },
@@ -3921,7 +3921,7 @@
       "module_position": 20,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Leaving Land Lesson 3 — Crab Cruisin'",
+      "title": "Facilitator Guide: Leaving Land Lesson 3 — Crab Cruisin'",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657993.html"
     },
@@ -3969,7 +3969,7 @@
       "module_position": 20,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Leaving Land Lesson 4 — Ocean Games",
+      "title": "Facilitator Guide: Leaving Land Lesson 4 — Ocean Games",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657994.html"
     },
@@ -4017,7 +4017,7 @@
       "module_position": 20,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Leaving Land Lesson 5 — AI Enemies",
+      "title": "Facilitator Guide: Leaving Land Lesson 5 — AI Enemies",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657995.html"
     },
@@ -4041,7 +4041,7 @@
       "module_position": 21,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: AIR Unit 3 — Sailing Home",
+      "title": "Unit at a Glance: AIR Unit 3: Sailing Home",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634215.html"
     },
@@ -4053,7 +4053,7 @@
       "module_position": 21,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Sailing Home Lesson 1 — Conflicting Viewpoints",
+      "title": "Facilitator Guide: Sailing Home Lesson 1 — Conflicting Viewpoints",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657996.html"
     },
@@ -4077,7 +4077,7 @@
       "module_position": 21,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Sailing Home Lesson 2 — Temperature Bot",
+      "title": "Facilitator Guide: Sailing Home Lesson 2 — Temperature Bot",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657997.html"
     },
@@ -4113,7 +4113,7 @@
       "module_position": 22,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Save the Day with Smart Electronics",
+      "title": "Unit at a Glance: Save the Day with Smart Electronics",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634219.html"
     },
@@ -4149,7 +4149,7 @@
       "module_position": 22,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 1 Wiring LEDs with micro:bit Expansion Board",
+      "title": "Facilitator Guide: Lesson 1 Wiring LEDs with micro:bit Expansion Board",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634222.html"
     },
@@ -4209,7 +4209,7 @@
       "module_position": 22,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 2 Wiring and Programming Inputs",
+      "title": "Facilitator Guide: Lesson 2 Wiring and Programming Inputs",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634227.html"
     },
@@ -4281,7 +4281,7 @@
       "module_position": 22,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Lesson 3 Servo Motors",
+      "title": "Facilitator Guide: Lesson 3 Servo Motors",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634233.html"
     },
@@ -4341,7 +4341,7 @@
       "module_position": 22,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 4 Advanced Inputs and Outputs",
+      "title": "Facilitator Guide: Lesson 4 Advanced Inputs and Outputs",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634238.html"
     },
@@ -4389,7 +4389,7 @@
       "module_position": 23,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: SPIKE PRIME Overview",
+      "title": "Unit at a Glance: SPIKE PRIME",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634242.html"
     },
@@ -4413,7 +4413,7 @@
       "module_position": 23,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: SPIKE PRIME Day 1 — Help! Find the Problem",
+      "title": "Facilitator Guide: SPIKE PRIME Day 1 — Help! Find the Problem",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657998.html"
     },
@@ -4437,7 +4437,7 @@
       "module_position": 23,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: SPIKE PRIME Days 2–3 — Hopper Race",
+      "title": "Facilitator Guide: SPIKE PRIME Days 2–3 — Hopper Race",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657999.html"
     },
@@ -4461,7 +4461,7 @@
       "module_position": 23,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: SPIKE PRIME Days 4–5 — Super Cleanup",
+      "title": "Facilitator Guide: SPIKE PRIME Days 4–5 — Super Cleanup",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658000.html"
     },
@@ -4485,7 +4485,7 @@
       "module_position": 23,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: SPIKE PRIME Extension — Design for You",
+      "title": "Facilitator Guide: SPIKE PRIME Extension — Design for You",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658001.html"
     },
@@ -4521,7 +4521,7 @@
       "module_position": 24,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: AR with MergeCube Overview",
+      "title": "Unit at a Glance: Augmented Reality with MergeCube",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634249.html"
     },
@@ -4545,7 +4545,7 @@
       "module_position": 24,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AR Lesson 1 — AR Basics and the MergeCube",
+      "title": "Facilitator Guide: AR Lesson 1 — AR Basics and the MergeCube",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657945.html"
     },
@@ -4593,7 +4593,7 @@
       "module_position": 24,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AR Lesson 2 — AR Worlds",
+      "title": "Facilitator Guide: AR Lesson 2 — AR Worlds",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657949.html"
     },
@@ -4629,7 +4629,7 @@
       "module_position": 24,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AR Lesson 3 — Interactive AR Shopping",
+      "title": "Facilitator Guide: AR Lesson 3 — Interactive AR Shopping",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657951.html"
     },
@@ -4665,7 +4665,7 @@
       "module_position": 24,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: AR Lesson 4 — Interactive AR Game Design",
+      "title": "Facilitator Guide: AR Lesson 4 — Interactive AR Game Design",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657969.html"
     },
@@ -4689,7 +4689,7 @@
       "module_position": 25,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Virtual Reality in Delightex",
+      "title": "Unit at a Glance: Virtual Reality in Delightex",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634259.html"
     },
@@ -4701,7 +4701,7 @@
       "module_position": 25,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: VR Lesson 1 — Delightex Basics",
+      "title": "Facilitator Guide: VR Lesson 1 — Delightex Basics",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657970.html"
     },
@@ -4725,7 +4725,7 @@
       "module_position": 25,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: 360 Images and Scenes",
+      "title": "Facilitator Guide: 360 Images and Scenes",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634261.html"
     },
@@ -4749,7 +4749,7 @@
       "module_position": 25,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: VR Lesson 3 — VR Novel Retelling",
+      "title": "Facilitator Guide: VR Lesson 3 — VR Novel Retelling",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657971.html"
     },
@@ -4773,7 +4773,7 @@
       "module_position": 26,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Pitching and Presenting",
+      "title": "Unit at a Glance: Pitching and Presenting",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634264.html"
     },
@@ -4785,7 +4785,7 @@
       "module_position": 26,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Pitching Lesson 0 — Logo Design Launch",
+      "title": "Facilitator Guide: Pitching Lesson 0 — Logo Design Launch",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657972.html"
     },
@@ -4809,7 +4809,7 @@
       "module_position": 26,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Pitching Lesson 1 — Personal Logo and Brand",
+      "title": "Facilitator Guide: Pitching Lesson 1 — Personal Logo and Brand",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657973.html"
     },
@@ -4833,7 +4833,7 @@
       "module_position": 26,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Pitching Lesson 2 — Personal Brand Video",
+      "title": "Facilitator Guide: Pitching Lesson 2 — Personal Brand Video",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657974.html"
     },
@@ -4857,7 +4857,7 @@
       "module_position": 27,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Tech for Good Capstone",
+      "title": "Unit at a Glance: Capstone",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634268.html"
     },
@@ -4869,7 +4869,7 @@
       "module_position": 27,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Tech for Good Capstone — Research, Build, Test, and Showcase",
+      "title": "Facilitator Guide: Tech for Good Capstone — Research, Build, Test, and Showcase",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657975.html"
     },
@@ -4905,7 +4905,7 @@
       "module_position": 27,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Run Card: Capstone Close — Scholarship Profile Check-in",
+      "title": "Facilitator Guide: Capstone Close — Scholarship Profile Check-in",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2657980.html"
     },
@@ -4929,7 +4929,7 @@
       "module_position": 28,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide: Closing Week",
+      "title": "Unit at a Glance: Closing: ePortfolio and Post Survey",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634272.html"
     },
@@ -4941,7 +4941,7 @@
       "module_position": 28,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Closing Lesson 1 — Publish the ePortfolio",
+      "title": "Facilitator Guide: Closing Lesson 1 — Publish the ePortfolio",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658002.html"
     },
@@ -4965,7 +4965,7 @@
       "module_position": 28,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Run Card: Closing Lesson 2 — Post-Survey",
+      "title": "Facilitator Guide: Closing Lesson 2 — Post-Survey",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658003.html"
     },
@@ -4989,7 +4989,7 @@
       "module_position": 29,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Stop Motion Overview — Six-Day Film Project",
+      "title": "Unit at a Glance: Stop Motion",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658004.html"
     },
@@ -5013,7 +5013,7 @@
       "module_position": 29,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Stop Motion Lesson 0 — Process Video and Setup",
+      "title": "Facilitator Guide: Stop Motion Lesson 0 — Process Video and Setup",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658005.html"
     },
@@ -5037,7 +5037,7 @@
       "module_position": 29,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Stop Motion Day 1 — Story Plan",
+      "title": "Facilitator Guide: Stop Motion Day 1 — Story Plan",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658006.html"
     },
@@ -5061,7 +5061,7 @@
       "module_position": 29,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Stop Motion Day 2 — Plot Diagram",
+      "title": "Facilitator Guide: Stop Motion Day 2 — Plot Diagram",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658007.html"
     },
@@ -5085,7 +5085,7 @@
       "module_position": 29,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Stop Motion Day 3 — Storyboard",
+      "title": "Facilitator Guide: Stop Motion Day 3 — Storyboard",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658008.html"
     },
@@ -5109,7 +5109,7 @@
       "module_position": 29,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Teacher Guide: Stop Motion Days 4–6 — Film, Edit, and Submit",
+      "title": "Facilitator Guide: Stop Motion Days 4–6 — Film, Edit, and Submit",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2658009.html"
     },
@@ -5145,7 +5145,7 @@
       "module_position": 30,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 1 Project 1 Overview",
+      "title": "Facilitator Guide: Lesson 1 Project 1 Overview",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634282.html"
     },
@@ -5193,7 +5193,7 @@
       "module_position": 30,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 2 Empathize and Define",
+      "title": "Facilitator Guide: Lesson 2 Empathize and Define",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634286.html"
     },
@@ -5241,7 +5241,7 @@
       "module_position": 30,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 3 Ideate and Prototype",
+      "title": "Facilitator Guide: Lesson 3 Ideate and Prototype",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634290.html"
     },
@@ -5277,7 +5277,7 @@
       "module_position": 30,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 4 Test and Submit",
+      "title": "Facilitator Guide: Lesson 4 Test and Submit",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634293.html"
     },
@@ -5337,7 +5337,7 @@
       "module_position": 31,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 1 Robot Salad For Sale",
+      "title": "Facilitator Guide: Lesson 1 Robot Salad For Sale",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634298.html"
     },
@@ -5397,7 +5397,7 @@
       "module_position": 32,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 1 Project 2 Overview",
+      "title": "Facilitator Guide: Lesson 1 Project 2 Overview",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634303.html"
     },
@@ -5445,7 +5445,7 @@
       "module_position": 32,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 2 Project 2 Empathize and Define",
+      "title": "Facilitator Guide: Lesson 2 Project 2 Empathize and Define",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634307.html"
     },
@@ -5493,7 +5493,7 @@
       "module_position": 32,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 3 Project 2 Ideate",
+      "title": "Facilitator Guide: Lesson 3 Project 2 Ideate",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634311.html"
     },
@@ -5541,7 +5541,7 @@
       "module_position": 32,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 4 Project 2 Prototype",
+      "title": "Facilitator Guide: Lesson 4 Project 2 Prototype",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634315.html"
     },
@@ -5577,7 +5577,7 @@
       "module_position": 32,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 5 Project 2 Test Share Submit",
+      "title": "Facilitator Guide: Lesson 5 Project 2 Test Share Submit",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634318.html"
     },
@@ -5637,7 +5637,7 @@
       "module_position": 33,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Project 3 Overview",
+      "title": "Facilitator Guide: Project 3 Overview",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634323.html"
     },
@@ -5685,7 +5685,7 @@
       "module_position": 33,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 2 Project 3 Empathize and Define",
+      "title": "Facilitator Guide: Lesson 2 Project 3 Empathize and Define",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634327.html"
     },
@@ -5733,7 +5733,7 @@
       "module_position": 33,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 3 Project 3 Ideate",
+      "title": "Facilitator Guide: Lesson 3 Project 3 Ideate",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634331.html"
     },
@@ -5781,7 +5781,7 @@
       "module_position": 33,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 4 Project 3 Prototype",
+      "title": "Facilitator Guide: Lesson 4 Project 3 Prototype",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634335.html"
     },
@@ -5817,7 +5817,7 @@
       "module_position": 33,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 5 Project 3 Feedback",
+      "title": "Facilitator Guide: Lesson 5 Project 3 Feedback",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634338.html"
     },
@@ -5865,7 +5865,7 @@
       "module_position": 33,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "Facilitator's Guide and Materials: Lesson 6 Project 3 Pitch and Submit",
+      "title": "Facilitator Guide: Lesson 6 Project 3 Pitch and Submit",
       "type": "Page",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634342.html"
     },
