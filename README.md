@@ -6,6 +6,10 @@ This repository publishes the public reference for the **VILS CTE Smart Solution
 
 Canvas remains the student delivery and grading environment. The site presents the complete ordered course for curriculum review: teacher guides, student directions, assessments, rubrics, linked resources, and approved Canvas files.
 
+## Standards reference
+
+The immutable source record for Grade 8 Technology Applications TEKS is [`docs/standards/texas-technology-applications-grade-8-teks-2022.md`](docs/standards/texas-technology-applications-grade-8-teks-2022.md). It preserves the exact wording of current **19 TAC §126.19(c)** and defines the alignment fields to use consistently in future Canvas facilitator guides and their public-site equivalents.
+
 ## Publication boundary
 
 Public is the default. The only protected exception is **OPTION · About Me Smartphone** (Canvas module item `2633987`) and its creator-approved district-only PDF/video. The public course map shows a protected entry so the sequence remains complete, but the activity body and file bytes are never written to this repository.
