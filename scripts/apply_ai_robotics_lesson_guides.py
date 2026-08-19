@@ -9,8 +9,10 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 import re
 from dataclasses import dataclass
+from pathlib import Path
 
 from apply_teks_alignment import expectation_text
 from canvas_api import Canvas, env_course_id
@@ -64,9 +66,31 @@ def body(s: Spec) -> str:
     teks = "".join(f"<li><strong>{html.escape(c)}</strong> — {html.escape(expectation_text(c))}</li>" for c in s.codes)
     flow = [f"Launch with a concrete question or failure that makes {s.topic.lower()} matter.",f"Model one current example or tool move before students begin.",f"Guide the first decision together, then release students to the existing Canvas task.",f"Check for the named evidence, not completion alone; keep a visual sequence, sentence stems, and purposeful partner roles available.",f"Collect or verify the evidence and name the next lesson's connection."]
     steps = "".join(f"<li><strong>{n}:</strong> {html.escape(v)}</li>" for n,v in zip(("Launch","Model","Do","Check + support","Close + handoff"),flow))
-    return f'''<div {MARKER} data-vils-target-module-item="{s.target}" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;max-width:1000px;margin:0 auto;color:#172033;font-size:16px;line-height:1.5"><div style="background:#0B1426;border:3px solid #00B8D4;border-radius:16px;padding:20px;color:#fff"><p style="margin:0;color:#80DEEA"><strong>TEACHER ONLY · LESSON GUIDE</strong></p><h2 style="margin:6px 0;color:#fff">{html.escape(s.title.replace('Teacher Guide: ','').replace("Facilitator's Guide: ",''))}</h2><p style="margin:0">Run the lesson here; the student item below remains the independent and absence route.</p></div><div style="margin:16px 0;padding:16px;border:2px solid #274C77;border-radius:12px;background:#F4F8FC"><h3 style="margin-top:0">Daily Learning Contract</h3><p><strong>Topic:</strong> {html.escape(s.topic)}<br><strong>Objective:</strong> {html.escape(s.objective)}<br><strong>Demonstration of learning:</strong> {html.escape(s.evidence)}</p><p><strong>TEKS:</strong></p><ul>{teks}</ul></div><div style="padding:16px;border-left:7px solid #00B8D4"><h3 style="margin-top:0">Before class</h3><p><strong>Time:</strong> {html.escape(s.duration)}<br><strong>Student route:</strong> {html.escape(s.target_title)}<br><strong>Use what already exists:</strong> {html.escape(s.resources)}</p></div><div style="margin:16px 0;padding:16px;border:2px solid #FFD166;border-radius:12px;background:#FFFDF6"><h3 style="margin-top:0">Lesson flow</h3><ol>{steps}</ol></div><div style="padding:16px;border:2px solid #54B68A;border-radius:12px;background:#F0FAF5"><h3 style="margin-top:0">Check before students leave</h3><p>Ask students to point to the specific evidence above and explain one choice, test, or revision. Completion alone is not evidence of understanding.</p><h3>When students get stuck</h3><p>Ask for the exact step where the tool, code, or task stopped. Check setup, inputs, and saved work before replacing the task or lowering the thinking.</p></div></div>'''
+    return f'''<div {MARKER} data-vils-target-module-item="{s.target}" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;max-width:1000px;margin:0 auto;color:#172033;font-size:16px;line-height:1.5"><div style="background:#0B1426;border:3px solid #00B8D4;border-radius:16px;padding:20px;color:#fff"><p style="margin:0;color:#80DEEA"><strong>TEACHER ONLY · LESSON GUIDE</strong></p><h2 style="margin:6px 0;color:#fff">{html.escape(s.title.replace('Teacher Guide: ','').replace("Facilitator's Guide: ",''))}</h2><p style="margin:0">Run the lesson here; the student item below remains the independent and absence route.</p></div><div style="margin:16px 0;padding:16px;border:2px solid #274C77;border-radius:12px;background:#F4F8FC"><h3 style="margin-top:0">Daily Learning Contract</h3><p><strong>Topic:</strong> {html.escape(s.topic)}<br><strong>Objective:</strong> {html.escape(s.objective)}<br><strong>Demonstration of learning:</strong> {html.escape(s.evidence)}</p><p><strong>TEKS:</strong></p><ul>{teks}</ul></div><div style="padding:16px;border-left:7px solid #00B8D4"><h3 style="margin-top:0">Before class</h3><p><strong>Time:</strong> {html.escape(s.duration)}<br><strong>Student route:</strong> {html.escape(s.target_title)}<br><strong>Use what already exists:</strong> {html.escape(s.resources)}</p></div><div style="margin:16px 0;padding:16px;border:2px solid #FFD166;border-radius:12px;background:#FFFDF6"><h3 style="margin-top:0">Lesson flow</h3><ol>{steps}</ol></div><div style="padding:16px;border:2px solid #54B68A;border-radius:12px;background:#F0FAF5"><h3 style="margin-top:0">Check before students leave</h3><p>Ask students to point to the specific evidence above and explain one choice, test, or revision. Completion alone is not evidence of understanding.</p><h3>Support + troubleshooting</h3><p><strong>Scaffold:</strong> Keep the visual task sequence visible, assign purposeful partner roles, and use the sentence stems on the student page before simplifying the task.</p><p><strong>When students get stuck:</strong> Ask for the exact step where the tool, code, or task stopped. Check setup, inputs, and saved work before replacing the task or lowering the thinking.</p></div></div>'''
+
+def strip_contract(text: str) -> str:
+    """Remove exactly the outer marked div, preserving original linked materials."""
+    start = text.find(f"<div {MARKER}")
+    if start < 0:
+        return text
+    depth = 0
+    for token in re.finditer(r"</?div\\b[^>]*>", text[start:], re.I):
+        if token.group(0).lower().startswith("</"):
+            depth -= 1
+            if depth == 0:
+                return text[:start] + text[start + token.end():]
+        else:
+            depth += 1
+    raise RuntimeError("unclosed lesson-guide contract")
 
 def items(c: Canvas, cid: int, mid: int): return c.paged(f"/courses/{cid}/modules/{mid}/items?per_page=100")
+def original_existing(title: str) -> str:
+    snapshot = json.loads((Path(__file__).resolve().parents[1] / "data" / "course-snapshot.json").read_text())
+    for module in snapshot["modules"]:
+        for item in module["items"]:
+            if item["title"] == title and item.get("resource", {}).get("kind") == "page":
+                return item["resource"]["body"]
+    raise RuntimeError(f"Original existing guide not found in snapshot: {title}")
 def main():
     p=argparse.ArgumentParser(); p.add_argument("--apply",action="store_true"); p.add_argument("--modules",default="16,18,19,20,21,22,23"); a=p.parse_args(); c=Canvas(); cid=env_course_id(23402); made=[]
     wanted={int(v) for v in a.modules.split(",") if v.strip()}
@@ -75,7 +99,9 @@ def main():
         if not target: raise RuntimeError(f"target not found: {s.target} {s.target_title}")
         existing=next((x for x in rows if x['title']==s.existing),None) if s.existing else next((x for x in rows if x['title']==s.title),None)
         if existing:
-            page=c.get(f"/courses/{cid}/pages/{existing['page_url']}"); new=body(s)+(re.sub(r'<div data-vils-ai-robotics-guide="2026-08-19".*?</div>', '', page.get('body') or '', flags=re.S) if MARKER in (page.get('body') or '') else (page.get('body') or ''))
+            # Existing guides retain their exact original linked-material body;
+            # created pages are entirely regenerated below on every rerun.
+            new=body(s)+original_existing(s.existing) if s.existing else body(s)
             print(('APPLY UPDATE' if a.apply else 'DRY UPDATE'),s.title)
             if a.apply:
                 c.request("PUT",f"/courses/{cid}/pages/{existing['page_url']}",{"wiki_page[body]":new})
