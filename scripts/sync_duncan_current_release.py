@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Install the August 19 VILS release into Duncan's current Commons lineage.
+"""Install the August 19 VILS release into a current Irving template lineage.
 
 The existing 391 imported objects keep their Irving IDs.  The 112 new lesson
 guides are marked as manual bridge objects because Canvas's public API cannot
-assign Commons migration identifiers.
+assign Commons migration identifiers. Defaults target Duncan; CLI arguments
+allow another audited course and an explicit local-content manifest.
 """
 
 from __future__ import annotations
@@ -28,6 +29,18 @@ VERIZON_WEB = "https://verizoninnovativelearning.instructure.com/courses/23402"
 COURSE_ID = 97806
 CURRENT_IMPORT_MIN = 545000
 MAP_PATH = Path("artifacts/duncan-current-release-map-2026-08-19.json")
+LOCAL_MANIFEST: dict | None = None
+
+
+def is_local_item(item: dict) -> bool:
+    if not LOCAL_MANIFEST:
+        return False
+    return bool(
+        (item["type"] == "SubHeader" and item["title"].startswith("ROSS · LOCAL"))
+        or (item["type"] == "Page" and item["title"].startswith("ROSS COPY ·"))
+        or item.get("content_id") in set(LOCAL_MANIFEST.get("protected_assignment_ids", []))
+        or item.get("page_url") in set(LOCAL_MANIFEST.get("protected_page_urls", []))
+    )
 
 
 def snapshot_at(revision: str) -> dict:
@@ -69,7 +82,9 @@ def baseline_mapping(
     for source_module in baseline["modules"]:
         dest_module = modules[source_module["name"]]
         source_items = source_module["items"]
-        dest_items = items[dest_module["id"]]
+        dest_items = [
+            item for item in items[dest_module["id"]] if not is_local_item(item)
+        ]
         assert item_signature(source_items) == item_signature(dest_items), (
             f"Baseline drift in {source_module['name']}; refusing to infer item identity."
         )
@@ -267,9 +282,24 @@ def source_index(snapshot: dict) -> tuple[dict[int, dict], dict[str, dict]]:
 
 
 def main() -> None:
+    global COURSE_ID, CURRENT_IMPORT_MIN, IRVING_WEB, MAP_PATH, LOCAL_MANIFEST
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--course-id", type=int, default=COURSE_ID)
+    parser.add_argument("--current-import-min", type=int, default=CURRENT_IMPORT_MIN)
+    parser.add_argument("--map-path", default=str(MAP_PATH))
+    parser.add_argument("--local-manifest")
     args = parser.parse_args()
+
+    COURSE_ID = args.course_id
+    CURRENT_IMPORT_MIN = args.current_import_min
+    IRVING_WEB = f"https://learn.irvingisd.net/courses/{COURSE_ID}"
+    MAP_PATH = Path(args.map_path)
+    LOCAL_MANIFEST = (
+        json.loads(Path(args.local_manifest).read_text(encoding="utf-8"))
+        if args.local_manifest
+        else None
+    )
 
     current = json.loads(Path("data/course-snapshot.json").read_text(encoding="utf-8"))
     baseline = snapshot_at("6df20ff^")
@@ -368,11 +398,11 @@ def main() -> None:
         )
 
     refreshed_modules, refreshed_items = live_current(canvas)
-    for source_module in current["modules"]:
-        for source_item, dest_item in zip(
-            source_module["items"], refreshed_items[refreshed_modules[source_module["name"]]["id"]]
-        ):
-            dest_by_source[source_item["id"]] = dest_item
+    refreshed_by_id = {
+        item["id"]: item for module_items in refreshed_items.values() for item in module_items
+    }
+    for source_id, previous_dest in list(dest_by_source.items()):
+        dest_by_source[source_id] = refreshed_by_id[previous_dest["id"]]
 
     # Only eleven bodies changed after the August 17 Commons update. Title-only
     # changes retain their already translated Irving bodies.
@@ -399,8 +429,9 @@ def main() -> None:
         actual = canvas.paged(
             f"/courses/{COURSE_ID}/modules/{dest_module['id']}/items?per_page=100"
         )
-        assert set(expected_ids) == {item["id"] for item in actual}
-        if expected_ids != [item["id"] for item in actual]:
+        canonical_actual = [item for item in actual if not is_local_item(item)]
+        assert set(expected_ids) == {item["id"] for item in canonical_actual}
+        if expected_ids != [item["id"] for item in canonical_actual]:
             for position, item_id in enumerate(expected_ids, start=1):
                 canvas.request(
                     "PUT",
@@ -413,7 +444,9 @@ def main() -> None:
     assert set(verify_modules) == set(current_modules)
     for source_module in current["modules"]:
         dest_module = verify_modules[source_module["name"]]
-        actual = verify_items[dest_module["id"]]
+        actual = [
+            item for item in verify_items[dest_module["id"]] if not is_local_item(item)
+        ]
         assert item_signature(actual) == item_signature(source_module["items"]), (
             f"Final signature mismatch in {source_module['name']}"
         )
