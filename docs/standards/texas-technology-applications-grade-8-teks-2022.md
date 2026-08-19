@@ -19,7 +19,7 @@ The state’s guidance in §126.19(b)(4) applies: statements containing **includ
 
 ## §126.19(c). Knowledge and skills
 
-### (1) Computational thinking--foundations
+### §126.19(c)(1). Computational thinking--foundations
 
 The student explores the core concepts of computational thinking, a set of problem-solving processes that involve decomposition, pattern recognition, abstraction, and algorithms. The student is expected to:
 
@@ -30,7 +30,7 @@ The student explores the core concepts of computational thinking, a set of probl
 - **§126.19(c)(1)(E):** develop, compare, and improve algorithms for a specific task to solve a problem; and
 - **§126.19(c)(1)(F):** analyze the benefits of using iteration (code and sequence repetition) in algorithms.
 
-### (2) Computational thinking--applications
+### §126.19(c)(2). Computational thinking--applications
 
 The student applies the fundamentals of computer science. The student is expected to:
 
@@ -38,7 +38,7 @@ The student applies the fundamentals of computer science. The student is expecte
 - **§126.19(c)(2)(B):** use a software design process to create text-based programs with nested loops that address different subproblems within a real-world context; and
 - **§126.19(c)(2)(C):** modify and implement previously written code to develop improved programs.
 
-### (3) Creativity and innovation--innovative design process
+### §126.19(c)(3). Creativity and innovation--innovative design process
 
 The student takes an active role in learning by using a design process and creative thinking to develop and evaluate solutions, considering a variety of local and global perspectives. The student is expected to:
 
@@ -46,7 +46,7 @@ The student takes an active role in learning by using a design process and creat
 - **§126.19(c)(3)(B):** discuss and implement a design process that includes planning, selecting digital tools to develop, test, and evaluate design limitations, and refining a prototype or model; and
 - **§126.19(c)(3)(C):** identify how the design process is used in various industries.
 
-### (4) Creativity and innovation--emerging technologies
+### §126.19(c)(4). Creativity and innovation--emerging technologies
 
 The student demonstrates a thorough understanding of the role of technology throughout history and its impact on societies. The student is expected to:
 
@@ -54,22 +54,22 @@ The student demonstrates a thorough understanding of the role of technology thro
 - **§126.19(c)(4)(B):** evaluate and predict how global trends impact the development of technology; and
 - **§126.19(c)(4)(C):** transfer current knowledge to the learning of newly encountered technologies.
 
-### (5) Data literacy, management, and representation--collect data
+### §126.19(c)(5). Data literacy, management, and representation--collect data
 
 The student uses advanced digital strategies to collect and represent data. The student is expected to:
 
 - **§126.19(c)(5)(A):** compare and contrast data types, including binary, integers, real numbers, Boolean data, and text-based representations; and
 - **§126.19(c)(5)(B):** apply appropriate search strategies, including keywords, Boolean operators, and limiters, to achieve a specified outcome that includes a variety of file formats.
 
-### (6) Data literacy, management, and representation--organize, manage, and analyze data
+### §126.19(c)(6). Data literacy, management, and representation--organize, manage, and analyze data
 
 The student uses digital tools to transform data, make inferences, and predictions. The student is expected to use digital tools in order to transform data, analyze trends, and predict possibilities and develop steps for the creation of an innovative process or product.
 
-### (7) Data literacy, management, and representation--communicate and publish results
+### §126.19(c)(7). Data literacy, management, and representation--communicate and publish results
 
 The student creates digital products to communicate data to an audience for an intended purpose. The student is expected to use digital tools to communicate and publish data from a product or process to persuade an intended audience.
 
-### (8) Digital citizenship--social interactions
+### §126.19(c)(8). Digital citizenship--social interactions
 
 The student understands different styles of digital communication and that a student's actions online can have a long-term impact. The student is expected to:
 
@@ -77,7 +77,7 @@ The student understands different styles of digital communication and that a stu
 - **§126.19(c)(8)(B):** create and publish a formal digital communication for a global audience using appropriate digital etiquette; and
 - **§126.19(c)(8)(C):** collaborate and publish for a global audience on digital platforms such as recording and editing videos using appropriate formal and informal digital etiquette.
 
-### (9) Digital citizenship--ethics and laws
+### §126.19(c)(9). Digital citizenship--ethics and laws
 
 The student recognizes and practices responsible, legal, and ethical behavior while using digital tools and resources. The student is expected to:
 
@@ -86,21 +86,21 @@ The student recognizes and practices responsible, legal, and ethical behavior wh
 - **§126.19(c)(9)(C):** create citations and cite sources for a variety of digital forms of intellectual property; and
 - **§126.19(c)(9)(D):** evaluate the bias of digital information sources, including websites.
 
-### (10) Digital citizenship--privacy, safety, and security
+### §126.19(c)(10). Digital citizenship--privacy, safety, and security
 
 The student practices safe, legal, and ethical digital behaviors to become a socially responsible digital citizen. The student is expected to:
 
 - **§126.19(c)(10)(A):** analyze real-world scenarios to identify cybersecurity threats and propose ways to prevent harm; and
 - **§126.19(c)(10)(B):** evaluate scenarios or case studies to identify warning signs of a cyberbullying victim such as withdrawal or lack of sleep and predict the outcomes for both the victim and the bully.
 
-### (11) Practical technology concepts--processes
+### §126.19(c)(11). Practical technology concepts--processes
 
 The student evaluates and selects appropriate methods or techniques for an independent project and identifies and solves common hardware and software problems using troubleshooting strategies. The student is expected to:
 
 - **§126.19(c)(11)(A):** combine various file formats for a specific project or audience; and
 - **§126.19(c)(11)(B):** share and seek feedback on files in various formats, including text, raster and vector graphics, video, and audio files.
 
-### (12) Practical technology concepts--skills and tools
+### §126.19(c)(12). Practical technology concepts--skills and tools
 
 The student leverages technology systems, concepts, and operations to produce digital artifacts. The student is expected to:
 

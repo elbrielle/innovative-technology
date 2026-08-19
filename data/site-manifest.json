@@ -9,7 +9,7 @@
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "1bd9e12d04154c786cb4f5618884525465993ece5afacd306556ab5768d36f7f"
+      "sha256": "3160d3a7733d3a0a1f5efc45cd1ca312a59ec82bbb2644865a524e06530a9a1d"
     },
     "index.html": {
       "kind": "index",
@@ -2651,11 +2651,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "d82c37603a64e2a78bd99fdbd1ab2911c93c8e80354e32ddc672cd7552b9fd7d"
+      "sha256": "83c7fcea8fe782efee1b07725d3121c8782ce8c66ff77891a47d834c9f6e31d2"
     }
   },
   "schema_version": 1,
-  "site_sha256": "9a32d249986ba0f2302294450cf28e2a87f9bf3afd62f104550cc6e983c628af",
+  "site_sha256": "d25fb42fb996cabda4c515c8d7a4db0b5c9350581d1a5fafe484be5b66513336",
   "snapshot_sha256": "6638a622f8babdef457275dc082b6bd79d387f941317d9407ec42fb64a408510",
   "unresolved": []
 }
