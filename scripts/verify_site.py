@@ -91,6 +91,39 @@ def main() -> None:
 
     modules = snapshot["modules"]
     items = [item for module in modules for item in module["items"]]
+    facilitator_guides = [
+        item
+        for item in items
+        if re.match(r"^Facilitator(?:'s)? Guide:", item.get("title", ""), re.I)
+    ]
+    contract_patterns = {
+        "Topic": r"<strong>\s*Topic\s*:",
+        "Objective": r"<strong>\s*(?:Student )?Objective\s*:",
+        "TEKS": r"<strong>\s*(?:TEKS|Essential TEKS)\s*:",
+        "Demonstration of learning": r"<strong>\s*(?:Demonstration of learning|Show Your Learning)\s*:",
+    }
+    for guide in facilitator_guides:
+        body = (guide.get("resource") or {}).get("body") or ""
+        missing_fields = [
+            name
+            for name, pattern in contract_patterns.items()
+            if not re.search(pattern, body, re.I)
+        ]
+        if missing_fields:
+            failures.append(
+                f"Facilitator guide {guide['id']} is missing its daily learning contract fields: "
+                + ", ".join(missing_fields)
+            )
+    stale_teks_guides = [
+        guide["id"]
+        for guide in facilitator_guides
+        if "§127.2" in ((guide.get("resource") or {}).get("body") or "")
+    ]
+    if stale_teks_guides:
+        failures.append(
+            "Facilitator guides contain noncanonical legacy TEKS §127.2: "
+            + ", ".join(map(str, stale_teks_guides))
+        )
     expected_counts = {
         "modules": len(modules),
         "items": len(items),
@@ -221,7 +254,7 @@ def main() -> None:
     if failures:
         print(json.dumps({"status": "FAIL", "failures": failures}, indent=2))
         raise SystemExit(1)
-    print(json.dumps({"status": "PASS", "checks": {**expected_counts, "html_pages": len(html_paths), "public_file_bytes": sum(row['metadata']['size'] for row in snapshot['files'].values()), "unresolved": 0}}, indent=2))
+    print(json.dumps({"status": "PASS", "checks": {**expected_counts, "facilitator_guides_with_daily_contracts": len(facilitator_guides), "html_pages": len(html_paths), "public_file_bytes": sum(row['metadata']['size'] for row in snapshot['files'].values()), "unresolved": 0}}, indent=2))
 
 
 if __name__ == "__main__":
