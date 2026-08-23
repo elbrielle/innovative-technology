@@ -6,6 +6,10 @@ This repository publishes the public reference for the **VILS CTE Smart Solution
 
 Canvas remains the student delivery and grading environment. The site presents the complete ordered course for curriculum review: teacher guides, student directions, assessments, rubrics, linked resources, and approved Canvas files.
 
+## Planning and backlog
+
+The durable curriculum backlog is [`docs/BACKLOG.md`](docs/BACKLOG.md). It records refinement epics, evidence gates, dependencies, and sprint-ready work without changing Canvas or generated public pages.
+
 ## Standards reference
 
 The immutable source record for Grade 8 Technology Applications TEKS is [`docs/standards/texas-technology-applications-grade-8-teks-2022.md`](docs/standards/texas-technology-applications-grade-8-teks-2022.md). It preserves the exact wording of current **19 TAC §126.19(c)**. The matching [VILS learning-contract and alignment pattern](docs/standards/vils-learning-contract-pattern.md) defines how the exact standards, lesson objective, and student evidence appear consistently in Canvas facilitator guides and their public-site equivalents.
