@@ -6,13 +6,13 @@ Consensus source revision: 2026-08-23
 
 Canvas course: `23402`
 
-Current release decision: **HOLD — final four-lens rereview in progress**
+Current release decision: **GO for source merge — Canvas publication not authorized**
 
 ## Current-state boundary
 
 The first 2026-08-22 staging build failed all four independent review lenses because several TEKS claims exceeded student authorship, the new teacher guides were not end to end, grading and quiz evidence were invalid or ambiguous, promised scaffolds were absent, and student/Spanish surfaces were incomplete.
 
-On 2026-08-23, the consensus correction was rebuilt and applied to the same Drive and Canvas identities. The six new Text-Code Bridge module items remain **unpublished**, and the existing RVR publication state remains unchanged. The normal course sync regenerated the public-safe snapshot and mirror and passed live readback. This is corrected staging, not a publication decision: the PR remains draft and the review decision remains HOLD until all four final rereviews return GO or GO WITH FIXES.
+On 2026-08-23, the consensus correction was rebuilt and applied to the same Drive identities and unpublished Canvas item identities. The six new Text-Code Bridge module items remain **unpublished**, and the existing RVR publication state remains unchanged. The normal course sync regenerated the public-safe snapshot and mirror and passed live readback. All four final rereviews now return `GO` on implementation commit `500b6fb`. This is approval for source merge, not authorization to publish Canvas content.
 
 ## Seven-checkpoint evidence model
 
@@ -87,11 +87,9 @@ Current primary references:
 - `python3 scripts/sync_course.py` passed snapshot, generated-site, public-asset, and live-Canvas agreement: 34 modules, 509 items, 201 public files, and zero unresolved links.
 - Desktop and 390 px browser checks found one curriculum body per new page, no student-facing statutory TEKS on student routes, and no horizontal overflow.
 
-## Remaining merge gate
+## Completed merge review
 
-1. Complete the independent final teacher, district, student, and design/language rereviews against the rendered Drive, Canvas-snapshot, and generated-site state.
-2. Record their evidence and consensus in `docs/reviews/coding-foundations-retrofit-2026-08-23.md`.
-3. Require every decision to be `GO` or `GO WITH FIXES`, then pass `scripts/verify_curriculum_review_gate.py` and CI before requesting merge.
+The teacher implementation, district curriculum, student experience, and design/language rereviews each returned `GO` against the same final rendered Drive, Canvas-snapshot, and generated-site state. Their adversarial consensus and exact artifact identities are recorded in `docs/reviews/coding-foundations-retrofit-2026-08-23.md`. The repository review gate and CI must still pass before merge; neither step authorizes Canvas publication.
 
 ## Publication-only gates
 
