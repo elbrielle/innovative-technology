@@ -8,6 +8,24 @@ Use the [canonical Grade 8 TEKS transcript](texas-technology-applications-grade-
 
 **Key:** `D` = demonstrated by the named product or performance; `P` = practiced with visible evidence; `I` = introduced only; `Optional` = only claim the alignment when the optional route is assigned; `N/A` = do not claim Grade 8 Technology Applications alignment for the current module as a whole.
 
+## 2026-08-23 coding-foundations staging addendum
+
+This remains the dated 2026-08-19 **live-course** audit. Do not rewrite its table as though later source work were already taught or published.
+
+The first 2026-08-22 Coding Foundations staging build was reviewed through teacher, district, student, and design lenses; all four returned **HOLD**. The corrected replacement is now applied to unpublished Canvas staging, matching Drive artifacts, and the generated mirror. The table below records the staged evidence contract, but none becomes an active/taught `D` claim until final rereview passes, the route is deliberately published, and students complete the threshold evidence:
+
+| Prospective learning moment | Demonstrated only when threshold is met | Practiced | Boundary |
+| --- | --- | --- | --- |
+| Intro Day 1 / Passport 1 | (1)(E) | (1)(A) | A Code.org route is not automatically a real-world problem. |
+| Intro Day 2 / Passport 2 | (1)(F) through the shared route example | (1)(B), (1)(C) | Hour of Code is transfer only; do not infer variables/data types from a student-selected activity. |
+| Intro Day 3 / Passport 3 | (1)(E), (2)(C) | — | Requires three controlled test records and matching pseudocode revision. |
+| Game Remix / Passport 4 | (2)(C), (3)(B) | (1)(E) | Requires a recorded feature test and revision, not planning alone. |
+| Text Day 1 / Passport 5 | (2)(C) | (2)(A), (2)(B) | Reading supplied variables/loops is practice. |
+| Text Day 2 / Passport 6 | (2)(A), (2)(B), (2)(C) | (1)(A), (1)(E) | Requires student-completed typed declarations/operations and both loops, a real constraint, first run, and required improvement. |
+| RVR / Passport 7 plus mission sheet | (1)(D), (1)(E), (2)(C) | — | Passport holds problem/solutions/selection/roles/timeline/pseudocode; mission sheet holds sketch/ID/runs/revision/reflection. |
+
+Facilitator guides retain exact statutory language and I/P/D status. Student pages use bilingual plain-language Topic / I can / Show Your Learning / Now / Next / Done blocks and do not display statutory lists. `data/daily-learning-contracts.json` now includes the two Text-Code Bridge facilitator guides (module items `2661807` and `2661809`) using the same staged topics, objectives, TEKS, and demonstrations of learning.
+
 | # | Module | Topic | Student objective and current demonstration of learning | Essential TEKS | Supporting TEKS | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Before You Begin (Week 0) | Digital workspace and responsible use | Set up the course workspace and follow the lab contract; evidence: Xello/dashboard setup and class/lab-contract completion. | §126.19(c)(9)(A) | §126.19(c)(12)(B) | I |

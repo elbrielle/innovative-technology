@@ -1,4 +1,5 @@
-// Emergency Supply Grid - teacher exemplar
+// Emergency Supply Grid - TEACHER EXEMPLAR / ALTERNATE FINISHED SOLUTION
+// Do not use this as the Day 1 starter or Day 2 student-authorship scaffold.
 // Mission A: a 4 x 5 priority grid that remains visible in the simulator.
 
 let missionName: string = "Storm Supply Grid"

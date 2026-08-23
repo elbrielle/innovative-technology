@@ -56,7 +56,7 @@ The Canvas token is read from `CANVAS_TOKEN` or `~/.canvas_token`. Never commit 
 1. Run `python3 scripts/sync_course.py`.
 2. Review `git diff --stat` and `data/site-manifest.json`.
 3. Run the responsive visual audit described in [`docs/SYNC_WORKFLOW.md`](docs/SYNC_WORKFLOW.md).
-4. Require an independent adversarial review for instructional, visual, privacy, and link issues.
+4. Run the independent [four-lens curriculum review gate](docs/CURRICULUM_REVIEW_GATE.md) and record consensus in `docs/reviews/`. Any `HOLD` keeps the PR unmerged.
 5. Commit and push `main`. GitHub Pages deploys from the existing repository configuration.
 6. Verify the public URL and several stable lesson URLs after deployment.
 

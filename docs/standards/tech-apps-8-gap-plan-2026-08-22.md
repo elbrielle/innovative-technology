@@ -1,7 +1,11 @@
 # Tech Apps 8 / iCEV Gap-and-Fold Plan
 
-Research date: 2026-08-22  
-Standards basis: 19 TAC §126.19, Technology Applications, Grade 8, Adopted 2022  
+Research date: 2026-08-22
+
+Consensus source correction: 2026-08-23
+
+Standards basis: 19 TAC §126.19, Technology Applications, Grade 8, Adopted 2022
+
 Course basis: Canvas `23402`, 34-module snapshot generated 2026-08-21
 
 ## Executive finding
@@ -33,6 +37,12 @@ It found thin, indirect, or optional evidence for:
 - data publication (several strong data projects, but an audience-facing data product is not consistently required);
 - local versus remote storage selection.
 
+### Coding-foundations correction boundary
+
+The first 2026-08-22 Coding Foundations staging build did not close the pseudocode/text-code gaps with defensible evidence. A four-lens review placed it on **HOLD**. In particular, identifying supplied variables did not demonstrate (2)(A), retaining supplied nested loops did not demonstrate (2)(B), and the five-page Passport combined Game, text-code, and RVR evidence ambiguously.
+
+The corrected unpublished Canvas staging now specifies seven distinct checkpoints and a two-day bridge, with matching Drive artifacts and a regenerated public mirror. Day 1 demonstrates only (2)(C) while practicing (2)(A)/(B). Day 2 may demonstrate (2)(A)/(B)/(C) only when the student authors typed declarations and operations across string, number, and Boolean data, writes both complete nested-loop structures from a bounded scaffold, documents a real screen constraint and pseudocode, and records a required evidence-based improvement. Staging and parity are verified; these remain proposed course claims until the final four-lens rereview passes and the route is deliberately published and taught.
+
 ## What the iCEV course signals
 
 The official public 8th-grade course list includes four-unit sequences for Google Docs, Sheets, and Slides plus Fundamentals of Computational Thinking, Data, Digital Citizenship, File Management & Cloud Computing, Keyboarding, Programming, Using Technology, Cyber Threats, and Technology: Past, Present & Future.
@@ -63,9 +73,9 @@ The [Default Term source audit](verizon-default-term-gap-source-audit-2026-08-22
 
 | TEKS | Current VILS evidence state | Recommended response | Placement | Added time |
 | --- | --- | --- | --- | --- |
-| (1)(A)–(D), (1)(F) pseudocode, decomposition, patterns, abstraction, collaborative plan/timeline, iteration | Explicit pseudocode is absent, but the active course already has a natural progression: Intro to CS Day 1 asks students to state an ordinary-language algorithm before Code.org blocks; Day 2 identifies sequence/loop/event patterns; Day 3 predicts, tests, and records revisions; RVR Day 1 plans and revises a robot drawing. The Default Term AIR course also retains an unpublished, unmoduled **Permission to Come Aboard with Algorithms** route task. | Retrofit one reusable **Pseudocode Passport** across the existing arc: structured pseudocode before blocks on Day 1; pattern, repetition, and variable annotation on Day 2; failed-test revision on Day 3; feature planning in Video Game Design; and collaborative roles/timeline plus literal peer execution in RVR. Use the archived AIR narrative/video as an optional mini-lesson, worked example, or scaffold—not automatically as a new unit. | Intro to CS Days 1–3 + Video Game Design + RVR | About 15–25 minutes on the launch day, then 5–15 minute embedded checks |
-| (2)(A) named variables, multiple data types, operations | Variables appear as scientific-test language, not code/data-type evidence. | Add a focused variables/data-types build inside MakeCode Arcade or another approved environment. Require names, at least three data types, and operations. | Video Game Design | 1 period |
-| (2)(B) text-based programs with nested loops solving subproblems | No explicit evidence; HTML/CSS does not satisfy loops, and block-code evidence cannot be relabeled as text-based programming. | Create a bounded original bridge after students have block-code experience. Prefer an approved environment that can display equivalent blocks and editable text, but require students to work in the text view, decompose a real-world context, implement nested loops, test, and revise. Plan one core period plus one scaffold/extension period rather than an entire unit. | Immediately after Video Game Design or before RVR | 1–2 periods |
+| (1)(A)–(D), (1)(F) pseudocode, decomposition, patterns, abstraction, collaborative plan/timeline, iteration | Corrected unpublished staging separates Passport 1 Decompose, 2 Patterns, 3 Revise, 4 Game Plan, 5 Trace/Repair, 6 Create/Improve, and 7 RVR Team Plan. This becomes active evidence only after final review, publication, and student completion. | Use Passport 1–3 inside Intro to CS; Passport 4 inside Game Remix; Passports 5–6 in the two-day text bridge; and Passport 7 for only the RVR problem/solutions/selection/roles/timeline/pseudocode. Keep RVR sketch/ID/runs/revision/reflection on the existing mission sheet. Use the shared route example—not an arbitrary Hour of Code choice—for iteration/generalization evidence. Claim (1)(A) only when the context is genuinely real-world; claim (1)(D) only through the complete Passport 7 plus mission evidence. | Intro to CS Days 1–3 + Video Game Design + RVR | 10–20 embedded minutes per named lesson; no duplicate worksheet |
+| (2)(A) named variables, multiple data types, operations | Day 1 identification of supplied declarations is practice only. | On Day 2, require students to construct or meaningfully complete named string, number, and Boolean variables and use arithmetic, comparison, and Boolean operations that affect the program. Supplied sprite/API code earns no authorship credit. | Video Game Design text-code Day 2 | 1 period |
+| (2)(B) text-based programs with nested loops solving subproblems | Day 1 trace/repair is practice for reading nested loops and demonstration for (2)(C), not creation evidence for (2)(B). | Give a bounded scaffold that supplies APIs, sprite art, and the two inner-loop body lines as comments but requires students to author both complete nested-loop structures. Students document a shelter/distribution problem, 160 × 120 screen constraint, row/column subproblems, pseudocode, prediction, first run, required revision, and explanation. | Immediately after Video Game Design | Day 1 trace/repair + Day 2 create/improve |
 | (3)(A) goals, calculated risk-taking, tolerance | Design process is strong; character-trait evidence is not explicit. | Add a goal/risk/reflection card to Ready, Set, Design and Capstone. | Design Thinking + Capstone | 10–15 minutes twice |
 | (4)(A)–(C) history, global trends, prediction, transfer | Tool transfer is often practiced; history/trend evaluation is not explicit. Verizon's Default Term DPI lesson **The Evolution of Digital Tools** is a credible source for change-over-time and future-tool thinking, while the Immersive Media lesson **How We Explore Our World** adds media-history context. Neither fully handles global trends. | Adapt the DPI lesson into Graphic Design with the 1960s, add evidence-based global trend cards and a prediction, then reuse a transfer-to-new-tool reflection. Use the IM lesson only when it improves the interactive-media route. | Graphic Design | 1 period plus short transfer cards |
 | (5)(A), (6), (7) data types, transform/analyze/predict, communicate data | AI/SPIKE investigations are strong; data types and audience-facing publication are uneven. | Move SPIKE trials into Sheets; require data-type identification, formulas, graph, trend/prediction, and a published recommendation. | SPIKE PRIME | 1 added period or redesign within five days |
@@ -103,8 +113,8 @@ Examples:
 
 ### Folded additions
 
-- Intro to CS Days 1–3: structured pseudocode before blocks, pattern/variable annotation, and revision after testing.
-- Video Game Design/RVR: reuse the same planning artifact for abstraction, feature planning, collaborative roles/timeline, literal execution, and iteration; use Permission to Come Aboard only as an optional source/scaffold.
+- Intro to CS Days 1–3: Passport 1 decomposition/literal test, Passport 2 shared-example patterns/iteration/generalization, and Passport 3 controlled revision. Do not require variables/data types from an Hour of Code activity that does not expose them.
+- Video Game Design/RVR: Passport 4 Game Plan, Passport 5 Trace/Repair, Passport 6 Create/Improve, and Passport 7 RVR Team Plan. The RVR mission sheet retains physical-run evidence so students do not complete two copies of the same record. Use Permission to Come Aboard only as an optional source/scaffold.
 - Graphic Design: technology history/trends, intellectual property, digital footprint.
 - SPIKE: Sheets, data types, formulas, charts, analysis, prediction, published recommendation.
 - Capstone/portfolio: source/license record, storage/retrieval proof, final data or evidence communication.

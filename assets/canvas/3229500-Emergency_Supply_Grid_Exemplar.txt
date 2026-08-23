@@ -1,15 +1,20 @@
-// Emergency Supply Grid - Day 2 core starter
-// Change the configuration values, predict, run, and revise.
+// Emergency Supply Grid - TEACHER EXEMPLAR / ALTERNATE FINISHED SOLUTION
+// Do not use this as the Day 1 starter or Day 2 student-authorship scaffold.
+// Mission A: a 4 x 5 priority grid that remains visible in the simulator.
 
-let missionName: string = "Emergency Supply Grid"
-let rows: number = 3
-let columns: number = 4
-let xSpacing: number = 35
-let ySpacing: number = 35
+let missionName: string = "Storm Supply Grid"
+let rows: number = 4
+let columns: number = 5
+let xSpacing: number = 28
+let ySpacing: number = 25
 let priorityMode: boolean = true
 let suppliesPlaced: number = 0
 
-scene.setBackgroundColor(1)
+if (priorityMode) {
+    scene.setBackgroundColor(2)
+} else {
+    scene.setBackgroundColor(1)
+}
 game.splash(missionName)
 
 for (let row = 0; row < rows; row++) {
@@ -21,7 +26,7 @@ for (let row = 0; row < rows; row++) {
             2 4 4 4 2
             . 2 2 2 .
         `, SpriteKind.Food)
-        supply.setPosition(25 + column * xSpacing, 25 + row * ySpacing)
+        supply.setPosition(20 + column * xSpacing, 20 + row * ySpacing)
         suppliesPlaced += 1
     }
 }

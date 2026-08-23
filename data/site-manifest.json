@@ -4,16 +4,16 @@
     "items": 509,
     "modules": 34,
     "protected_items": 1,
-    "public_files": 200
+    "public_files": 201
   },
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "05323e5f44770330c53ce1b6a19bf4c639cbf912aa76872768453f80a2c14301"
+      "sha256": "8aa566b178882df1bbdc8937f560894c5284b9964eef0257b400bad4b34476d1"
     },
     "index.html": {
       "kind": "index",
-      "sha256": "134fee7727e7bffa7ef0cf1e0b45699ef223b74292a470aa6553abd015b800fd"
+      "sha256": "bc5774e627f1f1aadfaf6881d600ec54f1787c210d41a7eb5c8b6f70e4e0c540"
     },
     "lessons/2633980.html": {
       "canvas_body_sha256": "1548eb11a399c543b02c96c9c9ed55375caddf3ce61df2e5cba274f3fa68e239",
@@ -30,11 +30,11 @@
       "sha256": "aa9bb1d9ba350d31ed88db00d0ef4c0e8e0a88e500d9b1861dc23925e139c923"
     },
     "lessons/2633982.html": {
-      "canvas_body_sha256": "8f424d78c1a533b2fbf3e3b81269dbc7780df4cb05fb8211a63fffc123875b65",
+      "canvas_body_sha256": "5fed31dad0688506d428bb67c09a3307c3088bb41e32ec8b2a16a8d090530f73",
       "canvas_id": 2633982,
       "kind": "item",
       "public_state": "public",
-      "sha256": "e0375308bdb54e6f7ba12ac6b90ffc0dd0e01a6ca0db55793e81c3e47c726ea0"
+      "sha256": "10cfe658978f73c60e60e41fff058d4073d703085639c295a99586145644d531"
     },
     "lessons/2633983.html": {
       "canvas_body_sha256": "4fc08973d78b1200dab6cd921dd5a18225df91a64498eb6d69140424bb55e5d3",
@@ -772,25 +772,25 @@
       "sha256": "36f2f3895529030200ba57e2233a36a5834a9cd12225d2d696a0e39bf770403c"
     },
     "lessons/2634105.html": {
-      "canvas_body_sha256": "c4a5eb0e1a1c3f4694359cf729ef057242216b950a8b23ca214c9ac84065c160",
+      "canvas_body_sha256": "f2cc5be11d41e6454c888e1c6c0d1949aa39af311da21bbcb4024dbe3364b976",
       "canvas_id": 2634105,
       "kind": "item",
       "public_state": "public",
-      "sha256": "16cf835930c602a4a71b7c3c0d3d7739000ea211ca675add3b5a28764c8dd55a"
+      "sha256": "2de5e1db429d0fc4d89cb8186a81c7f6cc8e6f5e1ea001af7693d36c53ed4e15"
     },
     "lessons/2634106.html": {
-      "canvas_body_sha256": "1cf88606fadd89449b9f4788468ca0df0bf5e5c89ba0c184a417a8cb526446f3",
+      "canvas_body_sha256": "5797755609e6c50f78c72ac71df6f9e96169e6283fcf125d78346601eecaef9e",
       "canvas_id": 2634106,
       "kind": "item",
       "public_state": "public",
-      "sha256": "02b402a8babc83b91adb613458debbc1916ec61ae885d2140a4b00d4177fbcde"
+      "sha256": "4e2b2e48dad5011dd3572201592321a9af458dfa90168d3e6c5fcdfa044cfda4"
     },
     "lessons/2634107.html": {
-      "canvas_body_sha256": "43d706647a0c05aecb95c723c2bec7b64406dbd915a2a5356e67dad58352b478",
+      "canvas_body_sha256": "5c03739f60d3a1733f689639865f033d9a2c727b130c239781414de03fa0a22d",
       "canvas_id": 2634107,
       "kind": "item",
       "public_state": "public",
-      "sha256": "3666aea6b4fb95947241dcf8594fb9ca63c2d699aa973d34221563abc4af2199"
+      "sha256": "12a4ae084ee4743277464209e391315047d7d81874a0f6a8f9be7c4ef14db186"
     },
     "lessons/2634108.html": {
       "canvas_body_sha256": "42001b2b439ad42555f4d0a8088fc4b390186140bc307bbc20f8c9c244054e0d",
@@ -849,11 +849,11 @@
       "sha256": "2c7c8da91ed0c21b5de7453f2e194b239a1b56714f9310a141f4d3d66a82f594"
     },
     "lessons/2634117.html": {
-      "canvas_body_sha256": "faf8a4fbf6cdc3c8ae9d077d65680a2911e8ec5bfe9ccf7af42266180b54ad9f",
+      "canvas_body_sha256": "1f27f9704b2bddc9f70f61762010d8cbbfb5f8f49686f0bc59ccb1365fd5f0ff",
       "canvas_id": 2634117,
       "kind": "item",
       "public_state": "public",
-      "sha256": "767a2610db1897748b959cbec423eab31c19ad244ef4a5e626f687a1b8448d6f"
+      "sha256": "443bdedfaba97a324c4089f0ef254c3be61a960cc1d103f354497ff8e068f200"
     },
     "lessons/2634118.html": {
       "canvas_body_sha256": "ff80991269faca039b5ed484dba3fe1ff7d6f14b07adbf10828fb2b451b28c32",
@@ -863,11 +863,11 @@
       "sha256": "7dbdfab87fded132273900bc4bd0cc0c6824c4d19c16720eb056911281de3980"
     },
     "lessons/2634119.html": {
-      "canvas_body_sha256": "412d6627786b9497ed605a3d7aa4304ab6ae57f21ad19862cbb60fc13323c6a3",
+      "canvas_body_sha256": "d79177b6afed24d89f7f8744aed9c538fd80bdb667712535298318d52c3e2e3c",
       "canvas_id": 2634119,
       "kind": "item",
       "public_state": "public",
-      "sha256": "de9d23fea6e2b7d9c5c8c8207ce47f3e3804cd030833064178ee6519976cc80a"
+      "sha256": "b4a70946ce57f0ae5219aca131076eefd18260dddcd66cb4dea64006105bb0fe"
     },
     "lessons/2634120.html": {
       "canvas_body_sha256": "a0ca972996bbbe53cb1dc2ecbcf8b78e32f1943f14214a366f26b84156f6c105",
@@ -1171,11 +1171,11 @@
       "sha256": "4f7a7bee7cfaf11aa2350dcb6794a259a4a41a180ca0c61bf7fe0eb40381a218"
     },
     "lessons/2634168.html": {
-      "canvas_body_sha256": "8b831fbdf0d8f35acebf9e672283911768855a757bf4eed1819380ea3eb1f0a6",
+      "canvas_body_sha256": "62c9bbebabc2fbe6fcaca2bec278cd759b2c13165275516ca7d9b0785be9c5f4",
       "canvas_id": 2634168,
       "kind": "item",
       "public_state": "public",
-      "sha256": "e2b9fb41ad0ad15025f5bf1336e15216625155f1ea09d289b49b9603bf4e5992"
+      "sha256": "d379578f99d33394c5068d2af35612269fe4946b2d230182ada9a8203ba892c0"
     },
     "lessons/2634169.html": {
       "canvas_body_sha256": "e483617dc3420d3348078c194be64e5b71e9c526544a951f4620ebc98762ef95",
@@ -2711,25 +2711,25 @@
       "sha256": "a224fce22ee91aac97271d33daa306386c08191424558c442ea149a71bedb56e"
     },
     "lessons/2657956.html": {
-      "canvas_body_sha256": "8dae9c2c1c41164204eaf0259e6976bfcdb1443c89a29ce318a3399313f11def",
+      "canvas_body_sha256": "82ce2f94c3c1f98490900ece389633737821789cc0b2f7c69e99eab7445e2e51",
       "canvas_id": 2657956,
       "kind": "item",
       "public_state": "public",
-      "sha256": "fa53127a355f3fc54cfe93c04b3a978d97fd89469e72333ff8f7e31cc957fd36"
+      "sha256": "95427d390fa08942630f5b7f012093f6514c2193cdb73a38c2ac5227cb996efe"
     },
     "lessons/2657957.html": {
-      "canvas_body_sha256": "38c62f2433b10b33189cc6d5524b02f83d93277f71f231c22941490da63b7c5f",
+      "canvas_body_sha256": "9f0868074c2c4d8e17677d52a0d07e19e0fd132eb0e40fd9f2e8ad0748973b23",
       "canvas_id": 2657957,
       "kind": "item",
       "public_state": "public",
-      "sha256": "d1aa00a73376a192689f082e6b9eeeb400c22f5f6ba7e6aadf041ac8a86f6e15"
+      "sha256": "8070f8bcba7890298a4adf4a6e4ac8382dd8c68977d02f0397e6a42510fcd0b9"
     },
     "lessons/2657958.html": {
-      "canvas_body_sha256": "6500ec23197092c8459ae4804873c28493a10ee941d6900d8a724679bc167066",
+      "canvas_body_sha256": "df2c12465918f953cd9afdc23930078400d0bf79626783e5ce620b229df825ed",
       "canvas_id": 2657958,
       "kind": "item",
       "public_state": "public",
-      "sha256": "98dd8dc28fbd220f4ff2778d2ca5b7483a5fdb49ed9b96b7fbb391c0996fbfaa"
+      "sha256": "1e07b3eccc1df388de19b1b5e4a375c2acfe1eaa90b87a4ebb949bd55a2a2b48"
     },
     "lessons/2657959.html": {
       "canvas_body_sha256": "7f0a651c97f29c8b952ddc31daa7490573e300a897c9b3df00096102b132490d",
@@ -2795,11 +2795,11 @@
       "sha256": "d63c4699c716197013de694de70fe4c0ba23592df146b63514f46d5b072113d6"
     },
     "lessons/2657968.html": {
-      "canvas_body_sha256": "373fea4ea824546380bb65209e75fb78158b4703253c9527f0a4bf5b0eb92316",
+      "canvas_body_sha256": "d2686bed68b456f473c983a0fbf48018ad6bcfcbeb803a599c4f478feacae885",
       "canvas_id": 2657968,
       "kind": "item",
       "public_state": "public",
-      "sha256": "0908361f0d5d3f14723b5dcd7b6054668a96e6d7887ff33776a48412f96dbfda"
+      "sha256": "3fb27ad160f3d1327b69cac1b85836fd611b81c5fa84a22e0036544556759e06"
     },
     "lessons/2657969.html": {
       "canvas_body_sha256": "4e618aac7b6f9e8bf7b11b1d652b3e9e130100f669782c013c947659a6dcbc6b",
@@ -2928,11 +2928,11 @@
       "sha256": "5ce264e886dba046e336f79eee67578f68ebbc18a023b64b1d270d8b67ad5c70"
     },
     "lessons/2657987.html": {
-      "canvas_body_sha256": "613ab950f7878c58210ca54cf8a4982f91d42233b2d75703a387e9dcb9a4f8d9",
+      "canvas_body_sha256": "315bf0df968c40d96fd7221c4ff7b47670414e56c3f9768cf96e4609c040c60e",
       "canvas_id": 2657987,
       "kind": "item",
       "public_state": "public",
-      "sha256": "564f2605fc48ff7307648cd7cc7c1863ba367d4165110abb43a5c551c5170c2a"
+      "sha256": "870231afe7b66b5a4aa04a67084eb8904bdd4ced757be9dcf653a03a321b2d36"
     },
     "lessons/2657988.html": {
       "canvas_body_sha256": "8429d779b8ee380a6385602e64993456b12894e504fd4a031fb1bb30e8e33b02",
@@ -3089,39 +3089,39 @@
       "sha256": "1b68ba5309977c825318415d5e4c8e3e302b35ce7f915651e493d61ae546ab8e"
     },
     "lessons/2661807.html": {
-      "canvas_body_sha256": "a254417b6edec6054492bf32722d4fa784d1b704e3213f95ace7768732ace0f1",
+      "canvas_body_sha256": "a9969ab176e2db1b681734e58cc64ebfdc1af875c4c560d4501de9fe1704f9ed",
       "canvas_id": 2661807,
       "kind": "item",
       "public_state": "public",
-      "sha256": "262533c02555cd622c076e71f27469f34b4b3089c3db4ce6b59f3e6f3879fce6"
+      "sha256": "8d6432d80cd1b4ae52642013042cb2dc6d0263bd4c543cad6f7cff922d2efa34"
     },
     "lessons/2661808.html": {
-      "canvas_body_sha256": "b0cd562a3023e8afbbc89edf890a8622bddb35d95c5464d6fee34b0405f10f7f",
+      "canvas_body_sha256": "b4c6843c07e4ff3868344143a6424f6be1dfa42e379f1ea10ed23dc2077b309f",
       "canvas_id": 2661808,
       "kind": "item",
       "public_state": "public",
-      "sha256": "d1773768d5dd02f51250147a2b10cfeb1e2f8c455ca274b774c731767aa55fb8"
+      "sha256": "fddb17c6fafad50f15209bb1a4726ba13e89e91d1fb81776d394ef2f770ed33c"
     },
     "lessons/2661809.html": {
-      "canvas_body_sha256": "b6b5bbce3a5029c912efd6219e11e0c3c2d7473e2346a1075c1d64cb213c5cde",
+      "canvas_body_sha256": "32b757a5bc13e91473f613fde1b155651452298104202b56efc77456649e38ff",
       "canvas_id": 2661809,
       "kind": "item",
       "public_state": "public",
-      "sha256": "d65aac3d4f3ca7a04c1e3d7625a7cfc0b6583bf4f18b9f433d8958a547a8657b"
+      "sha256": "5dd1e95c2075347db8a8a20f7e1a0ae9c65ec46acf300705962ae8bbcfc08f8e"
     },
     "lessons/2661810.html": {
-      "canvas_body_sha256": "62be152768cfb16e3b971f83fc29487838a28a328026e3a1f841423dc033566c",
+      "canvas_body_sha256": "4825f98e0bae38ab589addfa79d1823a4a40885c3d974730f0bd5aad7c5cd2ff",
       "canvas_id": 2661810,
       "kind": "item",
       "public_state": "public",
-      "sha256": "80740492f8cad0540038af75788c3247ac5a84d13186e10a54c19892fadaa5af"
+      "sha256": "637c25f0233633e0f341d0e512ec789c1b11685bca9ab0064df15298727c4987"
     },
     "lessons/2661811.html": {
-      "canvas_body_sha256": "d4d18b6948b5b0d366a839efe49d279b51d3ca6c6acea110a407adf7c2db8b61",
+      "canvas_body_sha256": "21d8a56a66cc9c9a0adf819217ed2580abf12b6470e762306b3fb82dca14e870",
       "canvas_id": 2661811,
       "kind": "item",
       "public_state": "public",
-      "sha256": "a912eef5d9f364d543227ac58331601caf6a5aad3430409ea892e890e719d7b4"
+      "sha256": "6a1a041a3932ee4b77558a0119f3cca6cf8c957c147b8ef4d1efcdad9d8b0d9b"
     },
     "lessons/augmented-reality-with-mergecube-activity-lesson-1-the-basic.html": {
       "canvas_id": 2634252,
@@ -3356,7 +3356,7 @@
     "modules/72574.html": {
       "canvas_id": 72574,
       "kind": "module",
-      "sha256": "acf2daaf789251ed6452a7ced058b191672f26df55c33b7e31e2234f8470e5c5"
+      "sha256": "088e76cdc1a2ce9e591251c8b3373d4425d3a67a67081bd801be94af82a81da9"
     },
     "modules/72575.html": {
       "canvas_id": 72575,
@@ -3470,11 +3470,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "b242686e8c77ad88c238dd85c6e7eeebe5029d78d92092fc60e99196b420193a"
+      "sha256": "4f6f8168c52f9c0dbaad6b72996141d473bf8e4ab172e24b90807c31f43b55c1"
     }
   },
   "schema_version": 1,
-  "site_sha256": "3548c4224f883897e910e765c48130bb5df3fc1df0029dc50415759bcc7906df",
-  "snapshot_sha256": "7e8701e94740ce3b1a44c08246ddac4c31bf21ef919753d21cddb694a00712c4",
+  "site_sha256": "e287c13695369a9b235ccd0df51653ca016004edae33b8f5012e5aa4f9b19ed9",
+  "snapshot_sha256": "874d4b3d7a4959d096eae7a9a502ecf39bec8e42e11c2d53ea405cab8689e6c6",
   "unresolved": []
 }

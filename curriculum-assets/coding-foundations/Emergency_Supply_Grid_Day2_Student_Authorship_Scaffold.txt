@@ -1,0 +1,63 @@
+// Emergency Supply Grid - Day 2 student-authorship scaffold
+// Cuadrícula de suministros - Día 2: andamiaje de autoría estudiantil
+// The MakeCode setup and sprite helper are complete.
+// La configuración de MakeCode y la función del objeto están completas.
+// Your program will not compile until you complete every TODO.
+// El programa no funcionará hasta que completes cada TODO / PENDIENTE.
+// Choose one real constraint route:
+// Escoge una ruta con restricciones reales:
+// Mission A: 4 rows, 5 columns, xSpacing 28, ySpacing 25
+// Misión A: 4 filas, 5 columnas, xSpacing 28, ySpacing 25
+// Mission B: 2 rows, 6 columns, xSpacing 24, ySpacing 50
+// Misión B: 2 filas, 6 columnas, xSpacing 24, ySpacing 50
+
+function placeSupply(row: number, column: number, xSpacing: number, ySpacing: number) {
+    let supply = sprites.create(img`
+        . 2 2 2 .
+        2 4 4 4 2
+        2 4 5 4 2
+        2 4 4 4 2
+        . 2 2 2 .
+    `, SpriteKind.Food)
+    supply.setPosition(20 + column * xSpacing, 20 + row * ySpacing)
+}
+
+scene.setBackgroundColor(1)
+
+// TODO / PENDIENTE 1 - Write these typed declarations yourself. / Escribe estas declaraciones.
+// string / texto: missionName with a meaningful mission name / con un nombre significativo
+// numbers / números: rows, columns, xSpacing, ySpacing, and suppliesPlaced starting at 0
+// Boolean / Booleano: priorityMode
+
+// TODO / PENDIENTE 2 - Write a number operation. / Escribe una operación numérica.
+// Create totalExpected as a number using rows * columns. / Crea totalExpected con rows * columns.
+
+// TODO / PENDIENTE 3 - Write a string operation. / Escribe una operación de texto.
+// Create statusMessage by joining missionName, ": ", and totalExpected. / Une esos tres valores.
+
+game.splash(statusMessage)
+
+// TODO / PENDIENTE 4 - WRITE BOTH nested loop structures. / ESCRIBE las estructuras de LOS DOS bucles.
+// The outer for loop must use row and rows. / El bucle exterior debe usar row y rows.
+// Inside it, the inner for loop must use column and columns. / Adentro, el bucle interior debe usar column y columns.
+// Put these two supplied body lines inside your inner loop / Pon estas dos líneas dentro del bucle interior:
+// placeSupply(row, column, xSpacing, ySpacing)
+// suppliesPlaced += 1
+
+info.setScore(suppliesPlaced)
+
+// TODO / PENDIENTE 5 - Write a Boolean operation. / Escribe una operación Booleana.
+// Create missionReady using priorityMode AND a comparison between suppliesPlaced and totalExpected.
+// Crea missionReady usando priorityMode Y una comparación entre suppliesPlaced y totalExpected.
+
+if (missionReady) {
+    game.splash("Priority grid ready", "" + suppliesPlaced + " supplies")
+} else {
+    game.splash("Check the grid", "" + suppliesPlaced + " supplies")
+}
+
+// REQUIRED TEST / PRUEBA OBLIGATORIA
+// 1. Predict before Run. / Predice antes de Ejecutar.
+// 2. Capture the first result. / Captura el primer resultado.
+// 3. Change exactly one line or value, even if the first grid works. / Cambia exactamente una línea o valor.
+// 4. Run again and explain what the revision improved. / Ejecuta otra vez y explica la mejora.

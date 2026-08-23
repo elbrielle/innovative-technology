@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "course_id": 23402,
-  "audit_date": "2026-08-21",
+  "audit_date": "2026-08-23",
   "canonical_teks_source": "docs/standards/texas-technology-applications-grade-8-teks-2022.md",
   "canonical_teks_sha256": "a74a60c9155abed42f08c97be172d0ade43fcdc58d9cb253e813887417b6d0a5",
   "definitions": {
@@ -2857,6 +2857,44 @@
         "The current objective is a presentation and submission checklist. The revision names evidence-based design justification as the learning proved by the pitch."
       ],
       "evidence_basis": "The guide requires the user need, final solution, prototype evidence, full artifacts, and final pitch/submission."
+    },
+    {
+      "module_position": 12,
+      "module_name": "SW3 · Video Game Design + Text Code",
+      "module_item_id": 2661807,
+      "page_slug": "facilitator-guide-text-code-bridge-day-1-trace-predict-+-repair",
+      "title": "Facilitator Guide: Text-Code Bridge Day 1 — Trace, Predict + Repair",
+      "topic": "Tracing and repairing a text-based nested-loop program",
+      "objective": "Students will trace supplied text code, predict its complete output, diagnose one nested-loop boundary error, and modify and implement the code to produce an improved program.",
+      "teks": [
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(2)(A)",
+        "§126.19(c)(2)(B)"
+      ],
+      "demonstration_of_learning": "Passport 5 trace/repair record, prediction before Run, unexpected-result screenshot, corrected JavaScript, repaired-result screenshot, and row/column explanation.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The complete bridge guide, Passport 5, student assignment, delayed-reveal deck sequence, 25-point checklist, and before/after code evidence were reconciled in the four-lens correction. Construction of supplied variables and loops remains practice; the one-line evidence-based repair demonstrates (2)(C)."
+    },
+    {
+      "module_position": 12,
+      "module_name": "SW3 · Video Game Design + Text Code",
+      "module_item_id": 2661809,
+      "page_slug": "facilitator-guide-text-code-bridge-day-2-change-the-grid-with-purpose",
+      "title": "Facilitator Guide: Text-Code Bridge Day 2 — Change the Grid with Purpose",
+      "topic": "Creating and improving a constrained emergency supply-layout program",
+      "objective": "Students will use a software design process to construct meaningful variables across string, number, and Boolean types, perform operations on their values, complete a text-based nested-loop program for row and column subproblems, and improve it from test evidence.",
+      "teks": [
+        "§126.19(c)(2)(A)",
+        "§126.19(c)(2)(B)",
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(1)(A)",
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Passport 6 problem/constraints and pseudocode, student-authored typed variables and operations, student-completed nested loops, prediction, first/final evidence, exact revision, final JavaScript, and explanation.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The complete bridge guide, student-authorship scaffold, Passport 6, student assignment, criterion-specific rubric, and projected route were reconciled. The scaffold supplies MakeCode setup, sprite helper, and two inner-loop body lines as comments; students author all typed declarations and operations and both complete loop structures."
     }
   ]
 }

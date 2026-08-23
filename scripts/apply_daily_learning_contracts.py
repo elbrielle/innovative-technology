@@ -48,8 +48,8 @@ def load_ledger() -> list[dict]:
     if payload["canonical_teks_sha256"] != hashlib.sha256(CANON.read_bytes()).hexdigest():
         raise ValueError("Canonical TEKS source changed after the semantic audit")
     rows = payload["records"]
-    if len(rows) != 154 or len({row["module_item_id"] for row in rows}) != 154:
-        raise ValueError("Daily learning contract ledger must contain 154 unique guides")
+    if len(rows) != 156 or len({row["module_item_id"] for row in rows}) != 156:
+        raise ValueError("Daily learning contract ledger must contain 156 unique guides")
     for row in rows:
         if not row["objective"].startswith("Students will "):
             raise ValueError(f"Objective is not student-facing for {row['module_item_id']}")

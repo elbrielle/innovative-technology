@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Build the fully editable Coding Foundations Retrofit teacher deck. */
+/** Build the classroom-ready Coding Foundations Retrofit teacher deck. */
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -7,367 +7,135 @@ import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
 const { Presentation, PresentationFile } = require("@oai/artifact-tool");
-
+const JSZip = require("jszip");
 const ROOT = path.resolve(path.dirname(decodeURIComponent(new URL(import.meta.url).pathname)), "..");
-const OUT_DIR = path.join(ROOT, "tmp/coding-foundations-retrofit/deck/output");
-const SHOT_DIR = path.join(ROOT, "curriculum-assets/coding-foundations");
+const OUT_DIR = path.join(ROOT, "tmp/coding-foundations-retrofit/deck/output-v2");
+const ASSET_DIR = path.join(ROOT, "curriculum-assets/coding-foundations");
 const FINAL_PPTX = path.join(OUT_DIR, "Smart_Solutions_Coding_Foundations_Retrofit_Teacher_Deck_2027.pptx");
 
-const C = {
-  navy: "#0B1426",
-  navy2: "#13213B",
-  white: "#FFFFFF",
-  cream: "#FFFBE8",
-  teal: "#00B8C8",
-  green: "#54B68A",
-  purple: "#A970FF",
-  pink: "#FF6FAE",
-  gold: "#FFD166",
-  blue: "#56B4E9",
-  ink: "#172033",
-  muted: "#AFC1D6",
-};
-
-const TEKS_SOURCE = "https://tea.texas.gov/laws-and-rules/texas-administrative-code/19-tac-chapter-126";
-const MAKECODE_DOCS = "https://arcade.makecode.com/docs";
+const C = { navy: "#0B1426", navy2: "#14243D", ink: "#172033", white: "#FFFFFF", cream: "#FFFBE8", mist: "#EAF8FA", teal: "#00B8C8", green: "#54B68A", purple: "#A970FF", pink: "#FF6FAE", gold: "#FFD166", muted: "#B8C7D9", darkCode: "#07101E" };
+const TEKS = "https://tea.texas.gov/laws-and-rules/texas-administrative-code/19-tac-chapter-126";
+const MAKECODE = "https://arcade.makecode.com/docs";
 const MAKECODE_JS = "https://arcade.makecode.com/javascript/statements";
 const MAKECODE_LOOPS = "https://arcade.makecode.com/blocks/loops";
 const MAKECODE_VARIABLES = "https://arcade.makecode.com/javascript/variables";
 
-async function writeBlob(filePath, blob) {
-  await fs.writeFile(filePath, new Uint8Array(await blob.arrayBuffer()));
+async function writeBlob(filePath, blob) { await fs.writeFile(filePath, new Uint8Array(await blob.arrayBuffer())); }
+async function imageBytes(filePath) { const bytes = await fs.readFile(filePath); return bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength); }
+function xmlAttr(value) { return String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }
+async function preserveImageAltText(pptxPath) {
+  const zip = await JSZip.loadAsync(await fs.readFile(pptxPath));
+  const slides = new Map([
+    [26, { imageId: 18, name: "MakeCode new-project setup screenshot", alt: "MakeCode Arcade new-project welcome screen with the simulator, Blocks and JavaScript tabs, and a dismissible editor tour." }],
+    [34, { imageId: 42, name: "MakeCode repaired supply grid screenshot", alt: "MakeCode Arcade simulator displaying three rows and four columns of supplies with score 12." }],
+  ]);
+  for (const [slideNumber, meta] of slides) {
+    const entry = `ppt/slides/slide${slideNumber}.xml`;
+    const file = zip.file(entry);
+    if (!file) throw new Error(`Missing ${entry} while preserving image alt text`);
+    const xml = await file.async("string");
+    const next = xml.replace(
+      new RegExp(`(<p:pic>[\\s\\S]*?<p:cNvPr) id="${meta.imageId}" name=""\\s*\\/>`),
+      `$1 id="${meta.imageId}" name="${xmlAttr(meta.name)}" title="${xmlAttr(meta.name)}" descr="${xmlAttr(meta.alt)}" />`,
+    );
+    if (next === xml) throw new Error(`Could not locate the image nonvisual properties in slide ${slideNumber}`);
+    zip.file(entry, next);
+  }
+  await fs.writeFile(pptxPath, await zip.generateAsync({ type: "uint8array", compression: "DEFLATE" }));
 }
-
-async function imageBytes(filePath) {
-  const bytes = await fs.readFile(filePath);
-  return bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength);
-}
-
-function addShape(slide, name, geometry, x, y, w, h, fill, lineFill = "none", lineWidth = 0, radius = undefined) {
-  return slide.shapes.add({
-    geometry,
-    name,
-    position: { left: x, top: y, width: w, height: h },
-    fill,
-    line: { style: "solid", fill: lineFill, width: lineWidth },
-    ...(radius ? { borderRadius: radius } : {}),
-  });
-}
-
-function addText(slide, name, text, x, y, w, h, size = 24, color = C.white, bold = false, align = "left", font = "Aptos") {
-  const box = addShape(slide, name, "textbox", x, y, w, h, "none");
-  box.text = text;
-  box.text.style = { fontSize: size, color, bold, fontFamily: font, alignment: align };
-  return box;
-}
-
-function addChrome(slide, kicker, day = "") {
-  slide.background.fill = C.navy;
-  addText(slide, "kicker", kicker.toUpperCase(), 48, 28, 480, 24, 13, C.teal, true);
-  if (day) addText(slide, "day", day.toUpperCase(), 1120, 28, 112, 24, 13, C.muted, true, "right");
-  addText(slide, "footer-left", "SMART SOLUTIONS · CODING FOUNDATIONS", 48, 686, 390, 16, 9, C.muted, false);
-  addText(slide, "footer-right", "VILS 2027", 1120, 686, 112, 16, 9, C.muted, false, "right");
-}
-
-function addTitle(slide, title, subtitle = "", kicker = "Coding Foundations", day = "") {
-  addChrome(slide, kicker, day);
-  addText(slide, "title", title, 48, 64, 1168, 70, 34, C.white, true);
-  if (subtitle) addText(slide, "subtitle", subtitle, 48, 132, 1130, 48, 18, C.muted, false);
-}
-
-function addCard(slide, name, x, y, w, h, heading, body, accent = C.teal, bodySize = 18) {
-  const card = addShape(slide, name, "roundRect", x, y, w, h, C.cream, accent, 2, 14);
-  addText(slide, `${name}-heading`, heading, x + 22, y + 18, w - 44, 36, 20, C.ink, true);
-  addText(slide, `${name}-body`, body, x + 22, y + 64, w - 44, h - 82, bodySize, C.ink, false);
-  return card;
-}
-
-function addCode(slide, name, code, x, y, w, h, size = 20) {
-  addShape(slide, `${name}-frame`, "roundRect", x, y, w, h, "#07101E", C.teal, 2, 12);
-  addText(slide, name, code, x + 22, y + 18, w - 44, h - 34, size, "#E8FFF8", false, "left", "Courier New");
-}
-
-function addFlow(slide, labels, y, colors = [C.teal, C.green, C.purple, C.pink, C.gold]) {
-  const gap = 18;
-  const width = (1168 - gap * (labels.length - 1)) / labels.length;
-  labels.forEach((label, index) => {
-    const x = 48 + index * (width + gap);
-    addShape(slide, `flow-${index}`, "roundRect", x, y, width, 82, C.cream, colors[index % colors.length], 3, 16);
-    addText(slide, `flow-label-${index}`, label, x + 12, y + 20, width - 24, 42, 17, C.ink, true, "center");
-  });
-}
-
-function setNotes(slide, teacherNotes, sources = []) {
-  const lines = [teacherNotes, "", "[Sources]", ...sources.map((source) => `- ${source}`)];
-  slide.speakerNotes.textFrame.setText(lines.join("\n"));
-  slide.speakerNotes.setVisible(true);
-}
-
-async function addScreenshot(slide, name, fileName, alt, x, y, w, h, fit = "contain") {
-  slide.images.add({
-    blob: await imageBytes(path.join(SHOT_DIR, fileName)),
-    contentType: "image/png",
-    alt,
-    fit,
-    geometry: "roundRect",
-    borderRadius: 14,
-    position: { left: x, top: y, width: w, height: h },
-  });
-  addShape(slide, `${name}-border`, "roundRect", x, y, w, h, "none", C.teal, 2, 14);
-}
+function shape(slide, name, geometry, x, y, w, h, fill = "none", lineFill = "none", lineWidth = 0, radius = 0) { return slide.shapes.add({ geometry, name, position: { left: x, top: y, width: w, height: h }, fill, line: { style: "solid", fill: lineFill, width: lineWidth }, ...(radius ? { borderRadius: radius } : {}) }); }
+function textBox(slide, name, text, x, y, w, h, size = 24, color = C.white, bold = false, align = "left", font = "Aptos") { const box = shape(slide, name, "textbox", x, y, w, h); box.text = text; box.text.style = { fontSize: size, color, bold, fontFamily: font, alignment: align }; return box; }
+function base(slide, kicker, marker = "", theme = C.navy) { slide.background.fill = theme; textBox(slide, "kicker", kicker.toUpperCase(), 56, 24, 720, 38, 14, C.teal, true); if (marker) textBox(slide, "marker", marker.toUpperCase(), 950, 24, 274, 38, 14, C.muted, true, "right"); textBox(slide, "footer-left", "SMART SOLUTIONS · CODING FOUNDATIONS", 56, 672, 500, 32, 10, C.muted); textBox(slide, "footer-right", "VILS 2027", 1040, 672, 184, 32, 10, C.muted, false, "right"); }
+function title(slide, heading, sub = "", kicker = "Coding Foundations", marker = "") { base(slide, kicker, marker); textBox(slide, "title", heading, 56, 72, 1168, 96, 38, C.white, true); if (sub) textBox(slide, "subtitle", sub, 56, 160, 1168, 66, 21, C.muted); }
+function notes(slide, teacherMove, sources = []) { slide.speakerNotes.textFrame.setText([teacherMove, "", "[Sources]", ...sources.map((s) => `- ${s}`)].join("\n")); slide.speakerNotes.setVisible(true); }
+function label(slide, name, value, x, y, w, color = C.teal) { shape(slide, `${name}-bar`, "rect", x, y, 8, 38, color); textBox(slide, name, value.toUpperCase(), x + 18, y, w - 18, 44, 18, C.white, true); }
+function panel(slide, name, x, y, w, h, heading, body, accent = C.teal, bodySize = 23) { shape(slide, name, "roundRect", x, y, w, h, C.cream, accent, 2, 14); textBox(slide, `${name}-heading`, heading, x + 26, y + 20, w - 52, 46, 22, C.ink, true); textBox(slide, `${name}-body`, body, x + 26, y + 78, w - 52, h - 100, bodySize, C.ink); }
+function fullPrompt(slide, prompt, support = "", accent = C.teal, y = 250, h = 260, promptSize = 36) { shape(slide, "prompt-band", "roundRect", 80, y, 1120, h, C.cream, accent, 3, 18); const promptH = support ? Math.max(60, h - 110) : h - 48; textBox(slide, "prompt", prompt, 128, y + 24, 1024, promptH, promptSize, C.ink, true, "center"); if (support) textBox(slide, "prompt-support", support, 128, y + h - 62, 1024, 42, 20, C.ink, false, "center"); }
+function codeBox(slide, name, code, x, y, w, h, labelText = "RUNS IN MAKECODE", accent = C.teal, size = 22) { shape(slide, `${name}-frame`, "roundRect", x, y, w, h, C.darkCode, accent, 2, 12); shape(slide, `${name}-label-bg`, "roundRect", x + 18, y + 14, Math.min(310, w - 36), 38, accent, accent, 0, 10); textBox(slide, `${name}-label`, labelText, x + 34, y + 18, Math.min(280, w - 68), 32, 13, C.navy, true); textBox(slide, name, code, x + 26, y + 66, w - 52, h - 86, size, "#E8FFF8", false, "left", "Courier New"); }
+function stepStrip(slide, items, y, active = -1) { const gap = 18; const width = (1168 - gap * (items.length - 1)) / items.length; items.forEach((item, index) => { const x = 56 + index * (width + gap); const fill = index === active ? C.gold : C.mist; const stroke = index === active ? C.gold : C.teal; shape(slide, `step-${index}`, "roundRect", x, y, width, 78, fill, stroke, 2, 14); textBox(slide, `step-text-${index}`, `${index + 1}. ${item}`, x + 10, y + 18, width - 20, 48, 16, C.ink, true, "center"); }); }
+function stopSlide(slide, checkpoint, returnText, nextText = "Use the navigation slide to jump to the next checkpoint when its lesson begins.") { slide.background.fill = C.navy2; textBox(slide, "teacher-only", "TEACHER STOP POINT · DO NOT PROJECT", 72, 62, 700, 42, 16, C.gold, true); textBox(slide, "stop-title", `STOP AFTER ${checkpoint}`, 72, 170, 1080, 94, 52, C.white, true); shape(slide, "stop-rule", "rect", 72, 292, 1136, 8, C.gold); textBox(slide, "return", returnText, 72, 344, 1050, 120, 30, C.muted); textBox(slide, "next", nextText, 72, 530, 1050, 60, 22, C.white); notes(slide, "Do not project this slide to students. Stop the retrofit deck and return to the original unit deck or Canvas route.", [TEKS]); }
+function grid(slide, name, rows, columns, x, y, cell = 54, highlight = null, accent = C.teal) { textBox(slide, `${name}-col-label`, "COLUMNS / COLUMNAS", x + 30, y - 42, columns * cell, 32, 14, C.muted, true, "center"); textBox(slide, `${name}-row-label`, "ROWS\nFILAS", x - 82, y + rows * cell / 2 - 28, 70, 66, 14, C.muted, true, "center"); for (let r = 0; r < rows; r++) { for (let c = 0; c < columns; c++) { const active = highlight && highlight[0] === r && highlight[1] === c; shape(slide, `${name}-${r}-${c}`, "roundRect", x + c * cell, y + r * cell, cell - 8, cell - 8, active ? C.gold : C.cream, active ? C.gold : accent, 2, 10); textBox(slide, `${name}-txt-${r}-${c}`, `r${r} c${c}`, x + c * cell, y + r * cell + 11, cell - 8, 28, 12, C.ink, true, "center"); } } }
+async function screenshot(slide, name, fileName, alt, x, y, w, h, fit = "contain") { slide.images.add({ blob: await imageBytes(path.join(ASSET_DIR, fileName)), contentType: "image/png", alt, fit, geometry: "roundRect", borderRadius: 12, position: { left: x, top: y, width: w, height: h } }); shape(slide, `${name}-border`, "roundRect", x, y, w, h, "none", C.teal, 3, 12); }
+function addEnter(deck, checkpoint, prompt, support, notesText) { const s = deck.slides.add(); title(s, "As you enter", `Open the Passport to ${checkpoint}.`, checkpoint, "2 minutes"); fullPrompt(s, prompt, support, C.gold); notes(s, notesText, [TEKS]); }
+function addObjective(deck, checkpoint, objective, evidence, terms = "") { const s = deck.slides.add(); title(s, "Today’s target", "Read the target, then point to the evidence you will leave behind.", checkpoint); label(s, "i-can-label", "I can", 88, 242, 200, C.teal); textBox(s, "i-can", objective, 106, 296, 1050, 96, 31, C.white, true); label(s, "done-label", "Done when", 88, 430, 240, C.gold); textBox(s, "done", evidence, 106, 484, 1050, 88, 25, C.cream); if (terms) textBox(s, "terms", terms, 106, 590, 1050, 50, 18, C.muted); notes(s, "Read the student-friendly target aloud. Ask one student to restate what must be submitted or shown.", [TEKS]); }
 
 async function build() {
+  await fs.rm(OUT_DIR, { recursive: true, force: true });
   await fs.mkdir(OUT_DIR, { recursive: true });
   const deck = Presentation.create({ slideSize: { width: 1280, height: 720 } });
 
-  {
-    const s = deck.slides.add();
-    s.background.fill = C.navy;
-    addText(s, "kicker", "SMART SOLUTIONS · CODING FOUNDATIONS", 72, 78, 540, 28, 16, C.teal, true);
-    addText(s, "title", "Plan it. Test it. Code it.", 72, 170, 820, 90, 52, C.white, true);
-    addText(s, "subtitle", "A reusable pseudocode routine plus a two-day bridge from blocks to text.", 72, 278, 760, 82, 26, C.muted);
-    addFlow(s, ["PLAN", "NOTICE", "TEST", "REVISE", "TRANSFER"], 486);
-    setNotes(s, "Use this deck only for the retrofit moments. Keep the existing Intro to CS, Video Game Design, and RVR decks for the rest of each unit.", [TEKS_SOURCE]);
-  }
+  { const s = deck.slides.add(); s.background.fill = C.navy; textBox(s, "teacher-only", "TEACHER NAVIGATION · DO NOT PROJECT", 72, 62, 700, 42, 16, C.gold, true); textBox(s, "title", "Coding Foundations retrofit map", 72, 134, 1040, 84, 48, C.white, true); textBox(s, "subtitle", "Seven short checkpoints. Open only the section that belongs to today’s existing lesson.", 72, 232, 1030, 72, 25, C.muted); stepStrip(s, ["C1 Intro Day 1", "C2 Intro Day 2", "C3 Intro Day 3", "C4 Game Remix"], 350); stepStrip(s, ["C5 Text Day 1", "C6 Text Day 2", "C7 RVR Transfer"], 466); notes(s, "Use this slide as the home screen. Each section ends with a teacher-only stop point.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Jump to the right checkpoint", "Teacher navigation · do not project", "Teacher route map"); panel(s, "left", 72, 224, 540, 374, "SHORT RETROFIT INSERTIONS", "C1 · slides 3–7 · Intro Day 1\nC2 · slides 8–12 · Intro Day 2\nC3 · slides 13–17 · Intro Day 3\nC4 · slides 18–22 · Game Remix\nC7 · slides 52–57 · RVR Transfer", C.teal, 25); panel(s, "right", 668, 224, 540, 374, "FULL TEXT-CODE LESSONS", "C5 · slides 23–37 · Text Day 1\nTrace, predict, diagnose, repair\n\nC6 · slides 38–51 · Text Day 2\nDesign, author, test, revise", C.gold, 25); notes(s, "Keep this slide at the front of the deck. Use the listed ranges rather than playing the deck from beginning to end.", [TEKS]); }
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "One Passport follows the whole coding arc", "Students add one checkpoint at a time instead of completing a second coding unit.");
-    addFlow(s, ["1 · DECOMPOSE", "2 · PATTERNS", "3 · REVISE", "4 · TEXT CODE", "5 · RVR"], 250);
-    addText(s, "takeaway", "The planning language stays stable while the programming surface changes.", 120, 420, 1040, 86, 30, C.white, true, "center");
-    setNotes(s, "Show the five Passport pages. Tell students they complete only the checkpoint assigned today and keep the same document.", [TEKS_SOURCE]);
-  }
+  addEnter(deck, "C1 · INTRO DAY 1", "Tell a partner how to move from your chair to the door.", "Your partner may ask: ‘How far?’ or ‘Which way?’", "Listen for hidden assumptions. Use one student route as the model on the next slide.");
+  addObjective(deck, "C1 · INTRO DAY 1", "I can break a goal into smaller steps and write a plan another person can follow.", "Passport Checkpoint 1 includes the goal, inputs/outputs, three subproblems, a pseudocode draft, and one partner revision.", "Words / Palabras: goal · meta | step · paso | pseudocode · pseudocódigo");
+  { const s = deck.slides.add(); title(s, "Turn a route into observable commands", "The plan must say what moves, how far, and when to stop.", "C1 · Intro Day 1", "Model"); codeBox(s, "route", "START\n  MOVE forward 2 spaces\n  TURN right\n  REPEAT 3 times\n    MOVE forward 1 space\n  END REPEAT\nEND", 72, 218, 560, 374, "CONCEPTUAL PSEUDOCODE", C.teal, 24); grid(s, "route-grid", 3, 4, 790, 290, 66, [1, 2], C.purple); textBox(s, "question", "Which command tells the mover where to stop?", 700, 532, 500, 50, 23, C.cream, true, "center"); notes(s, "Model one route. Point to each command while moving a token through the grid. Pseudocode is conceptual and does not run in MakeCode.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Test the plan literally", "One partner reads. One partner moves only when the plan says to move.", "C1 · Intro Day 1", "Partner test"); stepStrip(s, ["Read", "Move", "Stop at confusion", "Mark the line", "Revise"], 246, 2); fullPrompt(s, "I stopped at ______ because the plan did not say ______.", "Me detuve en ______ porque el plan no decía ______.", C.purple, 360, 190, 30); notes(s, "Do not let the writer explain verbally until the reader marks the unclear line. Then allow one revision and a second literal test.", [TEKS]); }
+  stopSlide(deck.slides.add(), "C1", "Return to the original Intro to CS Day 1 deck and complete the Code.org assignment.");
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Pseudocode must be precise enough to execute", "A useful plan removes hidden assumptions without copying programming-language syntax.", "Pseudocode launch", "Day 1");
-    addCard(s, "good", 88, 220, 500, 310, "USE", "Short commands\nIndent repeated steps\nName variables by purpose\nShow decisions and repetition\nEnd where the task is complete", C.green, 23);
-    addCard(s, "avoid", 692, 220, 500, 310, "AVOID", "“Make it work”\nUnexplained jumps\nDirections only the writer understands\nCopying blocks without a plan\nDecorating before testing", C.pink, 23);
-    setNotes(s, "Read one example aloud literally. Ask what a computer or partner would do when the direction is ambiguous.", [TEKS_SOURCE]);
-  }
+  addEnter(deck, "C2 · INTRO DAY 2", "Write the smallest group that repeats: MOVE, TURN, MOVE, TURN, MOVE, TURN.", "Circle or bracket the repeated group before naming the loop.", "Ask students to justify the smallest useful repeated group.");
+  addObjective(deck, "C2 · INTRO DAY 2", "I can name a repeated pattern and replace details that may change with useful variable names.", "Passport Checkpoint 2 shows a repeated pattern, why iteration helps, three named values, and generalized pseudocode.", "Words / Palabras: loop · bucle | variable · variable | pattern · patrón");
+  { const s = deck.slides.add(); title(s, "Compress a repeated pattern into one loop", "The loop keeps the order while removing copied commands.", "C2 · Intro Day 2", "Model"); codeBox(s, "copied", "MOVE forward\nTURN right\nMOVE forward\nTURN right\nMOVE forward\nTURN right", 72, 230, 430, 310, "CONCEPTUAL · COPIED STEPS", C.pink, 25); shape(s, "arrow", "rightArrow", 548, 330, 150, 80, C.gold, C.gold, 0); codeBox(s, "loop", "REPEAT 3 times\n  MOVE forward\n  TURN right\nEND REPEAT", 742, 260, 440, 250, "CONCEPTUAL · ONE LOOP", C.green, 26); notes(s, "Bracket MOVE plus TURN in the copied version, then count three repeats. Ask what would change if the path had five corners.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Name values by what they control", "A useful name helps the next reader predict the value’s job.", "C2 · Intro Day 2", "Guided practice"); textBox(s, "examples", "boxesRemaining = 12\nmissionName = “Emergency Supply Grid”\npriorityMode = true", 92, 242, 620, 200, 31, C.white, false, "left", "Courier New"); label(s, "types", "Name → type → purpose", 754, 246, 420, C.gold); textBox(s, "type-lines", "number → counts supplies\nstring → stores the mission name\nBoolean → turns a route on or off", 772, 308, 400, 174, 24, C.cream); fullPrompt(s, "Which name explains more: x or suppliesPlaced?", "¿Cuál nombre explica más: x o suppliesPlaced?", C.teal, 500, 130, 25); notes(s, "Students may first meet variables in blocks. Focus on meaningful names, type, starting value, and purpose—not syntax memorization.", [TEKS, MAKECODE_VARIABLES]); }
+  stopSlide(deck.slides.add(), "C2", "Return to the selected Hour of Code activity. Students complete Passport Checkpoint 2 from a pattern they actually used.");
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Break one goal into smaller jobs", "Complete Passport Checkpoint 1 before opening Code.org.", "Pseudocode launch", "Day 1");
-    addCard(s, "goal", 64, 220, 345, 250, "GOAL", "What must the finished program make happen?", C.teal, 24);
-    addCard(s, "io", 468, 220, 345, 250, "INPUT + OUTPUT", "What enters the system?\nWhat should the system produce?", C.purple, 24);
-    addCard(s, "subs", 872, 220, 345, 250, "SUBPROBLEMS", "What are the three or more smaller jobs?", C.gold, 24);
-    addText(s, "prompt", "If a job is still vague, break it down again.", 160, 530, 960, 56, 28, C.white, true, "center");
-    setNotes(s, "Model with the Angry Birds route or another route puzzle already in the lesson. Keep the decomposition brief; students still complete the existing coding task.", [TEKS_SOURCE]);
-  }
+  addEnter(deck, "C3 · INTRO DAY 3", "Before pressing Run, write one sentence predicting what the current blocks will do.", "Do not revise the prediction after the result appears.", "Collect a few predictions before students run anything.");
+  addObjective(deck, "C3 · INTRO DAY 3", "I can test one prediction, change one thing, and explain how the result changed.", "Passport Checkpoint 3 contains three complete prediction → observation → change → result records and one revised pseudocode line.", "Words / Palabras: predict · predecir | observe · observar | revise · revisar");
+  { const s = deck.slides.add(); title(s, "One change makes the evidence explainable", "Changing several blocks at once hides which change mattered.", "C3 · Intro Day 3", "Test routine"); stepStrip(s, ["Predict", "Run", "Observe", "Change one thing", "Run again"], 254, 3); fullPrompt(s, "When I changed ______, the program ______ because ______.", "Cuando cambié ______, el programa ______ porque ______.", C.pink, 360, 190, 30); notes(s, "Require students to name the exact block, instruction, or value changed. A screenshot alone does not show cause and effect.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Revise the plan—not only the program", "A repaired program should leave behind a more accurate pseudocode record.", "C3 · Intro Day 3", "Closure"); codeBox(s, "before", "REPEAT 3 times\n  MOVE forward\nEND REPEAT", 100, 244, 440, 240, "CONCEPTUAL · BEFORE", C.pink, 26); codeBox(s, "after", "REPEAT 4 times\n  MOVE forward\n  CHECK for wall\nEND REPEAT", 740, 244, 440, 240, "CONCEPTUAL · AFTER", C.green, 26); textBox(s, "claim", "Name the exact revision and the evidence that justified it.", 190, 536, 900, 52, 26, C.cream, true, "center"); notes(s, "Ask students to copy only the changed pseudocode line into the Passport and explain why the revision is better.", [TEKS]); }
+  stopSlide(deck.slides.add(), "C3", "Return to Debugging Detective. Students use Passport Checkpoint 3 as the required three-bug log.");
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Write the route before touching the blocks", "Use commands another person can perform without asking what you meant.", "Pseudocode launch", "Day 1");
-    addCode(s, "pseudo", "START\n  MOVE forward 2 spaces\n  TURN right\n  REPEAT 3 times\n    MOVE forward 1 space\n  END REPEAT\nEND", 120, 210, 520, 350, 27);
-    addCard(s, "why", 720, 230, 420, 300, "CHECK THE PLAN", "Is every move observable?\nIs the repeated group indented?\nCould the numbers change?\nWhere would a variable help?", C.teal, 23);
-    setNotes(s, "Students draft on Passport Checkpoint 1, then build the same route in Code.org. Pseudocode does not need to match a single vendor syntax.", [TEKS_SOURCE]);
-  }
+  addEnter(deck, "C4 · GAME REMIX", "Choose one game feature: challenge, reward, rule, identity choice, feedback, or progression.", "Write what should happen before touching the blocks.", "Have students choose one required feature from the existing Remix assignment.");
+  addObjective(deck, "C4 · GAME REMIX", "I can plan one feature, build it, and test whether the player experiences the change I intended.", "Passport Checkpoint 4 includes a feature goal, WHEN/SHOULD plan, pseudocode, and one playtest result.", "Words / Palabras: feature · función | trigger · evento | feedback · aviso");
+  { const s = deck.slides.add(); title(s, "Write the player event before building it", "A feature connects a trigger to a visible or audible result.", "C4 · Game Remix", "Model"); textBox(s, "when", "WHEN", 96, 250, 200, 82, 44, C.teal, true); textBox(s, "when-body", "the player overlaps a reward", 250, 254, 820, 74, 34, C.white, true); shape(s, "divider", "rect", 96, 354, 1080, 6, C.gold); textBox(s, "should", "SHOULD", 96, 390, 220, 82, 44, C.gold, true); textBox(s, "should-body", "score +1, play feedback, move reward", 340, 394, 770, 74, 34, C.white, true); textBox(s, "es", "CUANDO el jugador toca una recompensa, DEBE sumar 1, mostrar un aviso y moverla.", 96, 520, 1080, 54, 20, C.muted); notes(s, "Model the WHEN/SHOULD statement before showing the pseudocode. Ask which result the player can see or hear.", [TEKS, MAKECODE]); }
+  { const s = deck.slides.add(); title(s, "Test one feature at a time", "The test should answer whether the intended player experience happens every time.", "C4 · Game Remix", "Playtest"); codeBox(s, "feature", "WHEN player overlaps reward\n  ADD 1 TO score\n  PLAY success sound\n  MOVE reward to new location\nEND WHEN", 108, 226, 660, 320, "CONCEPTUAL PSEUDOCODE", C.teal, 26); panel(s, "test", 824, 236, 340, 294, "TEST QUESTION", "Does score, feedback, and position change every time?\n\nRecord one result in Passport Checkpoint 4.", C.gold, 23); notes(s, "After students build in blocks, require one focused playtest. Keep the existing Remix rubric and evidence requirements.", [TEKS]); }
+  stopSlide(deck.slides.add(), "C4", "Return to Video Game Design Lesson 2. Students submit the Passport screenshot with the existing Remix evidence.");
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Literal testing exposes the missing assumption", "The partner may follow only the written plan.", "Pseudocode launch", "Day 1");
-    addFlow(s, ["READ", "EXECUTE", "STOP AT CONFUSION", "MARK THE LINE", "REVISE"], 230);
-    addText(s, "stem", "“I stopped at ______ because the plan did not say ______.”", 110, 410, 1060, 70, 30, C.cream, true, "center");
-    addText(s, "rule", "Do not explain the missing step until your partner marks it.", 190, 515, 900, 44, 22, C.muted, false, "center");
-    setNotes(s, "Keep this to a fast partner test. The purpose is to create evidence for revision, not to grade reading performance.", [TEKS_SOURCE]);
-  }
+  { const s = deck.slides.add(); s.background.fill = C.navy; textBox(s, "kicker", "C5 · TEXT CODE DAY 1", 72, 76, 560, 42, 17, C.teal, true); textBox(s, "title", "Trace it. Predict it. Repair one line.", 72, 184, 1080, 122, 52, C.white, true); textBox(s, "subtitle", "Emergency Supply Grid · MakeCode Arcade JavaScript", 72, 328, 1040, 56, 26, C.muted); stepStrip(s, ["Trace", "Predict", "Run", "Diagnose", "Repair"], 486); notes(s, "Project this section divider while students open the Passport and MakeCode. This is a complete one-period lesson.", [TEKS, MAKECODE]); }
+  addEnter(deck, "C5 · TEXT DAY 1", "A plan calls for 3 rows with 4 supplies in each row. How many supplies should appear?", "Write the total and one multiplication sentence. / Escribe el total y una multiplicación.", "Expected response: 12 supplies; 3 × 4 = 12. Do not reveal the bug yet.");
+  addObjective(deck, "C5 · TEXT DAY 1", "I can trace named values and nested loops, predict the result, and repair one line using evidence.", "Record a prediction before Run, the first observed grid and score, the diagnosed boundary, one controlled repair, the new result, and a row/column explanation.", "Vocabulary: row · fila | column · columna | boundary · límite | nested loop · bucle anidado");
+  { const s = deck.slides.add(); title(s, "Set up the same way on every device", "No account or imported project is required.", "C5 · Text Day 1", "Setup"); await screenshot(s, "setup", "makecode-arcade-new-project-welcome.png", "MakeCode Arcade new-project welcome screen with the simulator, Blocks and JavaScript tabs, and a dismissible editor tour", 56, 214, 720, 405, "contain"); panel(s, "setup-list", 824, 254, 352, 322, "CHECK BEFORE RUN", "1. Open Arcade\n2. Choose New Project\n3. Close the welcome tour\n4. Select JavaScript\n5. Paste the Bug Challenge\n6. Do not press Run yet", C.teal, 22); notes(s, "Model the setup once. Close the welcome tour, select JavaScript, and paste the full Bug Challenge. This neutral screenshot intentionally shows no challenge code or result. Students do not press Run until the prediction is recorded.", [MAKECODE]); }
+  { const s = deck.slides.add(); title(s, "Read the named values before the loops", "Say the name, type, starting value, and job.", "C5 · Text Day 1", "Guided trace"); codeBox(s, "vars", "let missionName: string = \"Emergency Supply Grid\"\nlet rows: number = 3\nlet columns: number = 4\nlet priorityMode: boolean = true\nlet suppliesPlaced: number = 0", 72, 218, 760, 340, "RUNS IN MAKECODE", C.teal, 22); textBox(s, "vocab", "string · texto\nnumber · número\nBoolean · booleano\nvalue · valor", 902, 246, 260, 180, 26, C.cream, true); textBox(s, "stem", "_____ stores / guarda _____.", 874, 474, 310, 56, 22, C.gold, true, "center"); notes(s, "Students complete the four-value Passport table. Ask different students to trace each name, type, starting value, and purpose.", [MAKECODE_VARIABLES]); }
+  { const s = deck.slides.add(); title(s, "One inner loop completes one group", "Trace a shelf-and-slot pattern before you inspect the supply-grid bug.", "C5 · Text Day 1", "Model"); codeBox(s, "loops", "for (let shelf = 0; shelf < shelfCount; shelf++) {\n  for (let slot = 0; slot < slotsPerShelf; slot++) {\n    placeMarker(shelf, slot)\n  }\n}", 64, 226, 680, 344, "CONCEPTUAL LOOP MODEL · NOT THE CHALLENGE", C.purple, 20); grid(s, "grid-model", 2, 4, 870, 326, 64, [0, 3], C.teal); textBox(s, "trace", "shelf 0 → slots 0, 1, 2, 3", 800, 520, 390, 48, 20, C.cream, true, "center"); notes(s, "Trace shelf 0 with a finger and then begin shelf 1. This neutral example teaches the outer/inner relationship without revealing the challenge's variable names or repair.", [MAKECODE_JS, MAKECODE_LOOPS]); }
+  { const s = deck.slides.add(); title(s, "Lock the prediction before Run", "Use the intended rows and columns—not the picture you expect to see.", "C5 · Text Day 1", "Predict"); grid(s, "prediction", 3, 4, 238, 286, 72, null, C.green); textBox(s, "math", "3 rows × 4 columns = 12 supplies", 626, 304, 520, 74, 34, C.white, true); textBox(s, "passport", "Write 12 in Predicted value.\nEscribe 12 en Valor previsto.", 626, 408, 510, 92, 24, C.cream); notes(s, "Pause until every student has recorded 12. This preserves prediction evidence before the program reveals the mismatch.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Run once. Record only what happened.", "The program runs, but the grid does not match the plan.", "C5 · Text Day 1", "Observe"); grid(s, "observed", 3, 3, 226, 290, 76, null, C.pink); textBox(s, "obs", "Observed / Observado", 610, 254, 470, 52, 19, C.pink, true); textBox(s, "obs-big", "3 × 3 grid\nscore 9", 610, 318, 470, 134, 44, C.white, true); textBox(s, "notice", "Prediction ≠ result. The evidence points to a boundary problem.", 610, 482, 520, 74, 24, C.cream); notes(s, "Students run the unedited Bug Challenge. They record 3 × 3 and 9 before changing code. Do not reveal the wrong condition yet.", [MAKECODE]); }
+  { const s = deck.slides.add(); title(s, "Diagnose before editing", "The missing fourth column tells us where to look.", "C5 · Text Day 1", "Think-pair-share"); fullPrompt(s, "Which loop controls columns—and which value should stop it?", "¿Cuál bucle controla columnas y cuál valor debe detenerlo?", C.gold); textBox(s, "clue", "Clue: rows = 3, columns = 4, observed columns = 3", 200, 552, 880, 50, 22, C.muted, true, "center"); notes(s, "Ask students to point to the inner loop before showing the bug. Listen for: the inner loop stops at rows instead of columns.", [MAKECODE_LOOPS]); }
+  { const s = deck.slides.add(); title(s, "The evidence identifies one wrong boundary", "Compare the condition to the job of the inner loop.", "C5 · Text Day 1", "Reveal"); codeBox(s, "bug", "for (let column = 0; column < rows; column++) {", 100, 246, 1080, 150, "BUGGED CONDITION ONLY · MAKES 3 COLUMNS", C.pink, 27); textBox(s, "why", "The inner loop fills columns, but it stops at rows = 3.", 170, 438, 940, 58, 29, C.white, true, "center"); textBox(s, "stem", "The grid has ___ columns because the condition uses ___.", 170, 528, 940, 54, 23, C.cream, true, "center"); notes(s, "Reveal only after students have diagnosed. Ask students to circle rows in the condition and connect it to the observed three columns.", [MAKECODE_JS, MAKECODE_LOOPS]); }
+  { const s = deck.slides.add(); title(s, "Repair one word, then run again", "A controlled change keeps the cause-and-effect evidence clean.", "C5 · Text Day 1", "Repair"); codeBox(s, "before", "column < rows", 108, 264, 430, 170, "CONDITION ONLY · 3 COLUMNS", C.pink, 34); shape(s, "arrow", "rightArrow", 574, 306, 132, 74, C.gold, C.gold, 0); codeBox(s, "after", "column < columns", 742, 264, 430, 170, "CONDITION ONLY · 4 COLUMNS", C.green, 34); textBox(s, "rule", "Change only rows → columns. Do not replace the starter.", 214, 494, 850, 56, 27, C.cream, true, "center"); notes(s, "Students change exactly one word and run again. If code does not run, check the edited line and matching braces before replacing anything.", [MAKECODE_JS]); }
+  { const s = deck.slides.add(); title(s, "The repaired result matches the prediction", "Use the same evidence pattern: predicted, observed, changed, result.", "C5 · Text Day 1", "Verify"); await screenshot(s, "correct", "makecode-supply-grid-result.png", "MakeCode Arcade simulator displaying three rows and four columns of supplies with score 12", 56, 218, 720, 405, "contain"); grid(s, "verified", 3, 4, 868, 292, 62, null, C.green); textBox(s, "score", "score 12", 868, 518, 260, 52, 30, C.green, true, "center"); notes(s, "Verify that students can point to 3 rows, 4 columns, score 12, and the repaired condition. Capture the simulator and readable code.", [MAKECODE]); }
+  { const s = deck.slides.add(); title(s, "Independent work checkpoint", "Finish the evidence before asking for a replacement project.", "C5 · Text Day 1", "Work time"); textBox(s, "checklist", "□ Predicted 12 before Run\n□ Recorded 3 × 3 and 9\n□ Named string, number, and Boolean values\n□ Changed only rows → columns\n□ Captured 3 × 4 and 12\n□ Explained outer rows and inner columns", 116, 230, 760, 324, 27, C.white); panel(s, "help", 918, 238, 278, 310, "IF IT WILL NOT RUN", "1. Read the red line marker\n2. Check the edited condition\n3. Match each { with }\n4. Repaste only if recovery fails", C.gold, 20); notes(s, "Circulate using the checklist. Ask for the exact failing line before giving a new starter. Allow oral explanation when the teacher records equivalent evidence.", [MAKECODE]); }
+  { const s = deck.slides.add(); title(s, "Close with the evidence chain", "Use one complete sentence; name the cause and the result.", "C5 · Text Day 1", "Done when"); fullPrompt(s, "The grid made 9 because ______. I changed ______, so the result became ______.", "La cuadrícula hizo 9 porque ______. Cambié ______ y el resultado fue ______.", C.green); textBox(s, "turn-in", "TURN IN: trace table + before/after simulator + readable corrected line + explanation", 126, 564, 1028, 46, 20, C.white, true, "center"); notes(s, "Use the sentence as the closure and submission self-check. Confirm the four named evidence types before students leave.", [TEKS]); }
+  stopSlide(deck.slides.add(), "C5", "Day 1 ends here. Do not reveal or begin the Day 2 mission choices until the next class period.");
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Name the repeated pattern before using a loop", "Complete Passport Checkpoint 2 during Intro to CS Day 2.", "Patterns and variables", "Day 2");
-    addCode(s, "pattern", "MOVE forward\nTURN right\nMOVE forward\nTURN right\nMOVE forward\nTURN right", 96, 218, 440, 300, 25);
-    addCode(s, "loop", "REPEAT 3 times\n  MOVE forward\n  TURN right\nEND REPEAT", 730, 260, 390, 220, 27);
-    addText(s, "arrow", "→", 590, 320, 90, 70, 54, C.gold, true, "center");
-    setNotes(s, "Ask students to bracket the smallest useful repeated group before they name the loop.", [TEKS_SOURCE]);
-  }
+  { const s = deck.slides.add(); s.background.fill = C.navy; textBox(s, "kicker", "C6 · TEXT CODE DAY 2", 72, 76, 560, 42, 17, C.teal, true); textBox(s, "title", "Design a grid that solves a new mission.", 72, 184, 1080, 122, 52, C.white, true); textBox(s, "subtitle", "You will author the mission values, nested loops, test, and one evidence-based revision.", 72, 328, 1060, 70, 25, C.muted); stepStrip(s, ["Choose", "Author", "Run", "Test", "Explain"], 486); notes(s, "Project this section divider while students paste the Day 2 student-authorship scaffold. Day 2 is a new design task, not a replay of Day 1.", [TEKS, MAKECODE]); }
+  addEnter(deck, "C6 · TEXT DAY 2", "Choose a mission: 4 rows × 5 columns or 2 rows × 6 columns. Predict the total.", "Mission A total = ___ | Mission B total = ___", "Expected totals: Mission A 20; Mission B 12. Students choose after predicting both.");
+  addObjective(deck, "C6 · TEXT DAY 2", "I can author named values and both nested loops, then test and revise a supply grid for a new mission.", "Submit readable JavaScript, a complete grid and score, a prediction, one controlled revision, and an explanation of both loop jobs.", "Vocabulary: constraint · restricción | spacing · espacio | operation · operación | revise · revisar");
+  { const s = deck.slides.add(); title(s, "The mission has real constraints", "A usable grid must carry the right count and remain visible on the simulator screen.", "C6 · Text Day 2", "Problem"); textBox(s, "brief", "A storm shelter needs a digital supply map.\nThe program must place every supply in rows and columns, keep markers visible, and report the correct total.", 88, 238, 710, 212, 31, C.white, true); label(s, "constraints", "Required constraints", 866, 240, 320, C.gold); textBox(s, "constraint-list", "• Named string, number, Boolean\n• Operations on values\n• Outer and inner loops\n• No overlap or off-screen markers\n• Prediction + revision evidence", 884, 300, 318, 234, 22, C.cream); textBox(s, "es", "Meta: todos los suministros visibles, total correcto y una revisión explicada.", 88, 520, 710, 58, 20, C.muted); notes(s, "Frame the task as a design problem. Students must meet the constraints, but they choose mission values and explain their decisions.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Start from a scaffold—not a finished design", "The scaffold handles the sprite; you author the mission and loop decisions.", "C6 · Text Day 2", "Code map"); textBox(s, "map", "1  Mission name + configuration values\n2  Background and opening message\n3  Outer loop: rows\n4  Inner loop: columns\n5  Position operation + supply count\n6  Score and success check", 98, 228, 560, 318, 29, C.white); shape(s, "rule", "rect", 718, 224, 6, 340, C.teal); textBox(s, "ownership", "YOU AUTHOR\n\nmissionName\nrows + columns\nxSpacing + ySpacing\npriorityMode\nboth loop conditions\none controlled revision", 778, 224, 380, 340, 25, C.cream, true); notes(s, "Make the authorship boundary explicit. The sprite image is provided; the mission data, loop conditions, prediction, test, and revision belong to the student.", [MAKECODE_JS]); }
+  { const s = deck.slides.add(); title(s, "Author values that describe your mission", "Use meaningful names and the correct data type.", "C6 · Text Day 2", "Build checkpoint 1"); codeBox(s, "vars", "let missionName: string = \"________\"\nlet rows: number = ___\nlet columns: number = ___\nlet xSpacing: number = ___\nlet ySpacing: number = ___\nlet priorityMode: boolean = ___", 72, 216, 740, 376, "COMPLETE BEFORE RUN", C.gold, 22); textBox(s, "choice", "Mission A\n4 × 5\nspacing 28, 25\n\nMission B\n2 × 6\nspacing 24, 50", 884, 232, 280, 250, 26, C.white, true); textBox(s, "stem", "I chose / Elegí ___ because / porque ___.", 834, 522, 360, 56, 20, C.cream, true, "center"); notes(s, "Students type or replace each visible value. Check data types and meaningful names before they continue to the loops.", [MAKECODE_VARIABLES]); }
+  { const s = deck.slides.add(); title(s, "Author both nested-loop structures", "Transfer the neutral loop pattern from Day 1; the assignment does not supply the two for-loop headers.", "C6 · Text Day 2", "Build checkpoint 2"); panel(s, "outer", 72, 232, 500, 266, "OUTER LOOP / BUCLE EXTERIOR", "Counter name: row\nStop value: rows\nJob: advance to the next row", C.purple, 24); panel(s, "inner", 628, 232, 500, 266, "INNER LOOP / BUCLE INTERIOR", "Counter name: column\nStop value: columns\nJob: place every column in that row", C.teal, 24); textBox(s, "body", "Inside your inner loop / Dentro del bucle interior:\nplaceSupply(row, column, xSpacing, ySpacing)\nsuppliesPlaced += 1", 188, 526, 904, 90, 21, C.cream, true, "center"); notes(s, "Students author both complete for-loop structures in JavaScript. The resource supplies only the two body lines as comments. If syntax support is needed, point back to the neutral shelf/slot loop from Day 1; do not paste the assignment's target loops for the student.", [MAKECODE_JS, MAKECODE_LOOPS]); }
+  { const s = deck.slides.add(); title(s, "Operations place each supply", "The same formula uses row and column values for every position.", "C6 · Text Day 2", "Guided model"); codeBox(s, "position", "supply.setPosition(20 + column * xSpacing,\n                   20 + row * ySpacing)\nsuppliesPlaced += 1", 92, 244, 760, 244, "RUNS IN MAKECODE", C.teal, 24); textBox(s, "ops", "+ addition · suma\n* multiplication · multiplicación\n+= 1 increases the count", 904, 260, 286, 172, 22, C.cream); fullPrompt(s, "For row 2, column 3: what x and y will the program calculate?", "Para fila 2, columna 3: ¿qué x e y calcula?", C.purple, 520, 120, 23); notes(s, "Model one coordinate using the chosen spacing. Ask students to point to the column operation for x and row operation for y.", [MAKECODE_JS]); }
+  { const s = deck.slides.add(); title(s, "Predict before the first run", "A test needs an expected result before the simulator gives you one.", "C6 · Text Day 2", "Test plan"); textBox(s, "test-plan", "MISSION: ______\nEXPECTED TOTAL: rows × columns = ______\nONE POSITION: row ___, column ___ → x ___, y ___\nVISIBLE CONSTRAINT: no overlap; no marker off screen", 102, 236, 770, 286, 28, C.white, true); panel(s, "why", 922, 236, 266, 300, "WHY PREDICT?", "Predict first to compare your plan with evidence.\n\nPredice para comparar tu plan con la evidencia.", C.gold, 19); notes(s, "Do not let students run until the total and one coordinate are recorded. Check calculations quickly at the desk or through a partner check.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Run, inspect, and change one thing", "A controlled revision should solve one observed problem.", "C6 · Text Day 2", "Test + revise"); stepStrip(s, ["Run", "Count", "Inspect edges", "Change one value", "Run again"], 232, 3); textBox(s, "problems", "If markers overlap → change spacing\nIf markers leave the screen → reduce spacing or dimensions\nIf the total is wrong → check loop boundaries and counter\nIf code does not run → read the exact line marker and braces", 116, 364, 1050, 174, 25, C.white); textBox(s, "stem", "I changed / Cambié ______ because / porque ______. The result / El resultado ______.", 118, 566, 1040, 48, 20, C.cream, true, "center"); notes(s, "Require exactly one controlled revision in the evidence table. Do not accept several unrecorded changes at once.", [MAKECODE]); }
+  { const s = deck.slides.add(); title(s, "Choose your working route", "Support changes the scaffold—not the required authorship or evidence.", "C6 · Text Day 2", "Work choices"); label(s, "start", "Start here", 88, 246, 300, C.green); textBox(s, "start-body", "Use tested dimensions\nAuthor every typed value\nUse the required operations\nAuthor both complete loops\nRecord a test + revision", 106, 296, 320, 196, 20, C.white); label(s, "build", "Build", 474, 246, 280, C.teal); textBox(s, "build-body", "Choose either mission\nAuthor every named value\nUse every operation\nAuthor both complete loops\nMake one controlled revision", 492, 296, 320, 196, 20, C.white); label(s, "level", "Level up", 860, 246, 300, C.gold); textBox(s, "level-body", "Meet every Build requirement\nThen use priorityMode visibly\nAdd a reusable function\nCreate one blocked cell", 878, 296, 320, 196, 20, C.white); textBox(s, "same", "ALL ROUTES: typed variables + operations · both loops · prediction · test · revision · explanation", 116, 530, 1048, 60, 22, C.cream, true, "center"); notes(s, "Offer private teacher prompting, read-aloud, tested dimensions, or oral explanation as access supports. Every route still requires student-authored typed values and operations, both complete loop structures, prediction, test, revision, and explanation. Extension begins only after proficiency evidence is complete.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Use the rubric as a self-check", "Four kinds of evidence · 25 points each.", "C6 · Text Day 2", "Success criteria"); textBox(s, "rubric", "TEXT CODE\nBoth nested loops and readable named values\n\nDATA + OPERATIONS\nString, number, Boolean, and visible operations\n\nTEST + REVISION\nPrediction, observed result, one change, new result\n\nEXPLANATION\nHow rows and columns solve different subproblems", 108, 218, 1060, 360, 24, C.white); shape(s, "r1", "rect", 84, 226, 8, 58, C.teal); shape(s, "r2", "rect", 84, 316, 8, 58, C.purple); shape(s, "r3", "rect", 84, 406, 8, 58, C.pink); shape(s, "r4", "rect", 84, 496, 8, 58, C.gold); notes(s, "Read the four criteria before submission. Students may explain orally when the teacher records equivalent evidence, but code and test artifacts remain required.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Close by defending one design decision", "Name the value, operation, or loop condition and connect it to evidence.", "C6 · Text Day 2", "Done when"); fullPrompt(s, "I chose ______ because ______. My test showed ______, so I revised ______.", "Elegí ______ porque ______. Mi prueba mostró ______, por eso revisé ______.", C.green); textBox(s, "turn-in", "TURN IN: readable code + complete grid/score + prediction + one revision + loop explanation", 116, 562, 1048, 50, 20, C.white, true, "center"); notes(s, "Use the sentence as closure. Ask a few students to name different design decisions: mission data, spacing, priority mode, or loop boundaries.", [TEKS]); }
+  stopSlide(deck.slides.add(), "C6", "Text-Code Day 2 ends here. Assign the eight-question checkpoint after the project evidence is submitted.");
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Variables give changing details useful names", "Record a name, type, starting value, and operation in the Passport.", "Patterns and variables", "Day 2");
-    addCard(s, "num", 70, 220, 350, 270, "NUMBER", "boxesRemaining = 12\nrows = 3\ncolumns = 4\n\nOperations: +  −  ×  ÷", C.teal, 22);
-    addCard(s, "str", 465, 220, 350, 270, "STRING", "missionName =\n“Emergency Supply Grid”\n\nOperation: join text", C.purple, 22);
-    addCard(s, "bool", 860, 220, 350, 270, "BOOLEAN", "priorityMode = true\ncarryingBox = false\n\nOperations: AND, OR, NOT", C.gold, 22);
-    setNotes(s, "Students may first encounter variables in blocks. Require meaningful names and connect each type to what it can store or control.", [TEKS_SOURCE, MAKECODE_VARIABLES]);
-  }
+  addEnter(deck, "C7 · RVR TRANSFER", "Write one command a robot could follow to begin a drawing.", "Include a heading, speed, and distance or duration.", "Collect examples that are observable and measurable.");
+  addObjective(deck, "C7 · RVR TRANSFER", "I can compare two solutions, choose one, plan the robot mission, and revise it from a real test.", "Passport Checkpoint 7 shows the problem, two solutions, selection, roles, timeline, and pseudocode. The RVR Mission Sheet shows the sketch, robot ID, first and final runs, revision, and reflection.", "Words / Palabras: heading · dirección | distance · distancia | evidence · evidencia");
+  { const s = deck.slides.add(); title(s, "Give every teammate a visible job", "Roles rotate after the first run so one person does not control the robot.", "C7 · RVR Transfer", "Team setup"); label(s, "planner", "Planner", 86, 240, 300, C.teal); textBox(s, "planner-body", "Writes commands and checks order", 104, 300, 310, 90, 24, C.white); label(s, "programmer", "Programmer", 466, 240, 320, C.purple); textBox(s, "programmer-body", "Builds exactly what the plan says", 484, 300, 310, 90, 24, C.white); label(s, "tester", "Tester / evidence lead", 846, 240, 350, C.gold); textBox(s, "tester-body", "Runs, records the result, and names the changed line", 864, 300, 320, 110, 24, C.white); textBox(s, "timeline", "Plan approved → first run → revision run", 184, 500, 912, 60, 30, C.cream, true, "center"); notes(s, "Assign roles before students select Draw or Blocks. Rotate after the first run when time allows.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Let the robot expose the missing step", "The team may revise only after recording what the robot actually did.", "C7 · RVR Transfer", "Literal test"); stepStrip(s, ["Plan", "Program", "Run literally", "Record", "Revise"], 238, 2); fullPrompt(s, "The robot ______ because our plan ______. We revised ______.", "El robot ______ porque nuestro plan ______. Revisamos ______.", C.purple, 350, 200, 29); notes(s, "Do not accept a corrected robot program with an unchanged plan. The tester records the literal result before the team revises.", [TEKS]); }
+  { const s = deck.slides.add(); title(s, "Transfer the same thinking across three surfaces", "Use one specific revision from the RVR Mission Sheet.", "C7 · RVR Transfer", "Final reflection"); textBox(s, "blocks", "BLOCKS\nWhat structure was easy to see?", 92, 246, 320, 120, 27, C.white, true, "center"); shape(s, "a1", "rightArrow", 430, 274, 90, 54, C.teal, C.teal, 0); textBox(s, "text", "TEXT\nWhat became more explicit?", 530, 246, 320, 120, 27, C.white, true, "center"); shape(s, "a2", "rightArrow", 868, 274, 90, 54, C.gold, C.gold, 0); textBox(s, "robot", "ROBOT\nWhat did the real result reveal?", 966, 246, 240, 130, 24, C.white, true, "center"); fullPrompt(s, "Pseudocode helped me transfer ______ because ______.", "El pseudocódigo me ayudó a transferir ______ porque ______.", C.green); notes(s, "Close with one specific revision from the existing RVR Mission Sheet. Students should connect the physical result to the changed plan—not merely name the three tools.", [TEKS]); }
+  stopSlide(deck.slides.add(), "C7", "Coding Foundations retrofit complete. Collect Passport Checkpoint 7 planning evidence with the existing RVR Mission Sheet evidence.", "Close this deck and return to the existing RVR course route.");
 
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Abstraction turns one route into a reusable procedure", "Keep the repeated idea; replace the details that may change.", "Patterns and variables", "Day 2");
-    addCode(s, "specific", "MOVE 4 spaces\nTURN right\nMOVE 4 spaces", 90, 220, 420, 210, 28);
-    addCode(s, "general", "PROCEDURE moveAndTurn(distance, direction)\n  MOVE distance spaces\n  TURN direction\nEND PROCEDURE", 650, 210, 540, 250, 22);
-    addText(s, "transfer", "Now the same plan can solve more than one route.", 180, 525, 920, 52, 28, C.cream, true, "center");
-    setNotes(s, "Students do not need to write a programming-language function yet. The abstraction evidence is the generalized pseudocode and explanation.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Predict before pressing Run", "Complete the prediction column before the program produces evidence.", "Test and revise", "Day 3");
-    addFlow(s, ["PREDICT", "RUN", "OBSERVE", "CHANGE ONE THING", "RUN AGAIN"], 230);
-    addText(s, "question", "What do you expect the computer to do—and which instruction should cause it?", 110, 410, 1060, 86, 29, C.white, true, "center");
-    setNotes(s, "This extends the existing Debugging Detective bug log. Students should not backfill a prediction after seeing the result.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "One controlled change makes the result explainable", "The evidence must connect a cause to an observed effect.", "Test and revise", "Day 3");
-    addCard(s, "predict", 70, 220, 255, 240, "PREDICTION", "What should happen?", C.teal, 21);
-    addCard(s, "observe", 365, 220, 255, 240, "OBSERVED", "What actually happened?", C.purple, 21);
-    addCard(s, "change", 660, 220, 255, 240, "ONE CHANGE", "What exact line or value changed?", C.pink, 21);
-    addCard(s, "result", 955, 220, 255, 240, "RESULT", "What changed after the test?", C.gold, 21);
-    addText(s, "stem", "“When I changed ______, the program ______ because ______.”", 135, 520, 1010, 54, 26, C.cream, true, "center");
-    setNotes(s, "Require three records in Passport Checkpoint 3. A screenshot alone does not replace the cause-and-effect record.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Revise the pseudocode—not only the blocks", "A better executable program should leave behind a better plan.", "Test and revise", "Day 3");
-    addCard(s, "before", 100, 230, 440, 260, "BEFORE", "REPEAT 3 times\n  MOVE forward\nEND REPEAT", C.pink, 25);
-    addCard(s, "after", 740, 230, 440, 260, "AFTER", "REPEAT 4 times\n  MOVE forward\n  CHECK for wall\nEND REPEAT", C.green, 25);
-    addText(s, "claim", "Name the exact revision and the evidence that justified it.", 180, 535, 920, 44, 24, C.white, true, "center");
-    setNotes(s, "Students copy one changed pseudocode line into the Passport and explain why the new algorithm is better.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Plan one game feature before adding it", "Complete Passport Checkpoint 4 at the start of Video Game Design Lesson 2.", "Game remix", "Lesson 2");
-    addCard(s, "challenge", 70, 220, 350, 260, "FEATURE GOAL", "Challenge · reward · rule\nidentity choice · feedback\nprogression", C.purple, 22);
-    addCard(s, "trigger", 465, 220, 350, 260, "TRIGGER", "WHEN ______ happens...", C.teal, 26);
-    addCard(s, "response", 860, 220, 350, 260, "RESULT", "...the program SHOULD ______.", C.gold, 26);
-    setNotes(s, "Students choose one of the two required remix features and plan it before editing the project. Keep the existing feature requirements and rubric.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "A when/should statement becomes pseudocode", "The feature plan predicts behavior before the code is changed.", "Game remix", "Lesson 2");
-    addCode(s, "feature-code", "WHEN player overlaps reward\n  ADD 1 TO score\n  PLAY success sound\n  MOVE reward to new location\nEND WHEN", 175, 210, 930, 300, 28);
-    addText(s, "test", "Test question: Does the reward change score, feedback, and position every time?", 140, 545, 1000, 44, 23, C.cream, true, "center");
-    setNotes(s, "After students build the feature in blocks, they record the test result in the same Passport section.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    s.background.fill = C.navy;
-    addText(s, "kicker", "TEXT-CODE BRIDGE", 72, 84, 360, 28, 16, C.teal, true);
-    addText(s, "title", "Blocks show the structure.\nText makes every instruction visible.", 72, 190, 1040, 150, 48, C.white, true);
-    addText(s, "subtitle", "Emergency Supply Grid · two class periods · MakeCode Arcade JavaScript", 72, 392, 1080, 48, 24, C.muted);
-    addFlow(s, ["TRACE", "PREDICT", "RUN", "CHANGE", "EXPLAIN"], 525);
-    setNotes(s, "This is the only new standalone bridge in the sprint. Students already have block-code experience from Video Game Design.", [TEKS_SOURCE, MAKECODE_DOCS]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Open a new project and select JavaScript", "No import or personal account is required for the core route.", "Text-code bridge", "Day 1");
-    await addScreenshot(s, "makecode-open", "makecode-supply-grid-code.png", "MakeCode Arcade JavaScript editor showing the Emergency Supply Grid program", 70, 190, 760, 425, "contain");
-    addCard(s, "steps", 875, 210, 330, 365, "START HERE", "1. Open arcade.makecode.com\n2. Choose New Project\n3. Name it Emergency Supply Grid\n4. Select JavaScript\n5. Keep the simulator visible", C.teal, 21);
-    setNotes(s, "Model the route once. If the welcome tour covers the language tabs, close it before selecting JavaScript.", ["https://arcade.makecode.com/", MAKECODE_DOCS]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Read named variables from top to bottom", "Type, starting value, and purpose belong together.", "Text-code bridge", "Day 1");
-    await addScreenshot(s, "makecode-vars", "makecode-supply-grid-variables.png", "MakeCode Arcade JavaScript editor showing named variables and nested loops", 60, 182, 780, 440, "contain");
-    addCard(s, "trace-vars", 880, 205, 330, 350, "TRACE FOUR VALUES", "missionName → string\nrows / columns → numbers\npriorityMode → Boolean\nsuppliesPlaced → number\n\nPredict before running.", C.purple, 20);
-    setNotes(s, "Use the Passport trace table. Students identify what each variable stores or controls before changing any value.", [MAKECODE_VARIABLES]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "The outer loop makes rows; the inner loop makes columns", "One complete inner loop places every supply in one row.", "Text-code bridge", "Day 1");
-    addCode(s, "nested", "for (let row = 0; row < rows; row++) {\n  for (let column = 0; column < columns; column++) {\n    placeSupply(row, column)\n    suppliesPlaced += 1\n  }\n}", 120, 200, 1040, 300, 25);
-    addText(s, "trace", "TRACE: row 0 → columns 0, 1, 2, 3 · then row 1 begins", 130, 540, 1020, 52, 25, C.cream, true, "center");
-    setNotes(s, "Physically trace the first row with a finger. Ask how many times the inner loop runs and how many times the outer loop runs.", [MAKECODE_JS, MAKECODE_LOOPS]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "One calculation places every supply", "The formula uses both loop variables instead of twelve separate positions.", "Text-code bridge", "Day 1");
-    addCode(s, "position", "x = 25 + column × 35\ny = 25 + row × 35", 155, 215, 470, 180, 34);
-    addCard(s, "calc", 720, 205, 390, 240, "TRY row = 2, column = 3", "x = 25 + 3 × 35 = 130\ny = 25 + 2 × 35 = 95", C.gold, 24);
-    addText(s, "meaning", "The same formula works for every cell in the grid.", 190, 520, 900, 48, 27, C.white, true, "center");
-    setNotes(s, "Students calculate one position by hand, then point to the multiplication and addition operations in the code.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Run the grid and compare it with the prediction", "A 3 × 4 grid should produce 12 supply markers.", "Text-code bridge", "Day 1");
-    await addScreenshot(s, "makecode-result", "makecode-supply-grid-result.png", "MakeCode Arcade simulator showing a three-row by four-column supply grid and score 12", 80, 180, 790, 445, "contain");
-    addCard(s, "evidence", 910, 210, 300, 350, "EVIDENCE", "Grid screenshot\nVisible score\nPredicted total\nObserved total\nOne sentence explaining the nested loops", C.green, 21);
-    setNotes(s, "If the grid does not match the prediction, students use the Passport test table before asking for a replacement project.", ["https://arcade.makecode.com/"]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Day 1: trace, predict, and repair", "Students read working text code before independently changing it.", "Text-code bridge", "Day 1");
-    addCard(s, "trace-task", 70, 210, 340, 310, "TRACE", "Label the outer loop, inner loop, variables, data types, and operations.", C.teal, 22);
-    addCard(s, "predict-task", 470, 210, 340, 310, "PREDICT", "Calculate suppliesPlaced and one x/y position before Run.", C.purple, 22);
-    addCard(s, "repair-task", 870, 210, 340, 310, "REPAIR", "Correct one teacher-provided loop or value bug and record the evidence.", C.pink, 22);
-    setNotes(s, "Supported route: give students the complete code and one highlighted bug. Core route: students identify the bug from the mismatched result.", [TEKS_SOURCE, MAKECODE_JS]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Day 2: change the grid with purpose", "The new version must still use text, named variables, operations, and nested loops.", "Text-code bridge", "Day 2");
-    addCard(s, "core", 70, 195, 340, 360, "CORE", "Change rows and columns\nPredict the new total\nChange spacing without overlap\nRun and revise\nExplain both loops", C.teal, 21);
-    addCard(s, "support", 470, 195, 340, 360, "SUPPORTED", "Use a partially completed code frame\nChoose from tested dimensions\nTrace with a row/column table\nExplain orally or in writing", C.green, 21);
-    addCard(s, "extend", 870, 195, 340, 360, "EXTENSION", "Use priorityMode to change color or placement\nAdd a reusable function\nCreate one blocked cell\nExplain the new subproblem", C.gold, 21);
-    setNotes(s, "Do not require the extension for proficiency. The core artifact already satisfies the text-code and nested-loop evidence when students can explain it.", [TEKS_SOURCE, MAKECODE_JS]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Evidence must show both code and thinking", "The final screenshot is necessary, but it is not the whole demonstration.", "Text-code bridge", "Day 2");
-    addCard(s, "r1", 70, 200, 540, 165, "TEXT CODE", "Readable JavaScript with two nested loops and named variables.", C.teal, 20);
-    addCard(s, "r2", 670, 200, 540, 165, "DATA + OPERATIONS", "String, number, Boolean, and visible operations on values.", C.purple, 20);
-    addCard(s, "r3", 70, 405, 540, 165, "TEST EVIDENCE", "Prediction, screenshot, one controlled change, and observed result.", C.pink, 20);
-    addCard(s, "r4", 670, 405, 540, 165, "EXPLANATION", "How the loops address row and column subproblems in the real context.", C.gold, 20);
-    setNotes(s, "Score each category with the assignment rubric. Students may explain orally when documented by the teacher, but the code and test evidence remain required.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Reuse the same planning routine with RVR", "Complete Passport Checkpoint 5 before the drawing mission.", "RVR transfer", "Day 1");
-    addFlow(s, ["ASSIGN ROLES", "SET MILESTONES", "WRITE PSEUDOCODE", "RUN LITERALLY", "REVISE"], 220);
-    addCard(s, "roles", 110, 380, 470, 180, "ROLES", "Planner · programmer · tester/evidence lead", C.teal, 22);
-    addCard(s, "timeline", 700, 380, 470, 180, "TIMELINE", "Plan approved · first run · revision run", C.gold, 22);
-    setNotes(s, "Add this before students select Draw or Blocks. The planning evidence should name heading, speed, duration/distance, waits, and repeated actions.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "Let the robot expose the missing step", "The physical result makes vague pseudocode visible.", "RVR transfer", "Day 1");
-    addCard(s, "plan", 70, 220, 330, 260, "PLAN", "What should the robot draw?", C.teal, 22);
-    addCard(s, "run", 475, 220, 330, 260, "RUN", "What did it actually draw?", C.purple, 22);
-    addCard(s, "revise", 880, 220, 330, 260, "REVISE", "Which exact command, value, or repeated group changed?", C.gold, 22);
-    addText(s, "claim", "“The robot ______ because our pseudocode ______. We revised ______.”", 125, 535, 1030, 48, 25, C.cream, true, "center");
-    setNotes(s, "Require the team to update the Passport after the first run. Do not accept a corrected robot program with an unchanged plan.", [TEKS_SOURCE]);
-  }
-
-  {
-    const s = deck.slides.add();
-    addTitle(s, "One planning language now connects three coding surfaces", "Students can explain how the same algorithm moved from blocks to text to a robot.", "Close and transfer", "Final");
-    addCard(s, "blocks", 70, 220, 340, 270, "BLOCKS", "Sequence, event, loop, condition\n\nWhat structure did the blocks make visible?", C.teal, 21);
-    addCard(s, "text", 470, 220, 340, 270, "TEXT", "Named types, operations, syntax, nested loops\n\nWhat became more explicit?", C.purple, 21);
-    addCard(s, "robot", 870, 220, 340, 270, "ROBOT", "Heading, speed, distance, timing, physical evidence\n\nWhat did the real result reveal?", C.gold, 21);
-    addText(s, "final-reflection", "Use one specific revision in the Passport final reflection.", 180, 540, 920, 46, 25, C.white, true, "center");
-    setNotes(s, "Close with the final Passport reflection. This is the synthesis evidence for transfer across tools and contexts.", [TEKS_SOURCE]);
-  }
-
-  for (const [index, slide] of deck.slides.items.entries()) {
-    const stem = `slide-${String(index + 1).padStart(2, "0")}`;
-    await writeBlob(path.join(OUT_DIR, `${stem}.png`), await deck.export({ slide, format: "png", scale: 1 }));
-    await fs.writeFile(path.join(OUT_DIR, `${stem}.layout.json`), await (await slide.export({ format: "layout" })).text());
-  }
+  for (const [index, slide] of deck.slides.items.entries()) { const stem = `slide-${String(index + 1).padStart(2, "0")}`; await writeBlob(path.join(OUT_DIR, `${stem}.png`), await deck.export({ slide, format: "png", scale: 1 })); await fs.writeFile(path.join(OUT_DIR, `${stem}.layout.json`), await (await slide.export({ format: "layout" })).text()); }
   await writeBlob(path.join(OUT_DIR, "deck-montage.webp"), await deck.export({ format: "webp", montage: true, scale: 1 }));
-  const raw = await deck.inspect({ kind: "slide,textbox,shape,image,notes", maxChars: 200000 });
-  await fs.writeFile(path.join(OUT_DIR, "raw-output.ndjson"), raw.ndjson);
+  const inspect = await deck.inspect({ kind: "slide,textbox,shape,image,notes", maxChars: 400000 });
+  await fs.writeFile(path.join(OUT_DIR, "inspect.ndjson"), inspect.ndjson);
   await fs.writeFile(path.join(OUT_DIR, "raw-output.json"), JSON.stringify(deck.toProto()));
-  const pptx = await PresentationFile.exportPptx(deck);
-  await pptx.save(FINAL_PPTX);
+  const pptx = await PresentationFile.exportPptx(deck); await pptx.save(FINAL_PPTX); await preserveImageAltText(FINAL_PPTX);
   console.log(JSON.stringify({ finalPptx: FINAL_PPTX, slideCount: deck.slides.items.length }));
 }
 
-build().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+build().catch((error) => { console.error(error); process.exitCode = 1; });
