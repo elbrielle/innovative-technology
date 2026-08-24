@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "course_id": 23402,
-  "audit_date": "2026-08-23",
+  "audit_date": "2026-08-24",
   "canonical_teks_source": "docs/standards/texas-technology-applications-grade-8-teks-2022.md",
   "canonical_teks_sha256": "a74a60c9155abed42f08c97be172d0ade43fcdc58d9cb253e813887417b6d0a5",
   "definitions": {
@@ -150,6 +150,20 @@
         "The DOL is strong and only needs to make the feedback-to-revision link explicit."
       ],
       "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Learn: Ready, Set, Design, Activity: Ready, Set, Design, Xello Check-in: Matchmaker, Personality Style, and Learning Style). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 2,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_item_id": 2665839,
+      "page_slug": "facilitator-guide-xello-matchmaker-personality-style-and-learning-style",
+      "title": "Facilitator Guide: Xello — Matchmaker, Personality Style, and Learning Style",
+      "topic": "Xello assessment results and career self-knowledge",
+      "objective": "Students will complete Matchmaker, Personality Style, and Learning Style in the required order and explain one result that surprised them or confirmed what they already knew.",
+      "teks": [],
+      "demonstration_of_learning": "Three readable, privacy-safe result screenshots and one honest sentence explaining a result that surprised the student or confirmed prior self-knowledge.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The teacher guide, bilingual student assignment, 19-slide projected route, 16-slide student walkthrough, five-point scoring contract, and privacy-safe evidence route were reconciled in four independent review lenses. This is an operational college-and-career-readiness check-in; ordinary navigation, file capture, and privacy choices are not treated as independent Grade 8 Technology Applications TEKS evidence."
     },
     {
       "module_position": 2,
