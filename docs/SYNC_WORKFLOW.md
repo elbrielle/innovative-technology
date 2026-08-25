@@ -2,7 +2,7 @@
 
 ## Source of truth
 
-The live Irving 2027 Canvas course (`23402`) is the instructional source. This repository is a generated public review surface, not a second authoring system.
+The live Verizon Canvas course (`23402`) is the instructional source. This repository is a generated public review surface, not a second authoring system.
 
 Do not hand-edit files in `lessons/`, `modules/`, `index.html`, `parity.html`, `data/course-snapshot.json`, or `data/public-links.json`. Change Canvas first, then sync.
 
