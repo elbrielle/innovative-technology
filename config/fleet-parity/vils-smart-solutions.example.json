@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "fleet_id": "vils-smart-solutions",
+  "display_name": "VILS Smart Solutions",
+  "source": {
+    "kind": "canvas_snapshot",
+    "path": "/absolute/path/to/innovative-technology-site/data/course-snapshot.json"
+  },
+  "destination": {
+    "base_url": "https://learn.example.org/api/v1",
+    "token": {
+      "kind": "env",
+      "name": "IRVING_CANVAS_TOKEN"
+    }
+  },
+  "courses": [
+    {
+      "course_id": 10001,
+      "label": "Smart Solutions — Example A",
+      "enabled": true
+    },
+    {
+      "course_id": 10002,
+      "label": "Smart Solutions — Example B",
+      "enabled": true
+    }
+  ],
+  "matching": {
+    "module_key": "name",
+    "item_key": [
+      "type",
+      "title"
+    ]
+  },
+  "policy": {
+    "never_delete": true,
+    "preserve_destination_publication": true,
+    "preserve_destination_dates": true,
+    "preserve_teacher_extras": true,
+    "ambiguous_matches": "hold"
+  }
+}

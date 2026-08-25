@@ -51,6 +51,13 @@ That command:
 
 The Canvas token is read from `CANVAS_TOKEN` or `~/.canvas_token`. Never commit the token.
 
+## Teacher-course fleet parity
+
+Multi-course distribution is audited with the reusable personal
+$canvas-fleet-parity skill. VILS keeps its source and protection policy in
+this project while live teacher-course registries and reports remain private.
+See [docs/CANVAS_FLEET_PARITY.md](docs/CANVAS_FLEET_PARITY.md).
+
 ## Release workflow
 
 1. Run `python3 scripts/sync_course.py`.
