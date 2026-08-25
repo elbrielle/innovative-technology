@@ -13,8 +13,13 @@ copy of live Canvas.
 - The generated public mirror remains downstream of canonical Canvas and is
   never edited to push content into teacher courses.
 - Each teacher course retains its own IDs, dates, publication choices,
-  homepage, submissions, locally edited canonical content, and teacher-created
-  content.
+  homepage, submissions, materially edited canonical content, and
+  teacher-created content.
+- Publication is not parity data. Published/unpublished differences are
+  ignored, never classified as edits or drift, and never synchronized.
+- Canonical module names, canonical item placement/order, and module structure
+  are parity-managed. Teacher-created extras remain; materially edited
+  canonical bodies/settings are protected.
 - The fleet controller does not make Commons provenance authoritative.
 
 ## Private fleet data
@@ -45,8 +50,9 @@ does not authorize destination writes. After reviewing the plans, use a second
 invocation:
 
 > Use $canvas-fleet-parity. Apply these reviewed plans to the named SS courses
-> one at a time, preserve all teacher changes and publication choices, verify
-> each course before continuing, and stop on the first mismatch.
+> one at a time, ignore and preserve every publication choice, restore
+> canonical names/order/structure, protect teacher-created or materially edited
+> content, verify each course before continuing, and stop on the first mismatch.
 
 The second invocation must name or link the immutable plans and identify the
 target courses. “The source is good” alone is never enough to apply.
@@ -117,11 +123,19 @@ have been adjudicated.
 - source_removed_no_delete: removal is reported and never automatic.
 - reviewed_identity_unbaselined: the source/destination identity is reviewed,
   but body-level drift has not been accepted as a semantic baseline.
-- reviewed_module_rename_preserve: a reviewed destination module ID remains
-  mapped while its teacher-selected name is preserved.
+- module_name_update_review: a reviewed mapped module has a noncanonical name
+  and may be renamed without touching publication.
+- canonical_placement_update_review: a mapped canonical item is in the wrong
+  module or relative position and may be structurally repaired while retaining
+  teacher-created extras.
 
 Any ambiguous, hold, preserve, no-delete, active-import, detail-error, or
 unexpected-identity condition blocks mutation.
+
+The historical `reconcile_ross_course.py` and `reconcile_duncan_course.py`
+scripts are not fleet apply tools and must not be reused for parity. They were
+one-time rebuild utilities and include operations outside this publication-
+neutral contract.
 
 ## First VILS proof
 
@@ -137,10 +151,11 @@ Smart Solutions destination courses.
   settings survived import while its LTI configuration did not.
 - No destination course, Drive file, source snapshot, or public page changed.
 
-Ross now has all 510 canonical identities mapped while eight local items and
-the teacher-selected Video Game Design module name remain preserved. The
-reviewed state is identity-only: it enables durable mapping but does not accept
-body-level differences as a semantic baseline.
+Ross now has all 510 canonical identities mapped while eight local items remain
+preserved. His older Video Game Design module name and the moved Portfolio item
+remain mapped by ID and will appear as structural plan candidates, not content
+conflicts. The reviewed state is identity-only: it enables durable mapping but
+does not accept body-level differences as a semantic baseline.
 
 This proof and state do not authorize a future synchronization. Each approved
 source release still requires a new three-course audit, reviewed immutable

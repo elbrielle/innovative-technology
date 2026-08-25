@@ -55,6 +55,14 @@ VIDEO_NEW_TITLES = [
     "Lesson 4: Text Code — Emergency Supply Grid",
     "Checkpoint: Text Code + Nested Loops",
 ]
+MODULE_ITEM_GUARD_FIELDS = (
+    "id",
+    "type",
+    "title",
+    "position",
+    "content_id",
+    "page_url",
+)
 XELLO_TITLE = (
     "Facilitator Guide: Xello — Matchmaker, Personality Style, and Learning Style"
 )
@@ -96,6 +104,27 @@ def write_private(path: Path, value: object) -> None:
 
 def page_path(value: str) -> str:
     return urllib.parse.quote(value, safe="+-_")
+
+
+def module_item_guard(row: dict) -> dict:
+    """Publication is teacher discretion and never participates in a guard."""
+    return {key: row.get(key) for key in MODULE_ITEM_GUARD_FIELDS}
+
+
+def front_page_content_guard(row: dict) -> dict:
+    """Protect the homepage content/identity while ignoring publication state."""
+    return {
+        key: row.get(key)
+        for key in (
+            "page_id",
+            "url",
+            "title",
+            "body",
+            "front_page",
+            "editing_roles",
+            "hide_from_students",
+        )
+    }
 
 
 def live_guard(canvas: Canvas, plan: dict) -> tuple[dict, dict[str, list[dict]]]:
@@ -145,45 +174,17 @@ def live_guard(canvas: Canvas, plan: dict) -> tuple[dict, dict[str, list[dict]]]
         },
         "front_page": {
             key: front.get(key)
-            for key in ("page_id", "url", "title", "front_page", "published")
+            for key in ("page_id", "url", "title", "front_page")
         },
         "week_module": {
             "id": week["id"],
             "name": week["name"],
-            "items": [
-                {
-                    key: row.get(key)
-                    for key in (
-                        "id",
-                        "type",
-                        "title",
-                        "position",
-                        "content_id",
-                        "page_url",
-                        "published",
-                    )
-                }
-                for row in module_items["week"]
-            ],
+            "items": [module_item_guard(row) for row in module_items["week"]],
         },
         "video_module": {
             "id": video["id"],
             "name": video["name"],
-            "items": [
-                {
-                    key: row.get(key)
-                    for key in (
-                        "id",
-                        "type",
-                        "title",
-                        "position",
-                        "content_id",
-                        "page_url",
-                        "published",
-                    )
-                }
-                for row in module_items["video"]
-            ],
+            "items": [module_item_guard(row) for row in module_items["video"]],
         },
         "groups": {"minor": minor[0]["id"], "major": major[0]["id"]},
         "missing_titles_confirmed": target_titles,
@@ -313,7 +314,9 @@ def verify_after(
     week_id = int(plan["parents"]["week1_module_id"])
     video_id = int(plan["parents"]["video_module_id"])
     front = canvas.get(f"/courses/{course_id}/front_page")
-    if semantic_sha(front) != semantic_sha(backup["front_page"]):
+    if front_page_content_guard(front) != front_page_content_guard(
+        backup["front_page"]
+    ):
         raise RuntimeError("Protected front page changed during additions-only apply")
     video_module = canvas.get(f"/courses/{course_id}/modules/{video_id}")
     if video_module.get("name") != "SW3 · Video Game Design":
@@ -326,7 +329,7 @@ def verify_after(
         raise RuntimeError("Video module order does not match the reviewed append plan")
     old_guard = plan["destination_guard"]["video_module"]["items"]
     for before, after in zip(old_guard, video_items[: len(VIDEO_LEGACY_TITLES)]):
-        for field in ("id", "type", "title", "content_id", "page_url", "published"):
+        for field in ("id", "type", "title", "content_id", "page_url"):
             if before.get(field) != after.get(field):
                 raise RuntimeError(f"Existing Video Game item changed field {field}")
     if any(row.get("published") for row in video_items[len(VIDEO_LEGACY_TITLES) :]):

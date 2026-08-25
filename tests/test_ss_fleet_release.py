@@ -13,6 +13,20 @@ assert SPEC.loader
 sys.modules["ss_fleet_release"] = ss_fleet_release
 SPEC.loader.exec_module(ss_fleet_release)
 
+SYNC_SCRIPT = (
+    Path(__file__).resolve().parents[1]
+    / "scripts"
+    / "sync_reviewed_fleet_additions.py"
+)
+sys.path.insert(0, str(SYNC_SCRIPT.parent))
+SYNC_SPEC = importlib.util.spec_from_file_location(
+    "sync_reviewed_fleet_additions", SYNC_SCRIPT
+)
+sync_reviewed_fleet_additions = importlib.util.module_from_spec(SYNC_SPEC)
+assert SYNC_SPEC.loader
+sys.modules["sync_reviewed_fleet_additions"] = sync_reviewed_fleet_additions
+SYNC_SPEC.loader.exec_module(sync_reviewed_fleet_additions)
+
 
 class SmartSolutionsFleetReleaseTests(unittest.TestCase):
     def adapter(self, count: int) -> dict:
@@ -69,6 +83,38 @@ class SmartSolutionsFleetReleaseTests(unittest.TestCase):
             path.write_text("{}", encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError, "seal does not match"):
                 ss_fleet_release.validate_release(path)
+
+    def test_apply_guards_ignore_publication_state(self):
+        item = {
+            "id": 1,
+            "type": "Page",
+            "title": "Example",
+            "position": 2,
+            "content_id": None,
+            "page_url": "example",
+            "published": False,
+        }
+        published = {**item, "published": True}
+        self.assertEqual(
+            sync_reviewed_fleet_additions.module_item_guard(item),
+            sync_reviewed_fleet_additions.module_item_guard(published),
+        )
+        page = {
+            "page_id": 2,
+            "url": "home",
+            "title": "Home",
+            "body": "Same",
+            "front_page": True,
+            "editing_roles": "teachers",
+            "hide_from_students": False,
+            "published": False,
+        }
+        self.assertEqual(
+            sync_reviewed_fleet_additions.front_page_content_guard(page),
+            sync_reviewed_fleet_additions.front_page_content_guard(
+                {**page, "published": True}
+            ),
+        )
 
 
 if __name__ == "__main__":
