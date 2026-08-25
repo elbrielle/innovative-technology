@@ -1,7 +1,7 @@
 {
   "counts": {
-    "item_pages": 444,
-    "items": 509,
+    "item_pages": 445,
+    "items": 510,
     "modules": 34,
     "protected_items": 1,
     "public_files": 201
@@ -9,11 +9,11 @@
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "8aa566b178882df1bbdc8937f560894c5284b9964eef0257b400bad4b34476d1"
+      "sha256": "f5a18e435d3dbb1985183b0d1b754708aac2f2d6e58bbee7f23227043bbbdfeb"
     },
     "index.html": {
       "kind": "index",
-      "sha256": "bc5774e627f1f1aadfaf6881d600ec54f1787c210d41a7eb5c8b6f70e4e0c540"
+      "sha256": "a0ebad2e27f4fb0d5034fa58c586c429f93ec4ad942a5f30ee86c20cda5b8ef8"
     },
     "lessons/2633980.html": {
       "canvas_body_sha256": "1548eb11a399c543b02c96c9c9ed55375caddf3ce61df2e5cba274f3fa68e239",
@@ -121,11 +121,11 @@
       "sha256": "1a1ecd41995f395ba6884a99bdc81a0cb4fb8adfabb3226b56ca03737a0a7c99"
     },
     "lessons/2633997.html": {
-      "canvas_body_sha256": "814256fe4b0edcf0e3aae60bc27dc71beb44e67a577b58a4eecceab42d341b5b",
+      "canvas_body_sha256": "1a56bbb575dad48c887143282d143bf241d897ccd4ef54b3f356b714d85f197f",
       "canvas_id": 2633997,
       "kind": "item",
       "public_state": "public",
-      "sha256": "c69562a3c55aa24bb78af3f3ecad427b26dc617afa00624e5a2460cf942ff93a"
+      "sha256": "7bd0c8fcdd3f4506208a7ee9fa52dd93cf1db47b28010b0c515d0c144a38c24c"
     },
     "lessons/2633999.html": {
       "canvas_body_sha256": "30d9cfd4f04f1d6779ea9ad244690079be20acd70edddd1c41dbddc1635361b7",
@@ -3123,6 +3123,13 @@
       "public_state": "public",
       "sha256": "6a1a041a3932ee4b77558a0119f3cca6cf8c957c147b8ef4d1efcdad9d8b0d9b"
     },
+    "lessons/2665839.html": {
+      "canvas_body_sha256": "94b6964dc89e932b1cee6d1afbb5250c3aeb34e06b0a1a5504aacac4e6460064",
+      "canvas_id": 2665839,
+      "kind": "item",
+      "public_state": "public",
+      "sha256": "2fded38225e091be628fd3cfeedc98ce756d5338955d3d9afcbf5d9dde564adb"
+    },
     "lessons/augmented-reality-with-mergecube-activity-lesson-1-the-basic.html": {
       "canvas_id": 2634252,
       "kind": "legacy_redirect",
@@ -3306,7 +3313,7 @@
     "modules/72564.html": {
       "canvas_id": 72564,
       "kind": "module",
-      "sha256": "2ef4d9f031bab61422f0542ef3cf8fd1f61ede69cba477e3977b26d27a5cd012"
+      "sha256": "f87301ef91d9c1efa906eeeac2478bcd05fa4ee2e77358462225c950c9fb7060"
     },
     "modules/72565.html": {
       "canvas_id": 72565,
@@ -3470,11 +3477,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "4f6f8168c52f9c0dbaad6b72996141d473bf8e4ab172e24b90807c31f43b55c1"
+      "sha256": "9ec4e1b8f9de23f7ced188cbe29c820327f8de78bd8b99de956052e7e4440d98"
     }
   },
   "schema_version": 1,
-  "site_sha256": "e287c13695369a9b235ccd0df51653ca016004edae33b8f5012e5aa4f9b19ed9",
-  "snapshot_sha256": "874d4b3d7a4959d096eae7a9a502ecf39bec8e42e11c2d53ea405cab8689e6c6",
+  "site_sha256": "4bd9b5ae088d68eff91dadc243188d34ec0c06eb85994b77b70125b72516e6ec",
+  "snapshot_sha256": "c5f5135533f756aefe6589605ed9b086d80c2a23770f465fef3c65049e330b6e",
   "unresolved": []
 }

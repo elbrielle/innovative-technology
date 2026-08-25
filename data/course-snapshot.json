@@ -3627,7 +3627,7 @@
       "sha256": "577b0b16ffae0a0436f291d673278bd8fb3742d71bf21e8859469ad19306d907"
     }
   },
-  "generated_at": "2026-08-23T05:49:31+00:00",
+  "generated_at": "2026-08-24T19:23:32+00:00",
   "modules": [
     {
       "id": 72563,
@@ -4422,18 +4422,50 @@
         },
         {
           "completion_requirement": null,
+          "content_id": null,
+          "external_url": null,
+          "id": 2665839,
+          "indent": 0,
+          "new_tab": null,
+          "page_url": "facilitator-guide-xello-matchmaker-personality-style-and-learning-style",
+          "position": 6,
+          "public_state": "public",
+          "published": false,
+          "resource": {
+            "body": "<div data-vils-xello-week1-guide=\"2026-08-24-v1\" data-vils-target-module-item=\"2633997\" style=\"max-width:900px;margin:0 auto;color:#1f2430;font-size:16px;line-height:1.55;\">\n  <div style=\"background:#10233f;border-left:10px solid #ef3340;padding:20px 22px;margin:0 0 18px;\">\n    <p style=\"margin:0 0 6px;color:#ffd34e;font-family:monospace;\"><strong>TEACHER ONLY · WEEK 1 · XELLO</strong></p>\n    <h1 style=\"margin:0 0 8px;color:#fff;font-size:29px;\">Matchmaker, Personality Style, and Learning Style</h1>\n    <p style=\"margin:0;color:#e7eef8;\">Use the projected Xello deck to model the exact route, pause between assessments when needed, and collect three privacy-safe result screenshots plus one reflection.</p>\n  </div>\n\n  <div data-vils-daily-learning-contract=\"2026-08-21-semantic-audit-v1\" style=\"background:#f4f8fc;border:2px solid #1b6f7a;border-radius:12px;padding:16px 18px;margin:0 0 18px;\">\n    <h2 style=\"margin:0 0 10px;font-size:22px;color:#1b6f7a;\">Daily Learning Contract</h2>\n    <p style=\"margin:0 0 7px;\"><strong>Topic:</strong> Xello assessment results and career self-knowledge</p>\n    <p style=\"margin:0 0 7px;\"><strong>Student objective:</strong> Students will complete Matchmaker, Personality Style, and Learning Style in the required order and explain one result that surprised them or confirmed what they already knew.</p>\n    <p style=\"margin:0 0 7px;\"><strong>Essential TEKS:</strong> None. This is an operational college-and-career-readiness check-in; it does not independently demonstrate a Grade 8 Technology Applications TEKS expectation.</p>\n    <p style=\"margin:0 0 7px;\"><strong>Supporting TEKS:</strong> None claimed. Students practice digital navigation, file capture, and privacy decisions without treating ordinary tool use as standards evidence.</p>\n    <p style=\"margin:0 0 7px;\"><strong>Demonstration of learning:</strong> Three readable, privacy-safe result screenshots and one honest sentence explaining a result that surprised the student or confirmed prior self-knowledge.</p>\n    <p style=\"margin:0;\"><strong>Alignment status:</strong> Not applicable — operational Xello check-in.</p>\n  </div>\n\n  <div style=\"background:#fff5cc;border:2px solid #d49b00;border-radius:10px;padding:14px 16px;margin:0 0 18px;\">\n    <h2 style=\"margin:0 0 7px;color:#6b4700;font-size:20px;\">Project the complete visual route</h2>\n    <p style=\"margin:0 0 8px;\"><a href=\"https://docs.google.com/presentation/d/1zWB_nVYGl8bEv7ls6zyJbdZeAu1NwEyJvFgeQxn8U6A/edit\" target=\"_blank\"><strong>Open the live Xello deck</strong></a> · <a href=\"https://docs.google.com/presentation/d/1zWB_nVYGl8bEv7ls6zyJbdZeAu1NwEyJvFgeQxn8U6A/copy\" target=\"_blank\">Make a teacher copy</a></p>\n    <p style=\"margin:0 0 8px;\"><a href=\"https://docs.google.com/presentation/d/1MtqwOTdRikzDPNTy_6gUEyg7VgTH8GUJxUTXxKWH868/present\" target=\"_blank\"><strong>Open the 16-slide student walkthrough</strong></a>. This copy removes teacher-only route and stop cards.</p>\n    <p style=\"margin:0 0 6px;\"><strong>Matchmaker:</strong> slides 2–7; slide 8 is the teacher stop card.</p>\n    <p style=\"margin:0 0 6px;\"><strong>Personality Style:</strong> slides 9–13; slide 14 is the teacher stop card.</p>\n    <p style=\"margin:0;\"><strong>Learning Style:</strong> slides 15–18; slide 19 checks the final submission.</p>\n  </div>\n\n  <h2 style=\"color:#b4232d;\">Choose the pacing route before class</h2>\n  <div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:0 0 18px;\">\n    <div style=\"border:2px solid #93a4b8;padding:14px 16px;\">\n      <h3 style=\"margin:0 0 7px;\">One assessment per day</h3>\n      <p style=\"margin:0 0 6px;\"><strong>Day 1 (35–45 min Xello):</strong> 5-minute launch; 20–30-minute Matchmaker; 5-minute result capture/check; 5-minute close at slide 8. Use remaining minutes to finish or revise the existing <em>Activity: Ready, Set, Design</em> evidence.</p>\n      <p style=\"margin:0 0 6px;\"><strong>Day 2 (25–35 min Xello):</strong> 5-minute relaunch; 10–20-minute Personality Style; 5-minute result capture/check; 5-minute close at slide 14. Use remaining minutes for the existing Ready, Set, Design activity or worksheet route; do not add another Xello product.</p>\n      <p style=\"margin:0;\"><strong>Day 3 (30–40 min Xello):</strong> 5-minute relaunch; 8–15-minute Learning Style; 5-minute result capture/check; 10-minute single reflection and Canvas upload. Use remaining minutes to finish the existing Week 1 design-thinking evidence or the teacher-assigned current module task.</p>\n    </div>\n    <div style=\"border:2px solid #93a4b8;padding:14px 16px;\">\n      <h3 style=\"margin:0 0 7px;\">Compressed 50–55 minute route</h3>\n      <p style=\"margin:0 0 6px;\">Use only when students already have working ClassLink/Xello access and an After high school goal.</p>\n      <p style=\"margin:0;\">Launch 5 min · Matchmaker 20 min · Personality Style 10–12 min · Learning Style 8–10 min · screenshots, reflection, and upload 8 min. Unfinished students save and resume in the next work block.</p>\n    </div>\n  </div>\n\n  <h2 style=\"color:#b4232d;\">Before students begin</h2>\n  <ul>\n    <li>Test ClassLink → Xello on a student device and open the Canvas assignment in Student View.</li>\n    <li>Open the deck and test the embedded Xello video. Enable captions when the player provides them; otherwise keep the complete text route visible and summarize the video aloud.</li>\n    <li>Confirm whether students already set an After high school goal. Matchmaker stays locked until that prerequisite is complete.</li>\n    <li>Keep the bilingual Canvas assignment open as the accessible, independent, and absence route.</li>\n    <li>Do not project a real student's account. The deck uses first-party Xello demonstration screens.</li>\n  </ul>\n\n  <h2 style=\"color:#b4232d;\">Teach the route end to end</h2>\n  <ol>\n    <li><strong>Launch:</strong> Explain that these results are starting points, not labels or permanent decisions. Ask students to answer honestly rather than choosing what sounds impressive.</li>\n    <li><strong>Model Matchmaker:</strong> Project slides 2–6. Show where the question-mark help, <em>Done</em>, and <em>Review My Answers</em> controls appear. Students complete the assessment and save one readable result screenshot.</li>\n    <li><strong>Checkpoint:</strong> Verify that students have a saved Matchmaker result before they open Personality Style. If this is a one-day route, stop at slide 8.</li>\n    <li><strong>Model Personality Style:</strong> Use slides 9–12 to show the About Me route, the six Xello style names, and the result screen. Students save their second screenshot. They do not submit a separate Personality reflection.</li>\n    <li><strong>Checkpoint:</strong> Confirm the second screenshot. If this is a second workday, stop at slide 14 after the screenshot is saved.</li>\n    <li><strong>Model Learning Style:</strong> Use slides 15–17. Emphasize that a result can be a mix and that students can try methods from every category.</li>\n    <li><strong>Close:</strong> Project slides 18–19. Students crop private profile details, attach three screenshots, and write one final sentence about a result that surprised them or confirmed what they already knew.</li>\n  </ol>\n\n  <h2 style=\"color:#b4232d;\">Checks, expected responses, and misconceptions</h2>\n  <ul>\n    <li><strong>Check:</strong> “Which assessment must be complete before Personality Style opens?” <strong>Expected:</strong> Matchmaker.</li>\n    <li><strong>Check:</strong> “What should you do if time ends during a quiz?” <strong>Expected:</strong> Choose Done, then return through About Me.</li>\n    <li><strong>Check:</strong> “Does Learning Style limit you to one way of learning?” <strong>Expected:</strong> No. It shows a current mix of preferences; students can use several strategies.</li>\n    <li><strong>Misconception:</strong> A career or learning result is a final decision. <strong>Response:</strong> Frame it as evidence for exploration, not a label.</li>\n    <li><strong>Misconception:</strong> A screenshot of the quiz questions counts. <strong>Response:</strong> Require the completed result screen.</li>\n  </ul>\n\n  <h2 style=\"color:#b4232d;\">UDL, differentiation, and DOK scaffolds</h2>\n  <ul>\n    <li><strong>Representation:</strong> projected authentic Xello screens, embedded video with available captions or a teacher summary, bilingual text route, alt text, and a printable slide view.</li>\n    <li><strong>Action and expression:</strong> students may complete the assessments in one block or across separate days. When screenshot capture is inaccessible, an adult may guide the device controls without choosing answers, or the teacher may privately verify the completed result screens and record completion without storing private profile data. When an accommodation permits oral or dictated response, accept the same reflection sentence and record it in a private Canvas grading comment or other district-approved accommodation channel.</li>\n    <li><strong>Executive-function support:</strong> use the stop cards, confirm one screenshot before moving on, and provide a three-item upload checklist.</li>\n    <li><strong>English learner support:</strong> keep the word bank and complete sentence stem visible when students write the reflection.</li>\n    <li><strong>DOK 1:</strong> navigate, complete, save, and capture results. <strong>DOK 2:</strong> interpret one result and explain why it was surprising or why it confirmed prior self-knowledge. Do not claim DOK 3 from this check-in.</li>\n  </ul>\n\n  <h2 style=\"color:#b4232d;\">Troubleshooting and recovery</h2>\n  <ul>\n    <li><strong>ClassLink or Xello will not open:</strong> confirm the network connection, close and reopen ClassLink, and use the district Xello tile—not a personal Google search or new account. Record the exact error and assign a make-up window after access is restored; do not substitute invented assessment results.</li>\n    <li><strong>Matchmaker is locked:</strong> set the After high school goal, then return to About Me.</li>\n    <li><strong>Personality Style is locked:</strong> finish Matchmaker first.</li>\n    <li><strong>A student needs to stop:</strong> choose Done. Xello saves the completed answers.</li>\n    <li><strong>A result changed or looks wrong:</strong> use Review My Answers; do not reset Matchmaker unless an adult has confirmed that deleting the assessment answers is appropriate.</li>\n    <li><strong>The deck will not open:</strong> use the complete bilingual Canvas directions and the official Xello support links on the student page.</li>\n    <li><strong>A student cannot capture or find the images:</strong> use Shift + Ctrl + Show windows on Chromebook or Windows + Shift + S, capture only the result panel, then open Files → Downloads. Rename the files before upload.</li>\n    <li><strong>Canvas upload fails:</strong> preserve the three images locally, record which evidence is complete, and use the next class upload window rather than repeating the assessments.</li>\n  </ul>\n\n  <h2 style=\"color:#b4232d;\">Evidence and grading</h2>\n  <p>Keep the existing assignment settings: <strong>5 points</strong>, file upload, and one reflection in the submission comments. Do not add a second product.</p>\n  <ol>\n    <li><strong>1 point:</strong> completed Matchmaker result screenshot.</li>\n    <li><strong>1 point:</strong> completed Personality Style result screenshot.</li>\n    <li><strong>1 point:</strong> completed Learning Style result screenshot.</li>\n    <li><strong>1 point:</strong> all three images are readable and crop out names, email addresses, and profile details.</li>\n    <li><strong>1 point:</strong> one honest sentence explains a result that surprised the student or confirmed what the student already knew.</li>\n  </ol>\n  <p>Return an unreadable or privacy-unsafe image for correction before finalizing the grade. Do not retain or display an unnecessary screenshot containing private profile details.</p>\n\n  <div style=\"background:#e0f2f1;border:2px solid #00838f;padding:14px 16px;margin:0 0 18px;\">\n    <h2 style=\"margin:0 0 7px;color:#006d75;font-size:20px;\">Absence and independent route</h2>\n    <p style=\"margin:0;\">Students open the Canvas assignment, use the linked visual walkthrough, follow the bilingual Now / Next / Then / Done directions, and save after each assessment. A returning student resumes at the first missing screenshot rather than repeating completed assessments.</p>\n  </div>\n\n  <div style=\"border-top:1px solid #b0bec5;padding-top:12px;font-size:14px;color:#455a64;\">\n    <p style=\"margin:0 0 5px;\"><strong>Sources:</strong> Xello educator Completion Standards resources, official assessment support, official lesson imagery, and the current Canvas assignment.</p>\n    <p style=\"margin:0;\"><a href=\"https://help.xello.world/en-us/Content/Knowledge-Base/Xello-6-12/Assessments/Students-Matchmaker.htm\" target=\"_blank\">Matchmaker</a> · <a href=\"https://help.xello.world/en-us/Content/Knowledge-Base/Xello-6-12/Assessments/Students-Personality-Style.htm\" target=\"_blank\">Personality Style</a> · <a href=\"https://help.xello.world/en-us/content/Resources/PDFs/Guides/Stu_Assessments.pdf\" target=\"_blank\">Assessments in Xello</a></p>\n  </div>\n</div>",
+            "body_sha256": "94b6964dc89e932b1cee6d1afbb5250c3aeb34e06b0a1a5504aacac4e6460064",
+            "kind": "page",
+            "metadata": {
+              "editing_roles": "teachers",
+              "front_page": false,
+              "hide_from_students": true,
+              "locked_for_user": false,
+              "page_id": 1332378,
+              "publish_at": null,
+              "published": false,
+              "title": "Facilitator Guide: Xello — Matchmaker, Personality Style, and Learning Style",
+              "todo_date": null,
+              "url": "facilitator-guide-xello-matchmaker-personality-style-and-learning-style"
+            },
+            "referenced_file_ids": []
+          },
+          "title": "Facilitator Guide: Xello — Matchmaker, Personality Style, and Learning Style",
+          "type": "Page"
+        },
+        {
+          "completion_requirement": null,
           "content_id": 1183431,
           "external_url": null,
           "id": 2633997,
           "indent": 0,
           "new_tab": null,
           "page_url": null,
-          "position": 6,
+          "position": 7,
           "public_state": "public",
           "published": false,
           "resource": {
-            "body": "<div style=\"max-width:900px;margin:0 auto;color:#1f2430;font-size:16px;line-height:1.55;\">\n  <div style=\"background:#37474f;border-left:10px solid #00838f;padding:20px 22px;margin:0 0 18px;\">\n    <p style=\"margin:0 0 6px;color:#b2ebf2;font-family:monospace;\"><strong>WEEK 1 · XELLO CHECK-IN · 5 POINTS</strong></p>\n    <h1 style=\"margin:0 0 8px;color:#fff;font-size:28px;\">Matchmaker, Personality Style, and Learning Style</h1>\n    <p style=\"margin:0;color:#fff;\">Complete the assessments in this order. Personality Style is phase 2 of Matchmaker. / Completa las evaluaciones en este orden. Personality Style es la fase 2 de Matchmaker.</p>\n  </div>\n\n  <div class=\"enhanceable_content tabs\">\n    <ul style=\"display:flex;gap:0;padding-left:0;margin:0 0 -1px;\">\n      <li style=\"list-style:none;background:#fff;border:1px solid #b0bec5;border-bottom:1px solid #fff;border-radius:8px 8px 0 0;\"><a style=\"display:block;padding:10px 24px;color:#00838f;\" href=\"#en-xello-w1\">English</a></li>\n      <li style=\"list-style:none;background:#fff;border:1px solid #b0bec5;border-bottom:1px solid #fff;border-radius:8px 8px 0 0;margin-left:-1px;\"><a style=\"display:block;padding:10px 24px;color:#00838f;\" href=\"#es-xello-w1\">Español</a></li>\n    </ul>\n    <div id=\"en-xello-w1\" style=\"background:#fff;border:1px solid #b0bec5;border-radius:0 8px 8px 8px;padding:22px;\">\n      <h2 style=\"color:#006d75;\">Complete the assessments</h2>\n      <ol>\n        <li>Open <strong>ClassLink</strong> and select <strong>Xello</strong>. Use the district login route so your work saves to the correct account.</li>\n        <li>Complete <strong>Matchmaker</strong>. If it is locked, set your <strong>After high school goal</strong>, then return.</li>\n        <li>Complete <strong>Personality Style</strong>. It is phase 2 of Matchmaker, so phase 1 has to be finished first.</li>\n        <li>Complete <strong>Learning Style</strong>.</li>\n        <li>Take one screenshot of each results screen and upload all three images here.</li>\n      </ol>\n      <p>You have one class period. If you do not finish, save your work in Xello and continue when your teacher gives you the next work block.</p>\n      <h2 style=\"color:#006d75;\">Reflection</h2>\n      <p>Write this sentence in the submission comments: <strong>One result that surprised me was ____ because ____.</strong></p>\n      <p><strong>Word bank:</strong> interest · career match · personality style · learning style · result · surprised</p>\n      <div style=\"background:#e0f2f1;border:2px solid #00838f;padding:12px 14px;\">\n<strong>Before submitting:</strong> three screenshots are attached and the reflection sentence is in the comments.</div>\n    </div>\n    <div id=\"es-xello-w1\" style=\"background:#fff;border:1px solid #b0bec5;border-radius:0 8px 8px 8px;padding:22px;\">\n      <h2 style=\"color:#006d75;\">Completa las evaluaciones</h2>\n      <ol>\n        <li>Abre <strong>ClassLink</strong> y selecciona <strong>Xello</strong>. Usa el acceso del distrito para que tu trabajo se guarde en la cuenta correcta.</li>\n        <li>Completa <strong>Matchmaker</strong>. Si está bloqueado, escoge tu <strong>After high school goal</strong> y regresa.</li>\n        <li>Completa <strong>Personality Style</strong>. Es la fase 2 de Matchmaker, así que primero tienes que terminar la fase 1.</li>\n        <li>Completa <strong>Learning Style</strong>.</li>\n        <li>Toma una captura de cada pantalla de resultados y sube las tres imágenes aquí.</li>\n      </ol>\n      <p>Tienes un periodo de clase. Si no terminas, guarda tu trabajo en Xello y continúa cuando tu maestro te dé el siguiente bloque de trabajo.</p>\n      <h2 style=\"color:#006d75;\">Reflexión</h2>\n      <p>Escribe esta oración en los comentarios de la entrega: <strong>Un resultado que me sorprendió fue ____ porque ____.</strong></p>\n      <p><strong>Banco de palabras:</strong> interés · coincidencia de carrera · estilo de personalidad · estilo de aprendizaje · resultado · sorprendió</p>\n      <div style=\"background:#e0f2f1;border:2px solid #00838f;padding:12px 14px;\">\n<strong>Antes de entregar:</strong> las tres capturas están adjuntas y la oración de reflexión está en los comentarios.</div>\n    </div>\n  </div>\n</div>",
-            "body_sha256": "814256fe4b0edcf0e3aae60bc27dc71beb44e67a577b58a4eecceab42d341b5b",
+            "body": "<div data-vils-xello-week1-student=\"2026-08-24-v1\" style=\"max-width:900px;margin:0 auto;color:#1f2430;font-size:16px;line-height:1.55;\">\n  <div style=\"background:#37474f;border-left:10px solid #00838f;padding:20px 22px;margin:0 0 18px;\">\n    <p style=\"margin:0 0 6px;color:#b2ebf2;font-family:monospace;\"><strong>WEEK 1 · XELLO CHECK-IN · 5 POINTS</strong></p>\n    <h1 style=\"margin:0 0 8px;color:#fff;font-size:28px;\">Matchmaker, Personality Style, and Learning Style</h1>\n    <p style=\"margin:0;color:#fff;\">Complete the assessments in order, save each result, and explain one result that surprised you or confirmed what you already knew. / Completa las evaluaciones en orden, guarda cada resultado y explica un resultado que te sorprendió o confirmó lo que ya sabías.</p>\n  </div>\n\n  <div data-vils-student-learning-block=\"2026-08-24-xello\" style=\"background:#f4f8fc;border:2px solid #1b6f7a;border-radius:12px;padding:15px 17px;margin:0 0 18px;\">\n    <p style=\"margin:0 0 7px;\"><strong>Topic / Tema:</strong> Xello assessment results / Resultados de las evaluaciones de Xello</p>\n    <p style=\"margin:0 0 7px;\"><strong>I can / Puedo:</strong> Complete three Xello assessments in order and explain one result that surprised me or confirmed what I already knew. / Completar tres evaluaciones de Xello en orden y explicar un resultado que me sorprendió o confirmó lo que ya sabía.</p>\n    <p style=\"margin:0 0 7px;\"><strong>Why this matters / Por qué importa:</strong> These results are clues for exploring careers and learning strategies—not labels or permanent decisions. / Estos resultados son pistas para explorar carreras y estrategias de aprendizaje, no etiquetas ni decisiones permanentes.</p>\n    <p style=\"margin:0;\"><strong>Show your learning / Demuestra tu aprendizaje:</strong> Three readable result screenshots and one honest reflection sentence. / Tres capturas legibles de resultados y una oración de reflexión honesta.</p>\n  </div>\n\n  <div style=\"background:#fff5cc;border:2px solid #d49b00;border-radius:10px;padding:14px 16px;margin:0 0 18px;\">\n    <h2 style=\"margin:0 0 7px;color:#6b4700;font-size:20px;\">Visual walkthrough / Guía visual</h2>\n    <p style=\"margin:0 0 8px;\"><a href=\"https://docs.google.com/presentation/d/1MtqwOTdRikzDPNTy_6gUEyg7VgTH8GUJxUTXxKWH868/present\" target=\"_blank\"><strong>Open the Xello visual walkthrough</strong></a> / <a href=\"https://docs.google.com/presentation/d/1MtqwOTdRikzDPNTy_6gUEyg7VgTH8GUJxUTXxKWH868/present\" target=\"_blank\"><strong>Abre la guía visual de Xello</strong></a>.</p>\n    <p style=\"margin:0 0 8px;\">Use slides <strong>1–6</strong> for Matchmaker, <strong>7–11</strong> for Personality Style, and <strong>12–15</strong> for Learning Style. Slide 16 is the final submission check.</p>\n    <p style=\"margin:0;\">The screenshots use the Xello labels students see on screen. If Google Slides does not open, use the complete text directions below. / Las capturas usan las etiquetas que aparecen en Xello. Usa las instrucciones completas en español a continuación; si Google Slides no abre, esta ruta de texto contiene los mismos pasos.</p>\n  </div>\n\n  <div class=\"enhanceable_content tabs\">\n    <ul style=\"display:flex;gap:0;padding-left:0;margin:0 0 -1px;\">\n      <li style=\"list-style:none;background:#fff;border:1px solid #b0bec5;border-bottom:1px solid #fff;border-radius:8px 8px 0 0;\"><a style=\"display:block;padding:10px 24px;color:#00838f;\" href=\"#en-xello-w1\">English</a></li>\n      <li style=\"list-style:none;background:#fff;border:1px solid #b0bec5;border-bottom:1px solid #fff;border-radius:8px 8px 0 0;margin-left:-1px;\"><a style=\"display:block;padding:10px 24px;color:#00838f;\" href=\"#es-xello-w1\">Español</a></li>\n    </ul>\n\n    <div id=\"en-xello-w1\" style=\"background:#fff;border:1px solid #b0bec5;border-radius:0 8px 8px 8px;padding:22px;\">\n      <p style=\"margin-top:0;\"><strong>Resume rule:</strong> Start with the first screenshot you are missing. Complete one assessment → capture its result → check it off → stop or continue.</p>\n      <h2 style=\"color:#006d75;\">1. Matchmaker · about 20–30 minutes</h2>\n      <ol>\n        <li>Open <strong>ClassLink</strong> and select <strong>Xello</strong>. Use the district route so your work saves to the correct account.</li>\n        <li>Complete <strong>Matchmaker</strong>. If it is locked, set your <strong>After high school goal</strong>, then return.</li>\n        <li>Open the completed result and capture a readable screenshot. Check off <strong>Matchmaker result saved</strong>.</li>\n      </ol>\n\n      <h2 style=\"color:#006d75;\">2. Personality Style · about 10–20 minutes</h2>\n      <ol>\n        <li>Open <strong>About Me → Personality Style</strong>. Matchmaker must be finished first.</li>\n        <li>Complete the questions, open the result, and capture a readable screenshot. Check off <strong>Personality Style result saved</strong>.</li>\n      </ol>\n\n      <h2 style=\"color:#006d75;\">3. Learning Style · about 8–15 minutes</h2>\n      <ol>\n        <li>Open <strong>About Me → Learning Style</strong> and complete the questions.</li>\n        <li>Open the result and capture a readable screenshot. Check off <strong>Learning Style result saved</strong>.</li>\n      </ol>\n      <p><strong>Need to stop?</strong> Choose <strong>Done</strong> so Xello saves your answers. Return through <strong>About Me</strong>. Use <strong>Review My Answers</strong> if you need to change an earlier response. Do not reset Matchmaker unless your teacher tells you to.</p>\n\n      <h2 style=\"color:#006d75;\">Capture, name, and upload the files</h2>\n      <ol>\n        <li><strong>Chromebook:</strong> press <strong>Shift + Ctrl + Show windows</strong>, then drag around only the result panel. This captures a selected area and crops out your name, email address, and profile details before the file is saved.</li>\n        <li><strong>Windows:</strong> press <strong>Windows + Shift + S</strong> and drag around only the result panel.</li>\n        <li>Find the images in <strong>Files → Downloads</strong>. Rename them <strong>Matchmaker</strong>, <strong>Personality</strong>, and <strong>Learning</strong>.</li>\n        <li>In Canvas choose <strong>Submit Assignment → File Upload → Choose File</strong>, select the three images from Downloads, add the reflection in the submission comment, and submit.</li>\n      </ol>\n\n      <h2 style=\"color:#006d75;\">Reflect once</h2>\n      <p>Write this sentence in the submission comments: <strong>One result that surprised me or confirmed what I already knew was ____ because ____.</strong></p>\n      <p><strong>Word bank:</strong> interest · career match · personality style · learning style · result · surprised</p>\n      <div style=\"background:#e0f2f1;border:2px solid #00838f;padding:12px 14px;margin-bottom:14px;\"><strong>You are done when:</strong> three readable screenshots are attached, private profile details are cropped out, and one honest reflection sentence is in the comments.</div>\n      <div style=\"background:#f4f8fc;border:2px solid #1b6f7a;padding:12px 14px;margin-bottom:14px;\"><strong>How the 5 points work:</strong> 1 point for each completed result screenshot (3); 1 point when all three are readable and privacy-safe; 1 point for the reflection. An unreadable or privacy-unsafe image is returned for correction before the grade is finalized.</div>\n      <p><strong>Optional when finished:</strong> Open one career match that interests you and write one question you would ask someone in that career. Do not upload extra evidence.</p>\n    </div>\n\n    <div id=\"es-xello-w1\" lang=\"es\" style=\"background:#fff;border:1px solid #b0bec5;border-radius:0 8px 8px 8px;padding:22px;\">\n      <p style=\"margin-top:0;\"><strong>Regla para continuar:</strong> Empieza con la primera captura que te falte. Completa una evaluación → captura el resultado → márcala → detente o continúa.</p>\n      <h2 style=\"color:#006d75;\">1. Matchmaker · aproximadamente 20–30 minutos</h2>\n      <ol>\n        <li>Abre <strong>ClassLink</strong> y selecciona <strong>Xello</strong>. Usa el acceso del distrito para que tu trabajo se guarde en la cuenta correcta.</li>\n        <li>Completa <strong>Matchmaker</strong>. Si está bloqueado, escoge tu <strong>After high school goal</strong> y regresa.</li>\n        <li>Abre el resultado completo y toma una captura legible. Marca <strong>Resultado de Matchmaker guardado</strong>.</li>\n      </ol>\n\n      <h2 style=\"color:#006d75;\">2. Personality Style · aproximadamente 10–20 minutos</h2>\n      <ol>\n        <li>Abre <strong>About Me → Personality Style</strong>. Primero debes terminar Matchmaker.</li>\n        <li>Completa las preguntas, abre el resultado y toma una captura legible. Marca <strong>Resultado de Personality Style guardado</strong>.</li>\n      </ol>\n\n      <h2 style=\"color:#006d75;\">3. Learning Style · aproximadamente 8–15 minutos</h2>\n      <ol>\n        <li>Abre <strong>About Me → Learning Style</strong> y completa las preguntas.</li>\n        <li>Abre el resultado y toma una captura legible. Marca <strong>Resultado de Learning Style guardado</strong>.</li>\n      </ol>\n      <p><strong>¿Necesitas detenerte?</strong> Selecciona <strong>Done</strong> para guardar tus respuestas. Regresa por <strong>About Me</strong>. Usa <strong>Review My Answers</strong> para cambiar una respuesta anterior. No reinicies Matchmaker a menos que tu maestro te lo indique.</p>\n\n      <h2 style=\"color:#006d75;\">Captura, nombra y sube los archivos</h2>\n      <ol>\n        <li><strong>Chromebook:</strong> presiona <strong>Mayús + Ctrl + Mostrar ventanas</strong> y arrastra alrededor de solamente el panel de resultados. Así capturas un área seleccionada y recortas tu nombre, correo y detalles del perfil antes de guardar.</li>\n        <li><strong>Windows:</strong> presiona <strong>Windows + Shift + S</strong> y arrastra alrededor de solamente el panel de resultados.</li>\n        <li>Busca las imágenes en <strong>Archivos → Descargas</strong>. Cámbiales el nombre a <strong>Matchmaker</strong>, <strong>Personality</strong> y <strong>Learning</strong>.</li>\n        <li>En Canvas selecciona <strong>Entregar tarea → Carga de archivo → Elegir archivo</strong>, selecciona las tres imágenes de Descargas, agrega la reflexión en el comentario y entrega.</li>\n      </ol>\n\n      <h2 style=\"color:#006d75;\">Reflexiona una vez</h2>\n      <p>Escribe esta oración en los comentarios de la entrega: <strong>Un resultado que me sorprendió o confirmó lo que ya sabía fue ____ porque ____.</strong></p>\n      <p><strong>Banco de palabras:</strong> interés · coincidencia de carrera · estilo de personalidad · estilo de aprendizaje · resultado · sorprendió</p>\n      <div style=\"background:#e0f2f1;border:2px solid #00838f;padding:12px 14px;margin-bottom:14px;\"><strong>Terminas cuando:</strong> adjuntaste tres capturas legibles, recortaste los detalles privados del perfil y escribiste una oración de reflexión honesta en los comentarios.</div>\n      <div style=\"background:#f4f8fc;border:2px solid #1b6f7a;padding:12px 14px;margin-bottom:14px;\"><strong>Cómo funcionan los 5 puntos:</strong> 1 punto por cada captura de resultado completo (3); 1 punto cuando las tres capturas son legibles y protegen tu privacidad; 1 punto por la reflexión. Una imagen ilegible o con información privada se devuelve para corregirla antes de finalizar la calificación.</div>\n      <p><strong>Opcional cuando termines:</strong> Abre una carrera que te interese y escribe una pregunta que le harías a alguien con esa carrera. No subas evidencia adicional.</p>\n    </div>\n  </div>\n\n  <div style=\"margin-top:18px;border-top:1px solid #b0bec5;padding-top:12px;font-size:14px;color:#455a64;\">\n    <p style=\"margin:0 0 5px;\"><strong>Sources:</strong> Xello student assessments and official Xello visual resources.</p>\n    <p style=\"margin:0;\"><a href=\"https://help.xello.world/en-us/Content/Knowledge-Base/Xello-6-12/Assessments/Students-Matchmaker.htm\" target=\"_blank\">Matchmaker support</a> · <a href=\"https://help.xello.world/en-us/Content/Knowledge-Base/Xello-6-12/Assessments/Students-Personality-Style.htm\" target=\"_blank\">Personality Style support</a> · <a href=\"https://help.xello.world/en-us/content/Resources/PDFs/Guides/Stu_Assessments.pdf\" target=\"_blank\">Assessments in Xello student guide</a></p>\n  </div>\n</div>",
+            "body_sha256": "1a56bbb575dad48c887143282d143bf241d897ccd4ef54b3f356b714d85f197f",
             "kind": "assignment",
             "metadata": {
               "allowed_attempts": -1,
@@ -4475,7 +4507,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": null,
-          "position": 7,
+          "position": 8,
           "public_state": "public",
           "published": true,
           "title": "WEEK 2 · SUPERHERO COMICS",
@@ -4489,7 +4521,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": "facilitator-guide-comics-lesson-1-welcome-and-comic-cover",
-          "position": 8,
+          "position": 9,
           "public_state": "public",
           "published": false,
           "resource": {
@@ -4523,7 +4555,7 @@
           "indent": 1,
           "new_tab": null,
           "page_url": "lesson-1-welcome-to-smart-solutions-build-your-comic-cover",
-          "position": 9,
+          "position": 10,
           "public_state": "public",
           "published": true,
           "resource": {
@@ -4558,7 +4590,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": "facilitator-guide-comics-lesson-2-biography-and-motivation",
-          "position": 10,
+          "position": 11,
           "public_state": "public",
           "published": false,
           "resource": {
@@ -4592,7 +4624,7 @@
           "indent": 1,
           "new_tab": null,
           "page_url": "lesson-2-build-your-hero-biography-and-motivation",
-          "position": 11,
+          "position": 12,
           "public_state": "public",
           "published": true,
           "resource": {
@@ -4626,7 +4658,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": "facilitator-guide-comics-lesson-3-hero-gadget-design",
-          "position": 12,
+          "position": 13,
           "public_state": "public",
           "published": false,
           "resource": {
@@ -4660,7 +4692,7 @@
           "indent": 1,
           "new_tab": null,
           "page_url": "lesson-3-hero-gadget-design-create-your-smart-gadget-page",
-          "position": 13,
+          "position": 14,
           "public_state": "public",
           "published": true,
           "resource": {
@@ -4697,7 +4729,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": "facilitator-guide-comics-lesson-4-hero-logo-design",
-          "position": 14,
+          "position": 15,
           "public_state": "public",
           "published": false,
           "resource": {
@@ -4731,7 +4763,7 @@
           "indent": 1,
           "new_tab": null,
           "page_url": "lesson-4-hero-logo-design-create-your-superheros-logo",
-          "position": 15,
+          "position": 16,
           "public_state": "public",
           "published": true,
           "resource": {
@@ -4765,7 +4797,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": "facilitator-guide-comics-lesson-5-smart-solution-in-action",
-          "position": 16,
+          "position": 17,
           "public_state": "public",
           "published": false,
           "resource": {
@@ -4799,7 +4831,7 @@
           "indent": 1,
           "new_tab": null,
           "page_url": null,
-          "position": 17,
+          "position": 18,
           "public_state": "public",
           "published": true,
           "resource": {
@@ -5064,7 +5096,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": null,
-          "position": 18,
+          "position": 19,
           "public_state": "public",
           "published": false,
           "title": "OPTIONAL/FLEX · PORTFOLIO SETUP",
@@ -5078,7 +5110,7 @@
           "indent": 0,
           "new_tab": null,
           "page_url": "starting-our-portfolio",
-          "position": 19,
+          "position": 20,
           "public_state": "public",
           "published": false,
           "resource": {
@@ -27343,7 +27375,7 @@
     ]
   },
   "schema_version": 1,
-  "semantic_sha256": "874d4b3d7a4959d096eae7a9a502ecf39bec8e42e11c2d53ea405cab8689e6c6",
+  "semantic_sha256": "c5f5135533f756aefe6589605ed9b086d80c2a23770f465fef3c65049e330b6e",
   "source": {
     "canvas_host": "https://verizoninnovativelearning.instructure.com",
     "course_id": 23402

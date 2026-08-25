@@ -1,5 +1,5 @@
 {
-  "canvas_snapshot_sha256": "874d4b3d7a4959d096eae7a9a502ecf39bec8e42e11c2d53ea405cab8689e6c6",
+  "canvas_snapshot_sha256": "c5f5135533f756aefe6589605ed9b086d80c2a23770f465fef3c65049e330b6e",
   "items": [
     {
       "item_position": 1,
@@ -292,6 +292,18 @@
     {
       "item_position": 6,
       "module_id": 72564,
+      "module_item_id": 2665839,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_position": 2,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "Facilitator Guide: Xello — Matchmaker, Personality Style, and Learning Style",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2665839.html"
+    },
+    {
+      "item_position": 7,
+      "module_id": 72564,
       "module_item_id": 2633997,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
       "module_position": 2,
@@ -302,7 +314,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633997.html"
     },
     {
-      "item_position": 7,
+      "item_position": 8,
       "module_id": 72564,
       "module_item_id": 2633998,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -314,7 +326,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72564.html"
     },
     {
-      "item_position": 8,
+      "item_position": 9,
       "module_id": 72564,
       "module_item_id": 2633999,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -326,7 +338,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2633999.html"
     },
     {
-      "item_position": 9,
+      "item_position": 10,
       "module_id": 72564,
       "module_item_id": 2634000,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -338,7 +350,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634000.html"
     },
     {
-      "item_position": 10,
+      "item_position": 11,
       "module_id": 72564,
       "module_item_id": 2634001,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -350,7 +362,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634001.html"
     },
     {
-      "item_position": 11,
+      "item_position": 12,
       "module_id": 72564,
       "module_item_id": 2634002,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -362,7 +374,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634002.html"
     },
     {
-      "item_position": 12,
+      "item_position": 13,
       "module_id": 72564,
       "module_item_id": 2634003,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -374,7 +386,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634003.html"
     },
     {
-      "item_position": 13,
+      "item_position": 14,
       "module_id": 72564,
       "module_item_id": 2634004,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -386,7 +398,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634004.html"
     },
     {
-      "item_position": 14,
+      "item_position": 15,
       "module_id": 72564,
       "module_item_id": 2634005,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -398,7 +410,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634005.html"
     },
     {
-      "item_position": 15,
+      "item_position": 16,
       "module_id": 72564,
       "module_item_id": 2634006,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -410,7 +422,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634006.html"
     },
     {
-      "item_position": 16,
+      "item_position": 17,
       "module_id": 72564,
       "module_item_id": 2634007,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -422,7 +434,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634007.html"
     },
     {
-      "item_position": 17,
+      "item_position": 18,
       "module_id": 72564,
       "module_item_id": 2634008,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -434,7 +446,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634008.html"
     },
     {
-      "item_position": 18,
+      "item_position": 19,
       "module_id": 72564,
       "module_item_id": 2634009,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
@@ -446,7 +458,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/modules/72564.html"
     },
     {
-      "item_position": 19,
+      "item_position": 20,
       "module_id": 72564,
       "module_item_id": 2634010,
       "module_name": "SW1 · Design Thinking + Superhero Comics",
