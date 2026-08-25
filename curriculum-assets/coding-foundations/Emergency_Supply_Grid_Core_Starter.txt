@@ -1,0 +1,34 @@
+// Emergency Supply Grid - Day 2 core starter
+// Change the configuration values, predict, run, and revise.
+
+let missionName: string = "Emergency Supply Grid"
+let rows: number = 3
+let columns: number = 4
+let xSpacing: number = 35
+let ySpacing: number = 35
+let priorityMode: boolean = true
+let suppliesPlaced: number = 0
+
+scene.setBackgroundColor(1)
+game.splash(missionName)
+
+for (let row = 0; row < rows; row++) {
+    for (let column = 0; column < columns; column++) {
+        let supply = sprites.create(img`
+            . 2 2 2 .
+            2 4 4 4 2
+            2 4 5 4 2
+            2 4 4 4 2
+            . 2 2 2 .
+        `, SpriteKind.Food)
+        supply.setPosition(25 + column * xSpacing, 25 + row * ySpacing)
+        suppliesPlaced += 1
+    }
+}
+
+info.setScore(suppliesPlaced)
+if (priorityMode && suppliesPlaced == rows * columns) {
+    game.splash("Priority grid ready", "" + suppliesPlaced + " supplies")
+} else {
+    game.splash("Check the grid", "" + suppliesPlaced + " supplies")
+}

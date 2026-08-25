@@ -1,0 +1,33 @@
+// Emergency Supply Grid - Day 1 bug challenge
+// This code runs, but it does not build the intended 3 x 4 grid.
+// Predict the total, run it, find the cause, and repair one line.
+
+let missionName: string = "Emergency Supply Grid"
+let rows: number = 3
+let columns: number = 4
+let priorityMode: boolean = true
+let suppliesPlaced: number = 0
+
+scene.setBackgroundColor(1)
+game.splash(missionName)
+
+for (let row = 0; row < rows; row++) {
+    for (let column = 0; column < rows; column++) {
+        let supply = sprites.create(img`
+            . 2 2 2 .
+            2 4 4 4 2
+            2 4 5 4 2
+            2 4 4 4 2
+            . 2 2 2 .
+        `, SpriteKind.Food)
+        supply.setPosition(25 + column * 35, 25 + row * 35)
+        suppliesPlaced += 1
+    }
+}
+
+info.setScore(suppliesPlaced)
+if (priorityMode && suppliesPlaced == rows * columns) {
+    game.splash("Priority grid ready", "" + suppliesPlaced + " supplies")
+} else {
+    game.splash("Check the grid", "" + suppliesPlaced + " supplies")
+}

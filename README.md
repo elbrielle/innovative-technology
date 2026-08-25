@@ -6,6 +6,10 @@ This repository publishes the public reference for the **VILS CTE Smart Solution
 
 Canvas remains the student delivery and grading environment. The site presents the complete ordered course for curriculum review: teacher guides, student directions, assessments, rubrics, linked resources, and approved Canvas files.
 
+## Planning and backlog
+
+The durable curriculum backlog is [`docs/BACKLOG.md`](docs/BACKLOG.md). It records refinement epics, evidence gates, dependencies, and sprint-ready work without changing Canvas or generated public pages.
+
 ## Standards reference
 
 The immutable source record for Grade 8 Technology Applications TEKS is [`docs/standards/texas-technology-applications-grade-8-teks-2022.md`](docs/standards/texas-technology-applications-grade-8-teks-2022.md). It preserves the exact wording of current **19 TAC §126.19(c)**. The matching [VILS learning-contract and alignment pattern](docs/standards/vils-learning-contract-pattern.md) defines how the exact standards, lesson objective, and student evidence appear consistently in Canvas facilitator guides and their public-site equivalents.
@@ -52,7 +56,7 @@ The Canvas token is read from `CANVAS_TOKEN` or `~/.canvas_token`. Never commit 
 1. Run `python3 scripts/sync_course.py`.
 2. Review `git diff --stat` and `data/site-manifest.json`.
 3. Run the responsive visual audit described in [`docs/SYNC_WORKFLOW.md`](docs/SYNC_WORKFLOW.md).
-4. Require an independent adversarial review for instructional, visual, privacy, and link issues.
+4. Run the independent [four-lens curriculum review gate](docs/CURRICULUM_REVIEW_GATE.md) and record consensus in `docs/reviews/`. Any `HOLD` keeps the PR unmerged.
 5. Commit and push `main`. GitHub Pages deploys from the existing repository configuration.
 6. Verify the public URL and several stable lesson URLs after deployment.
 

@@ -1,0 +1,38 @@
+// Emergency Supply Grid - Day 1 highlighted bug route
+// Cuadrícula de suministros de emergencia - Día 1: ruta con error destacado
+// This program runs, but one loop boundary does not match the intended 3 x 4 grid.
+// Este programa funciona, pero un límite no coincide con la cuadrícula de 3 x 4.
+// Before changing anything: predict the intended total, run once, and record only what happened.
+// Antes de cambiar algo: predice el total esperado, ejecuta una vez y registra solo lo que pasó.
+
+let missionName: string = "Emergency Supply Grid"
+let rows: number = 3
+let columns: number = 4
+let priorityMode: boolean = true
+let suppliesPlaced: number = 0
+
+scene.setBackgroundColor(1)
+game.splash(missionName)
+
+for (let row = 0; row < rows; row++) {
+    // INVESTIGATE AFTER THE FIRST RUN: What subproblem does column control?
+    // INVESTIGA DESPUÉS DE LA PRIMERA PRUEBA: ¿Qué subproblema controla column?
+    for (let column = 0; column < rows; column++) {
+        let supply = sprites.create(img`
+            . 2 2 2 .
+            2 4 4 4 2
+            2 4 5 4 2
+            2 4 4 4 2
+            . 2 2 2 .
+        `, SpriteKind.Food)
+        supply.setPosition(25 + column * 35, 25 + row * 35)
+        suppliesPlaced += 1
+    }
+}
+
+info.setScore(suppliesPlaced)
+if (priorityMode && suppliesPlaced == rows * columns) {
+    game.splash("Priority grid ready", "" + suppliesPlaced + " supplies")
+} else {
+    game.splash("Check the grid", "" + suppliesPlaced + " supplies")
+}

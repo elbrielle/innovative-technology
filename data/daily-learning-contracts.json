@@ -1,0 +1,2900 @@
+{
+  "schema_version": 1,
+  "course_id": 23402,
+  "audit_date": "2026-08-23",
+  "canonical_teks_source": "docs/standards/texas-technology-applications-grade-8-teks-2022.md",
+  "canonical_teks_sha256": "a74a60c9155abed42f08c97be172d0ade43fcdc58d9cb253e813887417b6d0a5",
+  "definitions": {
+    "objective": "The TEKS-based learning students will explain, analyze, evaluate, apply, justify, or revise. It is not merely the task or artifact.",
+    "demonstration_of_learning": "The project, performance, submission, revision, or concise response through which the teacher observes evidence of mastery. In this project-based course, the core activity is usually the demonstration of learning."
+  },
+  "records": [
+    {
+      "module_position": 1,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_item_id": 2657913,
+      "page_slug": "facilitator-guide-week-0-canvas-launch",
+      "title": "Facilitator Guide: Week 0 — Canvas Launch",
+      "topic": "Canvas course navigation",
+      "objective": "Students will explain the module-to-submission path and diagnose where to seek help when that path breaks.",
+      "teks": [],
+      "demonstration_of_learning": "Teacher observation that the student can open the named module, locate the submission checklist, and name the exact page or error when help is needed.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective names navigation steps, not learning.",
+        "No exact Grade 8 Technology Applications TEKS is demonstrated by basic Canvas navigation alone; remove the generic module-level TEKS claim."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Student's Guide: Getting Started, Class Jobs). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 1,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_item_id": 2657914,
+      "page_slug": "facilitator-guide-week-0-syllabus-lab-contract-+-routines",
+      "title": "Facilitator Guide: Week 0 — Syllabus, Lab Contract + Routines",
+      "topic": "Responsible lab participation",
+      "objective": "Students will explain which course expectations support safe, ethical, and responsible technology use.",
+      "teks": [
+        "§126.19(c)(9)(A)"
+      ],
+      "demonstration_of_learning": "Signed return materials plus a brief student response naming one lab/AUP expectation and why it prevents harm or supports responsible use.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective focuses on sorting handouts rather than learning the responsible-use expectation.",
+        "The signature routine alone does not demonstrate the TEKS; add a concise explanation as evidence."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Welcome Week: Syllabus + Lab Contract). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 1,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_item_id": 2657915,
+      "page_slug": "facilitator-guide-week-0-option-about-me-smartphone",
+      "title": "Facilitator Guide: Week 0 Option — About Me Smartphone",
+      "topic": "Privacy-safe digital identity",
+      "objective": "Students will distinguish information that is appropriate to share in a classroom artifact from information that should remain private.",
+      "teks": [],
+      "demonstration_of_learning": "Completed About Me Smartphone artifact or page response plus a brief explanation of one privacy-safe choice.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a task direction and the artifact alone does not show the privacy decision.",
+        "The current generic AUP/file-management TEKS are not directly elicited by this optional activity."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (OPTION · About Me Smartphone). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 1,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_item_id": 2657916,
+      "page_slug": "facilitator-guide-week-0-option-moon-landing-teamwork-challenge",
+      "title": "Facilitator Guide: Week 0 Option — Moon Landing Teamwork Challenge",
+      "topic": "Evidence-based team decisions",
+      "objective": "Students will justify a team decision with evidence and revise it when a stronger reason changes the group's thinking.",
+      "teks": [],
+      "demonstration_of_learning": "Completed individual and team ranking chart plus one written or recorded explanation of a decision the group kept or revised.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current DOL names participation but not the evidence-based justification in the objective.",
+        "No exact Grade 8 Technology Applications TEKS is directly demonstrated by this general teamwork option."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (OPTION · Moon Landing Teamwork Challenge). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 1,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_item_id": 2657917,
+      "page_slug": "facilitator-guide-week-0-option-partner-draw",
+      "title": "Facilitator Guide: Week 0 Option — Partner Draw",
+      "topic": "Precise verbal communication",
+      "objective": "Students will explain how specificity and sequence make technical directions usable.",
+      "teks": [],
+      "demonstration_of_learning": "Partner drawing plus a short comparison naming one instruction that helped or confused the listener and how it could be improved.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective centers on doing the directions rather than understanding what makes them usable.",
+        "No exact Grade 8 Technology Applications TEKS is directly demonstrated by a verbal-only drawing game."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (OPTION · Partner Draw). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 1,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_item_id": 2657918,
+      "page_slug": "facilitator-guide-week-0-option-chromebook-norms-+-gimkit",
+      "title": "Facilitator Guide: Week 0 Option — Chromebook Norms + GimKit",
+      "topic": "Safe and responsible device use",
+      "objective": "Students will apply and explain the classroom's acceptable-use, device-care, and help-seeking routines.",
+      "teks": [
+        "§126.19(c)(9)(A)"
+      ],
+      "demonstration_of_learning": "GimKit response record plus teacher observation or exit response showing the student can choose and explain the correct routine in a device-use scenario.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "Participation/completion alone does not prove the responsible-use objective.",
+        "The revised DOL must include an observable routine choice or explanation."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (OPTION · Chromebook Rules GimKit Day). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 1,
+      "module_name": "SW1 · Before You Begin (Week 0)",
+      "module_item_id": 2657919,
+      "page_slug": "facilitator-guide-week-0-xello-account-+-dashboard-check-in",
+      "title": "Facilitator Guide: Week 0 — Xello Account + Dashboard Check-in",
+      "topic": "Xello account access and goal setting",
+      "objective": "Students will explain how an initial goal can guide later career exploration and identify where that goal is stored in Xello.",
+      "teks": [],
+      "demonstration_of_learning": "Readable dashboard screenshot plus the current after-high-school goal reflection sentence.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective describes account setup rather than the learning behind the goal reflection.",
+        "The generic AUP/file-management TEKS are not directly demonstrated by this Xello check-in."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Xello Check-in: Log in to Xello). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 2,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_item_id": 2633994,
+      "page_slug": "facilitator-guide-ready-set-design",
+      "title": "Facilitator Guide: Ready Set Design!",
+      "topic": "User-centered design process",
+      "objective": "Students will explain how empathize, define, ideate, prototype, and test use evidence about a user to improve a solution, then apply the cycle to a stated need.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Team prototype, user-need statement, test feedback, and one documented revision that responds to the feedback.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective mostly repeats the build activity; the revision should state what students learn about how the design cycle works.",
+        "The DOL is strong and only needs to make the feedback-to-revision link explicit."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Learn: Ready, Set, Design, Activity: Ready, Set, Design, Xello Check-in: Matchmaker, Personality Style, and Learning Style). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 2,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_item_id": 2633999,
+      "page_slug": "facilitator-guide-comics-lesson-1-welcome-and-comic-cover",
+      "title": "Facilitator Guide: Comics Lesson 1: Welcome and Comic Cover",
+      "topic": "Visual identity and first impressions",
+      "objective": "Students will explain how title, image, color, size, and placement communicate a hero's identity to a reader, then apply those choices to a cover.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Comic cover plus the exit sentence naming one visible design choice, what it communicates, and one change made after planning or feedback.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective makes the cover itself the learning target.",
+        "The DOL lists cover requirements but needs the explanation and design-process evidence that support the objective and TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 1: Welcome to Smart Solutions (Build Your Comic Cover)). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 2,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_item_id": 2634001,
+      "page_slug": "facilitator-guide-comics-lesson-2-biography-and-motivation",
+      "title": "Facilitator Guide: Comics Lesson 2: Biography and Motivation",
+      "topic": "Character motivation and cause and effect",
+      "objective": "Students will analyze how a character's experiences, abilities, challenges, and goals can support a prediction about that character's choices.",
+      "teks": [],
+      "demonstration_of_learning": "Comic Page 1 plus one evidence-based prediction that cites a specific biography detail and explains the likely choice.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective blends biography completion with the intended reasoning.",
+        "§126.19(c)(3)(B) is not demonstrated by this biography activity because the lesson does not require testing or refining a design with digital tools."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 2: Build Your Hero (Biography and Motivation)). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 2,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_item_id": 2634003,
+      "page_slug": "facilitator-guide-comics-lesson-3-hero-gadget-design",
+      "title": "Facilitator Guide: Comics Lesson 3: Hero Gadget Design",
+      "topic": "Smart gadget function and user need",
+      "objective": "Students will explain how a gadget's purpose, input, or output connects to the user problem it is designed to solve.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Comic Page 2 with the gadget's name, function, drawing, problem solved, and at least one labeled input or output, plus one sentence explaining the connection.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is primarily an artifact checklist.",
+        "The design-process TEKS is too broad for this page; the lesson directly elicits appropriate technology terminology and explanation instead."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 3: Hero Gadget Design (Create Your Smart Gadget Page)). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 2,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_item_id": 2634005,
+      "page_slug": "facilitator-guide-comics-lesson-4-hero-logo-design",
+      "title": "Facilitator Guide: Comics Lesson 4: Hero Logo Design",
+      "topic": "Logo communication and iterative design",
+      "objective": "Students will analyze how symbols and colors communicate identity and apply planning, testing, and refinement to improve a logo.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Comic Page 3 with three thumbnails, one refined emblem, symbol and color explanations, and a documented change based on a small-size or peer test.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective emphasizes producing a logo more than the learning about visual communication and refinement.",
+        "The DOL needs explicit test-to-revision evidence to support the design-process TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 4: Hero Logo Design (Create Your Superhero's Logo)). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 2,
+      "module_name": "SW1 · Design Thinking + Superhero Comics",
+      "module_item_id": 2634007,
+      "page_slug": "facilitator-guide-comics-lesson-5-smart-solution-in-action",
+      "title": "Facilitator Guide: Comics Lesson 5: Smart Solution in Action",
+      "topic": "Sustainability-informed smart solutions",
+      "objective": "Students will analyze a sustainability challenge and evaluate how well a smart solution addresses the needs of affected people, places, or resources.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Revised Comic Page 4 showing the sustainability challenge, who or what is affected, the hero's choice, the gadget action, and a visible result, plus the complete comic submission.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective duplicates the comic-making activity instead of naming the sustainability and technology learning.",
+        "The current design-process TEKS does not match the lesson's strongest learning; the global-trends TEKS is supported when the required page and exit explanation connect a sustainability challenge to technology development.",
+        "Final alignment retains the innovative design-process TEKS because the lesson includes planning, partner testing, and revision; the project evidence does not independently demonstrate a global-trends prediction."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 5: Smart Solution in Action (Create Your Final Comic Page), Starting our Portfolio). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 3,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_item_id": 2657920,
+      "page_slug": "facilitator-guide-piskel-lesson-1-promise-+-micro-plot",
+      "title": "Facilitator Guide: Piskel Lesson 1 — Promise + Micro Plot",
+      "topic": "Animated story structure",
+      "objective": "Students will explain how a clear beginning, visible change, and ending make a short animation understandable before production begins.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Promise-in-action statement and completed five-part plot diagram that identify the planned beginning, visible change, and ending.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a planning task; it should name the story-structure learning the plan demonstrates.",
+        "The DOL should identify the specific planning evidence tied to the design-process TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Superhero Promise, Plot Diagram | Superhero Animation). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 3,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_item_id": 2657921,
+      "page_slug": "facilitator-guide-piskel-lesson-2-storyboard-the-motion",
+      "title": "Facilitator Guide: Piskel Lesson 2 — Storyboard the Motion",
+      "topic": "Storyboard planning for motion",
+      "objective": "Students will apply key poses, sequence, and timing cues to predict whether an animation will read clearly before it is built.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Six-panel storyboard, or approved four-panel support storyboard, with labeled key poses and timing/hold decisions.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective says to plan but not what storyboard knowledge students apply.",
+        "The DOL needs the key-pose and timing evidence that makes the plan assessable."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Storyboard | Superhero Animation). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 3,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_item_id": 2657922,
+      "page_slug": "facilitator-guide-piskel-lesson-3-tools-frames-+-practice-loop",
+      "title": "Facilitator Guide: Piskel Lesson 3 — Tools, Frames + Practice Loop",
+      "topic": "Animation tools, timing, and editable files",
+      "objective": "Students will explain how frame duplication and timing change perceived motion and apply file-management choices that preserve editable work.",
+      "teks": [
+        "§126.19(c)(12)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Completed 1–2 second practice loop plus evidence that the editable source is named, saved, and can be reopened.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a tool checklist.",
+        "The DOL needs both motion/timing evidence and editable-source evidence to support the two TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Piskel Tutorial | Watch and Try). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 3,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_item_id": 2657923,
+      "page_slug": "facilitator-guide-piskel-lesson-4-peer-test-+-useful-feedback",
+      "title": "Facilitator Guide: Piskel Lesson 4 — Peer Test + Useful Feedback",
+      "topic": "Peer testing and actionable feedback",
+      "objective": "Students will evaluate an animation for observable clarity or timing and give feedback specific enough to guide a revision.",
+      "teks": [
+        "§126.19(c)(11)(B)"
+      ],
+      "demonstration_of_learning": "Posted practice animation and peer response that names one observable clarity or timing issue and one usable revision suggestion.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective says to give a note but does not define the learning standard for useful feedback.",
+        "The DOL must capture the content of the peer response, not only its posting."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Practice Wall | Piskel). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 3,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_item_id": 2657924,
+      "page_slug": "facilitator-guide-piskel-lesson-5-animate-hold-+-revise",
+      "title": "Facilitator Guide: Piskel Lesson 5 — Animate, Hold + Revise",
+      "topic": "Animation timing and revision",
+      "objective": "Students will analyze how frames and holds affect readable motion and revise an animation using test evidence.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "First-pass animation, test note, and documented revision showing what changed and why.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective combines production actions without making the timing/revision understanding explicit.",
+        "The DOL should connect the revision to observed evidence."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Days 3 and 4: Animate the Promise). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 3,
+      "module_name": "Enrichment · Piskel Micro Animation",
+      "module_item_id": 2657925,
+      "page_slug": "facilitator-guide-piskel-lesson-6-export-verify-+-reflect",
+      "title": "Facilitator Guide: Piskel Lesson 6 — Export, Verify + Reflect",
+      "topic": "Export verification and source preservation",
+      "objective": "Students will distinguish an editable source file from a shareable GIF and verify that each file works for its intended purpose.",
+      "teks": [
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(B)"
+      ],
+      "demonstration_of_learning": "Final animated GIF that opens and plays, preserved editable source file, and short reflection explaining the purpose of each format.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is an export instruction.",
+        "The revised objective and DOL must show format-purpose understanding and successful file verification."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Export and Submit). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2634028,
+      "page_slug": "facilitator-guide-emoji-project-overview",
+      "title": "Facilitator Guide: Emoji Project Overview",
+      "topic": "User-centered emoji design",
+      "objective": "Students will apply a design process to address a communication gap, test an emoji at authentic small scale, use feedback, and justify the final design.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Original emoji proposal with communication-gap evidence, distinct ideas, small-size test, revised prototype, peer feedback, and final pitch.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Emoji Hub). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657926,
+      "page_slug": "facilitator-guide-graphic-design-lesson-1-pop-art-signals",
+      "title": "Facilitator Guide: Graphic Design Lesson 1 — Pop Art Signals",
+      "topic": "Pop Art visual signals",
+      "objective": "Students will analyze how contrast, repetition, bold color, and scale create emphasis in Pop Art and apply one of those choices intentionally.",
+      "teks": [],
+      "demonstration_of_learning": "Pop Art name-tag photo plus a sentence identifying the chosen visual signal and the effect it creates.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective equates making the name tag with learning.",
+        "The paper name-tag evidence does not directly demonstrate the module's digital publication or full design-process TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 1: Pop Art of the 60's). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657927,
+      "page_slug": "facilitator-guide-graphic-design-lesson-2-lines-circles-+-canva",
+      "title": "Facilitator Guide: Graphic Design Lesson 2 — Lines, Circles + Canva",
+      "topic": "Shape constraints in digital composition",
+      "objective": "Students will compare how line and circle constraints change visual meaning and apply publication tools to create readable graphics.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Two PNG graphics in the worksheet plus a comparison explaining how the different shape constraints changed the result.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective only lists the two products.",
+        "The DOL needs the comparison that demonstrates learning, not only file completion."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 2: Graphic Design with Canva). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657928,
+      "page_slug": "facilitator-guide-graphic-design-lesson-3-read-visual-design",
+      "title": "Facilitator Guide: Graphic Design Lesson 3 — Read Visual Design",
+      "topic": "Reading visual design choices",
+      "objective": "Students will analyze how color, shape, scale, and placement guide a viewer's attention and communicate meaning.",
+      "teks": [],
+      "demonstration_of_learning": "Video or Edpuzzle response that cites one visual choice from an example and explains its effect on the viewer.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective says to connect examples to decisions but does not state the visual-analysis learning.",
+        "No exact Grade 8 Technology Applications TEKS is directly demonstrated unless students create or revise a digital artifact."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (EdPuzzle | The Universal Arts of Graphic Design). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657929,
+      "page_slug": "facilitator-guide-graphic-design-lesson-4-paths-shapes-+-color",
+      "title": "Facilitator Guide: Graphic Design Lesson 4 — Paths, Shapes + Color",
+      "topic": "Paths, shapes, and color as visual language",
+      "objective": "Students will explain how path, shape, and color choices affect readability and meaning in a digital graphic.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Completed Paths, Shapes, and Colors artifact plus a brief explanation of two deliberate choices and their intended effect.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective uses vague language about deliberate choices.",
+        "The DOL needs an explanation that makes the design reasoning observable."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 3: Paths, Shapes, and Colors). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657930,
+      "page_slug": "facilitator-guide-graphic-design-lesson-5-pictographs",
+      "title": "Facilitator Guide: Graphic Design Lesson 5 — Pictographs",
+      "topic": "Pictograph simplification",
+      "objective": "Students will analyze which details are essential and apply shape simplification so an idea remains recognizable at small size.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Completed pictograph plus a small-size check and a brief explanation of one detail kept, removed, or revised.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective largely describes the product.",
+        "The DOL needs the simplification reasoning and small-size evidence."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 4: Pictographs - Communicating through Shapes). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657931,
+      "page_slug": "facilitator-guide-graphic-design-lesson-6-advanced-form-+-color",
+      "title": "Facilitator Guide: Graphic Design Lesson 6 — Advanced Form + Color",
+      "topic": "Form, color, and readability",
+      "objective": "Students will evaluate how advanced shape and color choices affect visual hierarchy and revise a graphic to preserve readability.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Completed Advanced Shapes and Colors artifact with before/after evidence or a reflection naming one readability revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a creation task with readability appended.",
+        "The DOL must show evaluation or revision, not completion alone."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 5: Advanced Shapes and Colors). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657932,
+      "page_slug": "facilitator-guide-emoji-lesson-1-define-the-gap",
+      "title": "Facilitator Guide: Emoji Lesson 1 — Define the Gap",
+      "topic": "Defining a communication gap",
+      "objective": "Students will analyze where existing emoji fail to communicate a specific idea for a specific audience and define the design need.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Emoji Define proposal naming the audience, intended meaning, limitation of current options, and design need.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective names identification without requiring analysis of audience or existing limitations.",
+        "The DOL should capture the defined need that starts the design process."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Step 1: Define). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657933,
+      "page_slug": "facilitator-guide-emoji-lesson-2-ideate-widely",
+      "title": "Facilitator Guide: Emoji Lesson 2 — Ideate Widely",
+      "topic": "Divergent visual ideation",
+      "objective": "Students will compare multiple distinct visual approaches and justify which concept best addresses the defined communication gap.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Required rough sketches plus a selected concept and short justification tied to the communication gap.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective treats sketch quantity as the learning.",
+        "The DOL needs comparison and selection reasoning."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Step 2: Ideate). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657934,
+      "page_slug": "facilitator-guide-emoji-lesson-3-prototype-+-small-size-test",
+      "title": "Facilitator Guide: Emoji Lesson 3 — Prototype + Small-Size Test",
+      "topic": "Prototype testing at authentic scale",
+      "objective": "Students will evaluate whether a shapes-only emoji remains recognizable at small size and revise it using test evidence.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Emoji prototype, documented small-size test, specific revision, and export evidence.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is close but combines building with the learning; the test criterion should lead.",
+        "The DOL should explicitly show test evidence and the resulting revision."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Step 3: Prototype). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 4,
+      "module_name": "SW1 · Graphic Design with the 1960s",
+      "module_item_id": 2657935,
+      "page_slug": "facilitator-guide-emoji-lesson-4-gallery-walk-+-pitch",
+      "title": "Facilitator Guide: Emoji Lesson 4 — Gallery Walk + Pitch",
+      "topic": "Design critique and justification",
+      "objective": "Students will evaluate peer designs using observable criteria and justify how their own emoji addresses its communication gap.",
+      "teks": [
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Gallery-review sheets, peer feedback received, final emoji, and a pitch explaining the communication gap and two design choices.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective lists presentation and review activities.",
+        "The DOL needs the criteria-based evaluation and design justification that prove learning."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Step 4: Showcase, Portfolio Part 2: Graphic Design). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 5,
+      "module_name": "SW1 · CNC (Lasercutting)",
+      "module_item_id": 2657936,
+      "page_slug": "facilitator-guide-laser-lesson-1-pixels-paths-+-machine-operations",
+      "title": "Facilitator Guide: Laser Lesson 1 — Pixels, Paths + Machine Operations",
+      "topic": "Raster, vector, and laser operations",
+      "objective": "Students will distinguish raster pixels from vector paths and predict whether a laser file element will cut, score, or engrave.",
+      "teks": [
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Completed First Look worksheet or inspection response that labels file elements and justifies predicted machine operations.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective omits the raster/vector concept taught by the lesson.",
+        "The DOL should require justification of the operation prediction."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (First Look: How Laser Cutting Reads a File). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 5,
+      "module_name": "SW1 · CNC (Lasercutting)",
+      "module_item_id": 2657937,
+      "page_slug": "facilitator-guide-laser-lessons-2-5-define-file-check-test-+-queue",
+      "title": "Facilitator Guide: Laser Lessons 2–5 — Define, File Check, Test + Queue",
+      "topic": "Laser-ready design and iterative file testing",
+      "objective": "Students will apply a design process to create a privacy-safe laser-ready tag, diagnose file limitations, and revise for fabrication.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Teacher-checked source file, cut result, documented file or design revision, reflection, and final identity tag.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is mainly the production task.",
+        "The DOL should make diagnosis and revision visible and retain the file-management and tool evidence."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Make It Findable | Laser-Ready Identity Tag). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 5,
+      "module_name": "SW1 · CNC (Lasercutting)",
+      "module_item_id": 2657938,
+      "page_slug": "facilitator-guide-laser-career-connection-skills-tools-+-roles",
+      "title": "Facilitator Guide: Laser Career Connection — Skills, Tools + Roles",
+      "topic": "Fabrication careers and transferable skills",
+      "objective": "Students will explain how a fabrication tool or skill is used in an industry role and identify evidence of that skill in their own work.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Xello check-in screenshot plus a reflection connecting one documented design-process skill to a named fabrication career or industry role.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective makes a generic career connection.",
+        "The design-process TEKS is supportable only if the reflection cites the student's own planning, testing, or revision evidence; the career lesson alone does not demonstrate §126.19(c)(3)(C)."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Xello Check-in: Career Connection). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 6,
+      "module_name": "OPTIONAL/FLEX · Holiday Ornament Laser Extension",
+      "module_item_id": 2657939,
+      "page_slug": "facilitator-guide-ornament-lesson-1-predict-the-operations",
+      "title": "Facilitator Guide: Ornament Lesson 1 — Predict the Operations",
+      "topic": "Laser operation prediction",
+      "objective": "Students will analyze ornament file features and justify whether each element should cut, score, or engrave.",
+      "teks": [
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Learn activity response or prediction chart with justified cut, score, and engrave labels.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the prediction task without the analysis criterion.",
+        "The DOL should include the reason for each machine-operation choice."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Learn: What Will the Laser Do?). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 6,
+      "module_name": "OPTIONAL/FLEX · Holiday Ornament Laser Extension",
+      "module_item_id": 2657940,
+      "page_slug": "facilitator-guide-ornament-lessons-2-3-design-file-check-+-fabricate",
+      "title": "Facilitator Guide: Ornament Lessons 2–3 — Design, File Check + Fabricate",
+      "topic": "Fabrication constraints and file readiness",
+      "objective": "Students will evaluate an ornament design against fabrication constraints and revise the file before it enters the laser queue.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "SVG, file-check evidence, model or test result, documented revision, finished-object photo, and reflection.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective centers on building and following routines.",
+        "The revised DOL must show constraint evaluation and revision, not only a teacher check and final object."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Project: Holiday Ornament Laser Extension). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 7,
+      "module_name": "SW2 · 3D Modeling",
+      "module_item_id": 2636701,
+      "page_slug": "facilitator-guide-cad-skill-ladder",
+      "title": "Facilitator Guide: CAD Skill Ladder",
+      "topic": "3D modeling and print constraints",
+      "objective": "Students will explain how solids, holes, dimensions, and print constraints affect a model and apply that understanding to revise a printable design.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Currency design, modeled coin, and ring model with accurate dimensions plus a documented revision based on a print constraint.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective lists the project sequence more than the spatial/constraint learning.",
+        "The DOL already contains the right evidence but should explicitly connect the revision to a print constraint."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (the full facilitator guide and its linked student task). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 7,
+      "module_name": "SW2 · 3D Modeling",
+      "module_item_id": 2636702,
+      "page_slug": "facilitator-guide-favorite-toy-shape-decomposition",
+      "title": "Facilitator Guide: Favorite Toy Shape Decomposition",
+      "topic": "Shape decomposition and proportional modeling",
+      "objective": "Students will analyze a complex object as basic forms and use comparison evidence to revise a proportional 3D model.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Favorite-toy plan, Tinkercad model, comparison to the reference, and one documented proportional revision.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 4: Favorite Toy Shape Decomposition). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 7,
+      "module_name": "SW2 · 3D Modeling",
+      "module_item_id": 2636703,
+      "page_slug": "facilitator-guide-dream-room-capstone",
+      "title": "Facilitator Guide: Dream Room Capstone",
+      "topic": "Scale, spatial planning, and iterative modeling",
+      "objective": "Students will apply one consistent scale, test whether a room model communicates the planned space, and revise from measurement or peer evidence.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Scaled room plan, Tinkercad model, measurement evidence, peer test, documented revision, and final screenshots.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective largely follows the project workflow; the revised version names the scale and testing learning.",
+        "The DOL is aligned and only needs the revision evidence stated explicitly."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Dream Room Day 1: Plan, Dream Room Day 2: Scale, Dream Room Days 3–5: Build, Test, Revise). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 7,
+      "module_name": "SW2 · 3D Modeling",
+      "module_item_id": 2657941,
+      "page_slug": "facilitator-guide-3d-modeling-lesson-1-currency-to-3d-thinking",
+      "title": "Facilitator Guide: 3D Modeling Lesson 1 — Currency to 3D Thinking",
+      "topic": "From 2D symbols to 3D form",
+      "objective": "Students will analyze which parts of a flat currency design require depth, relief, or negative space to become a readable 3D model.",
+      "teks": [
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Currency design artifact plus annotations identifying which elements would become solids, holes, relief, or recessed details.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective combines the artifact with a vague identification task.",
+        "The DOL needs the annotated 2D-to-3D reasoning, not the currency design alone."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 1: Design Your Own Currency). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 7,
+      "module_name": "SW2 · 3D Modeling",
+      "module_item_id": 2657942,
+      "page_slug": "facilitator-guide-3d-modeling-lesson-2-coin-solids-+-holes",
+      "title": "Facilitator Guide: 3D Modeling Lesson 2 — Coin, Solids + Holes",
+      "topic": "Constructive solid geometry",
+      "objective": "Students will explain how solids, holes, alignment, and grouping combine to create precise 3D form.",
+      "teks": [
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "3D coin model plus screenshot or annotations identifying at least one solid, one hole, and one alignment/grouping decision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a tool-use task.",
+        "The DOL needs evidence that students understand how the operations produce the model."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 2: Intro to 3D Modeling). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 7,
+      "module_name": "SW2 · 3D Modeling",
+      "module_item_id": 2657943,
+      "page_slug": "facilitator-guide-3d-modeling-lesson-3-ring-+-print-constraints",
+      "title": "Facilitator Guide: 3D Modeling Lesson 3 — Ring + Print Constraints",
+      "topic": "3D print constraints and revision",
+      "objective": "Students will evaluate a ring model for wall thickness, scale, support, and fit, then revise the highest-risk feature.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Ring model or PNG, print-readiness checklist, and before/after evidence of one constraint-driven revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is close but leaves the diagnosis and revision evidence underspecified.",
+        "The current DOL names only a reflection; add the actual before/after model evidence."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 3: Intro to 3D Printing). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 7,
+      "module_name": "SW2 · 3D Modeling",
+      "module_item_id": 2657944,
+      "page_slug": "facilitator-guide-3d-modeling-xello-skills-check-in",
+      "title": "Facilitator Guide: 3D Modeling — Xello Skills Check-in",
+      "topic": "CAD skills and career transfer",
+      "objective": "Students will explain how a specific CAD skill can transfer to a different task or career context and cite evidence from their own modeling work.",
+      "teks": [],
+      "demonstration_of_learning": "Xello completion screenshot plus a reflection naming one CAD skill, evidence of using it, and another setting where it transfers.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is account/activity language rather than learning.",
+        "No exact Grade 8 Technology Applications TEKS directly covers a generic Xello transferable-skills reflection."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Xello Check-in: Add Skills, Portfolio Example). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 8,
+      "module_name": "SW2 · ThingLink: 360 + Branching Narratives",
+      "module_item_id": 2636712,
+      "page_slug": "facilitator-guide-welcome-mission",
+      "title": "Facilitator Guide: Welcome Mission",
+      "topic": "Visitor-centered interactive navigation",
+      "objective": "Students will apply a design process to make an interactive map usable for a specific first-time visitor and revise it from a navigation test.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Published Welcome Mission with three purposeful stops, working tags, visitor-test evidence, and one documented revision.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Days 1–2 · Welcome Mission, Day 3 · Flat Photo or 360 Scene?). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 8,
+      "module_name": "SW2 · ThingLink: 360 + Branching Narratives",
+      "module_item_id": 2636713,
+      "page_slug": "facilitator-guide-360-guide",
+      "title": "Facilitator Guide: 360 Guide",
+      "topic": "Purposeful 360 media and navigation",
+      "objective": "Students will evaluate when a 360 image improves visitor understanding and revise navigation using partner-test evidence.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Revised Welcome Mission with a functional 360 stop, purposeful tags, partner-test evidence, and a published link.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Days 4–5 · Build a 360 Guide). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 8,
+      "module_name": "SW2 · ThingLink: 360 + Branching Narratives",
+      "module_item_id": 2636714,
+      "page_slug": "facilitator-guide-branching-narratives",
+      "title": "Facilitator Guide: Branching Narratives",
+      "topic": "Branching choice architecture",
+      "objective": "Students will analyze how choice points create different user paths and apply test evidence to revise a branching experience.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Story map and published branching experience with working choices, at least two outcomes, test evidence, and one documented revision.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 1 · Two-Door Challenge, Day 2 · Story Map Approval, Days 3–5 · Build, Test, and Publish, PARKED · Activity 1: Planet Planning, PARKED · Activity 2: Storyboard, PARKED · Activity 3: Planet Branching). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2641565,
+      "page_slug": "facilitator-guide-career-fair-project",
+      "title": "Facilitator Guide: Career Fair Project",
+      "topic": "Source-based career communication",
+      "objective": "Students will evaluate career information using traceable sources and adapt accurate findings for a public audience.",
+      "teks": [
+        "§126.19(c)(5)(B)",
+        "§126.19(c)(9)(C)",
+        "§126.19(c)(8)(B)",
+        "§126.19(c)(7)"
+      ],
+      "demonstration_of_learning": "Research organizer and source log, working public information page, visitor-facing materials, and live explanation that accurately cites current evidence.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective mixes research, design, and presentation activities without leading with the research and audience learning.",
+        "Remove §126.19(c)(8)(C) unless students actually publish collaborative video; the live local expo does not by itself meet its global-platform wording."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (the full facilitator guide and its linked student task). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657946,
+      "page_slug": "facilitator-guide-flex-option-email-etiquette",
+      "title": "Facilitator Guide: Flex Option — Email Etiquette",
+      "topic": "Formal email decisions",
+      "objective": "Students will evaluate whether a school email has a clear purpose, appropriate tone, necessary context, and an actionable request, then revise weak messages.",
+      "teks": [],
+      "demonstration_of_learning": "Four repaired emails plus one complete school email and a brief annotation explaining one tone or clarity revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is an activity list.",
+        "§126.19(c)(8)(B) requires publication for a global audience, which this local school-email activity does not demonstrate."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (OPTION · Email Etiquette). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657947,
+      "page_slug": "facilitator-guide-flex-option-vision-board",
+      "title": "Facilitator Guide: Flex Option — Vision Board",
+      "topic": "Identity, evidence, and future direction",
+      "objective": "Students will explain how selected images and words connect a current strength or value to one direction they may explore.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Vision Board artifact plus a short explanation connecting one visual choice, one current trait, and one future direction.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is broad and the artifact alone does not prove the connection.",
+        "The DOL needs the explanatory evidence that supports purposeful publication-tool use."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (OPTION · Vision Board). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657948,
+      "page_slug": "facilitator-guide-career-fair-setup-build-a-career-starting-pool",
+      "title": "Facilitator Guide: Career Fair Setup — Build a Career Starting Pool",
+      "topic": "Career search strategy",
+      "objective": "Students will apply purposeful keywords and filters to build a varied starting pool of careers before choosing a research focus.",
+      "teks": [
+        "§126.19(c)(5)(B)"
+      ],
+      "demonstration_of_learning": "Saved career starting pool plus a short search log naming the keywords or filters that produced at least three viable options.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is saving careers, not learning a search strategy.",
+        "The current DOL lacks the search evidence required by the TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (OPTIONAL SETUP · Xello Career Starting Pool, Career Fair · Project Overview). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657950,
+      "page_slug": "facilitator-guide-career-fair-step-1-choose-+-commit",
+      "title": "Facilitator Guide: Career Fair Step 1 — Choose + Commit",
+      "topic": "Career selection criteria",
+      "objective": "Students will compare career options using stated personal and research criteria and justify one career as the strongest investigation choice.",
+      "teks": [],
+      "demonstration_of_learning": "Three-career shortlist plus a written justification that compares the selected career with at least one alternative.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the selection task.",
+        "No exact Grade 8 Technology Applications TEKS is demonstrated by choosing a career alone; keep the evidence without forcing a standard."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Career Fair · Step 1: Choose a Career). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657952,
+      "page_slug": "facilitator-guide-career-fair-step-2-research-+-source-log",
+      "title": "Facilitator Guide: Career Fair Step 2 — Research + Source Log",
+      "topic": "Search, source tracking, and current career evidence",
+      "objective": "Students will apply search strategies, distinguish traceable evidence from unsupported claims, and cite sources for published career facts.",
+      "teks": [
+        "§126.19(c)(5)(B)",
+        "§126.19(c)(9)(C)"
+      ],
+      "demonstration_of_learning": "Completed research organizer and source log with current facts, source titles/links, years, and clear fact-to-source matches.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective focuses on gathering facts rather than the search and citation learning.",
+        "The DOL is aligned when fact-to-source matching is explicit."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Career Fair · Step 2: Research). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657953,
+      "page_slug": "facilitator-guide-career-fair-step-3-explain-for-a-visitor",
+      "title": "Facilitator Guide: Career Fair Step 3 — Explain for a Visitor",
+      "topic": "Audience-centered career publishing",
+      "objective": "Students will evaluate which sourced career facts a first-time visitor needs and organize them into a clear public page.",
+      "teks": [
+        "§126.19(c)(8)(B)",
+        "§126.19(c)(7)"
+      ],
+      "demonstration_of_learning": "Working public informational page and share link with sourced facts, readable organization, and a brief audience-choice explanation.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a publishing task.",
+        "The DOL needs evidence of audience selection and source-based communication, not only a link."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Career Fair · Step 3: Informational Website). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657954,
+      "page_slug": "facilitator-guide-career-fair-step-4-invite-+-make-it-findable",
+      "title": "Facilitator Guide: Career Fair Step 4 — Invite + Make It Findable",
+      "topic": "Visual consistency and findability",
+      "objective": "Students will apply hierarchy and consistent visual choices so a poster and handout help visitors identify and locate the same career exhibit.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Poster and matching handout with readable headline, location/action information, consistent visual system, and a brief design-choice explanation.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective only names two products.",
+        "The DOL should show that the matched system improves findability."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Career Fair · Step 4: Promotional Materials). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 9,
+      "module_name": "OPTIONAL/FLEX · Career + Communication Projects",
+      "module_item_id": 2657955,
+      "page_slug": "facilitator-guide-career-fair-step-5-booth-pitch-+-questions",
+      "title": "Facilitator Guide: Career Fair Step 5 — Booth, Pitch + Questions",
+      "topic": "Evidence-based oral career communication",
+      "objective": "Students will select relevant evidence for a short career pitch and respond to visitor questions without overstating what their sources support.",
+      "teks": [
+        "§126.19(c)(7)"
+      ],
+      "demonstration_of_learning": "Booth, short pitch, visitor-question round, and teacher checklist showing accurate evidence use and honest responses.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective mixes pitching activity with the intended evidence-based communication learning.",
+        "The DOL needs an observable accuracy criterion."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Career Fair · Step 5: Expo, PARKED · To College or Not To College, PARKED · Defining College and Career Readiness, PARKED · College and Career Readiness Survey). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 10,
+      "module_name": "SW3 · Circuit Systems: Paths, Control + Signals",
+      "module_item_id": 2634083,
+      "page_slug": "facilitator-guide-complete-paths-+-safe-testing",
+      "title": "Facilitator Guide: Complete Paths + Safe Testing",
+      "topic": "Complete circuit paths and troubleshooting",
+      "objective": "Students will explain how a complete path supports current flow and use repeatable test evidence to troubleshoot a failed circuit.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Working lamp circuit, contrasting material tests, circuit-path explanation, and troubleshooting record.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Learn: Complete Paths + Safe Testing, Video Check: Circuit Basics, Lab 1: Complete Path + Material Test, Checkpoint: Complete Paths + Safe Testing). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 10,
+      "module_name": "SW3 · Circuit Systems: Paths, Control + Signals",
+      "module_item_id": 2634089,
+      "page_slug": "facilitator-guide-series-parallel-+-reliability",
+      "title": "Facilitator Guide: Series, Parallel + Reliability",
+      "topic": "Circuit topology and reliability",
+      "objective": "Students will compare series and parallel paths, predict component-failure effects, and justify a design for continued operation.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Series and parallel builds, failure-test comparison, and a reliability design with a supported prediction.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Learn: Series, Parallel + Reliability, Lab 2: One Path or Two?, Xello Check-in: Life Experiences + Goals). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 10,
+      "module_name": "SW3 · Circuit Systems: Paths, Control + Signals",
+      "module_item_id": 2634093,
+      "page_slug": "facilitator-guide-leds-resistors-+-motors",
+      "title": "Facilitator Guide: LEDs, Resistors + Motors",
+      "topic": "Component behavior in controlled circuits",
+      "objective": "Students will explain how polarity, resistance, and control choices affect LED and motor outputs and use tests to diagnose unexpected behavior.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "LED direction test, motor direction test, resistor comparison, and labeled input-to-output system diagram.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Learn: Control Light + Motion, Lab 3: Light, Limit + Motion, Checkpoint: LEDs, Resistors + Motors). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 10,
+      "module_name": "SW3 · Circuit Systems: Paths, Control + Signals",
+      "module_item_id": 2634098,
+      "page_slug": "facilitator-guide-coded-signal-system",
+      "title": "Facilitator Guide: Coded Signal System",
+      "topic": "Coded signal design and revision",
+      "objective": "Students will apply a design process to create a coded signal, evaluate whether a listener can decode it, and revise the system's weakest point.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Signal planner, working coded-message system, blind decode result, and one evidence-based revision.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Learn: Sound, Switches + Morse Code, Signal Lab: Can Your Partner Decode It?, Checkpoint: Circuit Systems). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657956,
+      "page_slug": "facilitator-guide-code-+-web-day-1-algorithm-+-first-program",
+      "title": "Facilitator Guide: Code + Web Day 1 — Algorithm + First Program",
+      "topic": "Algorithms and program revision",
+      "objective": "Students will explain how sequence affects an algorithm's result and improve a block-code program after testing.",
+      "teks": [
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Code.org progress screenshot plus a reflection naming the tested change and how it improved or corrected the result.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the coding activity.",
+        "The DOL needs specific test-and-revision evidence to support the algorithm TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 1: Your First Code). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657957,
+      "page_slug": "facilitator-guide-code-+-web-day-2-choice-coding-+-patterns",
+      "title": "Facilitator Guide: Code + Web Day 2 — Choice Coding + Patterns",
+      "topic": "Recognizing computational patterns",
+      "objective": "Students will analyze a chosen program to identify how sequence, an event, or a loop controls behavior and explain why that pattern fits the task.",
+      "teks": [
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Completion evidence plus a reflection that identifies one sequence, event, or loop in the program and explains its effect.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective emphasizes choosing an activity.",
+        "The DOL must include analysis of the computational pattern, not only completion."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 2: Hour of Code). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657958,
+      "page_slug": "facilitator-guide-code-+-web-day-3-predict-debug-+-log",
+      "title": "Facilitator Guide: Code + Web Day 3 — Predict, Debug + Log",
+      "topic": "Debugging through controlled tests",
+      "objective": "Students will evaluate program behavior by changing one variable or instruction at a time and use results to improve the code.",
+      "teks": [
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Progress screenshot plus a three-entry bug log showing prediction, single change, observed result, and final fix.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is close but does not state that test evidence is used to improve the program.",
+        "The DOL should preserve the full controlled-test chain."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 3: Debugging Detective). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657959,
+      "page_slug": "facilitator-guide-code-+-web-day-4-input-storage-processing-+-output",
+      "title": "Facilitator Guide: Code + Web Day 4 — Input, Storage, Processing + Output",
+      "topic": "Input, storage, processing, and output",
+      "objective": "Students will explain how input, stored information, processing rules, and output interact in a real computing system.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Labeled device map plus a reflection tracing one complete input-to-output path using the four terms accurately.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the mapping task.",
+        "The DOL should require an explanation of the relationships, not only labels."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 4: How Computers Think). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657960,
+      "page_slug": "facilitator-guide-code-+-web-day-5-web-pages-+-first-html",
+      "title": "Facilitator Guide: Code + Web Day 5 — Web Pages + First HTML",
+      "topic": "HTML structure and rendered output",
+      "objective": "Students will explain how an HTML tag changes document structure or visible output and use that understanding to correct code.",
+      "teks": [
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Screenshot showing HTML code and preview plus a reflection that names one tag, its visible effect, and one correction made.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective states a connection but not how students will reason about or apply it.",
+        "The DOL needs code-to-output evidence and a correction."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 5: Exploring Websites + Intro to HTML). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657961,
+      "page_slug": "facilitator-guide-code-+-web-day-6-headings-lists-+-nesting",
+      "title": "Facilitator Guide: Code + Web Day 6 — Headings, Lists + Nesting",
+      "topic": "Semantic HTML organization",
+      "objective": "Students will analyze how headings, lists, and nesting communicate page hierarchy in both code and rendered output.",
+      "teks": [
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Structured-page screenshot, outline, and reflection explaining how one heading or nested list makes the organization clearer.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is building an outline in HTML.",
+        "The DOL needs an explanation of hierarchy to prove the semantic-organization learning."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 6: HTML Headings + Structure). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657962,
+      "page_slug": "facilitator-guide-code-+-web-day-7-build-+-publish-an-html-page",
+      "title": "Facilitator Guide: Code + Web Day 7 — Build + Publish an HTML Page",
+      "topic": "Audience-centered web-page design",
+      "objective": "Students will apply planning, HTML structure, testing, and revision to publish a one-page site that a defined audience can navigate.",
+      "teks": [
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Published link, code/page screenshot, audience statement, test result, and reflection naming one revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective repeats the production workflow.",
+        "The DOL needs the audience, test, and revision evidence that support the learning and TEKS."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 7: Mini-Project: My HTML Page). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657963,
+      "page_slug": "facilitator-guide-code-+-web-day-8-css-rules-+-readability",
+      "title": "Facilitator Guide: Code + Web Day 8 — CSS Rules + Readability",
+      "topic": "CSS rules and separation of concerns",
+      "objective": "Students will explain how selectors, properties, and values change presentation without changing HTML structure, then apply one rule correctly.",
+      "teks": [
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Before-and-after screenshot plus a reflection identifying the selector, property, value, and visual effect of one CSS rule.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a change-styling task.",
+        "The DOL needs precise CSS reasoning tied to the visible result."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 8: Styling with CSS). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657964,
+      "page_slug": "facilitator-guide-code-+-web-day-9-style-test-+-republish",
+      "title": "Facilitator Guide: Code + Web Day 9 — Style, Test + Republish",
+      "topic": "Visual hierarchy through CSS revision",
+      "objective": "Students will evaluate whether CSS choices help a reader understand the page and revise the code using reader feedback.",
+      "teks": [
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Styled-page screenshot, published link, peer test note, and reflection naming the feedback-driven CSS revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is close, but the DOL does not currently require the reader feedback or resulting revision.",
+        "Add the feedback-to-code connection so the artifact proves the objective."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 9: Mini-Project: Style Your Page). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657965,
+      "page_slug": "facilitator-guide-code-+-web-day-10-walkthrough-feedback-+-pathway",
+      "title": "Facilitator Guide: Code + Web Day 10 — Walkthrough, Feedback + Pathway",
+      "topic": "Technical explanation and actionable feedback",
+      "objective": "Students will justify code and design choices, evaluate peer feedback for usefulness, and identify a next revision or learning step.",
+      "teks": [
+        "§126.19(c)(11)(B)"
+      ],
+      "demonstration_of_learning": "Published link, 90-second walkthrough, peer feedback, and reflection naming one useful note and the next revision or learning step.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is broad and activity-oriented.",
+        "The DOL needs evidence that feedback was evaluated and used to identify a next step."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 10: Showcase + What's Next in CS). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 11,
+      "module_name": "SW3 · Intro to CS: Code & Web",
+      "module_item_id": 2657966,
+      "page_slug": "facilitator-guide-code-+-web-xello-skills-connection",
+      "title": "Facilitator Guide: Code + Web — Xello Skills Connection",
+      "topic": "Transferable coding skills",
+      "objective": "Students will explain how one coding-unit skill transfers to a different task or career setting and support the connection with evidence from their work.",
+      "teks": [],
+      "demonstration_of_learning": "Xello Skills completion screenshot plus a reflection naming the skill, coding-unit evidence, and a second setting where it applies.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a generic connection statement.",
+        "No exact Grade 8 Technology Applications TEKS directly covers a generic Xello transferable-skills reflection; do not carry the entire module's coding TEKS into this check-in."
+      ],
+      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Xello Check-in: Skills Lesson). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+    },
+    {
+      "module_position": 12,
+      "module_name": "SW3 · Video Game Design",
+      "module_item_id": 2657967,
+      "page_slug": "facilitator-guide-video-game-design-lesson-1-skillmap-sign-in-+-save",
+      "title": "Facilitator Guide: Video Game Design Lesson 1 — Skillmap, Sign-in + Save",
+      "topic": "MakeCode workflow and project recovery",
+      "objective": "Students will apply file-management strategies to preserve a MakeCode Arcade project in cloud and downloadable formats and explain how either copy can be recovered.",
+      "teks": [
+        "§126.19(c)(12)(B)"
+      ],
+      "demonstration_of_learning": "Screenshots of two completed Skillmap pieces, a downloaded project PNG, and a reflection that identifies the save and recovery route.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective describes tutorial completion and file production instead of the file-management learning.",
+        "The current §126.19(c)(2)(C) claim is not evidenced because students do not modify previously written code in this lesson."
+      ],
+      "evidence_basis": "The student assignment requires Microsoft cloud sign-in, a downloaded project PNG, and an explanation of how to recover missing work."
+    },
+    {
+      "module_position": 12,
+      "module_name": "SW3 · Video Game Design",
+      "module_item_id": 2657968,
+      "page_slug": "facilitator-guide-video-game-design-lesson-2-remix-test-+-explain",
+      "title": "Facilitator Guide: Video Game Design Lesson 2 — Remix, Test + Explain",
+      "topic": "Iterative game revision",
+      "objective": "Students will apply an iterative software-design process to modify a working game, test the player experience, and explain how a revision improved the game.",
+      "teks": [
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "A remixed game with at least two purposeful features, playtest evidence, and a reflection naming one change and its effect on the player.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective mostly names the project actions; it should state the iterative programming learning that those actions prove."
+      ],
+      "evidence_basis": "The assignment requires students to modify tutorial code, test each feature, collect player feedback, and explain a revision."
+    },
+    {
+      "module_position": 13,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_item_id": 2657898,
+      "page_slug": "facilitator-guide-air-unit-0-day-1-parts-of-a-smart-system",
+      "title": "Facilitator Guide: AIR Unit 0 Day 1 — Parts of a Smart System",
+      "topic": "Smart-system parts",
+      "objective": "Students will distinguish among a robot, algorithm, model, and connected system and justify a classification using accurate technology terminology.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "One Mission Log classification that identifies the system parts and justifies the classification.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The whole-group task requires students to label body, rule, learned pattern, and human judgment and defend one classification."
+    },
+    {
+      "module_position": 13,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_item_id": 2657899,
+      "page_slug": "facilitator-guide-air-unit-0-day-2-design-for-a-constrained-need",
+      "title": "Facilitator Guide: AIR Unit 0 Day 2 — Design for a Constrained Need",
+      "topic": "User-centered robot design",
+      "objective": "Students will apply a user-centered design process to justify how a robot's inputs, process, outputs, and constraints address an identified ocean-research need.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Mission Log design brief with the user, need, constraint, sensor or input, process, output, and a sentence explaining how the design meets the need.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective lists required design-brief fields but does not clearly state the design-process understanding."
+      ],
+      "evidence_basis": "The assignment begins with a user and job, requires a constraint and labeled system, and uses the brief as the planned prototype evidence."
+    },
+    {
+      "module_position": 13,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_item_id": 2657900,
+      "page_slug": "facilitator-guide-air-unit-0-day-3-write-trace-revise",
+      "title": "Facilitator Guide: AIR Unit 0 Day 3 — Write, Trace, Revise",
+      "topic": "Testable algorithms",
+      "objective": "Students will analyze the results of a partner trace and improve an ordered algorithm by revising an unclear step, decision, or stopping condition.",
+      "teks": [
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Mission Log page 2 with 6–10 ordered steps, one IF/THEN decision, one stop or repeat rule, partner trace evidence, and a revision note.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students write an algorithm, have a partner act as the robot, identify the first unclear step, revise it, and explain the change."
+    },
+    {
+      "module_position": 13,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_item_id": 2657901,
+      "page_slug": "facilitator-guide-air-unit-0-day-4-train-test-improve",
+      "title": "Facilitator Guide: AIR Unit 0 Day 4 — Train, Test, Improve",
+      "topic": "Training, testing, and improving a model",
+      "objective": "Students will analyze test results from an image model and apply the evidence to improve its training data and define an appropriate human check.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Mission Log page 3 with two balanced classes, three unseen tests, recorded results, one evidence-based improvement, and one human-check rule.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The student task requires varied training data, three unseen tests, prediction and confidence records, an evidence-based training change, and a human decision point."
+    },
+    {
+      "module_position": 13,
+      "module_name": "SW4 · AIR Unit 0: Intro to AI",
+      "module_item_id": 2657902,
+      "page_slug": "facilitator-guide-air-unit-0-day-5-explain-the-connected-system",
+      "title": "Facilitator Guide: AIR Unit 0 Day 5 — Explain the Connected System",
+      "topic": "Connected smart systems and human judgment",
+      "objective": "Students will explain how a user need, physical robot, input and output, algorithm, learned model, and human judgment work together as one smart system.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Mission Log page 4 explanation that accurately connects the robot, algorithm, model, input and output, user need, and point for human judgment.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective says students will connect parts in an explanation but does not foreground the systems understanding.",
+        "§126.19(c)(1)(E) requires developing, comparing, and improving algorithms; the final explanation alone does not evidence that expectation."
+      ],
+      "evidence_basis": "The final task explicitly asks students to explain every connected system part using the unit's technical terminology."
+    },
+    {
+      "module_position": 14,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_item_id": 2657903,
+      "page_slug": "facilitator-guide-picture-this-day-1-train-it-then-break-it",
+      "title": "Facilitator Guide: Picture This Day 1 — Train It, Then Break It",
+      "topic": "Image classification and model limitations",
+      "objective": "Students will analyze how training-data variety affects an image classifier's performance on unseen examples and identify a targeted improvement.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Two trained classes, unseen-example test results, and one explained failure condition with the training examples needed next.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students deliberately vary training images, attempt to break the model with changed conditions, and explain the missing pattern."
+    },
+    {
+      "module_position": 14,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_item_id": 2657904,
+      "page_slug": "facilitator-guide-picture-this-day-2-data-makes-the-model",
+      "title": "Facilitator Guide: Picture This Day 2 — Data Makes the Model",
+      "topic": "Training data and data bias",
+      "objective": "Students will explain the collect, train, and test cycle and analyze how missing variety can make an image model unreliable or unfair for a new user.",
+      "teks": [
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Annotated packet and five responses, including an evidence-based explanation connecting a missing kind of example to a model failure.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The packet requires students to analyze training-data variety, patterns, test evidence, and a failure for a new user."
+    },
+    {
+      "module_position": 14,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_item_id": 2657905,
+      "page_slug": "facilitator-guide-picture-this-day-3-be-the-ai",
+      "title": "Facilitator Guide: Picture This Day 3 — Be the AI",
+      "topic": "Classification rules and dataset bias",
+      "objective": "Students will analyze how visible classification rules and gaps in training data affect predictions on new examples.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Written classification rules, test results from the bias-test images, and an exit explanation naming the learned pattern and the rule or data gap.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students hand-sort, write explicit rules, train the same concept digitally, test new images, and explain a failed prediction."
+    },
+    {
+      "module_position": 14,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_item_id": 2657906,
+      "page_slug": "facilitator-guide-picture-this-day-4-train-it-+-connect-it",
+      "title": "Facilitator Guide: Picture This Day 4 — Train It + Connect It",
+      "topic": "Model design and coded response",
+      "objective": "Students will apply an iterative design process to train distinct classes, test reliability across users and conditions, and revise the model or coded response from evidence.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Planning sheet, shareable model URL, one working coded response, partner-test evidence, and a named reliability improvement.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The task requires planning, varied data, partner testing, a RAISE Playground response, and an evidence-based change."
+    },
+    {
+      "module_position": 14,
+      "module_name": "SW4 · Picture This: Image Classification + Data Bias",
+      "module_item_id": 2657907,
+      "page_slug": "facilitator-guide-picture-this-day-5-remix-retest-revise-share",
+      "title": "Facilitator Guide: Picture This Day 5 — Remix, Retest, Revise, Share",
+      "topic": "AI-powered project revision",
+      "objective": "Students will modify an AI-powered program, evaluate it with another user, and explain how evidence informed one revision.",
+      "teks": [
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Working .sb3 file and a reflection naming one programmed response, one observed failure, and one revision.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students remix existing code, give the project to a partner without explanation, observe a failure, revise, save, and submit."
+    },
+    {
+      "module_position": 15,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_item_id": 2657908,
+      "page_slug": "facilitator-guide-reliability-lab-day-1-plan-a-fair-test",
+      "title": "Facilitator Guide: Reliability Lab Day 1 — Plan a Fair Test",
+      "topic": "Fair model testing",
+      "objective": "Students will design and justify a fair model test that varies meaningful conditions while keeping the intended comparison clear.",
+      "teks": [
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Case File page 2 with a 12-test plan across four named conditions, expected, edge, and difficult cases, and a reason for each prediction.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective says students will create a test suite, which names the product rather than the fair-testing understanding."
+      ],
+      "evidence_basis": "The assignment requires controlled and varied conditions, predictions, and explanations before the model is tested."
+    },
+    {
+      "module_position": 15,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_item_id": 2657909,
+      "page_slug": "facilitator-guide-reliability-lab-day-2-stress-test-the-model",
+      "title": "Facilitator Guide: Reliability Lab Day 2 — Stress-Test the Model",
+      "topic": "Stress-test evidence and reliability patterns",
+      "objective": "Students will analyze a completed stress-test log to identify a repeated failure pattern and support a reliability claim with counts.",
+      "teks": [
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Case File page 3 with 12 completed test rows, result tallies, and one claim supported by a condition and count.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students record actual and predicted labels, confidence and conditions, tally results, and state where the model was least reliable."
+    },
+    {
+      "module_position": 15,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_item_id": 2657910,
+      "page_slug": "facilitator-guide-reliability-lab-day-3-audit-representation",
+      "title": "Facilitator Guide: Reliability Lab Day 3 — Audit Representation",
+      "topic": "Representation in test evidence",
+      "objective": "Students will evaluate the strength of representation in a model's test evidence and propose a specific test or data repair for an identified gap.",
+      "teks": [
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Case File page 4 with conditions sorted as well represented, weak evidence, or untested, plus one evidence gap and targeted repair.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students categorize evidence by condition, distinguish untested from failed, and justify added examples or tests."
+    },
+    {
+      "module_position": 15,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_item_id": 2657911,
+      "page_slug": "facilitator-guide-reliability-lab-day-4-compare-error-costs",
+      "title": "Facilitator Guide: Reliability Lab Day 4 — Compare Error Costs",
+      "topic": "Error consequences and labeling policy",
+      "objective": "Students will compare the consequences of false alarms and misses for an intended use and justify a repeatable labeling policy.",
+      "teks": [
+        "§126.19(c)(6)",
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Case File page 5 with an observable labeling rule, a false alarm, a miss, and a justified error-cost decision.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The task requires students to analyze error types, consequences, intended use, and a rule another person could apply."
+    },
+    {
+      "module_position": 15,
+      "module_name": "SW4 · Machine Learning Reliability Lab",
+      "module_item_id": 2657912,
+      "page_slug": "facilitator-guide-reliability-lab-day-5-model-card-+-release-decision",
+      "title": "Facilitator Guide: Reliability Lab Day 5 — Model Card + Release Decision",
+      "topic": "Evidence-based model release decisions",
+      "objective": "Students will synthesize reliability evidence, model limitations, and error costs to justify a release, revision, restriction, or rejection decision.",
+      "teks": [
+        "§126.19(c)(6)",
+        "§126.19(c)(7)"
+      ],
+      "demonstration_of_learning": "Completed Case File and a 60-second briefing that cites at least two findings, one limitation, the decision, and a specific next action.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The model card and briefing require students to communicate analyzed data persuasively to an intended decision-making audience."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657976,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-1-case-intake-+-source-trail",
+      "title": "Facilitator Guide: AI Ethics Council Day 1 — Case Intake + Source Trail",
+      "topic": "Traceable AI ethics cases",
+      "objective": "Students will evaluate an AI ethics claim by defining the system and decision, separating evidence from opinion, and verifying the claim with a traceable source trail.",
+      "teks": [
+        "§126.19(c)(5)(B)",
+        "§126.19(c)(9)(D)"
+      ],
+      "demonstration_of_learning": "Casebook case intake and a two-source trail with publisher, title, link, supported fact, and evidence-versus-opinion distinction.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The task requires a teacher-approved case, two traceable sources, source metadata, supported facts, and a bias-aware evidence check."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657977,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-2-follow-the-incentive",
+      "title": "Facilitator Guide: AI Ethics Council Day 2 — Follow the Incentive",
+      "topic": "Recommendation systems, incentives, and visibility",
+      "objective": "Students will analyze how a recommendation system's incentives distribute benefits and visibility, then justify a rule change and its tradeoff.",
+      "teks": [
+        "§126.19(c)(9)(D)"
+      ],
+      "demonstration_of_learning": "Casebook stakeholder map, redesigned recommendation rule, and explanation of who gains, who loses, and what new problem may result.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The student task names what a system maximizes, maps direct and indirect stakeholders, and evaluates the consequences of a changed rule."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657978,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-3-test-the-consequence",
+      "title": "Facilitator Guide: AI Ethics Council Day 3 — Test the Consequence",
+      "topic": "Privacy, surveillance, and safeguards",
+      "objective": "Students will analyze a data-collection scenario for consent, benefit, harm, and appeal, then propose a safeguard matched to the identified threat.",
+      "teks": [
+        "§126.19(c)(10)(A)"
+      ],
+      "demonstration_of_learning": "Casebook two-sided analysis that names collected data, a helpful use, a harmful use, and one targeted safeguard.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students analyze a real-world privacy or surveillance scenario and propose a way to prevent the named harm."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657979,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-4-leave-the-page-and-check",
+      "title": "Facilitator Guide: AI Ethics Council Day 4 — Leave the Page and Check",
+      "topic": "Lateral reading and source verification",
+      "objective": "Students will apply lateral-reading search strategies to evaluate a digital claim's source, evidence, and level of confidence.",
+      "teks": [
+        "§126.19(c)(5)(B)",
+        "§126.19(c)(9)(D)"
+      ],
+      "demonstration_of_learning": "Casebook four-move verification trail and a verified, misleading, altered/generated, or uncertain decision supported by evidence.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Students leave the original page, investigate the publisher, trace evidence to an earlier source, and explain a confidence decision."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657981,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-5-prepare-every-seat",
+      "title": "Facilitator Guide: AI Ethics Council Day 5 — Prepare Every Seat",
+      "topic": "Stakeholder power, impact, and tradeoffs",
+      "objective": "Students will analyze how an AI decision affects stakeholders with different needs, evidence, power, and ability to appeal, then justify a recommendation.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Casebook six-role hearing map with each role's need, evidence, impact, power and appeal route, plus one justified use decision and tradeoff.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current §126.19(c)(8)(B) claim requires publishing a formal digital communication for a global audience; the class hearing map is not published globally.",
+        "The objective describes mapping tasks more than the learning about stakeholder power and impact."
+      ],
+      "evidence_basis": "The task uses scholarly AI-ethics terminology in a written analysis and requires a recommendation after comparing six stakeholder positions."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657982,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-6-tasks-not-headlines",
+      "title": "Facilitator Guide: AI Ethics Council Day 6 — Tasks, Not Headlines",
+      "topic": "AI, work, and human accountability",
+      "objective": "Students will evaluate which job tasks are appropriate for humans, AI, or a combined team and justify quality checks, accountability, and worker protections.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Casebook task map for six job tasks with human/AI assignments, quality checks, accountable people, and two justified worker or user protections.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current §126.19(c)(9)(D) claim is about bias in digital information sources, but this lesson evaluates job-task allocation rather than source bias.",
+        "The objective describes the task map rather than the learning about responsible automation."
+      ],
+      "evidence_basis": "The written sample requires accurate technology terminology and an evidence-based judgment about automation, responsibility, and safeguards."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657983,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-7-build-the-assigned-roles-case",
+      "title": "Facilitator Guide: AI Ethics Council Day 7 — Build the Assigned Role’s Case",
+      "topic": "Evidence-based stakeholder argument",
+      "objective": "Students will evaluate traceable evidence from an assigned stakeholder perspective and defend a claim with reasoning, a rebuttal, and a testable safeguard.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Completed role brief and opening statement with a claim, two traceable evidence points, reasoning, rebuttal, cross-question, and safeguard or stopping rule.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "§126.19(c)(8)(B) requires publication to a global audience, which the classroom role brief does not provide.",
+        "The current objective is a list of argument parts rather than the learning about evaluating and defending an evidence-based position."
+      ],
+      "evidence_basis": "The task elicits a formal written and spoken sample using technical and ethical terminology, but it does not publish to a global audience."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657984,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-8-listen-for-the-evidence",
+      "title": "Facilitator Guide: AI Ethics Council Day 8 — Listen for the Evidence",
+      "topic": "Evidence-based ethical deliberation",
+      "objective": "Students will evaluate competing stakeholder claims, respond to evidence-based objections, and justify a personal verdict that may differ from an assigned role.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Role brief, hearing notes that capture each role's claim and evidence, one answered objection, and a personal-verdict reflection.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current §126.19(c)(8)(B) and (8)(C) claims require global digital publication or collaboration; the classroom hearing does not provide that evidence.",
+        "The objective should name the deliberation learning rather than only the hearing actions."
+      ],
+      "evidence_basis": "The classroom hearing provides scholarly dialogue and written evidence analysis, but not global digital publication."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657985,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-9-turn-values-into-testable-rules",
+      "title": "Facilitator Guide: AI Ethics Council Day 9 — Turn Values into Testable Rules",
+      "topic": "Testable and enforceable AI policy",
+      "objective": "Students will analyze the difference between vague values and enforceable policy by specifying the responsible actor, required action, evidence connection, and compliance check.",
+      "teks": [
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "A five-principle group code in which every rule names an actor, action, evidence connection, and method for checking compliance.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "§126.19(c)(8)(B) requires formal digital publication for a global audience, which the group policy draft does not show.",
+        "The objective focuses on producing five rules instead of understanding what makes a policy enforceable."
+      ],
+      "evidence_basis": "The written code uses AI ethics terminology and requires students to convert concepts such as bias, privacy, transparency, and accountability into testable language."
+    },
+    {
+      "module_position": 16,
+      "module_name": "SW4 · AI Ethics Council",
+      "module_item_id": 2657986,
+      "page_slug": "facilitator-guide-ai-ethics-council-day-10-test-the-code",
+      "title": "Facilitator Guide: AI Ethics Council Day 10 — Test the Code",
+      "topic": "Policy stress-testing and revision",
+      "objective": "Students will evaluate whether an AI policy handles new cases, apply peer feedback to revise a weak rule, and justify the final verdict with evidence.",
+      "teks": [
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(A)"
+      ],
+      "demonstration_of_learning": "Peer-feedback record, one documented rule revision with its evidence, individual synthesis, and final group code.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current §126.19(c)(8)(B) claim requires global publication, which the group code and classroom feedback do not establish.",
+        "The objective states revision actions but should foreground evaluation of a rule's effectiveness."
+      ],
+      "evidence_basis": "Students share a text artifact, seek feedback, revise it, and explain the evidence that changed their thinking."
+    },
+    {
+      "module_position": 18,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_item_id": 2657987,
+      "page_slug": "facilitator-guide-rvr-day-1-draw-plan-program-prove",
+      "title": "Facilitator Guide: RVR Day 1 — Draw, Plan, Program, Prove",
+      "topic": "Robot programming modes and revision",
+      "objective": "Students will compare Draw, Blocks, and Text programming modes, select a suitable mode for a drawing task, and improve a robot program from test evidence.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Program-mode explanation, completed drawing mission sheet, initial and revised run evidence, final program screenshot, and revision claim.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The Learn page compares modes; the drawing mission requires planning, running, revising, rerunning, and explaining what improved."
+    },
+    {
+      "module_position": 18,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_item_id": 2657988,
+      "page_slug": "facilitator-guide-rvr-day-2-precision-movement-lab",
+      "title": "Facilitator Guide: RVR Day 2 — Precision Movement Lab",
+      "topic": "Measured robot movement",
+      "objective": "Students will analyze how heading, speed, duration, distance, wait, and continue affect RVR movement and use test data to justify a precision revision.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Seven documented movement tests, required screenshots, and one precision claim supported by measured results.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The lab varies movement variables one at a time, compares outcomes, and requires an evidence-based precision claim."
+    },
+    {
+      "module_position": 18,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_item_id": 2657989,
+      "page_slug": "facilitator-guide-rvr-day-3-sense-decide-respond",
+      "title": "Facilitator Guide: RVR Day 3 — Sense, Decide, Respond",
+      "topic": "Sensor-controlled robot behavior",
+      "objective": "Students will explain and apply the input, decision, and output relationship to debug a color-sensor route.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Route and code evidence, expected-versus-actual test results, a revised program, and an input-decision-output explanation.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The Learn page explicitly teaches the systems relationship; the mission requires coding, testing, recording results, and revising."
+    },
+    {
+      "module_position": 18,
+      "module_name": "SW5 · RVR Robotics (AIR Unit 2)",
+      "module_item_id": 2657990,
+      "page_slug": "facilitator-guide-rvr-days-4-5-talking-robots-school-of-fish",
+      "title": "Facilitator Guide: RVR Days 4–5 — Talking Robots School-of-Fish",
+      "topic": "Infrared coordination and algorithm revision",
+      "objective": "Students will analyze how shared channels, message timing, and spacing control coordinated RVR behavior and revise leader/follower programs from test evidence.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Leader and follower code, coordinated-run evidence, and a revision claim explaining the timing or spacing change.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "Teams program sender and follower behaviors, test formation, revise timing or spacing, and film the improved run."
+    },
+    {
+      "module_position": 19,
+      "module_name": "SW5 · Coding Adventures (micro:bit)",
+      "module_item_id": 2634178,
+      "page_slug": "facilitator-guide-lesson-1-intro-to-micro-bit-and-block-coding",
+      "title": "Facilitator Guide: Lesson 1 Intro to micro:bit and Block Coding",
+      "topic": "Block-code workflow and device transfer",
+      "objective": "Students will explain how block instructions become a running micro:bit output and apply the correct tool-transfer workflow to run a program on the device.",
+      "teks": [
+        "§126.19(c)(12)(A)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Completed Lesson 1 worksheet, a program running on the micro:bit, and checkpoint evidence explaining the block-to-device workflow.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective describes writing and transferring the first program rather than what students learn about the programming workflow.",
+        "§126.19(c)(1)(E) requires developing, comparing, and improving algorithms; the available evidence shows a first program but not comparison and improvement."
+      ],
+      "evidence_basis": "The Do page requires a first block program and transfer to a physical micro:bit; the worksheet and checkpoint document the learning."
+    },
+    {
+      "module_position": 19,
+      "module_name": "SW5 · Coding Adventures (micro:bit)",
+      "module_item_id": 2634184,
+      "page_slug": "facilitator-guide-lesson-2-inputs-and-outputs",
+      "title": "Facilitator Guide: Lesson 2 Inputs and Outputs",
+      "topic": "Input and output systems",
+      "objective": "Students will explain how an input triggers an observable output in a micro:bit system and apply that relationship in a working program.",
+      "teks": [
+        "§126.19(c)(12)(A)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Completed Lesson 2 worksheet, a working input/output program, and checkpoint response identifying the input, program response, and output.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective describes the build; it should state the input/output systems understanding.",
+        "§126.19(c)(1)(E) is not fully evidenced because the lesson does not require comparing and improving algorithms."
+      ],
+      "evidence_basis": "The student task explicitly pairs an input with an output and requires the program to run on the physical device."
+    },
+    {
+      "module_position": 19,
+      "module_name": "SW5 · Coding Adventures (micro:bit)",
+      "module_item_id": 2634189,
+      "page_slug": "facilitator-guide-lesson-3-radio-and-if-statements",
+      "title": "Facilitator Guide: Lesson 3 Radio and If Statements",
+      "topic": "Radio communication and conditional response",
+      "objective": "Students will explain how a shared radio channel and conditional rule control a micro:bit's response, then apply both concepts in a two-device message system.",
+      "teks": [
+        "§126.19(c)(12)(A)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Completed Lesson 3 worksheet, working sender and receiver programs, and checkpoint evidence explaining the message condition and resulting response.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective describes programming tasks instead of the learning about communication and conditional response.",
+        "The available assignment evidence does not explicitly require modification of previously written code, so §126.19(c)(2)(C) is overclaimed."
+      ],
+      "evidence_basis": "The assignment requires students to program a micro:bit radio message and use an if statement; the worksheet and checkpoint capture the system explanation."
+    },
+    {
+      "module_position": 19,
+      "module_name": "SW5 · Coding Adventures (micro:bit)",
+      "module_item_id": 2634194,
+      "page_slug": "facilitator-guide-lesson-4-coding-games-on-the-micro-bit",
+      "title": "Facilitator Guide: Lesson 4 Coding Games on the micro:bit",
+      "topic": "Game algorithms and iterative revision",
+      "objective": "Students will apply iterative algorithm development to design, test, and improve an original micro:bit game and explain its rules.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Completed game worksheet, working Rock Paper Scissors program, original-game program, test or revision evidence, and checkpoint.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective names two builds; it should state the algorithm-development and revision learning that the original game demonstrates."
+      ],
+      "evidence_basis": "Students implement a model game, then modify and extend the learned code patterns to design and test an original game."
+    },
+    {
+      "module_position": 20,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_item_id": 2657991,
+      "page_slug": "facilitator-guide-leaving-land-lesson-1-seasick-with-empathy",
+      "title": "Facilitator Guide: Leaving Land Lesson 1 — Seasick with Empathy",
+      "topic": "Empathy and problem definition",
+      "objective": "Students will analyze evidence from a user interview to define a specific need and write a problem statement that can guide a technology solution.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Completed empathy map and a problem statement that identifies the user, need, evidence, and design direction.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective lists interview and planning actions rather than the learning about using evidence to define a user need."
+      ],
+      "evidence_basis": "The student task requires interviewing, mapping what the user says and experiences, and converting evidence into a problem statement."
+    },
+    {
+      "module_position": 20,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_item_id": 2657992,
+      "page_slug": "facilitator-guide-leaving-land-lesson-2-micro-bit-light-meter",
+      "title": "Facilitator Guide: Leaving Land Lesson 2 — micro:bit Light Meter",
+      "topic": "Sensor data and threshold decisions",
+      "objective": "Students will analyze how light-level data changes across conditions and explain how a threshold turns a sensor reading into a programmed response.",
+      "teks": [
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Completed light-meter program and worksheet with readings from at least two conditions, a chosen threshold, and an explanation of the resulting response.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective describes programming and testing actions but does not state the sensor-data learning.",
+        "The current §126.19(c)(2)(C) claim is not supported unless students modify previously written code; that evidence is not explicit."
+      ],
+      "evidence_basis": "The assignment requires students to compare light readings across conditions and decide how dark is dark enough for the code."
+    },
+    {
+      "module_position": 20,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_item_id": 2657993,
+      "page_slug": "facilitator-guide-leaving-land-lesson-3-crab-cruisin",
+      "title": "Facilitator Guide: Leaving Land Lesson 3 — Crab Cruisin'",
+      "topic": "Game design and usability",
+      "objective": "Students will apply an iterative design process to plan a micro:bit game, observe a new player's experience, and revise the game from usability evidence.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Playable game, completed worksheet, partner playtest notes, and one documented revision based on observed confusion.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The task requires planning win and loss rules, building, silent partner testing, observing confusion, and revising the program."
+    },
+    {
+      "module_position": 20,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_item_id": 2657994,
+      "page_slug": "facilitator-guide-leaving-land-lesson-4-ocean-games",
+      "title": "Facilitator Guide: Leaving Land Lesson 4 — Ocean Games",
+      "topic": "Arcade-game systems and debugging",
+      "objective": "Students will apply prior MakeCode Arcade knowledge to implement playable rules, test the complete game, and improve an algorithm or rule that does not work as intended.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Completed ocean game and worksheet with a full playthrough plus one documented bug, rule change, or fix.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective and DOL focus on game completion; they do not identify what the finished game proves about algorithm development or debugging."
+      ],
+      "evidence_basis": "The assignment asks students to build from an existing worksheet route, play the complete game, fix what breaks, and submit the worksheet."
+    },
+    {
+      "module_position": 20,
+      "module_name": "SW5 · AIR Unit 1: Leaving Land (micro:bit + MakeCode)",
+      "module_item_id": 2657995,
+      "page_slug": "facilitator-guide-leaving-land-lesson-5-ai-enemies",
+      "title": "Facilitator Guide: Leaving Land Lesson 5 — AI Enemies",
+      "topic": "Rule-based game AI",
+      "objective": "Students will explain how repeated decision rules create rule-based game AI and apply those rules to tune an enemy that is challenging but beatable.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Ocean game with a reactive enemy, playtest evidence showing difficulty tuning, and an explanation of the enemy's repeated rules.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The student page distinguishes rule-based AI from learned models and requires implementation, repeated playtesting, tuning, and explanation."
+    },
+    {
+      "module_position": 21,
+      "module_name": "SW5 · AIR Unit 3: Sailing Home",
+      "module_item_id": 2657996,
+      "page_slug": "facilitator-guide-sailing-home-lesson-1-conflicting-viewpoints",
+      "title": "Facilitator Guide: Sailing Home Lesson 1 — Conflicting Viewpoints",
+      "topic": "Conflicting digital claims and evidence",
+      "objective": "Students will analyze how two digital sources use evidence and omissions to support conflicting claims, then justify which conclusions the available evidence supports.",
+      "teks": [
+        "§126.19(c)(9)(D)"
+      ],
+      "demonstration_of_learning": "Completed AEIOU organizer plus a concise comparison naming each source's claim and evidence, one omission, and a justified evidence judgment.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective names use of the AEIOU organizer rather than the source-evaluation learning.",
+        "The DOL names only completion and does not require the comparative judgment needed to prove mastery."
+      ],
+      "evidence_basis": "The assignment presents two opposing ocean-plastic articles and explicitly asks students to note what each text includes and leaves out."
+    },
+    {
+      "module_position": 21,
+      "module_name": "SW5 · AIR Unit 3: Sailing Home",
+      "module_item_id": 2657997,
+      "page_slug": "facilitator-guide-sailing-home-lesson-2-temperature-bot",
+      "title": "Facilitator Guide: Sailing Home Lesson 2 — Temperature Bot",
+      "topic": "Sensor data, thresholds, and robot response",
+      "objective": "Students will explain how a temperature reading becomes an input, how a coded threshold makes a decision, and how that decision controls RVR behavior.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Completed worksheet, functioning temperature bot, code and readings, and a short input-threshold-output explanation.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective describes mounting, coding, and testing; it should state the learning about how sensor data and threshold logic control behavior."
+      ],
+      "evidence_basis": "The assignment explicitly teaches that the sensor reports a number and the code decides which readings trigger the robot response."
+    },
+    {
+      "module_position": 22,
+      "module_name": "SW5 · Save the Day with Smart Electronics",
+      "module_item_id": 2634222,
+      "page_slug": "facilitator-guide-lesson-1-wiring-leds-with-micro-bit-expansion-board",
+      "title": "Facilitator Guide: Lesson 1 Wiring LEDs with micro:bit Expansion Board",
+      "topic": "Circuit outputs and sequence control",
+      "objective": "Students will explain how pin assignments and timing control circuit outputs and apply troubleshooting evidence to correct a traffic-light sequence.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Traffic-light worksheet, working build, checkpoint, and one documented fault, test, or correction connecting wiring or code to the output.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective states the wiring and build rather than the learning about outputs, sequencing, and troubleshooting."
+      ],
+      "evidence_basis": "The assignment requires three wired LED outputs, a timed sequence, live-build troubleshooting, and a checkpoint on wiring and code."
+    },
+    {
+      "module_position": 22,
+      "module_name": "SW5 · Save the Day with Smart Electronics",
+      "module_item_id": 2634227,
+      "page_slug": "facilitator-guide-lesson-2-wiring-and-programming-inputs",
+      "title": "Facilitator Guide: Lesson 2 Wiring and Programming Inputs",
+      "topic": "Physical inputs and debouncing",
+      "objective": "Students will analyze how a physical button input and debounce logic produce one reliable state change, then apply troubleshooting to correct repeated presses.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Possession-arrow worksheet, working build, checkpoint, and evidence that one button press produces one explained state change.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective states the button and possession-arrow build rather than the learning about reliable physical input and debouncing."
+      ],
+      "evidence_basis": "The task explicitly identifies the multiple-press fault and requires students to fix it in code by waiting for the press to end."
+    },
+    {
+      "module_position": 22,
+      "module_name": "SW5 · Save the Day with Smart Electronics",
+      "module_item_id": 2634233,
+      "page_slug": "facilitator-guide-lesson-3-servo-motors",
+      "title": "Facilitator Guide: Lesson 3 Servo Motors",
+      "topic": "Sensor-controlled servo output",
+      "objective": "Students will explain how a light-sensor threshold controls servo position and use test evidence to refine the sunshade's response.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Sunshade worksheet, working build, checkpoint, recorded light and angle tests, and one explained threshold or servo-range adjustment.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective describes wiring and programming the extension build rather than the sensor-threshold-actuator learning."
+      ],
+      "evidence_basis": "The extension requires wiring and testing servo angles, selecting light thresholds, testing under classroom conditions, and correcting range faults."
+    },
+    {
+      "module_position": 22,
+      "module_name": "SW5 · Save the Day with Smart Electronics",
+      "module_item_id": 2634238,
+      "page_slug": "facilitator-guide-lesson-4-advanced-inputs-and-outputs",
+      "title": "Facilitator Guide: Lesson 4 Advanced Inputs and Outputs",
+      "topic": "User-centered multi-component prototypes",
+      "objective": "Students will apply modular troubleshooting and user testing to refine a multi-input/output prototype for a specific learner need.",
+      "teks": [
+        "§126.19(c)(12)(F)",
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Educational-toy worksheet and working prototype, checkpoint, individual module tests, silent user-test evidence, and one revision tied to the learner's response.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The objective lists the components in the prototype rather than the systems-design and user-testing learning.",
+        "The design-process evidence supports §126.19(c)(3)(B), which is more precise than treating the lesson only as algorithm work."
+      ],
+      "evidence_basis": "The extension requires testing each component separately, defining what the toy teaches, testing with an unexplained user, and changing the prototype when the interaction is unclear."
+    },
+    {
+      "module_position": 23,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_item_id": 2657998,
+      "page_slug": "facilitator-guide-spike-prime-day-1-help-find-the-problem",
+      "title": "Facilitator Guide: SPIKE PRIME Day 1 — Help! Find the Problem",
+      "topic": "Problem definition and design criteria",
+      "objective": "Students will explain how a specific problem statement and measurable success criteria guide an engineering design process.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Problem-definition sheet with the user, problem, why it matters, and 2–3 measurable criteria, plus the exit sentence connecting the problem to one criterion.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective lists what students produce. The revised objective names the design-process understanding proved by that work."
+      ],
+      "evidence_basis": "Linked Day 1 assignment requires a problem statement, measurable success criteria, and a reflective sentence."
+    },
+    {
+      "module_position": 23,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_item_id": 2657999,
+      "page_slug": "facilitator-guide-spike-prime-days-2-3-hopper-race",
+      "title": "Facilitator Guide: SPIKE PRIME Days 2–3 — Hopper Race",
+      "topic": "Prototype iteration through controlled testing",
+      "objective": "Students will analyze comparable test data to justify how changing one design variable affects prototype performance.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Prototype Log with baseline and two iterations, comparable times, one changed variable per trial, and a written claim citing the data.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the procedure. The revised objective makes analysis and justification the learning target."
+      ],
+      "evidence_basis": "Linked Hopper Race assignment requires three timed prototypes, one-variable changes, and a reflection comparing results."
+    },
+    {
+      "module_position": 23,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_item_id": 2658000,
+      "page_slug": "facilitator-guide-spike-prime-days-4-5-super-cleanup",
+      "title": "Facilitator Guide: SPIKE PRIME Days 4–5 — Super Cleanup",
+      "topic": "Comparative design testing",
+      "objective": "Students will evaluate two designs with consistent criteria and repeated test data, then justify which design better fits a specific job.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(6)"
+      ],
+      "demonstration_of_learning": "Completed grabber data table and a two-sentence recommendation that cites a specific result and names the job the selected design fits.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective mostly restates the testing activity. The revised objective identifies evaluation and evidence-based recommendation as the learning."
+      ],
+      "evidence_basis": "Linked Super Cleanup assignment requires fair-test criteria, repeated trials, a data table, and a recommendation citing the table."
+    },
+    {
+      "module_position": 23,
+      "module_name": "SW6 · SPIKE PRIME",
+      "module_item_id": 2658001,
+      "page_slug": "facilitator-guide-spike-prime-extension-design-for-you",
+      "title": "Facilitator Guide: SPIKE PRIME Extension — Design for You",
+      "topic": "User-centered prototyping",
+      "objective": "Students will apply user-centered design to explain how prototype features address a specific desk problem.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Prototype photo and two sentences naming the user problem, one purposeful feature, and evidence from a test or observation that the feature helps.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective combines three completion actions. The revised objective states the user-centered design understanding those actions should prove."
+      ],
+      "evidence_basis": "Linked extension asks students to identify an annoying desk problem, build a helper, and explain the design."
+    },
+    {
+      "module_position": 24,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_item_id": 2657945,
+      "page_slug": "facilitator-guide-ar-lesson-1-ar-basics-and-the-mergecube",
+      "title": "Facilitator Guide: AR Lesson 1 — AR Basics and the MergeCube",
+      "topic": "Augmented reality fundamentals",
+      "objective": "Students will explain how augmented reality differs from virtual reality and apply familiar 3D-design knowledge in a newly encountered AR tool.",
+      "teks": [
+        "§126.19(c)(4)(C)"
+      ],
+      "demonstration_of_learning": "EdPuzzle response that accurately distinguishes AR from VR, plus a working astronaut name-tag cube link or screenshot with all required faces customized.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective mixes a conceptual distinction with the build checklist. The revised objective foregrounds transfer of learning and the DOL preserves both forms of evidence."
+      ],
+      "evidence_basis": "The guide’s launch collects the AR/VR distinction, and the linked build requires students to transfer familiar text, image, and 3D-object skills to Delightex."
+    },
+    {
+      "module_position": 24,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_item_id": 2657949,
+      "page_slug": "facilitator-guide-ar-lesson-2-ar-worlds",
+      "title": "Facilitator Guide: AR Lesson 2 — AR Worlds",
+      "topic": "Coherent AR worldbuilding",
+      "objective": "Students will apply a design plan to explain how consistent setting and language choices make two AR scenes feel like one coherent world.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(A)"
+      ],
+      "demonstration_of_learning": "Completed planet/language planning worksheet and two-scene Delightex link in which a peer can identify the repeated setting and language choices.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a construction task and the current TEKS does not capture the visible planning evidence. The revision aligns the planned multimedia world to the design process."
+      ],
+      "evidence_basis": "The guide requires paper planning, two related scenes, visible world/language details, and a peer coherence check."
+    },
+    {
+      "module_position": 24,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_item_id": 2657951,
+      "page_slug": "facilitator-guide-ar-lesson-3-interactive-ar-shopping",
+      "title": "Facilitator Guide: AR Lesson 3 — Interactive AR Shopping",
+      "topic": "Event-action logic in interactive AR",
+      "objective": "Students will analyze and improve event-action logic so each customer click produces the intended shopping path.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Three-scene shopping link plus a partner route test showing every click works, with one documented correction if a route initially failed.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective states what to build. The revised objective identifies algorithm analysis, testing, and improvement as the learning."
+      ],
+      "evidence_basis": "The guide has students trace click events, sketch the customer path, build, peer-test, and repair click behavior."
+    },
+    {
+      "module_position": 24,
+      "module_name": "SW6 · Augmented Reality with MergeCube",
+      "module_item_id": 2657969,
+      "page_slug": "facilitator-guide-ar-lesson-4-interactive-ar-game-design",
+      "title": "Facilitator Guide: AR Lesson 4 — Interactive AR Game Design",
+      "topic": "Reliable physics-based AR game systems",
+      "objective": "Students will apply and improve event and physics logic so an AR game’s goal, rules, and feedback work reliably for a player.",
+      "teks": [
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(F)"
+      ],
+      "demonstration_of_learning": "Playable AR game link and playtest checklist showing a clear goal, functioning physics, purposeful parts, and one troubleshooting decision or revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is primarily the product specification. The revised objective identifies the algorithmic and troubleshooting learning proved by a playable game."
+      ],
+      "evidence_basis": "The guide explicitly models physics logic, requires partner playtesting, and checks goal, rules, feedback, and repaired failures."
+    },
+    {
+      "module_position": 25,
+      "module_name": "SW6 · Virtual Reality in Delightex",
+      "module_item_id": 2634261,
+      "page_slug": "facilitator-guide-360-images-and-scenes",
+      "title": "Facilitator Guide: 360 Images and Scenes",
+      "topic": "360 media and virtual-space representation",
+      "objective": "Students will analyze how 360 imagery and modeled 3D space represent the same place differently, then select media and tools that support navigation.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "One Delightex link containing the completed 360-photo scene and corresponding navigable 3D scene, plus a short comparison naming one strength of each representation.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective lists import and build actions while the DOL only checks existence. The revision adds the comparison needed to prove purposeful media selection."
+      ],
+      "evidence_basis": "The guide links a 360-photo scene and a rebuilt 3D scene; the module audit identifies combined formats, tool selection, and design process as visible evidence."
+    },
+    {
+      "module_position": 25,
+      "module_name": "SW6 · Virtual Reality in Delightex",
+      "module_item_id": 2657970,
+      "page_slug": "facilitator-guide-vr-lesson-1-delightex-basics",
+      "title": "Facilitator Guide: VR Lesson 1 — Delightex Basics",
+      "topic": "Transfer of 3D-design knowledge to VR",
+      "objective": "Students will apply prior 3D-design knowledge to explain how objects, animation, camera movement, floor, and labels shape navigation in a new VR environment.",
+      "teks": [
+        "§126.19(c)(4)(C)",
+        "§126.19(c)(12)(C)"
+      ],
+      "demonstration_of_learning": "Delightex share link with all five named features and a brief partner check identifying how one feature helps a visitor navigate or understand the scene.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a feature checklist. The revised objective makes transfer to a newly encountered technology and purposeful tool use explicit."
+      ],
+      "evidence_basis": "The guide models each feature, requires partner navigation, and checks whether a partner can locate animation and camera movement."
+    },
+    {
+      "module_position": 25,
+      "module_name": "SW6 · Virtual Reality in Delightex",
+      "module_item_id": 2657971,
+      "page_slug": "facilitator-guide-vr-lesson-3-vr-novel-retelling",
+      "title": "Facilitator Guide: VR Lesson 3 — VR Novel Retelling",
+      "topic": "Narrative design for an immersive audience",
+      "objective": "Students will apply narrative structure and iterative design to translate a novel into a coherent three-scene VR experience for an audience.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(11)(B)"
+      ],
+      "demonstration_of_learning": "Storyboard and three-scene Delightex link, followed by peer feedback and one documented revision that improves narrative clarity or navigation.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective centers on completing and sharing the build. The revised objective names the narrative translation and iterative-design learning."
+      ],
+      "evidence_basis": "The guide requires a storyboard, multimedia scene elements, a showcase, feedback, revision, and final VR evidence."
+    },
+    {
+      "module_position": 26,
+      "module_name": "SW6 · Pitching and Presenting",
+      "module_item_id": 2657972,
+      "page_slug": "facilitator-guide-pitching-lesson-0-logo-design-launch",
+      "title": "Facilitator Guide: Pitching Lesson 0 — Logo Design Launch",
+      "topic": "Visual communication principles in logo design",
+      "objective": "Students will explain how simplicity, color, and symbolism help a logo communicate identity.",
+      "teks": [],
+      "demonstration_of_learning": "Completed EdPuzzle responses and one design intention that names a principle the student will apply in the next lesson.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective asks students to identify a future choice but does not state the communication concept learned. This remains a preparation lesson with no independent TEKS claim."
+      ],
+      "evidence_basis": "The guide uses logo comparison, video questions, and a debrief connecting design principles to the next lesson; it explicitly labels the item as preparation."
+    },
+    {
+      "module_position": 26,
+      "module_name": "SW6 · Pitching and Presenting",
+      "module_item_id": 2657973,
+      "page_slug": "facilitator-guide-pitching-lesson-1-personal-logo-and-brand",
+      "title": "Facilitator Guide: Pitching Lesson 1 — Personal Logo and Brand",
+      "topic": "Personal visual identity",
+      "objective": "Students will apply visual communication principles to justify how a name, meaningful icon, and limited color palette communicate personal identity.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Completed worksheet and accessible Adobe Express logo link, including a brief explanation of what the icon and color choices communicate.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the logo specification. The revised objective identifies application and justification as the learning, while the DOL keeps the authentic product."
+      ],
+      "evidence_basis": "The guide requires planning, a meaningful icon, three-color restraint, a working share link, and the sentence stem explaining the icon’s meaning."
+    },
+    {
+      "module_position": 26,
+      "module_name": "SW6 · Pitching and Presenting",
+      "module_item_id": 2657974,
+      "page_slug": "facilitator-guide-pitching-lesson-2-personal-brand-video",
+      "title": "Facilitator Guide: Pitching Lesson 2 — Personal Brand Video",
+      "topic": "Multimedia personal communication",
+      "objective": "Students will explain and apply how text, images, a logo, and music work together to communicate a coherent personal identity to an audience.",
+      "teks": [
+        "§126.19(c)(8)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(11)(B)"
+      ],
+      "demonstration_of_learning": "Published personal-brand video and worksheet share link meeting the content requirements, plus a short explanation of one multimedia choice and its intended audience effect.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a list of required components. The revised objective states the multimedia communication learning that the final video must demonstrate."
+      ],
+      "evidence_basis": "The guide models combined media, requires publishing and non-owner link testing, and uses peer/teacher checks for coherence and completeness."
+    },
+    {
+      "module_position": 27,
+      "module_name": "SW6 · Capstone",
+      "module_item_id": 2657975,
+      "page_slug": "facilitator-guide-tech-for-good-capstone-research-build-test-and-showcase",
+      "title": "Facilitator Guide: Tech for Good Capstone — Research, Build, Test, and Showcase",
+      "topic": "Evidence-based technology-for-good design",
+      "objective": "Students will evaluate and refine a technology-for-good solution by using research, testing evidence, and feedback to justify design decisions.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(5)(B)",
+        "§126.19(c)(9)(C)"
+      ],
+      "demonstration_of_learning": "Chosen project artifact, credible-source research notes with citations, test or feedback evidence, one documented refinement, and final reflection explaining how the evidence shaped the solution.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the full project workflow. The revised objective identifies evaluation, refinement, and evidence-based justification as the capstone learning."
+      ],
+      "evidence_basis": "The guide requires credible research, an approved plan, a working artifact, peer or user testing, revision, showcase, and portfolio reflection."
+    },
+    {
+      "module_position": 27,
+      "module_name": "SW6 · Capstone",
+      "module_item_id": 2657980,
+      "page_slug": "facilitator-guide-capstone-close-scholarship-profile-check-in",
+      "title": "Facilitator Guide: Capstone Close — Scholarship Profile Check-in",
+      "topic": "Scholarship search filtering",
+      "objective": "Students will apply grade-level filters to interpret which scholarship matches are relevant to their current eligibility.",
+      "teks": [],
+      "demonstration_of_learning": "Readable screenshot of grade-filtered Xello matches and one sentence naming a relevant match or explaining why the current results are limited.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective only states account actions. The revision adds interpretation while preserving the guide’s honest no-TEKS operational status."
+      ],
+      "evidence_basis": "The run card requires profile completion, grade filtering, and a screenshot while explicitly avoiding an independent TEKS claim."
+    },
+    {
+      "module_position": 28,
+      "module_name": "SW6 · Closing: ePortfolio and Post Survey",
+      "module_item_id": 2658002,
+      "page_slug": "facilitator-guide-closing-lesson-1-publish-the-eportfolio",
+      "title": "Facilitator Guide: Closing Lesson 1 — Publish the ePortfolio",
+      "topic": "Digital portfolio communication",
+      "objective": "Students will evaluate and curate project evidence to communicate their growth and technical learning to an authentic audience using appropriate digital etiquette.",
+      "teks": [
+        "§126.19(c)(8)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Published Adobe Express portfolio link that opens for a non-owner and includes the required projects, meaningful descriptions, personal logo, and at least one reflection on growth.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is publication-focused. The revised objective names evaluation, curation, audience communication, and growth as the learning."
+      ],
+      "evidence_basis": "The guide requires gathering work, planning sections, publishing, non-owner link testing, descriptions, and a checklist of portfolio evidence."
+    },
+    {
+      "module_position": 28,
+      "module_name": "SW6 · Closing: ePortfolio and Post Survey",
+      "module_item_id": 2658003,
+      "page_slug": "facilitator-guide-closing-lesson-2-post-survey",
+      "title": "Facilitator Guide: Closing Lesson 2 — Post-Survey",
+      "topic": "Year-end reflection and course feedback",
+      "objective": "Students will reflect on their course experience and independently communicate accurate feedback.",
+      "teks": [],
+      "demonstration_of_learning": "Completed confidential Canvas post-survey recorded in Canvas.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is only the completion action. The revision names reflection and independent communication while retaining the explicit no-TEKS operational status."
+      ],
+      "evidence_basis": "The run card protects privacy, requires independent responses, and treats completion status rather than response content as the observable evidence."
+    },
+    {
+      "module_position": 29,
+      "module_name": "Enrichment · Stop Motion",
+      "module_item_id": 2658005,
+      "page_slug": "facilitator-guide-stop-motion-lesson-0-process-video-and-setup",
+      "title": "Facilitator Guide: Stop Motion Lesson 0 — Process Video and Setup",
+      "topic": "Stop-motion production workflow",
+      "objective": "Students will explain the planning, filming, and editing sequence used to produce a readable stop-motion film.",
+      "teks": [],
+      "demonstration_of_learning": "Completed 10-question EdPuzzle and one filming-quality takeaway connecting the video to the upcoming project.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective uses identify at a low DOK and the DOL only records completion. The revision requires students to explain the production sequence without inventing a TEKS claim for this preparation lesson."
+      ],
+      "evidence_basis": "The guide maps the video to plan, plot, storyboard, film, and edit, and already calls for one filming-quality takeaway."
+    },
+    {
+      "module_position": 29,
+      "module_name": "Enrichment · Stop Motion",
+      "module_item_id": 2658006,
+      "page_slug": "facilitator-guide-stop-motion-day-1-story-plan",
+      "title": "Facilitator Guide: Stop Motion Day 1 — Story Plan",
+      "topic": "Filmable story design",
+      "objective": "Students will analyze story scope and justify how a character, setting, conflict, and resolution can be shown in a short animation.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Submitted paragraph, list, or mind map identifying all four story elements and one sentence explaining why the story is filmable within the project limits.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the story-plan checklist. The revised objective names scope analysis and justification as the planning learning."
+      ],
+      "evidence_basis": "The guide compares filmable and oversized ideas, conferences for manageable scope, and requires all four story decisions."
+    },
+    {
+      "module_position": 29,
+      "module_name": "Enrichment · Stop Motion",
+      "module_item_id": 2658007,
+      "page_slug": "facilitator-guide-stop-motion-day-2-plot-diagram",
+      "title": "Facilitator Guide: Stop Motion Day 2 — Plot Diagram",
+      "topic": "Narrative structure for production",
+      "objective": "Students will apply narrative structure to organize a coherent sequence from exposition through resolution for production.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Submitted five-part plot diagram in an allowed format, with a partner check that correctly identifies the climax and traces the conflict to its resolution.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective names the five boxes to complete. The revised objective identifies coherent sequencing as the learning proved by the diagram."
+      ],
+      "evidence_basis": "The guide models a plot mountain, requires all five stages, and uses a partner check to test the conflict sequence."
+    },
+    {
+      "module_position": 29,
+      "module_name": "Enrichment · Stop Motion",
+      "module_item_id": 2658008,
+      "page_slug": "facilitator-guide-stop-motion-day-3-storyboard",
+      "title": "Facilitator Guide: Stop Motion Day 3 — Storyboard",
+      "topic": "Visual sequencing for animation",
+      "objective": "Students will translate a plot into an ordered visual plan that communicates camera, action, movement, and material needs to a production partner.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Submitted 6–12-scene storyboard and materials list that a partner can follow without additional explanation.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a scene-count task. The revised objective states the communication and production-planning learning."
+      ],
+      "evidence_basis": "The guide turns plot moments into scenes and checks order, action, movement, props, and partner readability."
+    },
+    {
+      "module_position": 29,
+      "module_name": "Enrichment · Stop Motion",
+      "module_item_id": 2658009,
+      "page_slug": "facilitator-guide-stop-motion-days-4-6-film-edit-and-submit",
+      "title": "Facilitator Guide: Stop Motion Days 4–6 — Film, Edit, and Submit",
+      "topic": "Stop-motion production and revision",
+      "objective": "Students will evaluate and revise technical and narrative choices so a stop-motion film communicates clearly to an audience.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(11)(A)",
+        "§126.19(c)(11)(B)",
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Final 30–60 second video that opens, plus peer-check or self-score evidence identifying one revision to stability, lighting, story clarity, sound, or titles.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the final product specification. The revised objective names evaluation and revision, which the production and peer-review process can demonstrate."
+      ],
+      "evidence_basis": "The guide includes production, peer review, re-shooting, export, upload, and self-scoring against story and technical-quality criteria."
+    },
+    {
+      "module_position": 30,
+      "module_name": "Enrichment · Snap Circuits Project",
+      "module_item_id": 2634282,
+      "page_slug": "facilitator-guide-lesson-1-project-1-overview",
+      "title": "Facilitator Guide: Lesson 1 Project 1 Overview",
+      "topic": "Circuit design process",
+      "objective": "Students will explain how empathy, ideation, prototyping, testing, feedback, and revision work together to produce a circuit solution for a user.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Lesson 1 checkpoint or project plan that identifies the user need and correctly sequences the design stages the team will use.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective summarizes the whole project’s actions and the DOL lists end-of-project artifacts. A daily overview guide needs evidence available in this lesson."
+      ],
+      "evidence_basis": "The guide links three overview presentations and a Lesson 1 checkpoint; the module-level audit confirms the full project demonstrates the design process."
+    },
+    {
+      "module_position": 30,
+      "module_name": "Enrichment · Snap Circuits Project",
+      "module_item_id": 2634286,
+      "page_slug": "facilitator-guide-lesson-2-empathize-and-define",
+      "title": "Facilitator Guide: Lesson 2 Empathize and Define",
+      "topic": "User evidence and circuit problem definition",
+      "objective": "Students will analyze user information to define a specific circuit-system need and measurable success criteria.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Completed Empathize and Define worksheet that includes user evidence, a focused problem statement, and success criteria.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is close but focuses on gathering and completing. The revision raises the target to analysis and makes success criteria explicit for later testing."
+      ],
+      "evidence_basis": "The lesson’s named worksheet captures empathize and define evidence for the Snap Circuits project."
+    },
+    {
+      "module_position": 30,
+      "module_name": "Enrichment · Snap Circuits Project",
+      "module_item_id": 2634290,
+      "page_slug": "facilitator-guide-lesson-3-ideate-and-prototype",
+      "title": "Facilitator Guide: Lesson 3 Ideate and Prototype",
+      "topic": "Circuit idea evaluation and prototyping",
+      "objective": "Students will compare circuit ideas against user criteria and justify a prototype choice before building and troubleshooting it.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(F)"
+      ],
+      "demonstration_of_learning": "Ideation evidence comparing options, a short justification for the selected design, and a working Snap Circuits prototype ready for testing.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective lists develop, select, and build actions. The revised objective identifies comparison and justification as the learning that makes the prototype meaningful evidence."
+      ],
+      "evidence_basis": "The guide links the ideation/prototype lesson and rubric; the module audit identifies design process and troubleshooting as evidenced."
+    },
+    {
+      "module_position": 30,
+      "module_name": "Enrichment · Snap Circuits Project",
+      "module_item_id": 2634293,
+      "page_slug": "facilitator-guide-lesson-4-test-and-submit",
+      "title": "Facilitator Guide: Lesson 4 Test and Submit",
+      "topic": "Evidence-based circuit revision",
+      "objective": "Students will evaluate circuit test evidence, diagnose a problem, and justify a revision that improves the prototype against its criteria.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(12)(F)"
+      ],
+      "demonstration_of_learning": "Completed Test and Submit worksheet, prototype evidence, documented problem, before-and-after revision evidence, and final submission.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the test-submit procedure. The revised objective names evaluation, diagnosis, and justification as the mastery target."
+      ],
+      "evidence_basis": "The guide explicitly requires testing, a documented problem, a useful revision, and final evidence."
+    },
+    {
+      "module_position": 31,
+      "module_name": "Enrichment · Robot Salad for Sale",
+      "module_item_id": 2634298,
+      "page_slug": "facilitator-guide-lesson-1-robot-salad-for-sale",
+      "title": "Facilitator Guide: Lesson 1 Robot Salad For Sale",
+      "topic": "Spreadsheet-based business decisions",
+      "objective": "Students will analyze spreadsheet calculations of cost, revenue, and profit, then use the results to justify a business advertising decision.",
+      "teks": [
+        "§126.19(c)(12)(H)"
+      ],
+      "demonstration_of_learning": "Completed project worksheet with accurate cost, revenue, and profit calculations, plus an advertisement whose price or message is justified by those results.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective combines calculate and create actions but does not state the decision-making learning connecting the two products."
+      ],
+      "evidence_basis": "The module audit and guide identify spreadsheet calculations and a business advertisement as the paired evidence."
+    },
+    {
+      "module_position": 32,
+      "module_name": "Enrichment · micro:bit Project",
+      "module_item_id": 2634303,
+      "page_slug": "facilitator-guide-lesson-1-project-2-overview",
+      "title": "Facilitator Guide: Lesson 1 Project 2 Overview",
+      "topic": "User-centered programmed design process",
+      "objective": "Students will explain how a user need, algorithm, prototype testing, feedback, and revision work together in a programmed design process.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Lesson 1 checkpoint or project plan that identifies the intended user, need, planned micro:bit behavior, and how the solution will be tested.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective summarizes every project action and the DOL lists the eventual project bundle. A daily overview needs learning and evidence available in Lesson 1."
+      ],
+      "evidence_basis": "The guide links three overview presentations and a checkpoint; later lessons separately produce prototype, feedback, and final evidence."
+    },
+    {
+      "module_position": 32,
+      "module_name": "Enrichment · micro:bit Project",
+      "module_item_id": 2634307,
+      "page_slug": "facilitator-guide-lesson-2-project-2-empathize-and-define",
+      "title": "Facilitator Guide: Lesson 2 Project 2 Empathize and Define",
+      "topic": "User evidence and micro:bit problem definition",
+      "objective": "Students will analyze user information to define a specific need and measurable success criteria for a micro:bit solution.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Completed Empathize and Define worksheet with user evidence, a focused problem statement, and measurable success criteria.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective identifies and defines but does not make the analysis or test criteria explicit."
+      ],
+      "evidence_basis": "The lesson’s project-specific worksheet is the observable empathize/define evidence used by later design stages."
+    },
+    {
+      "module_position": 32,
+      "module_name": "Enrichment · micro:bit Project",
+      "module_item_id": 2634311,
+      "page_slug": "facilitator-guide-lesson-3-project-2-ideate",
+      "title": "Facilitator Guide: Lesson 3 Project 2 Ideate",
+      "topic": "Micro:bit feature and behavior planning",
+      "objective": "Students will compare feature and behavior ideas, then justify a micro:bit prototype plan that can meet the user criteria.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Ideate worksheet containing compared ideas, a selected prototype sketch, planned micro:bit behavior, materials budget, and a short selection justification.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a list of sketch, compare, and plan actions. The revision identifies comparison and justification as the learning."
+      ],
+      "evidence_basis": "The guide’s evidence already includes the sketch, planned behavior, and budget; adding the choice rationale ties the artifact to the objective."
+    },
+    {
+      "module_position": 32,
+      "module_name": "Enrichment · micro:bit Project",
+      "module_item_id": 2634315,
+      "page_slug": "facilitator-guide-lesson-4-project-2-prototype",
+      "title": "Facilitator Guide: Lesson 4 Project 2 Prototype",
+      "topic": "Algorithm development and prototype debugging",
+      "objective": "Students will apply algorithm development and debugging to make a micro:bit prototype behave as planned for its user need, then justify a revision.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Working micro:bit prototype, program evidence, and a before-and-after test record explaining one code or design revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective states build, test, and revise actions. The revision names algorithm development, debugging, and justification as the learning."
+      ],
+      "evidence_basis": "The guide requires a working prototype, program evidence, and at least one documented test or revision."
+    },
+    {
+      "module_position": 32,
+      "module_name": "Enrichment · micro:bit Project",
+      "module_item_id": 2634318,
+      "page_slug": "facilitator-guide-lesson-5-project-2-test-share-submit",
+      "title": "Facilitator Guide: Lesson 5 Project 2 Test Share Submit",
+      "topic": "User testing and evidence-based improvement",
+      "objective": "Students will evaluate user feedback and test results to justify a code or design revision that improves a micro:bit solution.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)"
+      ],
+      "demonstration_of_learning": "Completed testing-and-feedback worksheet, revised prototype or program, and final submission with one sentence connecting the evidence to the revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the test-share-submit procedure. The revision makes evaluation and evidence-based improvement the learning."
+      ],
+      "evidence_basis": "The guide names testing with another person, feedback, revision, and final project evidence."
+    },
+    {
+      "module_position": 33,
+      "module_name": "Enrichment · Smart Electronics Project 3",
+      "module_item_id": 2634323,
+      "page_slug": "facilitator-guide-project-3-overview",
+      "title": "Facilitator Guide: Project 3 Overview",
+      "topic": "User-centered smart-electronics design process",
+      "objective": "Students will explain how user need, system planning, prototyping, testing, feedback, and revision work together in a smart-electronics design process.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Lesson 1 checkpoint or project plan identifying the end user, need, intended input/output behavior, and planned test.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective compresses the whole project workflow and the DOL lists end-of-project artifacts. A daily overview needs lesson-level evidence."
+      ],
+      "evidence_basis": "The guide links three overview presentations and a checkpoint; later guides separately teach and assess each design stage."
+    },
+    {
+      "module_position": 33,
+      "module_name": "Enrichment · Smart Electronics Project 3",
+      "module_item_id": 2634327,
+      "page_slug": "facilitator-guide-lesson-2-project-3-empathize-and-define",
+      "title": "Facilitator Guide: Lesson 2 Project 3 Empathize and Define",
+      "topic": "User evidence and smart-electronics problem definition",
+      "objective": "Students will analyze end-user information to define a specific smart-electronics need and measurable success criteria.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Completed Empathize and Define worksheet with end-user evidence, a focused problem statement, and measurable success criteria.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is close but states identify and define actions without the analysis and test criteria needed to prove design understanding."
+      ],
+      "evidence_basis": "The named worksheet is the project evidence for the empathize/define stage."
+    },
+    {
+      "module_position": 33,
+      "module_name": "Enrichment · Smart Electronics Project 3",
+      "module_item_id": 2634331,
+      "page_slug": "facilitator-guide-lesson-3-project-3-ideate",
+      "title": "Facilitator Guide: Lesson 3 Project 3 Ideate",
+      "topic": "Smart-electronics system planning",
+      "objective": "Students will compare possible input, output, and feature choices, then justify a prototype plan that can meet the user criteria.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Ideate worksheet with compared ideas, selected system sketch, planned input/output behavior, materials budget, and a short selection justification.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a sketch-and-budget task. The revision identifies system comparison and design justification as the learning."
+      ],
+      "evidence_basis": "The guide’s current evidence includes a prototype sketch, planned system behavior, and materials budget."
+    },
+    {
+      "module_position": 33,
+      "module_name": "Enrichment · Smart Electronics Project 3",
+      "module_item_id": 2634335,
+      "page_slug": "facilitator-guide-lesson-4-project-3-prototype",
+      "title": "Facilitator Guide: Lesson 4 Project 3 Prototype",
+      "topic": "Smart-system behavior and troubleshooting",
+      "objective": "Students will apply algorithmic reasoning and troubleshooting to explain how inputs, code, and outputs work together, then revise a system failure.",
+      "teks": [
+        "§126.19(c)(3)(B)",
+        "§126.19(c)(1)(E)",
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(12)(F)"
+      ],
+      "demonstration_of_learning": "Working smart-electronics prototype, program or wiring evidence, labeled input-to-output explanation, and before-and-after evidence of one test or revision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective lists build, test, and revise actions. The revision makes system reasoning and troubleshooting the mastery target."
+      ],
+      "evidence_basis": "The guide requires input/output testing, program or wiring evidence, and a documented problem or revision."
+    },
+    {
+      "module_position": 33,
+      "module_name": "Enrichment · Smart Electronics Project 3",
+      "module_item_id": 2634338,
+      "page_slug": "facilitator-guide-lesson-5-project-3-feedback",
+      "title": "Facilitator Guide: Lesson 5 Project 3 Feedback",
+      "topic": "End-user feedback and design revision",
+      "objective": "Students will evaluate end-user feedback against success criteria and justify one improvement to the smart-electronics prototype.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Completed feedback worksheet with end-user evidence, the criterion affected, one documented prototype improvement, and a brief justification.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is the feedback procedure. The revision identifies evaluation against criteria and justification as the learning; troubleshooting TEKS is removed unless technical diagnosis is actually evidenced."
+      ],
+      "evidence_basis": "The lesson collects end-user testing and requires one improvement in response to feedback."
+    },
+    {
+      "module_position": 33,
+      "module_name": "Enrichment · Smart Electronics Project 3",
+      "module_item_id": 2634342,
+      "page_slug": "facilitator-guide-lesson-6-project-3-pitch-and-submit",
+      "title": "Facilitator Guide: Lesson 6 Project 3 Pitch and Submit",
+      "topic": "Evidence-based smart-solution pitch",
+      "objective": "Students will justify how a final smart-electronics solution addresses the user need by using evidence from planning, testing, feedback, and revision.",
+      "teks": [
+        "§126.19(c)(3)(B)"
+      ],
+      "demonstration_of_learning": "Final pitch and functioning prototype demonstration, supported by complete project artifacts and one explanation connecting test or feedback evidence to a design decision.",
+      "audit_verdict": "revise",
+      "audit_issues": [
+        "The current objective is a presentation and submission checklist. The revision names evidence-based design justification as the learning proved by the pitch."
+      ],
+      "evidence_basis": "The guide requires the user need, final solution, prototype evidence, full artifacts, and final pitch/submission."
+    },
+    {
+      "module_position": 12,
+      "module_name": "SW3 · Video Game Design + Text Code",
+      "module_item_id": 2661807,
+      "page_slug": "facilitator-guide-text-code-bridge-day-1-trace-predict-+-repair",
+      "title": "Facilitator Guide: Text-Code Bridge Day 1 — Trace, Predict + Repair",
+      "topic": "Tracing and repairing a text-based nested-loop program",
+      "objective": "Students will trace supplied text code, predict its complete output, diagnose one nested-loop boundary error, and modify and implement the code to produce an improved program.",
+      "teks": [
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(2)(A)",
+        "§126.19(c)(2)(B)"
+      ],
+      "demonstration_of_learning": "Passport 5 trace/repair record, prediction before Run, unexpected-result screenshot, corrected JavaScript, repaired-result screenshot, and row/column explanation.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The complete bridge guide, Passport 5, student assignment, delayed-reveal deck sequence, 25-point checklist, and before/after code evidence were reconciled in the four-lens correction. Construction of supplied variables and loops remains practice; the one-line evidence-based repair demonstrates (2)(C)."
+    },
+    {
+      "module_position": 12,
+      "module_name": "SW3 · Video Game Design + Text Code",
+      "module_item_id": 2661809,
+      "page_slug": "facilitator-guide-text-code-bridge-day-2-change-the-grid-with-purpose",
+      "title": "Facilitator Guide: Text-Code Bridge Day 2 — Change the Grid with Purpose",
+      "topic": "Creating and improving a constrained emergency supply-layout program",
+      "objective": "Students will use a software design process to construct meaningful variables across string, number, and Boolean types, perform operations on their values, complete a text-based nested-loop program for row and column subproblems, and improve it from test evidence.",
+      "teks": [
+        "§126.19(c)(2)(A)",
+        "§126.19(c)(2)(B)",
+        "§126.19(c)(2)(C)",
+        "§126.19(c)(1)(A)",
+        "§126.19(c)(1)(E)"
+      ],
+      "demonstration_of_learning": "Passport 6 problem/constraints and pseudocode, student-authored typed variables and operations, student-completed nested loops, prediction, first/final evidence, exact revision, final JavaScript, and explanation.",
+      "audit_verdict": "pass",
+      "audit_issues": [],
+      "evidence_basis": "The complete bridge guide, student-authorship scaffold, Passport 6, student assignment, criterion-specific rubric, and projected route were reconciled. The scaffold supplies MakeCode setup, sprite helper, and two inner-loop body lines as comments; students author all typed declarations and operations and both complete loop structures."
+    }
+  ]
+}

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import os
 import re
@@ -20,6 +21,8 @@ MANIFEST = ROOT / "data" / "site-manifest.json"
 POLICY = ROOT / "data" / "publication-policy.json"
 PUBLIC_LINKS = ROOT / "data" / "public-links.json"
 LEGACY_ALIASES = ROOT / "data" / "legacy-route-aliases.json"
+DAILY_CONTRACTS = ROOT / "data" / "daily-learning-contracts.json"
+CANONICAL_TEKS = ROOT / "docs" / "standards" / "texas-technology-applications-grade-8-teks-2022.md"
 
 
 def sha256_file(path: Path) -> str:
@@ -50,6 +53,10 @@ def semantic_snapshot_hash(snapshot: dict) -> str:
     return canonical_hash(semantic)
 
 
+def plain_text(value: str) -> str:
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", value)).split())
+
+
 def check_local_link(source: Path, value: str, ids: set[str], failures: list[str]) -> None:
     parsed = urlparse(value)
     if parsed.scheme in {"http", "https", "mailto", "tel", "data", "blob"} or value.startswith("javascript:"):
@@ -77,6 +84,7 @@ def main() -> None:
     policy = json.loads(POLICY.read_text(encoding="utf-8"))
     public_links = json.loads(PUBLIC_LINKS.read_text(encoding="utf-8"))
     legacy_aliases = json.loads(LEGACY_ALIASES.read_text(encoding="utf-8"))
+    daily_contracts = json.loads(DAILY_CONTRACTS.read_text(encoding="utf-8"))
     failures: list[str] = []
 
     expected_snapshot_hash = semantic_snapshot_hash(snapshot)
@@ -96,6 +104,14 @@ def main() -> None:
         for item in items
         if re.match(r"^Facilitator(?:'s)? Guide:", item.get("title", ""), re.I)
     ]
+    contract_rows = {
+        int(row["module_item_id"]): row for row in daily_contracts.get("records", [])
+    }
+    guide_ids = {int(guide["id"]) for guide in facilitator_guides}
+    if set(contract_rows) != guide_ids:
+        failures.append("Daily learning contract ledger does not account for every facilitator guide")
+    if daily_contracts.get("canonical_teks_sha256") != sha256_file(CANONICAL_TEKS):
+        failures.append("Daily learning contract ledger was not audited against the current canonical TEKS record")
     contract_patterns = {
         "Topic": r"<strong>\s*Topic\s*:",
         "Objective": r"<strong>\s*(?:Student )?Objective\s*:",
@@ -104,6 +120,7 @@ def main() -> None:
     }
     for guide in facilitator_guides:
         body = (guide.get("resource") or {}).get("body") or ""
+        text = plain_text(body)
         missing_fields = [
             name
             for name, pattern in contract_patterns.items()
@@ -114,6 +131,25 @@ def main() -> None:
                 f"Facilitator guide {guide['id']} is missing its daily learning contract fields: "
                 + ", ".join(missing_fields)
             )
+        if body.count("Daily Learning Contract") != 1:
+            failures.append(f"Facilitator guide {guide['id']} must contain exactly one daily learning contract")
+        if 'data-vils-daily-learning-contract="2026-08-21-semantic-audit-v1"' not in body:
+            failures.append(f"Facilitator guide {guide['id']} is not using the audited semantic contract version")
+        if 'data-vils-teks-alignment="2026-08-19"' in body:
+            failures.append(f"Facilitator guide {guide['id']} still contains a duplicate module-level alignment block")
+        record = contract_rows.get(int(guide["id"]))
+        if record:
+            required_phrases = [
+                record["topic"],
+                record["objective"],
+                record["demonstration_of_learning"],
+                *record["teks"],
+            ]
+            for phrase in required_phrases:
+                if phrase not in text:
+                    failures.append(
+                        f"Facilitator guide {guide['id']} differs from the audited contract ledger: {phrase}"
+                    )
     stale_teks_guides = [
         guide["id"]
         for guide in facilitator_guides
