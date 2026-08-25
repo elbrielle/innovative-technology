@@ -37,7 +37,7 @@ The earlier title-based lesson URLs remain as generated redirects, so existing b
 From the repository root:
 
 ```bash
-python3 scripts/sync_course.py
+python3 scripts/sync_course.py --source-token-file ~/.canvas_vils_source_token
 ```
 
 That command:
@@ -49,7 +49,20 @@ That command:
 5. verifies the repository against the snapshot; and
 6. re-reads live Canvas to prove nothing drifted during the build.
 
-The Canvas token is read from `CANVAS_TOKEN` or `~/.canvas_token`. Never commit the token.
+The explicit token file is the recommended route because the Verizon source
+and Irving destinations use different Canvas instances. `CANVAS_TOKEN` remains
+supported. Never commit either token.
+
+## Teacher-course fleet parity
+
+Multi-course distribution is audited with the reusable personal
+$canvas-fleet-parity skill. VILS keeps its source and protection policy in
+this project while live teacher-course registries and reports remain private.
+See [docs/CANVAS_FLEET_PARITY.md](docs/CANVAS_FLEET_PARITY.md).
+When the Verizon source is approved, use
+`python3 scripts/ss_fleet_release.py approve-source --approval-note "..."`
+followed by `python3 scripts/ss_fleet_release.py audit`. Destination apply is a
+separate approval gate.
 
 ## Release workflow
 
