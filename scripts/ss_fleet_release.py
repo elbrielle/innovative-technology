@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Record an approved VILS source release and audit all three SS courses.
+"""Record an approved VILS source release and audit the enabled SS fleet.
 
 This orchestrator is read-only with respect to Canvas. ``approve-source``
 exports and verifies the approved Verizon source into the repository, then
@@ -37,7 +37,6 @@ FLEET_AUDIT = (
     / "fleet_audit.py"
 )
 SOURCE_COURSE_ID = 23402
-EXPECTED_DESTINATION_COUNT = 3
 
 
 def file_sha(path: Path) -> str:
@@ -75,14 +74,11 @@ def enabled_courses(adapter: dict) -> list[dict]:
     return [row for row in adapter.get("courses") or [] if row.get("enabled")]
 
 
-def validate_three_course_adapter(adapter_path: Path) -> dict:
+def validate_fleet_adapter(adapter_path: Path) -> dict:
     adapter = json.loads(adapter_path.read_text(encoding="utf-8"))
     courses = enabled_courses(adapter)
-    if len(courses) != EXPECTED_DESTINATION_COUNT:
-        raise RuntimeError(
-            "The VILS release contract requires exactly three enabled Smart "
-            f"Solutions destinations; found {len(courses)}."
-        )
+    if not courses:
+        raise RuntimeError("The VILS adapter has no enabled Smart Solutions destinations")
     ids = [int(row["course_id"]) for row in courses]
     if len(ids) != len(set(ids)):
         raise RuntimeError("The private adapter contains a duplicate course ID")
@@ -146,7 +142,11 @@ def approve_source(args: argparse.Namespace) -> None:
             f"Verizon source token permissions must be 600: {token_path}"
         )
     adapter_path = args.adapter.expanduser().resolve()
-    validate_three_course_adapter(adapter_path)
+    adapter = validate_fleet_adapter(adapter_path)
+    destinations = [
+        {"course_id": int(row["course_id"]), "label": row.get("label")}
+        for row in enabled_courses(adapter)
+    ]
     run(
         [
             sys.executable,
@@ -184,7 +184,8 @@ def approve_source(args: argparse.Namespace) -> None:
             ],
         },
         "adapter_path": str(adapter_path),
-        "destination_count": EXPECTED_DESTINATION_COUNT,
+        "destinations_at_approval": destinations,
+        "destination_count_at_approval": len(destinations),
         "boundary": (
             "Source approval authorizes read-only fleet audit and planning only; "
             "destination writes require a separate reviewed plan and explicit approval."
@@ -205,7 +206,7 @@ def approve_source(args: argparse.Namespace) -> None:
                 "release_manifest": str(output),
                 "release_manifest_sha256": str(seal),
                 "source_semantic_sha256": evidence["semantic_sha256"],
-                "destination_count": EXPECTED_DESTINATION_COUNT,
+                "destination_count": len(destinations),
                 "next": "Run the audit subcommand; no destination writes are authorized.",
             },
             indent=2,
@@ -222,10 +223,14 @@ def audit(args: argparse.Namespace) -> None:
     )
     release = validate_release(release_path)
     adapter_path = args.adapter.expanduser().resolve()
-    adapter = validate_three_course_adapter(adapter_path)
+    adapter = validate_fleet_adapter(adapter_path)
     if str(adapter_path) != release["adapter_path"]:
         raise RuntimeError("Approved release and requested adapter do not match")
     state_path = args.state.expanduser().resolve()
+    enabled_ids = {int(row["course_id"]) for row in enabled_courses(adapter)}
+    selected_ids = set(args.course or enabled_ids)
+    if not selected_ids or not selected_ids.issubset(enabled_ids):
+        raise RuntimeError("Requested audit course is not enabled in the private adapter")
     command = [
         sys.executable,
         str(FLEET_AUDIT),
@@ -236,12 +241,14 @@ def audit(args: argparse.Namespace) -> None:
     ]
     if state_path.is_file():
         command.extend(["--state", str(state_path)])
+    for course_id in sorted(selected_ids):
+        command.extend(["--course", str(course_id)])
     now = datetime.now(timezone.utc)
     output = (
         private_root
         / "reports"
         / (
-            f"{now.strftime('%Y-%m-%dT%H%M%SZ')}-ss-three-course-"
+            f"{now.strftime('%Y-%m-%dT%H%M%SZ')}-ss-fleet-"
             f"{release['snapshot']['semantic_sha256'][:12]}"
         )
     )
@@ -249,13 +256,13 @@ def audit(args: argparse.Namespace) -> None:
     run(command)
     report = json.loads((output / "audit.json").read_text(encoding="utf-8"))
     courses = report.get("courses") or []
-    if len(courses) != EXPECTED_DESTINATION_COUNT:
-        raise RuntimeError("Audit did not return all three approved destinations")
-    configured_ids = {
-        int(row["course_id"]) for row in enabled_courses(adapter)
-    }
-    if {int(row["course_id"]) for row in courses} != configured_ids:
-        raise RuntimeError("Audit course IDs do not match the private adapter")
+    expected_count = len(selected_ids)
+    if len(courses) != expected_count:
+        raise RuntimeError(
+            f"Audit returned {len(courses)} of {expected_count} enabled destinations"
+        )
+    if {int(row["course_id"]) for row in courses} != selected_ids:
+        raise RuntimeError("Audit course IDs do not match the requested enabled scope")
     print(
         json.dumps(
             {
@@ -300,6 +307,7 @@ def parser() -> argparse.ArgumentParser:
     check = subcommands.add_parser("audit")
     check.add_argument("--release", type=Path)
     check.add_argument("--state", type=Path, default=DEFAULT_STATE)
+    check.add_argument("--course", type=int, action="append")
     check.set_defaults(func=audit)
     return root
 
