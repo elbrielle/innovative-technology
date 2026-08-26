@@ -41,15 +41,15 @@ class SmartSolutionsFleetReleaseTests(unittest.TestCase):
             ],
         }
 
-    def test_requires_exactly_three_enabled_destinations(self):
+    def test_requires_at_least_one_enabled_destination(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "adapter.json"
-            path.write_text(json.dumps(self.adapter(2)), encoding="utf-8")
-            with self.assertRaisesRegex(RuntimeError, "exactly three"):
-                ss_fleet_release.validate_three_course_adapter(path)
-            path.write_text(json.dumps(self.adapter(3)), encoding="utf-8")
-            loaded = ss_fleet_release.validate_three_course_adapter(path)
-            self.assertEqual(len(ss_fleet_release.enabled_courses(loaded)), 3)
+            path.write_text(json.dumps(self.adapter(0)), encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "no enabled"):
+                ss_fleet_release.validate_fleet_adapter(path)
+            path.write_text(json.dumps(self.adapter(4)), encoding="utf-8")
+            loaded = ss_fleet_release.validate_fleet_adapter(path)
+            self.assertEqual(len(ss_fleet_release.enabled_courses(loaded)), 4)
 
     def test_duplicate_destination_ids_fail_closed(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -58,7 +58,7 @@ class SmartSolutionsFleetReleaseTests(unittest.TestCase):
             adapter["courses"][2]["course_id"] = adapter["courses"][1]["course_id"]
             path.write_text(json.dumps(adapter), encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError, "duplicate course ID"):
-                ss_fleet_release.validate_three_course_adapter(path)
+                ss_fleet_release.validate_fleet_adapter(path)
 
     def test_source_approval_and_destination_apply_are_separate(self):
         args = ss_fleet_release.parser().parse_args(
@@ -66,6 +66,12 @@ class SmartSolutionsFleetReleaseTests(unittest.TestCase):
         )
         self.assertEqual(args.func, ss_fleet_release.approve_source)
         self.assertNotIn("apply", ss_fleet_release.parser().format_help().lower())
+
+    def test_audit_can_be_scoped_to_one_enabled_course(self):
+        args = ss_fleet_release.parser().parse_args(
+            ["audit", "--course", "12345"]
+        )
+        self.assertEqual(args.course, [12345])
 
     def test_approved_release_manifest_is_hash_sealed(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -42,7 +42,7 @@ shape reference. Never add a real token or teacher fleet roster to Git.
 The short user invocation is:
 
 > Use $canvas-fleet-parity. The Verizon Smart Solutions source is good. Record
-> this source approval, audit all three SS courses, and stop at reviewed plans
+> this source approval, audit every enabled SS course, and stop at reviewed plans
 > before any destination writes.
 
 That sentence authorizes source recording, read-only audit, and planning. It
@@ -57,7 +57,7 @@ invocation:
 The second invocation must name or link the immutable plans and identify the
 target courses. “The source is good” alone is never enough to apply.
 
-## Approved-source and three-course commands
+## Approved-source and enabled-fleet commands
 
 Keep the Verizon source token separate from the Irving destination token:
 
@@ -71,17 +71,22 @@ exact approval statement and rebuild/verify the snapshot and public mirror:
       --approval-note "<exact user approval statement>"
 
 This runs the Canvas-to-site sync against Verizon, verifies live source parity,
-validates the curriculum review gate and private three-course adapter, and
+validates the curriculum review gate and private fleet adapter, and
 writes an immutable private release manifest. It changes no destination
 course. The manifest is sealed with a neighboring `.sha256` file; later audits
 fail if either the manifest or approved snapshot changes.
 
-Then run the semantic audit against all three enabled Smart Solutions courses:
+Then run the semantic audit against every enabled Smart Solutions course:
 
     python3 scripts/ss_fleet_release.py audit
 
+For a teacher-specific onboarding or repair, keep the same approved source but
+scope the read-only audit to that enabled destination:
+
+    python3 scripts/ss_fleet_release.py audit --course <course_id>
+
 The command refuses to run if the approved snapshot changed, the adapter does
-not contain exactly three unique enabled destinations, or the adapter points
+contain no enabled destinations or duplicate course IDs, or the adapter points
 to a different source. It uses the reviewed identity state when present and
 writes a timestamped private report.
 
@@ -110,6 +115,47 @@ Run the body-level semantic audit:
 Both modes are read-only. state-candidate.json is not a reviewed baseline.
 Do not pass it back with --state until the mapping and every bootstrap hold
 have been adjudicated.
+
+## Legacy duplicate-import repair
+
+When a teacher course contains more than one historical Smart Solutions import,
+do not treat either lineage as an automatically safe baseline and do not reuse
+the old Duncan or Ross cleanup scripts. Create a course-specific, sealed,
+read-only rebootstrap plan with `scripts/plan_ss_legacy_rebootstrap.py`.
+
+The planner requires an explicit mapping from every canonical source position
+to the destination module container that will survive. This makes the choice
+between duplicate module IDs reviewable instead of title-inferred. It also:
+
+- verifies the approved release and cartridge hashes;
+- excludes publication from destination guards;
+- requires the declared submission holds to equal Canvas's live
+  `has_submitted_submissions` set;
+- records protected quiz, assignment, and module-item IDs together;
+- creates a private recoverable placement/front-page backup; and
+- emits a sealed plan and exact approval phrase under the private parity root.
+
+Deleting a duplicate *module shell* is distinct from deleting its underlying
+course content: Canvas removes the placements from Modules but retains the
+pages, assignments, quizzes, files, and submissions in the course. Even so,
+module-shell removal is a destructive structural operation and must be named in
+the immutable plan and separately approved. Never delete the underlying course
+objects to make the audit count look cleaner.
+
+The approved plan must preserve submitted assessments unchanged, omit every
+publication parameter, skip course settings and visibility settings during any
+staging import, update an explicitly approved homepage in place, and stop on a
+migration issue or any preflight hash mismatch.
+
+If Canvas completes the cartridge but reports migration issues, stop the
+original plan before structural cleanup. Use
+`scripts/plan_ss_partial_import_recovery.py` to seal the exact post-import
+state, failed unsubmitted assignment payloads, verified file mappings, Week 0
+move set, homepage payload, and obsolete shell IDs. Apply only a separately
+approved amended hash with `scripts/apply_ss_partial_import_recovery.py`, then
+run `scripts/verify_ss_partial_import_recovery.py` and the normal semantic fleet
+audit. A verifier failure is not permission to rerun an apply; inspect live
+state and use the read-only verifier.
 
 ## Classification contract
 
@@ -158,5 +204,5 @@ conflicts. The reviewed state is identity-only: it enables durable mapping but
 does not accept body-level differences as a semantic baseline.
 
 This proof and state do not authorize a future synchronization. Each approved
-source release still requires a new three-course audit, reviewed immutable
+source release still requires a new enabled-fleet audit, reviewed immutable
 plans, current backups, explicit apply approval, and post-apply verification.
