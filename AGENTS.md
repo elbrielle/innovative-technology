@@ -46,3 +46,7 @@ backups, plans, releases, and reports under
 Do not use `reconcile_ross_course.py` or `reconcile_duncan_course.py` for fleet
 parity. They are historical one-time rebuild tools and may contain publication
 operations that this fleet contract forbids.
+
+## PowerPoint file maintenance
+
+Before publishing or replacing a deck, follow `docs/POWERPOINT_RELEASE_WORKFLOW.md`: audit image and package size, preserve projection quality and protected slides, render before/after, and archive verified obsolete files outside Canvas. Filename age alone never authorizes deletion. This source-maintenance workflow does not expand fleet mutation authority.

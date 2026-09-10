@@ -78,3 +78,7 @@ The CI workflow rebuilds the static pages and runs the repository parity gate. I
 ## Credits
 
 Instructional design by Elisha Lucero. Third-party images, videos, tools, and source materials retain the attribution or usage basis included in the lesson, facilitator guide, or speaker notes.
+
+## PowerPoint release quality
+
+Follow [the PowerPoint storage and release workflow](docs/POWERPOINT_RELEASE_WORKFLOW.md) before distributing new or revised decks. It covers projected image quality, conservative compression, protected slides, and retiring verified obsolete source files.
