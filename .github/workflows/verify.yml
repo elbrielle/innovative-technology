@@ -1,6 +1,7 @@
 name: Verify generated curriculum mirror
 
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches: [main]
@@ -21,10 +22,35 @@ jobs:
       - name: Rebuild generated HTML
         run: python3 scripts/build_site.py
       - name: Require four-lens curriculum review
+        if: github.event_name != 'workflow_dispatch'
         env:
           REVIEW_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: python3 scripts/verify_curriculum_review_gate.py --base "$REVIEW_BASE"
       - name: Verify snapshot, links, files, and protection policy
         run: python3 scripts/verify_site.py
       - name: Require generated files to be committed
-        run: git diff --exit-code -- index.html about.html parity.html lessons modules data/site-manifest.json data/public-links.json
+        run: git diff --exit-code -- index.html about.html parity.html lessons modules pages data/site-manifest.json data/public-links.json
+      - name: Verify deployed public pages
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          python3 - <<'PY'
+          from concurrent.futures import ThreadPoolExecutor
+          from pathlib import Path
+          from urllib.request import urlopen
+          import os
+
+          paths = [Path(p) for p in ('index.html', 'about.html', 'parity.html', 'styles.css', 'data/course-snapshot.json')]
+          for directory in ('lessons', 'modules', 'pages'):
+              paths.extend(sorted(Path(directory).glob('*.html')))
+
+          def verify(path):
+              url = f'https://elbrielle.github.io/innovative-technology/{path}?verify={os.environ["GITHUB_SHA"]}'
+              with urlopen(url, timeout=60) as response:
+                  actual = response.read()
+              if actual != path.read_bytes():
+                  raise RuntimeError(f'Deployed content differs: {path}')
+
+          with ThreadPoolExecutor(max_workers=8) as pool:
+              list(pool.map(verify, paths))
+          print(f'PASS: {len(paths)} deployed pages, stylesheet, and source snapshot match {os.environ["GITHUB_SHA"]}')
+          PY
