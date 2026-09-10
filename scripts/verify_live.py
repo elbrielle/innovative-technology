@@ -7,11 +7,13 @@ import concurrent.futures
 import hashlib
 import json
 from pathlib import Path
+from urllib.parse import quote
 
 from canvas_api import Canvas, env_course_id
 from export_canvas import (
     COURSE_ID,
     assignment_projection,
+    collect_linked_pages,
     discussion_projection,
     file_metadata,
     item_projection,
@@ -65,7 +67,7 @@ def main() -> None:
         item = snapshot_items[item_id]
         kind = item["type"]
         if kind == "Page":
-            row = canvas.get(f"/courses/{COURSE_ID}/pages/{item['page_url']}")
+            row = canvas.get(f"/courses/{COURSE_ID}/pages/{quote(item['page_url'], safe='')}")
             return item_id, page_projection(row), row.get("body") or "", None
         if kind == "Assignment":
             row = canvas.get(f"/courses/{COURSE_ID}/assignments/{item['content_id']}?include[]=rubric&include[]=rubric_settings")
@@ -80,11 +82,13 @@ def main() -> None:
         raise AssertionError(kind)
 
     body_ids = [item_id for item_id, item in snapshot_items.items() if item["type"] in {"Page", "Assignment", "Discussion", "Quiz"}]
+    live_resources = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
         futures = [pool.submit(fetch_resource, item_id) for item_id in body_ids]
         for future in concurrent.futures.as_completed(futures):
             item_id, metadata, body, questions = future.result()
             expected = snapshot_items[item_id]["resource"]
+            live_resources[item_id] = {"metadata": metadata, "body": body}
             if metadata != expected["metadata"]:
                 failures.append(f"Live resource metadata differs: item {item_id}")
             if snapshot_items[item_id].get("public_state") == "protected":
@@ -97,6 +101,13 @@ def main() -> None:
                     failures.append(f"Live referenced file set differs: item {item_id}")
             if questions is not None and questions != expected.get("question_contract", []):
                 failures.append(f"Live quiz question contract differs: item {item_id}")
+
+    # Re-walk the live graph, rather than checking only previously known pages:
+    # additions, removals, renamed pages, and changed nested bodies all matter.
+    live_linked_pages = collect_linked_pages(canvas, list(snapshot_items.values()), live_resources,
+                                            snapshot["publication_policy"])
+    if live_linked_pages != snapshot.get("linked_pages", []):
+        failures.append("Live transitively linked Canvas pages differ from the snapshot")
 
     file_ids = sorted(int(file_id) for file_id in snapshot["files"])
     raw_files: dict[int, dict] = {}
@@ -117,7 +128,7 @@ def main() -> None:
     if failures:
         print(json.dumps({"status": "FAIL", "failure_count": len(failures), "failures": failures}, indent=2))
         raise SystemExit(1)
-    print(json.dumps({"status": "PASS", "course_id": COURSE_ID, "modules": len(live_modules), "items": len(live_items), "resources": len(body_ids), "public_files": len(file_ids)}, indent=2))
+    print(json.dumps({"status": "PASS", "course_id": COURSE_ID, "modules": len(live_modules), "items": len(live_items), "resources": len(body_ids), "linked_pages": len(live_linked_pages), "public_files": len(file_ids)}, indent=2))
 
 
 if __name__ == "__main__":

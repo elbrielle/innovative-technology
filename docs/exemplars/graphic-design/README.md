@@ -12,16 +12,17 @@ of the exemplar.
 | Exemplar | Local PowerPoint | Native Google Slides | Companion guide |
 | --- | --- | --- | --- |
 | Lesson 1: Pop Art, approved 17-slide revision | [Approved smaller release](../../../assets/canvas/3289733-01-Pop-Art-Teaching-Deck.pptx) | [Make a copy](https://docs.google.com/presentation/d/1TeWTholt9fl-ahCVBv0U3Q9vdA9P9RbwpLt-9xZE9Ew/copy) | [Facilitator guide](../../../lessons/2657926.html) |
-| Lesson 2: Graphic Design with Canva, approved 10-slide live-teaching revision | [Approved release](../../../assets/canvas/3288893-02-Canva-Live-Teach-Release.pptx) | [Make a copy](https://docs.google.com/presentation/d/1fKliAgkKHJLMD1BSTK-X0JRAp5CIRBGQq7h2R8lnpUY/copy) | [Facilitator guide](../../../lessons/2657927.html), [Google Doc copy](https://docs.google.com/document/d/1yL29WdZS1lzmRfR6S_x65GnHrSptJDHRb62h8YioTrs/copy) |
+| Lesson 2: Graphic Design with Canva, approved 10-slide live-teaching revision | [Approved release](../../../assets/canvas/3289914-02-Canva-Live-Teach-Release.pptx) | [Make a copy](https://docs.google.com/presentation/d/1fKliAgkKHJLMD1BSTK-X0JRAp5CIRBGQq7h2R8lnpUY/copy) | [Facilitator guide](../../../lessons/2657927.html), [Google Doc copy](https://docs.google.com/document/d/1yL29WdZS1lzmRfR6S_x65GnHrSptJDHRb62h8YioTrs/copy) |
 
 Google copies use the existing school-account permissions. The local files
 provide an inspectable reference without Google sign-in. The [manifest](manifest.json)
 pins full package hashes, slide counts, preview hashes, and Lesson 1's
-protected slide parts. These references were checked against the repository
-at commit `e895d4dbf3bb99d865a723c5f3ba4ac444413021`.
+protected slide parts. The September 9 historical versions are recoverable at commit
+`e895d4dbf3bb99d865a723c5f3ba4ac444413021`. The current Lesson 2 version is
+identified by its SHA-256 and [September 10 release record](../../reviews/lesson2-direct-image-submission-2026-09-10.md).
 
 If a future source release changes a filename or Canvas ID, use the manifest
-and that pinned Git revision to recover the approved exemplar. Do not select
+and the pinned Git revision or path history to recover the approved exemplar. Do not select
 a different file solely because its title says “revised” or its timestamp is
 newer. Update these pins only when the owner designates a replacement exemplar.
 The September 9 Lesson 1 storage optimization changed encoding/duplicates,
@@ -90,7 +91,7 @@ exception within a deck whose revised instructional text is editable.
 | 7. Repetition and direction | Trace the eye's path, then reveal | Repeated marks and their placement are related but distinct choices |
 | 8. Layering creates depth | Identify the overlapping edge, then reveal | Explain front/back order with ordinary shapes |
 | 9. Canva demo | Switch to the real app for one short model | The projected slide orients; the guide supplies the detailed checklist |
-| 10. Two graphics. One worksheet. | Explain word choices and work; leave the slide up | Both examples, constraints, criteria, worksheet, and Canvas route remain available |
+| 10. Two designs. Two PNGs. | Explain word choices and work; leave the slide up | Both examples, constraints, filenames, comment stems, and Canvas route remain available |
 
 ### Guess before labels — slide 6
 
@@ -120,10 +121,13 @@ this dated screenshot as universal UI evidence.
 
 ### One complete work-time screen — slide 10
 
-![Lesson 2's final slide includes lines-only and circles-only tasks, both exemplars, the five-word bank, completion checks, worksheet submission instructions, and the real Canvas banner.](lesson2-work-slide.png)
+![Lesson 2's final slide includes lines-only and circles-only tasks, both exemplars, the five-word bank, file naming, two comment stems, direct PNG submission instructions, and the real Canvas banner.](lesson2-work-slide.png)
 
-The two graphics go in one worksheet; the worksheet file or Google Doc link
-is submitted. This distinction remains visible while the teacher circulates.
+The two graphics are uploaded as separate, named PNGs in one Canvas submission.
+Two reflection sentences are saved in the submission comments. The worksheet
+is an optional teacher-selected alternative only. This September 10 owner
+correction supersedes the prior worksheet route while preserving the teaching
+sequence and work-slide layout.
 The source work examples are possibilities rather than designs every student
 must copy. These two final screenshots are from the actual Google Slides PDF
 export used in release review, with its normal rendering/font differences.

@@ -12,7 +12,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from build_site import canonical_hash, sha256_text
+from build_site import build_maps, canonical_hash, sha256_text
+from export_canvas import PageLinks, canvas_page_slug, referenced_file_ids
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -57,6 +58,51 @@ def plain_text(value: str) -> str:
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", value)).split())
 
 
+def check_linked_pages(snapshot: dict, manifest: dict, public_links: dict, failures: list[str]) -> None:
+    linked = snapshot.get("linked_pages", [])
+    page_ids = [page["page_id"] for page in linked]
+    module_items = [item for module in snapshot["modules"] for item in module["items"]]
+    module_page_ids = {(item.get("resource") or {}).get("metadata", {}).get("page_id")
+                       for item in module_items if item.get("type") == "Page"}
+    if len(page_ids) != len(set(page_ids)) or set(page_ids) & module_page_ids:
+        failures.append("Linked Canvas pages duplicate a page ID or a module page")
+    public_files = {int(file_id) for file_id in snapshot["files"]}
+    protected_files = set(snapshot.get("protected_file_ids", []))
+    for page in linked:
+        page_id = page["page_id"]
+        resource = page["resource"]
+        if not isinstance(page_id, int) or page_id <= 0 or resource["metadata"]["page_id"] != page_id:
+            failures.append(f"Linked page has an invalid Canvas page identity: {page_id}")
+        if page.get("public_state") != "public" or "private_body_sha256" in resource:
+            failures.append(f"Protected content was included as a public linked page: {page_id}")
+        if sha256_text(resource["body"]) != resource.get("body_sha256"):
+            failures.append(f"Linked page body hash differs: {page_id}")
+        ids = set(referenced_file_ids(resource["body"]))
+        if sorted(ids) != resource.get("referenced_file_ids") or not ids <= public_files or ids & protected_files:
+            failures.append(f"Linked page has missing or protected file dependencies: {page_id}")
+        row = manifest.get("pages", {}).get(f"pages/{page_id}.html", {})
+        if row.get("kind") != "linked_page" or row.get("canvas_id") != page_id or row.get("canvas_body_sha256") != resource.get("body_sha256"):
+            failures.append(f"Linked page manifest does not match the snapshot: {page_id}")
+    links = public_links.get("linked_pages", [])
+    if len(links) != len(linked) or {row.get("page_id") for row in links} != set(page_ids):
+        failures.append("Stable public-links.json does not account for all linked Canvas pages")
+    for row in links:
+        if not row.get("url", "").endswith(f"pages/{row['page_id']}.html"):
+            failures.append(f"Linked page URL is not based on its Canvas page ID: {row['page_id']}")
+
+    maps = build_maps(snapshot, snapshot["publication_policy"])
+    known = set(maps["page"]) | set(maps["route_aliases"]) | set(maps["missing_route_notices"])
+    for item in module_items + linked:
+        if item.get("public_state") == "protected":
+            continue
+        parser = PageLinks()
+        parser.feed((item.get("resource") or {}).get("body", ""))
+        for url in parser.urls:
+            slug = canvas_page_slug(url, maps["course_id"], maps["canvas_host"])
+            if slug and slug not in known:
+                failures.append(f"Snapshot is missing a referenced Canvas page: {slug}")
+
+
 def check_local_link(source: Path, value: str, ids: set[str], failures: list[str]) -> None:
     parsed = urlparse(value)
     if parsed.scheme in {"http", "https", "mailto", "tel", "data", "blob"} or value.startswith("javascript:"):
@@ -99,6 +145,7 @@ def main() -> None:
 
     modules = snapshot["modules"]
     items = [item for module in modules for item in module["items"]]
+    check_linked_pages(snapshot, manifest, public_links, failures)
     facilitator_guides = [
         item
         for item in items
@@ -164,6 +211,7 @@ def main() -> None:
         "modules": len(modules),
         "items": len(items),
         "item_pages": sum(item["type"] != "SubHeader" for item in items),
+        "linked_pages": len(snapshot.get("linked_pages", [])),
         "public_files": len(snapshot["files"]),
         "protected_items": sum(item.get("public_state") == "protected" for item in items),
     }
@@ -187,6 +235,10 @@ def main() -> None:
     expected_item_files.update(f"lessons/{filename}" for filename in legacy_aliases)
     actual_module_files = {path.relative_to(ROOT).as_posix() for path in (ROOT / "modules").glob("*.html")}
     actual_item_files = {path.relative_to(ROOT).as_posix() for path in (ROOT / "lessons").glob("*.html")}
+    expected_linked_files = {f"pages/{page['page_id']}.html" for page in snapshot.get("linked_pages", [])}
+    actual_linked_files = {path.relative_to(ROOT).as_posix() for path in (ROOT / "pages").glob("*.html")}
+    if expected_linked_files != actual_linked_files:
+        failures.append("Generated linked page set differs from Canvas")
     if expected_module_files != actual_module_files:
         failures.append("Generated module page set differs from Canvas")
     if expected_item_files != actual_item_files:
@@ -225,7 +277,7 @@ def main() -> None:
     if expected_assets != actual_assets:
         failures.append("Generated Canvas asset set contains a missing or stale file")
 
-    html_paths = [ROOT / "index.html", ROOT / "about.html", ROOT / "parity.html"] + sorted((ROOT / "modules").glob("*.html")) + sorted((ROOT / "lessons").glob("*.html"))
+    html_paths = [ROOT / "index.html", ROOT / "about.html", ROOT / "parity.html"] + sorted((ROOT / "modules").glob("*.html")) + sorted((ROOT / "lessons").glob("*.html")) + sorted((ROOT / "pages").glob("*.html"))
     canvas_route = re.compile(r"https?://verizoninnovativelearning\.instructure\.com/(?:api/v1/)?courses/23402/")
     forbidden_tokens = ["YOUR_BG_IMAGE_URL", "Link.Placeholder"]
     forbidden_editorial_phrases = [

@@ -1,5 +1,5 @@
 {
-  "canvas_snapshot_sha256": "07e93c67be064c533e0669c5d66114ea50118a8c854a8bfc7d270c1068ba39d4",
+  "canvas_snapshot_sha256": "77ab56b7d6c3a1eb9342873f8de30fffc6ee6b39b50c4741235fa2821433037a",
   "items": [
     {
       "item_position": 1,
@@ -3352,17 +3352,41 @@
     {
       "item_position": 2,
       "module_id": 72579,
-      "module_item_id": 2634160,
+      "module_item_id": 2675685,
       "module_name": "SW4 · Competition Pathways (CTSO)",
       "module_position": 17,
       "public_state": "public",
       "published_in_canvas": false,
-      "title": "TSA",
+      "title": "Explore the competitions",
       "type": "Page",
-      "url": "https://elbrielle.github.io/innovative-technology/lessons/2634160.html"
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2675685.html"
     },
     {
       "item_position": 3,
+      "module_id": 72579,
+      "module_item_id": 2675687,
+      "module_name": "SW4 · Competition Pathways (CTSO)",
+      "module_position": 17,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "My competition notes",
+      "type": "Assignment",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2675687.html"
+    },
+    {
+      "item_position": 4,
+      "module_id": 72579,
+      "module_item_id": 2675686,
+      "module_name": "SW4 · Competition Pathways (CTSO)",
+      "module_position": 17,
+      "public_state": "public",
+      "published_in_canvas": false,
+      "title": "All competitions A–Z",
+      "type": "Page",
+      "url": "https://elbrielle.github.io/innovative-technology/lessons/2675686.html"
+    },
+    {
+      "item_position": 6,
       "module_id": 72579,
       "module_item_id": 2634161,
       "module_name": "SW4 · Competition Pathways (CTSO)",
@@ -3374,7 +3398,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634161.html"
     },
     {
-      "item_position": 4,
+      "item_position": 7,
       "module_id": 72579,
       "module_item_id": 2634162,
       "module_name": "SW4 · Competition Pathways (CTSO)",
@@ -3386,7 +3410,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634162.html"
     },
     {
-      "item_position": 5,
+      "item_position": 8,
       "module_id": 72579,
       "module_item_id": 2634163,
       "module_name": "SW4 · Competition Pathways (CTSO)",
@@ -3398,19 +3422,7 @@
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634163.html"
     },
     {
-      "item_position": 6,
-      "module_id": 72579,
-      "module_item_id": 2634164,
-      "module_name": "SW4 · Competition Pathways (CTSO)",
-      "module_position": 17,
-      "public_state": "public",
-      "published_in_canvas": false,
-      "title": "TSA Website",
-      "type": "ExternalUrl",
-      "url": "https://elbrielle.github.io/innovative-technology/lessons/2634164.html"
-    },
-    {
-      "item_position": 7,
+      "item_position": 10,
       "module_id": 72579,
       "module_item_id": 2634165,
       "module_name": "SW4 · Competition Pathways (CTSO)",
@@ -6120,6 +6132,260 @@
       "title": "Optional Edpuzzle: The Making of a Young Entrepreneur",
       "type": "Assignment",
       "url": "https://elbrielle.github.io/innovative-technology/lessons/2634356.html"
+    }
+  ],
+  "linked_pages": [
+    {
+      "page_id": 1344100,
+      "page_url": "tsa-2027-|-create-media",
+      "title": "TSA 2027 | Create media",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344100.html"
+    },
+    {
+      "page_id": 1344101,
+      "page_url": "tsa-2027-|-audio-podcasting",
+      "title": "TSA 2027 | Audio Podcasting",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344101.html"
+    },
+    {
+      "page_id": 1344102,
+      "page_url": "tsa-2027-|-childrens-stories",
+      "title": "TSA 2027 | Children's Stories",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344102.html"
+    },
+    {
+      "page_id": 1344103,
+      "page_url": "tsa-2027-|-community-service-video",
+      "title": "TSA 2027 | Community Service Video",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344103.html"
+    },
+    {
+      "page_id": 1344104,
+      "page_url": "tsa-2027-|-digital-photography",
+      "title": "TSA 2027 | Digital Photography",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344104.html"
+    },
+    {
+      "page_id": 1344105,
+      "page_url": "tsa-2027-|-promotional-marketing",
+      "title": "TSA 2027 | Promotional Marketing",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344105.html"
+    },
+    {
+      "page_id": 1344106,
+      "page_url": "tsa-2027-|-stem-animation",
+      "title": "TSA 2027 | STEM Animation",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344106.html"
+    },
+    {
+      "page_id": 1344107,
+      "page_url": "tsa-2027-|-video-game-design",
+      "title": "TSA 2027 | Video Game Design",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344107.html"
+    },
+    {
+      "page_id": 1344108,
+      "page_url": "tsa-2027-|-website-design",
+      "title": "TSA 2027 | Website Design",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344108.html"
+    },
+    {
+      "page_id": 1344109,
+      "page_url": "tsa-2027-|-design-and-build",
+      "title": "TSA 2027 | Design and build",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344109.html"
+    },
+    {
+      "page_id": 1344110,
+      "page_url": "tsa-2027-|-cad-foundations",
+      "title": "TSA 2027 | CAD Foundations",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344110.html"
+    },
+    {
+      "page_id": 1344111,
+      "page_url": "tsa-2027-|-construction-challenge",
+      "title": "TSA 2027 | Construction Challenge",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344111.html"
+    },
+    {
+      "page_id": 1344112,
+      "page_url": "tsa-2027-|-dragster",
+      "title": "TSA 2027 | Dragster",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344112.html"
+    },
+    {
+      "page_id": 1344113,
+      "page_url": "tsa-2027-|-flight",
+      "title": "TSA 2027 | Flight",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344113.html"
+    },
+    {
+      "page_id": 1344114,
+      "page_url": "tsa-2027-|-inventions-and-innovations",
+      "title": "TSA 2027 | Inventions and Innovations",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344114.html"
+    },
+    {
+      "page_id": 1344115,
+      "page_url": "tsa-2027-|-mass-production",
+      "title": "TSA 2027 | Mass Production",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344115.html"
+    },
+    {
+      "page_id": 1344116,
+      "page_url": "tsa-2027-|-mechanical-engineering",
+      "title": "TSA 2027 | Mechanical Engineering",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344116.html"
+    },
+    {
+      "page_id": 1344117,
+      "page_url": "tsa-2027-|-off-the-grid",
+      "title": "TSA 2027 | Off the Grid",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344117.html"
+    },
+    {
+      "page_id": 1344118,
+      "page_url": "tsa-2027-|-solar-racer",
+      "title": "TSA 2027 | Solar Racer",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344118.html"
+    },
+    {
+      "page_id": 1344119,
+      "page_url": "tsa-2027-|-structural-engineering",
+      "title": "TSA 2027 | Structural Engineering",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344119.html"
+    },
+    {
+      "page_id": 1344120,
+      "page_url": "tsa-2027-|-technical-design",
+      "title": "TSA 2027 | Technical Design",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344120.html"
+    },
+    {
+      "page_id": 1344121,
+      "page_url": "tsa-2027-|-code-and-control",
+      "title": "TSA 2027 | Code and control",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344121.html"
+    },
+    {
+      "page_id": 1344122,
+      "page_url": "tsa-2027-|-coding",
+      "title": "TSA 2027 | Coding",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344122.html"
+    },
+    {
+      "page_id": 1344123,
+      "page_url": "tsa-2027-|-drone-challenge-uav",
+      "title": "TSA 2027 | Drone Challenge (UAV)",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344123.html"
+    },
+    {
+      "page_id": 1344124,
+      "page_url": "tsa-2027-|-microcontroller-design",
+      "title": "TSA 2027 | Microcontroller Design",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344124.html"
+    },
+    {
+      "page_id": 1344125,
+      "page_url": "tsa-2027-|-robotics",
+      "title": "TSA 2027 | Robotics",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344125.html"
+    },
+    {
+      "page_id": 1344126,
+      "page_url": "tsa-2027-|-system-control-technology",
+      "title": "TSA 2027 | System Control Technology",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344126.html"
+    },
+    {
+      "page_id": 1344127,
+      "page_url": "tsa-2027-|-investigate-and-solve",
+      "title": "TSA 2027 | Investigate and solve",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344127.html"
+    },
+    {
+      "page_id": 1344128,
+      "page_url": "tsa-2027-|-biotechnology",
+      "title": "TSA 2027 | Biotechnology",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344128.html"
+    },
+    {
+      "page_id": 1344129,
+      "page_url": "tsa-2027-|-cybersecurity",
+      "title": "TSA 2027 | Cybersecurity",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344129.html"
+    },
+    {
+      "page_id": 1344130,
+      "page_url": "tsa-2027-|-data-science-and-analytics",
+      "title": "TSA 2027 | Data Science and Analytics",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344130.html"
+    },
+    {
+      "page_id": 1344131,
+      "page_url": "tsa-2027-|-electrical-applications",
+      "title": "TSA 2027 | Electrical Applications",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344131.html"
+    },
+    {
+      "page_id": 1344132,
+      "page_url": "tsa-2027-|-forensic-technology",
+      "title": "TSA 2027 | Forensic Technology",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344132.html"
+    },
+    {
+      "page_id": 1344133,
+      "page_url": "tsa-2027-|-medical-technology",
+      "title": "TSA 2027 | Medical Technology",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344133.html"
+    },
+    {
+      "page_id": 1344134,
+      "page_url": "tsa-2027-|-problem-solving",
+      "title": "TSA 2027 | Problem Solving",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344134.html"
+    },
+    {
+      "page_id": 1344135,
+      "page_url": "tsa-2027-|-tech-bowl",
+      "title": "TSA 2027 | Tech Bowl",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344135.html"
+    },
+    {
+      "page_id": 1344136,
+      "page_url": "tsa-2027-|-speak-and-lead",
+      "title": "TSA 2027 | Speak and lead",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344136.html"
+    },
+    {
+      "page_id": 1344137,
+      "page_url": "tsa-2027-|-career-prep",
+      "title": "TSA 2027 | Career Prep",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344137.html"
+    },
+    {
+      "page_id": 1344138,
+      "page_url": "tsa-2027-|-challenging-technology-issues",
+      "title": "TSA 2027 | Challenging Technology Issues",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344138.html"
+    },
+    {
+      "page_id": 1344139,
+      "page_url": "tsa-2027-|-chapter-team",
+      "title": "TSA 2027 | Chapter Team",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344139.html"
+    },
+    {
+      "page_id": 1344140,
+      "page_url": "tsa-2027-|-leadership-strategies",
+      "title": "TSA 2027 | Leadership Strategies",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344140.html"
+    },
+    {
+      "page_id": 1344141,
+      "page_url": "tsa-2027-|-prepared-speech",
+      "title": "TSA 2027 | Prepared Speech",
+      "url": "https://elbrielle.github.io/innovative-technology/pages/1344141.html"
     }
   ],
   "schema_version": 1,

@@ -139,6 +139,8 @@ img, video { max-width: 100%; }
 .reference-note { margin-bottom: 18px; padding: 12px 14px; }
 .canvas-content { padding: clamp(14px, 3vw, 28px); overflow-wrap: anywhere; border: 1px solid var(--outline); background: var(--surface); box-shadow: var(--shadow-low); }
 .canvas-content img, .canvas-content video, .canvas-content audio { max-width: 100% !important; height: auto; }
+/* Preserve authored photo crops inside their clipping frames. */
+.canvas-content img[style*="max-width:none"], .canvas-content img[style*="max-width: none"] { max-width: none !important; }
 .canvas-content iframe { max-width: 100%; }
 .canvas-content iframe[src*="youtube.com/embed"][width][height] { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
 .canvas-content table { max-width: 100%; }

@@ -26,7 +26,7 @@ def git(*args: str) -> str:
 
 
 def instructional(path: str) -> bool:
-    if path.startswith(("curriculum-assets/", "lessons/", "modules/")):
+    if path.startswith(("curriculum-assets/", "lessons/", "modules/", "pages/")):
         return True
     if path.startswith("docs/standards/"):
         return True
@@ -50,6 +50,7 @@ def instructional(path: str) -> bool:
 def changed_paths(base: str) -> list[str]:
     paths = set(line for line in git("diff", "--name-only", f"{base}...HEAD").splitlines() if line)
     paths.update(line for line in git("diff", "--name-only").splitlines() if line)
+    paths.update(line for line in git("diff", "--cached", "--name-only").splitlines() if line)
     paths.update(line for line in git("ls-files", "--others", "--exclude-standard").splitlines() if line)
     return sorted(paths)
 

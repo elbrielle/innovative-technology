@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 from canvas_api import stable_json
+from export_canvas import canvas_page_slug
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,6 +23,7 @@ PUBLIC_LINKS_PATH = ROOT / "data" / "public-links.json"
 LEGACY_ALIASES_PATH = ROOT / "data" / "legacy-route-aliases.json"
 LESSONS = ROOT / "lessons"
 MODULES = ROOT / "modules"
+PAGES = ROOT / "pages"
 SITE_HOST = "https://elbrielle.github.io/innovative-technology/"
 CANVAS_HOST = "verizoninnovativelearning.instructure.com"
 
@@ -45,6 +47,8 @@ def strip_tags(value: str) -> str:
 def item_role(item: dict) -> str:
     title = (item.get("title") or "").lower()
     metadata = (item.get("resource") or {}).get("metadata") or {}
+    if (metadata.get("title") or "").startswith("TSA 2027 |"):
+        return "student"
     if title.startswith("student") or "student guide" in title or "student's guide" in title:
         return "student"
     if (
@@ -86,6 +90,8 @@ def item_type_label(item: dict) -> str:
 
 def build_maps(snapshot: dict, policy: dict) -> dict:
     maps = {
+        "course_id": snapshot["source"]["course_id"],
+        "canvas_host": snapshot["source"]["canvas_host"],
         "item": {},
         "page": {},
         "assignment": {},
@@ -104,6 +110,9 @@ def build_maps(snapshot: dict, policy: dict) -> dict:
             maps["item"][int(item["id"])] = item
             if item.get("page_url"):
                 maps["page"][item["page_url"]] = item
+                page_id = (item.get("resource") or {}).get("metadata", {}).get("page_id")
+                if page_id is not None:
+                    maps["page"][str(page_id)] = item
             if item.get("content_id"):
                 if item["type"] == "Assignment":
                     maps["assignment"][int(item["content_id"])] = item
@@ -111,6 +120,11 @@ def build_maps(snapshot: dict, policy: dict) -> dict:
                     maps["discussion"][int(item["content_id"])] = item
                 elif item["type"] == "Quiz":
                     maps["quiz"][int(item["content_id"])] = item
+    for page in snapshot.get("linked_pages", []):
+        for slug in {page["page_url"], str(page["page_id"]), *page.get("aliases", [])}:
+            if slug in maps["page"]:
+                raise RuntimeError(f"Linked page duplicates an existing Canvas page route: {slug}")
+            maps["page"][slug] = page
     for slug, rule in policy.get("canvas_route_aliases", {}).items():
         target = maps["item"].get(int(rule["target_module_item_id"]))
         if not target:
@@ -142,27 +156,41 @@ def file_id_from_url(value: str) -> int | None:
 
 
 def public_item_url(item: dict) -> str:
+    if "page_id" in item:
+        return f"../pages/{item['page_id']}.html"
     return f"../lessons/{item['id']}.html"
+
+
+def is_canvas_reference(value: str, maps: dict) -> bool:
+    parsed = urlparse(html.unescape(value or ""))
+    host = urlparse(maps["canvas_host"])
+    if parsed.scheme and parsed.scheme not in {"http", "https"}:
+        return False
+    if parsed.netloc and parsed.netloc.lower() != host.netloc.lower():
+        return False
+    course = re.search(r"/courses/(\d+)(?:/|$)", parsed.path)
+    return not course or int(course[1]) == maps["course_id"]
 
 
 def rewrite_canvas_route(value: str, maps: dict) -> str | None:
     decoded = html.unescape(value or "")
     parsed = urlparse(decoded)
-    if parsed.netloc and parsed.netloc.lower() != CANVAS_HOST:
+    if not is_canvas_reference(value, maps):
         return None
     path = parsed.path
+    fragment = "#" + parsed.fragment if parsed.fragment else ""
     match = re.search(r"/courses/\d+/modules/items/(\d+)", path)
     if match and int(match.group(1)) in maps["item"]:
-        return public_item_url(maps["item"][int(match.group(1))])
-    match = re.search(r"/courses/\d+/pages/([^/?#]+)", path)
-    if match and match.group(1) in maps["page"]:
-        return public_item_url(maps["page"][match.group(1)])
-    if match and match.group(1) in maps["route_aliases"]:
-        return public_item_url(maps["route_aliases"][match.group(1)])
+        return public_item_url(maps["item"][int(match.group(1))]) + fragment
+    slug = canvas_page_slug(decoded, maps["course_id"], maps["canvas_host"])
+    if slug in maps["page"]:
+        return public_item_url(maps["page"][slug]) + fragment
+    if slug in maps["route_aliases"]:
+        return public_item_url(maps["route_aliases"][slug]) + fragment
     for kind, route in (("assignment", "assignments"), ("discussion", "discussion_topics"), ("quiz", "quizzes")):
         match = re.search(rf"/courses/\d+/{route}/(\d+)", path)
         if match and int(match.group(1)) in maps[kind]:
-            return public_item_url(maps[kind][int(match.group(1))])
+            return public_item_url(maps[kind][int(match.group(1))]) + fragment
     if re.search(r"/courses/\d+/modules(?:/|$)", path):
         return "../index.html#course-map"
     return None
@@ -192,20 +220,21 @@ def rewrite_body(body: str, maps: dict, unresolved: list[dict], item: dict) -> s
     if not body:
         return ""
 
-    repairs = list(maps["empty_link_repairs"].get(str(item["id"]), []))
+    item_id = item.get("id", f"page:{item.get('page_id')}")
+    repairs = list(maps["empty_link_repairs"].get(str(item_id), []))
     repair_index = 0
 
     def repair_empty_link(match: re.Match) -> str:
         nonlocal repair_index
         if repair_index >= len(repairs):
-            unresolved.append({"item_id": item["id"], "kind": "empty-link", "target": "#"})
+            unresolved.append({"item_id": item_id, "kind": "empty-link", "target": "#"})
             return match.group(0)
         rule = repairs[repair_index]
         repair_index += 1
         if rule["kind"] == "file":
             target = local_asset_url(int(rule["target_file_id"]), maps)
             if not target:
-                raise RuntimeError(f"Empty-link repair for {item['id']} references a missing public file")
+                raise RuntimeError(f"Empty-link repair for {item_id} references a missing public file")
         else:
             target = rule["target"]
         return f'href="{esc(target)}"'
@@ -213,7 +242,7 @@ def rewrite_body(body: str, maps: dict, unresolved: list[dict], item: dict) -> s
     body = re.sub(r'href=["\']#["\']', repair_empty_link, body, flags=re.I)
     body = re.sub(r'\sdata-api-endpoint=["\']#["\']', "", body, flags=re.I)
     if repair_index != len(repairs):
-        raise RuntimeError(f"Expected {len(repairs)} empty-link repairs for item {item['id']}, used {repair_index}")
+        raise RuntimeError(f"Expected {len(repairs)} empty-link repairs for item {item_id}, used {repair_index}")
 
     missing_notices: list[str] = []
     for slug, notice in maps["missing_route_notices"].items():
@@ -232,12 +261,12 @@ def rewrite_body(body: str, maps: dict, unresolved: list[dict], item: dict) -> s
         if not src_match:
             return tag
         source = src_match.group(1)
-        file_id = file_id_from_url(source)
+        file_id = file_id_from_url(source) if is_canvas_reference(source, maps) else None
         if file_id is None:
             return tag
         row = maps["file"].get(file_id)
         if not row:
-            unresolved.append({"item_id": item["id"], "kind": "file", "target": source})
+            unresolved.append({"item_id": item_id, "kind": "file", "target": source})
             return resource_card(file_id, maps)
         mime = row["metadata"].get("content-type") or ""
         path = esc(local_asset_url(file_id, maps))
@@ -256,19 +285,22 @@ def rewrite_body(body: str, maps: dict, unresolved: list[dict], item: dict) -> s
         attr, quote, value = match.group(1), match.group(2), match.group(3)
         if value in maps["placeholder_link_repairs"]:
             return f"{attr}={quote}{public_item_url(maps['placeholder_link_repairs'][value])}{quote}"
-        file_id = file_id_from_url(value)
+        file_id = file_id_from_url(value) if is_canvas_reference(value, maps) else None
         if file_id is not None:
             local = local_asset_url(file_id, maps)
             if local:
+                fragment = urlparse(html.unescape(value)).fragment
+                if fragment:
+                    local += "#" + fragment
                 return f"{attr}={quote}{local}{quote}"
-            unresolved.append({"item_id": item["id"], "kind": "file", "target": value})
+            unresolved.append({"item_id": item_id, "kind": "file", "target": value})
             return f"{attr}={quote}#{quote}"
         route = rewrite_canvas_route(value, maps)
         if route:
             return f"{attr}={quote}{route}{quote}"
         parsed = urlparse(html.unescape(value))
-        if parsed.netloc.lower() == CANVAS_HOST and f"/courses/{maps['course_id']}/" in parsed.path:
-            unresolved.append({"item_id": item["id"], "kind": "canvas-route", "target": value})
+        if is_canvas_reference(value, maps) and f"/courses/{maps['course_id']}/" in parsed.path:
+            unresolved.append({"item_id": item_id, "kind": "canvas-route", "target": value})
             return f"{attr}={quote}../index.html#course-map{quote}"
         return match.group(0)
 
@@ -391,7 +423,7 @@ def legacy_redirect_document(title: str, target_item_id: int) -> str:
 '''
 
 
-def lesson_document(item: dict, module: dict, body: str) -> str:
+def lesson_document(item: dict, module: dict | None, body: str) -> str:
     role = item_role(item)
     flavor = item_flavor(item)
     protected = item.get("public_state") == "protected"
@@ -401,10 +433,13 @@ def lesson_document(item: dict, module: dict, body: str) -> str:
     if flavor in {"optional", "parked"}:
         context.append("Optional")
     context.append("Published in Canvas" if item.get("published") else "Unpublished in Canvas")
+    breadcrumb = '<a href="../index.html">Curriculum</a>'
+    if module:
+        breadcrumb += f'<span aria-hidden="true">/</span><a href="../modules/{module["id"]}.html">{esc(module["name"])}</a>'
     content = f'''
 <header class="page-intro lesson-header">
   <div class="lesson-header__inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Curriculum</a><span aria-hidden="true">/</span><a href="../modules/{module['id']}.html">{esc(module['name'])}</a></nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">{breadcrumb}</nav>
     <p class="page-kicker">{' · '.join(esc(value) for value in context)}</p>
     <h1 class="page-title">{esc(item['title'])}</h1>
     {item_metadata_panel(item)}
@@ -428,10 +463,12 @@ def lesson_document(item: dict, module: dict, body: str) -> str:
   <p><a class="button" href="{esc(item["external_url"])}">Open {esc(item["title"])} <span aria-hidden="true">↗</span></a></p>
 </section>'''
     else:
+        return_link = (f'<a href="../modules/{module["id"]}.html">Return to {esc(module["name"])}</a>'
+                       if module else '<a href="../index.html">Return to the curriculum</a>')
         content += f'''<section class="empty-state">
   <h2>No separate Canvas page</h2>
   <p>This {esc(item_type_label(item).lower())} is listed in the module only.</p>
-  <p><a href="../modules/{module['id']}.html">Return to {esc(module['name'])}</a></p>
+  <p>{return_link}</p>
 </section>'''
     content += '''</main>
 '''
@@ -607,8 +644,10 @@ def main() -> None:
 
     shutil.rmtree(LESSONS, ignore_errors=True)
     shutil.rmtree(MODULES, ignore_errors=True)
+    shutil.rmtree(PAGES, ignore_errors=True)
     LESSONS.mkdir(parents=True, exist_ok=True)
     MODULES.mkdir(parents=True, exist_ok=True)
+    PAGES.mkdir(parents=True, exist_ok=True)
 
     pages: dict[str, dict] = {}
     for module in snapshot["modules"]:
@@ -631,6 +670,16 @@ def main() -> None:
                 "canvas_body_sha256": resource.get("body_sha256") or resource.get("private_body_sha256"),
                 "public_state": item.get("public_state"),
             }
+
+    for page in snapshot.get("linked_pages", []):
+        resource = page["resource"]
+        transformed = rewrite_body(resource["body"], maps, unresolved, page)
+        page_html = lesson_document(page, None, transformed)
+        page_path = f"pages/{page['page_id']}.html"
+        (ROOT / page_path).write_text(page_html, encoding="utf-8")
+        pages[page_path] = {"sha256": sha256_text(page_html), "kind": "linked_page",
+                            "canvas_id": page["page_id"], "canvas_body_sha256": resource["body_sha256"],
+                            "public_state": page["public_state"]}
 
     item_by_id = maps["item"]
     for filename, target_item_id in legacy_aliases.items():
@@ -669,6 +718,7 @@ def main() -> None:
             "modules": len(snapshot["modules"]),
             "items": sum(len(module["items"]) for module in snapshot["modules"]),
             "item_pages": sum(1 for row in pages.values() if row["kind"] == "item"),
+            "linked_pages": len(snapshot.get("linked_pages", [])),
             "public_files": len(snapshot["files"]),
             "protected_items": sum(1 for module in snapshot["modules"] for item in module["items"] if item.get("public_state") == "protected"),
         },
@@ -699,6 +749,11 @@ def main() -> None:
             }
             for module in snapshot["modules"]
             for item in module["items"]
+        ],
+        "linked_pages": [
+            {"page_id": page["page_id"], "page_url": page["page_url"], "title": page["title"],
+             "url": f"{SITE_HOST}pages/{page['page_id']}.html"}
+            for page in snapshot.get("linked_pages", [])
         ],
     }
     PUBLIC_LINKS_PATH.write_text(stable_json(public_links), encoding="utf-8")

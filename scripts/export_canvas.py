@@ -15,7 +15,9 @@ import json
 import re
 import shutil
 import unicodedata
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import quote, unquote, urlparse
 
 from canvas_api import Canvas, env_course_id, stable_json
 
@@ -57,6 +59,97 @@ def exact_projection(row: dict, keys: tuple[str, ...]) -> dict:
 def referenced_file_ids(body: str) -> list[int]:
     decoded = html.unescape(body or "")
     return sorted({int(value) for value in FILE_ID_RE.findall(decoded)})
+
+
+def canvas_page_slug(value: str, course_id: int, canvas_host: str) -> str | None:
+    """Recognize only page routes on the canonical Canvas origin and course."""
+    parsed = urlparse(html.unescape(value or ""))
+    origin = urlparse(canvas_host)
+    if parsed.scheme and parsed.scheme not in {"http", "https"}:
+        return None
+    if parsed.netloc and parsed.netloc.lower() != origin.netloc.lower():
+        return None
+    match = re.fullmatch(r"/(?:api/v1/)?courses/(\d+)/pages/([^/]+)/?", parsed.path)
+    if not match or int(match[1]) != course_id:
+        return None
+    slug = unquote(match[2])
+    # Canvas can double-encode punctuation in data-api-endpoint page routes.
+    if parsed.path.startswith("/api/v1/"):
+        slug = unquote(slug)
+    return slug if slug and "/" not in slug and slug not in {".", ".."} else None
+
+
+class PageLinks(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.urls: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        values = dict(attrs)
+        attr = "href" if tag == "a" else "src" if tag == "iframe" else None
+        if attr and values.get(attr):
+            self.urls.append(values[attr])
+
+
+def collect_linked_pages(canvas: Canvas, items: list[dict], resources: dict[int, dict],
+                         policy: dict, course_id: int = COURSE_ID) -> list[dict]:
+    """Walk public instructional links without adding fabricated module items.
+
+    Module pages (including protected pages) are already accounted for. Never
+    walk a protected body, even if that page is reached through its numeric ID.
+    """
+    host = canvas.base.removesuffix("/api/v1")
+    protected = {int(row["module_item_id"]) for row in policy.get("protected_items", [])}
+    known_ids = set()
+    seen = set(policy.get("canvas_route_aliases", {})) | set(policy.get("missing_route_notices", {}))
+    protected_pages = set()
+    for item in items:
+        if item.get("type") == "Page":
+            metadata = resources[item["id"]]["metadata"]
+            known_ids.add(metadata["page_id"])
+            seen.update((item["page_url"], metadata["url"], str(metadata["page_id"])))
+            if item["id"] in protected:
+                protected_pages.add(metadata["page_id"])
+    pending = set()
+
+    def discover(body):
+        parser = PageLinks()
+        parser.feed(body or "")
+        for value in parser.urls:
+            slug = canvas_page_slug(value, course_id, host)
+            if slug and slug not in seen:
+                pending.add(slug)
+
+    for item in items:
+        resource = resources.get(item["id"], {})
+        if item["id"] not in protected and resource.get("metadata", {}).get("page_id") not in protected_pages:
+            discover(resource.get("body", ""))
+    linked = {}
+    while pending:
+        batch = sorted(pending - seen)
+        pending.clear()
+        seen.update(batch)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+            rows = list(pool.map(lambda slug: canvas.get(
+                f"/courses/{course_id}/pages/{quote(slug, safe='')}"), batch))
+        for requested, row in zip(batch, rows):
+            page_id = int(row["page_id"])
+            seen.update((row["url"], str(page_id)))
+            if page_id in known_ids:
+                continue
+            if page_id in linked:
+                linked[page_id]["aliases"] = sorted(set(linked[page_id]["aliases"]) | {requested})
+                continue
+            body = row.get("body") or ""
+            linked[page_id] = {
+                "page_id": page_id, "page_url": row["url"], "title": row["title"],
+                "type": "Page", "published": row.get("published"), "public_state": "public",
+                "aliases": sorted({requested, row["url"], str(page_id)}),
+                "resource": {"kind": "page", "metadata": page_projection(row), "body": body,
+                             "body_sha256": sha256_text(body), "referenced_file_ids": referenced_file_ids(body)},
+            }
+            discover(body)
+    return [linked[page_id] for page_id in sorted(linked)]
 
 
 def assignment_projection(row: dict) -> dict:
@@ -178,7 +271,7 @@ def question_projection(row: dict) -> dict:
 def resource_for(canvas: Canvas, item: dict) -> dict:
     kind = item.get("type")
     if kind == "Page":
-        row = canvas.get(f"/courses/{COURSE_ID}/pages/{item['page_url']}")
+        row = canvas.get(f"/courses/{COURSE_ID}/pages/{quote(item['page_url'], safe='')}")
         return {"kind": "page", "metadata": page_projection(row), "body": row.get("body") or ""}
     if kind == "Assignment":
         row = canvas.get(
@@ -325,6 +418,9 @@ def main() -> None:
             resource["body_sha256"] = sha256_text(body)
             resource["referenced_file_ids"] = sorted(ids)
 
+    linked_pages = collect_linked_pages(canvas, all_items, resources, policy)
+    for page in linked_pages:
+        all_file_ids.update(page["resource"]["referenced_file_ids"])
     public_file_ids = sorted(all_file_ids - protected_file_ids)
     previous = {}
     if SNAPSHOT.exists():
@@ -430,6 +526,7 @@ def main() -> None:
         ),
         "publication_policy": policy,
         "modules": modules,
+        "linked_pages": linked_pages,
         "files": {str(file_id): metadata_rows[file_id] for file_id in sorted(metadata_rows)},
         "protected_file_ids": sorted(protected_file_ids),
     }
@@ -444,6 +541,7 @@ def main() -> None:
                 "semantic_sha256": snapshot["semantic_sha256"],
                 "modules": len(modules),
                 "items": sum(len(module["items"]) for module in modules),
+                "linked_pages": len(linked_pages),
                 "public_files": len(metadata_rows),
                 "protected_files": sorted(protected_file_ids),
                 "public_file_bytes": sum(row["metadata"]["size"] or 0 for row in metadata_rows.values()),

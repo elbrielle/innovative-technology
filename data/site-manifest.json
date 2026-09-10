@@ -1,19 +1,20 @@
 {
   "counts": {
-    "item_pages": 445,
-    "items": 510,
+    "item_pages": 446,
+    "items": 511,
+    "linked_pages": 42,
     "modules": 34,
     "protected_items": 1,
-    "public_files": 207
+    "public_files": 298
   },
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "36983ebdc313e2c7053dfe1616575be82f5d6e137460bbdd7cdf719830a1ef49"
+      "sha256": "7894b2f546516b5f3151be0692062d04a04a2525e47d95a3ee059a61f1c8246e"
     },
     "index.html": {
       "kind": "index",
-      "sha256": "a0ebad2e27f4fb0d5034fa58c586c429f93ec4ad942a5f30ee86c20cda5b8ef8"
+      "sha256": "8f22aa2697e8f3622db0cc1076862742bc3679045a53ab0b61230e39fbdd6e31"
     },
     "lessons/2633980.html": {
       "canvas_body_sha256": "1548eb11a399c543b02c96c9c9ed55375caddf3ce61df2e5cba274f3fa68e239",
@@ -261,11 +262,11 @@
       "sha256": "406bc18341cc6ed76df98071433f57daca209b5b0f81123efb9b152ad3167855"
     },
     "lessons/2634019.html": {
-      "canvas_body_sha256": "5616196bfac6ec39f99591e764b0db161b2a0adfe4c8bed8730223eb0b76005a",
+      "canvas_body_sha256": "d7dcfc94e11ff94c681a82bc4f8bcc18cce3fb42a63a9de82ddce97362cc01b1",
       "canvas_id": 2634019,
       "kind": "item",
       "public_state": "public",
-      "sha256": "bc628c3ac511fc6bf42e8aebc08f8180c50a2aab0cf6e6880721ae9528990176"
+      "sha256": "ed41f85ac58fbc010b5fd2831ee676822a5a518cd89da49c431c2741030ccf43"
     },
     "lessons/2634021.html": {
       "canvas_body_sha256": "4c5b88de25d60a24c600f210cdf557f7cddc7afa0a3022ccbecbca47e1a5bbee",
@@ -275,11 +276,11 @@
       "sha256": "76537023e8a121ac04a689d7ebe48e712ae12207a3fc80cc06ecb41e2fdea1db"
     },
     "lessons/2634022.html": {
-      "canvas_body_sha256": "a7440aaa240a9810de13fe8d4124421261f51a71deaa3040c9d1cbcc54529f03",
+      "canvas_body_sha256": "86a5838d9d751eaec90bfac04fd038e83fccf96c600ae301d71e645e44e20e89",
       "canvas_id": 2634022,
       "kind": "item",
       "public_state": "public",
-      "sha256": "7ca57cc19be96ea57a636b3efcf9212e04276500176596b38fbf5879937837e1"
+      "sha256": "f515a23dfff3c6e36f3e2a36076570e872194f7bef8e86e80f6bbc2d833afb01"
     },
     "lessons/2634023.html": {
       "canvas_body_sha256": "28b4fc8bfb16e843f1cad77776c167c80d42fa31d174b5ea8d68f8da1922cfa8",
@@ -1114,13 +1115,6 @@
       "public_state": "public",
       "sha256": "40df051f68cd1a6df8e897cb2246ca3b80e2489352485caa4f262ccbaebb6171"
     },
-    "lessons/2634160.html": {
-      "canvas_body_sha256": "16b7699f3f1b939779c9e2d62003bb9f6a1c45a0a95419c19717a0be9fff85dd",
-      "canvas_id": 2634160,
-      "kind": "item",
-      "public_state": "public",
-      "sha256": "cc1f12833ce442ce278ae634af312dc5ef32be87b025a4a4ea096b73ffbcfa29"
-    },
     "lessons/2634161.html": {
       "canvas_body_sha256": "db4b9e3853eff2d3f6991fff26121787733b98dfd51e6f81ae0494cc43aadb71",
       "canvas_id": 2634161,
@@ -1141,13 +1135,6 @@
       "kind": "item",
       "public_state": "public",
       "sha256": "a7feac5f8e3070941601e936687b20a7bf37f3e189b7d4e5eb4b5c3a5e1913d2"
-    },
-    "lessons/2634164.html": {
-      "canvas_body_sha256": null,
-      "canvas_id": 2634164,
-      "kind": "item",
-      "public_state": "public",
-      "sha256": "ad94684c4c3cedd1be7d91cad1d0bf0b62b6f465572f1358448aa2603b6f817f"
     },
     "lessons/2634165.html": {
       "canvas_body_sha256": "910b7b9798333fa64d3a2aea5f5f1bc57fa8180af15e206dfabcba7aa093eb0e",
@@ -2508,11 +2495,11 @@
       "sha256": "0b447fa0223769fe325432d346b5ff3b2d85fc17e7aa61dbee719e07448a1d70"
     },
     "lessons/2657927.html": {
-      "canvas_body_sha256": "a0ce24261cc3332c4cd9a18c5e7d371868c0fccdf649cc7610909f468780bb35",
+      "canvas_body_sha256": "7068d028ada61e7c3a7fb84af0fc78d61a7bc8f9ed2886efa0d790d0591e3ff9",
       "canvas_id": 2657927,
       "kind": "item",
       "public_state": "public",
-      "sha256": "c675c6f1debfc7608bbead2b13e4db2471ab756c5eaa5e53c23dd29538b8d72c"
+      "sha256": "6e9fb7f978e132ca402177d20963163dd05738b0387572308cfaedb82fb97164"
     },
     "lessons/2657928.html": {
       "canvas_body_sha256": "a3c7da0c26c15de849bf9f8abcfa82d373b5744dbf6dc5c579f51c2bc04666f9",
@@ -3130,6 +3117,27 @@
       "public_state": "public",
       "sha256": "2fded38225e091be628fd3cfeedc98ce756d5338955d3d9afcbf5d9dde564adb"
     },
+    "lessons/2675685.html": {
+      "canvas_body_sha256": "593341747db11ea7bc31ed20fb51c8705d77b2bd6a07c480ce7a1f755d7df46e",
+      "canvas_id": 2675685,
+      "kind": "item",
+      "public_state": "public",
+      "sha256": "2b96c2a4c1d8e18952520264841c9c9d82caf743f8efb0c83ecba7c47e82f046"
+    },
+    "lessons/2675686.html": {
+      "canvas_body_sha256": "0c7546d8b82815af2ce600ff2b61db20311fcb8143df2facb4cbb1b053dac98b",
+      "canvas_id": 2675686,
+      "kind": "item",
+      "public_state": "public",
+      "sha256": "bed0378eff7c71942806b04929eb3b32bcb5da8c894ec3ec7a101f29726a1038"
+    },
+    "lessons/2675687.html": {
+      "canvas_body_sha256": "f197451b5099c0bd78f5f679747dc16a1eee1a26f3cb4a1383cd06b58a76c3f6",
+      "canvas_id": 2675687,
+      "kind": "item",
+      "public_state": "public",
+      "sha256": "393d81e7b968c2cc78479a9fd7c8919c3ed1039d4d73e4312b20394acefba975"
+    },
     "lessons/augmented-reality-with-mergecube-activity-lesson-1-the-basic.html": {
       "canvas_id": 2634252,
       "kind": "legacy_redirect",
@@ -3388,7 +3396,7 @@
     "modules/72579.html": {
       "canvas_id": 72579,
       "kind": "module",
-      "sha256": "02e37b6eb72a2f128bdf35fbc206eb948f7ae8072d40832fa8f1f9e2ec8f0173"
+      "sha256": "ffa6c4abcca813cf24bbfdc6a3786a3f5bcca5638ad15ab28e85a97ae61cc6f1"
     },
     "modules/72580.html": {
       "canvas_id": 72580,
@@ -3475,13 +3483,307 @@
       "kind": "module",
       "sha256": "4bbe6d4d90662a900468b4e585d009f65b700afa86aa8a6e8cc8671a2c214e3b"
     },
+    "pages/1344100.html": {
+      "canvas_body_sha256": "1d5c3c5ecefa75eccd122c982bf6ea3cd308512abfb92312bfda868f05865aab",
+      "canvas_id": 1344100,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "e3ad10b34c9b2fbe053add0d2a6c50fc2f85f95ce9f1753e349f85cc17756fde"
+    },
+    "pages/1344101.html": {
+      "canvas_body_sha256": "d2572e199e2630d99dbf1703b33ea239277b98d8cdd79f98333a83b32b69ba63",
+      "canvas_id": 1344101,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "037e2a44485cd0f8d4c414e3adc452dcc98caa90dfda4c0d023aa02251946b3e"
+    },
+    "pages/1344102.html": {
+      "canvas_body_sha256": "41250381d15b11dceb50c4385b31fd1c37ffb60bb17273e74652edce2402038e",
+      "canvas_id": 1344102,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "ebeba6494caea860c683fcf248cd20d35212a75bf20d967a1abb8dc83aebdeb8"
+    },
+    "pages/1344103.html": {
+      "canvas_body_sha256": "8adb8352204a848ae33ad8a39e353ce60cd1b10d3316734f876d14888277ae47",
+      "canvas_id": 1344103,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "329f7fb51c30c10b2ea33cd2d96c40484ac1f0ac44989f10262022add03aad15"
+    },
+    "pages/1344104.html": {
+      "canvas_body_sha256": "56571a9b57360e88afabf58be189b5dac9d769237af27bd7524623ccfdf47c7a",
+      "canvas_id": 1344104,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "01eab6315c1ed6d34112cf445aed6f3d1fecab5ddd31689d368cff40df57bbf0"
+    },
+    "pages/1344105.html": {
+      "canvas_body_sha256": "d1441c5c853679a4c525b0c8449363f0231b06a2df97dbd2f23907f6ec0208d3",
+      "canvas_id": 1344105,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "e08878a0729787340174480ba529fec12ebc59e381771bf632ce3601bfc7fb38"
+    },
+    "pages/1344106.html": {
+      "canvas_body_sha256": "0651233fcd69994e5ba336606e1cba2ce660795652eb4e7623a4068f9e7192ec",
+      "canvas_id": 1344106,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "9f748d4335108715702ff975b0ee3b8b4c92dfbaf639cb57eb4ea06461d279a1"
+    },
+    "pages/1344107.html": {
+      "canvas_body_sha256": "670c4037cfd767b571e5d9103d59e80ed48bb28d9e49cbcb237383e538d727dd",
+      "canvas_id": 1344107,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "3d018d87ecfbc8dc2960f3123e083fd514d9d16fc88b8240a3a8d883521687ca"
+    },
+    "pages/1344108.html": {
+      "canvas_body_sha256": "c093a14761df48a5270b0cbfc7cce16bd3e1213c020a25ec95cbb98bce97fb91",
+      "canvas_id": 1344108,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "dfc03932013abf2567168a30c73da31298aad2578b4b398c8f5fde0a43e282c6"
+    },
+    "pages/1344109.html": {
+      "canvas_body_sha256": "eabe6087b30a114bb146f7c7b86e208c30015c08973bffbe8155ffaf5b580c46",
+      "canvas_id": 1344109,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "6c6232be88ad2cd225a56ec058b633569644f627f2d87b65d0b436aba893be63"
+    },
+    "pages/1344110.html": {
+      "canvas_body_sha256": "91d453653e0cfb9855ea51a2da3932b35430cfa9ff73233f7696e793b6b63aef",
+      "canvas_id": 1344110,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "a74396090c3075a6b964965d8b554b5c3d2860a9548818a36210b0fa9f4151bc"
+    },
+    "pages/1344111.html": {
+      "canvas_body_sha256": "2823b1b447a25f800f007b2ab86de05a714055ab8fd2c79f71cb081954c00fef",
+      "canvas_id": 1344111,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "fb4ddcb93aba624276f4b1a81cd881818e996167c69c1f6773a7dc138287ee1a"
+    },
+    "pages/1344112.html": {
+      "canvas_body_sha256": "6e3fadcbfc447a6e935c595cd4a3a174a864566964e65d3b4534ce3a3cb005c8",
+      "canvas_id": 1344112,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "dff05b432eac1a19a11c503008473e41e67aee6b445255fa1f71e312b7d1a009"
+    },
+    "pages/1344113.html": {
+      "canvas_body_sha256": "bc9bd1a1ed0ee276f314c6cc4a6f881ac5cc679166f5ae5ab9f41096e10ed34c",
+      "canvas_id": 1344113,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "da3e002f0dd9d5a4aabba28b4b465bc407157e76ad7a9749cbc8f52f78c5a06d"
+    },
+    "pages/1344114.html": {
+      "canvas_body_sha256": "a3cfaed80d7652305cb8716d1e17876e09c476434edcdbdd29201bf27419d24c",
+      "canvas_id": 1344114,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "ea96f03f5f761aec2b39da87ce534adf5b2d6577192e99b0994ac70870a2b5c3"
+    },
+    "pages/1344115.html": {
+      "canvas_body_sha256": "0c60cddf641e9d01ca775cb96cdfd3eb4906be69f9781c1b2816610ca1ccc1a6",
+      "canvas_id": 1344115,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "279fcee638667fb21b2f5c7d45cbeb38ead42af774b0af6d89d8b7a450efa2bc"
+    },
+    "pages/1344116.html": {
+      "canvas_body_sha256": "56823dd93ab4beff566285871a4abc85ba3fc90ad02963beac6e259818cbdb76",
+      "canvas_id": 1344116,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "3707ceb0bab18ba85dadf4721c222d4abeb06106424f48196c1639c4551e6080"
+    },
+    "pages/1344117.html": {
+      "canvas_body_sha256": "34c17ea288a9a8ee985d431d52b9a01efbd5288a94eeb5e985a3e0c44b6294e0",
+      "canvas_id": 1344117,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "d6a2a0b6726d83e77394cd550660731f66221fd21719fa31bbc1aa3e9019355d"
+    },
+    "pages/1344118.html": {
+      "canvas_body_sha256": "59fce6dfd2f91df4fb737835fad240909ee847ccfaeec5622252fee504cdcc62",
+      "canvas_id": 1344118,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "48a02112864e528d51cb82e345e6b9f2ecaeffb547e465928b21436efe71013d"
+    },
+    "pages/1344119.html": {
+      "canvas_body_sha256": "fcfdbb4acf4ca0d535cc398bf0b1779daa80f5ebec1db0f7dfb555abb914c573",
+      "canvas_id": 1344119,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "18c059295ffcdaeba7af7483247162987fd7831c56aba654592c7dbd22ff7256"
+    },
+    "pages/1344120.html": {
+      "canvas_body_sha256": "fd103037ea3c6d736339d8ce2560134f964262dbec3c3167e9a0d851df73c1ae",
+      "canvas_id": 1344120,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "2be993567435f6acd24a6d909b44e858f4742246e1ca9206835338f853bd92c2"
+    },
+    "pages/1344121.html": {
+      "canvas_body_sha256": "6c1d91b290dccb3ea8c8f275d9b96cc9f32b336d973342034ebcb6323002bbdf",
+      "canvas_id": 1344121,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "16e0315d01f90fd37b7d55bc7cb07f4f94da9c49e994afe93c9253e97cd4221e"
+    },
+    "pages/1344122.html": {
+      "canvas_body_sha256": "35c2d7d7508e6d64d84209a4455ad85ec9d6bfc8d462c09f518f8637c195be16",
+      "canvas_id": 1344122,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "8b691f1c32670453838a702b1f746cbc5878aa017c1ae68eefb95a4cf215043f"
+    },
+    "pages/1344123.html": {
+      "canvas_body_sha256": "3b882ec0826b31d67dcfa8bcfa78a01c0aee0fea02926144eee7050dd995e3a1",
+      "canvas_id": 1344123,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "5da8a6835e97701ad16c828cd9afa9109fd2f6061d6658a1d6602eaecb9f45f3"
+    },
+    "pages/1344124.html": {
+      "canvas_body_sha256": "1cd799f8dbebe672f55b7f82431c9a224d4e28e2c10d226bfd0fd303500aa8f4",
+      "canvas_id": 1344124,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "ca29ba90bef6c211eff2b44c2c34fb63d188d4af62414e36552970003626c463"
+    },
+    "pages/1344125.html": {
+      "canvas_body_sha256": "29c019c0300ce5ead779a240c98445a71ce119b7b03c3edebf094b63ae5982e8",
+      "canvas_id": 1344125,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "680797e4707fd5ded1b4c2bda222a3711fdd20079a61fa313cbc83da39ee070c"
+    },
+    "pages/1344126.html": {
+      "canvas_body_sha256": "8b09db130962d7db03b7bdb8c6f0246ee3af807938cb8c09250a1b02a2447bb0",
+      "canvas_id": 1344126,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "d90ff29d47d7d601aeda78fce066a31c04538c711d25db111db406ad623e1941"
+    },
+    "pages/1344127.html": {
+      "canvas_body_sha256": "a7932443bdaa52e8312293314fd1c7af4aeba42a8946450bd0bbb8b117cc8cfe",
+      "canvas_id": 1344127,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "5dce0a64fed8914b2a07917f1401997ee871d023771773672972d82a350cfdc3"
+    },
+    "pages/1344128.html": {
+      "canvas_body_sha256": "b710776cd5f46c34274d8d418b401e135f72bb4958bd1a5ec21b3ae53555ee45",
+      "canvas_id": 1344128,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "4119380d0aa40dd11e23135faccc085ad418561df191027036f5ba62251d96f1"
+    },
+    "pages/1344129.html": {
+      "canvas_body_sha256": "9e52fc7ac82ce27dace729aad98ae44820c962206558590914f59a228dcfa79a",
+      "canvas_id": 1344129,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "a5df0daf44534f26fbc0960e98d0cd9fa09e0a3582c70465f03c8b22c5a76def"
+    },
+    "pages/1344130.html": {
+      "canvas_body_sha256": "9a63badb334a484f0f46044c37c2df74a5d505dbb3339cd45da1b95400f013a1",
+      "canvas_id": 1344130,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "3b7d0fe64ade11b566d852300ae660bb38a9af4c2041f0f03261a71e73f2b499"
+    },
+    "pages/1344131.html": {
+      "canvas_body_sha256": "74c2fb5600b92df1a96cbb3853d3fc26b7223e382068d9f15437f7d509e3107e",
+      "canvas_id": 1344131,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "2468cab98ffb4df29597b388cbb774b3db13e5a660124e608c75785a3daf2a8f"
+    },
+    "pages/1344132.html": {
+      "canvas_body_sha256": "e451a8d8c3b42c3ad754c33c67fcf41603080bbfca0b167639a916af187070f7",
+      "canvas_id": 1344132,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "a384e16c65663da63909f754f536362c2c3647410ebfa492b580ab017250602d"
+    },
+    "pages/1344133.html": {
+      "canvas_body_sha256": "f1f1396d96461a71e271c8a71d37b768773ba89e755cacb80ea9920d5269c1b3",
+      "canvas_id": 1344133,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "e5cb9b9019f6eb851f689580cbe6bdab6fbbda66e849b753f2cfbe3d341525f8"
+    },
+    "pages/1344134.html": {
+      "canvas_body_sha256": "88c8a4674e73b046a1b02abcbb7a1aaf3f8fd0d8ad8812de4012f2944f9893d6",
+      "canvas_id": 1344134,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "e30123d96375ced1abf3b3bb67d0aa4e9b72b72b843eb72c578dcb88a194932e"
+    },
+    "pages/1344135.html": {
+      "canvas_body_sha256": "bd4046fcb87adb77d701eae2ac26d78f1d45030fa4af4dac0e7d2ecf86043e85",
+      "canvas_id": 1344135,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "daed49c2b3ab99511edba4c8dd2c02bf9b2d295943beb8ba38ef5ed955a8edc1"
+    },
+    "pages/1344136.html": {
+      "canvas_body_sha256": "6ec4f08e7253939bea6b8900115592dfdf859035df811e299bca6ac504143d68",
+      "canvas_id": 1344136,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "3b023f00abf23133d5dcb21e188fb41945ee41fe9675d8930afbf6276c04f503"
+    },
+    "pages/1344137.html": {
+      "canvas_body_sha256": "647586c4b0331ccc41e8f86cdf18574f4af31bc63ef12b3a0235141eb5de3099",
+      "canvas_id": 1344137,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "31ff793f4f45d59692b459989166cdbcc12f769d4395101a7c6c489207d2a1fd"
+    },
+    "pages/1344138.html": {
+      "canvas_body_sha256": "6bb0b09567a6f3ed378e023afb959b38fc10b5617949321493d5f6eb118d5355",
+      "canvas_id": 1344138,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "9ff4ae13830d67919b1dd2db04a9e4ba6ac1aa58c4551607e002d59f4375237b"
+    },
+    "pages/1344139.html": {
+      "canvas_body_sha256": "4ae36eb14630589a7601f0e9e0e71c98dc5af1a395d6299b50af79d38f094916",
+      "canvas_id": 1344139,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "0912effd19b9c50be4bf4d09e6ae0a883afcd39e36855286ded73eb4225bde62"
+    },
+    "pages/1344140.html": {
+      "canvas_body_sha256": "edf4fa4d63673925765133c2032b3908b60d1e19aeb64886ad80ce0d21a5661a",
+      "canvas_id": 1344140,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "2ad03632ac1b61ff94f581de221eefa432a2fa0ec88037b10c87be367bf6c05c"
+    },
+    "pages/1344141.html": {
+      "canvas_body_sha256": "aa31596b8c4821fd4325ce81bd24925c2fd727b9fc60d19ea938abae55b26d1e",
+      "canvas_id": 1344141,
+      "kind": "linked_page",
+      "public_state": "public",
+      "sha256": "35eae4e81709c471a2f20318c0a962cde7f1af2947741e9c39f86e58b0a01cf9"
+    },
     "parity.html": {
       "kind": "parity",
-      "sha256": "8b552d4322c8ad33cde9403c92339252ae98ffe3e0845d9e424ee28c1caa0184"
+      "sha256": "9f947883908c3c7dfaff5e8aaef331bb73e4ed80eea2bce6e5dae984e7d0cf62"
     }
   },
   "schema_version": 1,
-  "site_sha256": "e0c214bfe6c96a02b119b403e509c8f52644758d07818bad3886d0ceb722d959",
-  "snapshot_sha256": "07e93c67be064c533e0669c5d66114ea50118a8c854a8bfc7d270c1068ba39d4",
+  "site_sha256": "ae1e8dc765b45e22f1e85a0ed0063c55fea7bf5f09c93899985d361e3b17f032",
+  "snapshot_sha256": "77ab56b7d6c3a1eb9342873f8de30fffc6ee6b39b50c4741235fa2821433037a",
   "unresolved": []
 }

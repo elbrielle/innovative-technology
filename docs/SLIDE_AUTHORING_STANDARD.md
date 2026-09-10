@@ -19,6 +19,20 @@ reveal an explanation, model a tool, or support work. Record useful pairings,
 animation timing, examples, videos, teacher moves, and protected content before
 removing visual clutter. A crowded original can contain an excellent lesson.
 
+Simplifying a workflow does not authorize simplifying away the approved visual
+system. Preserve useful colored word-bank boxes, bold borders, task icons,
+buttons, and visual grouping when revising instructions. In Lesson 2, the
+yellow boxed word bank and cyan/pink 📏/⭕ task panels support recognition;
+replacing them with plain text and pale rounded cards was an owner-rejected
+regression. General advice to limit emojis does not override these purposeful,
+owner-approved cues. Compare the full before/after page, not just its wording.
+For a submission-only change, start from the original page and edit only the
+submission instructions and directly dependent settings. Preserve visible
+English/Spanish video embeds in their existing locations, learning goals,
+vocabulary explanations, examples, and other teaching supports. Moving a video
+into collapsed help or to the bottom changes the teaching route even if its URL
+survives. Verify what students can actually see, not merely that a link exists.
+
 Write a short sequence map before producing a deck. For each segment, name:
 
 | Source teaching move | Visible example | Student action | Teacher action | Keep, clarify, or change and why |
@@ -113,11 +127,12 @@ precise facilitator checklist. Do not replace the requested live demonstration
 with a long sequence of isolated click slides. Show the app context and the
 few skills students will watch. The guide must specify what to open, what to
 select/change, what students should notice, and how the output reaches the
-actual worksheet and submission route.
+required submission route.
 
 Lesson 2's checklist covers lines, curves, duplication, spacing, circle size,
-fill, borders, alignment, front/back layers, Undo, PNG export, insertion into
-the worksheet, and Canvas submission. Use the current school account and name
+fill, borders, alignment, front/back layers, Undo, PNG export, file naming,
+and direct Canvas uploads with comment reflections. Since the owner’s September
+10 revision, a worksheet is a teacher-selected alternative only. Use the current school account and name
 object-dependent controls accurately. Distinguish **Canva** the design tool
 from **Canvas** the learning platform.
 
@@ -147,6 +162,10 @@ for the whole block, including a long 45-minute work period. It must show:
 Do not make the teacher cycle among “Your task,” “You are done,” and
 “Submission.” A tiny screenshot is a recognition cue, not a replacement for
 readable directions. Verify screenshot and text against the current assignment.
+Keep one clear default submission method on the student page and work slide.
+Put teacher-selected alternatives in the guide, with instructions to substitute
+one method for the other. Remove stale and duplicate buttons when the default
+changes; update filenames, submission settings, notes, and DOL together.
 Preserve the existing assessment rather than adding a redundant exit ticket.
 
 **Lesson 1's final work slide is protected.** Preserve its slide XML,
@@ -179,7 +198,7 @@ review record, with slide numbers or other concrete evidence:
 5. Can students work and submit while one complete work slide remains up?
 6. Are actual examples and screenshots readable at projection size?
 7. Have unnecessary discussion stops, filler, and planner language been removed?
-8. Are task, guide, notes, exemplars, worksheet, and submission route consistent?
+8. Are task, guide, notes, exemplars, any required worksheet, and submission route consistent?
 9. Are sources, image credits, descriptive alternatives, and non-color cues present?
 10. Were the final PowerPoint and native Google delivery checked, with protected
     content preserved and any untested playback stated honestly?

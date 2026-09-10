@@ -6,6 +6,17 @@ Elisha's classroom feedback, the initial deck notes, the approved PowerPoints
 and speaker notes, their rendered slides, and the release review records. It
 does not treat the old Nano Banana slide decoration as the target style.
 
+## Subsequent classroom correction: September 10
+
+The sequence analysis below describes the September 9 exemplars. After teaching,
+the owner replaced Lesson 2's required worksheet with two directly uploaded PNGs
+and two reflection sentences in Canvas submission comments. Competing old/new
+Google Doc buttons confused students and added scrolling. The worksheet is now
+a teacher-selected alternative only. Use the current exemplar manifest and
+[September 10 release record](../reviews/lesson2-direct-image-submission-2026-09-10.md)
+for operative submission instructions. Preserve the successful teaching flow;
+do not restore the historical worksheet requirement from this retrospective.
+
 ## What failed
 
 The first pass made the slides cleaner but treated redesign too much as

@@ -18,11 +18,12 @@
     },
     {
       "key": "lesson2",
-      "path_from_repository_root": "assets/canvas/3288893-02-Canva-Live-Teach-Release.pptx",
-      "sha256": "17b597278098fa04abd4ebf7210eb1f73a2cf51c5c8d37813b5bdfd75ce31345",
+      "path_from_repository_root": "assets/canvas/3289914-02-Canva-Live-Teach-Release.pptx",
+      "sha256": "6ab84545f14d6d345f4268e6aaa8b25fe35da7711eb12e28af5783195ec55514",
       "slides": 10,
       "native_google_slides_copy": "https://docs.google.com/presentation/d/1fKliAgkKHJLMD1BSTK-X0JRAp5CIRBGQq7h2R8lnpUY/copy",
-      "pinned_repository_commit": "e895d4dbf3bb99d865a723c5f3ba4ac444413021"
+      "release_record": "docs/reviews/lesson2-direct-image-submission-2026-09-10.md",
+      "history_recovery": "Use git log --all -- this path, then git show REVISION:path; verify SHA-256 before use."
     }
   ],
   "preview_files": [
@@ -58,8 +59,19 @@
     },
     {
       "path": "lesson2-work-slide.png",
-      "sha256": "939ee704d8e73daae36cea95b8f1c10c81b85d20bff751681055a8ddb3e07819",
+      "sha256": "cfd9912972d75ceec9bbb4b50fbbec0d7ba94d9f017057780ce379e1c65adde1",
       "engine": "Google Slides PDF export"
+    }
+  ],
+  "historical_artifacts": [
+    {
+      "key": "lesson2",
+      "path_from_repository_root": "assets/canvas/3288893-02-Canva-Live-Teach-Release.pptx",
+      "sha256": "17b597278098fa04abd4ebf7210eb1f73a2cf51c5c8d37813b5bdfd75ce31345",
+      "slides": 10,
+      "native_google_slides_copy": "https://docs.google.com/presentation/d/1fKliAgkKHJLMD1BSTK-X0JRAp5CIRBGQq7h2R8lnpUY/copy",
+      "pinned_repository_commit": "e895d4dbf3bb99d865a723c5f3ba4ac444413021",
+      "retired_reason": "September 10 owner-directed change to two PNG uploads and comment reflections; teaching sequence retained."
     }
   ]
 }
