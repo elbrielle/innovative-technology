@@ -10,7 +10,7 @@
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "7894b2f546516b5f3151be0692062d04a04a2525e47d95a3ee059a61f1c8246e"
+      "sha256": "9eb9f40fb01abf7c84a1cb3ba50c48448741f2b3b5627607b5dece1a7b3cbc60"
     },
     "index.html": {
       "kind": "index",
@@ -101,11 +101,11 @@
       "sha256": "c283382347875b6d326c5b51291e353a2e02a28d893eabca3da1c91f52a078af"
     },
     "lessons/2633994.html": {
-      "canvas_body_sha256": "03a3582e96a277f63ddbe0c9b908b178bac1a742cb967a7b7b82631ace69a4cb",
+      "canvas_body_sha256": "87363a8efabf09c96b6c5622cce32eb5bbacafca21b6efbb6526239e68982d9f",
       "canvas_id": 2633994,
       "kind": "item",
       "public_state": "public",
-      "sha256": "34059f8cfe4a7bb46cd65c08bec9f46a3b27cbfe433edda824befd3808f87ea4"
+      "sha256": "e1bc008f07fc4fa772d6ebcab9820c753b9d8ef66b2ba9011a0c1b3f1dfca331"
     },
     "lessons/2633995.html": {
       "canvas_body_sha256": "7cb268ab31db3915d8686644b8752a62ed596b58003e74865773999fd66f8275",
@@ -206,11 +206,11 @@
       "sha256": "2ea154908e21fd2b96413dad2188084b4c5fbd6bab599ce928c3d8dc02059a0d"
     },
     "lessons/2634011.html": {
-      "canvas_body_sha256": "b768ac2d4a9a7cef432c97c38df898419389208c3269c6a455d138c0113d3a5d",
+      "canvas_body_sha256": "0944e85475ea87ce9a77fef7e2a1641288c1cbeeda9ec8406a2c36bee08108ff",
       "canvas_id": 2634011,
       "kind": "item",
       "public_state": "public",
-      "sha256": "7247d15c1e7623fc6ccf721efacbb343ee443ff68be330141944b42b9da5fdfa"
+      "sha256": "d995ad8b140bb8bf3f8f75ec0a2a8568d4d4539a472d2ebc3f547a0d26208cfc"
     },
     "lessons/2634012.html": {
       "canvas_body_sha256": "cf78802c7cd68b6457ea2c52508c3d5f4f5f2e20e933263be15da8aa7f42c876",
@@ -3779,11 +3779,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "9f947883908c3c7dfaff5e8aaef331bb73e4ed80eea2bce6e5dae984e7d0cf62"
+      "sha256": "752d0039f35e628931bd4b92cef7a68295c7530f926fb7835ade29b2ef21ecad"
     }
   },
   "schema_version": 1,
-  "site_sha256": "ae1e8dc765b45e22f1e85a0ed0063c55fea7bf5f09c93899985d361e3b17f032",
-  "snapshot_sha256": "77ab56b7d6c3a1eb9342873f8de30fffc6ee6b39b50c4741235fa2821433037a",
+  "site_sha256": "8dd4f7f742931c138fff63960beba33953b6e5201142c19c5287fd266a550b48",
+  "snapshot_sha256": "620509aebd5b0c6f021281eda50655348c28a5f5a4419eacf4f051f1f03191b3",
   "unresolved": []
 }
