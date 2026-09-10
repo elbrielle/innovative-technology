@@ -4,6 +4,11 @@ Run this workflow before publishing a new or revised deck to Canvas, Drive,
 or Commons. Keep the teacher's PowerPoint download and native Google Slides
 copy options.
 
+For teaching content and design, first follow the
+[slide authoring standard](SLIDE_AUTHORING_STANDARD.md) and its
+[approved exemplars](exemplars/graphic-design/README.md). Storage optimization
+must preserve the teaching sequence and interactions, not merely the pixels.
+
 ## Preserve the lesson
 
 Work on a copy and archive the original outside Canvas and outside the public

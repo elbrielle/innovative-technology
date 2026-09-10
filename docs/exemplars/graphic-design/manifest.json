@@ -1,0 +1,65 @@
+{
+  "status": "Owner-designated project teaching exemplars on 2026-09-09",
+  "scope": "Authoring references, not permission to overwrite live curriculum or distribute to teacher courses",
+  "artifacts": [
+    {
+      "key": "lesson1",
+      "path_from_repository_root": "assets/canvas/3289733-01-Pop-Art-Teaching-Deck.pptx",
+      "sha256": "177a12c089eab2d1ae2bca3a9d89254884cb0456c62defcc504a164f4550b101",
+      "slides": 17,
+      "native_google_slides_copy": "https://docs.google.com/presentation/d/1TeWTholt9fl-ahCVBv0U3Q9vdA9P9RbwpLt-9xZE9Ew/copy",
+      "pinned_repository_commit": "e895d4dbf3bb99d865a723c5f3ba4ac444413021",
+      "protected_parts_sha256": {
+        "ppt/slides/slide17.xml": "902dfc66fb687e28db7cacbe25e31b2f0d97d013a86d639cd32c1497b5cbf4fb",
+        "ppt/slides/_rels/slide17.xml.rels": "6a399c7d8d26bd14c263806b1f291e9023a24b989cae29e236adb8d38ac2fddc",
+        "ppt/notesSlides/notesSlide17.xml": "969e353c2016707d2effa47322edc8bea62e85ce2c52bc63e1400312861aa191",
+        "ppt/media/preserved-work-slide.png": "9d45db15d636ac6b9ae28435eabb69b07dbf21f9d68b926eb3e6a247fc7c2a47"
+      }
+    },
+    {
+      "key": "lesson2",
+      "path_from_repository_root": "assets/canvas/3288893-02-Canva-Live-Teach-Release.pptx",
+      "sha256": "17b597278098fa04abd4ebf7210eb1f73a2cf51c5c8d37813b5bdfd75ce31345",
+      "slides": 10,
+      "native_google_slides_copy": "https://docs.google.com/presentation/d/1fKliAgkKHJLMD1BSTK-X0JRAp5CIRBGQq7h2R8lnpUY/copy",
+      "pinned_repository_commit": "e895d4dbf3bb99d865a723c5f3ba4ac444413021"
+    }
+  ],
+  "preview_files": [
+    {
+      "path": "lesson1-repetition.png",
+      "sha256": "7f34e2078ad31ff417621b4687b9de2eca4c662633f5064479e31579ec7f1dd6",
+      "engine": "artifact-tool"
+    },
+    {
+      "path": "lesson1-flat-color.png",
+      "sha256": "a9c02bfbd8318e39a8fca87fabfb030407884aaa5e0a8a341c0e80184a55b877",
+      "engine": "artifact-tool"
+    },
+    {
+      "path": "lesson1-protected-work-slide.png",
+      "sha256": "0dfc67ca6f9ca725ec8a5189863e3f014e4fa8e788119e0a1363f8b813efb3a0",
+      "engine": "artifact-tool"
+    },
+    {
+      "path": "lesson2-lines-question.png",
+      "sha256": "9dd92db40bcd624091ae41cff7655563ab59971f0e299d8b9136e6075af7130e",
+      "engine": "artifact-tool"
+    },
+    {
+      "path": "lesson2-lines-reveal.png",
+      "sha256": "998c19609e78b42165b0f7265c01e646bce45c9cd9e5d740453f9a04344655e0",
+      "engine": "artifact-tool"
+    },
+    {
+      "path": "lesson2-live-demo.png",
+      "sha256": "8fd4c518b85c7f6506e25a8972e546618c650829df0b465840ede52cbe0c47f6",
+      "engine": "Google Slides PDF export"
+    },
+    {
+      "path": "lesson2-work-slide.png",
+      "sha256": "939ee704d8e73daae36cea95b8f1c10c81b85d20bff751681055a8ddb3e07819",
+      "engine": "Google Slides PDF export"
+    }
+  ]
+}

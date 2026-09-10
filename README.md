@@ -81,4 +81,10 @@ Instructional design by Elisha Lucero. Third-party images, videos, tools, and so
 
 ## PowerPoint release quality
 
+Start deck creation with the binding [teacher-led slide authoring standard](docs/SLIDE_AUTHORING_STANDARD.md),
+the [Lesson 1 and 2 retrospective](docs/retrospectives/graphic-design-lessons-1-and-2.md),
+and the [annotated approved exemplars](docs/exemplars/graphic-design/README.md).
+These preserve the owner's teaching sequence, visual comparisons and reveals,
+live demonstration, and complete work-time screen.
+
 Follow [the PowerPoint storage and release workflow](docs/POWERPOINT_RELEASE_WORKFLOW.md) before distributing new or revised decks. It covers projected image quality, conservative compression, protected slides, and retiring verified obsolete source files.

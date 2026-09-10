@@ -1,5 +1,27 @@
 # VILS agent contract
 
+## Teaching decks and facilitator guides
+
+Before creating, revising, or reviewing any teaching deck or its facilitator
+guide, read `docs/SLIDE_AUTHORING_STANDARD.md` and the linked retrospective and
+exemplar guide. The owner-approved revised Graphic Design Lessons 1 and 2 are
+the project exemplars; inspect the relevant slides and speaker notes, not only
+their covers or filenames. `docs/exemplars/graphic-design/manifest.json` pins
+the approved versions and protected Pop Art work slide.
+
+Preserve the source's successful teaching sequence while improving its visual
+clarity. Concepts precede application; paired examples stay together and reveal
+answers after students respond; live demos have an executable teacher checklist;
+one complete work slide stays projected. Use real, readable examples and UI,
+selective discussion, and plain student language. Keep new content editable.
+The explicitly protected Pop Art final slide remains byte-identical unless the
+user specifically requests a change. Initial Nano Banana/reference materials
+and superseded first drafts are not the approved design standard.
+
+For changed instructional deliverables, include the standard's ten teaching
+checks in the existing four-lens review record. Do not turn these exemplars
+into a fixed slide count, universal theme, or extra grading requirements.
+
 ## Smart Solutions fleet parity
 
 When the user says the Verizon Smart Solutions source is **good**, **approved**,

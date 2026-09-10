@@ -105,6 +105,20 @@ Create or update one file in `docs/reviews/` for the pull request. It must inclu
 - fixes applied and verification evidence;
 - final four-lens rereview decisions.
 
+For teaching decks and their companion guides, also follow
+[`SLIDE_AUTHORING_STANDARD.md`](SLIDE_AUTHORING_STANDARD.md). The review record
+must answer its ten teaching checks with concrete slide/guide evidence. Compare
+the source teaching moves with the new sequence, inspect paired/revealed states,
+and rehearse the demo-to-work transition and the persistent work slide. Use the
+[approved Lesson 1 and 2 exemplars](exemplars/graphic-design/README.md) as teaching
+references, not a mandatory visual theme or slide count. Do not claim independent
+review or actual delivery playback when only a single review or static render
+occurred.
+
+Use the headings `## Reviewed scope`, `## Independent findings`,
+`## Adversarial consensus`, `## Merge gate`, and `## Fixes and final rereview`.
+The existing verifier requires these exact headings as well as the decisions.
+
 The record must contain these machine-readable lines:
 
 ```text
@@ -120,4 +134,3 @@ The repository review check fails closed when instructional files change without
 ## Merge versus publication
 
 Merge gates prove the reviewed source is coherent and ready to stage. Publication may still require managed-device rehearsal, district app approval, teacher timing, Student View, or a small student pilot. Record those separately; do not weaken the merge review and do not claim a pilot occurred when it did not.
-
