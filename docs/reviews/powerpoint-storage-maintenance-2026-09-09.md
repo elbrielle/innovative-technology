@@ -6,7 +6,7 @@ Student experience: GO
 Design and language: GO
 Consensus: GO
 
-## Scope and identities
+## Reviewed scope
 
 Source-only asset maintenance: 18 PowerPoint packages, 498 slides, 68,645,444 bytes saved. The user also authorized archiving/removing unused older source files: 22 verified backups and removals, 305,694,216 bytes. No instructional rewriting, assessment changes, teacher-course deletion, or publication-state changes are included.
 
@@ -35,7 +35,7 @@ Final release packages and SHA-256 identities:
 | ThingLink_360_and_Visitor_Decisions_Teacher_Deck_2027.pptx | `1faf36095b02d2516897553a07c4cce0567312d450bb42fc5c342e0ae5c6f526` |
 | ThingLink_Welcome_Mission_Teacher_Deck_2027.pptx | `17a21b658ac3241b2b2d902a2078051e1b037ec9562fc984fdefd36c9d2b27c7` |
 
-## Independent findings and consensus
+## Independent findings
 
 Four independent agents reviewed teacher implementation, district curriculum, student experience, and design/language. The first design review held the broader experiment because general JPEG conversion could alter rasterized text and screenshots. That experiment was discarded. The final implementation requires an exact media-part allowlist and keeps screenshots, line art, and whole-slide instructional images lossless.
 
@@ -44,9 +44,11 @@ Four independent agents reviewed teacher implementation, district curriculum, st
 - Student experience: final GO. All 18 hash pairs and 1,510 instructional/notes/font parts checked; 426 optimized image entries decoded. Only the named soup artwork differs. Its two slide appearances remain legible and useful for novice, multilingual, and confident learners.
 - Design and language: final GO. Independently checked 546 media mappings, preserved dimensions and protected parts, inspected both changed artwork appearances at 3840 × 2160 with unscaled detail crops, and inspected all 17 pages exported by the actual Google Slides import.
 
+## Adversarial consensus
+
 The challenge round agreed that pixel metrics alone do not justify changing instructional text images. Lossless preservation for those images plus focused 4K/native inspection resolves the original HOLD. No evidence-backed HOLD remains. Native PowerPoint animation rehearsal and a physical projector were not tested; unchanged timing XML and decoded media are the preservation evidence, not a claim of hardware testing.
 
-## Verification
+## Fixes and final rereview
 
 All 36 final before/after render jobs passed, 498 slides per version. Automated comparison found 496 pixel-identical rendered slides; only Pop Art slides 1 and 5 differ (about 59.7/59.6 dB). This is a full computational comparison, not a claim that a human inspected 498 slides. Both differing slides received direct 4K review; all 17 native Google Pop Art pages were visually inspected.
 
@@ -63,3 +65,7 @@ Canvas replacement downloads were fetched and hash-verified; original hidden/loc
 Fresh post-maintenance audit: 220 pages, 248 assignments, 3 discussions, 21 quizzes/100 questions, 34 modules, syllabus, 72 Office/HTML files, and 40 PDFs scanned. No live references remain to any of the 22 removed or 18 replaced file IDs; all 46 remaining PowerPoints are referenced. Course-file inventory decreased from 332 to 310 files and by 374,339,660 bytes.
 
 Public mirror verification passed for 34 modules, 510 items, 207 public files, and 517 HTML pages. The responsive runtime gate passed all 482 non-redirect pages at 390 px, 50 desktop/phone screenshots, and 25 enlarged-text/reduced-motion samples. Representative index, about/status, module, protected notice, visual lesson, dense lesson, assignment, and download/video routes were inspected. Twelve established raw Drive release files were replaced in place; native Google masters and copy URLs were retained.
+
+## Merge gate
+
+GO for this source-maintenance release. All four final lens decisions are GO; protected content, final package hashes, rendered comparisons, live-source links, source/site parity, and responsive runtime checks passed. Commons processing and GitHub Pages deployment are tracked separately from these review conclusions. No Irving destination writes are included.
