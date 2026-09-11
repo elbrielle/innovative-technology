@@ -10,7 +10,7 @@
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "9eb9f40fb01abf7c84a1cb3ba50c48448741f2b3b5627607b5dece1a7b3cbc60"
+      "sha256": "86f65ef67ece2e702882754219f492a21b1df6b7d5dbfa631083e833df7f0d32"
     },
     "index.html": {
       "kind": "index",
@@ -3118,11 +3118,11 @@
       "sha256": "2fded38225e091be628fd3cfeedc98ce756d5338955d3d9afcbf5d9dde564adb"
     },
     "lessons/2675685.html": {
-      "canvas_body_sha256": "593341747db11ea7bc31ed20fb51c8705d77b2bd6a07c480ce7a1f755d7df46e",
+      "canvas_body_sha256": "413fb9cd4c8c3cd3cc7fcf0fbf29990abacb62fb1b397fbe76f4540c774f68f1",
       "canvas_id": 2675685,
       "kind": "item",
       "public_state": "public",
-      "sha256": "2b96c2a4c1d8e18952520264841c9c9d82caf743f8efb0c83ecba7c47e82f046"
+      "sha256": "112ef471dbaa5d0fe0e7eb2ef83ef630da0210a6c1384b3b99005725e40bddf1"
     },
     "lessons/2675686.html": {
       "canvas_body_sha256": "0c7546d8b82815af2ce600ff2b61db20311fcb8143df2facb4cbb1b053dac98b",
@@ -3132,11 +3132,11 @@
       "sha256": "bed0378eff7c71942806b04929eb3b32bcb5da8c894ec3ec7a101f29726a1038"
     },
     "lessons/2675687.html": {
-      "canvas_body_sha256": "f197451b5099c0bd78f5f679747dc16a1eee1a26f3cb4a1383cd06b58a76c3f6",
+      "canvas_body_sha256": "7c62541b965cef943ebd1cf8a3fe01032cbdd23d958945e0ae363ea8f4bfd0f2",
       "canvas_id": 2675687,
       "kind": "item",
       "public_state": "public",
-      "sha256": "393d81e7b968c2cc78479a9fd7c8919c3ed1039d4d73e4312b20394acefba975"
+      "sha256": "fe82d979c8ba957911591e60c5110698695da1b6314df3fa859e7f46d74d4007"
     },
     "lessons/augmented-reality-with-mergecube-activity-lesson-1-the-basic.html": {
       "canvas_id": 2634252,
@@ -3779,11 +3779,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "752d0039f35e628931bd4b92cef7a68295c7530f926fb7835ade29b2ef21ecad"
+      "sha256": "9036d147acb8bbb27b425c9d573b5414ba3fb16adbf9a204906f394470191def"
     }
   },
   "schema_version": 1,
-  "site_sha256": "8dd4f7f742931c138fff63960beba33953b6e5201142c19c5287fd266a550b48",
-  "snapshot_sha256": "620509aebd5b0c6f021281eda50655348c28a5f5a4419eacf4f051f1f03191b3",
+  "site_sha256": "f0fbfa288c7a5782d08f3b9c0fd5386ec3c542fde24d893703fa8386e438d920",
+  "snapshot_sha256": "52f5d9255ac99b247173f487e04f0dde413c3c87827ea307e3d784fd20d32289",
   "unresolved": []
 }
