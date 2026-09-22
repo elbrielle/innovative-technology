@@ -5,12 +5,12 @@
     "linked_pages": 42,
     "modules": 34,
     "protected_items": 1,
-    "public_files": 299
+    "public_files": 300
   },
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "7166adb5ce7937a87f926f2834906d48cc32afee7a07f97562d215949831753d"
+      "sha256": "8217ac925187e56fad558428df9f584bc9edac570a70dfbccd54750b85f0aa0d"
     },
     "index.html": {
       "kind": "index",
@@ -304,11 +304,11 @@
       "sha256": "7dc790951bc85ebfef761cd6efe2974b229a65cf5d35231559ea5cfd7cfaf16f"
     },
     "lessons/2634026.html": {
-      "canvas_body_sha256": "b2e39ff8f3b93890662e87ce09ce4fd0faf4fd7f2845e565dc645b749c096b1a",
+      "canvas_body_sha256": "2ac809538178481e00be059980fdc318545892526e9a793cc383e642f8b72ffb",
       "canvas_id": 2634026,
       "kind": "item",
       "public_state": "public",
-      "sha256": "b728addd8892e80dd1fb13f50f8f1985643918df2992fc509154e32a54a8d85d"
+      "sha256": "84898edb5d66d9b7df7b1698e133c0f40e4f194108640e41f128e6f3a6d4771e"
     },
     "lessons/2634028.html": {
       "canvas_body_sha256": "3d8c872f16ed68f68c115b1f23d9e48ef7a9e431ce3946bd3c8b3e5f6e2c4a49",
@@ -3779,11 +3779,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "6ca72a932472defce72ce4a7de809a78fd94c54a25742d0a0c39ca168a650b19"
+      "sha256": "58d1aa85a370e7106b36fea4f44c32a6b1dcbfaa7d41c6e778b04d194931eabf"
     }
   },
   "schema_version": 1,
-  "site_sha256": "9c1272e7321d7428200b6340839ab487eeda08d258f62cc38551934f7f28c701",
-  "snapshot_sha256": "f1080209713e080c19b7f9dcd55b77ac521a20c76468afe50e02e022e3f0e063",
+  "site_sha256": "17e20d35fc222168559aa51d44261a5343cee3313a8ed12a911136a2d34fa059",
+  "snapshot_sha256": "0ad39dab5602b44c770bdec0cd296379b1d3c05e4ca56069c526916534edfc29",
   "unresolved": []
 }
