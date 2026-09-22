@@ -10,7 +10,7 @@ Consensus: GO
 
 On September 22, 2026 Elisha asked for the Lesson 5 (Advanced Shapes and Colors; facilitator-guide Lesson 6) deck to keep its sequence but become editable, add a real Combo app screenshot, name the export file `LastName-FirstName-BandLogo.png`, and change the reflection so students name the compound operation they chose and say what it does.
 
-Artifacts: `Graphic Design Teaching Decks/output/Lesson 5 revision/05-Band-Logo-Live-Teach-Revised.pptx` (21 slides, SHA-256 `8ee355c0c8eef138142dc80aec5529f97b5dd7d1a97db8193c1a3cd0b31ada06`), `Teacher notes.md`, `Slide previews/`. Build sources in `Graphic Design Teaching Decks/.build/lesson5-revision/`. The Verizon assignment (1183374) gained the filename in the export and upload steps of both tabs, the reflection stem "I used ______ (union, subtract, intersect, or exclude). It ______ my two shapes, which made ______ in my logo," and a word bank that defines each operation in plain language. Points, submission types, rubric, and publication are unchanged.
+Artifacts: `Graphic Design Teaching Decks/output/Lesson 5 revision/05-Band-Logo-Live-Teach-Release.pptx` (21 slides, SHA-256 `7b1f0f4ae629550549d8b20a4024e9558c48c60052a80735ded5708375fc3932`, Verizon file 3306218; interim uploads 3306215 and 3306217 are unreferenced), `Teacher notes.md`, `Slide previews/`. Build sources in `Graphic Design Teaching Decks/.build/lesson5-revision/`. The Verizon assignment (1183374) gained the filename in the export and upload steps of both tabs, the reflection stem "I used ______ (union, subtract, intersect, or exclude). It ______ my two shapes, which made ______ in my logo," and a word bank that defines each operation in plain language. After the owner's follow-up, slide 5 and the assignment's How to use the Combo app block (both tabs) show the Combo app icon (Verizon file 3306216) with the verified route: Apps, search Combo, click the icon, build two shapes in Combo's Preview, choose an action, Add to design. The earlier steps that told students to select shapes on the Canva page first were wrong for this app and are replaced. Points, submission types, rubric, and publication are unchanged.
 
 Single agent, four lenses.
 
@@ -35,4 +35,4 @@ GO. Source deck, Drive masters, Verizon file, and assignment are released; the g
 
 ## Fixes and final rereview
 
-Exclude diagram resized, work-slide examples cropped to the Combo Preview and the Canvas banner. Final: all four lenses GO, Consensus GO. PowerPoint desktop playback and native Google Slides playback of the reveals were not tested.
+Exclude diagram resized, work-slide examples cropped to the Combo Preview and the Canvas banner, Combo icon added to slide 5 with the four-step route. Final: all four lenses GO, Consensus GO. PowerPoint desktop playback and native Google Slides playback of the reveals were not tested.
