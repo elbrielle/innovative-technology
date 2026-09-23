@@ -5,12 +5,12 @@
     "linked_pages": 42,
     "modules": 34,
     "protected_items": 1,
-    "public_files": 300
+    "public_files": 303
   },
   "pages": {
     "about.html": {
       "kind": "about",
-      "sha256": "8217ac925187e56fad558428df9f584bc9edac570a70dfbccd54750b85f0aa0d"
+      "sha256": "3d1b1902c5faaf3afb06a628abd0d5f87fc2c0d290208b0773099add3ad80c90"
     },
     "index.html": {
       "kind": "index",
@@ -3666,11 +3666,11 @@
       "sha256": "680797e4707fd5ded1b4c2bda222a3711fdd20079a61fa313cbc83da39ee070c"
     },
     "pages/1344126.html": {
-      "canvas_body_sha256": "8b09db130962d7db03b7bdb8c6f0246ee3af807938cb8c09250a1b02a2447bb0",
+      "canvas_body_sha256": "2794e052f67daaf844f958acc8d59cf3913b64da50842923dbd6dd085dcb8606",
       "canvas_id": 1344126,
       "kind": "linked_page",
       "public_state": "public",
-      "sha256": "d90ff29d47d7d601aeda78fce066a31c04538c711d25db111db406ad623e1941"
+      "sha256": "f5ae7bd11cf13b6b598dd71399d7fc6eb5c686c9fb5df7f29a70e99208e23497"
     },
     "pages/1344127.html": {
       "canvas_body_sha256": "a7932443bdaa52e8312293314fd1c7af4aeba42a8946450bd0bbb8b117cc8cfe",
@@ -3757,11 +3757,11 @@
       "sha256": "9ff4ae13830d67919b1dd2db04a9e4ba6ac1aa58c4551607e002d59f4375237b"
     },
     "pages/1344139.html": {
-      "canvas_body_sha256": "4ae36eb14630589a7601f0e9e0e71c98dc5af1a395d6299b50af79d38f094916",
+      "canvas_body_sha256": "1610e05def83b8ef499b7d2a11b7bbd0e6e38ec1146dd9376467719434a0bd19",
       "canvas_id": 1344139,
       "kind": "linked_page",
       "public_state": "public",
-      "sha256": "0912effd19b9c50be4bf4d09e6ae0a883afcd39e36855286ded73eb4225bde62"
+      "sha256": "432f7beea926bad0f30ece0eca41ec34ac56a103d652c14541185b80c2edab91"
     },
     "pages/1344140.html": {
       "canvas_body_sha256": "edf4fa4d63673925765133c2032b3908b60d1e19aeb64886ad80ce0d21a5661a",
@@ -3779,11 +3779,11 @@
     },
     "parity.html": {
       "kind": "parity",
-      "sha256": "58d1aa85a370e7106b36fea4f44c32a6b1dcbfaa7d41c6e778b04d194931eabf"
+      "sha256": "69070f52821e8a31ddbce0f3676a7178abed97b55f39fd5683ec1245b5145e99"
     }
   },
   "schema_version": 1,
-  "site_sha256": "17e20d35fc222168559aa51d44261a5343cee3313a8ed12a911136a2d34fa059",
-  "snapshot_sha256": "0ad39dab5602b44c770bdec0cd296379b1d3c05e4ca56069c526916534edfc29",
+  "site_sha256": "3d068a2e132507f43afcd9fba4dca666eeb1c8d4f46e16f02a82769801139294",
+  "snapshot_sha256": "25ee4e9d8fa525577d0e35d03879780bf1d6e570a66c96112c8904939cec6d51",
   "unresolved": []
 }
