@@ -30,3 +30,5 @@ Consensus: GO
 ## Fixes and final rereview
 
 The three new Verizon files were downloaded after upload and matched the owner-supplied bytes by SHA-256. Both source event pages were read back with the new links; their identities and settings were preserved. The local three-page summary was rendered and checked for the absent high-school page. Destination changes require separately reviewed, hash-pinned course plans and explicit approval under the fleet contract.
+
+The user’s exact source approval was recorded in the September 23 release manifest after the initial export. A second export changed generated timestamps only; its semantic source hash remained `25ee4e9d8fa525577d0e35d03879780bf1d6e570a66c96112c8904939cec6d51`. The revised release contains the same two event pages and three standalone forms.
