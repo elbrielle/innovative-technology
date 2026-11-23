@@ -29,7 +29,7 @@ SNAPSHOT = DATA / "course-snapshot.json"
 POLICY_PATH = DATA / "publication-policy.json"
 COURSE_ID = env_course_id()
 FILE_ID_RE = re.compile(
-    r"(?:/files/|files%2[fF]|/api/v1/courses/\d+/files/|/media_attachments_iframe/)(\d+)", re.I
+    r"/(?:((?:api/v1/)?courses/\d+/)?files|media_attachments_iframe)/(\d+)(?:/.*)?", re.I
 )
 
 
@@ -56,9 +56,27 @@ def exact_projection(row: dict, keys: tuple[str, ...]) -> dict:
     return {key: row.get(key) for key in keys}
 
 
-def referenced_file_ids(body: str) -> list[int]:
-    decoded = html.unescape(body or "")
-    return sorted({int(value) for value in FILE_ID_RE.findall(decoded)})
+def referenced_file_ids(body: str, canvas_host: str = "https://verizoninnovativelearning.instructure.com") -> list[int]:
+    """Collect actual Canvas resource URLs, not external paths or prose."""
+    origin = urlparse(canvas_host).netloc.lower()
+    ids = set()
+
+    class FileLinks(HTMLParser):
+        def handle_starttag(self, tag, attrs):
+            for attr, value in attrs:
+                if attr not in {"href", "src", "data-api-endpoint"} or not value:
+                    continue
+                parsed = urlparse(unquote(html.unescape(value)))
+                if parsed.scheme and parsed.scheme not in {"http", "https"}:
+                    continue
+                if parsed.netloc and parsed.netloc.lower() != origin:
+                    continue
+                match = FILE_ID_RE.fullmatch(parsed.path)
+                if match:
+                    ids.add(int(match[2]))
+
+    FileLinks(convert_charrefs=True).feed(body or "")
+    return sorted(ids)
 
 
 def canvas_page_slug(value: str, course_id: int, canvas_host: str) -> str | None:
@@ -129,7 +147,7 @@ def collect_linked_pages(canvas: Canvas, items: list[dict], resources: dict[int,
         batch = sorted(pending - seen)
         pending.clear()
         seen.update(batch)
-        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
             rows = list(pool.map(lambda slug: canvas.get(
                 f"/courses/{course_id}/pages/{quote(slug, safe='')}"), batch))
         for requested, row in zip(batch, rows):
@@ -146,7 +164,7 @@ def collect_linked_pages(canvas: Canvas, items: list[dict], resources: dict[int,
                 "type": "Page", "published": row.get("published"), "public_state": "public",
                 "aliases": sorted({requested, row["url"], str(page_id)}),
                 "resource": {"kind": "page", "metadata": page_projection(row), "body": body,
-                             "body_sha256": sha256_text(body), "referenced_file_ids": referenced_file_ids(body)},
+                             "body_sha256": sha256_text(body), "referenced_file_ids": referenced_file_ids(body, host)},
             }
             discover(body)
     return [linked[page_id] for page_id in sorted(linked)]
@@ -392,7 +410,7 @@ def main() -> None:
         item for item in all_items if item.get("type") in {"Page", "Assignment", "Discussion", "Quiz"}
     ]
     resources: dict[int, dict] = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(resource_for, canvas, item): item for item in body_items}
         for future in concurrent.futures.as_completed(futures):
             item = futures[future]
@@ -403,7 +421,7 @@ def main() -> None:
     for item in body_items:
         resource = resources[item["id"]]
         body = resource.get("body") or ""
-        ids = set(referenced_file_ids(body))
+        ids = set(referenced_file_ids(body, canvas.base.removesuffix("/api/v1")))
         all_file_ids.update(ids)
         if item["id"] in protected:
             expected = set(int(value) for value in protected[item["id"]].get("expected_file_ids", []))
@@ -432,7 +450,7 @@ def main() -> None:
 
     metadata_rows: dict[int, dict] = {}
     raw_file_rows: dict[int, dict] = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(canvas.get, f"/files/{file_id}"): file_id for file_id in public_file_ids}
         for future in concurrent.futures.as_completed(futures):
             file_id = futures[future]
@@ -453,7 +471,7 @@ def main() -> None:
 
     folder_ids = sorted({row.get("folder_id") for row in raw_file_rows.values() if row.get("folder_id")})
     folders: dict[int, dict] = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(canvas.get, f"/folders/{folder_id}"): folder_id for folder_id in folder_ids}
         for future in concurrent.futures.as_completed(futures):
             folders[futures[future]] = future.result()
@@ -494,7 +512,7 @@ def main() -> None:
             "download_source_file_id": download_row["id"],
         }
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(download_one, file_id): file_id for file_id in public_file_ids}
         for future in concurrent.futures.as_completed(futures):
             file_id, result = future.result()

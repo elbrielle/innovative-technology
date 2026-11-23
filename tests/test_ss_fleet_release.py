@@ -1,8 +1,10 @@
 import importlib.util
+import io
 import json
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 
@@ -72,6 +74,34 @@ class SmartSolutionsFleetReleaseTests(unittest.TestCase):
             ["audit", "--course", "12345"]
         )
         self.assertEqual(args.course, [12345])
+
+    def test_empty_stdin_credential_stops_before_any_command(self):
+        args = ss_fleet_release.parser().parse_args(
+            ["approve-source", "--approval-note", "Approved", "--source-token-stdin"]
+        )
+        with patch.object(sys, "stdin", io.StringIO("\n")), patch.object(ss_fleet_release, "run") as run:
+            with self.assertRaisesRegex(RuntimeError, "empty on stdin"):
+                ss_fleet_release.approve_source(args)
+            run.assert_not_called()
+
+    def test_stdin_credential_uses_child_environment_not_file_or_manifest(self):
+        with tempfile.TemporaryDirectory() as directory:
+            args = ss_fleet_release.parser().parse_args(
+                ["--private-root", directory, "approve-source", "--approval-note", "Approved",
+                 "--source-token-stdin", "--source-token-file", str(Path(directory) / "absent")]
+            )
+            evidence = {"semantic_sha256": "a" * 64}
+            with patch.object(sys, "stdin", io.StringIO("test-runtime-credential\n")), \
+                 patch.object(ss_fleet_release, "validate_fleet_adapter", return_value=self.adapter(1)), \
+                 patch.object(ss_fleet_release, "snapshot_evidence", return_value=evidence), \
+                 patch.object(ss_fleet_release, "git", return_value="test-head"), \
+                 patch.object(ss_fleet_release, "run") as run:
+                ss_fleet_release.approve_source(args)
+            command = run.call_args_list[0]
+            self.assertNotIn("--source-token-file", command.args[0])
+            self.assertEqual(command.kwargs["env"]["CANVAS_TOKEN"], "test-runtime-credential")
+            manifest = next((Path(directory) / "releases").glob("*-approved.json"))
+            self.assertNotIn("test-runtime-credential", manifest.read_text())
 
     def test_approved_release_manifest_is_hash_sealed(self):
         with tempfile.TemporaryDirectory() as directory:

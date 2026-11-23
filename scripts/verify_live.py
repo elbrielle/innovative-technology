@@ -83,7 +83,7 @@ def main() -> None:
 
     body_ids = [item_id for item_id, item in snapshot_items.items() if item["type"] in {"Page", "Assignment", "Discussion", "Quiz"}]
     live_resources = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = [pool.submit(fetch_resource, item_id) for item_id in body_ids]
         for future in concurrent.futures.as_completed(futures):
             item_id, metadata, body, questions = future.result()
@@ -111,7 +111,7 @@ def main() -> None:
 
     file_ids = sorted(int(file_id) for file_id in snapshot["files"])
     raw_files: dict[int, dict] = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures = {pool.submit(canvas.get, f"/files/{file_id}"): file_id for file_id in file_ids}
         for future in concurrent.futures.as_completed(futures):
             raw_files[futures[future]] = future.result()

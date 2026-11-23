@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "course_id": 23402,
-  "audit_date": "2026-08-24",
+  "audit_date": "2026-10-27",
   "canonical_teks_source": "docs/standards/texas-technology-applications-grade-8-teks-2022.md",
   "canonical_teks_sha256": "a74a60c9155abed42f08c97be172d0ade43fcdc58d9cb253e813887417b6d0a5",
   "definitions": {
@@ -686,18 +686,20 @@
       "page_slug": "facilitator-guide-cad-skill-ladder",
       "title": "Facilitator Guide: CAD Skill Ladder",
       "topic": "3D modeling and print constraints",
-      "objective": "Students will explain how solids, holes, dimensions, and print constraints affect a model and apply that understanding to revise a printable design.",
+      "objective": "Students will explain how solids, holes, dimensions, and print constraints affect a model and apply that understanding when building and inspecting a printable design.",
       "teks": [
         "§126.19(c)(3)(B)",
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Currency design, modeled coin, and ring model with accurate dimensions plus a documented revision based on a print constraint.",
-      "audit_verdict": "revise",
-      "audit_issues": [
+      "demonstration_of_learning": "Currency design, modeled coin, and ring model with accurate dimensions plus the existing reflection explaining what the student would check if printing failed.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [
         "The current objective lists the project sequence more than the spatial/constraint learning.",
         "The DOL already contains the right evidence but should explicitly connect the revision to a print constraint."
       ],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (the full facilitator guide and its linked student task). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "audit_issues": []
     },
     {
       "module_position": 7,
@@ -711,10 +713,12 @@
         "§126.19(c)(3)(B)",
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Favorite-toy plan, Tinkercad model, comparison to the reference, and one documented proportional revision.",
-      "audit_verdict": "pass",
-      "audit_issues": [],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 4: Favorite Toy Shape Decomposition). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "demonstration_of_learning": "Toy STL and the existing 2–3 sentence problem-and-solution reflection.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [],
+      "audit_issues": []
     },
     {
       "module_position": 7,
@@ -728,13 +732,15 @@
         "§126.19(c)(3)(B)",
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Scaled room plan, Tinkercad model, measurement evidence, peer test, documented revision, and final screenshots.",
-      "audit_verdict": "revise",
-      "audit_issues": [
+      "demonstration_of_learning": "Day 1 Slides link; Day 2 conversion worksheet and room shell; final STL and the existing feedback/revision reflection.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [
         "The current objective largely follows the project workflow; the revised version names the scale and testing learning.",
         "The DOL is aligned and only needs the revision evidence stated explicitly."
       ],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Dream Room Day 1: Plan, Dream Room Day 2: Scale, Dream Room Days 3–5: Build, Test, Revise). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "audit_issues": []
     },
     {
       "module_position": 7,
@@ -742,18 +748,22 @@
       "module_item_id": 2657941,
       "page_slug": "facilitator-guide-3d-modeling-lesson-1-currency-to-3d-thinking",
       "title": "Facilitator Guide: 3D Modeling Lesson 1 — Currency to 3D Thinking",
-      "topic": "From 2D symbols to 3D form",
-      "objective": "Students will analyze which parts of a flat currency design require depth, relief, or negative space to become a readable 3D model.",
+      "topic": "Design Your Own Currency",
+      "objective": "Students will plan both sides of a coin and explain how one detail will change when the drawing becomes a 3D model.",
       "teks": [
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Currency design artifact plus annotations identifying which elements would become solids, holes, relief, or recessed details.",
-      "audit_verdict": "revise",
-      "audit_issues": [
+      "demonstration_of_learning": "photo of both sides and the existing 2–3 sentence reflection in Canvas.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "contract_format": "reviewed-prose",
+      "approved_text_sha256": "e9d4c2d12cf42b24e0bc3a7e92e2976fdb275113805024b1208a108661954603",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [
         "The current objective combines the artifact with a vague identification task.",
         "The DOL needs the annotated 2D-to-3D reasoning, not the currency design alone."
       ],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 1: Design Your Own Currency). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "audit_issues": []
     },
     {
       "module_position": 7,
@@ -766,13 +776,15 @@
       "teks": [
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "3D coin model plus screenshot or annotations identifying at least one solid, one hole, and one alignment/grouping decision.",
-      "audit_verdict": "revise",
-      "audit_issues": [
+      "demonstration_of_learning": "STL file named LastName-FirstName-coin.stl and the existing 2–3 sentence comparison with drawing on paper.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [
         "The current objective is a tool-use task.",
         "The DOL needs evidence that students understand how the operations produce the model."
       ],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 2: Intro to 3D Modeling). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "audit_issues": []
     },
     {
       "module_position": 7,
@@ -780,19 +792,21 @@
       "module_item_id": 2657943,
       "page_slug": "facilitator-guide-3d-modeling-lesson-3-ring-+-print-constraints",
       "title": "Facilitator Guide: 3D Modeling Lesson 3 — Ring + Print Constraints",
-      "topic": "3D print constraints and revision",
-      "objective": "Students will evaluate a ring model for wall thickness, scale, support, and fit, then revise the highest-risk feature.",
+      "topic": "3D print constraints and fit",
+      "objective": "Students will evaluate a ring model for wall thickness, scale, support, and fit, then explain what they would check if printing failed.",
       "teks": [
         "§126.19(c)(3)(B)",
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Ring model or PNG, print-readiness checklist, and before/after evidence of one constraint-driven revision.",
-      "audit_verdict": "revise",
-      "audit_issues": [
+      "demonstration_of_learning": "Ring STL named LastName-FirstName-ring.stl and the existing 2–3 sentence print-troubleshooting reflection.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [
         "The current objective is close but leaves the diagnosis and revision evidence underspecified.",
         "The current DOL names only a reflection; add the actual before/after model evidence."
       ],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Lesson 3: Intro to 3D Printing). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "audit_issues": []
     },
     {
       "module_position": 7,
@@ -803,51 +817,61 @@
       "topic": "CAD skills and career transfer",
       "objective": "Students will explain how a specific CAD skill can transfer to a different task or career context and cite evidence from their own modeling work.",
       "teks": [],
-      "demonstration_of_learning": "Xello completion screenshot plus a reflection naming one CAD skill, evidence of using it, and another setting where it transfers.",
-      "audit_verdict": "revise",
-      "audit_issues": [
+      "demonstration_of_learning": "Skills screenshot and the existing sentence explaining one rating with an example.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [
         "The current objective is account/activity language rather than learning.",
         "No exact Grade 8 Technology Applications TEKS directly covers a generic Xello transferable-skills reflection."
       ],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Xello Check-in: Add Skills, Portfolio Example). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "audit_issues": []
     },
     {
       "module_position": 8,
       "module_name": "SW2 · ThingLink: 360 + Branching Narratives",
       "module_item_id": 2636712,
       "page_slug": "facilitator-guide-welcome-mission",
-      "title": "Facilitator Guide: Welcome Mission",
-      "topic": "Visitor-centered interactive navigation",
-      "objective": "Students will apply a design process to make an interactive map usable for a specific first-time visitor and revise it from a navigation test.",
+      "title": "Teacher Guide · Design and Tag Your Map",
+      "topic": "Immersive media introduction, map design and interactive tags",
+      "objective": "Students design a readable map, add useful interactive tags, test them with a partner, and improve one detail.",
       "teks": [
         "§126.19(c)(3)(B)",
         "§126.19(c)(11)(A)",
         "§126.19(c)(11)(B)",
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Published Welcome Mission with three purposeful stops, working tags, visitor-test evidence, and one documented revision.",
-      "audit_verdict": "pass",
-      "audit_issues": [],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Days 1–2 · Welcome Mission, Day 3 · Flat Photo or 360 Scene?). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "demonstration_of_learning": "Lesson 1: a readable photo of a student-created map with at least three labeled areas. Lesson 1.5: three working tags on different zones using at least two kinds of content, an observed partner-tested improvement, and a viewer link submitted in Canvas.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "October 27 release reconciliation against the current owner-approved Canvas guide and its existing student artifact. Records the approved task; does not add requirements or establish full TEKS/iCEV mastery. See docs/reviews/release-ledger-reconciliation-2026-10-27.md.",
+      "contract_format": "reviewed-prose",
+      "approved_text_sha256": "2f905bc3437eae8e286196e8c1f31dfa093fe1766f1ac1f8ce3130f925777f62",
+      "audit_date": "2026-10-27",
+      "prior_audit_issues": [],
+      "audit_issues": []
     },
     {
       "module_position": 8,
       "module_name": "SW2 · ThingLink: 360 + Branching Narratives",
       "module_item_id": 2636713,
       "page_slug": "facilitator-guide-360-guide",
-      "title": "Facilitator Guide: 360 Guide",
-      "topic": "Purposeful 360 media and navigation",
-      "objective": "Students will evaluate when a 360 image improves visitor understanding and revise navigation using partner-test evidence.",
+      "title": "Teacher Guide · Show a Place in 360°",
+      "topic": "Teach a place in 360°",
+      "objective": "Students create an informative 360 scene by choosing media, combining content in tags, and making a revision from partner feedback.",
       "teks": [
         "§126.19(c)(3)(B)",
         "§126.19(c)(11)(A)",
         "§126.19(c)(11)(B)",
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Revised Welcome Mission with a functional 360 stop, purposeful tags, partner-test evidence, and a published link.",
-      "audit_verdict": "pass",
-      "audit_issues": [],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Days 4–5 · Build a 360 Guide). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "demonstration_of_learning": "the working scene plus the actual-revision comment.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "Current owner-approved source and four-lens review: docs/reviews/branching-escape-room-2026-10-28.md and docs/reviews/shared-360-worksheet-2026-10-28.md. Records existing artifacts and evidence limits; no new assessment or full-standard mastery claim.",
+      "contract_format": "reviewed-prose",
+      "approved_text_sha256": "2273290be590e0437a2daab94d4eb28d7f2fcada4cb4265a276ad31c4c8e5dcf",
+      "audit_date": "2026-10-28",
+      "prior_audit_issues": [],
+      "audit_issues": []
     },
     {
       "module_position": 8,
@@ -855,18 +879,22 @@
       "module_item_id": 2636714,
       "page_slug": "facilitator-guide-branching-narratives",
       "title": "Facilitator Guide: Branching Narratives",
-      "topic": "Branching choice architecture",
-      "objective": "Students will analyze how choice points create different user paths and apply test evidence to revise a branching experience.",
+      "topic": "Branching Narratives",
+      "objective": "Test correct AND incorrect answers, the 360 scene, and access to the scenario and its media.",
       "teks": [
         "§126.19(c)(3)(B)",
         "§126.19(c)(11)(A)",
         "§126.19(c)(11)(B)",
         "§126.19(c)(12)(C)"
       ],
-      "demonstration_of_learning": "Story map and published branching experience with working choices, at least two outcomes, test evidence, and one documented revision.",
-      "audit_verdict": "pass",
-      "audit_issues": [],
-      "evidence_basis": "Reviewed the full facilitator guide and adjacent or linked student evidence (Day 1 · Two-Door Challenge, Day 2 · Story Map Approval, Days 3–5 · Build, Test, and Publish, PARKED · Activity 1: Planet Planning, PARKED · Activity 2: Storyboard, PARKED · Activity 3: Planet Branching). The student-facing requirements and current DOL were used to identify the actual product, submission, performance, or exit response that can prove the proposed objective."
+      "demonstration_of_learning": "Lessons 5–6 supply the map, working artifact, actual feedback and revision evidence.",
+      "audit_verdict": "owner-approved-current-evidence",
+      "evidence_basis": "Current owner-approved source and four-lens review: docs/reviews/branching-escape-room-2026-10-28.md and docs/reviews/shared-360-worksheet-2026-10-28.md. Records existing artifacts and evidence limits; no new assessment or full-standard mastery claim.",
+      "contract_format": "reviewed-prose",
+      "approved_text_sha256": "c95e7ebcca03715af7b0492ced5bdf679035e1287556d735df14cc6ad41eb90c",
+      "audit_date": "2026-10-28",
+      "prior_audit_issues": [],
+      "audit_issues": []
     },
     {
       "module_position": 9,

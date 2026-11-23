@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=Inter:ital,wght@0,400;0,500;0,600;1,400&amp;family=Caveat:wght@600&amp;display=block" rel="stylesheet"/>
+<style>
+@page { size: 8.5in 11in; margin: 0 }
+:root { --ink:#18223A; --muted:#5E6779; --rule:#C3C9D4; --navy:#1E3150; --teal:#0E7F81; --teal-l:#E2F2F1;
+        --sun:#E9A800; --sun-l:#FFF4D1; --sun-d:#8A6200; --leaf:#2F8F51; --leaf-l:#E3F3E8; --coral:#D9512C; --coral-l:#FCE8E1; --paper:#FBF8F2; }
+* { box-sizing:border-box; margin:0; padding:0 }
+body { width:816px; height:1056px; font-family:Inter, sans-serif; color:var(--ink); background:#fff; position:relative; overflow:hidden }
+.mono { font-family:'IBM Plex Mono', monospace }
+h1,h2,.disp { font-family:'Bricolage Grotesque', sans-serif }
+
+/* ticket header */
+.ticket { position:absolute; left:28px; right:28px; top:26px; height:128px; display:flex; border-radius:14px; overflow:hidden }
+.ticket .main { flex:1; background:var(--navy); color:#fff; padding:18px 22px 0 24px; position:relative }
+.ticket .stub { width:214px; background:var(--paper); border:2px solid var(--navy); border-left:none; border-radius:0 14px 14px 0; padding:14px 16px; position:relative }
+.ticket .perf { position:absolute; top:0; bottom:0; left:-1px; width:0; border-left:3px dotted #fff }
+.ticket .notch { position:absolute; width:22px; height:22px; background:#fff; border-radius:50%; right:-11px }
+.kick { font-size:11px; letter-spacing:.18em; color:#9FB6D8; font-weight:600 }
+.ticket h1 { font-size:40px; font-weight:800; letter-spacing:-.01em; line-height:1; margin-top:6px }
+.ticket .sub { font-size:12.5px; color:#D3DDEE; margin-top:9px }
+.ticket .globe { position:absolute; right:20px; top:20px; width:76px; height:76px; color:rgba(255,255,255,.18) }
+.stub .lbl { font-size:9.5px; letter-spacing:.14em; color:var(--muted); font-weight:600 }
+.stub .field { border-bottom:1.4px solid var(--ink); height:22px; margin:2px 0 6px }
+.stub .row { display:flex; gap:10px } .stub .row > div { flex:1 }
+
+/* sections */
+.sec { position:absolute; left:28px; right:28px }
+.head { display:flex; align-items:baseline; gap:10px; margin-bottom:8px }
+.badge { width:26px; height:26px; border-radius:50%; color:#fff; font:700 15px 'Bricolage Grotesque'; display:inline-flex; align-items:center; justify-content:center; transform:translateY(4px) }
+.head h2 { font-size:21px; font-weight:800 }
+.head .es { font-size:12px; color:var(--muted) }
+
+.stops { display:grid; grid-template-columns:repeat(4, 1fr); gap:9px }
+.stop { border:1.5px solid #CFE4E3; border-radius:11px; overflow:hidden; background:#fff }
+.stop .ph { height:58px; background-size:cover; background-position:center; position:relative }
+.stop .num { position:absolute; left:7px; top:7px; background:var(--teal); color:#fff; font:600 12px 'IBM Plex Mono'; padding:2px 6px; border-radius:6px }
+.stop .cap { display:flex; align-items:center; gap:7px; padding:6px 8px 7px; font-size:12px; font-weight:600; white-space:nowrap }
+.box { width:14px; height:14px; border:1.6px solid currentColor; border-radius:3.5px; flex:none; display:inline-block; background:#fff }
+.stop .box { color:var(--teal) }
+
+.more { display:flex; gap:10px; margin-top:9px }
+.more .panel { flex:1; border-radius:11px; padding:9px 12px 10px }
+.panel .t { font-size:10px; letter-spacing:.14em; font-weight:700; margin-bottom:6px }
+.panel ul { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:5px 10px; font-size:12.5px; font-weight:500 }
+.panel li { display:flex; align-items:center; gap:7px }
+.world { background:var(--sun-l) } .world .t, .world .box { color:var(--sun-d) }
+.career { background:var(--coral-l) } .career .t, .career .box { color:#A93B1B }
+.career .q { font-size:10.5px; color:var(--muted); font-style:italic; margin-top:6px }
+
+.fill { display:flex; align-items:flex-end; gap:8px; font-size:14px; font-weight:500; height:30px }
+.fill .ln { border-bottom:1.4px solid var(--ink); height:20px }
+.wb { margin-top:12px; background:#F1F3F7; border-radius:999px; padding:7px 16px; display:flex; gap:18px; align-items:center; font-size:11.3px; color:var(--muted); white-space:nowrap }
+.wb b { color:var(--ink) } .wb .k { font:600 9.5px 'IBM Plex Mono'; letter-spacing:.12em; color:var(--navy) }
+
+.cut { position:absolute; left:14px; right:14px; border-top:1.6px dashed #8A93A5; }
+.cut span { position:absolute; left:50%; transform:translate(-50%,-55%); background:#fff; padding:0 10px; display:flex; gap:8px; align-items:center; color:var(--muted); font-size:11.5px; font-weight:600 }
+
+/* postcard */
+.card { position:absolute; left:28px; right:28px; bottom:20px; height:368px; background:var(--paper); border:1.8px solid var(--ink); border-radius:16px; display:flex; overflow:hidden }
+.card .msg { flex:1; padding:16px 18px 14px; display:flex; flex-direction:column }
+.card .addr { width:236px; border-left:1.6px solid var(--rule); padding:16px 18px; position:relative }
+.greet { font-family:'Caveat', cursive; font-size:27px; color:var(--teal); line-height:1 }
+.card .head2 { display:flex; align-items:baseline; gap:10px; margin-top:2px }
+.card .head2 h2 { font-size:21px; font-weight:800 }
+.gg { display:flex; gap:12px; margin-top:12px; flex:1 }
+.g { flex:1; border-radius:12px; padding:10px 12px; display:flex; flex-direction:column }
+.g .top { display:flex; align-items:center; gap:8px }
+.g .ico { width:28px; height:28px }
+.g h3 { font:800 21px 'Bricolage Grotesque' }
+.g .what { font-size:10px; color:var(--muted); margin:1px 0 7px }
+.g .stem { font-size:11.6px; line-height:1.55 }
+.g .stem i { display:block; font-style:normal; font:600 9px 'IBM Plex Mono'; letter-spacing:.1em; margin-bottom:2px }
+.g .lines { flex:1; margin-top:8px; background:repeating-linear-gradient(to bottom, transparent 0 25px, var(--rule) 25px 26.4px) }
+.glow { background:var(--sun-l) } .glow h3, .glow .stem i { color:var(--sun-d) }
+.grow { background:var(--leaf-l) } .grow h3, .grow .stem i { color:var(--leaf) }
+
+.stamp { width:86px; height:100px; margin-left:auto; padding:5px; background:#fff; outline:3px dotted var(--teal); outline-offset:-1px; }
+.stamp .in { width:100%; height:100%; background:var(--teal); border-radius:2px; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px }
+.stamp .globe { width:40px; height:40px; color:#fff }
+.stamp .s { font:600 10px 'IBM Plex Mono'; letter-spacing:.06em }
+.stamp .stopno { font:600 9px 'IBM Plex Mono'; opacity:.85 }
+.pm { position:absolute; right:112px; top:44px; width:88px; height:88px; background:rgba(251,248,242,.6); border:2px solid rgba(30,49,80,.45); border-radius:50%; color:rgba(30,49,80,.6);
+       display:flex; flex-direction:column; align-items:center; justify-content:center; transform:rotate(-14deg); font:600 9px 'IBM Plex Mono'; letter-spacing:.08em; text-align:center; line-height:1.4 }
+.pm .waves { position:absolute; left:84px; top:30px; width:70px; height:34px; border-top:2px solid rgba(30,49,80,.4); border-bottom:2px solid rgba(30,49,80,.4) }
+.addr .af { margin-top:40px }
+.addr .lbl { font:600 9.5px 'IBM Plex Mono'; letter-spacing:.14em; color:var(--muted) }
+.addr .field { border-bottom:1.4px solid var(--ink); height:28px; margin-bottom:12px }
+.addr .hint { font-size:10.5px; color:var(--muted); font-style:italic; line-height:1.35 }
+.addr .bigno { display:flex; align-items:flex-end; gap:8px }
+.addr .bigno .field { width:70px }
+.foot { position:absolute; left:18px; right:18px; bottom:12px; font-size:9.5px; color:var(--muted); line-height:1.35 }
+
+.stop .ph {background:#E2F2F1;height:58px;display:flex;align-items:center;gap:8px;padding:10px;} .stop .num {position:static;font-size:18px;} .stop-label {font-size:9px;color:#3A6667;font-weight:600;letter-spacing:.04em;} .write-name {height:18px;border-bottom:1px solid #5E6779;flex:1;}
+
+.card .head2 {margin-top:6px;} .card .greet {font-size:25px;} .card .af {margin-top:36px;} .card .g .stem {font-size:12px;line-height:1.6;} .card .g .what {min-height:30px;} .card .g .lines {background:repeating-linear-gradient(to bottom,transparent 0 28px,var(--rule) 28px 29.4px);}
+</style></head><body><div class="card" style="top:26px;bottom:auto;height:476px;">
+<div class="msg">
+<div class="greet">Show and Tell</div>
+<div class="head2"><h2 style="color:var(--leaf)">Glow and Grow postcard</h2></div>
+<div class="gg">
+<div class="g glow">
+<div class="top"><svg class="ico" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="var(--sun)" r="8"></circle><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(0 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(45 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(90 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(135 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(180 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(225 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(270 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(315 20 20)" x1="20" x2="20" y1="4" y2="9"></line></svg><h3>Glow</h3></div>
+<div class="what">Something that works well · Algo que funciona</div>
+<div class="stem"><i>SENTENCE STARTERS</i>I liked how your tag about ___ ...<br/>Your photo shows ___ really well.<br/>I learned ___ from your work.</div>
+<div class="lines"></div>
+</div>
+<div class="g grow">
+<div class="top"><svg class="ico" viewbox="0 0 40 40"><path d="M20 36 V18" stroke="var(--leaf)" stroke-linecap="round" stroke-width="3"></path>
+<path d="M20 20 C 8 20 5 10 7 7 C 16 7 20 12 20 20Z" fill="var(--leaf)"></path><path d="M20 24 C 32 24 35 14 33 11 C 24 11 20 16 20 24Z" fill="var(--leaf)"></path></svg><h3>Grow</h3></div>
+<div class="what">One idea to make it better · Una idea para mejorar</div>
+<div class="stem"><i>SENTENCE STARTERS</i>You could add a tag about ___.<br/>Try a picture, video, or link for ___.<br/>Can you tell more about ___?</div>
+<div class="lines"></div>
+</div>
+</div>
+</div>
+<div class="addr">
+
+<div class="stamp"><div class="in"><svg class="globe" viewbox="0 0 60 60"><circle cx="30" cy="30" fill="none" r="24" stroke="currentColor" stroke-width="3"></circle>
+<ellipse cx="30" cy="30" fill="none" rx="10" ry="24" stroke="currentColor" stroke-width="2.4"></ellipse><line stroke="currentColor" stroke-width="2.4" x1="6" x2="54" y1="30" y2="30"></line>
+<path d="M10 18 Q30 25 50 18 M10 42 Q30 35 50 42" fill="none" stroke="currentColor" stroke-width="2"></path></svg><div class="s">FEEDBACK</div><div class="stopno">SHOW &amp; TELL</div></div></div>
+<div class="af">
+<div class="lbl">TO · PARA</div><div class="field"></div>
+<div class="hint" style="margin:-6px 0 12px">Write to the creator of the work you saw.</div>
+<div class="lbl">FROM · DE</div><div class="field"></div>
+</div>
+<div class="foot">Be specific: name a tag, picture, or detail.</div>
+</div>
+</div><div class="card" style="top:554px;bottom:auto;height:476px;">
+<div class="msg">
+<div class="greet">Show and Tell</div>
+<div class="head2"><h2 style="color:var(--leaf)">Glow and Grow postcard</h2></div>
+<div class="gg">
+<div class="g glow">
+<div class="top"><svg class="ico" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="var(--sun)" r="8"></circle><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(0 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(45 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(90 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(135 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(180 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(225 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(270 20 20)" x1="20" x2="20" y1="4" y2="9"></line><line stroke="var(--sun)" stroke-linecap="round" stroke-width="3" transform="rotate(315 20 20)" x1="20" x2="20" y1="4" y2="9"></line></svg><h3>Glow</h3></div>
+<div class="what">Something that works well · Algo que funciona</div>
+<div class="stem"><i>SENTENCE STARTERS</i>I liked how your tag about ___ ...<br/>Your photo shows ___ really well.<br/>I learned ___ from your work.</div>
+<div class="lines"></div>
+</div>
+<div class="g grow">
+<div class="top"><svg class="ico" viewbox="0 0 40 40"><path d="M20 36 V18" stroke="var(--leaf)" stroke-linecap="round" stroke-width="3"></path>
+<path d="M20 20 C 8 20 5 10 7 7 C 16 7 20 12 20 20Z" fill="var(--leaf)"></path><path d="M20 24 C 32 24 35 14 33 11 C 24 11 20 16 20 24Z" fill="var(--leaf)"></path></svg><h3>Grow</h3></div>
+<div class="what">One idea to make it better · Una idea para mejorar</div>
+<div class="stem"><i>SENTENCE STARTERS</i>You could add a tag about ___.<br/>Try a picture, video, or link for ___.<br/>Can you tell more about ___?</div>
+<div class="lines"></div>
+</div>
+</div>
+</div>
+<div class="addr">
+
+<div class="stamp"><div class="in"><svg class="globe" viewbox="0 0 60 60"><circle cx="30" cy="30" fill="none" r="24" stroke="currentColor" stroke-width="3"></circle>
+<ellipse cx="30" cy="30" fill="none" rx="10" ry="24" stroke="currentColor" stroke-width="2.4"></ellipse><line stroke="currentColor" stroke-width="2.4" x1="6" x2="54" y1="30" y2="30"></line>
+<path d="M10 18 Q30 25 50 18 M10 42 Q30 35 50 42" fill="none" stroke="currentColor" stroke-width="2"></path></svg><div class="s">FEEDBACK</div><div class="stopno">SHOW &amp; TELL</div></div></div>
+<div class="af">
+<div class="lbl">TO · PARA</div><div class="field"></div>
+<div class="hint" style="margin:-6px 0 12px">Write to the creator of the work you saw.</div>
+<div class="lbl">FROM · DE</div><div class="field"></div>
+</div>
+<div class="foot">Be specific: name a tag, picture, or detail.</div>
+</div>
+</div><div class="cut" style="top:528px"><span><svg height="18" viewbox="0 0 24 24" width="18"><circle cx="6" cy="6" fill="none" r="3" stroke="currentColor" stroke-width="1.8"></circle>
+<circle cx="6" cy="18" fill="none" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M8.5 7.5 L20 16 M8.5 16.5 L20 8" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg> Cut apart. Give each postcard to its creator. · Corta y entrega.</span></div></body></html>

@@ -39,10 +39,6 @@
     "YOUR_CANVAS_LINK_MODULE5": {"target_module_item_id": 2634280}
   },
   "file_download_aliases": {
-    "3133443": {
-      "source_file_id": 3133484,
-      "reason": "The referenced Canvas file record returns 404, while this byte-identical course copy remains downloadable."
-    },
     "3133572": {
       "source_file_id": 3133484,
       "reason": "The referenced Canvas file record returns 400, while this byte-identical course copy remains downloadable."

@@ -131,30 +131,28 @@ def approve_source(args: argparse.Namespace) -> None:
     note = args.approval_note.strip()
     if not note:
         raise RuntimeError("An exact user approval note is required")
-    token_path = args.source_token_file.expanduser()
-    if not token_path.is_file():
-        raise RuntimeError(
-            f"Verizon source token file is missing: {token_path}. "
-            "Keep it separate from the Irving destination token."
-        )
-    if stat.S_IMODE(token_path.stat().st_mode) & 0o077:
-        raise RuntimeError(
-            f"Verizon source token permissions must be 600: {token_path}"
-        )
+    sync_command = [sys.executable, str(ROOT / "scripts" / "sync_course.py")]
+    source_env = None
+    if args.source_token_stdin:
+        token = sys.stdin.readline().strip()
+        if not token:
+            raise RuntimeError("Verizon source credential is empty on stdin")
+        source_env = os.environ.copy()
+        source_env["CANVAS_TOKEN"] = token
+    else:
+        token_path = args.source_token_file.expanduser()
+        if not token_path.is_file():
+            raise RuntimeError(f"Verizon source token file is missing: {token_path}")
+        if stat.S_IMODE(token_path.stat().st_mode) & 0o077:
+            raise RuntimeError(f"Verizon source token permissions must be 600: {token_path}")
+        sync_command.extend(["--source-token-file", str(token_path)])
     adapter_path = args.adapter.expanduser().resolve()
     adapter = validate_fleet_adapter(adapter_path)
     destinations = [
         {"course_id": int(row["course_id"]), "label": row.get("label")}
         for row in enabled_courses(adapter)
     ]
-    run(
-        [
-            sys.executable,
-            str(ROOT / "scripts" / "sync_course.py"),
-            "--source-token-file",
-            str(token_path),
-        ]
-    )
+    run(sync_command, env=source_env)
     run([sys.executable, str(ROOT / "scripts" / "verify_curriculum_review_gate.py")])
     run(
         [
@@ -298,6 +296,10 @@ def parser() -> argparse.ArgumentParser:
     subcommands = root.add_subparsers(dest="command", required=True)
     approve = subcommands.add_parser("approve-source")
     approve.add_argument("--approval-note", required=True)
+    approve.add_argument(
+        "--source-token-stdin", action="store_true",
+        help="Read the Verizon credential from stdin, e.g. a macOS Keychain pipe; never persist it.",
+    )
     approve.add_argument(
         "--source-token-file",
         type=Path,

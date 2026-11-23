@@ -7,7 +7,10 @@ copy of live Canvas.
 
 ## Ownership boundary
 
-- Verizon Canvas course 23402 remains the canonical VILS authoring source.
+- Owner correction, October 27, 2026: author and review in Irving's Lucero
+  course 98055 first. Copy approved, teacher-portable work to Verizon course
+  23402 afterward for Commons preparation. The verified Verizon copy remains
+  the fleet controller's distribution input, not the first authoring surface.
 - data/course-snapshot.json is the verified source inventory used by the
   VILS fleet adapter.
 - The generated public mirror remains downstream of canonical Canvas and is
@@ -59,16 +62,27 @@ target courses. “The source is good” alone is never enough to apply.
 
 ## Approved-source and enabled-fleet commands
 
-Keep the Verizon source token separate from the Irving destination token:
-
-    ~/.canvas_vils_source_token    # Verizon course 23402, mode 600
-    ~/.canvas_token                # Irving destination API, mode 600
+Keep the Verizon source credential separate from the Irving destination
+credential. On the owner's Mac, use the current macOS Keychain entries;
+the historical token files are retired. Verizon's service name is
+`Verizon Canvas Token ` (including its trailing space), account
+`https://verizoninnovativelearning.instructure.com/`. Irving uses service
+`canvas-learn-irvingisd`, account `elucero`. Never print or persist the tokens.
 
 After the user explicitly approves the current Verizon source, record the
 exact approval statement and rebuild/verify the snapshot and public mirror:
 
-    python3 scripts/ss_fleet_release.py approve-source \
+    security find-generic-password -s 'Verizon Canvas Token ' \
+      -a 'https://verizoninnovativelearning.instructure.com/' -w | \
+      python3 scripts/ss_fleet_release.py approve-source --source-token-stdin \
       --approval-note "<exact user approval statement>"
+
+For Irving audits, use a private, run-specific adapter whose destination token
+reference is `{"kind":"env","name":"IRVING_CANVAS_TOKEN"}`. A launcher may
+read the Irving Keychain credential on stdin and pass it to the audit child
+process in that environment variable. Keep the same adapter path for source
+approval and its audit. The adapter contains only the variable name, never the
+credential value.
 
 This runs the Canvas-to-site sync against Verizon, verifies live source parity,
 validates the curriculum review gate and private fleet adapter, and

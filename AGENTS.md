@@ -24,12 +24,20 @@ into a fixed slide count, universal theme, or extra grading requirements.
 
 ## Smart Solutions fleet parity
 
+**Owner correction, October 27, 2026:** Author and review Smart Solutions work
+in Irving's Lucero course `98055` first. Move the approved, teacher-portable
+version to Verizon course `23402` afterward for Commons preparation. Verizon
+is the downstream release copy, not the first authoring surface. The fleet
+controller still uses the verified Verizon snapshot as its distribution input;
+this does not authorize edits to other teachers' courses or publication changes.
+
 When the user says the Verizon Smart Solutions source is **good**, **approved**,
 **final**, or otherwise ready to distribute, every agent context must:
 
 1. Invoke `$canvas-fleet-parity` and read `docs/CANVAS_FLEET_PARITY.md`.
-2. Treat Verizon Canvas course `23402` as the canonical authoring source and
-   every enabled Smart Solutions course in the private VILS adapter as a destination.
+2. Treat the owner-approved Verizon Canvas course `23402` copy as the
+   distribution source and every enabled Smart Solutions course in the private
+   VILS adapter as a destination. Preserve the Irving-first authoring route above.
 3. Record the user's explicit source approval with
    `scripts/ss_fleet_release.py approve-source`; never infer approval from
    silence, a clean diff, or a passing test.

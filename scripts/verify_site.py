@@ -58,6 +58,15 @@ def plain_text(value: str) -> str:
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", value)).split())
 
 
+def reviewed_prose_contract(body: str, record: dict | None) -> bool:
+    """Accept a reviewed prose layout only while its complete text is unchanged."""
+    return bool(
+        record
+        and record.get("contract_format") == "reviewed-prose"
+        and record.get("approved_text_sha256") == sha256_text(plain_text(body))
+    )
+
+
 def check_linked_pages(snapshot: dict, manifest: dict, public_links: dict, failures: list[str]) -> None:
     linked = snapshot.get("linked_pages", [])
     page_ids = [page["page_id"] for page in linked]
@@ -146,14 +155,15 @@ def main() -> None:
     modules = snapshot["modules"]
     items = [item for module in modules for item in module["items"]]
     check_linked_pages(snapshot, manifest, public_links, failures)
-    facilitator_guides = [
-        item
-        for item in items
-        if re.match(r"^Facilitator(?:'s)? Guide:", item.get("title", ""), re.I)
-    ]
     contract_rows = {
         int(row["module_item_id"]): row for row in daily_contracts.get("records", [])
     }
+    facilitator_guides = [
+        item
+        for item in items
+        if int(item["id"]) in contract_rows
+        or re.match(r"^(?:Facilitator(?:'s)?|Teacher) Guide\s*[:·]", item.get("title", ""), re.I)
+    ]
     guide_ids = {int(guide["id"]) for guide in facilitator_guides}
     if set(contract_rows) != guide_ids:
         failures.append("Daily learning contract ledger does not account for every facilitator guide")
@@ -168,23 +178,26 @@ def main() -> None:
     for guide in facilitator_guides:
         body = (guide.get("resource") or {}).get("body") or ""
         text = plain_text(body)
+        record = contract_rows.get(int(guide["id"]))
+        prose = reviewed_prose_contract(body, record)
+        if record and record.get("contract_format") == "reviewed-prose" and not prose:
+            failures.append(f"Facilitator guide {guide['id']} differs from its reviewed prose contract")
         missing_fields = [
             name
             for name, pattern in contract_patterns.items()
             if not re.search(pattern, body, re.I)
         ]
-        if missing_fields:
+        if missing_fields and not prose:
             failures.append(
                 f"Facilitator guide {guide['id']} is missing its daily learning contract fields: "
                 + ", ".join(missing_fields)
             )
-        if body.count("Daily Learning Contract") != 1:
+        if not prose and body.count("Daily Learning Contract") != 1:
             failures.append(f"Facilitator guide {guide['id']} must contain exactly one daily learning contract")
-        if 'data-vils-daily-learning-contract="2026-08-21-semantic-audit-v1"' not in body:
+        if not prose and 'data-vils-daily-learning-contract="2026-08-21-semantic-audit-v1"' not in body:
             failures.append(f"Facilitator guide {guide['id']} is not using the audited semantic contract version")
         if 'data-vils-teks-alignment="2026-08-19"' in body:
             failures.append(f"Facilitator guide {guide['id']} still contains a duplicate module-level alignment block")
-        record = contract_rows.get(int(guide["id"]))
         if record:
             required_phrases = [
                 record["topic"],
